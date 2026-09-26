@@ -1,0 +1,51 @@
+
+> opensource-radar@0.1.0 collect
+> tsx scripts/collect/index.ts --due --domain all --concurrency 4 --cache .cache/sh-due.json --out data/repositories.json
+
+{
+  "mode": "due",
+  "authenticated": true,
+  "out": "data/repositories.json",
+  "report": {
+    "tracked": 3413,
+    "due": 47,
+    "notDue": 3366,
+    "outOfScope": 0,
+    "selected": 47,
+    "collected": 45,
+    "failures": [
+      {
+        "repository": "755596985/Sure-Xu",
+        "stage": "metadata",
+        "reason": "not found by GraphQL"
+      },
+      {
+        "repository": "laolaoshiren/claude-code-skills-zh",
+        "stage": "metadata",
+        "reason": "not found by GraphQL"
+      }
+    ],
+    "stoppedBy": null,
+    "written": true,
+    "datasetRepositories": 3546,
+    "durationMs": 11528
+  },
+  "usage": {
+    "restRequests": 45,
+    "graphqlRequests": 1,
+    "starHistoryPageRequests": 45,
+    "starHistoryRetries": 0,
+    "starHistoryBytes": 72178,
+    "cache": {
+      "hits": 0,
+      "misses": 45,
+      "coalesced": 0,
+      "storeHits": 0
+    },
+    "coreRateLimit": {
+      "remaining": 4753,
+      "limit": 5000,
+      "resetAt": "2026-09-26T03:36:58.000Z"
+    }
+  }
+}

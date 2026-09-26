@@ -1,0 +1,21 @@
+{
+  "at": "2026-09-25T01:46:02.193Z",
+  "summary": {
+    "rate-limit": {
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    "graphql": {
+      "exitCode": 1,
+      "status": "FAIL"
+    },
+    "search": {
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    "star-history": {
+      "exitCode": 0,
+      "status": "PASS"
+    }
+  }
+}

@@ -1,0 +1,517 @@
+{
+  "script": "search",
+  "startedAt": "2026-09-25T01:44:47.508Z",
+  "durationMs": 66828,
+  "requests": {
+    "rest": 21,
+    "graphql": 0
+  },
+  "checks": [
+    {
+      "name": "search: AI repositories",
+      "ok": true,
+      "detail": {
+        "label": "AI repositories",
+        "query": "topic:ai stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 2591,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 28,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3142
+      }
+    },
+    {
+      "name": "search: AI agents",
+      "ok": true,
+      "detail": {
+        "label": "AI agents",
+        "query": "topic:ai-agents stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 1639,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 27,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3503
+      }
+    },
+    {
+      "name": "search: LLM",
+      "ok": true,
+      "detail": {
+        "label": "LLM",
+        "query": "topic:llm stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 2124,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 26,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3453
+      }
+    },
+    {
+      "name": "search: MCP",
+      "ok": true,
+      "detail": {
+        "label": "MCP",
+        "query": "topic:mcp stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 1709,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 25,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 2979
+      }
+    },
+    {
+      "name": "search: RAG",
+      "ok": true,
+      "detail": {
+        "label": "RAG",
+        "query": "topic:rag stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 497,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 24,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3242
+      }
+    },
+    {
+      "name": "search: machine learning",
+      "ok": true,
+      "detail": {
+        "label": "machine learning",
+        "query": "topic:machine-learning stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 1092,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 29,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3358
+      }
+    },
+    {
+      "name": "search: Java",
+      "ok": true,
+      "detail": {
+        "label": "Java",
+        "query": "language:Java stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 3911,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 28,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3154
+      }
+    },
+    {
+      "name": "search: Spring",
+      "ok": true,
+      "detail": {
+        "label": "Spring",
+        "query": "topic:spring-boot stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 203,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 27,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3346
+      }
+    },
+    {
+      "name": "search: Kafka",
+      "ok": true,
+      "detail": {
+        "label": "Kafka",
+        "query": "topic:kafka stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 191,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 26,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3669
+      }
+    },
+    {
+      "name": "search: Kubernetes",
+      "ok": true,
+      "detail": {
+        "label": "Kubernetes",
+        "query": "topic:kubernetes stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 1279,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 25,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3895
+      }
+    },
+    {
+      "name": "search: AWS",
+      "ok": true,
+      "detail": {
+        "label": "AWS",
+        "query": "topic:aws stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 453,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 24,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3726
+      }
+    },
+    {
+      "name": "search: PostgreSQL",
+      "ok": true,
+      "detail": {
+        "label": "PostgreSQL",
+        "query": "topic:postgresql stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 629,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 23,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3029
+      }
+    },
+    {
+      "name": "search: Redis",
+      "ok": true,
+      "detail": {
+        "label": "Redis",
+        "query": "topic:redis stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 304,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 22,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3365
+      }
+    },
+    {
+      "name": "search: microservices",
+      "ok": true,
+      "detail": {
+        "label": "microservices",
+        "query": "topic:microservices stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 206,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 21,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3968
+      }
+    },
+    {
+      "name": "search: distributed systems",
+      "ok": true,
+      "detail": {
+        "label": "distributed systems",
+        "query": "topic:distributed-systems stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 159,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 20,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3483
+      }
+    },
+    {
+      "name": "search: developer tools",
+      "ok": true,
+      "detail": {
+        "label": "developer tools",
+        "query": "topic:developer-tools stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 1070,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 19,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3199
+      }
+    },
+    {
+      "name": "search: new entrants (created in last 7d, stars>50)",
+      "ok": true,
+      "detail": {
+        "query": "created:>2026-09-18 stars:>50",
+        "requests": 1,
+        "totalCount": 285,
+        "retrieved": 100,
+        "remaining": 18
+      }
+    },
+    {
+      "name": "search pagination: 3 pages x 100 for topic:llm, no duplicate ids",
+      "ok": true,
+      "detail": {
+        "query": "topic:llm stars:>10 pushed:>2026-08-26",
+        "requests": 3,
+        "pages": 3,
+        "totalCount": 5374,
+        "retrieved": 300,
+        "unique": 300,
+        "remaining": 15
+      }
+    },
+    {
+      "name": "search result cap: page 11 x 100 is not retrievable (documented 1,000 cap)",
+      "ok": true,
+      "detail": {
+        "status": null,
+        "items": null,
+        "error": "GitHubApiError: smoke.search.cap: GitHub API error 422: Only the first 1000 search results are available"
+      }
+    }
+  ],
+  "measurements": {
+    "queries": [
+      {
+        "label": "AI repositories",
+        "query": "topic:ai stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 2591,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 28,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3142
+      },
+      {
+        "label": "AI agents",
+        "query": "topic:ai-agents stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 1639,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 27,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3503
+      },
+      {
+        "label": "LLM",
+        "query": "topic:llm stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 2124,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 26,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3453
+      },
+      {
+        "label": "MCP",
+        "query": "topic:mcp stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 1709,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 25,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 2979
+      },
+      {
+        "label": "RAG",
+        "query": "topic:rag stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 497,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 24,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3242
+      },
+      {
+        "label": "machine learning",
+        "query": "topic:machine-learning stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 1092,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 29,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3358
+      },
+      {
+        "label": "Java",
+        "query": "language:Java stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 3911,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 28,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3154
+      },
+      {
+        "label": "Spring",
+        "query": "topic:spring-boot stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 203,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 27,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3346
+      },
+      {
+        "label": "Kafka",
+        "query": "topic:kafka stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 191,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 26,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3669
+      },
+      {
+        "label": "Kubernetes",
+        "query": "topic:kubernetes stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 1279,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 25,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3895
+      },
+      {
+        "label": "AWS",
+        "query": "topic:aws stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 453,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 24,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3726
+      },
+      {
+        "label": "PostgreSQL",
+        "query": "topic:postgresql stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 629,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 23,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3029
+      },
+      {
+        "label": "Redis",
+        "query": "topic:redis stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 304,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 22,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3365
+      },
+      {
+        "label": "microservices",
+        "query": "topic:microservices stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 206,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 21,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3968
+      },
+      {
+        "label": "distributed systems",
+        "query": "topic:distributed-systems stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 159,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 20,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3483
+      },
+      {
+        "label": "developer tools",
+        "query": "topic:developer-tools stars:>100 pushed:>2026-08-26",
+        "requests": 1,
+        "totalCount": 1070,
+        "retrieved": 100,
+        "incompleteResults": false,
+        "remaining": 19,
+        "limit": 30,
+        "resource": "search",
+        "durationMs": 3199
+      }
+    ],
+    "newEntrants": {
+      "query": "created:>2026-09-18 stars:>50",
+      "requests": 1,
+      "totalCount": 285,
+      "retrieved": 100,
+      "remaining": 18
+    },
+    "pagination": {
+      "query": "topic:llm stars:>10 pushed:>2026-08-26",
+      "requests": 3,
+      "pages": 3,
+      "totalCount": 5374,
+      "retrieved": 300,
+      "unique": 300,
+      "remaining": 15
+    },
+    "pageBeyondCap": {
+      "status": null,
+      "items": null,
+      "error": "GitHubApiError: smoke.search.cap: GitHub API error 422: Only the first 1000 search results are available"
+    }
+  }
+}

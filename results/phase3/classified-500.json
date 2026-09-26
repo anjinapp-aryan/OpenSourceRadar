@@ -1,0 +1,43 @@
+{
+ "total": 500,
+ "byTopLevel": {
+  "AI": 177,
+  "ENGINEERING": 167,
+  "BOTH": 21,
+  "UNKNOWN": 135
+ },
+ "byCategory": {
+  "ai-agents": 65,
+  "ai-coding": 41,
+  "ai-developer-tools": 5,
+  "ai-image": 5,
+  "ai-infrastructure": 3,
+  "ai-video": 2,
+  "aws": 4,
+  "cloud": 10,
+  "databases": 40,
+  "developer-tools": 20,
+  "devops": 8,
+  "distributed-systems": 4,
+  "docker": 18,
+  "generative-ai": 18,
+  "infrastructure-as-code": 3,
+  "java": 37,
+  "kafka": 1,
+  "kubernetes": 12,
+  "llm": 71,
+  "local-ai": 9,
+  "machine-learning": 42,
+  "mcp": 31,
+  "microservices": 12,
+  "multimodal": 9,
+  "observability": 10,
+  "postgresql": 19,
+  "rag": 14,
+  "redis": 7,
+  "security": 28,
+  "spring-boot": 9,
+  "system-design": 3,
+  "testing": 6
+ }
+}

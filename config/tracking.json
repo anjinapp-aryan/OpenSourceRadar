@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "trackingVersion": "phase3-v1",
+  "eligibility": {
+    "topLevel": [
+      "AI",
+      "ENGINEERING",
+      "BOTH"
+    ],
+    "excludeArchived": true
+  },
+  "tiers": {
+    "hot": {
+      "refreshHours": 24
+    },
+    "warm": {
+      "refreshHours": 72
+    },
+    "dormant": {
+      "refreshHours": 168
+    }
+  },
+  "rules": {
+    "hot": {
+      "minStarsPerDay7d": 80,
+      "minGrowthPercent7d": 1,
+      "minGrowth7dForPercent": 100,
+      "newEntrantMaxAgeDays": 30,
+      "newEntrantMinStarsPerDay7d": 10
+    },
+    "warm": {
+      "minStarsPerDay7d": 8,
+      "minStarsPerDay30d": 8,
+      "activityMaxDays": 30,
+      "activityMinStars": 1000
+    },
+    "dormant": {
+      "minAgeDays": 30
+    }
+  },
+  "unassessed": {
+    "refreshHours": 24
+  },
+  "hysteresis": {
+    "demoteFactor": 0.7,
+    "minDaysInTier": {
+      "hot": 3,
+      "warm": 7,
+      "dormant": 0
+    }
+  },
+  "dueOrder": [
+    "HOT",
+    "UNASSESSED",
+    "WARM",
+    "DORMANT"
+  ]
+}

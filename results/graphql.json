@@ -1,0 +1,265 @@
+{
+  "script": "graphql",
+  "startedAt": "2026-09-25T01:44:01.432Z",
+  "durationMs": 45981,
+  "requests": {
+    "rest": 1,
+    "graphql": 10
+  },
+  "checks": [
+    {
+      "name": "graphql authentication (rateLimit-only query)",
+      "ok": true,
+      "detail": {
+        "cost": 1,
+        "limit": 5000,
+        "remaining": 4959,
+        "resetAt": "2026-09-25T02:27:13.000Z"
+      }
+    },
+    {
+      "name": "sample 100 repositories via REST search (stars:>50000)",
+      "ok": true,
+      "detail": {
+        "retrieved": 100,
+        "totalCount": 496
+      }
+    },
+    {
+      "name": "batch of 1 repositories in a single request",
+      "ok": true,
+      "detail": {
+        "batchSize": 1,
+        "requests": 1,
+        "cost": 1,
+        "remainingAfter": 4958,
+        "durationMs": 476,
+        "returned": 1,
+        "notFound": 0,
+        "withLanguage": 1,
+        "withTopics": 1,
+        "withLicense": 0,
+        "withLastCommit": 1,
+        "withDescription": 1
+      }
+    },
+    {
+      "name": "batch of 10 repositories in a single request",
+      "ok": true,
+      "detail": {
+        "batchSize": 10,
+        "requests": 1,
+        "cost": 1,
+        "remainingAfter": 4957,
+        "durationMs": 2433,
+        "returned": 10,
+        "notFound": 0,
+        "withLanguage": 8,
+        "withTopics": 10,
+        "withLicense": 9,
+        "withLastCommit": 10,
+        "withDescription": 10
+      }
+    },
+    {
+      "name": "batch of 25 repositories in a single request",
+      "ok": true,
+      "detail": {
+        "batchSize": 25,
+        "requests": 1,
+        "cost": 1,
+        "remainingAfter": 4956,
+        "durationMs": 3863,
+        "returned": 25,
+        "notFound": 0,
+        "withLanguage": 19,
+        "withTopics": 20,
+        "withLicense": 23,
+        "withLastCommit": 25,
+        "withDescription": 25
+      }
+    },
+    {
+      "name": "batch of 50 repositories in a single request",
+      "ok": true,
+      "detail": {
+        "batchSize": 50,
+        "requests": 1,
+        "cost": 1,
+        "remainingAfter": 4955,
+        "durationMs": 6844,
+        "returned": 50,
+        "notFound": 0,
+        "withLanguage": 41,
+        "withTopics": 43,
+        "withLicense": 44,
+        "withLastCommit": 50,
+        "withDescription": 50
+      }
+    },
+    {
+      "name": "batch of 100 repositories in a single request",
+      "ok": false,
+      "error": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+    },
+    {
+      "name": "batch of 50 with commit count since 30d",
+      "ok": true,
+      "detail": {
+        "batchSize": 50,
+        "requests": 1,
+        "cost": 1,
+        "withCommitCount": 50,
+        "sampleCommitsInWindow": [
+          [
+            "codecrafters-io/build-your-own-x",
+            0
+          ],
+          [
+            "sindresorhus/awesome",
+            1
+          ],
+          [
+            "public-apis/public-apis",
+            452
+          ]
+        ]
+      }
+    },
+    {
+      "name": "batch of 100 with commit count since 30d",
+      "ok": false,
+      "error": "GitHubApiError: graphql.fetchRepositories: Resource limits for this query exceeded."
+    },
+    {
+      "name": "normalized snapshot sample",
+      "ok": true,
+      "detail": "codecrafters-io/build-your-own-x"
+    },
+    {
+      "name": "unknown repository reported in notFound, batch still succeeds",
+      "ok": true,
+      "detail": {
+        "cost": 1
+      }
+    }
+  ],
+  "measurements": {
+    "authQuery": {
+      "cost": 1,
+      "limit": 5000,
+      "remaining": 4959,
+      "resetAt": "2026-09-25T02:27:13.000Z"
+    },
+    "batches": [
+      {
+        "batchSize": 1,
+        "requests": 1,
+        "cost": 1,
+        "remainingAfter": 4958,
+        "durationMs": 476,
+        "returned": 1,
+        "notFound": 0,
+        "withLanguage": 1,
+        "withTopics": 1,
+        "withLicense": 0,
+        "withLastCommit": 1,
+        "withDescription": 1
+      },
+      {
+        "batchSize": 10,
+        "requests": 1,
+        "cost": 1,
+        "remainingAfter": 4957,
+        "durationMs": 2433,
+        "returned": 10,
+        "notFound": 0,
+        "withLanguage": 8,
+        "withTopics": 10,
+        "withLicense": 9,
+        "withLastCommit": 10,
+        "withDescription": 10
+      },
+      {
+        "batchSize": 25,
+        "requests": 1,
+        "cost": 1,
+        "remainingAfter": 4956,
+        "durationMs": 3863,
+        "returned": 25,
+        "notFound": 0,
+        "withLanguage": 19,
+        "withTopics": 20,
+        "withLicense": 23,
+        "withLastCommit": 25,
+        "withDescription": 25
+      },
+      {
+        "batchSize": 50,
+        "requests": 1,
+        "cost": 1,
+        "remainingAfter": 4955,
+        "durationMs": 6844,
+        "returned": 50,
+        "notFound": 0,
+        "withLanguage": 41,
+        "withTopics": 43,
+        "withLicense": 44,
+        "withLastCommit": 50,
+        "withDescription": 50
+      }
+    ],
+    "commitActivity": [
+      {
+        "batchSize": 50,
+        "requests": 1,
+        "cost": 1,
+        "withCommitCount": 50,
+        "sampleCommitsInWindow": [
+          [
+            "codecrafters-io/build-your-own-x",
+            0
+          ],
+          [
+            "sindresorhus/awesome",
+            1
+          ],
+          [
+            "public-apis/public-apis",
+            452
+          ]
+        ]
+      }
+    ],
+    "sampleSnapshot": {
+      "repositoryId": "132750724",
+      "owner": "codecrafters-io",
+      "name": "build-your-own-x",
+      "fullName": "codecrafters-io/build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "description": "Master programming by recreating your favorite technologies from scratch.",
+      "stars": 549357,
+      "forks": 51619,
+      "openIssues": 278,
+      "language": "Markdown",
+      "topics": [
+        "programming",
+        "tutorials",
+        "tutorial-code",
+        "tutorial-exercises",
+        "free",
+        "awesome-list"
+      ],
+      "license": null,
+      "createdAt": "2018-05-09T12:03:18Z",
+      "updatedAt": "2026-09-25T01:39:21Z",
+      "collectedAt": "2026-09-25T01:44:45.927Z",
+      "source": "graphql",
+      "pushedAt": "2026-07-14T19:25:58Z",
+      "defaultBranch": "master",
+      "lastCommitAt": "2026-07-14T19:25:58Z",
+      "isArchived": false,
+      "isFork": false
+    }
+  }
+}

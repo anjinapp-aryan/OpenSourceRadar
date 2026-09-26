@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "classifierVersion": "phase3-v1",
+  "weights": {
+    "strongTopic": [
+      4,
+      2,
+      1
+    ],
+    "weakTopic": 1.5,
+    "weakTopicMax": 3,
+    "nameStrong": 3,
+    "nameWeak": 1,
+    "descriptionStrong": 3,
+    "descriptionStrongMax": 2,
+    "descriptionWeak": 1,
+    "descriptionWeakMax": 2,
+    "readmeStrong": 1,
+    "readmeStrongMax": 2,
+    "exclusionTopic": -6,
+    "exclusionKeyword": -4,
+    "exclusionKeywordMax": 2
+  },
+  "acceptance": {
+    "minScore": 6,
+    "minEvidenceKinds": 1,
+    "requireIdentityEvidence": true,
+    "bothMinRatio": 0.5,
+    "corroboratedMinScore": 6,
+    "corroboratedMinKinds": 2
+  },
+  "confidence": {
+    "halfScore": 8,
+    "high": 0.7,
+    "medium": 0.5
+  },
+  "contextSignals": [
+    {
+      "id": "educational-content",
+      "description": "Interview prep, tutorials, courses, roadmaps and curated lists describe a subject without being an implementation of it; topics on such repositories are frequently broad tags, not the repository's subject.",
+      "topics": [
+        "interview",
+        "interview-questions",
+        "interview-preparation",
+        "coding-interview",
+        "leetcode",
+        "interviews",
+        "tutorial",
+        "tutorials",
+        "course",
+        "courses",
+        "curriculum",
+        "cheatsheet",
+        "cheat-sheet",
+        "roadmap",
+        "awesome",
+        "awesome-list",
+        "awesome-lists",
+        "lessons",
+        "study-notes",
+        "learning-resources"
+      ],
+      "keywords": [
+        "interview",
+        "interviews",
+        "tutorial",
+        "tutorials",
+        "course",
+        "courses",
+        "curriculum",
+        "cheatsheet",
+        "roadmap",
+        "lessons",
+        "study notes",
+        "awesome list",
+        "面试",
+        "教程",
+        "指南",
+        "学习笔记"
+      ],
+      "effect": {
+        "topicEvidenceFactor": 0.5,
+        "domains": [
+          "ai",
+          "engineering"
+        ]
+      }
+    }
+  ]
+}

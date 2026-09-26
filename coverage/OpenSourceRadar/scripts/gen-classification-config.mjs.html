@@ -1,0 +1,1090 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for OpenSourceRadar/scripts/gen-classification-config.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">OpenSourceRadar/scripts</a> gen-classification-config.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/335</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/335</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a>
+<a name='L147'></a><a href='#L147'>147</a>
+<a name='L148'></a><a href='#L148'>148</a>
+<a name='L149'></a><a href='#L149'>149</a>
+<a name='L150'></a><a href='#L150'>150</a>
+<a name='L151'></a><a href='#L151'>151</a>
+<a name='L152'></a><a href='#L152'>152</a>
+<a name='L153'></a><a href='#L153'>153</a>
+<a name='L154'></a><a href='#L154'>154</a>
+<a name='L155'></a><a href='#L155'>155</a>
+<a name='L156'></a><a href='#L156'>156</a>
+<a name='L157'></a><a href='#L157'>157</a>
+<a name='L158'></a><a href='#L158'>158</a>
+<a name='L159'></a><a href='#L159'>159</a>
+<a name='L160'></a><a href='#L160'>160</a>
+<a name='L161'></a><a href='#L161'>161</a>
+<a name='L162'></a><a href='#L162'>162</a>
+<a name='L163'></a><a href='#L163'>163</a>
+<a name='L164'></a><a href='#L164'>164</a>
+<a name='L165'></a><a href='#L165'>165</a>
+<a name='L166'></a><a href='#L166'>166</a>
+<a name='L167'></a><a href='#L167'>167</a>
+<a name='L168'></a><a href='#L168'>168</a>
+<a name='L169'></a><a href='#L169'>169</a>
+<a name='L170'></a><a href='#L170'>170</a>
+<a name='L171'></a><a href='#L171'>171</a>
+<a name='L172'></a><a href='#L172'>172</a>
+<a name='L173'></a><a href='#L173'>173</a>
+<a name='L174'></a><a href='#L174'>174</a>
+<a name='L175'></a><a href='#L175'>175</a>
+<a name='L176'></a><a href='#L176'>176</a>
+<a name='L177'></a><a href='#L177'>177</a>
+<a name='L178'></a><a href='#L178'>178</a>
+<a name='L179'></a><a href='#L179'>179</a>
+<a name='L180'></a><a href='#L180'>180</a>
+<a name='L181'></a><a href='#L181'>181</a>
+<a name='L182'></a><a href='#L182'>182</a>
+<a name='L183'></a><a href='#L183'>183</a>
+<a name='L184'></a><a href='#L184'>184</a>
+<a name='L185'></a><a href='#L185'>185</a>
+<a name='L186'></a><a href='#L186'>186</a>
+<a name='L187'></a><a href='#L187'>187</a>
+<a name='L188'></a><a href='#L188'>188</a>
+<a name='L189'></a><a href='#L189'>189</a>
+<a name='L190'></a><a href='#L190'>190</a>
+<a name='L191'></a><a href='#L191'>191</a>
+<a name='L192'></a><a href='#L192'>192</a>
+<a name='L193'></a><a href='#L193'>193</a>
+<a name='L194'></a><a href='#L194'>194</a>
+<a name='L195'></a><a href='#L195'>195</a>
+<a name='L196'></a><a href='#L196'>196</a>
+<a name='L197'></a><a href='#L197'>197</a>
+<a name='L198'></a><a href='#L198'>198</a>
+<a name='L199'></a><a href='#L199'>199</a>
+<a name='L200'></a><a href='#L200'>200</a>
+<a name='L201'></a><a href='#L201'>201</a>
+<a name='L202'></a><a href='#L202'>202</a>
+<a name='L203'></a><a href='#L203'>203</a>
+<a name='L204'></a><a href='#L204'>204</a>
+<a name='L205'></a><a href='#L205'>205</a>
+<a name='L206'></a><a href='#L206'>206</a>
+<a name='L207'></a><a href='#L207'>207</a>
+<a name='L208'></a><a href='#L208'>208</a>
+<a name='L209'></a><a href='#L209'>209</a>
+<a name='L210'></a><a href='#L210'>210</a>
+<a name='L211'></a><a href='#L211'>211</a>
+<a name='L212'></a><a href='#L212'>212</a>
+<a name='L213'></a><a href='#L213'>213</a>
+<a name='L214'></a><a href='#L214'>214</a>
+<a name='L215'></a><a href='#L215'>215</a>
+<a name='L216'></a><a href='#L216'>216</a>
+<a name='L217'></a><a href='#L217'>217</a>
+<a name='L218'></a><a href='#L218'>218</a>
+<a name='L219'></a><a href='#L219'>219</a>
+<a name='L220'></a><a href='#L220'>220</a>
+<a name='L221'></a><a href='#L221'>221</a>
+<a name='L222'></a><a href='#L222'>222</a>
+<a name='L223'></a><a href='#L223'>223</a>
+<a name='L224'></a><a href='#L224'>224</a>
+<a name='L225'></a><a href='#L225'>225</a>
+<a name='L226'></a><a href='#L226'>226</a>
+<a name='L227'></a><a href='#L227'>227</a>
+<a name='L228'></a><a href='#L228'>228</a>
+<a name='L229'></a><a href='#L229'>229</a>
+<a name='L230'></a><a href='#L230'>230</a>
+<a name='L231'></a><a href='#L231'>231</a>
+<a name='L232'></a><a href='#L232'>232</a>
+<a name='L233'></a><a href='#L233'>233</a>
+<a name='L234'></a><a href='#L234'>234</a>
+<a name='L235'></a><a href='#L235'>235</a>
+<a name='L236'></a><a href='#L236'>236</a>
+<a name='L237'></a><a href='#L237'>237</a>
+<a name='L238'></a><a href='#L238'>238</a>
+<a name='L239'></a><a href='#L239'>239</a>
+<a name='L240'></a><a href='#L240'>240</a>
+<a name='L241'></a><a href='#L241'>241</a>
+<a name='L242'></a><a href='#L242'>242</a>
+<a name='L243'></a><a href='#L243'>243</a>
+<a name='L244'></a><a href='#L244'>244</a>
+<a name='L245'></a><a href='#L245'>245</a>
+<a name='L246'></a><a href='#L246'>246</a>
+<a name='L247'></a><a href='#L247'>247</a>
+<a name='L248'></a><a href='#L248'>248</a>
+<a name='L249'></a><a href='#L249'>249</a>
+<a name='L250'></a><a href='#L250'>250</a>
+<a name='L251'></a><a href='#L251'>251</a>
+<a name='L252'></a><a href='#L252'>252</a>
+<a name='L253'></a><a href='#L253'>253</a>
+<a name='L254'></a><a href='#L254'>254</a>
+<a name='L255'></a><a href='#L255'>255</a>
+<a name='L256'></a><a href='#L256'>256</a>
+<a name='L257'></a><a href='#L257'>257</a>
+<a name='L258'></a><a href='#L258'>258</a>
+<a name='L259'></a><a href='#L259'>259</a>
+<a name='L260'></a><a href='#L260'>260</a>
+<a name='L261'></a><a href='#L261'>261</a>
+<a name='L262'></a><a href='#L262'>262</a>
+<a name='L263'></a><a href='#L263'>263</a>
+<a name='L264'></a><a href='#L264'>264</a>
+<a name='L265'></a><a href='#L265'>265</a>
+<a name='L266'></a><a href='#L266'>266</a>
+<a name='L267'></a><a href='#L267'>267</a>
+<a name='L268'></a><a href='#L268'>268</a>
+<a name='L269'></a><a href='#L269'>269</a>
+<a name='L270'></a><a href='#L270'>270</a>
+<a name='L271'></a><a href='#L271'>271</a>
+<a name='L272'></a><a href='#L272'>272</a>
+<a name='L273'></a><a href='#L273'>273</a>
+<a name='L274'></a><a href='#L274'>274</a>
+<a name='L275'></a><a href='#L275'>275</a>
+<a name='L276'></a><a href='#L276'>276</a>
+<a name='L277'></a><a href='#L277'>277</a>
+<a name='L278'></a><a href='#L278'>278</a>
+<a name='L279'></a><a href='#L279'>279</a>
+<a name='L280'></a><a href='#L280'>280</a>
+<a name='L281'></a><a href='#L281'>281</a>
+<a name='L282'></a><a href='#L282'>282</a>
+<a name='L283'></a><a href='#L283'>283</a>
+<a name='L284'></a><a href='#L284'>284</a>
+<a name='L285'></a><a href='#L285'>285</a>
+<a name='L286'></a><a href='#L286'>286</a>
+<a name='L287'></a><a href='#L287'>287</a>
+<a name='L288'></a><a href='#L288'>288</a>
+<a name='L289'></a><a href='#L289'>289</a>
+<a name='L290'></a><a href='#L290'>290</a>
+<a name='L291'></a><a href='#L291'>291</a>
+<a name='L292'></a><a href='#L292'>292</a>
+<a name='L293'></a><a href='#L293'>293</a>
+<a name='L294'></a><a href='#L294'>294</a>
+<a name='L295'></a><a href='#L295'>295</a>
+<a name='L296'></a><a href='#L296'>296</a>
+<a name='L297'></a><a href='#L297'>297</a>
+<a name='L298'></a><a href='#L298'>298</a>
+<a name='L299'></a><a href='#L299'>299</a>
+<a name='L300'></a><a href='#L300'>300</a>
+<a name='L301'></a><a href='#L301'>301</a>
+<a name='L302'></a><a href='#L302'>302</a>
+<a name='L303'></a><a href='#L303'>303</a>
+<a name='L304'></a><a href='#L304'>304</a>
+<a name='L305'></a><a href='#L305'>305</a>
+<a name='L306'></a><a href='#L306'>306</a>
+<a name='L307'></a><a href='#L307'>307</a>
+<a name='L308'></a><a href='#L308'>308</a>
+<a name='L309'></a><a href='#L309'>309</a>
+<a name='L310'></a><a href='#L310'>310</a>
+<a name='L311'></a><a href='#L311'>311</a>
+<a name='L312'></a><a href='#L312'>312</a>
+<a name='L313'></a><a href='#L313'>313</a>
+<a name='L314'></a><a href='#L314'>314</a>
+<a name='L315'></a><a href='#L315'>315</a>
+<a name='L316'></a><a href='#L316'>316</a>
+<a name='L317'></a><a href='#L317'>317</a>
+<a name='L318'></a><a href='#L318'>318</a>
+<a name='L319'></a><a href='#L319'>319</a>
+<a name='L320'></a><a href='#L320'>320</a>
+<a name='L321'></a><a href='#L321'>321</a>
+<a name='L322'></a><a href='#L322'>322</a>
+<a name='L323'></a><a href='#L323'>323</a>
+<a name='L324'></a><a href='#L324'>324</a>
+<a name='L325'></a><a href='#L325'>325</a>
+<a name='L326'></a><a href='#L326'>326</a>
+<a name='L327'></a><a href='#L327'>327</a>
+<a name='L328'></a><a href='#L328'>328</a>
+<a name='L329'></a><a href='#L329'>329</a>
+<a name='L330'></a><a href='#L330'>330</a>
+<a name='L331'></a><a href='#L331'>331</a>
+<a name='L332'></a><a href='#L332'>332</a>
+<a name='L333'></a><a href='#L333'>333</a>
+<a name='L334'></a><a href='#L334'>334</a>
+<a name='L335'></a><a href='#L335'>335</a>
+<a name='L336'></a><a href='#L336'>336</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >// Writes the `classification` block of every category in config/categories/*.json and</span></span></span>
+<span class="cstat-no" title="statement not covered" >// config/classification.json (global scoring). The JSON files are the source of truth</span>
+<span class="cstat-no" title="statement not covered" >// afterwards; this script only keeps the ~1,000 terms reviewable in one place.</span>
+<span class="cstat-no" title="statement not covered" >//</span>
+<span class="cstat-no" title="statement not covered" >// Vocabulary provenance: topic aliases were adapted from GitHub's github/explore topic</span>
+<span class="cstat-no" title="statement not covered" >// pages (CC BY 4.0, see THIRD_PARTY.md); ambiguity rules (exclusions) come from the</span>
+<span class="cstat-no" title="statement not covered" >// measured 500-repository dataset (docs/CLASSIFICATION.md, "Evidence").</span>
+<span class="cstat-no" title="statement not covered" >import { readFileSync, writeFileSync } from 'node:fs';</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >/** slug -&gt; classification block. strong* = specific to the category; weak* = supportive only. */</span>
+<span class="cstat-no" title="statement not covered" >const rules = {</span>
+<span class="cstat-no" title="statement not covered" >  // ------------------------------------------------------------------ AI</span>
+<span class="cstat-no" title="statement not covered" >  'ai-agents': {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['ai-agents', 'ai-agent', 'ai-autonomous-agent', 'agentic-ai', 'agentic', 'autonomous-agents', 'autonomous-agent', 'multi-agent', 'multi-agents', 'multi-agent-systems', 'agents-sdk', 'aiagentframework', 'agent-framework'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['agent', 'agents', 'agentic-workflow', 'orchestration', 'workflow'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['ai agent', 'ai agents', 'agentic', 'autonomous agent', 'autonomous agents', 'multi-agent', 'multi agent', 'agent framework', 'llm agent', 'coding agent'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['agent', 'agents', 'orchestration', 'tool use'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: ['build-agent', 'ci-agent', 'user-agent', 'ssh-agent', 'jenkins-agent', 'monitoring-agent', 'zabbix-agent', 'http-agent'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: ['build agent', 'user agent', 'ssh agent', 'jenkins agent', 'monitoring agent', 'ci agent', 'deployment agent', 'real estate agent', 'travel agent', 'insurance agent', 'agent based modeling', 'agent-based modeling'],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  llm: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['llm', 'llms', 'large-language-model', 'large-language-models', 'language-model', 'language-models', 'langchain', 'llamaindex', 'litellm'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['openai', 'chatgpt', 'gpt', 'gpt-4', 'claude', 'anthropic', 'gemini', 'deepseek', 'qwen', 'llama', 'mistral', 'transformers', 'prompt-engineering', 'prompts', 'nlp', 'natural-language-processing', 'chatbot'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['llm', 'llms', 'large language model', 'large language models', 'language model'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['openai', 'chatgpt', 'gpt', 'claude', 'gemini', 'deepseek', 'qwen', 'transformer', 'chatbot'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  rag: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['rag', 'retrieval-augmented-generation', 'rag-pipeline', 'graphrag', 'agentic-rag'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['embeddings', 'vector-database', 'vector-search', 'semantic-search', 'knowledge-base', 'vector-store'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['rag', 'retrieval augmented generation', 'retrieval-augmented', 'graphrag'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['vector search', 'embeddings', 'knowledge base', 'semantic search', 'vector database'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: ['rag doll', 'ragdoll', 'rag tag', 'ragnarok'],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  mcp: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['mcp', 'model-context-protocol', 'mcp-server', 'mcp-servers', 'mcp-client', 'mcp-tools'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['mcp-host'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['mcp', 'model context protocol', 'mcp server', 'mcp servers', 'mcp client'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >    // MCP is also "Minecraft Coder Pack" and "Microsoft Certified Professional".</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: ['minecraft', 'minecraft-mod', 'forge', 'modding'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: ['minecraft', 'coder pack', 'certified professional'],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  'ai-coding': {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['ai-coding', 'ai-coding-assistant', 'coding-assistant', 'coding-agent', 'code-generation', 'claude-code', 'github-copilot', 'vibe-coding', 'code-completion', 'ai-code-review', 'ai-pair-programming', 'aider', 'cline'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['codex', 'cursor', 'copilot', 'agent-skills', 'skills', 'code-review', 'ai-tools'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['ai coding', 'coding assistant', 'coding agent', 'code generation', 'claude code', 'github copilot', 'vibe coding', 'ai pair programming', 'code completion', 'ai code review'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['copilot', 'cursor', 'codex', 'code review'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: ['mouse-cursor', 'cursors', 'cursor-theme', 'xcursor', 'cursor-icons'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: ['mouse cursor', 'database cursor', 'cursor position', 'cursor theme'],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  'local-ai': {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['local-llm', 'local-ai', 'localai', 'ollama', 'llama-cpp', 'llamacpp', 'on-device-ai', 'gguf', 'offline-ai', 'mlx', 'lm-studio'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['self-hosted', 'privacy', 'offline', 'edge-ai'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['local llm', 'local ai', 'run llms locally', 'ollama', 'llama.cpp', 'on-device', 'gguf', 'offline ai'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['self-hosted', 'privacy', 'offline', 'locally'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  multimodal: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['multimodal', 'multimodal-ai', 'multimodal-llm', 'vision-language-model', 'vlm', 'speech-to-text', 'text-to-speech', 'tts', 'asr', 'speech-recognition', 'whisper', 'ocr'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['computer-vision', 'audio', 'image-recognition', 'speech', 'voice'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['multimodal', 'vision language', 'vision-language', 'speech recognition', 'text to speech', 'speech to text', 'ocr', 'voice cloning'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['vision', 'audio', 'speech', 'voice'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  'ai-infrastructure': {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['llm-inference', 'llm-serving', 'llm-inference-server', 'model-serving', 'inference-engine', 'inference-server', 'mlops', 'llmops', 'vllm', 'tensorrt', 'triton-inference-server', 'distributed-training', 'model-deployment', 'kv-cache', 'quantization'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['gpu', 'cuda', 'inference', 'training', 'serving', 'deployment'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['inference engine', 'inference server', 'model serving', 'llm inference', 'llm serving', 'mlops', 'llmops', 'distributed training', 'gpu cluster', 'model deployment'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['inference', 'gpu', 'cuda', 'quantization', 'serving', 'throughput'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  'ai-developer-tools': {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['llm-evaluation', 'llm-observability', 'llm-gateway', 'llm-proxy', 'llm-router', 'llm-testing', 'prompt-management', 'ai-sdk', 'agent-observability', 'guardrails', 'evals'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['prompt-engineering', 'prompts', 'sdk', 'evaluation', 'observability', 'tracing', 'gateway', 'playground'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['llm evaluation', 'llm observability', 'llm gateway', 'llm proxy', 'prompt management', 'ai sdk', 'llm sdk', 'agent observability', 'evals', 'guardrails'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['prompt', 'prompts', 'sdk', 'evaluation', 'tracing', 'gateway'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  'machine-learning': {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['machine-learning', 'machine-learning-algorithms', 'deep-learning', 'neural-network', 'neural-networks', 'pytorch', 'tensorflow', 'scikit-learn', 'reinforcement-learning', 'jax', 'keras', 'xgboost'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['ai', 'artificial-intelligence', 'data-science', 'nlp', 'computer-vision', 'transformers', 'ml', 'research'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['machine learning', 'deep learning', 'neural network', 'neural networks', 'reinforcement learning', 'pytorch', 'tensorflow', 'scikit-learn'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['ml', 'model', 'models', 'training', 'dataset'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  'generative-ai': {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['generative-ai', 'genai', 'gen-ai', 'generative-model', 'generative-models', 'diffusion-models', 'text-generation'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['ai', 'artificial-intelligence', 'chatgpt', 'gpt', 'prompt'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['generative ai', 'genai', 'gen ai', 'text generation', 'generative model'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['ai', 'artificial intelligence'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  'ai-image': {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['text-to-image', 'image-generation', 'stable-diffusion', 'comfyui', 'ai-art', 'flux', 'sdxl'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['diffusion', 'generative-art', 'lora', 'image-editing'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['text to image', 'text-to-image', 'image generation', 'stable diffusion', 'comfyui', 'ai art', 'image generator'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['diffusion', 'flux', 'lora', 'image editing'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: ['docker image', 'container image', 'disk image', 'base image', 'image registry', 'iso image'],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  'ai-video': {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['text-to-video', 'video-generation', 'ai-video', 'ai-video-generation', 'image-to-video', 'video-diffusion'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['video-editing', 'video', 'animation', 'sora', 'veo'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['text to video', 'text-to-video', 'video generation', 'image to video', 'ai video', 'video generator'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['video editing', 'video', 'animation'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: ['video-player', 'video-downloader', 'youtube-dl', 'video-streaming'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: ['video player', 'video downloader', 'video conferencing', 'video streaming', 'video game'],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  'ai-music': {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['ai-music', 'music-generation', 'text-to-music', 'audio-generation', 'singing-voice-synthesis', 'music-ai', 'ai-audio'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['music', 'audio', 'midi', 'sound'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['music generation', 'text-to-music', 'text to music', 'ai music', 'audio generation', 'singing voice', 'song generation'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['music', 'audio', 'midi'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: ['music-player', 'spotify', 'music-streaming'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: ['music player', 'music streaming', 'spotify', 'music library', 'music bot', 'discord music', 'music downloader'],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  // --------------------------------------------------------- Engineering</span>
+<span class="cstat-no" title="statement not covered" >  java: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['java', 'java-8', 'java8', 'java-11', 'java11', 'java-17', 'java-21', 'javase', 'java-se', 'jvm', 'jdk', 'openjdk', 'java-library', 'jakarta-ee'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['kotlin', 'scala', 'maven', 'gradle', 'junit'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['java', 'jvm', 'jdk', 'openjdk', 'jakarta'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['kotlin', 'scala', 'maven', 'gradle'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >    languages: { Java: 3, Kotlin: 1, Scala: 1 },</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  'spring-boot': {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['spring-boot', 'springboot', 'spring', 'spring-framework', 'spring-cloud', 'spring-security', 'spring-data', 'spring-mvc', 'spring-webflux', 'spring-batch'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['springai', 'spring-ai', 'jpa', 'hibernate', 'mybatis'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['spring boot', 'springboot', 'spring framework', 'spring cloud', 'spring security', 'spring data'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['spring', 'jpa', 'hibernate', 'mybatis'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: ['react-spring', 'spring-animation', 'animation'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: ['spring cleaning', 'spring break', 'spring animation', 'react spring', 'spring physics'],</span>
+<span class="cstat-no" title="statement not covered" >    languages: { Java: 1, Kotlin: 1 },</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  microservices: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['microservices', 'microservice', 'service-mesh', 'api-gateway', 'istio', 'envoy', 'dapr', 'service-discovery'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['grpc', 'rest-api', 'api', 'consul', 'gateway', 'distributed'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['microservice', 'microservices', 'service mesh', 'api gateway', 'service discovery'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['grpc', 'gateway', 'rest api'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  kafka: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['kafka', 'apache-kafka', 'kafka-streams', 'kafka-connect', 'kafka-consumer', 'kafka-producer', 'redpanda', 'ksqldb', 'event-streaming', 'schema-registry'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['streaming', 'pubsub', 'message-queue', 'message-broker', 'event-driven', 'event-sourcing', 'rabbitmq', 'pulsar'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['kafka', 'redpanda', 'event streaming', 'kafka streams'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['message broker', 'message queue', 'event driven', 'pub/sub'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: ['franz kafka', 'kafka on the shore', 'kafkaesque'],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  kubernetes: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['kubernetes', 'k8s', 'helm', 'kubectl', 'kustomize', 'k3s', 'kubernetes-operator', 'kubebuilder', 'kubeadm', 'cni'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['cloud-native', 'containers', 'container-orchestration', 'gitops', 'cncf', 'operator', 'service-mesh'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['kubernetes', 'k8s', 'helm', 'kubectl', 'kustomize', 'k3s'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['cloud native', 'container orchestration', 'operator', 'cncf'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  docker: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['docker', 'docker-container', 'dockerfile', 'podman', 'container-runtime', 'containerd', 'buildkit', 'docker-image'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['docker-compose', 'containers', 'containerization', 'docker-hub', 'oci'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['docker', 'dockerfile', 'docker compose', 'podman', 'containerd'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['container', 'containers', 'oci'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  aws: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['aws', 'amazon-web-services', 'aws-lambda', 'aws-cdk', 'aws-sdk', 'aws-cli', 'cloudformation', 'dynamodb', 'ec2', 'eks', 'boto3'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['serverless', 'cloud', 'amazon', 's3'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['aws', 'amazon web services', 'aws lambda', 'aws cdk', 'cloudformation', 'dynamodb'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['amazon', 'serverless', 's3'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  cloud: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['cloud-native', 'cloud-computing', 'multi-cloud', 'gcp', 'google-cloud', 'azure', 'cloud-infrastructure', 'cloudflare'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['cloud', 'serverless', 'paas', 'iaas', 'cloudflare-workers'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['cloud native', 'cloud computing', 'multi-cloud', 'multi cloud', 'google cloud', 'azure', 'gcp'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['cloud', 'serverless'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  postgresql: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['postgresql', 'postgres', 'pgsql', 'psql', 'plpgsql', 'pgvector', 'timescaledb', 'postgres-extension', 'pgbouncer', 'citus'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['sql', 'database', 'supabase'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['postgresql', 'postgres', 'pgvector', 'timescaledb', 'pgbouncer'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['sql', 'supabase'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  redis: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['redis', 'redis-db', 'redisdb', 'valkey', 'redis-cluster', 'redis-client', 'keydb', 'dragonfly', 'redisson'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['cache', 'caching', 'key-value', 'in-memory-database', 'kv-store', 'memcached'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['redis', 'valkey', 'keydb', 'dragonfly'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['cache', 'caching', 'key-value', 'in-memory'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  databases: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['database', 'databases', 'sql', 'nosql', 'olap', 'oltp', 'sqlite', 'duckdb', 'mysql', 'mariadb', 'mongodb', 'clickhouse', 'distributed-database', 'time-series-database', 'key-value-store', 'newsql', 'dbms'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['orm', 'data-engineering', 'analytics', 'etl', 'query-engine', 'vector-database'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['sql engine', 'olap', 'key-value store', 'dbms', 'sqlite', 'duckdb', 'mysql', 'mariadb', 'mongodb', 'clickhouse'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['database', 'databases', 'sql', 'orm', 'analytics'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: ['database of'],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  devops: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['devops', 'dev-ops', 'ci-cd', 'cicd', 'gitops', 'github-actions', 'argocd', 'jenkins', 'continuous-integration', 'continuous-delivery', 'continuous-deployment', 'gitlab-ci', 'tekton', 'release-automation'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['automation', 'pipeline', 'deployment', 'sre', 'infrastructure', 'monitoring'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['devops', 'ci/cd', 'gitops', 'github actions', 'continuous integration', 'continuous delivery', 'argo cd', 'jenkins'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['automation', 'pipeline', 'deployment', 'sre'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  observability: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['observability', 'opentelemetry', 'otel', 'tracing', 'distributed-tracing', 'prometheus', 'grafana', 'apm'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['monitoring', 'metrics', 'logging', 'logs', 'alerting', 'telemetry', 'dashboards'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['observability', 'opentelemetry', 'distributed tracing', 'prometheus', 'grafana', 'apm'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['monitoring', 'metrics', 'logging', 'telemetry', 'alerting'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  security: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['security', 'security-tools', 'cybersecurity', 'infosec', 'devsecops', 'vulnerability-scanner', 'pentesting', 'penetration-testing', 'sast', 'dast', 'malware', 'cve', 'exploit', 'red-team', 'blue-team', 'siem', 'owasp', 'appsec', 'supply-chain-security', 'secrets-detection'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['privacy', 'encryption', 'cryptography', 'authentication', 'auth', 'oauth', 'vulnerability', 'hacking'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['security', 'cybersecurity', 'devsecops', 'pentest', 'penetration testing', 'vulnerability', 'sast', 'malware', 'exploit', 'owasp', 'red team'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['privacy', 'encryption', 'authentication', 'password'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: ['security camera', 'surveillance camera', 'home security'],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  'distributed-systems': {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['distributed-systems', 'distributed-computing', 'consensus', 'raft', 'paxos', 'crdt', 'distributed-database', 'replication', 'sharding'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['distributed', 'p2p', 'high-availability', 'scalability', 'fault-tolerance', 'cluster'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['distributed system', 'distributed systems', 'consensus', 'raft', 'paxos', 'crdt', 'replication', 'sharding', 'fault tolerance'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['distributed', 'cluster', 'high availability', 'scalability'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: ['blockchain', 'cryptocurrency', 'web3', 'bitcoin', 'ethereum', 'smart-contracts'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: ['distributed ledger', 'blockchain'],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  'system-design': {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['system-design', 'system-design-interview', 'software-architecture', 'design-patterns', 'domain-driven-design', 'ddd', 'clean-architecture', 'hexagonal-architecture', 'event-driven-architecture', 'cqrs', 'architecture'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['patterns', 'software-design', 'best-practices'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['system design', 'software architecture', 'design patterns', 'domain driven design', 'ddd', 'clean architecture', 'hexagonal architecture', 'cqrs', '系统设计'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['architecture', 'patterns', 'best practices'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: ['cpu architecture', 'instruction set', 'computer architecture', 'x86 architecture', 'arm architecture'],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  'developer-tools': {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['developer-tools', 'devtools', 'developer-productivity', 'developer-experience', 'dx', 'code-editor', 'ide', 'linter', 'formatter', 'debugger', 'static-analysis', 'code-quality'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['cli', 'terminal', 'command-line', 'productivity', 'tools', 'utility', 'vscode-extension', 'automation'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['developer tools', 'developer tool', 'developer productivity', 'developer experience', 'devtools', 'code editor', 'ide', 'linter', 'formatter', 'debugger', 'static analysis'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['cli', 'terminal', 'command line', 'productivity', 'tool'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  'infrastructure-as-code': {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['infrastructure-as-code', 'iac', 'terraform', 'hashicorp-terraform', 'terraform-module', 'terraform-modules', 'terraform-providers', 'opentofu', 'pulumi', 'ansible', 'crossplane', 'terragrunt', 'bicep', 'packer'],</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['provisioning', 'configuration-management', 'infrastructure', 'hcl', 'cdk'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['infrastructure as code', 'iac', 'terraform', 'opentofu', 'pulumi', 'ansible', 'terragrunt', 'crossplane', 'cloudformation'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['provisioning', 'configuration management'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >    languages: { HCL: 3 },</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  testing: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopics: ['testing', 'testing-tools', 'testing-framework', 'test-automation', 'unit-testing', 'e2e-testing', 'end-to-end-testing', 'integration-testing', 'cypress', 'jest', 'pytest', 'junit', 'load-testing', 'fuzzing', 'mutation-testing', 'test-framework', 'mocking', 'tdd', 'bdd'],</span>
+<span class="cstat-no" title="statement not covered" >    // playwright/selenium/puppeteer are as often used for browser automation as for testing</span>
+<span class="cstat-no" title="statement not covered" >    weakTopics: ['test', 'tests', 'playwright', 'selenium', 'puppeteer', 'qa', 'quality', 'coverage', 'benchmark', 'assertions'],</span>
+<span class="cstat-no" title="statement not covered" >    strongKeywords: ['testing framework', 'test automation', 'unit test', 'unit testing', 'e2e testing', 'end-to-end testing', 'integration testing', 'load testing', 'fuzzing', 'mutation testing', 'test runner', 'cypress', 'pytest', 'jest', 'junit'],</span>
+<span class="cstat-no" title="statement not covered" >    weakKeywords: ['testing', 'test', 'tests', 'qa', 'mock', 'mocking', 'playwright', 'selenium'],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopics: [],</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywords: [],</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >};</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >const NAMES = { 'spring-boot': 'Spring' };</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >for (const file of ['ai', 'engineering']) {</span>
+<span class="cstat-no" title="statement not covered" >  const path = `config/categories/${file}.json`;</span>
+<span class="cstat-no" title="statement not covered" >  const doc = JSON.parse(readFileSync(path, 'utf8'));</span>
+<span class="cstat-no" title="statement not covered" >  for (const c of doc.categories) {</span>
+<span class="cstat-no" title="statement not covered" >    const r = rules[c.slug];</span>
+<span class="cstat-no" title="statement not covered" >    if (!r) throw new Error(`no classification rules for ${c.slug}`);</span>
+<span class="cstat-no" title="statement not covered" >    const { languages, ...lists } = r;</span>
+<span class="cstat-no" title="statement not covered" >    for (const [k, v] of Object.entries(lists)) lists[k] = [...new Set(v.map((x) =&gt; x.toLowerCase()))];</span>
+<span class="cstat-no" title="statement not covered" >    c.classification = { ...lists, languages: languages ?? {} };</span>
+<span class="cstat-no" title="statement not covered" >    if (NAMES[c.slug]) c.name = NAMES[c.slug];</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  writeFileSync(path, JSON.stringify(doc, null, 2) + '\n');</span>
+<span class="cstat-no" title="statement not covered" >  console.log(`${file}: ${doc.categories.length} categories`);</span>
+<span class="cstat-no" title="statement not covered" >}</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >const global = {</span>
+<span class="cstat-no" title="statement not covered" >  schemaVersion: 1,</span>
+<span class="cstat-no" title="statement not covered" >  classifierVersion: 'phase3-v1',</span>
+<span class="cstat-no" title="statement not covered" >  // CONFIGURED initial weights; see docs/CLASSIFICATION.md for how each was chosen and how it is tested.</span>
+<span class="cstat-no" title="statement not covered" >  weights: {</span>
+<span class="cstat-no" title="statement not covered" >    strongTopic: [4, 2, 1], // 1st, 2nd, 3rd+ distinct strong topic (diminishing: repeated tags do not explode the score)</span>
+<span class="cstat-no" title="statement not covered" >    weakTopic: 1.5,</span>
+<span class="cstat-no" title="statement not covered" >    weakTopicMax: 3,</span>
+<span class="cstat-no" title="statement not covered" >    nameStrong: 3,</span>
+<span class="cstat-no" title="statement not covered" >    nameWeak: 1,</span>
+<span class="cstat-no" title="statement not covered" >    descriptionStrong: 3,</span>
+<span class="cstat-no" title="statement not covered" >    descriptionStrongMax: 2,</span>
+<span class="cstat-no" title="statement not covered" >    descriptionWeak: 1,</span>
+<span class="cstat-no" title="statement not covered" >    descriptionWeakMax: 2,</span>
+<span class="cstat-no" title="statement not covered" >    readmeStrong: 1,</span>
+<span class="cstat-no" title="statement not covered" >    readmeStrongMax: 2,</span>
+<span class="cstat-no" title="statement not covered" >    exclusionTopic: -6,</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeyword: -4,</span>
+<span class="cstat-no" title="statement not covered" >    exclusionKeywordMax: 2,</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >  acceptance: { minScore: 6, minEvidenceKinds: 1, requireIdentityEvidence: true, bothMinRatio: 0.5, corroboratedMinScore: 6, corroboratedMinKinds: 2 },</span>
+<span class="cstat-no" title="statement not covered" >  confidence: { halfScore: 8, high: 0.7, medium: 0.5 },</span>
+<span class="cstat-no" title="statement not covered" >  contextSignals: [</span>
+<span class="cstat-no" title="statement not covered" >    {</span>
+<span class="cstat-no" title="statement not covered" >      id: 'educational-content',</span>
+<span class="cstat-no" title="statement not covered" >      description: 'Interview prep, tutorials, courses, roadmaps and curated lists describe a subject without being an implementation of it; topics on such repositories are frequently broad tags, not the repository\'s subject.',</span>
+<span class="cstat-no" title="statement not covered" >      topics: ['interview', 'interview-questions', 'interview-preparation', 'coding-interview', 'leetcode', 'interviews', 'tutorial', 'tutorials', 'course', 'courses', 'curriculum', 'cheatsheet', 'cheat-sheet', 'roadmap', 'awesome', 'awesome-list', 'awesome-lists', 'lessons', 'study-notes', 'learning-resources'],</span>
+<span class="cstat-no" title="statement not covered" >      keywords: ['interview', 'interviews', 'tutorial', 'tutorials', 'course', 'courses', 'curriculum', 'cheatsheet', 'roadmap', 'lessons', 'study notes', 'awesome list', '面试', '教程', '指南', '学习笔记'],</span>
+<span class="cstat-no" title="statement not covered" >      effect: { topicEvidenceFactor: 0.5, domains: ['ai', 'engineering'] },</span>
+<span class="cstat-no" title="statement not covered" >    },</span>
+<span class="cstat-no" title="statement not covered" >  ],</span>
+<span class="cstat-no" title="statement not covered" >};</span>
+<span class="cstat-no" title="statement not covered" >writeFileSync('config/classification.json', JSON.stringify(global, null, 2) + '\n');</span>
+<span class="cstat-no" title="statement not covered" >console.log('config/classification.json written');</span>
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-09-26T06:00:20.113Z
+            </div>
+        <script src="../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
+    </body>
+</html>
+    

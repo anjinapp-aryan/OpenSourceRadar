@@ -1,0 +1,49 @@
+{
+  "written": false,
+  "out": "data/repositories.json",
+  "candidates": 4397,
+  "selected": 4397,
+  "repositories": 0,
+  "failures": [],
+  "durationMs": 1668866,
+  "requests": {
+    "rest": 100,
+    "graphql": 0
+  },
+  "cache": {
+    "hits": 0,
+    "misses": 0,
+    "coalesced": 0,
+    "storeHits": 0
+  },
+  "discovery": [
+    {
+      "domain": "ai",
+      "queries": 42,
+      "requests": 42,
+      "unique": 1998,
+      "accepted": 1988,
+      "rejected": {
+        "belowMinStars": 0,
+        "fork": 0,
+        "archived": 10,
+        "irrelevant": 0
+      },
+      "failedQueries": 0
+    },
+    {
+      "domain": "engineering",
+      "queries": 57,
+      "requests": 57,
+      "unique": 2619,
+      "accepted": 2617,
+      "rejected": {
+        "belowMinStars": 0,
+        "fork": 0,
+        "archived": 2,
+        "irrelevant": 0
+      },
+      "failedQueries": 0
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "momentumVersion": "v1",
+  "windows": {
+    "short": 7,
+    "medium": 30,
+    "long": 90
+  },
+  "acceleration": {
+    "priorWindowDays": 28,
+    "priorGapDays": 7,
+    "minPriorVelocity": 1,
+    "cap": 3
+  },
+  "newEntrant": {
+    "maxAgeDays": 30,
+    "minGrowth": 30
+  },
+  "sustained": {
+    "minVelocity": 30,
+    "minComparableWindows": 2
+  },
+  "activity": {
+    "recentPushDays": 30,
+    "staleRepositoryDays": 90,
+    "staleRepositoryMultiplier": 0.85
+  },
+  "freshness": {
+    "maxStaleDays": 4
+  },
+  "score": {
+    "weights": {
+      "velocity": 0.55,
+      "relativeGrowth": 0.15,
+      "acceleration": 0.15,
+      "persistence": 0.15
+    },
+    "velocityBlend": {
+      "short": 0.6,
+      "medium": 0.3,
+      "long": 0.1
+    },
+    "velocityHalfPoint": 50,
+    "relativeGrowth": {
+      "halfPoint": 5,
+      "cap": 100,
+      "minAbsoluteGrowth30d": 100
+    }
+  },
+  "trends": {
+    "rising": {
+      "minScore": 50,
+      "minVelocity7d": 100,
+      "minGrowth7d": 700,
+      "minVelocity30d": 50,
+      "minAccelerationRatio": 0.6
+    },
+    "cooling": {
+      "maxAccelerationRatio": 0.6,
+      "minVelocity30d": 10
+    },
+    "movers": {
+      "minVelocityDelta": 25,
+      "minRankMovement": 0
+    }
+  }
+}

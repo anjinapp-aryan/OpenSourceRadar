@@ -1,0 +1,49 @@
+{
+  "written": true,
+  "out": "results/live-collect-45.json",
+  "candidates": 655,
+  "selected": 45,
+  "repositories": 45,
+  "failures": [],
+  "durationMs": 52504,
+  "requests": {
+    "rest": 53,
+    "graphql": 0
+  },
+  "cache": {
+    "hits": 0,
+    "misses": 45,
+    "coalesced": 0,
+    "storeHits": 0
+  },
+  "discovery": [
+    {
+      "domain": "ai",
+      "queries": 4,
+      "requests": 4,
+      "unique": 278,
+      "accepted": 277,
+      "rejected": {
+        "belowMinStars": 0,
+        "fork": 0,
+        "archived": 1,
+        "irrelevant": 0
+      },
+      "failedQueries": 0
+    },
+    {
+      "domain": "engineering",
+      "queries": 4,
+      "requests": 4,
+      "unique": 384,
+      "accepted": 383,
+      "rejected": {
+        "belowMinStars": 0,
+        "fork": 0,
+        "archived": 1,
+        "irrelevant": 0
+      },
+      "failedQueries": 0
+    }
+  ]
+}

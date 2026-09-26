@@ -1,0 +1,1551 @@
+
+> opensource-radar@0.1.0 collect
+> tsx scripts/collect/index.ts --due --domain all --concurrency 4 --cache .cache/sh-due.json --out data/repositories.json
+
+{
+  "mode": "due",
+  "authenticated": true,
+  "out": "data/repositories.json",
+  "report": {
+    "tracked": 3413,
+    "due": 2997,
+    "notDue": 416,
+    "outOfScope": 0,
+    "selected": 2997,
+    "collected": 2695,
+    "failures": [
+      {
+        "repository": "755596985/Sure-Xu",
+        "stage": "metadata",
+        "reason": "not found by GraphQL"
+      },
+      {
+        "repository": "laolaoshiren/claude-code-skills-zh",
+        "stage": "metadata",
+        "reason": "not found by GraphQL"
+      },
+      {
+        "repository": "vercel-labs/opensrc",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "1jehuang/jcode",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "Snailclimb/interview-guide",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "tetherto/qvac",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "huarangmeng/latex",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "notadev-iamaura/OneRAG",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "100NikhilBro/backend-engineering-foundations",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "SamurAIGPT/Vibe-Workflow",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "Microck/opencode-studio",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "BetterDB-inc/monitor",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "samugit83/redamon",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "Finsys/dockhand",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "nicobailon/surf-cli",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "alinaqi/maggy",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "GRCEngClub/claude-grc-engineering",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "asklokesh/loki-mode",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "Scottcjn/llama-cpp-power8",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "fabriqaai/specs.md",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "tobilg/ai-observer",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "SyntheticAutonomicMind/SAM",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "Artexis10/endstate",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "chrisryugj/korean-law-mcp",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "Yigtwxx/awesome-rag-production",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "hex/claude-council",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "opensandbox-group/OpenSandbox",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "dsphper/lanhu-mcp",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "TableProApp/TablePro",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "happier-dev/happier",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "productdevbook/port-killer",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "aleksandarskrbic/khaos",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "oocx/tfplan2md",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "hybridops-tech/terraform-proxmox-sdn",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "Maxteabag/sqlit",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "autohandai/code-cli",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "suhaibbinyounis/github-copilot-api-vscode",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "m0n0x41d/haft",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "TheDuffman85/crowdsec-web-ui",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "apify/mcpc",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "waybarrios/vllm-mlx",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "orneryd/NornicDB",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "ENTERPILOT/GoModel",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "alibaba/zvec",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "WuMingDao/zenith-image-generator",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "TeleAI-UAGI/telemem",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "SanMuzZzZz/LuaN1aoAgent",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "jonathan-vella/apex",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "iconben/z-image-studio",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "Fast-Editor/Lynkr",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "LingFrame/LingFrame",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "DeepMyst/Mysti",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "skygazer42/MimirQ",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "ykdojo/claude-code-tips",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "Cocolalilal/LastChat",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "shining-stars-l/javaup",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "itwanger/PaiAgent",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "RunMaestro/Maestro",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "tradecatlabs/vibe-coding-cn",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "vargHQ/sdk",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "Dancode-188/synckit",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "logtide-dev/logtide",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "David-Crty/databasement",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "defilantech/LLMKube",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "869413421/ai-moive-studio",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "vicanso/zedis",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "marcusquinn/aidevops",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "unhappychoice/gitlogue",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "hepengju/redis-me",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "CarterPerez-dev/Cybersecurity-Projects",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "mlx-node/mlx-node",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "mr-karan/hodor",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "Agent-Field/agentfield",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "stormkit-io/stormkit-io",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "hcavarsan/pipedash",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "jjiantong/Awesome-KV-Cache-Optimization",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "mohammadtavakoli78/BEAM",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "EverMind-AI/EverOS",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "SATYAM-PRATIBHAN/arcmindAI",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "avivsinai/bitbucket-cli",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "SeemSeam/claude_codex_bridge",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "levnikolaevich/claude-code-skills",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "lich0821/ccNexus",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "lemony-ai/cascadeflow",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "neopen/story-shot-agent",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "platform-engineering-labs/formae",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "AkaliKong/MiniOneRec",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "gotempsh/temps",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "superset-sh/superset",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "CaviraOSS/LongMemory",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "sbroenne/mcp-server-excel",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "kaifcodec/user-scanner",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "maxritter/pilot-shell",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "skye-harris/hass_local_openai_llm",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "yusufkaraaslan/Skill_Seekers",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "corsairdev/corsair",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "tractorjuice/arc-kit",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "codeaholicguy/ai-devkit",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "GiovanniPasq/agentic-rag-for-dummies",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "getpaseo/paseo",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "asdfghj1237890/WebVideo2NAS",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "ruc-datalab/DeepAnalyze",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "qdrant/fastembed",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "kmesh-net/kmesh",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "InternLM/xtuner",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "dash0hq/otelbin",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "eazybytes/microservices",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "llm-jp/awesome-japanese-llm",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "Karine-Huang/T2I-CompBench",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "yonahd/kor",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "aws-samples/amazon-bedrock-samples",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "winapps-org/winapps",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "Anil-matcha/awesome-ai-video-models",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "MLGroupJLU/LLM-eval-survey",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "paradedb/paradedb",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "risesoft-y9/Digital-Infrastructure",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "django-commons/django-tasks-scheduler",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "xataio/pgroll",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "Anil-matcha/awesome-seedance-2.5-api-prompts",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "langchain4j/langchain4j",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "openstatusHQ/openstatus",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "DefangLabs/defang",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "InternLM/lmdeploy",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "elastic/elastic-labs",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "SamurAIGPT/Seedance-2.5-API",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "AkshitIreddy/AI-Powered-Video-Tutorial-Generator",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "WisdomSky/Cloudflared-web",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "SamurAIGPT/Generative-Media-Skills",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "CVHub520/X-AnyLabeling",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "langfuse/langfuse-docs",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "Anil-matcha/awesome-gpt-6-astra",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "zjunlp/LLMAgentPapers",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "BradyFU/Awesome-Multimodal-Large-Language-Models",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "supabase-community/postgres-language-server",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "weaviate/recipes",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "kyegomez/swarms",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "pixeltable/pixeltable",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "PetroIvaniuk/llms-tools",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "zjunlp/EasyEdit",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "pgalko/BambooAI",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "GoogleCloudPlatform/generative-ai",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "Lightning-AI/litgpt",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "nacos-group/r-nacos",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "tconbeer/harlequin",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "FurkanGozukara/Stable-Diffusion",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "rsxdalv/TTS-WebUI",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "Agenta-AI/agenta",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "wladradchenko/wunjo.wladradchenko.ru",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "e2e-test-quest/uuv",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "superfly/corrosion",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "TimefoldAI/timefold-quickstarts",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "SamurAIGPT/llm-wiki-agent",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "notclickable-jordan/starbase-80",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "bentoml/OpenLLM",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "NVIDIA-NeMo/Guardrails",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "h2oai/h2o-llmstudio",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "showlab/Awesome-Video-Diffusion",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "rockbenben/img-prompt",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "intelligentnode/IntelliNode",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "langroid/langroid",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "PeerDB-io/peerdb",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "OpenMOSS/MOSS",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "Ahoo-Wang/Wow",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "mlc-ai/web-llm",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "eosphoros-ai/DB-GPT",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "HuolalaTech/page-spy-web",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "szczyglis-dev/py-gpt",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "mgonzs13/llama_ros",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "uhub/awesome-llm",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "jingyi0000/VLM_survey",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "jianzhnie/awesome-text-to-video",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "ianarawjo/ChainForge",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "vladopajic/go-test-coverage",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "Blarc/ai-commits-intellij-plugin",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "gptme/gptme",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "zilliztech/GPTCache",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "k8sgpt-ai/k8sgpt",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "Capsize-Games/airunner",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "skills/secure-code-game",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "EmbraceAGI/awesome-chatgpt-zh",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "diffplug/selfie",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "crabnebula-dev/devtools",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "stochasticai/xTuring",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "camel-ai/camel",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "kr8s-org/kr8s",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "voicepaw/so-vits-svc-fork",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "Taewan-P/gpt_mobile",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "e2b-dev/E2B",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "denyspoltorak/metapatterns",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "AllayMC/Allay",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "mikemajesty/nestjs-microservice-boilerplate-api",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "AI-Hypercomputer/maxtext",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "freelabz/secator",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "rockbenben/ChatGPT-Shortcut",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "diggerhq/digger",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "JDRaftKeeper/RaftKeeper",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "ax-llm/ax",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "o-inha/MusicWithChatGPT",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "in28minutes/spring-microservices-v3",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "kurtosis-tech/kurtosis",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "Haxxnet/Compose-Examples",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "AI4Finance-Foundation/FinGPT",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 502: Bad Gateway"
+      },
+      {
+        "repository": "labring/sealos",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "apache/dubbo-go",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "tilt-dev/tilt",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "okteto/okteto",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "txn2/kubefwd",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "GoogleCloudPlatform/microservices-demo",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "piomin/sample-spring-microservices-kubernetes",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "yunionio/cloudpods",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "aws/aws-toolkit-vscode",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "ndsev/zserio",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "testcontainers/testcontainers-go",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "apache/dubbo-kubernetes",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "streamthoughts/jikkou",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "berty/berty",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "ShaftHQ/SHAFT_ENGINE",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "midwayjs/midway",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "opensolon/solon",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "quarkusio/quarkus",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "ePages-de/restdocs-api-spec",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "stakater/Reloader",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "YeautyYE/netty-websocket-spring-boot-starter",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "cvat-ai/cvat",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "Zeb-D/my-review",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "mockito/mockito-scala",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "doocs/jvm",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "ikvmnet/ikvm",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "stryker-mutator/stryker4s",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "chanzuckerberg/fogg",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "terraform-aws-modules/terraform-aws-eks",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "hetznercloud/terraform-provider-hcloud",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "jongpie/NebulaLogger",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "badoo/MVIKotlin",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "rieckpil/blog-tutorials",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "wataru-maeda/react-native-boilerplate",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "housepower/clickhouse_sinker",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "bage2014/study",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "GhostWriters/DockSTARTer",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "eksctl-io/eksctl",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "argoproj/argo-events",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "sdv-dev/SDV",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "ZoranPandovski/awesome-testing-tools",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "stefan-jansen/machine-learning-for-trading",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "canonical/microk8s",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "animir/node-rate-limiter-flexible",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "warrensbox/terraform-switcher",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "flosell/iam-policy-json-to-terraform",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "baomidou/dynamic-datasource",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "spring-guides/tut-spring-boot-kotlin",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "google/gvisor",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "crazy-max/docker-fail2ban",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "gitpod-io/gitpod",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "piomin/sample-spring-microservices-new",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "confluentinc/examples",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "satellite-image-deep-learning/techniques",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "aws-cloudformation/cfn-lint",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "testing-library/dom-testing-library",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "mercari/tfnotify",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "BEagle1984/silverback",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "Kong/kubernetes-ingress-controller",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "tortoise/tortoise-orm",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "google/go-cloud",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "marcocesarato/PHP-Antimalware-Scanner",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "testing-library/react-testing-library",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "microsoft/PSRule",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "mikro-orm/mikro-orm",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "microsoft/service-fabric",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "micronaut-projects/micronaut-core",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "thinkgem/jeesite5",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "rackspace/runway",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "openrndr/openrndr",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "mlabouardy/komiser",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "nozaq/terraform-aws-secure-baseline",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "passteque/gluetun",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "runatlantis/atlantis",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "spring-cloud/spring-cloud-openfeign",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "kiali/kiali",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "openspug/spug",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "GoogleContainerTools/skaffold",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "kgateway-dev/kgateway",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "golang-migrate/migrate",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "dromara/lamp-cloud",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "gardener/gardener",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "LINBIT/linstor-server",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "apache/dubbo-admin",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "webiny/webiny-js",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "testcontainers/testcontainers-node",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "jenkins-x/jx",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "stefanprodan/podinfo",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "Kikobeats/tom",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "GoogleCloudPlatform/magic-modules",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "codeforequity-at/botium-core",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "espnet/espnet",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "kekingcn/kkFileView",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "kata-containers/kata-containers",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "linkerd/linkerd2",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "krakend/krakend-ce",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "apache/caldera",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "browserless/browserless",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "aws/sagemaker-python-sdk",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      },
+      {
+        "repository": "SAP/SapMachine",
+        "stage": "metadata",
+        "reason": "GitHubApiError: graphql.fetchRepositories: GitHub API error 504: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."
+      }
+    ],
+    "stoppedBy": null,
+    "written": true,
+    "datasetRepositories": 3501,
+    "durationMs": 517620
+  },
+  "usage": {
+    "restRequests": 200,
+    "graphqlRequests": 58,
+    "starHistoryPageRequests": 200,
+    "starHistoryRetries": 0,
+    "starHistoryBytes": 335023,
+    "cache": {
+      "hits": 2495,
+      "misses": 200,
+      "coalesced": 0,
+      "storeHits": 2495
+    },
+    "coreRateLimit": {
+      "remaining": 4798,
+      "limit": 5000,
+      "resetAt": "2026-09-26T03:36:58.000Z"
+    }
+  }
+}

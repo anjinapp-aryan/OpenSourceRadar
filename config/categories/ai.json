@@ -1,0 +1,991 @@
+{
+  "schemaVersion": 1,
+  "domain": "ai",
+  "discovery": {
+    "minStars": 100,
+    "freshMinStars": 25,
+    "pushedWithinDays": 30,
+    "createdWithinDays": 30,
+    "perPage": 100,
+    "maxPagesPerQuery": 1,
+    "excludeForks": true,
+    "excludeArchived": true
+  },
+  "categories": [
+    {
+      "slug": "ai-agents",
+      "name": "AI Agents",
+      "description": "Autonomous and multi-agent frameworks and agent applications",
+      "searchQueries": [
+        "topic:ai-agents stars:>{minStars} pushed:>{pushedSince}",
+        "topic:agentic-ai stars:>{minStars} pushed:>{pushedSince}",
+        "topic:ai-agents created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "ai agent",
+        "agentic",
+        "autonomous agent",
+        "multi-agent",
+        "tool use"
+      ],
+      "topics": [
+        "ai-agents",
+        "agentic-ai",
+        "agents",
+        "autonomous-agents",
+        "multi-agent",
+        "ai-agent"
+      ],
+      "classification": {
+        "strongTopics": [
+          "ai-agents",
+          "ai-agent",
+          "ai-autonomous-agent",
+          "agentic-ai",
+          "agentic",
+          "autonomous-agents",
+          "autonomous-agent",
+          "multi-agent",
+          "multi-agents",
+          "multi-agent-systems",
+          "agents-sdk",
+          "aiagentframework",
+          "agent-framework"
+        ],
+        "weakTopics": [
+          "agent",
+          "agents",
+          "agentic-workflow",
+          "orchestration",
+          "workflow"
+        ],
+        "strongKeywords": [
+          "ai agent",
+          "ai agents",
+          "agentic",
+          "autonomous agent",
+          "autonomous agents",
+          "multi-agent",
+          "multi agent",
+          "agent framework",
+          "llm agent",
+          "coding agent"
+        ],
+        "weakKeywords": [
+          "agent",
+          "agents",
+          "orchestration",
+          "tool use"
+        ],
+        "exclusionTopics": [
+          "build-agent",
+          "ci-agent",
+          "user-agent",
+          "ssh-agent",
+          "jenkins-agent",
+          "monitoring-agent",
+          "zabbix-agent",
+          "http-agent"
+        ],
+        "exclusionKeywords": [
+          "build agent",
+          "user agent",
+          "ssh agent",
+          "jenkins agent",
+          "monitoring agent",
+          "ci agent",
+          "deployment agent",
+          "real estate agent",
+          "travel agent",
+          "insurance agent",
+          "agent based modeling",
+          "agent-based modeling"
+        ],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "llm",
+      "name": "LLM",
+      "description": "Large language models, LLM frameworks and applications",
+      "searchQueries": [
+        "topic:llm stars:>{minStars} pushed:>{pushedSince}",
+        "topic:large-language-models stars:>{minStars} pushed:>{pushedSince}",
+        "topic:llm created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "llm",
+        "large language model",
+        "langchain",
+        "llamaindex"
+      ],
+      "topics": [
+        "llm",
+        "large-language-models",
+        "llms",
+        "langchain",
+        "llama",
+        "openai"
+      ],
+      "classification": {
+        "strongTopics": [
+          "llm",
+          "llms",
+          "large-language-model",
+          "large-language-models",
+          "language-model",
+          "language-models",
+          "langchain",
+          "llamaindex",
+          "litellm"
+        ],
+        "weakTopics": [
+          "openai",
+          "chatgpt",
+          "gpt",
+          "gpt-4",
+          "claude",
+          "anthropic",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "llama",
+          "mistral",
+          "transformers",
+          "prompt-engineering",
+          "prompts",
+          "nlp",
+          "natural-language-processing",
+          "chatbot"
+        ],
+        "strongKeywords": [
+          "llm",
+          "llms",
+          "large language model",
+          "large language models",
+          "language model"
+        ],
+        "weakKeywords": [
+          "openai",
+          "chatgpt",
+          "gpt",
+          "claude",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "transformer",
+          "chatbot"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "rag",
+      "name": "RAG",
+      "description": "Retrieval-augmented generation, embeddings and semantic search",
+      "searchQueries": [
+        "topic:rag stars:>{minStars} pushed:>{pushedSince}",
+        "topic:retrieval-augmented-generation stars:>{minStars} pushed:>{pushedSince}",
+        "topic:rag created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "rag",
+        "retrieval augmented",
+        "vector search",
+        "embeddings",
+        "knowledge base"
+      ],
+      "topics": [
+        "rag",
+        "retrieval-augmented-generation",
+        "embeddings",
+        "semantic-search",
+        "vector-database"
+      ],
+      "classification": {
+        "strongTopics": [
+          "rag",
+          "retrieval-augmented-generation",
+          "rag-pipeline",
+          "graphrag",
+          "agentic-rag"
+        ],
+        "weakTopics": [
+          "embeddings",
+          "vector-database",
+          "vector-search",
+          "semantic-search",
+          "knowledge-base",
+          "vector-store"
+        ],
+        "strongKeywords": [
+          "rag",
+          "retrieval augmented generation",
+          "retrieval-augmented",
+          "graphrag"
+        ],
+        "weakKeywords": [
+          "vector search",
+          "embeddings",
+          "knowledge base",
+          "semantic search",
+          "vector database"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [
+          "rag doll",
+          "ragdoll",
+          "rag tag",
+          "ragnarok"
+        ],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "mcp",
+      "name": "MCP",
+      "description": "Model Context Protocol servers, clients and tooling",
+      "searchQueries": [
+        "topic:mcp stars:>{minStars} pushed:>{pushedSince}",
+        "topic:model-context-protocol stars:>{minStars} pushed:>{pushedSince}",
+        "topic:mcp created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "mcp",
+        "model context protocol"
+      ],
+      "topics": [
+        "mcp",
+        "model-context-protocol",
+        "mcp-server",
+        "mcp-client"
+      ],
+      "classification": {
+        "strongTopics": [
+          "mcp",
+          "model-context-protocol",
+          "mcp-server",
+          "mcp-servers",
+          "mcp-client",
+          "mcp-tools"
+        ],
+        "weakTopics": [
+          "mcp-host"
+        ],
+        "strongKeywords": [
+          "mcp",
+          "model context protocol",
+          "mcp server",
+          "mcp servers",
+          "mcp client"
+        ],
+        "weakKeywords": [],
+        "exclusionTopics": [
+          "minecraft",
+          "minecraft-mod",
+          "forge",
+          "modding"
+        ],
+        "exclusionKeywords": [
+          "minecraft",
+          "coder pack",
+          "certified professional"
+        ],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "ai-coding",
+      "name": "AI Coding",
+      "description": "AI coding assistants, code generation and code agents",
+      "searchQueries": [
+        "topic:ai-coding stars:>{minStars} pushed:>{pushedSince}",
+        "topic:code-generation stars:>{minStars} pushed:>{pushedSince}",
+        "topic:ai-coding created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "coding assistant",
+        "code generation",
+        "copilot",
+        "ai pair programming",
+        "claude code"
+      ],
+      "topics": [
+        "ai-coding",
+        "code-generation",
+        "coding-assistant",
+        "copilot",
+        "claude-code",
+        "vibe-coding",
+        "code-completion"
+      ],
+      "classification": {
+        "strongTopics": [
+          "ai-coding",
+          "ai-coding-assistant",
+          "coding-assistant",
+          "coding-agent",
+          "code-generation",
+          "claude-code",
+          "github-copilot",
+          "vibe-coding",
+          "code-completion",
+          "ai-code-review",
+          "ai-pair-programming",
+          "aider",
+          "cline"
+        ],
+        "weakTopics": [
+          "codex",
+          "cursor",
+          "copilot",
+          "agent-skills",
+          "skills",
+          "code-review",
+          "ai-tools"
+        ],
+        "strongKeywords": [
+          "ai coding",
+          "coding assistant",
+          "coding agent",
+          "code generation",
+          "claude code",
+          "github copilot",
+          "vibe coding",
+          "ai pair programming",
+          "code completion",
+          "ai code review"
+        ],
+        "weakKeywords": [
+          "copilot",
+          "cursor",
+          "codex",
+          "code review"
+        ],
+        "exclusionTopics": [
+          "mouse-cursor",
+          "cursors",
+          "cursor-theme",
+          "xcursor",
+          "cursor-icons"
+        ],
+        "exclusionKeywords": [
+          "mouse cursor",
+          "database cursor",
+          "cursor position",
+          "cursor theme"
+        ],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "local-ai",
+      "name": "Local AI",
+      "description": "Running models locally and on-device",
+      "searchQueries": [
+        "topic:local-llm stars:>{minStars} pushed:>{pushedSince}",
+        "topic:ollama stars:>{minStars} pushed:>{pushedSince}",
+        "topic:local-llm created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "local llm",
+        "ollama",
+        "llama.cpp",
+        "on-device",
+        "offline llm"
+      ],
+      "topics": [
+        "local-llm",
+        "ollama",
+        "llama-cpp",
+        "on-device-ai",
+        "gguf",
+        "self-hosted"
+      ],
+      "classification": {
+        "strongTopics": [
+          "local-llm",
+          "local-ai",
+          "localai",
+          "ollama",
+          "llama-cpp",
+          "llamacpp",
+          "on-device-ai",
+          "gguf",
+          "offline-ai",
+          "mlx",
+          "lm-studio"
+        ],
+        "weakTopics": [
+          "self-hosted",
+          "privacy",
+          "offline",
+          "edge-ai"
+        ],
+        "strongKeywords": [
+          "local llm",
+          "local ai",
+          "run llms locally",
+          "ollama",
+          "llama.cpp",
+          "on-device",
+          "gguf",
+          "offline ai"
+        ],
+        "weakKeywords": [
+          "self-hosted",
+          "privacy",
+          "offline",
+          "locally"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "multimodal",
+      "name": "Multimodal",
+      "description": "Vision-language, speech and other multimodal models",
+      "searchQueries": [
+        "topic:multimodal stars:>{minStars} pushed:>{pushedSince}",
+        "topic:vision-language-model stars:>{minStars} pushed:>{pushedSince}",
+        "topic:multimodal created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "multimodal",
+        "vision language",
+        "vlm",
+        "speech recognition",
+        "text to speech"
+      ],
+      "topics": [
+        "multimodal",
+        "vision-language-model",
+        "vlm",
+        "speech-recognition",
+        "text-to-speech",
+        "ocr"
+      ],
+      "classification": {
+        "strongTopics": [
+          "multimodal",
+          "multimodal-ai",
+          "multimodal-llm",
+          "vision-language-model",
+          "vlm",
+          "speech-to-text",
+          "text-to-speech",
+          "tts",
+          "asr",
+          "speech-recognition",
+          "whisper",
+          "ocr"
+        ],
+        "weakTopics": [
+          "computer-vision",
+          "audio",
+          "image-recognition",
+          "speech",
+          "voice"
+        ],
+        "strongKeywords": [
+          "multimodal",
+          "vision language",
+          "vision-language",
+          "speech recognition",
+          "text to speech",
+          "speech to text",
+          "ocr",
+          "voice cloning"
+        ],
+        "weakKeywords": [
+          "vision",
+          "audio",
+          "speech",
+          "voice"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "ai-infrastructure",
+      "name": "AI Infrastructure",
+      "description": "Inference, serving, training infrastructure and LLMOps",
+      "searchQueries": [
+        "topic:llm-inference stars:>{minStars} pushed:>{pushedSince}",
+        "topic:model-serving stars:>{minStars} pushed:>{pushedSince}",
+        "topic:llm-inference created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "inference engine",
+        "model serving",
+        "llmops",
+        "mlops",
+        "gpu cluster"
+      ],
+      "topics": [
+        "llm-inference",
+        "model-serving",
+        "mlops",
+        "llmops",
+        "vllm",
+        "inference-engine",
+        "llm-serving"
+      ],
+      "classification": {
+        "strongTopics": [
+          "llm-inference",
+          "llm-serving",
+          "llm-inference-server",
+          "model-serving",
+          "inference-engine",
+          "inference-server",
+          "mlops",
+          "llmops",
+          "vllm",
+          "tensorrt",
+          "triton-inference-server",
+          "distributed-training",
+          "model-deployment",
+          "kv-cache",
+          "quantization"
+        ],
+        "weakTopics": [
+          "gpu",
+          "cuda",
+          "inference",
+          "training",
+          "serving",
+          "deployment"
+        ],
+        "strongKeywords": [
+          "inference engine",
+          "inference server",
+          "model serving",
+          "llm inference",
+          "llm serving",
+          "mlops",
+          "llmops",
+          "distributed training",
+          "gpu cluster",
+          "model deployment"
+        ],
+        "weakKeywords": [
+          "inference",
+          "gpu",
+          "cuda",
+          "quantization",
+          "serving",
+          "throughput"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "ai-developer-tools",
+      "name": "AI Developer Tools",
+      "description": "SDKs, evaluation, prompt tooling and gateways for building with AI",
+      "searchQueries": [
+        "topic:llm-evaluation stars:>{minStars} pushed:>{pushedSince}",
+        "topic:prompt-engineering stars:>{minStars} pushed:>{pushedSince}",
+        "topic:llm-evaluation created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "llm sdk",
+        "prompt management",
+        "llm evaluation",
+        "llm gateway",
+        "ai sdk"
+      ],
+      "topics": [
+        "llm-evaluation",
+        "prompt-engineering",
+        "llm-observability",
+        "llm-gateway",
+        "ai-sdk"
+      ],
+      "classification": {
+        "strongTopics": [
+          "llm-evaluation",
+          "llm-observability",
+          "llm-gateway",
+          "llm-proxy",
+          "llm-router",
+          "llm-testing",
+          "prompt-management",
+          "ai-sdk",
+          "agent-observability",
+          "guardrails",
+          "evals"
+        ],
+        "weakTopics": [
+          "prompt-engineering",
+          "prompts",
+          "sdk",
+          "evaluation",
+          "observability",
+          "tracing",
+          "gateway",
+          "playground"
+        ],
+        "strongKeywords": [
+          "llm evaluation",
+          "llm observability",
+          "llm gateway",
+          "llm proxy",
+          "prompt management",
+          "ai sdk",
+          "llm sdk",
+          "agent observability",
+          "evals",
+          "guardrails"
+        ],
+        "weakKeywords": [
+          "prompt",
+          "prompts",
+          "sdk",
+          "evaluation",
+          "tracing",
+          "gateway"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "machine-learning",
+      "name": "Machine Learning",
+      "description": "Classical and deep machine learning libraries and research code",
+      "searchQueries": [
+        "topic:machine-learning stars:>{minStars} pushed:>{pushedSince}",
+        "topic:deep-learning stars:>{minStars} pushed:>{pushedSince}",
+        "topic:machine-learning created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "machine learning",
+        "deep learning",
+        "neural network",
+        "pytorch",
+        "tensorflow"
+      ],
+      "topics": [
+        "machine-learning",
+        "deep-learning",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "reinforcement-learning"
+      ],
+      "classification": {
+        "strongTopics": [
+          "machine-learning",
+          "machine-learning-algorithms",
+          "deep-learning",
+          "neural-network",
+          "neural-networks",
+          "pytorch",
+          "tensorflow",
+          "scikit-learn",
+          "reinforcement-learning",
+          "jax",
+          "keras",
+          "xgboost"
+        ],
+        "weakTopics": [
+          "ai",
+          "artificial-intelligence",
+          "data-science",
+          "nlp",
+          "computer-vision",
+          "transformers",
+          "ml",
+          "research"
+        ],
+        "strongKeywords": [
+          "machine learning",
+          "deep learning",
+          "neural network",
+          "neural networks",
+          "reinforcement learning",
+          "pytorch",
+          "tensorflow",
+          "scikit-learn"
+        ],
+        "weakKeywords": [
+          "ml",
+          "model",
+          "models",
+          "training",
+          "dataset"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "generative-ai",
+      "name": "Generative AI",
+      "description": "Generative models and applications not covered by a narrower category",
+      "searchQueries": [
+        "topic:generative-ai stars:>{minStars} pushed:>{pushedSince}",
+        "topic:genai stars:>{minStars} pushed:>{pushedSince}",
+        "topic:generative-ai created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "generative ai",
+        "genai",
+        "text generation"
+      ],
+      "topics": [
+        "generative-ai",
+        "genai",
+        "generative-model",
+        "diffusion-models",
+        "text-generation"
+      ],
+      "classification": {
+        "strongTopics": [
+          "generative-ai",
+          "genai",
+          "gen-ai",
+          "generative-model",
+          "generative-models",
+          "diffusion-models",
+          "text-generation"
+        ],
+        "weakTopics": [
+          "ai",
+          "artificial-intelligence",
+          "chatgpt",
+          "gpt",
+          "prompt"
+        ],
+        "strongKeywords": [
+          "generative ai",
+          "genai",
+          "gen ai",
+          "text generation",
+          "generative model"
+        ],
+        "weakKeywords": [
+          "ai",
+          "artificial intelligence"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "ai-music",
+      "name": "AI Music",
+      "description": "Music and audio generation",
+      "searchQueries": [
+        "topic:ai-music stars:>{minStars} pushed:>{pushedSince}",
+        "topic:music-generation stars:>{minStars} pushed:>{pushedSince}",
+        "topic:ai-music created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "music generation",
+        "text-to-music",
+        "ai music",
+        "audio generation"
+      ],
+      "topics": [
+        "ai-music",
+        "music-generation",
+        "text-to-music",
+        "audio-generation",
+        "singing-voice-synthesis"
+      ],
+      "classification": {
+        "strongTopics": [
+          "ai-music",
+          "music-generation",
+          "text-to-music",
+          "audio-generation",
+          "singing-voice-synthesis",
+          "music-ai",
+          "ai-audio"
+        ],
+        "weakTopics": [
+          "music",
+          "audio",
+          "midi",
+          "sound"
+        ],
+        "strongKeywords": [
+          "music generation",
+          "text-to-music",
+          "text to music",
+          "ai music",
+          "audio generation",
+          "singing voice",
+          "song generation"
+        ],
+        "weakKeywords": [
+          "music",
+          "audio",
+          "midi"
+        ],
+        "exclusionTopics": [
+          "music-player",
+          "spotify",
+          "music-streaming"
+        ],
+        "exclusionKeywords": [
+          "music player",
+          "music streaming",
+          "spotify",
+          "music library",
+          "music bot",
+          "discord music",
+          "music downloader"
+        ],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "ai-image",
+      "name": "AI Image",
+      "description": "Image generation and editing models and tools",
+      "searchQueries": [
+        "topic:text-to-image stars:>{minStars} pushed:>{pushedSince}",
+        "topic:image-generation stars:>{minStars} pushed:>{pushedSince}",
+        "topic:text-to-image created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "image generation",
+        "text-to-image",
+        "stable diffusion",
+        "comfyui"
+      ],
+      "topics": [
+        "text-to-image",
+        "image-generation",
+        "stable-diffusion",
+        "comfyui",
+        "ai-art",
+        "flux"
+      ],
+      "classification": {
+        "strongTopics": [
+          "text-to-image",
+          "image-generation",
+          "stable-diffusion",
+          "comfyui",
+          "ai-art",
+          "flux",
+          "sdxl"
+        ],
+        "weakTopics": [
+          "diffusion",
+          "generative-art",
+          "lora",
+          "image-editing"
+        ],
+        "strongKeywords": [
+          "text to image",
+          "text-to-image",
+          "image generation",
+          "stable diffusion",
+          "comfyui",
+          "ai art",
+          "image generator"
+        ],
+        "weakKeywords": [
+          "diffusion",
+          "flux",
+          "lora",
+          "image editing"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [
+          "docker image",
+          "container image",
+          "disk image",
+          "base image",
+          "image registry",
+          "iso image"
+        ],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "ai-video",
+      "name": "AI Video",
+      "description": "Video generation and editing models and tools",
+      "searchQueries": [
+        "topic:text-to-video stars:>{minStars} pushed:>{pushedSince}",
+        "topic:video-generation stars:>{minStars} pushed:>{pushedSince}",
+        "topic:text-to-video created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "video generation",
+        "text-to-video",
+        "image-to-video",
+        "ai video"
+      ],
+      "topics": [
+        "text-to-video",
+        "video-generation",
+        "ai-video",
+        "image-to-video",
+        "video-diffusion"
+      ],
+      "classification": {
+        "strongTopics": [
+          "text-to-video",
+          "video-generation",
+          "ai-video",
+          "ai-video-generation",
+          "image-to-video",
+          "video-diffusion"
+        ],
+        "weakTopics": [
+          "video-editing",
+          "video",
+          "animation",
+          "sora",
+          "veo"
+        ],
+        "strongKeywords": [
+          "text to video",
+          "text-to-video",
+          "video generation",
+          "image to video",
+          "ai video",
+          "video generator"
+        ],
+        "weakKeywords": [
+          "video editing",
+          "video",
+          "animation"
+        ],
+        "exclusionTopics": [
+          "video-player",
+          "video-downloader",
+          "youtube-dl",
+          "video-streaming"
+        ],
+        "exclusionKeywords": [
+          "video player",
+          "video downloader",
+          "video conferencing",
+          "video streaming",
+          "video game"
+        ],
+        "languages": {}
+      }
+    }
+  ]
+}

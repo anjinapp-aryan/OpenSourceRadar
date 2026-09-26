@@ -1,0 +1,4 @@
+No token found: running anonymously (60 core requests/hour; metadata comes from the candidate dataset, no GraphQL).
+{"ts":"2026-09-25T05:41:53.493Z","operation":"due.selected","tracked":3413,"due":3048,"notDue":365,"selected":45,"domain":"all"}
+{"ts":"2026-09-25T05:41:53.634Z","operation":"due.checkpoint","repository":"data/repositories.json","collected":45,"failures":0,"datasetRepositories":545}
+{"ts":"2026-09-25T05:41:53.634Z","operation":"due.done","collected":45,"failures":0,"stoppedBy":null,"durationMs":143}

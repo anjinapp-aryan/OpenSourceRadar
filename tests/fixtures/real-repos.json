@@ -1,0 +1,1196 @@
+{
+ "source": "results/live-collect-500.json (authenticated 500-repository run, 2026-09-25); metadata copied verbatim, expectations written from the metadata before the classifier was run",
+ "repositories": [
+  {
+   "input": {
+    "id": "958830659",
+    "name": "adk-python",
+    "description": "An open-source, code-first Python toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.",
+    "topics": [
+     "agent",
+     "agents",
+     "agents-sdk",
+     "ai",
+     "ai-agents",
+     "multi-agent-systems",
+     "multi-agents",
+     "multi-agents-collaboration",
+     "aiagentframework",
+     "genai",
+     "genai-chatbot",
+     "llms",
+     "agentic",
+     "agentic-ai",
+     "llm",
+     "multi-agent"
+    ],
+    "language": "Python"
+   },
+   "fullName": "google/adk-python",
+   "stars": 21630,
+   "discovery": {
+    "domains": [
+     "ai"
+    ],
+    "categories": [
+     "ai-agents",
+     "generative-ai",
+     "llm"
+    ]
+   },
+   "expect": {
+    "top": [
+     "AI"
+    ],
+    "includes": [
+     "ai-agents"
+    ],
+    "excludesDomains": [
+     "engineering"
+    ],
+    "desired": [
+     "AI"
+    ]
+   },
+   "rationale": "pure AI: topics ai-agents/agentic-ai/llm, description \"toolkit for building, evaluating, and deploying AI agents\""
+  },
+  {
+   "input": {
+    "id": "6296790",
+    "name": "spring-boot",
+    "description": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
+    "topics": [
+     "java",
+     "spring-boot",
+     "spring",
+     "framework"
+    ],
+    "language": "Java"
+   },
+   "fullName": "spring-projects/spring-boot",
+   "stars": 81490,
+   "discovery": {
+    "domains": [
+     "engineering"
+    ],
+    "categories": [
+     "java",
+     "spring-boot"
+    ]
+   },
+   "expect": {
+    "top": [
+     "ENGINEERING"
+    ],
+    "includes": [
+     "spring-boot",
+     "java"
+    ],
+    "excludesDomains": [
+     "ai"
+    ],
+    "desired": [
+     "ENGINEERING"
+    ]
+   },
+   "rationale": "pure Java/Spring: topics java, spring-boot, spring, framework"
+  },
+  {
+   "input": {
+    "id": "137451403",
+    "name": "nacos",
+    "description": "an easy-to-use dynamic service discovery, configuration and service management platform for building AI cloud native applications.",
+    "topics": [
+     "nacos",
+     "dubbo",
+     "kubernetes",
+     "istio",
+     "spring-cloud",
+     "microservices",
+     "configuration-management",
+     "distributed-configuration",
+     "ai-registry",
+     "mcp",
+     "mcp-registry",
+     "a2a-registry",
+     "mcp-management",
+     "prompt",
+     "skills",
+     "agent"
+    ],
+    "language": "Java"
+   },
+   "fullName": "alibaba/nacos",
+   "stars": 33420,
+   "discovery": {
+    "domains": [
+     "ai",
+     "engineering"
+    ],
+    "categories": [
+     "cloud",
+     "kubernetes",
+     "mcp",
+     "microservices",
+     "spring-boot"
+    ]
+   },
+   "expect": {
+    "top": [
+     "ENGINEERING",
+     "BOTH"
+    ],
+    "includes": [
+     "microservices"
+    ],
+    "excludesDomains": [],
+    "desired": [
+     "ENGINEERING",
+     "BOTH"
+    ]
+   },
+   "rationale": "Java + AI: microservices/service-discovery platform that also positions itself as an AI/MCP registry; either ENGINEERING or BOTH is defensible, AI-only is not"
+  },
+  {
+   "input": {
+    "id": "982587624",
+    "name": "opendataloader-pdf",
+    "description": "PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.",
+    "topics": [
+     "json",
+     "markdown",
+     "pdf",
+     "ai",
+     "document-parsing",
+     "html",
+     "pdf-converter",
+     "tables",
+     "pdf-parser",
+     "rag",
+     "accessibility",
+     "bounding-box",
+     "eaa",
+     "ocr",
+     "pdf-accessibility",
+     "pdf-extraction",
+     "pdf-ua",
+     "tagged-pdf",
+     "ocr-recognition",
+     "a11y"
+    ],
+    "language": "Java"
+   },
+   "fullName": "opendataloader-project/opendataloader-pdf",
+   "stars": 29364,
+   "discovery": {
+    "domains": [
+     "ai"
+    ],
+    "categories": [
+     "multimodal",
+     "rag"
+    ]
+   },
+   "expect": {
+    "top": [
+     "AI",
+     "BOTH",
+     "UNKNOWN"
+    ],
+    "includes": [],
+    "excludesDomains": [
+     "java"
+    ],
+    "desired": [
+     "AI",
+     "BOTH"
+    ]
+   },
+   "rationale": "written in Java but described as a PDF parser for AI-ready data (rag, ocr topics); language alone must not make it a Java-engineering repository | classifier abstains (UNKNOWN): rag (4) and ocr (4) are strong topics of two different categories, neither reaches 6"
+  },
+  {
+   "input": {
+    "id": "952688112",
+    "name": "playwright-mcp",
+    "description": "Playwright MCP server",
+    "topics": [
+     "mcp",
+     "playwright"
+    ],
+    "language": "TypeScript"
+   },
+   "fullName": "microsoft/playwright-mcp",
+   "stars": 37547,
+   "discovery": {
+    "domains": [
+     "ai"
+    ],
+    "categories": [
+     "mcp"
+    ]
+   },
+   "expect": {
+    "top": [
+     "AI"
+    ],
+    "includes": [
+     "mcp"
+    ],
+    "excludesDomains": [
+     "testing"
+    ],
+    "desired": [
+     "AI"
+    ]
+   },
+   "rationale": "MCP repository: topics mcp, playwright; a Playwright MCP server, not a test framework"
+  },
+  {
+   "input": {
+    "id": "896335270",
+    "name": "awesome-mcp-servers",
+    "description": "A collection of MCP servers.",
+    "topics": [
+     "ai",
+     "mcp"
+    ],
+    "language": null
+   },
+   "fullName": "punkpeye/awesome-mcp-servers",
+   "stars": 95495,
+   "discovery": {
+    "domains": [
+     "ai"
+    ],
+    "categories": [
+     "mcp"
+    ]
+   },
+   "expect": {
+    "top": [
+     "AI"
+    ],
+    "includes": [
+     "mcp"
+    ],
+    "excludesDomains": [
+     "engineering"
+    ],
+    "desired": [
+     "AI"
+    ]
+   },
+   "rationale": "MCP repository: a list of MCP servers (topics ai, mcp)"
+  },
+  {
+   "input": {
+    "id": "132464395",
+    "name": "JavaGuide",
+    "description": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
+    "topics": [
+     "java",
+     "interview",
+     "redis",
+     "mysql",
+     "system-design",
+     "redisson",
+     "agent",
+     "context-engineering",
+     "mcp",
+     "skills",
+     "springai",
+     "ai",
+     "deepseek"
+    ],
+    "language": "JavaScript"
+   },
+   "fullName": "Snailclimb/JavaGuide",
+   "stars": 158864,
+   "discovery": {
+    "domains": [
+     "ai",
+     "engineering"
+    ],
+    "categories": [
+     "java",
+     "mcp",
+     "redis",
+     "system-design"
+    ]
+   },
+   "expect": {
+    "top": [
+     "ENGINEERING"
+    ],
+    "includes": [
+     "java"
+    ],
+    "excludesDomains": [
+     "ai"
+    ],
+    "desired": [
+     "ENGINEERING"
+    ]
+   },
+   "rationale": "REGRESSION: Java interview guide whose topics include mcp, ai, deepseek, agent, springai; those are AI application chapters, the repository is a Java/backend interview resource"
+  },
+  {
+   "input": {
+    "id": "44662669",
+    "name": "dbeaver",
+    "description": "Free universal database tool and SQL client",
+    "topics": [
+     "sql",
+     "database",
+     "dbeaver",
+     "gui",
+     "mysql",
+     "postgresql",
+     "db2",
+     "sqlite",
+     "erd",
+     "java",
+     "oracle",
+     "nosql",
+     "sqlserver",
+     "redshift",
+     "jdbc",
+     "ai",
+     "databricks",
+     "snowflake"
+    ],
+    "language": "Java"
+   },
+   "fullName": "dbeaver/dbeaver",
+   "stars": 51868,
+   "discovery": {
+    "domains": [
+     "engineering"
+    ],
+    "categories": [
+     "databases",
+     "developer-tools",
+     "java",
+     "postgresql"
+    ]
+   },
+   "expect": {
+    "top": [
+     "ENGINEERING"
+    ],
+    "includes": [
+     "databases"
+    ],
+    "excludesDomains": [
+     "ai"
+    ],
+    "desired": [
+     "ENGINEERING"
+    ]
+   },
+   "rationale": "database tool (topics sql, database, mysql, postgresql) with a bare \"ai\" topic"
+  },
+  {
+   "input": {
+    "id": "236095576",
+    "name": "backstage",
+    "description": "Backstage is an open framework for building developer portals",
+    "topics": [
+     "infrastructure",
+     "dx",
+     "developer-experience",
+     "developer-portal",
+     "microservices",
+     "cncf",
+     "backstage",
+     "self-service-portal",
+     "hacktoberfest"
+    ],
+    "language": "TypeScript"
+   },
+   "fullName": "backstage/backstage",
+   "stars": 34494,
+   "discovery": {
+    "domains": [
+     "engineering"
+    ],
+    "categories": [
+     "microservices"
+    ]
+   },
+   "expect": {
+    "top": [
+     "ENGINEERING"
+    ],
+    "includes": [
+     "developer-tools"
+    ],
+    "excludesDomains": [
+     "ai"
+    ],
+    "desired": [
+     "ENGINEERING"
+    ]
+   },
+   "rationale": "generic developer tool: developer portal framework (dx, developer-experience, developer-portal)"
+  },
+  {
+   "input": {
+    "id": "43723161",
+    "name": "helm",
+    "description": "The Kubernetes Package Manager",
+    "topics": [
+     "cncf",
+     "chart",
+     "kubernetes",
+     "helm",
+     "charts"
+    ],
+    "language": "Go"
+   },
+   "fullName": "helm/helm",
+   "stars": 30275,
+   "discovery": {
+    "domains": [
+     "engineering"
+    ],
+    "categories": [
+     "kubernetes"
+    ]
+   },
+   "expect": {
+    "top": [
+     "ENGINEERING"
+    ],
+    "includes": [
+     "kubernetes"
+    ],
+    "excludesDomains": [
+     "ai"
+    ],
+    "desired": [
+     "ENGINEERING"
+    ]
+   },
+   "rationale": "Kubernetes: \"The Kubernetes Package Manager\", topics kubernetes, helm, charts"
+  },
+  {
+   "input": {
+    "id": "20580498",
+    "name": "kubernetes",
+    "description": "Production-Grade Container Scheduling and Management",
+    "topics": [
+     "kubernetes",
+     "go",
+     "cncf",
+     "containers"
+    ],
+    "language": "Go"
+   },
+   "fullName": "kubernetes/kubernetes",
+   "stars": 127964,
+   "discovery": {
+    "domains": [
+     "engineering"
+    ],
+    "categories": [
+     "docker",
+     "kubernetes"
+    ]
+   },
+   "expect": {
+    "top": [
+     "ENGINEERING"
+    ],
+    "includes": [
+     "kubernetes"
+    ],
+    "excludesDomains": [
+     "ai"
+    ],
+    "desired": [
+     "ENGINEERING"
+    ]
+   },
+   "rationale": "Kubernetes: topics kubernetes, containers, cncf"
+  },
+  {
+   "input": {
+    "id": "599547518",
+    "name": "vllm",
+    "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+    "topics": [
+     "gpt",
+     "llm",
+     "pytorch",
+     "model-serving",
+     "transformer",
+     "llm-serving",
+     "inference",
+     "llama",
+     "amd",
+     "cuda",
+     "tpu",
+     "deepseek",
+     "qwen",
+     "blackwell",
+     "deepseek-v3",
+     "gpt-oss",
+     "kimi",
+     "moe",
+     "openai",
+     "qwen3"
+    ],
+    "language": "Python"
+   },
+   "fullName": "vllm-project/vllm",
+   "stars": 92644,
+   "discovery": {
+    "domains": [
+     "ai"
+    ],
+    "categories": [
+     "ai-infrastructure",
+     "llm",
+     "machine-learning"
+    ]
+   },
+   "expect": {
+    "top": [
+     "AI"
+    ],
+    "includes": [
+     "ai-infrastructure"
+    ],
+    "excludesDomains": [],
+    "desired": [
+     "AI"
+    ]
+   },
+   "rationale": "AI infrastructure: \"inference and serving engine for LLMs\", topics model-serving, llm-serving, inference"
+  },
+  {
+   "input": {
+    "id": "658928958",
+    "name": "ollama",
+    "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+    "topics": [
+     "llama",
+     "llm",
+     "llms",
+     "go",
+     "golang",
+     "ollama",
+     "mistral",
+     "gemma",
+     "llama3",
+     "deepseek",
+     "gemma3",
+     "qwen",
+     "gpt-oss",
+     "glm",
+     "minimax"
+    ],
+    "language": "Go"
+   },
+   "fullName": "ollama/ollama",
+   "stars": 181651,
+   "discovery": {
+    "domains": [
+     "ai"
+    ],
+    "categories": [
+     "llm",
+     "local-ai"
+    ]
+   },
+   "expect": {
+    "top": [
+     "AI"
+    ],
+    "includes": [
+     "llm"
+    ],
+    "excludesDomains": [],
+    "desired": [
+     "AI"
+    ]
+   },
+   "rationale": "AI: runs LLMs locally (topics llm, llms, ollama, llama)"
+  },
+  {
+   "input": {
+    "id": "65600975",
+    "name": "pytorch",
+    "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+    "topics": [
+     "neural-network",
+     "autograd",
+     "gpu",
+     "numpy",
+     "deep-learning",
+     "tensor",
+     "python",
+     "machine-learning"
+    ],
+    "language": "Python"
+   },
+   "fullName": "pytorch/pytorch",
+   "stars": 103264,
+   "discovery": {
+    "domains": [
+     "ai"
+    ],
+    "categories": [
+     "machine-learning"
+    ]
+   },
+   "expect": {
+    "top": [
+     "AI"
+    ],
+    "includes": [
+     "machine-learning"
+    ],
+    "excludesDomains": [
+     "engineering"
+    ],
+    "desired": [
+     "AI"
+    ]
+   },
+   "rationale": "machine learning: topics deep-learning, neural-network, machine-learning"
+  },
+  {
+   "input": {
+    "id": "138754790",
+    "name": "duckdb",
+    "description": "DuckDB is an analytical in-process SQL database management system",
+    "topics": [
+     "sql",
+     "database",
+     "olap",
+     "analytics",
+     "embedded-database"
+    ],
+    "language": "C++"
+   },
+   "fullName": "duckdb/duckdb",
+   "stars": 41690,
+   "discovery": {
+    "domains": [
+     "engineering"
+    ],
+    "categories": [
+     "databases"
+    ]
+   },
+   "expect": {
+    "top": [
+     "ENGINEERING"
+    ],
+    "includes": [
+     "databases"
+    ],
+    "excludesDomains": [
+     "ai"
+    ],
+    "desired": [
+     "ENGINEERING"
+    ]
+   },
+   "rationale": "database: analytical in-process SQL DBMS (topics sql, database, olap)"
+  },
+  {
+   "input": {
+    "id": "156018",
+    "name": "redis",
+    "description": "For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine.",
+    "topics": [
+     "database",
+     "key-value",
+     "nosql",
+     "redis",
+     "caching",
+     "distributed-systems",
+     "open-source",
+     "real-time",
+     "time-series",
+     "cache",
+     "in-memory",
+     "in-memory-database",
+     "key-value-store",
+     "message-broker",
+     "no-sql",
+     "message-queue",
+     "realtime",
+     "vector-search",
+     "vector-databases",
+     "json"
+    ],
+    "language": "C"
+   },
+   "fullName": "redis/redis",
+   "stars": 76467,
+   "discovery": {
+    "domains": [
+     "engineering"
+    ],
+    "categories": [
+     "databases",
+     "distributed-systems",
+     "redis"
+    ]
+   },
+   "expect": {
+    "top": [
+     "ENGINEERING"
+    ],
+    "includes": [
+     "redis",
+     "databases"
+    ],
+    "excludesDomains": [
+     "ai"
+    ],
+    "desired": [
+     "ENGINEERING"
+    ]
+   },
+   "rationale": "database/Redis: topics redis, database, key-value, cache"
+  },
+  {
+   "input": {
+    "id": "2211243",
+    "name": "kafka",
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "topics": [
+     "scala",
+     "kafka",
+     "java",
+     "streaming"
+    ],
+    "language": "Java"
+   },
+   "fullName": "apache/kafka",
+   "stars": 33824,
+   "discovery": {
+    "domains": [
+     "engineering"
+    ],
+    "categories": [
+     "java",
+     "kafka"
+    ]
+   },
+   "expect": {
+    "top": [
+     "ENGINEERING"
+    ],
+    "includes": [
+     "kafka"
+    ],
+    "excludesDomains": [
+     "ai"
+    ],
+    "desired": [
+     "ENGINEERING"
+    ]
+   },
+   "rationale": "Kafka: \"distributed event streaming platform\""
+  },
+  {
+   "input": {
+    "id": "17728164",
+    "name": "terraform",
+    "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.",
+    "topics": [
+     "graph",
+     "infrastructure-as-code",
+     "terraform",
+     "cloud",
+     "cloud-management"
+    ],
+    "language": "Go"
+   },
+   "fullName": "hashicorp/terraform",
+   "stars": 49728,
+   "discovery": {
+    "domains": [
+     "engineering"
+    ],
+    "categories": [
+     "cloud",
+     "infrastructure-as-code"
+    ]
+   },
+   "expect": {
+    "top": [
+     "ENGINEERING"
+    ],
+    "includes": [
+     "infrastructure-as-code"
+    ],
+    "excludesDomains": [
+     "ai"
+    ],
+    "desired": [
+     "ENGINEERING"
+    ]
+   },
+   "rationale": "IaC: topics infrastructure-as-code, terraform"
+  },
+  {
+   "input": {
+    "id": "642497346",
+    "name": "langfuse",
+    "description": "🪢 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform.",
+    "topics": [
+     "analytics",
+     "llm",
+     "llmops",
+     "large-language-models",
+     "openai",
+     "self-hosted",
+     "ycombinator",
+     "monitoring",
+     "observability",
+     "open-source",
+     "langchain",
+     "llama-index",
+     "evaluation",
+     "prompt-engineering",
+     "prompt-management",
+     "playground",
+     "llm-evaluation",
+     "llm-observability",
+     "autogen"
+    ],
+    "language": "TypeScript"
+   },
+   "fullName": "langfuse/langfuse",
+   "stars": 35024,
+   "discovery": {
+    "domains": [
+     "ai",
+     "engineering"
+    ],
+    "categories": [
+     "ai-developer-tools",
+     "ai-infrastructure",
+     "llm",
+     "local-ai",
+     "observability"
+    ]
+   },
+   "expect": {
+    "top": [
+     "BOTH"
+    ],
+    "includes": [
+     "ai-developer-tools",
+     "observability"
+    ],
+    "excludesDomains": [],
+    "desired": [
+     "BOTH"
+    ]
+   },
+   "rationale": "AI observability (the spec's own BOTH example): \"agent evals & observability\", topics llm, llmops"
+  },
+  {
+   "input": {
+    "id": "701547123",
+    "name": "open-webui",
+    "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+    "topics": [
+     "ollama",
+     "ollama-webui",
+     "llm",
+     "webui",
+     "self-hosted",
+     "llm-ui",
+     "llm-webui",
+     "llms",
+     "rag",
+     "ai",
+     "open-webui",
+     "ui",
+     "openai",
+     "mcp",
+     "openapi"
+    ],
+    "language": "Python"
+   },
+   "fullName": "open-webui/open-webui",
+   "stars": 153089,
+   "discovery": {
+    "domains": [
+     "ai"
+    ],
+    "categories": [
+     "llm",
+     "local-ai",
+     "mcp",
+     "rag"
+    ]
+   },
+   "expect": {
+    "top": [
+     "AI"
+    ],
+    "includes": [
+     "llm"
+    ],
+    "excludesDomains": [],
+    "desired": [
+     "AI"
+    ]
+   },
+   "rationale": "AI: LLM web UI (topics llm, rag, ollama, mcp)"
+  },
+  {
+   "input": {
+    "id": "22790488",
+    "name": "java-design-patterns",
+    "description": "Design patterns implemented in Java",
+    "topics": [
+     "java",
+     "principles",
+     "design-patterns",
+     "awesome-list",
+     "snippets",
+     "snippets-collection",
+     "snippets-library",
+     "hacktoberfest"
+    ],
+    "language": "Java"
+   },
+   "fullName": "iluwatar/java-design-patterns",
+   "stars": 94725,
+   "discovery": {
+    "domains": [
+     "engineering"
+    ],
+    "categories": [
+     "java",
+     "system-design"
+    ]
+   },
+   "expect": {
+    "top": [
+     "ENGINEERING"
+    ],
+    "includes": [
+     "java",
+     "system-design"
+    ],
+    "excludesDomains": [
+     "ai"
+    ],
+    "desired": [
+     "ENGINEERING"
+    ]
+   },
+   "rationale": "documentation/education repository about Java design patterns"
+  },
+  {
+   "input": {
+    "id": "24297122",
+    "name": "awesome-docker",
+    "description": ":whale: A curated list of Docker resources and projects",
+    "topics": [
+     "docker",
+     "awesome",
+     "awesome-list",
+     "container",
+     "tools",
+     "dockerfile",
+     "list",
+     "moby",
+     "docker-container",
+     "docker-image",
+     "docker-environment",
+     "docker-deployment",
+     "docker-swarm",
+     "docker-api",
+     "docker-monitoring",
+     "docker-machine",
+     "docker-security",
+     "docker-registry"
+    ],
+    "language": null
+   },
+   "fullName": "veggiemonk/awesome-docker",
+   "stars": 36881,
+   "discovery": {
+    "domains": [
+     "engineering"
+    ],
+    "categories": [
+     "docker"
+    ]
+   },
+   "expect": {
+    "top": [
+     "ENGINEERING"
+    ],
+    "includes": [
+     "docker"
+    ],
+    "excludesDomains": [
+     "ai"
+    ],
+    "desired": [
+     "ENGINEERING"
+    ]
+   },
+   "rationale": "documentation repository: curated list of Docker resources"
+  },
+  {
+   "input": {
+    "id": "120887835",
+    "name": "interview",
+    "description": "📚 C/C++ 技术面试基础知识总结，包括语言、程序库、数据结构、算法、系统、网络、链接装载库等知识及面试经验、招聘、内推等信息。This repository is a summary of the basic knowledge of recruiting job seekers and beginners in the direction of C/C++ technology, including language, program library, data structure, algorithm, system, network, link loading library, interview experience, recruitment, recommendation, etc.",
+    "topics": [
+     "interview",
+     "interview-questions",
+     "interview-practice",
+     "interview-preparation",
+     "interviews",
+     "c",
+     "cpp",
+     "algorithm",
+     "database",
+     "data-structures",
+     "stl",
+     "operating-system",
+     "leetcode"
+    ],
+    "language": "C++"
+   },
+   "fullName": "huihut/interview",
+   "stars": 38230,
+   "discovery": {
+    "domains": [
+     "engineering"
+    ],
+    "categories": [
+     "databases"
+    ]
+   },
+   "expect": {
+    "top": [
+     "UNKNOWN",
+     "ENGINEERING"
+    ],
+    "includes": [],
+    "excludesDomains": [
+     "ai"
+    ],
+    "desired": [
+     "UNKNOWN",
+     "ENGINEERING"
+    ]
+   },
+   "rationale": "documentation repository: C/C++ interview notes; not AI under any reading"
+  },
+  {
+   "input": {
+    "id": "52281283",
+    "name": "mastodon",
+    "description": "Your self-hosted, globally interconnected microblogging community",
+    "topics": [
+     "mastodon",
+     "docker",
+     "microblog",
+     "activity-stream",
+     "webfinger",
+     "social-network",
+     "activitypub",
+     "fediverse",
+     "social-web"
+    ],
+    "language": "Ruby"
+   },
+   "fullName": "mastodon/mastodon",
+   "stars": 50320,
+   "discovery": {
+    "domains": [
+     "engineering"
+    ],
+    "categories": [
+     "docker"
+    ]
+   },
+   "expect": {
+    "top": [
+     "UNKNOWN"
+    ],
+    "includes": [],
+    "excludesDomains": [
+     "ai",
+     "engineering"
+    ],
+    "desired": [
+     "UNKNOWN"
+    ]
+   },
+   "rationale": "ambiguous: a social network whose only technical tag is docker"
+  },
+  {
+   "input": {
+    "id": "60243197",
+    "name": "server",
+    "description": "☁️ Nextcloud server, a safe home for all your data",
+    "topics": [
+     "open-source",
+     "file-sharing",
+     "enterprise",
+     "sharing",
+     "collaboration",
+     "cloud",
+     "nextcloud",
+     "self-hosting",
+     "decentralized",
+     "federation",
+     "free-software",
+     "distributed",
+     "owncloud",
+     "javascript",
+     "ux",
+     "design",
+     "usability",
+     "opensource",
+     "php",
+     "hacktoberfest"
+    ],
+    "language": "PHP"
+   },
+   "fullName": "nextcloud/server",
+   "stars": 36907,
+   "discovery": {
+    "domains": [
+     "engineering"
+    ],
+    "categories": [
+     "cloud"
+    ]
+   },
+   "expect": {
+    "top": [
+     "UNKNOWN"
+    ],
+    "includes": [],
+    "excludesDomains": [
+     "ai",
+     "engineering"
+    ],
+    "desired": [
+     "UNKNOWN"
+    ]
+   },
+   "rationale": "ambiguous: \"cloud\" is part of the product name; file sharing application"
+  }
+ ]
+}

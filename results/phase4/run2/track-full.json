@@ -1,0 +1,24 @@
+
+> opensource-radar@0.1.0 track
+> tsx scripts/track/index.ts --growth data/repositories.json
+
+{
+  "out": "data/tracked/tracked.json",
+  "trackingVersion": "phase3-v1",
+  "durationMs": 46,
+  "tracked": 3413,
+  "byTier": {
+    "HOT": 219,
+    "WARM": 2249,
+    "DORMANT": 943,
+    "UNASSESSED": 2
+  },
+  "unassessed": 2,
+  "excluded": {
+    "unclassified": 984,
+    "archived": 0,
+    "other": 0
+  },
+  "dueNow": 2,
+  "estimatedDailyRefreshes": 1103.4
+}

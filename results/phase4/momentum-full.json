@@ -1,0 +1,26 @@
+
+> opensource-radar@0.1.0 momentum
+> tsx scripts/momentum/index.ts --repositories data/repositories.json --classified data/classified/classified.json
+
+{
+  "out": "data/momentum/momentum.json",
+  "public": "data/public/radar.json",
+  "momentumVersion": "v1",
+  "durationMs": 1699,
+  "summary": {
+    "evaluated": 3501,
+    "scored": 3501,
+    "byTrend": {
+      "RISING": 35,
+      "COOLING": 195,
+      "STEADY": 3271,
+      "INSUFFICIENT_DATA": 0,
+      "EXCLUDED": 0
+    },
+    "rising": 35,
+    "movers": 123,
+    "sustained": 164,
+    "newEntrants": 293
+  },
+  "publicRepositories": 3501
+}

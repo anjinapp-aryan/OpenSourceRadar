@@ -1,0 +1,1310 @@
+{
+  "schemaVersion": 1,
+  "domain": "engineering",
+  "discovery": {
+    "minStars": 100,
+    "freshMinStars": 25,
+    "pushedWithinDays": 30,
+    "createdWithinDays": 30,
+    "perPage": 100,
+    "maxPagesPerQuery": 1,
+    "excludeForks": true,
+    "excludeArchived": true
+  },
+  "categories": [
+    {
+      "slug": "java",
+      "name": "Java",
+      "description": "Java and JVM libraries, tools and frameworks",
+      "searchQueries": [
+        "topic:java stars:>{minStars} pushed:>{pushedSince}",
+        "topic:jvm stars:>{minStars} pushed:>{pushedSince}",
+        "topic:java created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "java",
+        "jvm"
+      ],
+      "topics": [
+        "java",
+        "jvm",
+        "java-library",
+        "openjdk"
+      ],
+      "classification": {
+        "strongTopics": [
+          "java",
+          "java-8",
+          "java8",
+          "java-11",
+          "java11",
+          "java-17",
+          "java-21",
+          "javase",
+          "java-se",
+          "jvm",
+          "jdk",
+          "openjdk",
+          "java-library",
+          "jakarta-ee"
+        ],
+        "weakTopics": [
+          "kotlin",
+          "scala",
+          "maven",
+          "gradle",
+          "junit"
+        ],
+        "strongKeywords": [
+          "java",
+          "jvm",
+          "jdk",
+          "openjdk",
+          "jakarta"
+        ],
+        "weakKeywords": [
+          "kotlin",
+          "scala",
+          "maven",
+          "gradle"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {
+          "Java": 3,
+          "Kotlin": 1,
+          "Scala": 1
+        }
+      }
+    },
+    {
+      "slug": "spring-boot",
+      "name": "Spring",
+      "description": "Spring Boot, Spring Framework and Spring Cloud ecosystem",
+      "searchQueries": [
+        "topic:spring-boot stars:>{minStars} pushed:>{pushedSince}",
+        "topic:spring stars:>{minStars} pushed:>{pushedSince}",
+        "topic:spring-boot created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "spring boot",
+        "spring framework",
+        "spring cloud"
+      ],
+      "topics": [
+        "spring-boot",
+        "spring",
+        "spring-framework",
+        "spring-cloud",
+        "spring-security"
+      ],
+      "classification": {
+        "strongTopics": [
+          "spring-boot",
+          "springboot",
+          "spring",
+          "spring-framework",
+          "spring-cloud",
+          "spring-security",
+          "spring-data",
+          "spring-mvc",
+          "spring-webflux",
+          "spring-batch"
+        ],
+        "weakTopics": [
+          "springai",
+          "spring-ai",
+          "jpa",
+          "hibernate",
+          "mybatis"
+        ],
+        "strongKeywords": [
+          "spring boot",
+          "springboot",
+          "spring framework",
+          "spring cloud",
+          "spring security",
+          "spring data"
+        ],
+        "weakKeywords": [
+          "spring",
+          "jpa",
+          "hibernate",
+          "mybatis"
+        ],
+        "exclusionTopics": [
+          "react-spring",
+          "spring-animation",
+          "animation"
+        ],
+        "exclusionKeywords": [
+          "spring cleaning",
+          "spring break",
+          "spring animation",
+          "react spring",
+          "spring physics"
+        ],
+        "languages": {
+          "Java": 1,
+          "Kotlin": 1
+        }
+      }
+    },
+    {
+      "slug": "microservices",
+      "name": "Microservices",
+      "description": "Microservice frameworks, service mesh and API gateways",
+      "searchQueries": [
+        "topic:microservices stars:>{minStars} pushed:>{pushedSince}",
+        "topic:microservice stars:>{minStars} pushed:>{pushedSince}",
+        "topic:microservices created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "microservice",
+        "service mesh",
+        "api gateway"
+      ],
+      "topics": [
+        "microservices",
+        "microservice",
+        "service-mesh",
+        "api-gateway",
+        "grpc"
+      ],
+      "classification": {
+        "strongTopics": [
+          "microservices",
+          "microservice",
+          "service-mesh",
+          "api-gateway",
+          "istio",
+          "envoy",
+          "dapr",
+          "service-discovery"
+        ],
+        "weakTopics": [
+          "grpc",
+          "rest-api",
+          "api",
+          "consul",
+          "gateway",
+          "distributed"
+        ],
+        "strongKeywords": [
+          "microservice",
+          "microservices",
+          "service mesh",
+          "api gateway",
+          "service discovery"
+        ],
+        "weakKeywords": [
+          "grpc",
+          "gateway",
+          "rest api"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "kafka",
+      "name": "Kafka",
+      "description": "Apache Kafka, streaming platforms and clients",
+      "searchQueries": [
+        "topic:kafka stars:>{minStars} pushed:>{pushedSince}",
+        "topic:apache-kafka stars:>{minStars} pushed:>{pushedSince}",
+        "topic:kafka created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "kafka",
+        "event streaming",
+        "message broker"
+      ],
+      "topics": [
+        "kafka",
+        "apache-kafka",
+        "kafka-streams",
+        "kafka-connect",
+        "event-streaming",
+        "redpanda"
+      ],
+      "classification": {
+        "strongTopics": [
+          "kafka",
+          "apache-kafka",
+          "kafka-streams",
+          "kafka-connect",
+          "kafka-consumer",
+          "kafka-producer",
+          "redpanda",
+          "ksqldb",
+          "event-streaming",
+          "schema-registry"
+        ],
+        "weakTopics": [
+          "streaming",
+          "pubsub",
+          "message-queue",
+          "message-broker",
+          "event-driven",
+          "event-sourcing",
+          "rabbitmq",
+          "pulsar"
+        ],
+        "strongKeywords": [
+          "kafka",
+          "redpanda",
+          "event streaming",
+          "kafka streams"
+        ],
+        "weakKeywords": [
+          "message broker",
+          "message queue",
+          "event driven",
+          "pub/sub"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [
+          "franz kafka",
+          "kafka on the shore",
+          "kafkaesque"
+        ],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "kubernetes",
+      "name": "Kubernetes",
+      "description": "Kubernetes distributions, operators and tooling",
+      "searchQueries": [
+        "topic:kubernetes stars:>{minStars} pushed:>{pushedSince}",
+        "topic:k8s stars:>{minStars} pushed:>{pushedSince}",
+        "topic:kubernetes created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "kubernetes",
+        "k8s",
+        "helm",
+        "operator"
+      ],
+      "topics": [
+        "kubernetes",
+        "k8s",
+        "helm",
+        "kubernetes-operator",
+        "kustomize",
+        "k3s"
+      ],
+      "classification": {
+        "strongTopics": [
+          "kubernetes",
+          "k8s",
+          "helm",
+          "kubectl",
+          "kustomize",
+          "k3s",
+          "kubernetes-operator",
+          "kubebuilder",
+          "kubeadm",
+          "cni"
+        ],
+        "weakTopics": [
+          "cloud-native",
+          "containers",
+          "container-orchestration",
+          "gitops",
+          "cncf",
+          "operator",
+          "service-mesh"
+        ],
+        "strongKeywords": [
+          "kubernetes",
+          "k8s",
+          "helm",
+          "kubectl",
+          "kustomize",
+          "k3s"
+        ],
+        "weakKeywords": [
+          "cloud native",
+          "container orchestration",
+          "operator",
+          "cncf"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "docker",
+      "name": "Docker",
+      "description": "Containers and container tooling",
+      "searchQueries": [
+        "topic:docker stars:>{minStars} pushed:>{pushedSince}",
+        "topic:docker-compose stars:>{minStars} pushed:>{pushedSince}",
+        "topic:docker created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "docker",
+        "container",
+        "dockerfile",
+        "podman"
+      ],
+      "topics": [
+        "docker",
+        "docker-compose",
+        "containers",
+        "dockerfile",
+        "podman"
+      ],
+      "classification": {
+        "strongTopics": [
+          "docker",
+          "docker-container",
+          "dockerfile",
+          "podman",
+          "container-runtime",
+          "containerd",
+          "buildkit",
+          "docker-image"
+        ],
+        "weakTopics": [
+          "docker-compose",
+          "containers",
+          "containerization",
+          "docker-hub",
+          "oci"
+        ],
+        "strongKeywords": [
+          "docker",
+          "dockerfile",
+          "docker compose",
+          "podman",
+          "containerd"
+        ],
+        "weakKeywords": [
+          "container",
+          "containers",
+          "oci"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "aws",
+      "name": "AWS",
+      "description": "Amazon Web Services SDKs, tooling and serverless",
+      "searchQueries": [
+        "topic:aws stars:>{minStars} pushed:>{pushedSince}",
+        "topic:amazon-web-services stars:>{minStars} pushed:>{pushedSince}",
+        "topic:aws created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "aws",
+        "amazon web services",
+        "lambda",
+        "cdk"
+      ],
+      "topics": [
+        "aws",
+        "amazon-web-services",
+        "aws-lambda",
+        "aws-cdk",
+        "serverless"
+      ],
+      "classification": {
+        "strongTopics": [
+          "aws",
+          "amazon-web-services",
+          "aws-lambda",
+          "aws-cdk",
+          "aws-sdk",
+          "aws-cli",
+          "cloudformation",
+          "dynamodb",
+          "ec2",
+          "eks",
+          "boto3"
+        ],
+        "weakTopics": [
+          "serverless",
+          "cloud",
+          "amazon",
+          "s3"
+        ],
+        "strongKeywords": [
+          "aws",
+          "amazon web services",
+          "aws lambda",
+          "aws cdk",
+          "cloudformation",
+          "dynamodb"
+        ],
+        "weakKeywords": [
+          "amazon",
+          "serverless",
+          "s3"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "cloud",
+      "name": "Cloud",
+      "description": "Cloud-native platforms and multi-cloud tooling",
+      "searchQueries": [
+        "topic:cloud-native stars:>{minStars} pushed:>{pushedSince}",
+        "topic:cloud stars:>{minStars} pushed:>{pushedSince}",
+        "topic:cloud-native created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "cloud native",
+        "multi-cloud",
+        "gcp",
+        "azure"
+      ],
+      "topics": [
+        "cloud-native",
+        "cloud",
+        "cloud-computing",
+        "multi-cloud",
+        "gcp",
+        "azure"
+      ],
+      "classification": {
+        "strongTopics": [
+          "cloud-native",
+          "cloud-computing",
+          "multi-cloud",
+          "gcp",
+          "google-cloud",
+          "azure",
+          "cloud-infrastructure",
+          "cloudflare"
+        ],
+        "weakTopics": [
+          "cloud",
+          "serverless",
+          "paas",
+          "iaas",
+          "cloudflare-workers"
+        ],
+        "strongKeywords": [
+          "cloud native",
+          "cloud computing",
+          "multi-cloud",
+          "multi cloud",
+          "google cloud",
+          "azure",
+          "gcp"
+        ],
+        "weakKeywords": [
+          "cloud",
+          "serverless"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "postgresql",
+      "name": "PostgreSQL",
+      "description": "PostgreSQL, extensions and tooling",
+      "searchQueries": [
+        "topic:postgresql stars:>{minStars} pushed:>{pushedSince}",
+        "topic:postgres stars:>{minStars} pushed:>{pushedSince}",
+        "topic:postgresql created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "postgresql",
+        "postgres",
+        "pgvector"
+      ],
+      "topics": [
+        "postgresql",
+        "postgres",
+        "pgvector",
+        "timescaledb",
+        "postgres-extension"
+      ],
+      "classification": {
+        "strongTopics": [
+          "postgresql",
+          "postgres",
+          "pgsql",
+          "psql",
+          "plpgsql",
+          "pgvector",
+          "timescaledb",
+          "postgres-extension",
+          "pgbouncer",
+          "citus"
+        ],
+        "weakTopics": [
+          "sql",
+          "database",
+          "supabase"
+        ],
+        "strongKeywords": [
+          "postgresql",
+          "postgres",
+          "pgvector",
+          "timescaledb",
+          "pgbouncer"
+        ],
+        "weakKeywords": [
+          "sql",
+          "supabase"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "redis",
+      "name": "Redis",
+      "description": "Redis, Valkey and compatible stores and clients",
+      "searchQueries": [
+        "topic:redis stars:>{minStars} pushed:>{pushedSince}",
+        "topic:valkey stars:>{minStars} pushed:>{pushedSince}",
+        "topic:redis created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "redis",
+        "valkey",
+        "in-memory cache"
+      ],
+      "topics": [
+        "redis",
+        "valkey",
+        "redis-cluster",
+        "redis-client",
+        "keydb"
+      ],
+      "classification": {
+        "strongTopics": [
+          "redis",
+          "redis-db",
+          "redisdb",
+          "valkey",
+          "redis-cluster",
+          "redis-client",
+          "keydb",
+          "dragonfly",
+          "redisson"
+        ],
+        "weakTopics": [
+          "cache",
+          "caching",
+          "key-value",
+          "in-memory-database",
+          "kv-store",
+          "memcached"
+        ],
+        "strongKeywords": [
+          "redis",
+          "valkey",
+          "keydb",
+          "dragonfly"
+        ],
+        "weakKeywords": [
+          "cache",
+          "caching",
+          "key-value",
+          "in-memory"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "databases",
+      "name": "Databases",
+      "description": "Database engines and data storage",
+      "searchQueries": [
+        "topic:database stars:>{minStars} pushed:>{pushedSince}",
+        "topic:sql stars:>{minStars} pushed:>{pushedSince}",
+        "topic:database created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "database",
+        "sql engine",
+        "olap",
+        "key-value store"
+      ],
+      "topics": [
+        "database",
+        "sql",
+        "nosql",
+        "olap",
+        "sqlite",
+        "duckdb",
+        "distributed-database",
+        "time-series-database"
+      ],
+      "classification": {
+        "strongTopics": [
+          "database",
+          "databases",
+          "sql",
+          "nosql",
+          "olap",
+          "oltp",
+          "sqlite",
+          "duckdb",
+          "mysql",
+          "mariadb",
+          "mongodb",
+          "clickhouse",
+          "distributed-database",
+          "time-series-database",
+          "key-value-store",
+          "newsql",
+          "dbms"
+        ],
+        "weakTopics": [
+          "orm",
+          "data-engineering",
+          "analytics",
+          "etl",
+          "query-engine",
+          "vector-database"
+        ],
+        "strongKeywords": [
+          "sql engine",
+          "olap",
+          "key-value store",
+          "dbms",
+          "sqlite",
+          "duckdb",
+          "mysql",
+          "mariadb",
+          "mongodb",
+          "clickhouse"
+        ],
+        "weakKeywords": [
+          "database",
+          "databases",
+          "sql",
+          "orm",
+          "analytics"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [
+          "database of"
+        ],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "devops",
+      "name": "DevOps",
+      "description": "CI/CD, GitOps and delivery automation",
+      "searchQueries": [
+        "topic:devops stars:>{minStars} pushed:>{pushedSince}",
+        "topic:ci-cd stars:>{minStars} pushed:>{pushedSince}",
+        "topic:devops created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "devops",
+        "ci/cd",
+        "gitops",
+        "pipeline"
+      ],
+      "topics": [
+        "devops",
+        "ci-cd",
+        "gitops",
+        "github-actions",
+        "argocd",
+        "jenkins",
+        "automation"
+      ],
+      "classification": {
+        "strongTopics": [
+          "devops",
+          "dev-ops",
+          "ci-cd",
+          "cicd",
+          "gitops",
+          "github-actions",
+          "argocd",
+          "jenkins",
+          "continuous-integration",
+          "continuous-delivery",
+          "continuous-deployment",
+          "gitlab-ci",
+          "tekton",
+          "release-automation"
+        ],
+        "weakTopics": [
+          "automation",
+          "pipeline",
+          "deployment",
+          "sre",
+          "infrastructure",
+          "monitoring"
+        ],
+        "strongKeywords": [
+          "devops",
+          "ci/cd",
+          "gitops",
+          "github actions",
+          "continuous integration",
+          "continuous delivery",
+          "argo cd",
+          "jenkins"
+        ],
+        "weakKeywords": [
+          "automation",
+          "pipeline",
+          "deployment",
+          "sre"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "observability",
+      "name": "Observability",
+      "description": "Monitoring, tracing, logging and alerting",
+      "searchQueries": [
+        "topic:observability stars:>{minStars} pushed:>{pushedSince}",
+        "topic:opentelemetry stars:>{minStars} pushed:>{pushedSince}",
+        "topic:observability created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "observability",
+        "opentelemetry",
+        "tracing",
+        "metrics",
+        "monitoring"
+      ],
+      "topics": [
+        "observability",
+        "opentelemetry",
+        "monitoring",
+        "tracing",
+        "prometheus",
+        "grafana",
+        "apm"
+      ],
+      "classification": {
+        "strongTopics": [
+          "observability",
+          "opentelemetry",
+          "otel",
+          "tracing",
+          "distributed-tracing",
+          "prometheus",
+          "grafana",
+          "apm"
+        ],
+        "weakTopics": [
+          "monitoring",
+          "metrics",
+          "logging",
+          "logs",
+          "alerting",
+          "telemetry",
+          "dashboards"
+        ],
+        "strongKeywords": [
+          "observability",
+          "opentelemetry",
+          "distributed tracing",
+          "prometheus",
+          "grafana",
+          "apm"
+        ],
+        "weakKeywords": [
+          "monitoring",
+          "metrics",
+          "logging",
+          "telemetry",
+          "alerting"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "security",
+      "name": "Security",
+      "description": "Application, infrastructure and supply-chain security",
+      "searchQueries": [
+        "topic:security stars:>{minStars} pushed:>{pushedSince}",
+        "topic:cybersecurity stars:>{minStars} pushed:>{pushedSince}",
+        "topic:security created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "vulnerability",
+        "devsecops",
+        "pentest",
+        "sast",
+        "secret scanning"
+      ],
+      "topics": [
+        "security",
+        "cybersecurity",
+        "devsecops",
+        "vulnerability-scanner",
+        "pentesting",
+        "sast",
+        "supply-chain-security"
+      ],
+      "classification": {
+        "strongTopics": [
+          "security",
+          "security-tools",
+          "cybersecurity",
+          "infosec",
+          "devsecops",
+          "vulnerability-scanner",
+          "pentesting",
+          "penetration-testing",
+          "sast",
+          "dast",
+          "malware",
+          "cve",
+          "exploit",
+          "red-team",
+          "blue-team",
+          "siem",
+          "owasp",
+          "appsec",
+          "supply-chain-security",
+          "secrets-detection"
+        ],
+        "weakTopics": [
+          "privacy",
+          "encryption",
+          "cryptography",
+          "authentication",
+          "auth",
+          "oauth",
+          "vulnerability",
+          "hacking"
+        ],
+        "strongKeywords": [
+          "security",
+          "cybersecurity",
+          "devsecops",
+          "pentest",
+          "penetration testing",
+          "vulnerability",
+          "sast",
+          "malware",
+          "exploit",
+          "owasp",
+          "red team"
+        ],
+        "weakKeywords": [
+          "privacy",
+          "encryption",
+          "authentication",
+          "password"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [
+          "security camera",
+          "surveillance camera",
+          "home security"
+        ],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "distributed-systems",
+      "name": "Distributed Systems",
+      "description": "Consensus, replication and distributed computing",
+      "searchQueries": [
+        "topic:distributed-systems stars:>{minStars} pushed:>{pushedSince}",
+        "topic:raft stars:>{minStars} pushed:>{pushedSince}",
+        "topic:distributed-systems created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "distributed system",
+        "consensus",
+        "raft",
+        "crdt",
+        "replication"
+      ],
+      "topics": [
+        "distributed-systems",
+        "raft",
+        "consensus",
+        "distributed-computing",
+        "crdt",
+        "paxos"
+      ],
+      "classification": {
+        "strongTopics": [
+          "distributed-systems",
+          "distributed-computing",
+          "consensus",
+          "raft",
+          "paxos",
+          "crdt",
+          "distributed-database",
+          "replication",
+          "sharding"
+        ],
+        "weakTopics": [
+          "distributed",
+          "p2p",
+          "high-availability",
+          "scalability",
+          "fault-tolerance",
+          "cluster"
+        ],
+        "strongKeywords": [
+          "distributed system",
+          "distributed systems",
+          "consensus",
+          "raft",
+          "paxos",
+          "crdt",
+          "replication",
+          "sharding",
+          "fault tolerance"
+        ],
+        "weakKeywords": [
+          "distributed",
+          "cluster",
+          "high availability",
+          "scalability"
+        ],
+        "exclusionTopics": [
+          "blockchain",
+          "cryptocurrency",
+          "web3",
+          "bitcoin",
+          "ethereum",
+          "smart-contracts"
+        ],
+        "exclusionKeywords": [
+          "distributed ledger",
+          "blockchain"
+        ],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "system-design",
+      "name": "System Design",
+      "description": "Software architecture, design patterns and system design resources",
+      "searchQueries": [
+        "topic:system-design stars:>{minStars} pushed:>{pushedSince}",
+        "topic:software-architecture stars:>{minStars} pushed:>{pushedSince}",
+        "topic:system-design created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "system design",
+        "software architecture",
+        "design patterns",
+        "ddd"
+      ],
+      "topics": [
+        "system-design",
+        "software-architecture",
+        "design-patterns",
+        "domain-driven-design",
+        "clean-architecture",
+        "architecture"
+      ],
+      "classification": {
+        "strongTopics": [
+          "system-design",
+          "system-design-interview",
+          "software-architecture",
+          "design-patterns",
+          "domain-driven-design",
+          "ddd",
+          "clean-architecture",
+          "hexagonal-architecture",
+          "event-driven-architecture",
+          "cqrs",
+          "architecture"
+        ],
+        "weakTopics": [
+          "patterns",
+          "software-design",
+          "best-practices"
+        ],
+        "strongKeywords": [
+          "system design",
+          "software architecture",
+          "design patterns",
+          "domain driven design",
+          "ddd",
+          "clean architecture",
+          "hexagonal architecture",
+          "cqrs",
+          "系统设计"
+        ],
+        "weakKeywords": [
+          "architecture",
+          "patterns",
+          "best practices"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [
+          "cpu architecture",
+          "instruction set",
+          "computer architecture",
+          "x86 architecture",
+          "arm architecture"
+        ],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "developer-tools",
+      "name": "Developer Tools",
+      "description": "CLIs, editors and developer productivity tools",
+      "searchQueries": [
+        "topic:developer-tools stars:>{minStars} pushed:>{pushedSince}",
+        "topic:devtools stars:>{minStars} pushed:>{pushedSince}",
+        "topic:developer-tools created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "developer tools",
+        "cli",
+        "developer productivity",
+        "terminal"
+      ],
+      "topics": [
+        "developer-tools",
+        "devtools",
+        "cli",
+        "developer-productivity",
+        "terminal",
+        "command-line"
+      ],
+      "classification": {
+        "strongTopics": [
+          "developer-tools",
+          "devtools",
+          "developer-productivity",
+          "developer-experience",
+          "dx",
+          "code-editor",
+          "ide",
+          "linter",
+          "formatter",
+          "debugger",
+          "static-analysis",
+          "code-quality"
+        ],
+        "weakTopics": [
+          "cli",
+          "terminal",
+          "command-line",
+          "productivity",
+          "tools",
+          "utility",
+          "vscode-extension",
+          "automation"
+        ],
+        "strongKeywords": [
+          "developer tools",
+          "developer tool",
+          "developer productivity",
+          "developer experience",
+          "devtools",
+          "code editor",
+          "ide",
+          "linter",
+          "formatter",
+          "debugger",
+          "static analysis"
+        ],
+        "weakKeywords": [
+          "cli",
+          "terminal",
+          "command line",
+          "productivity",
+          "tool"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "infrastructure-as-code",
+      "name": "Infrastructure as Code",
+      "description": "Terraform, Pulumi, Ansible and other IaC tooling",
+      "searchQueries": [
+        "topic:infrastructure-as-code stars:>{minStars} pushed:>{pushedSince}",
+        "topic:terraform stars:>{minStars} pushed:>{pushedSince}",
+        "topic:infrastructure-as-code created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "infrastructure as code",
+        "terraform",
+        "iac",
+        "pulumi",
+        "ansible"
+      ],
+      "topics": [
+        "infrastructure-as-code",
+        "terraform",
+        "iac",
+        "opentofu",
+        "pulumi",
+        "ansible",
+        "crossplane"
+      ],
+      "classification": {
+        "strongTopics": [
+          "infrastructure-as-code",
+          "iac",
+          "terraform",
+          "hashicorp-terraform",
+          "terraform-module",
+          "terraform-modules",
+          "terraform-providers",
+          "opentofu",
+          "pulumi",
+          "ansible",
+          "crossplane",
+          "terragrunt",
+          "bicep",
+          "packer"
+        ],
+        "weakTopics": [
+          "provisioning",
+          "configuration-management",
+          "infrastructure",
+          "hcl",
+          "cdk"
+        ],
+        "strongKeywords": [
+          "infrastructure as code",
+          "iac",
+          "terraform",
+          "opentofu",
+          "pulumi",
+          "ansible",
+          "terragrunt",
+          "crossplane",
+          "cloudformation"
+        ],
+        "weakKeywords": [
+          "provisioning",
+          "configuration management"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {
+          "HCL": 3
+        }
+      }
+    },
+    {
+      "slug": "testing",
+      "name": "Testing",
+      "description": "Test frameworks, automation and quality tooling",
+      "searchQueries": [
+        "topic:testing stars:>{minStars} pushed:>{pushedSince}",
+        "topic:test-automation stars:>{minStars} pushed:>{pushedSince}",
+        "topic:testing created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "testing",
+        "test automation",
+        "e2e",
+        "unit test",
+        "load testing"
+      ],
+      "topics": [
+        "testing",
+        "test-automation",
+        "unit-testing",
+        "e2e-testing",
+        "playwright",
+        "load-testing",
+        "fuzzing"
+      ],
+      "classification": {
+        "strongTopics": [
+          "testing",
+          "testing-tools",
+          "testing-framework",
+          "test-automation",
+          "unit-testing",
+          "e2e-testing",
+          "end-to-end-testing",
+          "integration-testing",
+          "cypress",
+          "jest",
+          "pytest",
+          "junit",
+          "load-testing",
+          "fuzzing",
+          "mutation-testing",
+          "test-framework",
+          "mocking",
+          "tdd",
+          "bdd"
+        ],
+        "weakTopics": [
+          "test",
+          "tests",
+          "playwright",
+          "selenium",
+          "puppeteer",
+          "qa",
+          "quality",
+          "coverage",
+          "benchmark",
+          "assertions"
+        ],
+        "strongKeywords": [
+          "testing framework",
+          "test automation",
+          "unit test",
+          "unit testing",
+          "e2e testing",
+          "end-to-end testing",
+          "integration testing",
+          "load testing",
+          "fuzzing",
+          "mutation testing",
+          "test runner",
+          "cypress",
+          "pytest",
+          "jest",
+          "junit"
+        ],
+        "weakKeywords": [
+          "testing",
+          "test",
+          "tests",
+          "qa",
+          "mock",
+          "mocking",
+          "playwright",
+          "selenium"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
+        "languages": {}
+      }
+    }
+  ]
+}

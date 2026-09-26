@@ -1,0 +1,21 @@
+{
+  "at": "2026-09-24T15:48:34.355Z",
+  "summary": {
+    "rate-limit": {
+      "exitCode": 2,
+      "status": "NOT RUN (no token)"
+    },
+    "graphql": {
+      "exitCode": 2,
+      "status": "NOT RUN (no token)"
+    },
+    "search": {
+      "exitCode": 2,
+      "status": "NOT RUN (no token)"
+    },
+    "stargazers": {
+      "exitCode": 2,
+      "status": "NOT RUN (no token)"
+    }
+  }
+}

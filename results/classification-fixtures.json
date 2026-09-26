@@ -1,0 +1,485 @@
+{
+  "summary": {
+    "scope": "curated 25-repository fixture (hand-labelled, real metadata); NOT production accuracy",
+    "fixtures": 25,
+    "exactMatches": 24,
+    "acceptableOutcomes": 25,
+    "aiPredicted": 8,
+    "aiPrecision": 1,
+    "engineeringPredicted": 14,
+    "engineeringPrecision": 1,
+    "falseAi": [],
+    "falseEngineering": [],
+    "falseNegatives": [
+      "opendataloader-project/opendataloader-pdf"
+    ],
+    "unknownRate": 0.16,
+    "bothRate": 0.04,
+    "byPredicted": {
+      "AI": 7,
+      "ENGINEERING": 13,
+      "BOTH": 1,
+      "UNKNOWN": 4
+    }
+  },
+  "rows": [
+    {
+      "repository": "google/adk-python",
+      "desired": [
+        "AI"
+      ],
+      "predicted": "AI",
+      "categories": [
+        "ai-agents:14",
+        "generative-ai:6.5",
+        "llm:6"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": true,
+      "hasEng": false,
+      "reason": "AI: AI Agents (score 14; strong topic \"agentic\" (+4), strong topic \"agentic-ai\" (+2), strong topic \"agents-sdk\" (+1)); Generative AI (score 6.5; strong topic \"genai\" (+4), weak topic \"ai\" (+1.5), description weakly mentions \"ai\" (+1)); LLM (score 6; strong topic \"llm\" (+4), strong topic \"llms\" (+2))."
+    },
+    {
+      "repository": "spring-projects/spring-boot",
+      "desired": [
+        "ENGINEERING"
+      ],
+      "predicted": "ENGINEERING",
+      "categories": [
+        "spring-boot:14",
+        "java:7"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": false,
+      "hasEng": true,
+      "reason": "ENGINEERING: Spring (score 14; strong topic \"spring\" (+4), strong topic \"spring-boot\" (+2), name contains \"spring boot\" (+3)); Java (score 7; strong topic \"java\" (+4), language Java (+3))."
+    },
+    {
+      "repository": "alibaba/nacos",
+      "desired": [
+        "ENGINEERING",
+        "BOTH"
+      ],
+      "predicted": "ENGINEERING",
+      "categories": [
+        "microservices:9"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": false,
+      "hasEng": true,
+      "reason": "ENGINEERING: Microservices (score 9; strong topic \"istio\" (+4), strong topic \"microservices\" (+2), description mentions \"service discovery\" (+3))."
+    },
+    {
+      "repository": "opendataloader-project/opendataloader-pdf",
+      "desired": [
+        "AI",
+        "BOTH"
+      ],
+      "predicted": "UNKNOWN",
+      "categories": [],
+      "exact": false,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": true,
+      "hasAi": false,
+      "hasEng": false,
+      "reason": "Insufficient evidence: best candidate Multimodal scored 4 (needs 6 (or 6 with 2+ evidence kinds) plus a strong topic or name match; had topic)."
+    },
+    {
+      "repository": "microsoft/playwright-mcp",
+      "desired": [
+        "AI"
+      ],
+      "predicted": "AI",
+      "categories": [
+        "mcp:10"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": true,
+      "hasEng": false,
+      "reason": "AI: MCP (score 10; strong topic \"mcp\" (+4), name contains \"mcp\" (+3), description mentions \"mcp server\" (+3))."
+    },
+    {
+      "repository": "punkpeye/awesome-mcp-servers",
+      "desired": [
+        "AI"
+      ],
+      "predicted": "AI",
+      "categories": [
+        "mcp:10"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": true,
+      "hasEng": false,
+      "reason": "AI: MCP (score 10; strong topic \"mcp\" (+4), name contains \"mcp servers\" (+3), description mentions \"mcp servers\" (+3))."
+    },
+    {
+      "repository": "Snailclimb/JavaGuide",
+      "desired": [
+        "ENGINEERING"
+      ],
+      "predicted": "ENGINEERING",
+      "categories": [
+        "java:8"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": false,
+      "hasEng": true,
+      "reason": "ENGINEERING: Java (score 8; strong topic \"java\" (+4), name contains \"java\" (+3), description mentions \"java\" (+3))."
+    },
+    {
+      "repository": "dbeaver/dbeaver",
+      "desired": [
+        "ENGINEERING"
+      ],
+      "predicted": "ENGINEERING",
+      "categories": [
+        "databases:9",
+        "postgresql:8",
+        "java:7"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": false,
+      "hasEng": true,
+      "reason": "ENGINEERING: Databases (score 9; strong topic \"database\" (+4), strong topic \"mysql\" (+2), strong topic \"nosql\" (+1)); PostgreSQL (score 8; strong topic \"postgresql\" (+4), weak topic \"database\" (+1.5), weak topic \"sql\" (+1.5)); Java (score 7; strong topic \"java\" (+4), language Java (+3))."
+    },
+    {
+      "repository": "backstage/backstage",
+      "desired": [
+        "ENGINEERING"
+      ],
+      "predicted": "ENGINEERING",
+      "categories": [
+        "developer-tools:6"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": false,
+      "hasEng": true,
+      "reason": "ENGINEERING: Developer Tools (score 6; strong topic \"developer-experience\" (+4), strong topic \"dx\" (+2))."
+    },
+    {
+      "repository": "helm/helm",
+      "desired": [
+        "ENGINEERING"
+      ],
+      "predicted": "ENGINEERING",
+      "categories": [
+        "kubernetes:13.5"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": false,
+      "hasEng": true,
+      "reason": "ENGINEERING: Kubernetes (score 13.5; strong topic \"helm\" (+4), strong topic \"kubernetes\" (+2), weak topic \"cncf\" (+1.5))."
+    },
+    {
+      "repository": "kubernetes/kubernetes",
+      "desired": [
+        "ENGINEERING"
+      ],
+      "predicted": "ENGINEERING",
+      "categories": [
+        "kubernetes:10"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": false,
+      "hasEng": true,
+      "reason": "ENGINEERING: Kubernetes (score 10; strong topic \"kubernetes\" (+4), weak topic \"cncf\" (+1.5), weak topic \"containers\" (+1.5))."
+    },
+    {
+      "repository": "vllm-project/vllm",
+      "desired": [
+        "AI"
+      ],
+      "predicted": "AI",
+      "categories": [
+        "llm:11.5",
+        "ai-infrastructure:11"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": true,
+      "hasEng": false,
+      "reason": "AI: LLM (score 11.5; strong topic \"llm\" (+4), weak topic \"deepseek\" (+1.5), weak topic \"gpt\" (+1.5)); AI Infrastructure (score 11; strong topic \"llm-serving\" (+4), strong topic \"model-serving\" (+2), weak topic \"cuda\" (+1.5))."
+    },
+    {
+      "repository": "ollama/ollama",
+      "desired": [
+        "AI"
+      ],
+      "predicted": "AI",
+      "categories": [
+        "llm:12.5",
+        "local-ai:7"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": true,
+      "hasEng": false,
+      "reason": "AI: LLM (score 12.5; strong topic \"llm\" (+4), strong topic \"llms\" (+2), weak topic \"deepseek\" (+1.5)); Local AI (score 7; strong topic \"ollama\" (+4), name contains \"ollama\" (+3))."
+    },
+    {
+      "repository": "pytorch/pytorch",
+      "desired": [
+        "AI"
+      ],
+      "predicted": "AI",
+      "categories": [
+        "machine-learning:13"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": true,
+      "hasEng": false,
+      "reason": "AI: Machine Learning (score 13; strong topic \"deep-learning\" (+4), strong topic \"machine-learning\" (+2), strong topic \"neural-network\" (+1))."
+    },
+    {
+      "repository": "duckdb/duckdb",
+      "desired": [
+        "ENGINEERING"
+      ],
+      "predicted": "ENGINEERING",
+      "categories": [
+        "databases:16.5"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": false,
+      "hasEng": true,
+      "reason": "ENGINEERING: Databases (score 16.5; strong topic \"database\" (+4), strong topic \"olap\" (+2), strong topic \"sql\" (+1))."
+    },
+    {
+      "repository": "redis/redis",
+      "desired": [
+        "ENGINEERING"
+      ],
+      "predicted": "ENGINEERING",
+      "categories": [
+        "redis:15.5",
+        "databases:7"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": false,
+      "hasEng": true,
+      "reason": "ENGINEERING: Redis (score 15.5; strong topic \"redis\" (+4), weak topic \"cache\" (+1.5), weak topic \"caching\" (+1.5)); Databases (score 7; strong topic \"database\" (+4), strong topic \"key-value-store\" (+2), strong topic \"nosql\" (+1))."
+    },
+    {
+      "repository": "apache/kafka",
+      "desired": [
+        "ENGINEERING"
+      ],
+      "predicted": "ENGINEERING",
+      "categories": [
+        "kafka:14.5",
+        "java:8.5"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": false,
+      "hasEng": true,
+      "reason": "ENGINEERING: Kafka (score 14.5; strong topic \"kafka\" (+4), weak topic \"streaming\" (+1.5), name contains \"kafka\" (+3)); Java (score 8.5; strong topic \"java\" (+4), weak topic \"scala\" (+1.5), language Java (+3))."
+    },
+    {
+      "repository": "hashicorp/terraform",
+      "desired": [
+        "ENGINEERING"
+      ],
+      "predicted": "ENGINEERING",
+      "categories": [
+        "infrastructure-as-code:12"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": false,
+      "hasEng": true,
+      "reason": "ENGINEERING: Infrastructure as Code (score 12; strong topic \"infrastructure-as-code\" (+4), strong topic \"terraform\" (+2), name contains \"terraform\" (+3))."
+    },
+    {
+      "repository": "langfuse/langfuse",
+      "desired": [
+        "BOTH"
+      ],
+      "predicted": "BOTH",
+      "categories": [
+        "ai-developer-tools:14.5",
+        "llm:13",
+        "observability:8.5"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": true,
+      "hasEng": true,
+      "reason": "BOTH: AI Developer Tools (score 14.5; strong topic \"llm-evaluation\" (+4), strong topic \"llm-observability\" (+2), strong topic \"prompt-management\" (+1)); LLM (score 13; strong topic \"langchain\" (+4), strong topic \"large-language-models\" (+2), strong topic \"llm\" (+1)); Observability (score 8.5; strong topic \"observability\" (+4), weak topic \"monitoring\" (+1.5), description mentions \"observability\" (+3))."
+    },
+    {
+      "repository": "open-webui/open-webui",
+      "desired": [
+        "AI"
+      ],
+      "predicted": "AI",
+      "categories": [
+        "llm:8.5",
+        "local-ai:8.5"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": true,
+      "hasEng": false,
+      "reason": "AI: LLM (score 8.5; strong topic \"llm\" (+4), strong topic \"llms\" (+2), weak topic \"openai\" (+1.5)); Local AI (score 8.5; strong topic \"ollama\" (+4), weak topic \"self-hosted\" (+1.5), description mentions \"ollama\" (+3))."
+    },
+    {
+      "repository": "iluwatar/java-design-patterns",
+      "desired": [
+        "ENGINEERING"
+      ],
+      "predicted": "ENGINEERING",
+      "categories": [
+        "java:11",
+        "system-design:9"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": false,
+      "hasEng": true,
+      "reason": "ENGINEERING: Java (score 11; strong topic \"java\" (+4), name contains \"java\" (+3), description mentions \"java\" (+3)); System Design (score 9; strong topic \"design-patterns\" (+4), name contains \"design patterns\" (+3), description mentions \"design patterns\" (+3))."
+    },
+    {
+      "repository": "veggiemonk/awesome-docker",
+      "desired": [
+        "ENGINEERING"
+      ],
+      "predicted": "ENGINEERING",
+      "categories": [
+        "docker:9.5"
+      ],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": false,
+      "hasEng": true,
+      "reason": "ENGINEERING: Docker (score 9.5; strong topic \"docker\" (+4), strong topic \"docker-container\" (+2), strong topic \"docker-image\" (+1))."
+    },
+    {
+      "repository": "huihut/interview",
+      "desired": [
+        "UNKNOWN",
+        "ENGINEERING"
+      ],
+      "predicted": "UNKNOWN",
+      "categories": [],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": false,
+      "hasEng": false,
+      "reason": "No category evidence found. Context: educational-content."
+    },
+    {
+      "repository": "mastodon/mastodon",
+      "desired": [
+        "UNKNOWN"
+      ],
+      "predicted": "UNKNOWN",
+      "categories": [],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": false,
+      "hasEng": false,
+      "reason": "Insufficient evidence: best candidate Docker scored 4 (needs 6 (or 6 with 2+ evidence kinds) plus a strong topic or name match; had topic)."
+    },
+    {
+      "repository": "nextcloud/server",
+      "desired": [
+        "UNKNOWN"
+      ],
+      "predicted": "UNKNOWN",
+      "categories": [],
+      "exact": true,
+      "acceptable": true,
+      "falseAi": false,
+      "falseEng": false,
+      "missed": false,
+      "hasAi": false,
+      "hasEng": false,
+      "reason": "No category evidence found."
+    }
+  ]
+}

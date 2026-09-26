@@ -1,0 +1,643 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for OpenSourceRadar/src/tracking/datasets.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">OpenSourceRadar/src/tracking</a> datasets.ts</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">96.58% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>113/117</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">80.51% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>62/77</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>4/4</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">96.58% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>113/117</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a>
+<a name='L147'></a><a href='#L147'>147</a>
+<a name='L148'></a><a href='#L148'>148</a>
+<a name='L149'></a><a href='#L149'>149</a>
+<a name='L150'></a><a href='#L150'>150</a>
+<a name='L151'></a><a href='#L151'>151</a>
+<a name='L152'></a><a href='#L152'>152</a>
+<a name='L153'></a><a href='#L153'>153</a>
+<a name='L154'></a><a href='#L154'>154</a>
+<a name='L155'></a><a href='#L155'>155</a>
+<a name='L156'></a><a href='#L156'>156</a>
+<a name='L157'></a><a href='#L157'>157</a>
+<a name='L158'></a><a href='#L158'>158</a>
+<a name='L159'></a><a href='#L159'>159</a>
+<a name='L160'></a><a href='#L160'>160</a>
+<a name='L161'></a><a href='#L161'>161</a>
+<a name='L162'></a><a href='#L162'>162</a>
+<a name='L163'></a><a href='#L163'>163</a>
+<a name='L164'></a><a href='#L164'>164</a>
+<a name='L165'></a><a href='#L165'>165</a>
+<a name='L166'></a><a href='#L166'>166</a>
+<a name='L167'></a><a href='#L167'>167</a>
+<a name='L168'></a><a href='#L168'>168</a>
+<a name='L169'></a><a href='#L169'>169</a>
+<a name='L170'></a><a href='#L170'>170</a>
+<a name='L171'></a><a href='#L171'>171</a>
+<a name='L172'></a><a href='#L172'>172</a>
+<a name='L173'></a><a href='#L173'>173</a>
+<a name='L174'></a><a href='#L174'>174</a>
+<a name='L175'></a><a href='#L175'>175</a>
+<a name='L176'></a><a href='#L176'>176</a>
+<a name='L177'></a><a href='#L177'>177</a>
+<a name='L178'></a><a href='#L178'>178</a>
+<a name='L179'></a><a href='#L179'>179</a>
+<a name='L180'></a><a href='#L180'>180</a>
+<a name='L181'></a><a href='#L181'>181</a>
+<a name='L182'></a><a href='#L182'>182</a>
+<a name='L183'></a><a href='#L183'>183</a>
+<a name='L184'></a><a href='#L184'>184</a>
+<a name='L185'></a><a href='#L185'>185</a>
+<a name='L186'></a><a href='#L186'>186</a>
+<a name='L187'></a><a href='#L187'>187</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import type { CandidateDataset } from '../collect/candidates';
+import type { Dataset as RepositoryDataset, RepositoryRecord } from '../collect/dataset';
+import type { ClassifiedDataset } from '../classification/datasets';
+import type { TopLevelCategory } from '../classification/types';
+import { decideTracking, estimateDailyRefreshes, isEligible, selectDue } from './engine';
+import type { TrackingDecision, TrackingInput, TrackingMetrics, TrackingPolicy, TrackingSignals, TrackingState, TrackingStatus } from './types';
+&nbsp;
+export const TRACKED_SCHEMA_VERSION = 1 as const;
+&nbsp;
+/**
+ * Tracked repositories reference classification by id and keep only a summary of it.
+ * Star history and repository metadata stay in the Phase 2 repository dataset / candidate dataset.
+ */
+export interface TrackedRecord {
+  id: string;
+  fullName: string;
+  /** Present only in the run where the name changed for this id. */
+  previousFullName?: string;
+  classification: { topLevelCategory: TopLevelCategory; categories: string[] };
+  /** HOT/WARM/DORMANT are measured; UNASSESSED means no star history has been collected yet. */
+  tier: TrackingStatus;
+  refreshIntervalHours: number;
+  reason: string;
+  signals: TrackingSignals;
+  assessed: boolean;
+  tierSince: string;
+  lastEvaluatedAt: string;
+  /** When star history was last collected for this repository; null if never. */
+  lastCollectedAt: string | null;
+  nextRefreshAt: string;
+  transition: { from: TrackingStatus; to: TrackingStatus } | null;
+}
+&nbsp;
+export interface TrackedDataset {
+  schemaVersion: typeof TRACKED_SCHEMA_VERSION;
+  trackingVersion: string;
+  generatedAt: string;
+  source: { classifierVersion: string; classifiedGeneratedAt: string; growthGeneratedAt: string | null; candidates: number };
+  summary: {
+    tracked: number;
+    byTier: Record&lt;TrackingStatus, number&gt;;
+    unassessed: number;
+    excluded: { unclassified: number; archived: number; other: number };
+    dueNow: number;
+    /** Expected history requests per day at the configured refresh intervals. */
+    estimatedDailyRefreshes: number;
+  };
+  repositories: TrackedRecord[];
+}
+&nbsp;
+const usable = (w: { status: string; starsPerDay: number | null } | undefined): number | null =&gt;
+  w &amp;&amp; (w.status === <span class="branch-0 cbranch-no" title="branch not covered" >'ok' || w.status === 'zero-base') ? w</span>.starsPerDay : null;
+&nbsp;
+/** Metrics from the Phase 2 repository record when available, otherwise metadata only (growth null). */
+export function metricsFor(
+  candidate: { stars: number; createdAt: string; pushedAt: string | null; isArchived: boolean | null },
+  record: RepositoryRecord | undefined,
+): { metrics: TrackingMetrics; lastRefreshedAt: string | null } {
+  const g = record?.growth;
+  const w7 = g?.['7d'];
+  const src = record ?? candidate;
+  // Stars per day over the days that exist: a repository younger than the window must not look slow because the
+  // window is longer than its life (measured: 25 of 45 repositories aged 4-5 days were wrongly DORMANT before this).
+  const asOf = record ? Date.parse(record.growthAsOf ?? record.starHistory.fetchedAt) : NaN;
+  const ageDays = Number.isFinite(asOf) ? (asOf - Date.parse(src.createdAt)) / 86_400_000 : Infinity;
+  const observed7 = ageDays &lt; 7 ? Math.max(1, Math.ceil(ageDays)) : 7;
+  return {
+    metrics: {
+      stars: src.stars,
+      createdAt: src.createdAt,
+      pushedAt: src.pushedAt,
+      isArchived: src.isArchived === true,
+      starsPerDay7d: w7 &amp;&amp; (w7.status === <span class="branch-0 cbranch-no" title="branch not covered" >'ok' || w7.status === 'zero-base') &amp;&amp; w</span>7.growth !== null ? w7.growth / observed7 : null,
+      starsPerDay30d: usable(g?.['30d']),
+      growth7d: w7 &amp;&amp; (w7.status === <span class="branch-0 cbranch-no" title="branch not covered" >'ok' || w7.status === 'zero-base') ? w</span>7.growth : null,
+      growthPercent7d: w7 &amp;&amp; w7.status === 'ok' ? w7.growthPercent : null,
+    },
+    lastRefreshedAt: record?.starHistory.fetchedAt ?? null,
+  };
+}
+&nbsp;
+export interface BuildTrackedOptions {
+  classified: ClassifiedDataset;
+  candidates: CandidateDataset;
+  /** Phase 2 repository dataset (star history + growth), if any. */
+  growth?: RepositoryDataset;
+  previous?: TrackedDataset;
+  policy: TrackingPolicy;
+  now: Date;
+}
+&nbsp;
+export function buildTrackedDataset(o: BuildTrackedOptions): TrackedDataset {
+  const cand = new Map(o.candidates.candidates.map((c) =&gt; [c.id, c]));
+  const growth = new Map((o.growth?.repositories ?? []).map((r) =&gt; [r.id, r]));
+  const prev = new Map((o.previous?.repositories ?? []).map((r) =&gt; [r.id, r]));
+  const nowIso = o.now.toISOString();
+&nbsp;
+  const records: TrackedRecord[] = [];
+  const excluded = { unclassified: 0, archived: 0, other: 0 };
+&nbsp;
+  for (const c of o.classified.repositories) {
+    const candidate = cand.get(c.id);
+    if (!candidate) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      excluded.other += 1; // classified but no metadata to evaluate: cannot track what we cannot measure</span>
+<span class="cstat-no" title="statement not covered" >      continue;</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+    const { metrics, lastRefreshedAt } = metricsFor(candidate, growth.get(c.id));
+    const input: TrackingInput = { id: c.id, topLevelCategory: c.result.topLevelCategory, metrics, lastRefreshedAt };
+    const gate = isEligible(input, o.policy);
+    if (!gate.eligible) {
+      if (c.result.topLevelCategory === 'UNKNOWN') excluded.unclassified += 1;
+      else if (metrics.isArchived) excluded.archived += <span class="branch-0 cbranch-no" title="branch not covered" >1;</span>
+<span class="cstat-no" title="statement not covered" >      else excluded.other += 1;</span>
+      continue;
+    }
+    const before = prev.get(c.id);
+    // A previous record that was never measured (Phase 3 provisional tiers) is UNASSESSED, whatever tier it carries.
+    const state: TrackingState | undefined = before ? { tier: before.assessed ? before.tier : 'UNASSESSED', tierSince: before.tierSince } : undefined;
+    const d: TrackingDecision = decideTracking(input, o.policy, o.now, state);
+    const record: TrackedRecord = {
+      id: c.id,
+      fullName: candidate.fullName,
+      classification: { topLevelCategory: c.result.topLevelCategory, categories: c.result.categories.map((x) =&gt; x.slug) },
+      tier: d.tier,
+      refreshIntervalHours: d.refreshIntervalHours,
+      reason: d.reason,
+      signals: d.signals,
+      assessed: d.assessed,
+      tierSince: d.tierSince,
+      lastEvaluatedAt: nowIso,
+      lastCollectedAt: lastRefreshedAt,
+      nextRefreshAt: d.nextRefreshAt,
+      transition: d.transition,
+    };
+    if (before &amp;&amp; before.fullName !== candidate.fullName) record.previousFullName = before.fullName;
+    records.push(record);
+  }
+&nbsp;
+  records.sort((a, b) =&gt; (BigInt(a.id) &lt; BigInt(b.id<span class="branch-0 cbranch-no" title="branch not covered" >) ? -1 : B</span>igInt(a.id) &gt; BigInt(b.id) ? <span class="branch-0 cbranch-no" title="branch not covered" >1 : 0))</span>;
+  const byTier: Record&lt;TrackingStatus, number&gt; = { HOT: 0, WARM: 0, DORMANT: 0, UNASSESSED: 0 };
+  for (const r of records) byTier[r.tier] += 1;
+  return {
+    schemaVersion: TRACKED_SCHEMA_VERSION,
+    trackingVersion: o.policy.trackingVersion,
+    generatedAt: nowIso,
+    source: {
+      classifierVersion: o.classified.classifierVersion,
+      classifiedGeneratedAt: o.classified.generatedAt,
+      growthGeneratedAt: o.growth?.generatedAt ?? null,
+      candidates: o.candidates.candidates.length,
+    },
+    summary: {
+      tracked: records.length,
+      byTier,
+      unassessed: byTier.UNASSESSED,
+      excluded,
+      dueNow: selectDue(records, o.now, o.policy.dueOrder).length,
+      // measured tiers only: UNASSESSED is a one-time first-assessment cost, reported as `unassessed`
+      estimatedDailyRefreshes: Math.round(estimateDailyRefreshes({ HOT: byTier.HOT, WARM: byTier.WARM, DORMANT: byTier.DORMANT }, o.policy) * 10) / 10,
+    },
+    repositories: records,
+  };
+}
+&nbsp;
+export function validateTrackedDataset(ds: unknown): string[] {
+  const problems: string[] = [];
+  if (typeof ds !== 'object' || ds === null) return ['tracked dataset is not an object'];
+  const d = ds as Partial&lt;TrackedDataset&gt;;
+  if (d.schemaVersion !== TRACKED_SCHEMA_VERSION) <span class="branch-0 cbranch-no" title="branch not covered" >problems.push(`schemaVersion must be ${TRACKED_SCHEMA_VERSION}`);</span>
+  if (!Array.isArray(d.repositories)) <span class="branch-0 cbranch-no" title="branch not covered" >return [...problems, 'repositories must be an array'];</span>
+  const seen = new Set&lt;string&gt;();
+  d.repositories.forEach((r, i) =&gt; {
+    const where = `repositories[${i}]`;
+    if (typeof r?.id !== 'string' || !/^\d+$/.test(r.id)) <span class="branch-0 cbranch-no" title="branch not covered" >return void problems.push(`${where}.id must be a numeric string`);</span>
+    if (seen.has(r.id)) problems.push(`${where}.id ${r.id} is duplicated`);
+    seen.add(r.id);
+    if (!['HOT', 'WARM', 'DORMANT', 'UNASSESSED'].includes(r.tier)) <span class="branch-0 cbranch-no" title="branch not covered" >problems.push(`${where}.tier invalid`);</span>
+    if (r.tier === 'UNASSESSED' &amp;&amp; r.lastCollectedAt !== null) <span class="branch-0 cbranch-no" title="branch not covered" >problems.push(`${where}: UNASSESSED but has a collection time`);</span>
+    if (!(r.refreshIntervalHours &gt; 0)) <span class="branch-0 cbranch-no" title="branch not covered" >problems.push(`${where}.refreshIntervalHours must be positive`);</span>
+    if (Number.isNaN(Date.parse(r.nextRefreshAt))) <span class="branch-0 cbranch-no" title="branch not covered" >problems.push(`${where}.nextRefreshAt invalid`);</span>
+    if (typeof r.reason !== 'string' || r.reason === '') <span class="branch-0 cbranch-no" title="branch not covered" >problems.push(`${where}.reason is required`);</span>
+    if (r.classification?.topLevelCategory === 'UNKNOWN') problems.push(`${where}: UNKNOWN repositories must not be tracked`);
+  });
+  if (d.summary &amp;&amp; d.summary.tracked !== d.repositories.length) problems.push('summary.tracked does not match repositories.length');
+  return problems;
+}
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-09-26T06:00:20.113Z
+            </div>
+        <script src="../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../sorter.js"></script>
+        <script src="../../../block-navigation.js"></script>
+    </body>
+</html>
+    

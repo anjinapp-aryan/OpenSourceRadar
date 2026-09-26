@@ -1,0 +1,4 @@
+started 2026-09-26T02:52:01Z
+collect exit=0 2026-09-26T02:52:13Z
+track exit=0 2026-09-26T02:52:14Z
+momentum exit=0 2026-09-26T02:52:17Z

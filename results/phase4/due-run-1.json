@@ -1,0 +1,36 @@
+
+> opensource-radar@0.1.0 collect
+> tsx scripts/collect/index.ts --due --limit 45 --concurrency 3 --cache .cache/sh-due.json --out data/repositories.json
+
+{
+  "mode": "due",
+  "authenticated": false,
+  "out": "data/repositories.json",
+  "report": {
+    "tracked": 3413,
+    "due": 3048,
+    "notDue": 365,
+    "outOfScope": 0,
+    "selected": 45,
+    "collected": 45,
+    "failures": [],
+    "stoppedBy": null,
+    "written": true,
+    "datasetRepositories": 545,
+    "durationMs": 143
+  },
+  "usage": {
+    "restRequests": 0,
+    "graphqlRequests": 0,
+    "starHistoryPageRequests": 0,
+    "starHistoryRetries": 0,
+    "starHistoryBytes": 0,
+    "cache": {
+      "hits": 45,
+      "misses": 0,
+      "coalesced": 0,
+      "storeHits": 45
+    },
+    "coreRateLimit": null
+  }
+}

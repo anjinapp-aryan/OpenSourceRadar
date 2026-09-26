@@ -1,0 +1,3379 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-24T17:16:28.643Z",
+  "asOfDate": "2026-09-24",
+  "historyPagesPerRepository": 1,
+  "stats": {
+    "repositories": 45,
+    "byDomain": {
+      "engineering": 12,
+      "ai": 33
+    }
+  },
+  "repositories": [
+    {
+      "id": "507775",
+      "owner": "elastic",
+      "name": "elasticsearch",
+      "fullName": "elastic/elasticsearch",
+      "url": "https://github.com/elastic/elasticsearch",
+      "description": "Free and Open Source, Distributed, RESTful Search Engine",
+      "language": "Java",
+      "topics": [
+        "elasticsearch",
+        "java",
+        "search-engine"
+      ],
+      "license": "NOASSERTION",
+      "createdAt": "2010-02-08T13:20:56Z",
+      "updatedAt": "2026-09-24T16:55:36Z",
+      "pushedAt": "2026-09-24T17:03:04Z",
+      "isArchived": false,
+      "stars": 77978,
+      "forks": 26086,
+      "openIssues": 6081,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "engineering"
+      ],
+      "categories": [
+        "java"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:20.399Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [9, 10, 11, 20, 6, 9, 8, 11, 7, 10, 37, 10, 12, 11, 6, 12, 8, 7, 9, 12, 15, 6, 15, 9, 9, 10, 17, 6, 4, 7, 3, 13, 24, 24, 8, 8, 10, 17, 4, 12, 12, 9, 11, 9, 5, 7, 11, 10, 5, 9, 12, 7, 8, 9, 6, 10, 7, 9, 13, 9, 10, 10, 8, 7, 10, 6, 13, 11, 13, 5, 6, 13, 4, 6, 10, 11, 13, 6, 16, 10, 5, 7, 5, 3, 8, 10, 6, 19, 13, 10, 9, 8, 16, 24, 19, 12, 13, 6, 12, 9, 29, 9, 11, 8, 4, 5, 13, 15, 9, 9, 10, 7, 18, 15, 20, 41, 8, 13, 19, 2, 7, 27, 10, 7, 163, 60, 10, 14, 19, 8, 7, 11, 26, 11, 7, 20, 17, 22, 7, 19, 8, 3, 13, 7, 13, 7, 6, 11, 10, 7, 5, 9, 5, 7, 72, 14, 23, 11, 11, 12, 7, 6, 9, 12, 11, 11, 11, 13, 10, 14, 30, 17, 14, 11, 6, 7, 7, 7, 10, 9, 8, 3, 13, 6, 15, 4, 10, 5, 12, 1, 5, 6, 4, 5, 6, 6, 2, 9, 3, 3, 10, 9, 8, 13, 6, 9, 9, 8]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 77916,
+          "growth": 62,
+          "growthPercent": 0.0796,
+          "starsPerDay": 8.8571
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 77761,
+          "growth": 217,
+          "growthPercent": 0.2791,
+          "starsPerDay": 7.2333
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 76811,
+          "growth": 1167,
+          "growthPercent": 1.5193,
+          "starsPerDay": 12.9667
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "6296790",
+      "owner": "spring-projects",
+      "name": "spring-boot",
+      "fullName": "spring-projects/spring-boot",
+      "url": "https://github.com/spring-projects/spring-boot",
+      "description": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
+      "language": "Java",
+      "topics": [
+        "framework",
+        "java",
+        "spring",
+        "spring-boot"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2012-10-19T15:02:57Z",
+      "updatedAt": "2026-09-24T17:09:43Z",
+      "pushedAt": "2026-09-24T12:18:02Z",
+      "isArchived": false,
+      "stars": 81488,
+      "forks": 42975,
+      "openIssues": 460,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "engineering"
+      ],
+      "categories": [
+        "java"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:19.944Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [6, 8, 10, 12, 16, 9, 11, 12, 22, 13, 21, 15, 11, 9, 9, 15, 10, 10, 15, 10, 9, 8, 13, 8, 8, 10, 7, 6, 9, 14, 15, 15, 17, 13, 7, 15, 15, 15, 5, 9, 6, 5, 6, 8, 12, 5, 10, 10, 18, 17, 8, 21, 14, 10, 12, 9, 3, 14, 19, 13, 10, 6, 10, 11, 5, 10, 8, 18, 13, 8, 9, 14, 15, 10, 7, 13, 10, 12, 8, 9, 8, 9, 13, 6, 14, 8, 9, 15, 11, 8, 5, 13, 12, 17, 12, 18, 9, 15, 12, 5, 24, 17, 10, 15, 13, 5, 12, 12, 11, 9, 11, 12, 8, 11, 10, 11, 13, 9, 9, 4, 5, 15, 10, 18, 9, 4, 10, 5, 16, 6, 15, 25, 5, 7, 3, 10, 8, 12, 7, 6, 8, 20, 12, 7, 6, 8, 16, 7, 5, 11, 17, 10, 6, 12, 10, 6, 15, 6, 16, 14, 9, 12, 14, 10, 11, 13, 6, 5, 4, 7, 12, 10, 9, 10, 12, 8, 14, 8, 9, 8, 8, 5, 16, 11, 7, 11, 8, 9, 8, 6, 13, 9, 4, 9, 9, 7, 5, 12, 10, 13, 11, 11, 2, 9, 9, 6, 8, 5]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 81438,
+          "growth": 50,
+          "growthPercent": 0.0614,
+          "starsPerDay": 7.1429
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 81230,
+          "growth": 258,
+          "growthPercent": 0.3176,
+          "starsPerDay": 8.6
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 80635,
+          "growth": 853,
+          "growthPercent": 1.0579,
+          "starsPerDay": 9.4778
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "10744183",
+      "owner": "netdata",
+      "name": "netdata",
+      "fullName": "netdata/netdata",
+      "url": "https://github.com/netdata/netdata",
+      "description": "The fastest path to AI-powered full stack observability, even for lean teams.",
+      "language": "Go",
+      "topics": [
+        "ai",
+        "alerting",
+        "cncf",
+        "data-visualization",
+        "database",
+        "devops",
+        "docker",
+        "grafana",
+        "influxdb",
+        "kubernetes",
+        "linux",
+        "machine-learning",
+        "mcp",
+        "mongodb",
+        "monitoring",
+        "mysql",
+        "netdata",
+        "observability",
+        "postgresql",
+        "prometheus"
+      ],
+      "license": "GPL-3.0",
+      "createdAt": "2013-06-17T18:39:10Z",
+      "updatedAt": "2026-09-24T15:11:29Z",
+      "pushedAt": "2026-09-24T14:02:39Z",
+      "isArchived": false,
+      "stars": 80644,
+      "forks": 6634,
+      "openIssues": 411,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "engineering"
+      ],
+      "categories": [
+        "kubernetes"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:20.661Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [14, 18, 15, 6, 9, 10, 13, 16, 8, 15, 13, 13, 9, 10, 14, 16, 16, 15, 25, 9, 12, 15, 20, 16, 16, 16, 15, 21, 13, 11, 8, 12, 23, 8, 17, 13, 17, 22, 11, 14, 17, 30, 17, 14, 21, 35, 17, 11, 15, 9, 17, 24, 13, 17, 7, 19, 18, 12, 18, 16, 11, 14, 17, 14, 15, 12, 13, 17, 17, 12, 12, 12, 22, 17, 13, 14, 14, 11, 15, 26, 18, 20, 14, 13, 9, 14, 6, 9, 13, 14, 11, 22, 13, 27, 12, 14, 13, 7, 12, 20, 12, 13, 14, 17, 10, 15, 13, 13, 95, 30, 22, 17, 17, 25, 15, 19, 16, 9, 9, 13, 11, 8, 13, 22, 7, 12, 14, 25, 18, 20, 22, 13, 18, 24, 14, 12, 13, 18, 11, 15, 17, 52, 35, 22, 20, 23, 15, 23, 17, 19, 29, 32, 21, 15, 16, 17, 14, 16, 15, 18, 8, 13, 14, 17, 21, 31, 19, 11, 13, 14, 12, 11, 10, 11, 8, 10, 16, 14, 15, 16, 19, 14, 13, 22, 16, 16, 16, 9, 9, 15, 15, 14, 16, 15, 13, 14, 17, 17, 15, 18, 14, 17, 24, 11, 12, 15, 10, 6]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 80549,
+          "growth": 95,
+          "growthPercent": 0.1179,
+          "starsPerDay": 13.5714
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 80201,
+          "growth": 443,
+          "growthPercent": 0.5524,
+          "starsPerDay": 14.7667
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 79180,
+          "growth": 1464,
+          "growthPercent": 1.849,
+          "starsPerDay": 16.2667
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "20580498",
+      "owner": "kubernetes",
+      "name": "kubernetes",
+      "fullName": "kubernetes/kubernetes",
+      "url": "https://github.com/kubernetes/kubernetes",
+      "description": "Production-Grade Container Scheduling and Management",
+      "language": "Go",
+      "topics": [
+        "cncf",
+        "containers",
+        "go",
+        "kubernetes"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2014-06-06T22:56:04Z",
+      "updatedAt": "2026-09-24T17:07:58Z",
+      "pushedAt": "2026-09-24T17:02:18Z",
+      "isArchived": false,
+      "stars": 127949,
+      "forks": 44949,
+      "openIssues": 3103,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "engineering"
+      ],
+      "categories": [
+        "kubernetes"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:18.190Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [18, 24, 22, 33, 25, 22, 27, 19, 24, 30, 29, 34, 33, 24, 20, 22, 27, 24, 31, 21, 25, 32, 20, 27, 25, 30, 25, 10, 18, 24, 21, 31, 21, 26, 20, 16, 46, 29, 32, 35, 16, 15, 17, 22, 26, 21, 23, 24, 16, 26, 31, 27, 32, 23, 22, 27, 35, 27, 17, 22, 19, 14, 15, 27, 20, 17, 21, 28, 28, 24, 20, 25, 16, 37, 26, 23, 23, 22, 26, 22, 21, 23, 21, 15, 20, 25, 20, 24, 30, 24, 17, 23, 25, 22, 33, 20, 32, 25, 29, 30, 21, 30, 27, 30, 19, 14, 22, 30, 25, 22, 24, 22, 30, 32, 34, 48, 37, 24, 20, 18, 31, 36, 28, 22, 22, 13, 45, 17, 45, 29, 33, 45, 48, 24, 44, 29, 27, 39, 21, 26, 21, 23, 37, 26, 21, 32, 30, 24, 36, 29, 32, 23, 18, 18, 77, 22, 26, 30, 27, 29, 17, 23, 25, 25, 29, 34, 20, 16, 25, 85, 31, 30, 141, 30, 170, 34, 223, 32, 91, 24, 22, 244, 21, 305, 32, 31, 387, 34, 31, 418, 80, 33, 27, 454, 33, 33, 312, 41, 29, 27, 26, 21, 30, 25, 30, 29, 25, 16]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 127773,
+          "growth": 176,
+          "growthPercent": 0.1377,
+          "starsPerDay": 25.1429
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 125038,
+          "growth": 2911,
+          "growthPercent": 2.3281,
+          "starsPerDay": 97.0333
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 122805,
+          "growth": 5144,
+          "growthPercent": 4.1888,
+          "starsPerDay": 57.1556
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "22790488",
+      "owner": "iluwatar",
+      "name": "java-design-patterns",
+      "fullName": "iluwatar/java-design-patterns",
+      "url": "https://github.com/iluwatar/java-design-patterns",
+      "description": "Design patterns implemented in Java",
+      "language": "Java",
+      "topics": [
+        "awesome-list",
+        "design-patterns",
+        "hacktoberfest",
+        "java",
+        "principles",
+        "snippets",
+        "snippets-collection",
+        "snippets-library"
+      ],
+      "license": "NOASSERTION",
+      "createdAt": "2014-08-09T16:45:18Z",
+      "updatedAt": "2026-09-24T15:32:25Z",
+      "pushedAt": "2026-09-13T06:53:54Z",
+      "isArchived": false,
+      "stars": 94723,
+      "forks": 27369,
+      "openIssues": 128,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "engineering"
+      ],
+      "categories": [
+        "java"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:18.881Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [3, 4, 4, 6, 3, 8, 2, 9, 8, 4, 6, 6, 5, 2, 6, 6, 9, 12, 4, 2, 9, 10, 4, 5, 11, 8, 7, 3, 5, 8, 8, 11, 4, 6, 9, 5, 7, 4, 9, 8, 6, 2, 9, 13, 3, 5, 5, 3, 7, 14, 10, 21, 22, 18, 10, 6, 3, 5, 6, 6, 6, 5, 7, 6, 5, 9, 9, 8, 7, 8, 6, 8, 6, 7, 4, 15, 6, 7, 6, 12, 8, 7, 5, 4, 4, 4, 7, 9, 16, 8, 10, 13, 18, 9, 11, 9, 0, 5, 7, 6, 13, 9, 5, 3, 3, 8, 5, 7, 4, 2, 7, 9, 1, 8, 4, 8, 5, 9, 8, 5, 8, 8, 4, 3, 6, 4, 7, 8, 6, 9, 7, 7, 11, 3, 8, 12, 7, 4, 4, 4, 4, 5, 3, 4, 10, 6, 3, 7, 8, 62, 86, 61, 59, 12, 6, 9, 7, 13, 13, 6, 9, 13, 7, 9, 2, 11, 3, 5, 6, 12, 10, 5, 9, 3, 5, 5, 10, 12, 7, 8, 6, 4, 6, 6, 4, 3, 7, 14, 9, 15, 7, 9, 9, 9, 5, 5, 3, 7, 10, 9, 5, 4, 6, 3, 5, 8, 6, 4]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 94687,
+          "growth": 36,
+          "growthPercent": 0.038,
+          "starsPerDay": 5.1429
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 94520,
+          "growth": 203,
+          "growthPercent": 0.2148,
+          "starsPerDay": 6.7667
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 93857,
+          "growth": 866,
+          "growthPercent": 0.9227,
+          "starsPerDay": 9.6222
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "29207621",
+      "owner": "caddyserver",
+      "name": "caddy",
+      "fullName": "caddyserver/caddy",
+      "url": "https://github.com/caddyserver/caddy",
+      "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
+      "language": "Go",
+      "topics": [
+        "acme",
+        "automatic-https",
+        "caddy",
+        "caddyfile",
+        "go",
+        "golang",
+        "http",
+        "http-server",
+        "http3",
+        "https",
+        "privacy",
+        "reverse-proxy",
+        "security",
+        "tls",
+        "web-server"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2015-01-13T19:45:03Z",
+      "updatedAt": "2026-09-24T16:32:19Z",
+      "pushedAt": "2026-09-23T20:09:48Z",
+      "isArchived": false,
+      "stars": 76053,
+      "forks": 4996,
+      "openIssues": 295,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "engineering"
+      ],
+      "categories": [
+        "security"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:20.957Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [27, 30, 28, 28, 33, 26, 20, 34, 32, 36, 32, 21, 19, 32, 37, 32, 27, 28, 39, 26, 23, 29, 39, 34, 31, 22, 24, 29, 32, 23, 25, 25, 25, 21, 26, 27, 27, 33, 23, 34, 21, 19, 34, 26, 40, 33, 33, 26, 31, 22, 37, 31, 32, 24, 31, 33, 19, 24, 24, 41, 37, 36, 27, 43, 23, 24, 26, 58, 54, 38, 37, 39, 29, 49, 27, 32, 35, 30, 33, 29, 23, 35, 27, 25, 24, 44, 33, 35, 25, 27, 32, 28, 28, 34, 56, 43, 32, 28, 33, 31, 32, 34, 22, 23, 17, 34, 28, 32, 31, 32, 21, 9, 26, 27, 25, 29, 18, 16, 21, 25, 24, 22, 25, 36, 31, 15, 29, 40, 27, 30, 25, 22, 28, 45, 42, 26, 42, 43, 37, 22, 24, 22, 30, 34, 33, 30, 24, 22, 35, 29, 30, 34, 29, 35, 27, 33, 36, 30, 30, 28, 19, 31, 39, 35, 26, 32, 33, 19, 20, 33, 22, 29, 28, 35, 31, 35, 35, 29, 34, 31, 40, 27, 27, 23, 35, 34, 36, 30, 18, 24, 30, 25, 25, 42, 37, 30, 30, 25, 23, 41, 27, 19, 32, 28, 63, 58, 33, 15]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 75805,
+          "growth": 248,
+          "growthPercent": 0.3272,
+          "starsPerDay": 35.4286
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 75111,
+          "growth": 942,
+          "growthPercent": 1.2541,
+          "starsPerDay": 31.4
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 73328,
+          "growth": 2725,
+          "growthPercent": 3.7162,
+          "starsPerDay": 30.2778
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "71220757",
+      "owner": "swisskyrepo",
+      "name": "PayloadsAllTheThings",
+      "fullName": "swisskyrepo/PayloadsAllTheThings",
+      "url": "https://github.com/swisskyrepo/PayloadsAllTheThings",
+      "description": "A list of useful payloads and bypass for Web Application Security and Pentest/CTF",
+      "language": "Python",
+      "topics": [
+        "bounty",
+        "bugbounty",
+        "bypass",
+        "cheatsheet",
+        "enumeration",
+        "hacking",
+        "hacktoberfest",
+        "methodology",
+        "payload",
+        "payloads",
+        "penetration-testing",
+        "pentest",
+        "privilege-escalation",
+        "redteam",
+        "security",
+        "vulnerability",
+        "web-application"
+      ],
+      "license": "MIT",
+      "createdAt": "2016-10-18T07:29:07Z",
+      "updatedAt": "2026-09-24T16:28:00Z",
+      "pushedAt": "2026-08-27T07:52:21Z",
+      "isArchived": false,
+      "stars": 81168,
+      "forks": 17412,
+      "openIssues": 36,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "engineering"
+      ],
+      "categories": [
+        "security"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:20.013Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [24, 36, 29, 36, 29, 53, 53, 30, 34, 38, 45, 29, 25, 20, 24, 32, 29, 37, 47, 28, 28, 34, 22, 31, 44, 20, 30, 27, 30, 35, 50, 38, 30, 25, 22, 34, 35, 29, 31, 38, 24, 32, 30, 25, 26, 22, 32, 24, 33, 26, 34, 40, 29, 26, 41, 42, 51, 41, 43, 31, 18, 24, 24, 21, 32, 30, 27, 29, 36, 24, 32, 31, 25, 25, 24, 20, 28, 19, 19, 32, 27, 29, 25, 26, 28, 25, 30, 41, 35, 30, 21, 28, 26, 31, 25, 32, 18, 21, 22, 23, 30, 20, 28, 22, 26, 24, 26, 37, 34, 32, 22, 21, 20, 23, 30, 38, 42, 23, 29, 20, 37, 41, 35, 41, 30, 27, 23, 35, 21, 32, 26, 22, 21, 28, 30, 33, 30, 31, 31, 22, 27, 22, 27, 34, 43, 30, 22, 33, 31, 36, 34, 28, 29, 23, 39, 44, 30, 35, 48, 26, 20, 25, 35, 50, 41, 45, 24, 28, 32, 28, 37, 34, 36, 48, 34, 29, 29, 30, 39, 37, 29, 25, 31, 30, 24, 24, 31, 32, 28, 18, 33, 30, 31, 30, 31, 18, 18, 28, 35, 34, 27, 27, 21, 27, 58, 72, 29, 18]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 80916,
+          "growth": 252,
+          "growthPercent": 0.3114,
+          "starsPerDay": 36
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 80253,
+          "growth": 915,
+          "growthPercent": 1.1401,
+          "starsPerDay": 30.5
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 78362,
+          "growth": 2806,
+          "growthPercent": 3.5808,
+          "starsPerDay": 31.1778
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "71583602",
+      "owner": "Developer-Y",
+      "name": "cs-video-courses",
+      "fullName": "Developer-Y/cs-video-courses",
+      "url": "https://github.com/Developer-Y/cs-video-courses",
+      "description": "List of Computer Science courses with video lectures.",
+      "language": null,
+      "topics": [
+        "algorithms",
+        "bioinformatics",
+        "computational-biology",
+        "computational-physics",
+        "computer-architecture",
+        "computer-science",
+        "computer-vision",
+        "database-systems",
+        "databases",
+        "deep-learning",
+        "embedded-systems",
+        "machine-learning",
+        "quantum-computing",
+        "reinforcement-learning",
+        "robotics",
+        "security",
+        "systems",
+        "web-development"
+      ],
+      "license": null,
+      "createdAt": "2016-10-21T17:02:11Z",
+      "updatedAt": "2026-09-24T16:31:29Z",
+      "pushedAt": "2026-09-21T16:48:31Z",
+      "isArchived": false,
+      "stars": 83548,
+      "forks": 11490,
+      "openIssues": 5,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "engineering"
+      ],
+      "categories": [
+        "security"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:19.685Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [108, 96, 148, 367, 281, 215, 156, 105, 91, 54, 52, 31, 49, 41, 45, 41, 61, 52, 41, 21, 22, 21, 26, 30, 35, 32, 16, 18, 64, 639, 571, 269, 100, 125, 186, 97, 67, 122, 75, 41, 42, 84, 54, 46, 52, 37, 19, 52, 82, 64, 46, 36, 24, 18, 16, 20, 19, 11, 19, 25, 12, 17, 237, 145, 29, 29, 39, 30, 19, 25, 11, 22, 19, 64, 44, 34, 61, 58, 35, 38, 25, 42, 24, 15, 20, 16, 20, 24, 18, 20, 21, 19, 21, 17, 21, 9, 18, 15, 15, 11, 15, 5, 12, 12, 10, 16, 13, 18, 21, 14, 14, 17, 15, 12, 5, 10, 38, 24, 26, 81, 69, 60, 21, 29, 32, 29, 25, 17, 14, 34, 18, 19, 30, 21, 21, 17, 27, 10, 12, 12, 10, 67, 73, 38, 22, 17, 17, 8, 27, 63, 33, 13, 18, 30, 24, 16, 13, 22, 15, 10, 14, 12, 16, 34, 30, 12, 10, 11, 12, 17, 45, 14, 9, 11, 12, 13, 14, 9, 14, 2, 13, 61, 65, 48, 30, 10, 17, 17, 17, 11, 9, 16, 12, 12, 16, 5, 19, 5, 14, 9, 15, 10, 8, 4, 11, 9, 5, 4]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 83497,
+          "growth": 51,
+          "growthPercent": 0.0611,
+          "starsPerDay": 7.2857
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 83060,
+          "growth": 488,
+          "growthPercent": 0.5875,
+          "starsPerDay": 16.2667
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 81605,
+          "growth": 1943,
+          "growthPercent": 2.381,
+          "starsPerDay": 21.5889
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "127988011",
+      "owner": "macrozheng",
+      "name": "mall",
+      "fullName": "macrozheng/mall",
+      "url": "https://github.com/macrozheng/mall",
+      "description": "mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于Spring Boot+MyBatis实现，采用Docker容器化部署。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。",
+      "language": "Java",
+      "topics": [
+        "docker",
+        "elasticsearch",
+        "elk",
+        "java",
+        "mongodb",
+        "mybatis",
+        "mysql",
+        "rabbitmq",
+        "redis",
+        "spring",
+        "spring-boot",
+        "spring-cloud",
+        "spring-security",
+        "springboot",
+        "springcloud",
+        "swagger-ui"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2018-04-04T01:11:44Z",
+      "updatedAt": "2026-09-24T16:30:01Z",
+      "pushedAt": "2026-09-15T02:34:44Z",
+      "isArchived": false,
+      "stars": 84834,
+      "forks": 29837,
+      "openIssues": 19,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "engineering"
+      ],
+      "categories": [
+        "java"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:19.629Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [13, 10, 10, 10, 19, 7, 12, 21, 25, 17, 15, 18, 14, 16, 16, 15, 14, 19, 9, 15, 15, 11, 15, 10, 19, 11, 10, 11, 16, 20, 14, 10, 15, 12, 7, 8, 14, 24, 12, 21, 9, 10, 9, 17, 18, 25, 13, 9, 13, 8, 16, 13, 10, 24, 5, 8, 12, 12, 16, 10, 5, 7, 5, 11, 7, 13, 8, 16, 12, 10, 13, 15, 12, 13, 13, 13, 9, 9, 14, 13, 11, 16, 10, 5, 11, 14, 21, 18, 21, 11, 12, 10, 13, 22, 25, 14, 11, 10, 10, 12, 15, 8, 17, 9, 8, 8, 16, 6, 7, 6, 5, 6, 10, 11, 13, 11, 12, 11, 6, 8, 11, 13, 9, 9, 11, 10, 7, 7, 12, 13, 12, 4, 77, 62, 22, 29, 34, 18, 22, 13, 18, 17, 6, 79, 51, 24, 7, 18, 10, 16, 10, 17, 11, 11, 9, 13, 10, 9, 9, 11, 10, 13, 10, 15, 7, 11, 13, 6, 13, 18, 6, 10, 10, 15, 12, 9, 7, 12, 12, 14, 8, 12, 5, 9, 18, 21, 15, 10, 11, 11, 9, 9, 9, 16, 12, 11, 9, 10, 11, 10, 13, 12, 8, 9, 8, 12, 14, 5]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 84766,
+          "growth": 68,
+          "growthPercent": 0.0802,
+          "starsPerDay": 9.7143
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 84501,
+          "growth": 333,
+          "growthPercent": 0.3941,
+          "starsPerDay": 11.1
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 83539,
+          "growth": 1295,
+          "growthPercent": 1.5502,
+          "starsPerDay": 14.3889
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "132464395",
+      "owner": "Snailclimb",
+      "name": "JavaGuide",
+      "fullName": "Snailclimb/JavaGuide",
+      "url": "https://github.com/Snailclimb/JavaGuide",
+      "description": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
+      "language": "JavaScript",
+      "topics": [
+        "agent",
+        "ai",
+        "context-engineering",
+        "deepseek",
+        "interview",
+        "java",
+        "mcp",
+        "mysql",
+        "redis",
+        "redisson",
+        "skills",
+        "springai",
+        "system-design"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2018-05-07T13:27:00Z",
+      "updatedAt": "2026-09-24T15:35:11Z",
+      "pushedAt": "2026-09-22T09:58:35Z",
+      "isArchived": false,
+      "stars": 158852,
+      "forks": 46141,
+      "openIssues": 20,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "engineering"
+      ],
+      "categories": [
+        "java"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:17.680Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [27, 43, 36, 33, 24, 33, 21, 23, 29, 30, 29, 20, 20, 19, 40, 30, 28, 30, 30, 24, 11, 24, 32, 33, 34, 25, 17, 17, 30, 37, 36, 29, 29, 33, 24, 17, 32, 41, 56, 39, 27, 32, 46, 55, 44, 43, 43, 23, 25, 32, 35, 38, 40, 31, 27, 24, 31, 38, 37, 51, 22, 15, 14, 18, 21, 28, 32, 39, 37, 22, 32, 45, 34, 51, 45, 22, 22, 23, 33, 26, 26, 25, 24, 13, 23, 32, 30, 36, 36, 17, 30, 27, 41, 44, 36, 50, 32, 18, 29, 43, 38, 42, 28, 24, 16, 22, 24, 40, 35, 26, 20, 16, 28, 32, 27, 46, 32, 24, 16, 28, 39, 32, 23, 26, 19, 18, 27, 39, 30, 33, 31, 20, 25, 31, 37, 35, 25, 31, 29, 21, 21, 30, 41, 48, 28, 22, 20, 29, 33, 31, 22, 27, 24, 30, 41, 25, 32, 34, 34, 23, 21, 23, 36, 32, 48, 30, 21, 19, 40, 39, 51, 25, 36, 31, 26, 29, 35, 41, 26, 38, 26, 23, 27, 32, 42, 34, 37, 23, 27, 41, 43, 27, 38, 34, 22, 28, 39, 50, 44, 43, 32, 26, 38, 42, 39, 48, 34, 8]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 158617,
+          "growth": 235,
+          "growthPercent": 0.1482,
+          "starsPerDay": 33.5714
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 157841,
+          "growth": 1011,
+          "growthPercent": 0.6405,
+          "starsPerDay": 33.7
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 156048,
+          "growth": 2804,
+          "growthPercent": 1.7969,
+          "starsPerDay": 31.1556
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "151834062",
+      "owner": "doocs",
+      "name": "advanced-java",
+      "fullName": "doocs/advanced-java",
+      "url": "https://github.com/doocs/advanced-java",
+      "description": "😮 Core Interview Questions & Answers For Experienced Java(Backend) Developers | 互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识",
+      "language": "Java",
+      "topics": [
+        "advanced-java",
+        "distributed-search-engine",
+        "distributed-systems",
+        "doocs",
+        "dubbo",
+        "elasticsearch",
+        "eureka",
+        "feign",
+        "high-availability",
+        "high-concurrency",
+        "hystrix",
+        "java",
+        "message-queue",
+        "microservices-architecture",
+        "redis",
+        "ribbon",
+        "rpc",
+        "spring-cloud",
+        "springcloud-config",
+        "zookeeper"
+      ],
+      "license": "CC-BY-SA-4.0",
+      "createdAt": "2018-10-06T11:38:30Z",
+      "updatedAt": "2026-09-24T16:06:27Z",
+      "pushedAt": "2026-09-24T07:15:47Z",
+      "isArchived": false,
+      "stars": 79130,
+      "forks": 19149,
+      "openIssues": 0,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "engineering"
+      ],
+      "categories": [
+        "java"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:20.325Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [7, 7, 7, 4, 9, 4, 2, 6, 12, 8, 0, 8, 7, 7, 6, 5, 8, 7, 5, 4, 4, 3, 13, 9, 3, 5, 6, 3, 3, 6, 4, 11, 4, 3, 0, 7, 6, 5, 3, 7, 10, 4, 5, 3, 4, 10, 13, 1, 3, 5, 6, 7, 8, 6, 3, 6, 5, 5, 4, 7, 3, 3, 2, 2, 4, 7, 3, 6, 5, 2, 2, 5, 3, 5, 5, 2, 5, 4, 3, 9, 3, 4, 3, 5, 5, 8, 4, 10, 12, 6, 4, 4, 3, 2, 6, 4, 1, 2, 0, 8, 5, 4, 5, 1, 0, 5, 3, 5, 9, 3, 0, 2, 1, 3, 6, 3, 2, 4, 1, 2, 2, 5, 5, 8, 4, 1, 1, 4, 6, 6, 3, 5, 4, 0, 1, 3, 6, 2, 4, 2, 2, 4, 4, 8, 10, 7, 2, 3, 3, 7, 5, 6, 4, 4, 2, 8, 4, 7, 8, 3, 4, 5, 7, 3, 12, 8, 3, 3, 4, 3, 12, 4, 8, 7, 0, 5, 6, 9, 3, 3, 3, 1, 3, 6, 2, 5, 3, 0, 1, 0, 2, 4, 11, 4, 5, 2, 4, 6, 8, 4, 1, 6, 6, 4, 3, 4, 6, 1]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 79100,
+          "growth": 30,
+          "growthPercent": 0.0379,
+          "starsPerDay": 4.2857
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 79019,
+          "growth": 111,
+          "growthPercent": 0.1405,
+          "starsPerDay": 3.7
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 78740,
+          "growth": 390,
+          "growthPercent": 0.4953,
+          "starsPerDay": 4.3333
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "155220641",
+      "owner": "huggingface",
+      "name": "transformers",
+      "fullName": "huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers",
+      "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+      "language": "Python",
+      "topics": [
+        "audio",
+        "deep-learning",
+        "deepseek",
+        "gemma",
+        "glm",
+        "hacktoberfest",
+        "llm",
+        "machine-learning",
+        "model-hub",
+        "natural-language-processing",
+        "nlp",
+        "pretrained-models",
+        "python",
+        "pytorch",
+        "pytorch-transformers",
+        "qwen",
+        "speech-recognition",
+        "transformer",
+        "vlm"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2018-10-29T13:56:00Z",
+      "updatedAt": "2026-09-24T17:15:13Z",
+      "pushedAt": "2026-09-24T17:15:34Z",
+      "isArchived": false,
+      "stars": 166597,
+      "forks": 34668,
+      "openIssues": 2388,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "llm"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:17.688Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [102, 77, 55, 63, 67, 35, 50, 40, 50, 58, 54, 49, 36, 40, 47, 72, 67, 81, 62, 44, 48, 54, 66, 75, 70, 46, 51, 38, 39, 49, 61, 55, 66, 58, 56, 46, 71, 75, 71, 73, 61, 37, 57, 74, 63, 76, 50, 44, 56, 44, 55, 50, 56, 73, 54, 34, 44, 50, 51, 50, 35, 34, 40, 33, 37, 43, 46, 50, 40, 33, 42, 49, 53, 50, 42, 24, 32, 37, 50, 45, 45, 47, 45, 33, 37, 33, 46, 43, 30, 35, 35, 56, 53, 52, 46, 41, 45, 33, 45, 51, 44, 33, 46, 35, 26, 29, 37, 41, 34, 37, 28, 23, 22, 47, 36, 43, 44, 37, 22, 31, 41, 40, 46, 78, 42, 40, 40, 46, 48, 41, 38, 50, 46, 41, 38, 38, 31, 43, 31, 27, 36, 40, 46, 40, 55, 52, 29, 37, 41, 50, 59, 48, 33, 26, 52, 39, 44, 41, 38, 38, 21, 41, 64, 325, 132, 60, 42, 41, 50, 63, 47, 36, 37, 40, 36, 35, 37, 40, 41, 58, 55, 36, 30, 36, 37, 36, 44, 44, 46, 75, 47, 48, 51, 47, 50, 93, 446, 380, 129, 56, 55, 44, 112, 43, 59, 51, 44, 24]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 166220,
+          "growth": 377,
+          "growthPercent": 0.2268,
+          "starsPerDay": 53.8571
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 164280,
+          "growth": 2317,
+          "growthPercent": 1.4104,
+          "starsPerDay": 77.2333
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 161391,
+          "growth": 5206,
+          "growthPercent": 3.2257,
+          "starsPerDay": 57.8444
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "262296122",
+      "owner": "PaddlePaddle",
+      "name": "PaddleOCR",
+      "fullName": "PaddlePaddle/PaddleOCR",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
+      "language": "Python",
+      "topics": [
+        "ai4science",
+        "chineseocr",
+        "document-parsing",
+        "document-translation",
+        "kie",
+        "ocr",
+        "paddleocr-vl",
+        "pdf-extractor-rag",
+        "pdf-parser",
+        "pdf2markdown",
+        "pp-ocr",
+        "pp-structure",
+        "rag"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2020-05-08T10:38:16Z",
+      "updatedAt": "2026-09-24T17:03:11Z",
+      "pushedAt": "2026-09-16T03:31:50Z",
+      "isArchived": false,
+      "stars": 90159,
+      "forks": 11405,
+      "openIssues": 252,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "llm",
+        "rag"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:19.595Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [42, 44, 40, 110, 66, 57, 68, 72, 89, 72, 70, 72, 67, 84, 60, 84, 72, 79, 77, 52, 63, 66, 82, 103, 59, 89, 62, 44, 49, 440, 677, 236, 131, 88, 46, 46, 84, 107, 86, 84, 75, 60, 56, 92, 81, 77, 98, 73, 56, 59, 99, 86, 155, 127, 85, 71, 95, 93, 66, 71, 44, 41, 37, 57, 62, 70, 66, 152, 102, 69, 58, 78, 91, 74, 73, 63, 60, 60, 66, 97, 70, 75, 64, 51, 49, 65, 88, 158, 144, 95, 109, 78, 86, 157, 104, 611, 527, 420, 300, 181, 151, 113, 123, 150, 84, 112, 118, 316, 224, 145, 82, 67, 70, 158, 216, 166, 130, 118, 99, 96, 115, 113, 103, 96, 67, 53, 86, 105, 94, 103, 88, 62, 58, 70, 97, 108, 75, 77, 67, 41, 66, 91, 83, 74, 87, 74, 39, 53, 82, 78, 68, 103, 69, 64, 84, 92, 87, 103, 76, 74, 50, 55, 82, 78, 74, 71, 62, 49, 57, 80, 73, 68, 63, 65, 46, 59, 55, 50, 51, 54, 54, 43, 51, 66, 75, 107, 104, 56, 45, 64, 81, 88, 78, 74, 59, 52, 62, 77, 79, 65, 74, 65, 54, 63, 66, 82, 63, 34]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 89732,
+          "growth": 427,
+          "growthPercent": 0.4759,
+          "starsPerDay": 61
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 88173,
+          "growth": 1986,
+          "growthPercent": 2.2524,
+          "starsPerDay": 66.2
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 83616,
+          "growth": 6543,
+          "growthPercent": 7.8251,
+          "starsPerDay": 72.7
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "552661142",
+      "owner": "langchain-ai",
+      "name": "langchain",
+      "fullName": "langchain-ai/langchain",
+      "url": "https://github.com/langchain-ai/langchain",
+      "description": "The agent engineering platform.",
+      "language": "Python",
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "anthropic",
+        "chatgpt",
+        "deepagents",
+        "enterprise",
+        "framework",
+        "gemini",
+        "generative-ai",
+        "langchain",
+        "langgraph",
+        "llm",
+        "multiagent",
+        "open-source",
+        "openai",
+        "pydantic",
+        "python",
+        "rag",
+        "typescript"
+      ],
+      "license": "MIT",
+      "createdAt": "2022-10-17T02:58:36Z",
+      "updatedAt": "2026-09-24T15:46:52Z",
+      "pushedAt": "2026-09-24T15:28:32Z",
+      "isArchived": false,
+      "stars": 146994,
+      "forks": 24597,
+      "openIssues": 568,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents",
+        "llm",
+        "rag"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:18.007Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [120, 131, 120, 146, 114, 96, 98, 118, 154, 173, 133, 140, 143, 107, 142, 177, 185, 146, 146, 123, 100, 153, 183, 160, 169, 156, 105, 114, 135, 170, 157, 182, 155, 127, 134, 90, 118, 157, 131, 154, 127, 99, 121, 160, 134, 134, 122, 98, 90, 121, 163, 175, 134, 165, 90, 123, 120, 148, 129, 146, 105, 84, 63, 66, 91, 95, 103, 124, 104, 95, 92, 124, 111, 102, 92, 82, 76, 75, 100, 102, 95, 108, 106, 71, 79, 104, 100, 110, 104, 86, 72, 100, 121, 104, 100, 90, 76, 77, 95, 89, 89, 82, 108, 72, 77, 104, 110, 109, 87, 84, 63, 48, 66, 92, 121, 96, 97, 91, 52, 98, 92, 86, 97, 99, 92, 75, 103, 102, 134, 91, 88, 64, 75, 69, 102, 102, 89, 78, 74, 62, 73, 93, 94, 81, 106, 82, 57, 57, 111, 90, 132, 115, 89, 72, 77, 101, 89, 81, 80, 74, 93, 97, 91, 113, 92, 82, 76, 76, 69, 100, 93, 94, 96, 69, 68, 57, 82, 89, 87, 80, 64, 48, 59, 88, 84, 87, 71, 77, 67, 93, 82, 81, 73, 75, 64, 56, 72, 88, 84, 79, 88, 73, 73, 79, 79, 79, 62, 37]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 146512,
+          "growth": 482,
+          "growthPercent": 0.329,
+          "starsPerDay": 68.8571
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 144765,
+          "growth": 2229,
+          "growthPercent": 1.5397,
+          "starsPerDay": 74.3
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 139550,
+          "growth": 7444,
+          "growthPercent": 5.3343,
+          "starsPerDay": 82.7111
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "574523116",
+      "owner": "f",
+      "name": "prompts.chat",
+      "fullName": "f/prompts.chat",
+      "url": "https://github.com/f/prompts.chat",
+      "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "language": "HTML",
+      "topics": [
+        "ai",
+        "artificial-intelligence",
+        "awesome-list",
+        "chatgpt",
+        "chatgpt-prompts",
+        "claude",
+        "gemini",
+        "gpt",
+        "gpt-4",
+        "llm",
+        "machine-learning",
+        "nextjs",
+        "open-source",
+        "openai",
+        "prompt-engineering",
+        "prompts",
+        "prompts-chat",
+        "typescript"
+      ],
+      "license": "NOASSERTION",
+      "createdAt": "2022-12-05T13:54:13Z",
+      "updatedAt": "2026-09-24T17:14:40Z",
+      "pushedAt": "2026-09-09T10:27:05Z",
+      "isArchived": false,
+      "stars": 171159,
+      "forks": 21987,
+      "openIssues": 82,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "llm"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:17.501Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [230, 248, 162, 121, 226, 120, 273, 326, 231, 185, 123, 220, 524, 248, 243, 235, 160, 141, 130, 92, 235, 237, 181, 106, 118, 106, 82, 79, 205, 399, 350, 895, 482, 505, 186, 143, 142, 162, 555, 544, 263, 152, 169, 149, 114, 105, 85, 77, 99, 88, 112, 113, 106, 67, 78, 134, 141, 144, 133, 117, 93, 82, 72, 83, 93, 98, 87, 70, 82, 63, 80, 84, 87, 72, 60, 74, 80, 66, 65, 75, 66, 57, 61, 48, 62, 65, 69, 63, 68, 59, 59, 51, 55, 69, 66, 43, 47, 49, 51, 50, 54, 63, 64, 43, 50, 66, 47, 48, 52, 46, 63, 45, 81, 71, 102, 94, 65, 55, 43, 60, 46, 52, 41, 63, 39, 50, 97, 160, 106, 66, 104, 166, 119, 131, 95, 117, 66, 44, 69, 68, 57, 68, 95, 67, 53, 60, 52, 39, 55, 42, 53, 42, 54, 36, 51, 62, 52, 58, 45, 48, 43, 47, 51, 54, 53, 46, 41, 106, 60, 98, 140, 123, 86, 56, 64, 65, 51, 67, 123, 87, 46, 64, 95, 105, 137, 180, 499, 214, 100, 101, 100, 132, 111, 102, 120, 162, 119, 100, 83, 80, 112, 108, 88, 86, 93, 135, 86, 29]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 170534,
+          "growth": 625,
+          "growthPercent": 0.3665,
+          "starsPerDay": 89.2857
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 167562,
+          "growth": 3597,
+          "growthPercent": 2.1467,
+          "starsPerDay": 119.9
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 163420,
+          "growth": 7739,
+          "growthPercent": 4.7357,
+          "starsPerDay": 85.9889
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "594155488",
+      "owner": "Stirling-Tools",
+      "name": "Stirling-PDF",
+      "fullName": "Stirling-Tools/Stirling-PDF",
+      "url": "https://github.com/Stirling-Tools/Stirling-PDF",
+      "description": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
+      "language": "Java",
+      "topics": [
+        "docker",
+        "hacktoberfest",
+        "java",
+        "pdf",
+        "pdf-converter",
+        "pdf-editor",
+        "pdf-manipulation",
+        "pdf-merger",
+        "pdf-ocr",
+        "pdf-tools",
+        "pdf-web-apps",
+        "pdfmerger",
+        "self-hosted"
+      ],
+      "license": "NOASSERTION",
+      "createdAt": "2023-01-27T18:22:42Z",
+      "updatedAt": "2026-09-24T17:14:06Z",
+      "pushedAt": "2026-09-24T16:48:34Z",
+      "isArchived": false,
+      "stars": 92948,
+      "forks": 9274,
+      "openIssues": 575,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "engineering"
+      ],
+      "categories": [
+        "java"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:19.255Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [89, 98, 56, 54, 42, 36, 35, 46, 44, 43, 45, 36, 41, 28, 47, 46, 97, 51, 71, 42, 43, 32, 38, 51, 47, 35, 31, 40, 46, 60, 44, 54, 59, 74, 72, 76, 56, 61, 55, 63, 51, 44, 69, 59, 49, 56, 46, 83, 65, 53, 56, 428, 128, 100, 44, 58, 39, 45, 54, 60, 41, 49, 37, 34, 46, 65, 80, 56, 53, 53, 66, 75, 71, 47, 42, 45, 34, 37, 49, 76, 63, 50, 58, 53, 228, 134, 95, 86, 77, 42, 61, 90, 78, 84, 59, 67, 59, 60, 81, 68, 60, 84, 65, 59, 106, 137, 118, 85, 79, 79, 193, 261, 488, 1031, 539, 341, 290, 184, 221, 203, 257, 198, 227, 215, 103, 128, 97, 118, 138, 91, 87, 91, 102, 89, 78, 91, 102, 96, 76, 72, 85, 99, 126, 109, 104, 66, 71, 90, 104, 64, 84, 86, 81, 83, 69, 135, 120, 95, 68, 55, 81, 73, 80, 67, 72, 70, 55, 46, 89, 105, 85, 67, 75, 65, 85, 175, 95, 87, 149, 203, 94, 62, 92, 78, 81, 54, 62, 64, 48, 68, 73, 92, 65, 101, 77, 60, 120, 142, 181, 115, 81, 74, 80, 93, 91, 82, 84, 26]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 92418,
+          "growth": 530,
+          "growthPercent": 0.5735,
+          "starsPerDay": 75.7143
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 90256,
+          "growth": 2692,
+          "growthPercent": 2.9826,
+          "starsPerDay": 89.7333
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 84110,
+          "growth": 8838,
+          "growthPercent": 10.5077,
+          "starsPerDay": 98.2
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "599547518",
+      "owner": "vllm-project",
+      "name": "vllm",
+      "fullName": "vllm-project/vllm",
+      "url": "https://github.com/vllm-project/vllm",
+      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "language": "Python",
+      "topics": [
+        "amd",
+        "blackwell",
+        "cuda",
+        "deepseek",
+        "deepseek-v3",
+        "gpt",
+        "gpt-oss",
+        "inference",
+        "kimi",
+        "llama",
+        "llm",
+        "llm-serving",
+        "model-serving",
+        "moe",
+        "openai",
+        "pytorch",
+        "qwen",
+        "qwen3",
+        "tpu",
+        "transformer"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2023-02-09T11:23:20Z",
+      "updatedAt": "2026-09-24T17:08:42Z",
+      "pushedAt": "2026-09-24T17:14:39Z",
+      "isArchived": false,
+      "stars": 92625,
+      "forks": 22617,
+      "openIssues": 8391,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "llm"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:19.242Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [93, 117, 121, 173, 129, 101, 98, 110, 134, 128, 118, 116, 89, 91, 93, 111, 164, 139, 135, 71, 74, 101, 136, 107, 128, 114, 99, 86, 87, 114, 105, 96, 120, 127, 97, 104, 135, 125, 162, 146, 130, 89, 153, 158, 142, 197, 180, 132, 110, 127, 125, 143, 150, 149, 136, 97, 109, 128, 143, 120, 90, 99, 76, 68, 93, 96, 107, 118, 110, 75, 87, 124, 104, 114, 96, 108, 66, 97, 109, 104, 95, 81, 80, 70, 96, 106, 111, 109, 111, 84, 60, 77, 126, 142, 111, 91, 63, 64, 101, 99, 90, 121, 151, 98, 75, 80, 133, 118, 106, 82, 80, 66, 75, 98, 84, 458, 225, 143, 109, 130, 141, 90, 146, 122, 88, 90, 58, 116, 103, 115, 96, 88, 54, 102, 103, 107, 99, 98, 64, 65, 78, 93, 78, 92, 102, 77, 64, 104, 135, 138, 121, 109, 81, 85, 106, 123, 98, 91, 90, 97, 73, 65, 116, 108, 101, 101, 68, 73, 84, 102, 93, 94, 108, 89, 71, 97, 110, 141, 118, 95, 94, 89, 108, 107, 93, 106, 102, 66, 55, 83, 95, 96, 95, 81, 76, 66, 83, 109, 103, 88, 102, 82, 70, 78, 117, 84, 107, 48]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 92039,
+          "growth": 586,
+          "growthPercent": 0.6367,
+          "starsPerDay": 83.7143
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 89929,
+          "growth": 2696,
+          "growthPercent": 2.9979,
+          "starsPerDay": 89.8667
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 84089,
+          "growth": 8536,
+          "growthPercent": 10.1511,
+          "starsPerDay": 94.8444
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "614765452",
+      "owner": "Significant-Gravitas",
+      "name": "AutoGPT",
+      "fullName": "Significant-Gravitas/AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "language": "Python",
+      "topics": [
+        "agentic-ai",
+        "agents",
+        "ai",
+        "artificial-intelligence",
+        "autonomous-agents",
+        "claude",
+        "gpt",
+        "llama-api",
+        "llm",
+        "openai",
+        "python"
+      ],
+      "license": "NOASSERTION",
+      "createdAt": "2023-03-16T09:21:07Z",
+      "updatedAt": "2026-09-24T16:41:14Z",
+      "pushedAt": "2026-09-24T17:14:33Z",
+      "isArchived": false,
+      "stars": 187522,
+      "forks": 45994,
+      "openIssues": 540,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents",
+        "llm"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:16.977Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [44, 33, 29, 29, 37, 37, 41, 35, 41, 45, 37, 49, 39, 34, 52, 44, 51, 53, 50, 46, 49, 61, 55, 37, 61, 48, 43, 47, 32, 55, 58, 44, 60, 42, 42, 40, 44, 51, 50, 41, 30, 34, 47, 61, 52, 50, 38, 43, 36, 40, 53, 51, 43, 47, 27, 29, 49, 53, 38, 49, 36, 33, 27, 36, 38, 47, 38, 47, 48, 35, 48, 40, 90, 44, 38, 37, 33, 26, 32, 36, 37, 27, 38, 29, 49, 49, 33, 35, 47, 34, 25, 29, 42, 20, 31, 37, 24, 22, 36, 37, 24, 36, 25, 27, 22, 30, 31, 37, 39, 28, 25, 15, 24, 38, 46, 33, 19, 17, 24, 30, 26, 19, 28, 55, 44, 33, 43, 26, 36, 19, 27, 25, 27, 25, 33, 36, 38, 29, 21, 19, 28, 25, 34, 23, 26, 31, 22, 19, 37, 32, 26, 17, 16, 20, 27, 26, 36, 29, 289, 278, 69, 40, 42, 43, 33, 38, 28, 29, 28, 46, 35, 24, 27, 52, 57, 64, 18, 34, 44, 45, 31, 36, 38, 29, 30, 28, 29, 44, 34, 21, 27, 33, 35, 20, 36, 30, 36, 46, 26, 30, 31, 29, 29, 29, 22, 30, 23, 10]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 187350,
+          "growth": 172,
+          "growthPercent": 0.0918,
+          "starsPerDay": 24.5714
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 186591,
+          "growth": 931,
+          "growthPercent": 0.499,
+          "starsPerDay": 31.0333
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 184180,
+          "growth": 3342,
+          "growthPercent": 1.8145,
+          "starsPerDay": 37.1333
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "626805178",
+      "owner": "langgenius",
+      "name": "dify",
+      "fullName": "langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+      "language": "TypeScript",
+      "topics": [
+        "agent",
+        "agentic-ai",
+        "agentic-framework",
+        "agentic-workflow",
+        "ai",
+        "automation",
+        "claude",
+        "deepseek",
+        "genai",
+        "gpt",
+        "llm",
+        "low-code",
+        "mcp",
+        "nextjs",
+        "no-code",
+        "openai",
+        "python",
+        "skills",
+        "workflow"
+      ],
+      "license": "NOASSERTION",
+      "createdAt": "2023-04-12T07:40:24Z",
+      "updatedAt": "2026-09-24T16:59:30Z",
+      "pushedAt": "2026-09-24T13:34:55Z",
+      "isArchived": false,
+      "stars": 157094,
+      "forks": 24762,
+      "openIssues": 1104,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents",
+        "llm",
+        "rag"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:17.756Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [131, 146, 122, 143, 133, 110, 81, 108, 174, 383, 209, 163, 120, 122, 142, 188, 173, 190, 173, 146, 128, 143, 184, 167, 175, 165, 116, 96, 107, 175, 205, 159, 161, 141, 345, 291, 195, 198, 198, 201, 167, 154, 174, 181, 157, 148, 140, 124, 98, 132, 168, 159, 139, 151, 109, 104, 110, 150, 159, 144, 94, 74, 85, 108, 84, 140, 175, 159, 122, 125, 142, 136, 155, 137, 143, 110, 90, 123, 138, 138, 136, 148, 90, 96, 142, 135, 158, 151, 114, 102, 91, 124, 134, 167, 161, 174, 139, 120, 176, 162, 157, 163, 135, 107, 104, 150, 150, 178, 120, 129, 97, 131, 106, 112, 166, 144, 120, 93, 92, 139, 146, 141, 149, 159, 111, 124, 139, 154, 154, 147, 118, 109, 87, 105, 120, 125, 143, 114, 96, 102, 134, 156, 160, 171, 177, 131, 110, 106, 140, 153, 144, 114, 100, 90, 114, 136, 133, 131, 149, 119, 68, 101, 126, 125, 130, 133, 89, 111, 99, 115, 137, 101, 138, 84, 88, 92, 122, 113, 118, 101, 79, 77, 96, 121, 125, 125, 125, 88, 94, 130, 254, 230, 166, 114, 102, 95, 100, 122, 143, 166, 175, 171, 141, 172, 148, 121, 120, 65]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 156156,
+          "growth": 938,
+          "growthPercent": 0.6007,
+          "starsPerDay": 134
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 153210,
+          "growth": 3884,
+          "growthPercent": 2.5351,
+          "starsPerDay": 129.4667
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 145796,
+          "growth": 11298,
+          "growthPercent": 7.7492,
+          "starsPerDay": 125.5333
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "658928958",
+      "owner": "ollama",
+      "name": "ollama",
+      "fullName": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "language": "Go",
+      "topics": [
+        "deepseek",
+        "gemma",
+        "gemma3",
+        "glm",
+        "go",
+        "golang",
+        "gpt-oss",
+        "llama",
+        "llama3",
+        "llm",
+        "llms",
+        "minimax",
+        "mistral",
+        "ollama",
+        "qwen"
+      ],
+      "license": "MIT",
+      "createdAt": "2023-06-26T19:39:32Z",
+      "updatedAt": "2026-09-24T17:14:13Z",
+      "pushedAt": "2026-09-24T16:42:51Z",
+      "isArchived": false,
+      "stars": 181607,
+      "forks": 17991,
+      "openIssues": 4065,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "llm"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:17.437Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [100, 106, 121, 118, 119, 87, 89, 126, 139, 130, 99, 99, 91, 105, 110, 113, 112, 138, 105, 105, 95, 101, 115, 115, 122, 107, 81, 80, 87, 120, 108, 109, 176, 177, 161, 151, 510, 239, 176, 167, 135, 137, 128, 142, 149, 118, 105, 111, 117, 109, 117, 128, 108, 107, 107, 102, 102, 95, 109, 128, 96, 97, 79, 87, 79, 103, 108, 91, 91, 84, 79, 79, 73, 83, 89, 77, 92, 98, 89, 83, 79, 137, 127, 82, 102, 102, 101, 91, 93, 74, 72, 108, 129, 105, 144, 121, 99, 133, 157, 142, 100, 108, 106, 87, 99, 110, 103, 94, 103, 73, 88, 60, 89, 75, 74, 67, 68, 69, 68, 95, 84, 83, 79, 79, 86, 92, 89, 74, 86, 97, 80, 67, 58, 85, 79, 79, 103, 87, 67, 83, 83, 80, 77, 85, 92, 73, 81, 85, 119, 115, 112, 120, 98, 81, 114, 98, 106, 84, 87, 79, 70, 91, 80, 77, 102, 115, 94, 128, 139, 125, 99, 96, 95, 84, 91, 81, 77, 89, 100, 86, 90, 96, 66, 71, 90, 95, 98, 89, 95, 96, 119, 71, 75, 96, 92, 76, 97, 147, 119, 66, 71, 75, 66, 79, 107, 75, 80, 56]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 181069,
+          "growth": 538,
+          "growthPercent": 0.2971,
+          "starsPerDay": 76.8571
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 178968,
+          "growth": 2639,
+          "growthPercent": 1.4746,
+          "starsPerDay": 87.9667
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 173566,
+          "growth": 8041,
+          "growthPercent": 4.6328,
+          "starsPerDay": 89.3444
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "669879380",
+      "owner": "rasbt",
+      "name": "LLMs-from-scratch",
+      "fullName": "rasbt/LLMs-from-scratch",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "ai",
+        "artificial-intelligence",
+        "attention-mechanism",
+        "deep-learning",
+        "finetuning",
+        "from-scratch",
+        "generative-ai",
+        "gpt",
+        "instruction-tuning",
+        "language-model",
+        "large-language-models",
+        "llm",
+        "machine-learning",
+        "natural-language-processing",
+        "pretraining",
+        "python",
+        "pytorch",
+        "tokenizer",
+        "transformers"
+      ],
+      "license": "NOASSERTION",
+      "createdAt": "2023-07-23T18:15:57Z",
+      "updatedAt": "2026-09-24T17:15:48Z",
+      "pushedAt": "2026-09-22T13:58:26Z",
+      "isArchived": false,
+      "stars": 105499,
+      "forks": 16187,
+      "openIssues": 2,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "llm"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:18.902Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [181, 113, 168, 206, 118, 90, 56, 99, 92, 108, 100, 115, 102, 101, 154, 168, 173, 128, 93, 88, 82, 82, 93, 73, 78, 73, 57, 61, 81, 90, 83, 118, 109, 55, 66, 91, 104, 99, 79, 85, 77, 71, 75, 91, 93, 72, 70, 73, 71, 55, 64, 58, 50, 67, 60, 58, 106, 68, 82, 54, 41, 44, 43, 45, 51, 85, 77, 80, 73, 81, 268, 664, 789, 593, 196, 92, 83, 93, 86, 87, 111, 64, 51, 245, 210, 127, 97, 79, 87, 85, 71, 75, 61, 70, 67, 72, 66, 49, 62, 57, 56, 52, 46, 52, 64, 90, 53, 39, 54, 50, 53, 49, 57, 50, 55, 53, 118, 145, 108, 86, 73, 110, 82, 75, 54, 71, 83, 75, 75, 47, 65, 52, 59, 51, 64, 60, 57, 57, 73, 56, 79, 80, 74, 86, 68, 79, 67, 99, 94, 75, 70, 66, 70, 79, 92, 81, 96, 84, 76, 328, 564, 537, 222, 120, 87, 83, 76, 70, 71, 74, 113, 89, 87, 57, 199, 223, 121, 92, 78, 65, 47, 63, 69, 59, 51, 63, 71, 45, 72, 89, 66, 67, 70, 72, 60, 66, 68, 72, 71, 64, 63, 49, 59, 58, 67, 61, 68, 23]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 105114,
+          "growth": 385,
+          "growthPercent": 0.3663,
+          "starsPerDay": 55
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 103603,
+          "growth": 1896,
+          "growthPercent": 1.8301,
+          "starsPerDay": 63.2
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 97342,
+          "growth": 8157,
+          "growthPercent": 8.3797,
+          "starsPerDay": 90.6333
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "701547123",
+      "owner": "open-webui",
+      "name": "open-webui",
+      "fullName": "open-webui/open-webui",
+      "url": "https://github.com/open-webui/open-webui",
+      "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+      "language": "Python",
+      "topics": [
+        "ai",
+        "llm",
+        "llm-ui",
+        "llm-webui",
+        "llms",
+        "mcp",
+        "ollama",
+        "ollama-webui",
+        "open-webui",
+        "openai",
+        "openapi",
+        "rag",
+        "self-hosted",
+        "ui",
+        "webui"
+      ],
+      "license": "NOASSERTION",
+      "createdAt": "2023-10-06T22:08:27Z",
+      "updatedAt": "2026-09-24T17:15:51Z",
+      "pushedAt": "2026-09-24T16:34:06Z",
+      "isArchived": false,
+      "stars": 153035,
+      "forks": 22386,
+      "openIssues": 292,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "llm",
+        "rag"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:17.848Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [135, 142, 138, 143, 138, 115, 127, 150, 202, 175, 163, 171, 127, 136, 135, 144, 146, 158, 167, 120, 138, 150, 128, 130, 200, 142, 143, 117, 133, 150, 142, 126, 179, 179, 165, 158, 178, 185, 218, 239, 187, 149, 186, 208, 198, 208, 199, 163, 128, 154, 178, 331, 310, 268, 201, 187, 205, 195, 188, 166, 154, 140, 118, 150, 149, 157, 162, 195, 198, 168, 193, 166, 156, 149, 159, 142, 131, 163, 146, 188, 171, 150, 140, 110, 135, 172, 162, 145, 168, 127, 100, 138, 178, 176, 183, 185, 148, 178, 151, 196, 186, 149, 134, 137, 134, 143, 178, 201, 176, 129, 118, 145, 114, 131, 142, 134, 125, 128, 97, 128, 124, 169, 134, 192, 190, 119, 151, 136, 173, 145, 124, 115, 107, 104, 149, 130, 136, 135, 108, 109, 117, 148, 145, 140, 144, 130, 94, 124, 166, 161, 144, 124, 99, 78, 120, 114, 129, 122, 109, 104, 86, 92, 103, 92, 120, 111, 92, 86, 110, 120, 127, 125, 140, 115, 86, 112, 118, 135, 135, 135, 103, 107, 99, 106, 130, 114, 110, 125, 113, 97, 124, 132, 116, 101, 120, 121, 126, 175, 152, 105, 124, 94, 82, 87, 116, 128, 104, 75]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 152349,
+          "growth": 686,
+          "growthPercent": 0.4503,
+          "starsPerDay": 98
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 149579,
+          "growth": 3456,
+          "growthPercent": 2.3105,
+          "starsPerDay": 115.2
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 142122,
+          "growth": 10913,
+          "growthPercent": 7.6786,
+          "starsPerDay": 121.2556
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "725205304",
+      "owner": "unslothai",
+      "name": "unsloth",
+      "fullName": "unslothai/unsloth",
+      "url": "https://github.com/unslothai/unsloth",
+      "description": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.",
+      "language": "Python",
+      "topics": [
+        "agent",
+        "ai",
+        "chatgpt",
+        "deepseek",
+        "fine-tuning",
+        "gemma",
+        "image-generation",
+        "llama",
+        "llm",
+        "llms",
+        "openai",
+        "python",
+        "qwen",
+        "reinforcement-learning",
+        "self-hosted",
+        "stable-diffusion",
+        "text-to-speech",
+        "tts",
+        "ui",
+        "unsloth"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2023-11-29T16:50:09Z",
+      "updatedAt": "2026-09-24T17:08:56Z",
+      "pushedAt": "2026-09-24T17:08:48Z",
+      "isArchived": false,
+      "stars": 76706,
+      "forks": 7025,
+      "openIssues": 1308,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-image",
+        "llm"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:20.824Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [55, 76, 148, 147, 95, 44, 45, 54, 78, 100, 79, 77, 70, 57, 50, 53, 798, 1217, 731, 274, 257, 206, 249, 230, 144, 129, 113, 77, 81, 99, 83, 76, 237, 244, 162, 125, 194, 275, 360, 329, 213, 149, 163, 181, 128, 124, 156, 182, 89, 119, 96, 85, 121, 253, 116, 75, 99, 83, 87, 75, 78, 57, 50, 62, 63, 73, 74, 73, 53, 57, 62, 93, 78, 88, 72, 71, 76, 76, 114, 177, 116, 74, 59, 47, 48, 61, 53, 48, 72, 75, 66, 61, 70, 78, 81, 124, 83, 53, 70, 77, 65, 62, 82, 101, 82, 69, 80, 72, 62, 78, 125, 71, 73, 81, 97, 74, 79, 69, 47, 65, 78, 68, 41, 35, 35, 23, 33, 35, 43, 47, 39, 39, 33, 34, 89, 73, 50, 44, 52, 32, 56, 175, 91, 70, 54, 49, 42, 47, 60, 43, 122, 95, 77, 56, 54, 80, 95, 39, 46, 39, 43, 45, 118, 485, 345, 493, 418, 578, 673, 505, 340, 279, 205, 174, 128, 112, 118, 142, 136, 102, 87, 113, 103, 97, 71, 77, 60, 60, 57, 56, 62, 115, 68, 51, 46, 38, 57, 48, 42, 58, 72, 78, 56, 65, 39, 62, 74, 40]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 76292,
+          "growth": 414,
+          "growthPercent": 0.5427,
+          "starsPerDay": 59.1429
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 74616,
+          "growth": 2090,
+          "growthPercent": 2.801,
+          "starsPerDay": 69.6667
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 66990,
+          "growth": 9716,
+          "growthPercent": 14.5037,
+          "starsPerDay": 107.9556
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "730534580",
+      "owner": "infiniflow",
+      "name": "ragflow",
+      "fullName": "infiniflow/ragflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+      "language": "Go",
+      "topics": [
+        "agent-harness",
+        "agentic-ai",
+        "agentic-nagive",
+        "agentic-retrieval",
+        "agentic-search",
+        "ai",
+        "ai-agents",
+        "context-engine",
+        "context-engineering",
+        "context-management",
+        "harness-engineering",
+        "knowledge-compilation",
+        "rag",
+        "retrieval-augmented-generation",
+        "search-harness"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2023-12-12T06:13:13Z",
+      "updatedAt": "2026-09-24T16:38:46Z",
+      "pushedAt": "2026-09-24T13:14:16Z",
+      "isArchived": false,
+      "stars": 91273,
+      "forks": 10822,
+      "openIssues": 1497,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents",
+        "llm",
+        "rag"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:19.300Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [74, 72, 69, 66, 67, 48, 89, 78, 148, 107, 92, 98, 59, 49, 75, 95, 155, 126, 107, 79, 120, 100, 118, 108, 113, 166, 109, 60, 75, 134, 102, 96, 131, 94, 77, 64, 86, 126, 129, 127, 106, 86, 81, 95, 111, 135, 81, 93, 54, 74, 107, 88, 98, 91, 58, 63, 64, 77, 70, 73, 59, 41, 128, 106, 76, 94, 111, 95, 98, 104, 86, 85, 100, 90, 75, 63, 46, 66, 96, 73, 89, 90, 57, 45, 66, 93, 83, 88, 73, 62, 46, 59, 79, 97, 88, 85, 61, 57, 97, 100, 95, 89, 97, 86, 78, 90, 121, 111, 101, 79, 57, 61, 68, 74, 105, 96, 83, 61, 44, 72, 91, 104, 101, 82, 57, 74, 74, 101, 97, 100, 82, 71, 48, 71, 102, 77, 104, 103, 58, 49, 78, 97, 97, 105, 121, 109, 57, 100, 119, 101, 98, 97, 63, 51, 88, 98, 102, 76, 62, 64, 41, 60, 70, 105, 371, 471, 328, 106, 84, 85, 90, 87, 80, 53, 57, 72, 90, 79, 91, 92, 120, 67, 97, 87, 87, 96, 80, 46, 47, 70, 76, 116, 84, 82, 54, 54, 72, 74, 63, 78, 70, 59, 55, 67, 56, 71, 61, 33]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 90871,
+          "growth": 402,
+          "growthPercent": 0.4424,
+          "starsPerDay": 57.4286
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 89068,
+          "growth": 2205,
+          "growthPercent": 2.4756,
+          "starsPerDay": 73.5
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 83194,
+          "growth": 8079,
+          "growthPercent": 9.711,
+          "starsPerDay": 89.7667
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "770153867",
+      "owner": "harry0703",
+      "name": "MoneyPrinterTurbo",
+      "fullName": "harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+      "language": "Python",
+      "topics": [
+        "ai-video-generator",
+        "content-creation",
+        "ffmpeg",
+        "instagram-reels",
+        "llm",
+        "python",
+        "short-video",
+        "subtitles",
+        "text-to-speech",
+        "tiktok",
+        "video-automation",
+        "video-workflow",
+        "workflow-automation",
+        "youtube-shorts"
+      ],
+      "license": "MIT",
+      "createdAt": "2024-03-11T02:57:34Z",
+      "updatedAt": "2026-09-24T17:15:42Z",
+      "pushedAt": "2026-09-24T09:16:08Z",
+      "isArchived": false,
+      "stars": 125484,
+      "forks": 19516,
+      "openIssues": 32,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "llm"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:18.460Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [26, 33, 51, 84, 80, 46, 22, 23, 43, 22, 19, 28, 24, 17, 25, 43, 37, 47, 68, 58, 117, 740, 814, 698, 360, 205, 229, 133, 219, 250, 369, 176, 101, 68, 45, 76, 108, 105, 83, 92, 53, 56, 63, 94, 80, 69, 76, 60, 44, 58, 65, 71, 69, 128, 53, 46, 43, 47, 43, 44, 41, 27, 24, 44, 53, 49, 57, 58, 58, 38, 53, 49, 49, 64, 56, 42, 29, 42, 50, 54, 52, 59, 87, 60, 68, 991, 1157, 3669, 3702, 2888, 2010, 2923, 1805, 1045, 761, 576, 441, 584, 848, 966, 1620, 1327, 964, 539, 551, 500, 514, 545, 522, 288, 392, 324, 487, 548, 484, 427, 394, 563, 363, 365, 284, 354, 429, 302, 220, 162, 183, 211, 176, 172, 152, 125, 117, 151, 277, 250, 225, 157, 152, 144, 164, 196, 158, 192, 258, 211, 148, 147, 159, 385, 489, 262, 155, 239, 197, 217, 204, 163, 174, 186, 115, 145, 149, 171, 209, 367, 464, 365, 923, 1925, 2293, 2567, 1637, 894, 686, 716, 624, 527, 416, 630, 663, 368, 297, 269, 486, 451, 330, 373, 218, 349, 215, 279, 395, 282, 269, 375, 433, 402, 338, 278, 193, 159, 145, 144, 142, 241, 182, 83]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 124388,
+          "growth": 1096,
+          "growthPercent": 0.8811,
+          "starsPerDay": 156.5714
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 116079,
+          "growth": 9405,
+          "growthPercent": 8.1022,
+          "starsPerDay": 313.5
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 92027,
+          "growth": 33457,
+          "growthPercent": 36.3556,
+          "starsPerDay": 371.7444
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "771302083",
+      "owner": "OpenHands",
+      "name": "OpenHands",
+      "fullName": "OpenHands/OpenHands",
+      "url": "https://github.com/OpenHands/OpenHands",
+      "description": "🙌 OpenHands: AI-Driven Development",
+      "language": "TypeScript",
+      "topics": [
+        "agent",
+        "artificial-intelligence",
+        "chatgpt",
+        "claude-ai",
+        "cli",
+        "developer-tools",
+        "gpt",
+        "llm",
+        "openai"
+      ],
+      "license": "MIT",
+      "createdAt": "2024-03-13T03:33:31Z",
+      "updatedAt": "2026-09-24T17:16:14Z",
+      "pushedAt": "2026-09-24T17:05:11Z",
+      "isArchived": false,
+      "stars": 89073,
+      "forks": 11726,
+      "openIssues": 875,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "llm"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:19.596Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [55, 54, 70, 71, 60, 51, 50, 44, 77, 59, 51, 62, 70, 49, 59, 77, 63, 65, 75, 39, 38, 62, 59, 81, 90, 86, 121, 92, 108, 102, 93, 80, 74, 67, 71, 53, 67, 82, 81, 82, 52, 50, 58, 65, 80, 68, 77, 61, 45, 70, 79, 87, 150, 125, 68, 68, 55, 91, 99, 74, 65, 55, 40, 50, 49, 85, 69, 91, 79, 61, 119, 100, 111, 114, 148, 115, 95, 127, 143, 143, 130, 154, 96, 120, 100, 122, 120, 107, 107, 151, 96, 79, 107, 83, 90, 96, 77, 111, 147, 108, 76, 77, 105, 176, 248, 171, 163, 173, 144, 101, 107, 76, 96, 94, 122, 98, 101, 78, 79, 107, 126, 168, 177, 141, 140, 102, 109, 126, 240, 193, 191, 139, 98, 105, 112, 135, 120, 105, 107, 104, 112, 127, 176, 146, 134, 116, 85, 152, 127, 107, 113, 84, 111, 88, 120, 108, 114, 97, 109, 97, 70, 93, 92, 96, 116, 117, 101, 84, 103, 115, 89, 94, 136, 98, 71, 88, 120, 118, 110, 139, 136, 104, 126, 102, 121, 110, 115, 81, 90, 109, 371, 219, 191, 157, 289, 136, 125, 136, 135, 156, 154, 106, 110, 113, 99, 165, 101, 60]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 88319,
+          "growth": 754,
+          "growthPercent": 0.8537,
+          "starsPerDay": 107.7143
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 84907,
+          "growth": 4166,
+          "growthPercent": 4.9065,
+          "starsPerDay": 138.8667
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 77859,
+          "growth": 11214,
+          "growthPercent": 14.403,
+          "starsPerDay": 124.6
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "787076358",
+      "owner": "firecrawl",
+      "name": "firecrawl",
+      "fullName": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "description": "The web data API to search, scrape, and interact at scale. 🔥",
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-crawler",
+        "ai-scraping",
+        "ai-search",
+        "crawler",
+        "data-extraction",
+        "html-to-markdown",
+        "llm",
+        "markdown",
+        "scraper",
+        "scraping",
+        "web-crawler",
+        "web-data",
+        "web-data-extraction",
+        "web-scraper",
+        "web-scraping",
+        "web-search",
+        "webscraping"
+      ],
+      "license": "AGPL-3.0",
+      "createdAt": "2024-04-15T21:02:29Z",
+      "updatedAt": "2026-09-24T17:08:54Z",
+      "pushedAt": "2026-09-24T16:50:40Z",
+      "isArchived": false,
+      "stars": 184187,
+      "forks": 9908,
+      "openIssues": 645,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents",
+        "llm"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:17.361Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [351, 395, 364, 390, 363, 310, 256, 428, 694, 522, 634, 639, 472, 458, 444, 485, 426, 448, 457, 373, 413, 421, 478, 685, 587, 604, 601, 494, 646, 783, 609, 560, 576, 523, 475, 454, 483, 507, 510, 497, 522, 556, 546, 516, 462, 501, 426, 287, 224, 275, 278, 261, 244, 228, 199, 200, 247, 230, 236, 231, 374, 415, 422, 438, 443, 418, 529, 538, 443, 467, 475, 490, 530, 501, 422, 415, 380, 392, 446, 450, 435, 380, 337, 353, 407, 486, 521, 493, 477, 373, 378, 377, 435, 489, 496, 464, 418, 397, 391, 453, 425, 409, 391, 428, 405, 428, 431, 447, 544, 609, 567, 471, 549, 1162, 682, 525, 515, 415, 405, 850, 701, 674, 536, 526, 435, 767, 783, 1290, 801, 592, 593, 494, 489, 547, 532, 644, 496, 487, 388, 384, 377, 440, 514, 515, 567, 443, 426, 496, 611, 461, 440, 470, 352, 423, 499, 695, 891, 684, 616, 527, 558, 833, 981, 703, 564, 533, 455, 397, 431, 486, 518, 532, 463, 470, 414, 468, 501, 507, 470, 433, 421, 436, 414, 437, 463, 475, 419, 394, 393, 403, 404, 382, 412, 450, 415, 356, 485, 449, 494, 410, 398, 321, 308, 340, 414, 481, 471, 222]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 181630,
+          "growth": 2557,
+          "growthPercent": 1.4078,
+          "starsPerDay": 365.2857
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 171817,
+          "growth": 12370,
+          "growthPercent": 7.1995,
+          "starsPerDay": 412.3333
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 138142,
+          "growth": 46045,
+          "growthPercent": 33.3316,
+          "starsPerDay": 511.6111
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "793375104",
+      "owner": "Shubhamsaboo",
+      "name": "awesome-llm-apps",
+      "fullName": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
+      "language": "Python",
+      "topics": [
+        "agents",
+        "llms",
+        "python",
+        "rag"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2024-04-29T05:30:25Z",
+      "updatedAt": "2026-09-24T16:45:38Z",
+      "pushedAt": "2026-09-23T05:24:46Z",
+      "isArchived": false,
+      "stars": 139637,
+      "forks": 20523,
+      "openIssues": 19,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents",
+        "llm",
+        "rag"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:18.201Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [540, 303, 215, 263, 204, 259, 559, 267, 293, 253, 196, 175, 146, 140, 145, 187, 180, 146, 128, 91, 93, 128, 138, 158, 138, 112, 102, 88, 101, 117, 109, 100, 90, 91, 75, 82, 110, 97, 97, 112, 105, 117, 90, 127, 261, 167, 207, 197, 142, 179, 184, 160, 238, 213, 111, 179, 168, 150, 142, 146, 139, 95, 137, 144, 142, 228, 126, 104, 174, 178, 181, 178, 155, 207, 117, 193, 228, 162, 140, 148, 140, 85, 130, 112, 87, 92, 89, 96, 151, 125, 112, 131, 144, 151, 227, 287, 223, 169, 191, 196, 160, 130, 102, 79, 109, 112, 104, 112, 131, 95, 92, 110, 107, 86, 87, 92, 131, 121, 113, 135, 102, 93, 84, 79, 69, 87, 128, 85, 116, 168, 297, 498, 410, 792, 1104, 1196, 974, 1013, 544, 449, 560, 679, 590, 612, 528, 407, 276, 255, 230, 396, 275, 341, 258, 255, 302, 379, 297, 310, 262, 213, 206, 246, 227, 190, 170, 181, 143, 125, 147, 131, 152, 140, 126, 131, 109, 171, 189, 430, 269, 133, 288, 163, 161, 148, 224, 149, 156, 139, 205, 166, 145, 170, 158, 156, 250, 484, 290, 221, 151, 195, 180, 155, 161, 202, 160, 135, 122, 53]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 138649,
+          "growth": 988,
+          "growthPercent": 0.7126,
+          "starsPerDay": 141.1429
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 134048,
+          "growth": 5589,
+          "growthPercent": 4.1694,
+          "starsPerDay": 186.3
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 114873,
+          "growth": 24764,
+          "growthPercent": 21.5577,
+          "starsPerDay": 275.1556
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "881458615",
+      "owner": "browser-use",
+      "name": "browser-use",
+      "fullName": "browser-use/browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "description": "Agents that use the browser.",
+      "language": "Python",
+      "topics": [
+        "ai-agents",
+        "ai-tools",
+        "browser-automation",
+        "browser-use",
+        "llm",
+        "playwright",
+        "python"
+      ],
+      "license": "MIT",
+      "createdAt": "2024-10-31T16:00:56Z",
+      "updatedAt": "2026-09-24T16:45:38Z",
+      "pushedAt": "2026-09-24T01:38:47Z",
+      "isArchived": false,
+      "stars": 116180,
+      "forks": 12791,
+      "openIssues": 491,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents",
+        "llm"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:18.565Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [99, 104, 102, 110, 94, 81, 68, 95, 107, 237, 141, 146, 121, 79, 110, 145, 118, 114, 104, 174, 416, 967, 1006, 363, 213, 168, 135, 95, 120, 184, 224, 205, 194, 162, 147, 113, 145, 158, 174, 283, 201, 220, 204, 201, 165, 167, 186, 140, 146, 278, 291, 282, 273, 244, 230, 246, 233, 272, 224, 234, 176, 154, 155, 197, 197, 223, 222, 231, 194, 134, 186, 161, 174, 173, 173, 112, 133, 165, 182, 175, 167, 155, 122, 111, 113, 201, 190, 179, 181, 123, 133, 133, 150, 249, 222, 189, 147, 134, 159, 190, 172, 198, 189, 160, 183, 141, 182, 160, 188, 155, 123, 145, 222, 188, 218, 174, 177, 152, 127, 241, 277, 358, 199, 224, 283, 204, 226, 214, 217, 404, 228, 152, 133, 175, 189, 177, 186, 173, 178, 162, 150, 191, 193, 207, 265, 213, 122, 157, 135, 118, 120, 104, 95, 105, 126, 136, 136, 110, 118, 108, 170, 139, 180, 172, 152, 146, 119, 99, 123, 103, 130, 141, 134, 124, 135, 129, 146, 144, 663, 311, 98, 95, 100, 129, 121, 114, 102, 113, 120, 386, 197, 770, 254, 149, 162, 137, 156, 130, 102, 125, 162, 187, 214, 231, 217, 179, 125, 62]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 114965,
+          "growth": 1215,
+          "growthPercent": 1.0568,
+          "starsPerDay": 173.5714
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 110269,
+          "growth": 5911,
+          "growthPercent": 5.3605,
+          "starsPerDay": 197.0333
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 100147,
+          "growth": 16033,
+          "growthPercent": 16.0095,
+          "starsPerDay": 178.1444
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "895508656",
+      "owner": "microsoft",
+      "name": "ai-agents-for-beginners",
+      "fullName": "microsoft/ai-agents-for-beginners",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "description": "18 Lessons to Get Started Building AI Agents",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "agentic-ai",
+        "agentic-framework",
+        "agentic-rag",
+        "ai-agents",
+        "ai-agents-framework",
+        "autogen",
+        "foundry",
+        "foundry-local",
+        "generative-ai",
+        "microsoft-foundry",
+        "semantic-kernel"
+      ],
+      "license": "MIT",
+      "createdAt": "2024-11-28T10:42:52Z",
+      "updatedAt": "2026-09-24T17:00:53Z",
+      "pushedAt": "2026-09-19T06:16:49Z",
+      "isArchived": false,
+      "stars": 75589,
+      "forks": 24871,
+      "openIssues": 19,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:21.090Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [326, 347, 230, 212, 148, 78, 108, 109, 93, 94, 105, 82, 125, 89, 94, 105, 103, 103, 91, 72, 59, 80, 116, 96, 102, 88, 70, 68, 147, 127, 131, 96, 97, 81, 69, 75, 96, 87, 78, 80, 67, 86, 80, 82, 92, 65, 74, 53, 44, 74, 123, 931, 321, 613, 218, 207, 282, 189, 123, 115, 107, 71, 58, 87, 83, 76, 148, 120, 141, 84, 94, 85, 86, 107, 87, 109, 378, 895, 833, 948, 314, 143, 111, 101, 104, 180, 129, 112, 97, 68, 67, 102, 91, 117, 101, 75, 79, 56, 70, 101, 91, 112, 87, 58, 71, 91, 85, 86, 76, 60, 57, 57, 59, 64, 91, 82, 70, 56, 51, 59, 67, 82, 92, 79, 60, 81, 102, 80, 89, 68, 56, 38, 75, 98, 153, 95, 84, 123, 121, 134, 81, 77, 88, 87, 88, 82, 59, 65, 119, 89, 89, 91, 84, 91, 93, 149, 130, 101, 110, 92, 93, 100, 98, 113, 74, 106, 79, 55, 116, 133, 125, 196, 129, 60, 61, 61, 91, 78, 63, 70, 74, 64, 75, 89, 76, 74, 102, 84, 58, 85, 91, 67, 79, 89, 105, 67, 94, 103, 88, 102, 119, 83, 81, 98, 99, 111, 73, 47]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 74997,
+          "growth": 592,
+          "growthPercent": 0.7894,
+          "starsPerDay": 84.5714
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 73079,
+          "growth": 2510,
+          "growthPercent": 3.4346,
+          "starsPerDay": 83.6667
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 67559,
+          "growth": 8030,
+          "growthPercent": 11.8859,
+          "starsPerDay": 89.2222
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "909213664",
+      "owner": "TauricResearch",
+      "name": "TradingAgents",
+      "fullName": "TauricResearch/TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "topics": [
+        "agent",
+        "finance",
+        "llm",
+        "multiagent",
+        "trading"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2024-12-28T03:31:08Z",
+      "updatedAt": "2026-09-24T17:00:45Z",
+      "pushedAt": "2026-09-24T07:51:55Z",
+      "isArchived": false,
+      "stars": 108429,
+      "forks": 20766,
+      "openIssues": 167,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "llm"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:18.558Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [75, 79, 85, 71, 83, 77, 83, 84, 86, 79, 73, 79, 74, 79, 209, 136, 217, 345, 385, 987, 1281, 2205, 1766, 1415, 747, 543, 455, 500, 622, 612, 606, 466, 488, 442, 412, 421, 414, 390, 332, 336, 310, 294, 290, 276, 315, 277, 259, 211, 238, 291, 219, 249, 220, 131, 123, 306, 190, 828, 436, 1689, 1980, 2095, 3067, 2299, 2266, 1581, 888, 749, 705, 635, 740, 632, 575, 544, 491, 341, 290, 439, 438, 414, 448, 451, 300, 352, 326, 311, 357, 321, 253, 253, 315, 272, 639, 449, 359, 242, 211, 484, 525, 398, 253, 241, 224, 246, 388, 358, 256, 292, 260, 273, 210, 182, 204, 175, 175, 181, 237, 347, 217, 364, 286, 257, 193, 213, 197, 243, 267, 312, 277, 240, 174, 164, 162, 265, 199, 187, 186, 143, 115, 125, 159, 146, 159, 162, 191, 107, 96, 142, 121, 112, 122, 97, 115, 90, 137, 122, 129, 180, 169, 140, 539, 271, 491, 308, 234, 161, 172, 171, 188, 181, 149, 137, 104, 115, 135, 264, 217, 700, 320, 592, 248, 146, 166, 187, 167, 118, 108, 105, 108, 153, 220, 493, 749, 371, 162, 133, 694, 782, 420, 347, 309, 178, 145, 209, 165, 216, 172, 76]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 107268,
+          "growth": 1161,
+          "growthPercent": 1.0823,
+          "starsPerDay": 165.8571
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 100170,
+          "growth": 8259,
+          "growthPercent": 8.245,
+          "starsPerDay": 275.3
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 88151,
+          "growth": 20278,
+          "growthPercent": 23.0037,
+          "starsPerDay": 225.3111
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "968197216",
+      "owner": "google-gemini",
+      "name": "gemini-cli",
+      "fullName": "google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "cli",
+        "gemini",
+        "gemini-api",
+        "mcp-client",
+        "mcp-server"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2025-04-17T17:04:31Z",
+      "updatedAt": "2026-09-24T17:13:00Z",
+      "pushedAt": "2026-09-24T16:41:16Z",
+      "isArchived": false,
+      "stars": 107147,
+      "forks": 14630,
+      "openIssues": 830,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:18.895Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [132, 118, 104, 127, 146, 122, 110, 104, 134, 142, 125, 139, 148, 141, 133, 149, 158, 145, 134, 111, 106, 118, 150, 143, 140, 132, 82, 96, 118, 133, 202, 176, 116, 102, 109, 98, 114, 133, 116, 114, 108, 115, 93, 132, 124, 115, 130, 117, 99, 129, 108, 131, 119, 102, 92, 72, 94, 101, 114, 91, 92, 79, 91, 90, 80, 95, 97, 90, 97, 106, 101, 108, 94, 106, 94, 86, 69, 73, 89, 103, 110, 91, 51, 63, 54, 67, 58, 47, 53, 53, 52, 56, 63, 47, 46, 62, 46, 50, 47, 59, 52, 56, 40, 56, 41, 50, 40, 56, 48, 52, 42, 52, 42, 39, 42, 29, 41, 34, 38, 48, 33, 39, 32, 32, 28, 31, 46, 46, 35, 37, 41, 41, 30, 31, 42, 29, 32, 25, 31, 36, 28, 35, 34, 41, 31, 26, 27, 35, 32, 30, 31, 32, 30, 23, 26, 38, 37, 26, 27, 24, 19, 35, 30, 38, 28, 22, 40, 20, 21, 30, 28, 32, 21, 27, 29, 33, 44, 29, 32, 33, 27, 24, 20, 27, 17, 34, 40, 22, 21, 26, 30, 25, 22, 29, 29, 29, 35, 31, 34, 29, 38, 33, 30, 23, 36, 20, 16, 16]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 106973,
+          "growth": 174,
+          "growthPercent": 0.1627,
+          "starsPerDay": 24.8571
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 106319,
+          "growth": 828,
+          "growthPercent": 0.7788,
+          "starsPerDay": 27.6
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 104397,
+          "growth": 2750,
+          "growthPercent": 2.6342,
+          "starsPerDay": 30.5556
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "979115477",
+      "owner": "bytedance",
+      "name": "deer-flow",
+      "fullName": "bytedance/deer-flow",
+      "url": "https://github.com/bytedance/deer-flow",
+      "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+      "language": "Python",
+      "topics": [
+        "agent",
+        "agentic",
+        "agentic-framework",
+        "agentic-workflow",
+        "ai",
+        "ai-agents",
+        "deep-research",
+        "harness",
+        "langchain",
+        "langgraph",
+        "langmanus",
+        "llm",
+        "multi-agent",
+        "nodejs",
+        "podcast",
+        "python",
+        "superagent",
+        "typescript"
+      ],
+      "license": "MIT",
+      "createdAt": "2025-05-07T02:50:19Z",
+      "updatedAt": "2026-09-24T16:51:16Z",
+      "pushedAt": "2026-09-24T13:03:07Z",
+      "isArchived": false,
+      "stars": 82941,
+      "forks": 11481,
+      "openIssues": 889,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents",
+        "llm",
+        "rag"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:20.002Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [501, 426, 569, 295, 318, 404, 442, 429, 1492, 1156, 616, 481, 293, 338, 318, 295, 276, 206, 180, 156, 1184, 2961, 4171, 3678, 2580, 2106, 1274, 1132, 1535, 1294, 1096, 660, 698, 506, 483, 405, 494, 480, 417, 356, 278, 222, 383, 346, 369, 270, 245, 260, 211, 228, 280, 254, 153, 136, 104, 108, 142, 127, 135, 130, 92, 81, 82, 113, 285, 315, 464, 289, 182, 149, 381, 368, 213, 339, 222, 149, 97, 269, 294, 183, 126, 198, 140, 156, 124, 130, 144, 113, 107, 75, 70, 98, 106, 107, 88, 85, 86, 60, 91, 100, 80, 105, 81, 54, 67, 63, 90, 103, 84, 164, 143, 385, 687, 693, 647, 381, 279, 149, 162, 242, 172, 187, 131, 162, 81, 82, 93, 124, 115, 150, 127, 68, 70, 75, 107, 105, 91, 104, 62, 47, 71, 69, 89, 97, 98, 68, 64, 82, 90, 114, 75, 104, 232, 330, 222, 177, 123, 78, 92, 73, 49, 56, 82, 77, 114, 111, 53, 49, 66, 105, 81, 102, 77, 82, 89, 145, 90, 93, 80, 68, 35, 54, 45, 58, 54, 52, 50, 48, 81, 215, 322, 144, 82, 94, 62, 35, 69, 73, 61, 54, 62, 60, 62, 52, 61, 58, 60, 25]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 82563,
+          "growth": 378,
+          "growthPercent": 0.4578,
+          "starsPerDay": 54
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 80665,
+          "growth": 2276,
+          "growthPercent": 2.8215,
+          "starsPerDay": 75.8667
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 74239,
+          "growth": 8702,
+          "growthPercent": 11.7216,
+          "starsPerDay": 96.6889
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "1010681419",
+      "owner": "shareAI-lab",
+      "name": "learn-claude-code",
+      "fullName": "shareAI-lab/learn-claude-code",
+      "url": "https://github.com/shareAI-lab/learn-claude-code",
+      "description": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
+      "language": "Python",
+      "topics": [
+        "agent",
+        "agent-development",
+        "ai-agent",
+        "claude",
+        "claude-code",
+        "educational",
+        "llm",
+        "python",
+        "teaching",
+        "tutorial"
+      ],
+      "license": "MIT",
+      "createdAt": "2025-06-29T15:34:15Z",
+      "updatedAt": "2026-09-24T16:14:21Z",
+      "pushedAt": "2026-08-26T16:38:22Z",
+      "isArchived": false,
+      "stars": 77559,
+      "forks": 12469,
+      "openIssues": 57,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents",
+        "llm"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:20.751Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [512, 442, 442, 395, 515, 790, 596, 751, 482, 353, 266, 424, 663, 821, 1316, 1100, 1550, 1464, 1303, 761, 596, 883, 1073, 878, 685, 1226, 822, 913, 1161, 1033, 1556, 989, 731, 470, 371, 398, 533, 621, 612, 566, 422, 365, 609, 556, 507, 408, 342, 249, 194, 255, 317, 319, 260, 273, 245, 189, 300, 258, 222, 240, 154, 113, 101, 128, 134, 250, 286, 336, 281, 175, 238, 244, 258, 206, 222, 168, 139, 198, 204, 221, 218, 265, 175, 152, 194, 259, 243, 238, 279, 201, 136, 203, 217, 216, 215, 193, 212, 116, 228, 235, 218, 220, 205, 169, 95, 150, 235, 273, 254, 153, 74, 77, 145, 216, 205, 172, 164, 118, 121, 175, 214, 256, 201, 142, 114, 80, 136, 173, 143, 141, 125, 114, 67, 123, 120, 123, 125, 115, 91, 90, 136, 165, 151, 125, 119, 76, 61, 110, 119, 107, 167, 98, 94, 73, 89, 122, 120, 108, 111, 71, 63, 118, 107, 111, 149, 132, 100, 69, 103, 107, 110, 124, 121, 82, 59, 99, 161, 113, 96, 104, 70, 60, 98, 84, 81, 85, 66, 80, 67, 95, 83, 89, 92, 88, 61, 70, 61, 98, 126, 90, 98, 77, 74, 97, 86, 94, 69, 25]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 77037,
+          "growth": 522,
+          "growthPercent": 0.6776,
+          "starsPerDay": 74.5714
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 75095,
+          "growth": 2464,
+          "growthPercent": 3.2812,
+          "starsPerDay": 82.1333
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 67956,
+          "growth": 9603,
+          "growthPercent": 14.1312,
+          "starsPerDay": 106.7
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "1024554267",
+      "owner": "NousResearch",
+      "name": "hermes-agent",
+      "fullName": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "language": "Python",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "ai-agents",
+        "anthropic",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "codex",
+        "hermes",
+        "hermes-agent",
+        "llm",
+        "nous-research",
+        "openai"
+      ],
+      "license": "MIT",
+      "createdAt": "2025-07-22T22:22:28Z",
+      "updatedAt": "2026-09-24T17:12:38Z",
+      "pushedAt": "2026-09-24T17:15:31Z",
+      "isArchived": false,
+      "stars": 248653,
+      "forks": 52605,
+      "openIssues": 43666,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents",
+        "llm"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:17.368Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [187, 145, 66, 62, 72, 169, 183, 325, 679, 1014, 1260, 766, 477, 344, 479, 466, 358, 354, 295, 277, 317, 669, 1241, 921, 579, 605, 749, 791, 1637, 1825, 1562, 1111, 1114, 1042, 1155, 1429, 1895, 4951, 5802, 7150, 6532, 7029, 9799, 8702, 6111, 4717, 3730, 2585, 2603, 3084, 3039, 2694, 2499, 2310, 1747, 1516, 1975, 2199, 2330, 1982, 1516, 1526, 1443, 1475, 1455, 1615, 1729, 1622, 1672, 1593, 1799, 2358, 1936, 1725, 1685, 1513, 1353, 1539, 1630, 1504, 1789, 1828, 1451, 1274, 1398, 1553, 1516, 1429, 1339, 1126, 928, 1134, 1276, 1505, 1849, 1784, 2222, 1338, 1383, 1444, 1337, 1159, 993, 897, 788, 861, 930, 917, 838, 766, 643, 686, 816, 938, 1086, 1119, 913, 658, 585, 711, 754, 761, 822, 772, 628, 510, 555, 701, 660, 634, 634, 530, 493, 536, 537, 617, 600, 548, 459, 400, 480, 608, 593, 572, 572, 478, 463, 489, 512, 494, 526, 595, 494, 422, 547, 620, 621, 592, 532, 458, 455, 470, 590, 609, 552, 587, 538, 450, 533, 568, 574, 538, 512, 460, 415, 781, 831, 564, 511, 448, 412, 409, 433, 579, 512, 719, 729, 619, 511, 607, 500, 449, 433, 389, 411, 313, 329, 385, 387, 356, 378, 373, 297, 343, 342, 354, 348, 176]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 246420,
+          "growth": 2233,
+          "growthPercent": 0.9062,
+          "starsPerDay": 319
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 235601,
+          "growth": 13052,
+          "growthPercent": 5.5399,
+          "starsPerDay": 435.0667
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 201459,
+          "growth": 47194,
+          "growthPercent": 23.4261,
+          "starsPerDay": 524.3778
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "1048065319",
+      "owner": "thedotmack",
+      "name": "claude-mem",
+      "fullName": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-memory",
+        "anthropic",
+        "artificial-intelligence",
+        "chromadb",
+        "claude",
+        "claude-agent-sdk",
+        "claude-agents",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-skills",
+        "embeddings",
+        "long-term-memory",
+        "mem0",
+        "memory-engine",
+        "openmemory",
+        "rag",
+        "sqlite",
+        "supermemory"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2025-08-31T20:50:03Z",
+      "updatedAt": "2026-09-24T17:07:06Z",
+      "pushedAt": "2026-09-24T01:11:26Z",
+      "isArchived": false,
+      "stars": 94606,
+      "forks": 8364,
+      "openIssues": 296,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents",
+        "rag"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:19.324Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [246, 283, 364, 193, 125, 128, 166, 162, 287, 208, 191, 210, 272, 231, 879, 1291, 619, 417, 321, 282, 395, 386, 404, 335, 380, 540, 409, 364, 904, 770, 443, 285, 279, 247, 245, 407, 280, 290, 277, 328, 833, 662, 2483, 3087, 2280, 1862, 2163, 1237, 948, 929, 1005, 730, 658, 638, 507, 478, 499, 672, 614, 552, 537, 363, 369, 477, 483, 526, 435, 416, 402, 353, 392, 397, 319, 277, 256, 234, 185, 222, 213, 286, 217, 218, 215, 183, 201, 300, 672, 359, 243, 189, 161, 169, 191, 212, 221, 178, 180, 130, 167, 218, 163, 205, 189, 164, 144, 179, 289, 239, 208, 140, 122, 175, 190, 198, 194, 206, 164, 237, 219, 188, 172, 181, 150, 182, 152, 165, 179, 179, 175, 136, 180, 148, 108, 120, 148, 174, 141, 130, 127, 112, 133, 160, 135, 138, 131, 105, 80, 96, 128, 131, 118, 115, 109, 86, 101, 113, 162, 160, 150, 115, 110, 133, 121, 135, 122, 117, 105, 69, 91, 122, 160, 111, 107, 103, 81, 100, 133, 122, 132, 409, 155, 88, 96, 113, 182, 115, 87, 111, 88, 78, 78, 113, 70, 87, 67, 69, 73, 107, 97, 89, 78, 90, 83, 76, 81, 90, 77, 39]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 94070,
+          "growth": 536,
+          "growthPercent": 0.5698,
+          "starsPerDay": 76.5714
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 91488,
+          "growth": 3118,
+          "growthPercent": 3.4081,
+          "starsPerDay": 103.9333
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 83514,
+          "growth": 11092,
+          "growthPercent": 13.2816,
+          "starsPerDay": 123.2444
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "1052050442",
+      "owner": "datawhalechina",
+      "name": "hello-agents",
+      "fullName": "datawhalechina/hello-agents",
+      "url": "https://github.com/datawhalechina/hello-agents",
+      "description": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
+      "language": "Python",
+      "topics": [
+        "agent",
+        "llm",
+        "rag",
+        "tutorial"
+      ],
+      "license": "NOASSERTION",
+      "createdAt": "2025-09-07T09:50:24Z",
+      "updatedAt": "2026-09-24T17:09:04Z",
+      "pushedAt": "2026-09-22T11:42:57Z",
+      "isArchived": false,
+      "stars": 80759,
+      "forks": 10049,
+      "openIssues": 98,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "llm",
+        "rag"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:20.341Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [606, 470, 271, 295, 254, 198, 145, 266, 275, 287, 265, 251, 167, 167, 202, 253, 249, 292, 313, 208, 164, 287, 383, 397, 600, 373, 231, 168, 279, 348, 337, 331, 330, 194, 146, 145, 267, 353, 296, 290, 217, 177, 273, 351, 751, 458, 468, 323, 259, 332, 416, 345, 410, 400, 239, 221, 276, 337, 308, 282, 161, 98, 121, 155, 140, 255, 490, 733, 972, 868, 1106, 772, 808, 603, 377, 318, 309, 355, 490, 528, 390, 358, 223, 232, 384, 373, 319, 346, 310, 213, 155, 213, 296, 406, 466, 398, 308, 217, 257, 323, 405, 313, 247, 195, 157, 285, 283, 314, 272, 141, 189, 143, 211, 298, 278, 248, 245, 285, 153, 223, 290, 287, 317, 272, 177, 147, 208, 301, 274, 241, 234, 185, 125, 223, 258, 269, 265, 261, 169, 147, 218, 264, 278, 247, 254, 194, 125, 224, 241, 215, 249, 236, 133, 179, 240, 296, 340, 278, 272, 178, 136, 192, 231, 279, 260, 210, 148, 131, 161, 208, 196, 178, 181, 146, 104, 166, 220, 259, 265, 171, 139, 86, 174, 212, 398, 358, 264, 166, 145, 230, 259, 234, 268, 227, 152, 141, 215, 212, 226, 241, 234, 133, 154, 193, 209, 186, 159, 65]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 79660,
+          "growth": 1099,
+          "growthPercent": 1.3796,
+          "starsPerDay": 157
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 74643,
+          "growth": 6116,
+          "growthPercent": 8.1937,
+          "starsPerDay": 203.8667
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 61550,
+          "growth": 19209,
+          "growthPercent": 31.2088,
+          "starsPerDay": 213.4333
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "1078079172",
+      "owner": "ComposioHQ",
+      "name": "awesome-claude-skills",
+      "fullName": "ComposioHQ/awesome-claude-skills",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+      "language": "Python",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "antigravity",
+        "automation",
+        "claude",
+        "claude-code",
+        "codex",
+        "composio",
+        "cursor",
+        "developer-tools",
+        "gemini-cli",
+        "mcp",
+        "openai-codex",
+        "rube",
+        "saas",
+        "skill",
+        "workflow-automation"
+      ],
+      "license": null,
+      "createdAt": "2025-10-17T07:15:01Z",
+      "updatedAt": "2026-09-24T16:15:38Z",
+      "pushedAt": "2026-09-18T07:16:11Z",
+      "isArchived": false,
+      "stars": 75590,
+      "forks": 8774,
+      "openIssues": 1521,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:21.120Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [528, 427, 557, 446, 387, 240, 278, 295, 354, 442, 346, 334, 287, 316, 356, 361, 541, 431, 367, 271, 246, 285, 302, 342, 299, 360, 285, 316, 335, 370, 391, 356, 366, 259, 203, 250, 278, 284, 295, 318, 254, 231, 301, 272, 253, 274, 258, 215, 169, 240, 249, 209, 254, 220, 191, 193, 224, 192, 238, 197, 143, 163, 172, 185, 189, 209, 225, 216, 212, 159, 147, 194, 177, 202, 193, 138, 153, 188, 203, 210, 204, 207, 176, 161, 182, 174, 188, 174, 164, 121, 112, 165, 139, 150, 157, 146, 108, 125, 144, 151, 151, 134, 164, 129, 123, 139, 133, 156, 137, 109, 127, 113, 105, 107, 119, 142, 128, 109, 96, 104, 108, 118, 101, 118, 87, 83, 97, 112, 101, 117, 118, 88, 65, 83, 99, 92, 96, 78, 95, 62, 78, 169, 157, 535, 639, 615, 499, 265, 139, 115, 87, 114, 94, 89, 58, 91, 97, 109, 81, 70, 61, 76, 89, 71, 75, 57, 68, 71, 69, 78, 90, 78, 83, 76, 68, 73, 84, 71, 134, 325, 132, 158, 112, 92, 88, 88, 90, 69, 71, 59, 53, 71, 67, 74, 53, 38, 62, 77, 72, 81, 72, 61, 62, 61, 55, 58, 59, 20]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 75214,
+          "growth": 376,
+          "growthPercent": 0.4999,
+          "starsPerDay": 53.7143
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 73076,
+          "growth": 2514,
+          "growthPercent": 3.4403,
+          "starsPerDay": 83.8
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 65519,
+          "growth": 10071,
+          "growthPercent": 15.3711,
+          "starsPerDay": 111.9
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "1136590548",
+      "owner": "affaan-m",
+      "name": "ECC",
+      "fullName": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "developer-tools",
+        "llm",
+        "mcp",
+        "productivity"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-01-18T00:51:51Z",
+      "updatedAt": "2026-09-24T17:11:33Z",
+      "pushedAt": "2026-09-24T16:52:48Z",
+      "isArchived": false,
+      "stars": 266653,
+      "forks": 39847,
+      "openIssues": 225,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents",
+        "llm"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:17.084Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [1407, 1186, 1649, 1235, 1394, 1159, 2227, 2275, 1416, 1436, 1425, 1411, 1169, 1017, 2183, 2711, 2576, 2384, 2562, 2450, 3498, 4065, 3448, 2826, 2960, 2141, 2081, 2180, 2024, 4045, 7023, 3422, 2317, 2157, 1947, 2586, 2301, 1981, 2106, 1690, 1301, 1206, 1569, 1757, 1532, 1321, 1197, 828, 769, 835, 999, 1044, 1087, 1070, 836, 668, 747, 828, 946, 831, 670, 575, 583, 620, 614, 701, 722, 622, 654, 911, 1682, 1147, 964, 878, 840, 1269, 1207, 966, 849, 589, 533, 439, 377, 799, 1898, 1762, 2002, 1458, 1360, 1043, 816, 1555, 1549, 1951, 1753, 1419, 996, 791, 826, 1080, 1000, 856, 837, 712, 629, 655, 694, 587, 595, 480, 519, 584, 573, 602, 700, 623, 529, 436, 487, 482, 444, 678, 521, 605, 432, 365, 309, 368, 441, 394, 457, 316, 364, 356, 364, 488, 394, 353, 314, 282, 367, 353, 367, 358, 353, 360, 435, 379, 601, 782, 776, 604, 343, 205, 285, 300, 416, 322, 304, 285, 242, 235, 269, 256, 291, 245, 196, 186, 238, 267, 281, 232, 325, 378, 412, 432, 341, 322, 330, 281, 238, 369, 523, 593, 517, 689, 959, 1332, 1485, 1700, 1429, 1383, 856, 709, 634, 646, 700, 662, 1024, 988, 961, 942, 915, 982, 910, 793, 755, 345]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 261011,
+          "growth": 5642,
+          "growthPercent": 2.1616,
+          "starsPerDay": 806
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 242003,
+          "growth": 24650,
+          "growthPercent": 10.1858,
+          "starsPerDay": 821.6667
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 219446,
+          "growth": 47207,
+          "growthPercent": 21.5119,
+          "starsPerDay": 524.5222
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "1139971460",
+      "owner": "rtk-ai",
+      "name": "rtk",
+      "fullName": "rtk-ai/rtk",
+      "url": "https://github.com/rtk-ai/rtk",
+      "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+      "language": "Rust",
+      "topics": [
+        "agentic-coding",
+        "ai-coding",
+        "anthropic",
+        "claude-code",
+        "cli",
+        "command-line-tool",
+        "cost-reduction",
+        "developer-tools",
+        "llm",
+        "open-source",
+        "productivity",
+        "rust",
+        "token-optimization"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2026-01-22T16:54:16Z",
+      "updatedAt": "2026-09-24T17:16:14Z",
+      "pushedAt": "2026-09-24T10:09:40Z",
+      "isArchived": false,
+      "stars": 81643,
+      "forks": 5167,
+      "openIssues": 1575,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "llm"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:20.087Z",
+        "complete": false,
+        "firstDate": "2026-03-01",
+        "dailyGains": [92, 77, 115, 531, 512, 448, 511, 537, 571, 416, 285, 269, 694, 426, 323, 1029, 621, 644, 602, 429, 293, 298, 372, 402, 625, 596, 378, 189, 524, 475, 353, 339, 319, 320, 574, 698, 691, 676, 1124, 923, 899, 1048, 772, 1029, 817, 798, 707, 462, 644, 873, 835, 784, 913, 895, 1120, 784, 697, 820, 710, 663, 485, 560, 544, 621, 782, 767, 822, 1009, 634, 446, 370, 533, 678, 590, 599, 470, 394, 473, 679, 1068, 763, 502, 449, 360, 423, 475, 546, 633, 504, 436, 278, 354, 635, 508, 480, 393, 325, 263, 331, 399, 441, 449, 427, 377, 182, 220, 309, 416, 328, 332, 245, 316, 406, 457, 402, 328, 324, 264, 180, 202, 283, 319, 345, 314, 281, 210, 208, 311, 324, 318, 252, 271, 224, 227, 241, 214, 221, 182, 168, 141, 168, 252, 314, 239, 272, 227, 124, 138, 227, 177, 212, 191, 136, 92, 135, 193, 191, 168, 159, 134, 89, 110, 156, 266, 157, 149, 133, 79, 92, 139, 147, 166, 150, 136, 114, 97, 131, 140, 122, 134, 101, 96, 152, 158, 167, 122, 152, 139, 378, 196, 212, 235, 189, 160, 163, 108, 150, 191, 176, 153, 161, 114, 115, 136, 177, 145, 135, 48]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 80773,
+          "growth": 870,
+          "growthPercent": 1.0771,
+          "starsPerDay": 124.2857
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 76958,
+          "growth": 4685,
+          "growthPercent": 6.0877,
+          "starsPerDay": 156.1667
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 65322,
+          "growth": 16321,
+          "growthPercent": 24.9855,
+          "starsPerDay": 181.3444
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "1183888342",
+      "owner": "stablyai",
+      "name": "orca",
+      "fullName": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "language": "TypeScript",
+      "topics": [
+        "ade",
+        "agent-ide",
+        "ai-agents",
+        "claude-code",
+        "cli",
+        "codex",
+        "cursor-agent",
+        "devtools",
+        "ghostty",
+        "ide",
+        "mobile-app",
+        "opencode",
+        "orchestration",
+        "parallel-agents",
+        "pi",
+        "terminal",
+        "worktrees",
+        "yc-backed"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-03-17T03:28:57Z",
+      "updatedAt": "2026-09-24T17:14:11Z",
+      "pushedAt": "2026-09-24T17:12:16Z",
+      "isArchived": false,
+      "stars": 77343,
+      "forks": 5068,
+      "openIssues": 6741,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:20.762Z",
+        "complete": true,
+        "firstDate": "2026-03-15",
+        "dailyGains": [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 14, 28, 47, 19, 10, 2, 6, 150, 104, 38, 51, 10, 27, 33, 45, 133, 81, 70, 97, 88, 28, 20, 84, 118, 45, 27, 112, 36, 42, 30, 25, 22, 40, 42, 36, 34, 20, 12, 23, 50, 39, 16, 19, 30, 26, 28, 75, 79, 145, 97, 48, 76, 101, 73, 98, 98, 36, 57, 132, 79, 106, 82, 83, 65, 51, 51, 115, 93, 90, 69, 59, 71, 42, 73, 75, 62, 60, 68, 54, 80, 114, 111, 194, 99, 185, 137, 168, 204, 316, 586, 624, 335, 390, 368, 480, 562, 641, 686, 567, 313, 395, 492, 719, 686, 899, 600, 394, 930, 1146, 785, 751, 688, 543, 642, 743, 1278, 1314, 1228, 1136, 812, 629, 912, 1043, 949, 1043, 982, 665, 520, 761, 814, 769, 752, 787, 633, 568, 721, 902, 1131, 1138, 896, 639, 450, 588, 854, 897, 893, 832, 598, 575, 815, 839, 772, 762, 1011, 837, 556, 813, 920, 846, 838, 927, 669, 508, 637, 793, 792, 837, 851, 742, 488, 704, 908, 749, 834, 835, 823, 788, 1046, 1038, 1019, 929, 512]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 71188,
+          "growth": 6155,
+          "growthPercent": 8.6461,
+          "starsPerDay": 879.2857
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 53331,
+          "growth": 24012,
+          "growthPercent": 45.0245,
+          "starsPerDay": 800.4
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 7776,
+          "growth": 69567,
+          "growthPercent": 894.6373,
+          "starsPerDay": 772.9667
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "1200597263",
+      "owner": "Graphify-Labs",
+      "name": "graphify",
+      "fullName": "Graphify-Labs/graphify",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+      "language": "Python",
+      "topics": [
+        "ai-agents",
+        "antigravity",
+        "ast",
+        "claude-code",
+        "code-analysis",
+        "code-search",
+        "codex",
+        "cursor",
+        "developer-tools",
+        "gemini",
+        "graphrag",
+        "knowledge-graph",
+        "leiden",
+        "llm",
+        "mcp",
+        "openclaw",
+        "rag",
+        "skills",
+        "tree-sitter"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2026-04-03T15:49:07Z",
+      "updatedAt": "2026-09-24T17:13:28Z",
+      "pushedAt": "2026-09-23T19:25:20Z",
+      "isArchived": false,
+      "stars": 121149,
+      "forks": 11683,
+      "openIssues": 1459,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents",
+        "llm",
+        "rag"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:18.515Z",
+        "complete": true,
+        "firstDate": "2026-03-29",
+        "dailyGains": [0, 0, 0, 0, 0, 0, 0, 292, 2809, 4988, 5596, 4251, 2074, 1698, 1569, 1475, 1099, 976, 827, 789, 785, 719, 721, 889, 843, 587, 510, 519, 854, 928, 795, 987, 633, 892, 918, 1034, 791, 621, 546, 584, 579, 512, 549, 611, 491, 387, 355, 312, 215, 257, 394, 533, 571, 612, 971, 621, 619, 616, 658, 638, 600, 514, 621, 626, 521, 489, 458, 465, 530, 814, 1592, 1204, 791, 708, 714, 545, 409, 520, 477, 545, 481, 424, 409, 355, 429, 431, 486, 439, 478, 467, 368, 832, 610, 492, 476, 912, 876, 521, 525, 651, 843, 891, 795, 609, 520, 976, 1659, 1592, 1243, 1414, 985, 708, 650, 793, 815, 741, 706, 633, 581, 656, 689, 648, 735, 654, 557, 626, 825, 736, 678, 503, 515, 458, 330, 323, 375, 359, 369, 372, 319, 385, 433, 401, 447, 419, 374, 546, 326, 286, 306, 431, 564, 544, 407, 303, 403, 380, 557, 449, 432, 330, 323, 293, 392, 367, 333, 364, 262, 234, 257, 307, 327, 532, 526, 328, 279, 294, 323, 375, 369, 154]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 119027,
+          "growth": 2122,
+          "growthPercent": 1.7828,
+          "starsPerDay": 303.1429
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 110141,
+          "growth": 11008,
+          "growthPercent": 9.9945,
+          "starsPerDay": 366.9333
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 71643,
+          "growth": 49506,
+          "growthPercent": 69.101,
+          "starsPerDay": 550.0667
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "1201173969",
+      "owner": "JuliusBrussee",
+      "name": "caveman",
+      "fullName": "JuliusBrussee/caveman",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+      "language": "Go",
+      "topics": [
+        "ai",
+        "anthropic",
+        "caveman",
+        "claude",
+        "claude-code",
+        "llm",
+        "meme",
+        "prompt-engineering",
+        "skill",
+        "tokens"
+      ],
+      "license": "NOASSERTION",
+      "createdAt": "2026-04-04T10:03:00Z",
+      "updatedAt": "2026-09-24T17:10:52Z",
+      "pushedAt": "2026-09-24T07:39:42Z",
+      "isArchived": false,
+      "stars": 107676,
+      "forks": 6236,
+      "openIssues": 129,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "llm"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:18.963Z",
+        "complete": true,
+        "firstDate": "2026-03-29",
+        "dailyGains": [0, 0, 0, 0, 0, 0, 54, 1802, 2521, 1732, 1452, 1406, 4921, 4598, 3294, 4242, 3510, 2486, 2352, 1553, 991, 1233, 1665, 1526, 1190, 1176, 983, 621, 701, 1051, 1061, 1151, 850, 608, 489, 550, 761, 787, 798, 716, 545, 373, 566, 747, 662, 630, 595, 418, 285, 380, 487, 488, 460, 502, 450, 254, 327, 400, 457, 443, 411, 362, 252, 321, 528, 476, 437, 511, 366, 248, 283, 407, 457, 476, 426, 385, 221, 430, 522, 557, 500, 425, 330, 282, 343, 404, 357, 365, 338, 286, 189, 278, 313, 374, 779, 2441, 1489, 1023, 940, 710, 544, 549, 436, 402, 383, 461, 540, 389, 389, 305, 260, 212, 332, 479, 470, 329, 360, 294, 218, 276, 364, 433, 415, 293, 259, 186, 215, 279, 313, 330, 337, 227, 191, 208, 244, 255, 274, 237, 225, 180, 175, 254, 285, 249, 526, 437, 184, 196, 228, 278, 268, 240, 195, 137, 152, 200, 238, 484, 477, 463, 181, 172, 236, 229, 207, 218, 322, 185, 174, 227, 242, 243, 327, 289, 207, 217, 209, 224, 185, 82]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 106263,
+          "growth": 1413,
+          "growthPercent": 1.3297,
+          "starsPerDay": 201.8571
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 100446,
+          "growth": 7230,
+          "growthPercent": 7.1979,
+          "starsPerDay": 241
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 76005,
+          "growth": 31671,
+          "growthPercent": 41.6696,
+          "starsPerDay": 351.9
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "1266797999",
+      "owner": "DietrichGebert",
+      "name": "ponytail",
+      "fullName": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "language": "JavaScript",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "claude",
+        "claude-code",
+        "claude-code-plugin",
+        "cursor-rules",
+        "developer-tools",
+        "llm",
+        "prompt-engineering",
+        "yagni"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-06-12T00:52:37Z",
+      "updatedAt": "2026-09-24T17:15:50Z",
+      "pushedAt": "2026-09-14T14:34:56Z",
+      "isArchived": false,
+      "stars": 145420,
+      "forks": 7797,
+      "openIssues": 304,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents",
+        "llm"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:18.108Z",
+        "complete": true,
+        "firstDate": "2026-06-07",
+        "dailyGains": [0, 0, 0, 0, 245, 752, 749, 7598, 8394, 8735, 5903, 4547, 2746, 3470, 3167, 3286, 2621, 2886, 2601, 1757, 1672, 3231, 2358, 1637, 1364, 1209, 1188, 865, 1103, 983, 1017, 1144, 1149, 817, 593, 722, 953, 772, 905, 630, 467, 392, 546, 590, 665, 577, 575, 511, 363, 521, 575, 660, 735, 689, 636, 453, 667, 965, 914, 814, 721, 775, 511, 712, 721, 729, 668, 642, 567, 653, 760, 681, 665, 661, 726, 751, 705, 707, 970, 1452, 1578, 1402, 1234, 911, 1039, 1275, 1508, 1921, 1688, 2742, 1677, 1636, 1454, 1240, 1283, 1299, 958, 805, 848, 1122, 972, 1063, 877, 629, 546, 622, 654, 701, 604, 271]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 141393,
+          "growth": 4027,
+          "growthPercent": 2.8481,
+          "starsPerDay": 575.2857
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 110861,
+          "growth": 34559,
+          "growthPercent": 31.1733,
+          "starsPerDay": 1151.9667
+        },
+        "90d": {
+          "days": 90,
+          "status": "ok",
+          "starsAgo": 59457,
+          "growth": 85963,
+          "growthPercent": 144.5801,
+          "starsPerDay": 955.1444
+        }
+      },
+      "quality": []
+    },
+    {
+      "id": "1333065091",
+      "owner": "deepseek-ai",
+      "name": "deepseek-harness",
+      "fullName": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "description": "DeepSeek Harness: Everything is a Plugin.",
+      "language": "TypeScript",
+      "topics": [
+        "ai-agents",
+        "cordis",
+        "dsh",
+        "dsh-plugin"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-08-13T11:56:32Z",
+      "updatedAt": "2026-09-24T17:12:08Z",
+      "pushedAt": "2026-09-24T14:10:21Z",
+      "isArchived": false,
+      "stars": 235036,
+      "forks": 28275,
+      "openIssues": 0,
+      "metadataSource": "rest",
+      "collectedAt": "2026-09-24T17:16:28.643Z",
+      "domains": [
+        "ai"
+      ],
+      "categories": [
+        "ai-agents"
+      ],
+      "starHistory": {
+        "source": "github-star-history",
+        "fetchedAt": "2026-09-24T17:17:17.150Z",
+        "complete": true,
+        "firstDate": "2026-08-09",
+        "dailyGains": [0, 0, 0, 0, 74277, 26825, 18064, 19940, 13914, 8481, 6852, 7078, 5603, 3457, 3600, 3778, 3020, 2578, 2232, 1564, 1378, 1622, 1695, 1607, 1576, 1380, 1111, 901, 1079, 1093, 1214, 1379, 1750, 1271, 1010, 1212, 1478, 1381, 1355, 1311, 1061, 1132, 1165, 1110, 1165, 854, 483]
+      },
+      "growth": {
+        "7d": {
+          "days": 7,
+          "status": "ok",
+          "starsAgo": 228066,
+          "growth": 6970,
+          "growthPercent": 3.0561,
+          "starsPerDay": 995.7143
+        },
+        "30d": {
+          "days": 30,
+          "status": "ok",
+          "starsAgo": 194889,
+          "growth": 40147,
+          "growthPercent": 20.5999,
+          "starsPerDay": 1338.2333
+        },
+        "90d": {
+          "days": 90,
+          "status": "zero-base",
+          "starsAgo": 0,
+          "growth": 235036,
+          "growthPercent": null,
+          "starsPerDay": 2611.5111
+        }
+      },
+      "quality": []
+    }
+  ]
+}

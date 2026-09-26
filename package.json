@@ -1,0 +1,39 @@
+{
+  "name": "opensource-radar",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "OpenSource Radar - authenticated GitHub data foundation (Phase 1)",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "smoke:graphql": "tsx scripts/smoke/graphql.ts",
+    "smoke:search": "tsx scripts/smoke/search.ts",
+    "smoke:star-history": "tsx scripts/smoke/star-history.ts",
+    "smoke:rate-limit": "tsx scripts/smoke/rate-limit.ts",
+    "smoke": "tsx scripts/smoke/run-all.ts",
+    "budget": "tsx scripts/budget.ts",
+    "collect": "tsx scripts/collect/index.ts",
+    "gen:categories": "node scripts/gen-category-config.mjs",
+    "gen:classification": "node scripts/gen-classification-config.mjs",
+    "classify": "tsx scripts/classify/index.ts",
+    "track": "tsx scripts/track/index.ts",
+    "momentum": "tsx scripts/momentum/index.ts",
+    "dev": "next dev",
+    "build": "next build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitest/coverage-v8": "^2.1.9",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "dependencies": {
+    "next": "^16.3.6",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

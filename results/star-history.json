@@ -1,0 +1,480 @@
+{
+  "script": "star-history",
+  "startedAt": "2026-09-25T01:45:54.445Z",
+  "durationMs": 7738,
+  "requests": {
+    "rest": 21,
+    "graphql": 0
+  },
+  "checks": [
+    {
+      "name": "large: vercel/next.js (sample)",
+      "ok": true,
+      "detail": {
+        "label": "large",
+        "repo": "vercel/next.js",
+        "mode": "sample",
+        "httpStatus": 200,
+        "page1Bytes": 1862,
+        "page1Buckets": 30,
+        "page1DurationMs": 557,
+        "lastPageFromLink": 18,
+        "etag": true,
+        "cacheControl": "private, max-age=60, s-maxage=60",
+        "corsAllowOrigin": "*",
+        "rateLimitAfterPage1": {
+          "limit": 5000,
+          "remaining": 4979,
+          "used": 21,
+          "resetAt": "2026-09-25T02:26:57.000Z",
+          "resource": "core"
+        },
+        "starsNow": 142430,
+        "createdAt": "2016-10-05T23:32:51Z",
+        "providerRequests": 2,
+        "pages": 2,
+        "buckets": 60,
+        "bytes": 3723,
+        "complete": false,
+        "rolloverDuplicates": 0,
+        "restarted": false,
+        "walkDurationMs": 700,
+        "newestWeek": "2026-09-20",
+        "oldestFetchedWeek": "2025-08-03",
+        "lastPageFetched": {
+          "page": 18,
+          "bytes": 667,
+          "buckets": 11,
+          "oldestWeek": "2016-10-02",
+          "nextLinkPresent": false
+        },
+        "estimatedFullWalkRequests": 18,
+        "totalDurationMs": 2061
+      }
+    },
+    {
+      "name": "long-history: torvalds/linux (sample)",
+      "ok": true,
+      "detail": {
+        "label": "long-history",
+        "repo": "torvalds/linux",
+        "mode": "sample",
+        "httpStatus": 200,
+        "page1Bytes": 2059,
+        "page1Buckets": 30,
+        "page1DurationMs": 374,
+        "lastPageFromLink": 27,
+        "etag": true,
+        "cacheControl": "private, max-age=60, s-maxage=60",
+        "corsAllowOrigin": "*",
+        "rateLimitAfterPage1": {
+          "limit": 5000,
+          "remaining": 4975,
+          "used": 25,
+          "resetAt": "2026-09-25T02:26:57.000Z",
+          "resource": "core"
+        },
+        "starsNow": 250058,
+        "createdAt": "2011-09-04T22:48:12Z",
+        "providerRequests": 2,
+        "pages": 2,
+        "buckets": 60,
+        "bytes": 4003,
+        "complete": false,
+        "rolloverDuplicates": 0,
+        "restarted": false,
+        "walkDurationMs": 764,
+        "newestWeek": "2026-09-20",
+        "oldestFetchedWeek": "2025-08-03",
+        "lastPageFetched": {
+          "page": 27,
+          "bytes": 338,
+          "buckets": 6,
+          "oldestWeek": "2011-09-04",
+          "nextLinkPresent": false
+        },
+        "estimatedFullWalkRequests": 27,
+        "totalDurationMs": 1882
+      }
+    },
+    {
+      "name": "small: encoreshao/github-trending (full)",
+      "ok": true,
+      "detail": {
+        "label": "small",
+        "repo": "encoreshao/github-trending",
+        "mode": "full",
+        "httpStatus": 200,
+        "page1Bytes": 1593,
+        "page1Buckets": 30,
+        "page1DurationMs": 364,
+        "lastPageFromLink": 4,
+        "etag": true,
+        "cacheControl": "private, max-age=60, s-maxage=60",
+        "corsAllowOrigin": "*",
+        "rateLimitAfterPage1": {
+          "limit": 5000,
+          "remaining": 4971,
+          "used": 29,
+          "resetAt": "2026-09-25T02:26:57.000Z",
+          "resource": "core"
+        },
+        "starsNow": 57,
+        "createdAt": "2024-07-22T12:54:25Z",
+        "providerRequests": 4,
+        "pages": 4,
+        "buckets": 114,
+        "bytes": 6048,
+        "complete": true,
+        "rolloverDuplicates": 0,
+        "restarted": false,
+        "walkDurationMs": 1363,
+        "newestWeek": "2026-09-20",
+        "oldestFetchedWeek": "2024-07-21",
+        "sumOfBuckets": 57,
+        "sumMatchesStars": true,
+        "firstBucketOnOrBeforeCreation": true,
+        "dailyPoints": 798,
+        "windows": {
+          "7d": {
+            "days": 7,
+            "status": "ok",
+            "starsAgo": 57,
+            "growth": 0,
+            "growthPercent": 0,
+            "starsPerDay": 0
+          },
+          "30d": {
+            "days": 30,
+            "status": "ok",
+            "starsAgo": 51,
+            "growth": 6,
+            "growthPercent": 11.7647,
+            "starsPerDay": 0.2
+          },
+          "90d": {
+            "days": 90,
+            "status": "ok",
+            "starsAgo": 11,
+            "growth": 46,
+            "growthPercent": 418.1818,
+            "starsPerDay": 0.5111
+          }
+        },
+        "qualityIssues": [],
+        "totalDurationMs": 2100
+      }
+    },
+    {
+      "name": "zero-star: patrick-creates/rising-repos-tracker (full)",
+      "ok": true,
+      "detail": {
+        "label": "zero-star",
+        "repo": "patrick-creates/rising-repos-tracker",
+        "mode": "full",
+        "httpStatus": 200,
+        "page1Bytes": 1061,
+        "page1Buckets": 20,
+        "page1DurationMs": 316,
+        "lastPageFromLink": 1,
+        "etag": true,
+        "cacheControl": "private, max-age=60, s-maxage=60",
+        "corsAllowOrigin": "*",
+        "rateLimitAfterPage1": {
+          "limit": 5000,
+          "remaining": 4966,
+          "used": 34,
+          "resetAt": "2026-09-25T02:26:57.000Z",
+          "resource": "core"
+        },
+        "starsNow": 0,
+        "createdAt": "2026-05-13T08:35:21Z",
+        "providerRequests": 1,
+        "pages": 1,
+        "buckets": 20,
+        "bytes": 1061,
+        "complete": true,
+        "rolloverDuplicates": 0,
+        "restarted": false,
+        "walkDurationMs": 372,
+        "newestWeek": "2026-09-20",
+        "oldestFetchedWeek": "2026-05-10",
+        "sumOfBuckets": 0,
+        "sumMatchesStars": true,
+        "firstBucketOnOrBeforeCreation": true,
+        "dailyPoints": 140,
+        "windows": {
+          "7d": {
+            "days": 7,
+            "status": "zero-base",
+            "starsAgo": 0,
+            "growth": 0,
+            "growthPercent": null,
+            "starsPerDay": 0
+          },
+          "30d": {
+            "days": 30,
+            "status": "zero-base",
+            "starsAgo": 0,
+            "growth": 0,
+            "growthPercent": null,
+            "starsPerDay": 0
+          },
+          "90d": {
+            "days": 90,
+            "status": "zero-base",
+            "starsAgo": 0,
+            "growth": 0,
+            "growthPercent": null,
+            "starsPerDay": 0
+          }
+        },
+        "qualityIssues": [],
+        "totalDurationMs": 1069
+      }
+    },
+    {
+      "name": "404 for a repository that does not exist maps to NotFoundError",
+      "ok": true,
+      "detail": {
+        "mapped": "NotFoundError"
+      }
+    },
+    {
+      "name": "rate limit after the run",
+      "ok": true,
+      "detail": {
+        "limit": 5000,
+        "used": 0,
+        "remaining": 5000,
+        "reset": 1790304357
+      }
+    }
+  ],
+  "measurements": {
+    "authenticated": true,
+    "samples": [
+      {
+        "label": "large",
+        "repo": "vercel/next.js",
+        "mode": "sample",
+        "httpStatus": 200,
+        "page1Bytes": 1862,
+        "page1Buckets": 30,
+        "page1DurationMs": 557,
+        "lastPageFromLink": 18,
+        "etag": true,
+        "cacheControl": "private, max-age=60, s-maxage=60",
+        "corsAllowOrigin": "*",
+        "rateLimitAfterPage1": {
+          "limit": 5000,
+          "remaining": 4979,
+          "used": 21,
+          "resetAt": "2026-09-25T02:26:57.000Z",
+          "resource": "core"
+        },
+        "starsNow": 142430,
+        "createdAt": "2016-10-05T23:32:51Z",
+        "providerRequests": 2,
+        "pages": 2,
+        "buckets": 60,
+        "bytes": 3723,
+        "complete": false,
+        "rolloverDuplicates": 0,
+        "restarted": false,
+        "walkDurationMs": 700,
+        "newestWeek": "2026-09-20",
+        "oldestFetchedWeek": "2025-08-03",
+        "lastPageFetched": {
+          "page": 18,
+          "bytes": 667,
+          "buckets": 11,
+          "oldestWeek": "2016-10-02",
+          "nextLinkPresent": false
+        },
+        "estimatedFullWalkRequests": 18,
+        "totalDurationMs": 2061
+      },
+      {
+        "label": "long-history",
+        "repo": "torvalds/linux",
+        "mode": "sample",
+        "httpStatus": 200,
+        "page1Bytes": 2059,
+        "page1Buckets": 30,
+        "page1DurationMs": 374,
+        "lastPageFromLink": 27,
+        "etag": true,
+        "cacheControl": "private, max-age=60, s-maxage=60",
+        "corsAllowOrigin": "*",
+        "rateLimitAfterPage1": {
+          "limit": 5000,
+          "remaining": 4975,
+          "used": 25,
+          "resetAt": "2026-09-25T02:26:57.000Z",
+          "resource": "core"
+        },
+        "starsNow": 250058,
+        "createdAt": "2011-09-04T22:48:12Z",
+        "providerRequests": 2,
+        "pages": 2,
+        "buckets": 60,
+        "bytes": 4003,
+        "complete": false,
+        "rolloverDuplicates": 0,
+        "restarted": false,
+        "walkDurationMs": 764,
+        "newestWeek": "2026-09-20",
+        "oldestFetchedWeek": "2025-08-03",
+        "lastPageFetched": {
+          "page": 27,
+          "bytes": 338,
+          "buckets": 6,
+          "oldestWeek": "2011-09-04",
+          "nextLinkPresent": false
+        },
+        "estimatedFullWalkRequests": 27,
+        "totalDurationMs": 1882
+      },
+      {
+        "label": "small",
+        "repo": "encoreshao/github-trending",
+        "mode": "full",
+        "httpStatus": 200,
+        "page1Bytes": 1593,
+        "page1Buckets": 30,
+        "page1DurationMs": 364,
+        "lastPageFromLink": 4,
+        "etag": true,
+        "cacheControl": "private, max-age=60, s-maxage=60",
+        "corsAllowOrigin": "*",
+        "rateLimitAfterPage1": {
+          "limit": 5000,
+          "remaining": 4971,
+          "used": 29,
+          "resetAt": "2026-09-25T02:26:57.000Z",
+          "resource": "core"
+        },
+        "starsNow": 57,
+        "createdAt": "2024-07-22T12:54:25Z",
+        "providerRequests": 4,
+        "pages": 4,
+        "buckets": 114,
+        "bytes": 6048,
+        "complete": true,
+        "rolloverDuplicates": 0,
+        "restarted": false,
+        "walkDurationMs": 1363,
+        "newestWeek": "2026-09-20",
+        "oldestFetchedWeek": "2024-07-21",
+        "sumOfBuckets": 57,
+        "sumMatchesStars": true,
+        "firstBucketOnOrBeforeCreation": true,
+        "dailyPoints": 798,
+        "windows": {
+          "7d": {
+            "days": 7,
+            "status": "ok",
+            "starsAgo": 57,
+            "growth": 0,
+            "growthPercent": 0,
+            "starsPerDay": 0
+          },
+          "30d": {
+            "days": 30,
+            "status": "ok",
+            "starsAgo": 51,
+            "growth": 6,
+            "growthPercent": 11.7647,
+            "starsPerDay": 0.2
+          },
+          "90d": {
+            "days": 90,
+            "status": "ok",
+            "starsAgo": 11,
+            "growth": 46,
+            "growthPercent": 418.1818,
+            "starsPerDay": 0.5111
+          }
+        },
+        "qualityIssues": [],
+        "totalDurationMs": 2100
+      },
+      {
+        "label": "zero-star",
+        "repo": "patrick-creates/rising-repos-tracker",
+        "mode": "full",
+        "httpStatus": 200,
+        "page1Bytes": 1061,
+        "page1Buckets": 20,
+        "page1DurationMs": 316,
+        "lastPageFromLink": 1,
+        "etag": true,
+        "cacheControl": "private, max-age=60, s-maxage=60",
+        "corsAllowOrigin": "*",
+        "rateLimitAfterPage1": {
+          "limit": 5000,
+          "remaining": 4966,
+          "used": 34,
+          "resetAt": "2026-09-25T02:26:57.000Z",
+          "resource": "core"
+        },
+        "starsNow": 0,
+        "createdAt": "2026-05-13T08:35:21Z",
+        "providerRequests": 1,
+        "pages": 1,
+        "buckets": 20,
+        "bytes": 1061,
+        "complete": true,
+        "rolloverDuplicates": 0,
+        "restarted": false,
+        "walkDurationMs": 372,
+        "newestWeek": "2026-09-20",
+        "oldestFetchedWeek": "2026-05-10",
+        "sumOfBuckets": 0,
+        "sumMatchesStars": true,
+        "firstBucketOnOrBeforeCreation": true,
+        "dailyPoints": 140,
+        "windows": {
+          "7d": {
+            "days": 7,
+            "status": "zero-base",
+            "starsAgo": 0,
+            "growth": 0,
+            "growthPercent": null,
+            "starsPerDay": 0
+          },
+          "30d": {
+            "days": 30,
+            "status": "zero-base",
+            "starsAgo": 0,
+            "growth": 0,
+            "growthPercent": null,
+            "starsPerDay": 0
+          },
+          "90d": {
+            "days": 90,
+            "status": "zero-base",
+            "starsAgo": 0,
+            "growth": 0,
+            "growthPercent": null,
+            "starsPerDay": 0
+          }
+        },
+        "qualityIssues": [],
+        "totalDurationMs": 1069
+      }
+    ],
+    "rateLimitAfter": {
+      "limit": 5000,
+      "used": 0,
+      "remaining": 5000,
+      "reset": 1790304357
+    },
+    "notObserved": [
+      "week rollover during a walk (needs a walk spanning Saturday->Sunday 00:00 UTC)",
+      "HTTP 403/422 from the endpoint",
+      "If-None-Match / 304 behaviour (client does not send it yet)"
+    ]
+  }
+}
