@@ -51,3 +51,16 @@ Dark default yes · larger type yes · hero identity and radar yes · subtle mot
 - Explore still ships all AI repositories (238 KB gzip).
 - `bojieli/ai-infra-book` (a book) still ranks third in Rising; unchanged Phase 4 behaviour.
 - Screenshots were not diffed against the pre-redesign UI (the earlier screenshots supplied by the user were not available to this session).
+
+---
+
+## Addendum: production review (Phase 5.5.1, 2026-09-26, MEASURED against https://opensourceradar-kappa.vercel.app/)
+
+Chrome (playwright-core) against the live site, deployment of commit dcc51e9 (GitHub deployment status `success`).
+- **Explore works in production.** `/explore/` renders 30 cards immediately (1,685 repositories), no "Loading…" text remains after hydration. Clicking Rising gives 25, adding MCP gives 3, sorting by Total stars updates the URL to `?category=mcp&filter=rising&sort=stars`; a reload preserves the URL and the result; the deep link `?category=ai-agents&filter=sustained&sort=growth7d` shows 46 repositories with Sustained, AI Agents and 7d growth marked current. The earlier "Loading…" observation was the static HTML before hydration (Suspense fallback), not a defect. Explore was not changed.
+- **Prefetch / Next 16:** navigation to Methodology, Explore and repository pages works on Vercel; the four page loads produced no console errors and no failed requests. **Verified on Vercel; no production issue.** (One single 404 console message appeared once in a longer click session and could not be reproduced in four clean loads; the only 404 found is `/favicon.ico`, while the icon is served as `/icon.svg` through a `<link>`.)
+- **Real defect found and fixed:** the live canonical link, sitemap and robots pointed to `http://localhost:3000` because `NEXT_PUBLIC_SITE_URL` is not set on Vercel. Fix: `lib/site.ts` uses `NEXT_PUBLIC_SITE_URL`, else Vercel's `VERCEL_PROJECT_PRODUCTION_URL`, else localhost (unit-tested). Verified locally with the variable simulated: canonical, sitemap and robots use the production domain. To be re-verified on the live site after deployment.
+- **bojieli/ai-infra-book:** live page shows +716 in 7 days, 5,297 in 30 days, 5,299 stars, momentum 70.2, "Meets the Rising criteria", identical to `radar.json` (Rising, not accelerating: acceleration ratio null). Left as is; a domain-policy question (educational/book repositories) for a future phase.
+- **Performance sanity (live, Chrome, desktop):** DOMContentLoaded 51 ms, load 71 ms (cached); 20 scroll steps used 0.36 s of main-thread task time and 0.01 s of script; idle with the radar sweep running: 0.078 s of main-thread time per 5 s (about 1.6%); JS heap 9 MB. Acceptable. GPU cost not measured. Mobile 390 px: no horizontal overflow, 30 cards on Explore. Reduced motion: the sweep animation is `none`.
+- **Local re-validation after the fix:** 373 tests pass, `tsc` clean, build passes, `browser-validate.mjs` 30 loads with 0 problems in normal and reduced-motion runs, axe 0 violations (as before).
+- Screen reader validation not performed.

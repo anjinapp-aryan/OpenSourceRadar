@@ -233,3 +233,12 @@ describe('Phase 5.5 presentation', () => {
     expect(a.find((d) => d.id === '1')?.hot).toBe(true);
   });
 });
+
+describe('site url', () => {
+  it('prefers the explicit variable, then the Vercel production domain, then localhost', async () => {
+    const { siteUrl } = await import('../lib/site');
+    expect(siteUrl({ NEXT_PUBLIC_SITE_URL: 'https://a.example/', VERCEL_PROJECT_PRODUCTION_URL: 'b.vercel.app' })).toBe('https://a.example');
+    expect(siteUrl({ VERCEL_PROJECT_PRODUCTION_URL: 'b.vercel.app' })).toBe('https://b.vercel.app');
+    expect(siteUrl({})).toBe('http://localhost:3000');
+  });
+});

@@ -1,10 +1,11 @@
 import type { MetadataRoute } from 'next';
 import { loadRadar } from '../lib/radar';
+import { siteUrl } from '../lib/site';
 import { aiRepositories } from '../lib/query';
 
 export const dynamic = 'force-static';
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
+const SITE = siteUrl();
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const res = loadRadar();

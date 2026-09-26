@@ -2,10 +2,11 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
 import './globals.css';
+import { siteUrl } from '../lib/site';
 import NavLinks from '../components/NavLinks';
 import { BrandMark } from '../components/ui';
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
+export const SITE_URL = siteUrl();
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
