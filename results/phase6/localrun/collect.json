@@ -1,0 +1,57 @@
+{
+  "mode": "due",
+  "authenticated": true,
+  "out": "data/repositories.json",
+  "report": {
+    "tracked": 3413,
+    "due": 26,
+    "notDue": 3387,
+    "outOfScope": 0,
+    "selected": 26,
+    "collected": 22,
+    "failures": [
+      {
+        "repository": "CassowaryDevelop/HelixEdit",
+        "stage": "metadata",
+        "reason": "not found by GraphQL"
+      },
+      {
+        "repository": "centralcashierboost/ZedLite",
+        "stage": "metadata",
+        "reason": "not found by GraphQL"
+      },
+      {
+        "repository": "755596985/Sure-Xu",
+        "stage": "metadata",
+        "reason": "not found by GraphQL"
+      },
+      {
+        "repository": "laolaoshiren/claude-code-skills-zh",
+        "stage": "metadata",
+        "reason": "not found by GraphQL"
+      }
+    ],
+    "stoppedBy": null,
+    "written": true,
+    "datasetRepositories": 3546,
+    "durationMs": 6204
+  },
+  "usage": {
+    "restRequests": 22,
+    "graphqlRequests": 1,
+    "starHistoryPageRequests": 22,
+    "starHistoryRetries": 0,
+    "starHistoryBytes": 1534,
+    "cache": {
+      "hits": 0,
+      "misses": 22,
+      "coalesced": 0,
+      "storeHits": 0
+    },
+    "coreRateLimit": {
+      "remaining": 4974,
+      "limit": 5000,
+      "resetAt": "2026-09-26T09:52:36.000Z"
+    }
+  }
+}

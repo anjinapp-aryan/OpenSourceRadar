@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "preflight": {
+    "minCoreRemaining": 1500,
+    "minGraphqlRemaining": 300
+  },
+  "gate": {
+    "minRepositories": 500,
+    "minAiRepositories": 100,
+    "maxDropPercent": {
+      "repositories": 10,
+      "tracked": 10,
+      "measured": 10,
+      "ai": 10
+    },
+    "warnAtFractionOfFail": 0.5,
+    "risingRequireIfPreviousAtLeast": 5,
+    "maxRisingChangePercentWarn": 70,
+    "maxFutureSkewMinutes": 60,
+    "maxPublicBytes": 25000000,
+    "warnPublicBytes": 8000000,
+    "allowedTrends": ["RISING", "COOLING", "STEADY", "INSUFFICIENT_DATA", "EXCLUDED"],
+    "allowedTopLevel": ["AI", "ENGINEERING", "BOTH", "UNKNOWN"]
+  },
+  "verify": {
+    "pollIntervalSeconds": 30,
+    "timeoutMinutes": 20
+  }
+}

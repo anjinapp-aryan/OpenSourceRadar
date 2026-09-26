@@ -1,0 +1,122 @@
+{
+ "level": "FAIL",
+ "structuralProblems": [
+  "only 75 AI repositories (minimum 100)",
+  "repositories dropped 74.6% (3546 to 900); limit 10%",
+  "tracked dropped 73.6% (3413 to 900); limit 10%",
+  "measured dropped 73.6% (3411 to 900); limit 10%",
+  "ai dropped 95.5% (1685 to 75); limit 10%"
+ ],
+ "warnings": [
+  "Rising changed -97% (35 to 1)"
+ ],
+ "metrics": {
+  "current": {
+   "repositories": 900,
+   "tracked": 900,
+   "measured": 900,
+   "ai": 75,
+   "rising": 1,
+   "cooling": 13,
+   "steady": 886,
+   "newEntrants": 0,
+   "sustained": 0,
+   "movers": 0
+  },
+  "previous": {
+   "repositories": 3546,
+   "tracked": 3413,
+   "measured": 3411,
+   "ai": 1685,
+   "rising": 35,
+   "cooling": 195,
+   "steady": 3316,
+   "newEntrants": 293,
+   "sustained": 164,
+   "movers": 123
+  }
+ },
+ "deltas": [
+  {
+   "name": "repositories",
+   "previous": 3546,
+   "current": 900,
+   "delta": -2646,
+   "percent": -74.6,
+   "level": "FAIL"
+  },
+  {
+   "name": "tracked",
+   "previous": 3413,
+   "current": 900,
+   "delta": -2513,
+   "percent": -73.6,
+   "level": "FAIL"
+  },
+  {
+   "name": "measured",
+   "previous": 3411,
+   "current": 900,
+   "delta": -2511,
+   "percent": -73.6,
+   "level": "FAIL"
+  },
+  {
+   "name": "ai",
+   "previous": 1685,
+   "current": 75,
+   "delta": -1610,
+   "percent": -95.5,
+   "level": "FAIL"
+  },
+  {
+   "name": "rising",
+   "previous": 35,
+   "current": 1,
+   "delta": -34,
+   "percent": -97.1,
+   "level": "WARNING"
+  },
+  {
+   "name": "cooling",
+   "previous": 195,
+   "current": 13,
+   "delta": -182,
+   "percent": -93.3,
+   "level": "OK"
+  },
+  {
+   "name": "steady",
+   "previous": 3316,
+   "current": 886,
+   "delta": -2430,
+   "percent": -73.3,
+   "level": "OK"
+  },
+  {
+   "name": "newEntrants",
+   "previous": 293,
+   "current": 0,
+   "delta": -293,
+   "percent": -100,
+   "level": "OK"
+  },
+  {
+   "name": "sustained",
+   "previous": 164,
+   "current": 0,
+   "delta": -164,
+   "percent": -100,
+   "level": "OK"
+  },
+  {
+   "name": "movers",
+   "previous": 123,
+   "current": 0,
+   "delta": -123,
+   "percent": -100,
+   "level": "OK"
+  }
+ ],
+ "bytes": 881055
+}

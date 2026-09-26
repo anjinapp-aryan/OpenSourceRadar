@@ -1,0 +1,114 @@
+{
+ "level": "OK",
+ "structuralProblems": [],
+ "warnings": [],
+ "metrics": {
+  "current": {
+   "repositories": 3546,
+   "tracked": 3413,
+   "measured": 3411,
+   "ai": 1685,
+   "rising": 38,
+   "cooling": 195,
+   "steady": 3313,
+   "newEntrants": 293,
+   "sustained": 164,
+   "movers": 123
+  },
+  "previous": {
+   "repositories": 3546,
+   "tracked": 3413,
+   "measured": 3411,
+   "ai": 1685,
+   "rising": 35,
+   "cooling": 195,
+   "steady": 3316,
+   "newEntrants": 293,
+   "sustained": 164,
+   "movers": 123
+  }
+ },
+ "deltas": [
+  {
+   "name": "repositories",
+   "previous": 3546,
+   "current": 3546,
+   "delta": 0,
+   "percent": 0,
+   "level": "OK"
+  },
+  {
+   "name": "tracked",
+   "previous": 3413,
+   "current": 3413,
+   "delta": 0,
+   "percent": 0,
+   "level": "OK"
+  },
+  {
+   "name": "measured",
+   "previous": 3411,
+   "current": 3411,
+   "delta": 0,
+   "percent": 0,
+   "level": "OK"
+  },
+  {
+   "name": "ai",
+   "previous": 1685,
+   "current": 1685,
+   "delta": 0,
+   "percent": 0,
+   "level": "OK"
+  },
+  {
+   "name": "rising",
+   "previous": 35,
+   "current": 38,
+   "delta": 3,
+   "percent": 8.6,
+   "level": "OK"
+  },
+  {
+   "name": "cooling",
+   "previous": 195,
+   "current": 195,
+   "delta": 0,
+   "percent": 0,
+   "level": "OK"
+  },
+  {
+   "name": "steady",
+   "previous": 3316,
+   "current": 3313,
+   "delta": -3,
+   "percent": -0.1,
+   "level": "OK"
+  },
+  {
+   "name": "newEntrants",
+   "previous": 293,
+   "current": 293,
+   "delta": 0,
+   "percent": 0,
+   "level": "OK"
+  },
+  {
+   "name": "sustained",
+   "previous": 164,
+   "current": 164,
+   "delta": 0,
+   "percent": 0,
+   "level": "OK"
+  },
+  {
+   "name": "movers",
+   "previous": 123,
+   "current": 123,
+   "delta": 0,
+   "percent": 0,
+   "level": "OK"
+  }
+ ],
+ "bytes": 4955402
+}

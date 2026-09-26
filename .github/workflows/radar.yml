@@ -1,0 +1,206 @@
+name: radar
+
+# OpenSource Radar production pipeline.
+# collect (due) -> classify -> track -> momentum -> candidate public dataset -> quality gate -> tests/typecheck
+# -> atomic publish -> build -> commit radar.json -> Vercel Git integration deploys -> production smoke test.
+# Nothing reaches main unless every gate passes; the last good radar.json and the last Vercel deployment stay live otherwise.
+# See docs/PHASE-6-OPERATIONS.md.
+
+on:
+  schedule:
+    - cron: '17 4 * * *' # daily, 04:17 UTC (after the UTC day rollover; avoids the top of the hour)
+    - cron: '47 3 * * 1' # Mondays: same run plus repository discovery
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run: collect, process, validate, build and report, but do not commit, deploy or save state'
+        type: boolean
+        default: true
+      discover:
+        description: 'Also run repository discovery (Search API, about 100 queries)'
+        type: boolean
+        default: false
+      limit:
+        description: 'Only collect the top N candidates by stars (smoke tests). Empty = all due repositories'
+        type: string
+        default: ''
+
+# Only one production run at a time. A newer run waits; it never cancels a running collection.
+concurrency:
+  group: radar-pipeline
+  cancel-in-progress: false
+
+# Least privilege: the job may push the data commit and manage the single "data-state" release. Nothing else.
+permissions:
+  contents: write
+
+env:
+  # Prefer a fine-grained token stored as the repository secret RADAR_GITHUB_TOKEN (higher rate limit); fall back to the
+  # workflow token (1,000 requests/hour/repository). The value is never printed; the logger redacts it.
+  GITHUB_TOKEN: ${{ secrets.RADAR_GITHUB_TOKEN || github.token }}
+  GH_TOKEN: ${{ github.token }}
+  SITE_URL: ${{ vars.SITE_URL || 'https://opensourceradar-kappa.vercel.app' }}
+  NEXT_PUBLIC_SITE_URL: ${{ vars.SITE_URL || 'https://opensourceradar-kappa.vercel.app' }}
+  DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || 'false' }}
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Prepare
+        id: prep
+        run: |
+          mkdir -p .pipeline
+          echo "date=$(date -u +%F)" >> "$GITHUB_OUTPUT"
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "${{ github.event.schedule }}" = "47 3 * * 1" ]; then echo "discover=true" >> "$GITHUB_OUTPUT"; \
+          elif [ "${{ inputs.discover }}" = "true" ]; then echo "discover=true" >> "$GITHUB_OUTPUT"; else echo "discover=false" >> "$GITHUB_OUTPUT"; fi
+
+      # Pipeline state (candidates, classification, tracking, repository growth dataset) lives in ONE overwritten release
+      # asset, not in Git history. First run bootstraps from the snapshot committed in the repository.
+      - name: Restore pipeline state
+        run: |
+          if gh release download data-state --pattern state.tar.gz --dir .pipeline 2>/dev/null; then
+            tar -xzf .pipeline/state.tar.gz
+            cp .pipeline/state.tar.gz .pipeline/state-prev.tar.gz
+            echo "State restored from release data-state" | tee -a "$GITHUB_STEP_SUMMARY"
+          else
+            echo "No data-state release yet: bootstrapping from the committed snapshot" | tee -a "$GITHUB_STEP_SUMMARY"
+          fi
+
+      # Star-history cache: only useful to resume a failed run within its 6 h TTL (see docs/PHASE-6-CACHE-STRATEGY.md).
+      - name: Restore star-history cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/sh-due.json
+          key: sh-${{ steps.prep.outputs.date }}-${{ github.run_id }}
+          restore-keys: |
+            sh-${{ steps.prep.outputs.date }}-
+
+      - name: Preflight (API capacity)
+        id: pre
+        run: |
+          set +e
+          npm run --silent pipeline:preflight > .pipeline/preflight.json
+          code=$?
+          if [ "$code" = "10" ]; then echo "skip=true" >> "$GITHUB_OUTPUT"; echo "::warning::Not enough GitHub API capacity; run skipped, previous data stays live"; exit 0; fi
+          exit $code
+
+      - name: Discovery (weekly or on request)
+        if: steps.pre.outputs.skip != 'true' && steps.prep.outputs.discover == 'true'
+        run: npm run --silent collect -- --domain all --dry-run --candidates-out data/candidates/candidates.json > .pipeline/discovery.json
+
+      - name: Classify
+        if: steps.pre.outputs.skip != 'true'
+        run: npm run --silent classify > .pipeline/classify.json
+
+      - name: Track (schedule for the due run)
+        if: steps.pre.outputs.skip != 'true'
+        run: npm run --silent track -- --growth data/repositories.json > .pipeline/track-pre.json
+
+      - name: Collect due repositories
+        if: steps.pre.outputs.skip != 'true'
+        env:
+          LIMIT_INPUT: ${{ inputs.limit }}
+        run: |
+          set +e
+          LIMIT=""
+          if [ -n "$LIMIT_INPUT" ]; then
+            case "$LIMIT_INPUT" in *[!0-9]*) echo "::error::limit must be a number"; exit 1;; esac
+            LIMIT="--limit $LIMIT_INPUT"
+          fi
+          npm run --silent collect -- --due --domain all --concurrency 4 --cache .cache/sh-due.json --out data/repositories.json $LIMIT > .pipeline/collect.json
+          code=$?
+          # 3 = a rate limit stopped the run; progress is saved and valid, so continue and let the gate judge coverage.
+          if [ "$code" = "3" ]; then echo "::warning::Collection stopped by a rate limit; continuing with saved progress"; exit 0; fi
+          exit $code
+
+      - name: Track
+        if: steps.pre.outputs.skip != 'true'
+        run: npm run --silent track -- --growth data/repositories.json > .pipeline/track.json
+
+      - name: Momentum and candidate public dataset
+        if: steps.pre.outputs.skip != 'true'
+        run: npm run --silent momentum -- --repositories data/repositories.json --classified data/classified/classified.json --public data/public/radar.next.json > .pipeline/momentum.json
+
+      - name: Data quality gate
+        if: steps.pre.outputs.skip != 'true'
+        run: npm run --silent pipeline:validate
+
+      - name: Unit tests
+        if: steps.pre.outputs.skip != 'true'
+        run: npm test
+
+      - name: Typecheck
+        if: steps.pre.outputs.skip != 'true'
+        run: npm run typecheck
+
+      - name: Publish candidate dataset (atomic replace, in the workspace only)
+        if: steps.pre.outputs.skip != 'true'
+        run: npm run --silent pipeline:publish
+
+      - name: Build site
+        if: steps.pre.outputs.skip != 'true'
+        run: npm run build
+
+      - name: Audit build output (no secrets, no internal data, no localhost)
+        if: steps.pre.outputs.skip != 'true'
+        run: |
+          if grep -rEl 'ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|gho_[A-Za-z0-9]{20,}' out; then echo "::error::token pattern in build output"; exit 1; fi
+          if grep -rEl 'candidates\.json|classified\.json|tracked\.json|momentum\.json|repositories\.json' out; then echo "::error::internal dataset reference in build output"; exit 1; fi
+          if grep -rl 'localhost:3000' out; then echo "::error::localhost URL in build output"; exit 1; fi
+          echo "Build output audit passed"
+
+      - name: Commit public dataset (Vercel deploys from main)
+        id: commit
+        if: steps.pre.outputs.skip != 'true' && env.DRY_RUN != 'true'
+        run: |
+          git config user.name "opensource-radar-bot"
+          git config user.email "opensource-radar-bot@users.noreply.github.com"
+          git add data/public/radar.json
+          if git diff --cached --quiet; then
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+            echo "Public dataset unchanged: nothing to commit" | tee -a "$GITHUB_STEP_SUMMARY"
+          else
+            git commit -m "data: refresh public radar dataset (run ${{ github.run_id }})"
+            git pull --rebase --autostash origin main
+            git push origin HEAD:main
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # State is saved only after the public dataset was accepted and pushed. Keep the previous state as a rollback copy.
+      - name: Save pipeline state
+        if: steps.pre.outputs.skip != 'true' && env.DRY_RUN != 'true'
+        run: |
+          tar -czf .pipeline/state.tar.gz data/candidates/candidates.json data/classified/classified.json data/tracked/tracked.json data/repositories.json
+          gh release view data-state >/dev/null 2>&1 || gh release create data-state --title "Pipeline state (overwritten each run)" --notes "Internal working data for the scheduled pipeline. Overwritten daily; not a product release." --prerelease
+          if [ -f .pipeline/state-prev.tar.gz ]; then gh release upload data-state .pipeline/state-prev.tar.gz --clobber; fi
+          gh release upload data-state .pipeline/state.tar.gz --clobber
+
+      - name: Production smoke test
+        if: steps.pre.outputs.skip != 'true' && env.DRY_RUN != 'true'
+        run: |
+          if [ "${{ steps.commit.outputs.pushed }}" = "true" ]; then npm run --silent pipeline:verify -- --wait; else npm run --silent pipeline:verify; fi
+
+      - name: Run summary
+        if: always()
+        run: npm run --silent pipeline:summary || true
+
+      - name: Keep diagnostics of a failed run
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: radar-diagnostics-${{ github.run_id }}
+          path: |
+            .pipeline/*.json
+            data/public/radar.next.json
+          retention-days: 7

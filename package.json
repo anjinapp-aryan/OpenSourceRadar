@@ -19,6 +19,12 @@
     "classify": "tsx scripts/classify/index.ts",
     "track": "tsx scripts/track/index.ts",
     "momentum": "tsx scripts/momentum/index.ts",
+    "pipeline": "tsx scripts/pipeline/index.ts",
+    "pipeline:preflight": "tsx scripts/pipeline/index.ts preflight",
+    "pipeline:validate": "tsx scripts/pipeline/index.ts validate",
+    "pipeline:publish": "tsx scripts/pipeline/index.ts publish",
+    "pipeline:summary": "tsx scripts/pipeline/index.ts summary",
+    "pipeline:verify": "tsx scripts/pipeline/index.ts verify",
     "dev": "next dev",
     "build": "next build"
   },

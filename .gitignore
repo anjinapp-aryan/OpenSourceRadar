@@ -7,3 +7,6 @@ node_modules
 out/
 next-env.d.ts
 *.tsbuildinfo
+.pipeline/
+data/public/radar.next.json
+data/public/*.tmp
