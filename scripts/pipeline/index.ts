@@ -2,6 +2,8 @@ import { appendFileSync, existsSync, readFileSync, renameSync, statSync, writeFi
 import { dirname } from 'node:path';
 import { formatReportMarkdown, runGate, checkProductionPage, type GateConfig, type GateReport } from '../../src/pipeline/gate';
 import { siteUrl } from '../../lib/site';
+import { GitHubApiError, NetworkError } from '../../src/github/errors';
+import { withRetry } from '../../src/util/retry';
 
 const USAGE = `Usage: tsx scripts/pipeline/index.ts <command> [options]
   preflight                     check GitHub rate-limit capacity (needs GITHUB_TOKEN); exit 0 ok, 10 = not enough capacity, 1 = error
@@ -52,7 +54,26 @@ async function preflight(): Promise<number> {
     console.error('preflight: no token in GITHUB_TOKEN / GH_TOKEN');
     return 1;
   }
-  const res = await fetch('https://api.github.com/rate_limit', { headers: { authorization: `Bearer ${token}`, accept: 'application/vnd.github+json', 'user-agent': 'opensource-radar-pipeline' } });
+  // GitHub answers 5xx now and then (seen live: 503 on /rate_limit). Retry transient failures, never a 401.
+  let res: Response;
+  try {
+    res = await withRetry(
+      async () => {
+        let r: Response;
+        try {
+          r = await fetch('https://api.github.com/rate_limit', { headers: { authorization: `Bearer ${token}`, accept: 'application/vnd.github+json', 'user-agent': 'opensource-radar-pipeline' } });
+        } catch (e) {
+          throw new NetworkError(`rate_limit request failed: ${(e as Error).message}`);
+        }
+        if (r.status >= 500) throw new GitHubApiError(`rate_limit request failed with ${r.status}`, { status: r.status });
+        return r;
+      },
+      { attempts: 5, baseDelayMs: 3000, onRetry: () => console.error('preflight: transient GitHub error, retrying') },
+    );
+  } catch (e) {
+    console.error(`preflight: ${(e as Error).message} (after retries)`);
+    return 1;
+  }
   if (res.status === 401) {
     console.error('preflight: GitHub rejected the token (401)');
     return 1;
