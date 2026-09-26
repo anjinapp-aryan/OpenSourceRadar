@@ -24,3 +24,6 @@ Verdict: **READY WITH LIMITATIONS**. Nothing from Phase 6 (scheduled collection,
 - Vercel build settings and environment variables were not inspected (no access from this session).
 - No monitoring, staleness alert or rollback exists; the site only shows a stale-data warning after 72 hours (computed at build time).
 - Prefetch behaviour: verified on Vercel, no production issue (see PHASE-5.5-VALIDATION.md addendum).
+
+---
+Update after Phase 6 implementation: the automation is implemented (see PHASE-6-OPERATIONS.md and PHASE-6-VALIDATION.md). Open items: add the `RADAR_GITHUB_TOKEN` secret, run the workflow once manually, and fix the Vercel deployment that has not completed since f22fd9d.
