@@ -88,6 +88,7 @@ export interface CategorySummary {
   name: string;
   count: number;
   rising: number;
+  sustained: number;
   top: PublicRepository[];
 }
 
@@ -101,7 +102,7 @@ export function categorySummaries(d: PublicDataset, top = 3): CategorySummary[] 
         inCat.filter((r) => r.trend === 'RISING'),
         'momentum',
       );
-      return { slug: c.slug, name: c.name, count: inCat.length, rising: rising.length, top: rising.slice(0, top) };
+      return { slug: c.slug, name: c.name, count: inCat.length, rising: rising.length, sustained: inCat.filter((r) => r.flags.sustained).length, top: rising.slice(0, top) };
     });
 }
 
@@ -171,4 +172,37 @@ export function repoPath(fullName: string): string {
 }
 export function categoryName(d: Pick<PublicDataset, 'categories'>, slug: string): string {
   return d.categories?.find((c) => c.slug === slug)?.name ?? slug;
+}
+
+const CATEGORY_ORDER = ['ai-agents', 'llm', 'rag', 'mcp', 'ai-coding', 'local-ai', 'multimodal', 'ai-infrastructure', 'ai-developer-tools', 'machine-learning', 'generative-ai', 'ai-music', 'ai-image', 'ai-video'];
+
+/** Deterministic hue (0-360) per category, spread evenly so neighbours differ. */
+export function categoryHue(slug: string): number {
+  const i = CATEGORY_ORDER.indexOf(slug);
+  if (i >= 0) return Math.round((i * 360) / CATEGORY_ORDER.length + 250) % 360;
+  let h = 0;
+  for (const ch of slug) h = (h * 31 + ch.charCodeAt(0)) % 360;
+  return h;
+}
+
+export interface RadarDot {
+  id: string;
+  x: number;
+  y: number;
+  hot: boolean;
+}
+
+/** Radar blips from real repositories: angle from a stable hash of the id, distance from the momentum score (higher = nearer the centre). */
+export function radarDots(repos: readonly PublicRepository[], limit = 40): RadarDot[] {
+  return [...repos]
+    .filter((r) => r.score !== null)
+    .sort((a, b) => (b.score ?? 0) - (a.score ?? 0) || a.fullName.localeCompare(b.fullName))
+    .slice(0, limit)
+    .map((r) => {
+      let h = 7;
+      for (const ch of r.id) h = (h * 33 + ch.charCodeAt(0)) >>> 0;
+      const angle = ((h % 3600) / 3600) * Math.PI * 2;
+      const dist = 0.12 + 0.8 * (1 - Math.min(r.score ?? 0, 100) / 100);
+      return { id: r.id, x: +(50 + Math.cos(angle) * dist * 46).toFixed(2), y: +(50 + Math.sin(angle) * dist * 46).toFixed(2), hot: r.trend === 'RISING' };
+    });
 }

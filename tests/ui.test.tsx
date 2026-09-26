@@ -5,7 +5,9 @@ import { ErrorPanel, MoverTable, RepoCard } from '../components/parts';
 import {
   ageHours,
   aiRepositories,
+  categoryHue,
   categorySummaries,
+  radarDots,
   filterRepositories,
   listRepos,
   movers,
@@ -167,12 +169,12 @@ describe('explorer view (URL driven)', () => {
   const view = (q: string) => renderToStaticMarkup(<ExplorerView data={{ categories: data.categories, repositories: aiRepositories(data) }} params={new URLSearchParams(q)} />);
   it('defaults to all AI sorted by momentum', () => {
     const html = view('');
-    expect(html).toContain('4 repositories');
+    expect(html).toContain('<b class="num">4</b> repositories');
     expect(html.indexOf('o/</span>r1')).toBeLessThan(html.indexOf('o/</span>r2'));
   });
   it('applies category and trend filters from the URL', () => {
     const html = view('category=rag&filter=new');
-    expect(html).toContain('1 repositories');
+    expect(html).toContain('<b class="num">1</b> repositories');
     expect(html).toContain('r4');
   });
   it('shows an empty state for a combination with no matches', () => {
@@ -181,7 +183,7 @@ describe('explorer view (URL driven)', () => {
   it('falls back safely for unknown category, filter, sort and page size', () => {
     const html = view('category=zzz&filter=bogus&sort=bogus&n=-5');
     expect(html).toContain('Unknown category');
-    expect(html).toContain('4 repositories');
+    expect(html).toContain('<b class="num">4</b> repositories');
   });
   it('marks the active options with aria-current, not colour alone', () => {
     expect(view('filter=rising&sort=stars')).toContain('aria-current="true"');
@@ -199,5 +201,35 @@ describe('freshness', () => {
     const h = ageHours('2026-09-26T00:00:00Z', new Date('2026-09-30T00:00:00Z'));
     expect(h).toBe(96);
     expect(h).toBeGreaterThan(STALE_AFTER_HOURS);
+  });
+});
+
+describe('Phase 5.5 presentation', () => {
+  it('sustained cards show the three real windows and mark unmeasurable ones', () => {
+    const html = renderToStaticMarkup(<RepoCard repo={{ ...repos[0]!, velocity90d: null }} data={data} variant="sustained" />);
+    expect(html).toContain('Sustained');
+    expect(html).toContain('7d window');
+    expect(html).toContain('not measurable');
+  });
+  it('new-entrant cards show age', () => {
+    expect(renderToStaticMarkup(<RepoCard repo={repos[3]!} data={data} variant="new" />)).toContain('New · 5 days old');
+  });
+  it('feature cards show rank, previous-vs-now bars and acceleration only from real fields', () => {
+    const html = renderToStaticMarkup(<RepoCard repo={repos[0]!} data={data} variant="feature" rank={1} />);
+    expect(html).toContain('#01');
+    expect(html).toContain('Previous 4 wks');
+    expect(html).toContain('Accelerating 1.4');
+    expect(renderToStaticMarkup(<RepoCard repo={{ ...repos[0]!, priorVelocity: null, accelerationRatio: null }} data={data} variant="feature" rank={1} />)).not.toContain('Previous 4 wks');
+  });
+  it('category summaries include sustained counts and hues are deterministic', () => {
+    expect(categorySummaries(data)[0]).toMatchObject({ slug: 'llm', sustained: 1 });
+    expect(categoryHue('llm')).toBe(categoryHue('llm'));
+    expect(categoryHue('llm')).not.toBe(categoryHue('rag'));
+  });
+  it('radar dots are deterministic, bounded and derived from real repositories', () => {
+    const a = radarDots(aiRepositories(data));
+    expect(a).toEqual(radarDots(aiRepositories(data)));
+    expect(a.every((d) => d.x >= 0 && d.x <= 100 && d.y >= 0 && d.y <= 100)).toBe(true);
+    expect(a.find((d) => d.id === '1')?.hot).toBe(true);
   });
 });

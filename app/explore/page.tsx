@@ -22,8 +22,11 @@ export default function ExplorePage() {
   }));
   return (
     <main className="wrap">
-      <h1>Explore AI repositories</h1>
-      <p className="muted">Choose a trend, category and sort order. The address bar always reflects the current view.</p>
+      <header className="page-head">
+        <p className="eyebrow">Explore</p>
+        <h1>Explore open source</h1>
+        <p className="lead">Choose a momentum state, a category and a sort order. The address bar always reflects the current view, so you can share it.</p>
+      </header>
       <Explorer data={{ categories: d.categories, repositories }} />
     </main>
   );

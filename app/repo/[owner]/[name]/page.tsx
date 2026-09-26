@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { loadRadar } from '../../../../lib/radar';
-import { aiRepositories, categoryName, fmtAge, fmtNum, fmtRate, fmtSigned } from '../../../../lib/query';
-import { ErrorPanel, TrendBadge } from '../../../../components/parts';
+import { aiRepositories, fmtAge, fmtNum, fmtRate, fmtSigned } from '../../../../lib/query';
+import { CategoryChips, ErrorPanel, TrendBadge } from '../../../../components/parts';
+import { Bar, Icon } from '../../../../components/ui';
 
 export const dynamicParams = false;
 
@@ -40,73 +41,128 @@ export default async function RepoPage({ params }: { params: Promise<{ owner: st
   if (!res.ok) return <ErrorPanel message={res.error} />;
   if (!repo) notFound();
   const d = res.data;
-  const cats = repo.classification?.categories ?? [];
-  const rows: [string, string][] = [
-    ['Total stars', fmtNum(repo.stars)],
-    ['7d growth', fmtSigned(repo.growth7d)],
-    ['30d growth', fmtSigned(repo.growth30d)],
-    ['90d growth', fmtSigned(repo.growth90d)],
-    ['Stars/day (7d)', fmtRate(repo.velocity7d)],
-    ['Stars/day (30d)', fmtRate(repo.velocity30d)],
-    ['Stars/day (90d)', fmtRate(repo.velocity90d)],
-    ['Previous stars/day (4 weeks before)', fmtRate(repo.priorVelocity)],
-    ['Acceleration (7d / previous)', repo.accelerationRatio === null ? 'n/a' : `${repo.accelerationRatio.toFixed(2)}x`],
-    ['Momentum score', repo.score === null ? 'n/a' : repo.score.toFixed(1)],
-    ['Repository age', fmtAge(repo.ageDays)],
-    ['Tracking tier', repo.tier ?? 'n/a'],
+  const [ownerName, repoName] = repo.fullName.split('/');
+  const kpis: [string, string, string][] = [
+    ['Total stars', fmtNum(repo.stars), ''],
+    ['7d growth', fmtSigned(repo.growth7d), 'var(--rising)'],
+    ['30d growth', fmtSigned(repo.growth30d), ''],
+    ['90d growth', fmtSigned(repo.growth90d), ''],
+    ['Stars / day (7d)', fmtRate(repo.velocity7d), ''],
+    ['Momentum', repo.score === null ? 'n/a' : repo.score.toFixed(1), 'var(--rising)'],
   ];
+  const pMax = Math.max(repo.velocity7d ?? 0, repo.priorVelocity ?? 0, 0.0001);
+  const wins = [
+    ['7 days', repo.velocity7d],
+    ['30 days', repo.velocity30d],
+    ['90 days', repo.velocity90d],
+  ] as const;
+  const wMax = Math.max(...wins.map((w) => w[1] ?? 0), 0.0001);
   return (
     <main className="wrap">
-      <p className="small">
-        <Link href="/explore/">← Explore</Link>
-      </p>
-      <h1>{repo.fullName}</h1>
-      <p>
-        <TrendBadge trend={repo.trend} /> {repo.flags.sustained ? <span className="badge">Sustained</span> : null}{' '}
-        {repo.flags.newEntrant ? <span className="badge">New entrant</span> : null}
-      </p>
-      {repo.description ? <p className="lead">{repo.description}</p> : null}
-      <p>
-        <a href={repo.url} rel="noopener noreferrer">
-          View on GitHub ↗
-        </a>
-        {repo.language ? <span className="muted"> · {repo.language}</span> : null}
-      </p>
-      {cats.length > 0 ? (
-        <p className="cats">
-          {cats.map((c) => (
-            <Link key={c} className="chip" href={`/explore/?category=${c}`}>
-              {categoryName(d, c)}
-            </Link>
-          ))}
+      <header className="repo-hero">
+        <p className="crumb">
+          <Link href="/explore/">Explore</Link> / {ownerName}
         </p>
-      ) : null}
+        <h1>
+          <span className="owner">{ownerName}/</span>
+          {repoName}
+        </h1>
+        <div className="row">
+          <TrendBadge trend={repo.trend} />
+          {repo.flags.sustained ? (
+            <span className="badge b-sustained">
+              <Icon name="bolt" size={14} /> Sustained
+            </span>
+          ) : null}
+          {repo.flags.newEntrant ? (
+            <span className="badge b-new">
+              <Icon name="sparkle" size={14} /> New entrant
+            </span>
+          ) : null}
+          {repo.language ? <span className="tag">{repo.language}</span> : null}
+        </div>
+        {repo.description ? <p className="lead">{repo.description}</p> : null}
+        <CategoryChips repo={repo} data={d} limit={6} />
+        <p className="more">
+          <a className="linkbtn" href={repo.url} rel="noopener noreferrer">
+            View on GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </p>
+      </header>
 
-      <section aria-labelledby="why" className="section">
-        <h2 id="why">Why it&apos;s here</h2>
-        <p>{repo.summary}</p>
-        <ul>
-          {repo.explanation.map((e) => (
-            <li key={e}>{e}</li>
-          ))}
-        </ul>
+      <section aria-label="Key numbers" className="kpis">
+        {kpis.map(([k, v, c]) => (
+          <div className="metric reveal" key={k}>
+            <span className="k">{k}</span>
+            <span className="v num" style={c ? { color: c } : undefined}>
+              {v}
+            </span>
+          </div>
+        ))}
       </section>
 
-      <section aria-labelledby="ev" className="section">
-        <h2 id="ev">Evidence</h2>
-        <dl className="evidence">
-          {rows.map(([k, v]) => (
-            <div key={k}>
-              <dt>{k}</dt>
-              <dd>{v}</dd>
+      <div className="section two-col">
+        <section className="panel" aria-labelledby="why">
+          <h2 id="why">Why it&apos;s here</h2>
+          <p className="bigwhy">{repo.summary}</p>
+          <ul>
+            {repo.explanation.map((e) => (
+              <li key={e}>{e}</li>
+            ))}
+          </ul>
+          <p className="note">These lines are produced by the deterministic momentum engine from measured star growth. No AI-written explanation is used.</p>
+        </section>
+
+        <section className="panel" aria-labelledby="sig">
+          <h2 id="sig">Signals</h2>
+          <div className="cmp" role="group" aria-label="Stars per day by window">
+            {wins.map(([k, v]) => (
+              <div className="cmp-row" key={k}>
+                <span>{k}</span>
+                {v === null ? <span className="note">not measurable</span> : <Bar value={v / wMax} color="var(--sustained)" />}
+                <span className="v num">{v === null ? 'n/a' : `${fmtRate(v)}/d`}</span>
+              </div>
+            ))}
+          </div>
+          {repo.priorVelocity !== null ? (
+            <div className="cmp" style={{ marginTop: 16 }} role="group" aria-label="Previous four weeks versus last 7 days">
+              <div className="cmp-row">
+                <span>Previous 4 wks</span>
+                <Bar value={repo.priorVelocity / pMax} color="var(--text-3)" />
+                <span className="v num">{fmtRate(repo.priorVelocity)}/d</span>
+              </div>
+              <div className="cmp-row">
+                <span>Last 7 days</span>
+                <Bar value={(repo.velocity7d ?? 0) / pMax} color="var(--rising)" />
+                <span className="v num">{fmtRate(repo.velocity7d)}/d</span>
+              </div>
             </div>
-          ))}
-        </dl>
-        <p className="muted small">
-          No star-history chart: the public dataset carries summary growth windows, not the daily series. &quot;n/a&quot; means the window could not be measured
-          (for example, the repository is younger than the window), which is different from zero growth.
-        </p>
-      </section>
+          ) : null}
+          <div className="sig" style={{ marginTop: 16 }}>
+            <div className="row2">
+              <span>Acceleration (7d vs previous)</span>
+              <b className="num">{repo.accelerationRatio === null ? 'n/a' : `${repo.accelerationRatio.toFixed(2)}×`}</b>
+            </div>
+            <div className="row2">
+              <span>Persistence</span>
+              <b>{repo.flags.sustained ? 'Sustained' : 'Not sustained'}</b>
+            </div>
+            <div className="row2">
+              <span>Repository age</span>
+              <b className="num">{fmtAge(repo.ageDays)}</b>
+            </div>
+            <div className="row2">
+              <span>Tracking tier</span>
+              <b>{repo.tier ?? 'n/a'}</b>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <p className="note">
+        &quot;n/a&quot; means the window could not be measured (for example the repository is younger than the window), which is different from zero growth. The
+        public dataset carries growth windows, not the daily star series, so there is no history chart. <Link href="/methodology/">How momentum is computed</Link>.
+      </p>
     </main>
   );
 }

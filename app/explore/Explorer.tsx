@@ -40,50 +40,63 @@ export function ExplorerView({ data, params }: { data: ExplorerData; params: URL
   return (
     <>
       {unknownCategory ? (
-        <p className="warn" role="status">
+        <p className="notice" role="status">
           Unknown category &quot;{catParam}&quot;. Showing all AI repositories.
         </p>
       ) : null}
-      <nav aria-label="Filter by trend" className="filters">
-        {TREND_FILTERS.map((t) => (
-          <Link key={t.key} href={href({ category, filter: t.key, sort })} className="pill" aria-current={filter === t.key ? 'true' : undefined}>
-            {t.label}
-          </Link>
-        ))}
-      </nav>
-      <nav aria-label="Filter by category" className="filters">
-        <Link href={href({ category: null, filter, sort })} className="pill" aria-current={category === null ? 'true' : undefined}>
-          All AI
-        </Link>
-        {aiCats.map((c) => (
-          <Link key={c.slug} href={href({ category: c.slug, filter, sort })} className="pill" aria-current={category === c.slug ? 'true' : undefined}>
-            {c.name}
-          </Link>
-        ))}
-      </nav>
-      <nav aria-label="Sort" className="filters">
-        <span className="muted small">Sort by</span>
-        {SORTS.map((o) => (
-          <Link key={o.key} href={href({ category, filter, sort: o.key })} className="pill" aria-current={sort === o.key ? 'true' : undefined}>
-            {o.label}
-          </Link>
-        ))}
-      </nav>
-      <p className="muted" role="status">
-        {rows.length.toLocaleString('en-US')} repositories
+      <div className="controls">
+        <nav aria-label="Filter by trend" className="cg">
+          <span className="cl">Momentum</span>
+          <div className="seg">
+            {TREND_FILTERS.map((t) => (
+              <Link key={t.key} href={href({ category, filter: t.key, sort })} className="pill" aria-current={filter === t.key ? 'true' : undefined}>
+                {t.label}
+              </Link>
+            ))}
+          </div>
+        </nav>
+        <nav aria-label="Filter by category" className="cg">
+          <span className="cl">Category</span>
+          <div className="seg scroll">
+            <Link href={href({ category: null, filter, sort })} className="pill" aria-current={category === null ? 'true' : undefined}>
+              All AI
+            </Link>
+            {aiCats.map((c) => (
+              <Link key={c.slug} href={href({ category: c.slug, filter, sort })} className="pill" aria-current={category === c.slug ? 'true' : undefined}>
+                {c.name}
+              </Link>
+            ))}
+          </div>
+        </nav>
+        <nav aria-label="Sort" className="cg">
+          <span className="cl">Sort by</span>
+          <div className="seg">
+            {SORTS.map((o) => (
+              <Link key={o.key} href={href({ category, filter, sort: o.key })} className="pill" aria-current={sort === o.key ? 'true' : undefined}>
+                {o.label}
+              </Link>
+            ))}
+          </div>
+        </nav>
+      </div>
+      <p className="resultbar" role="status">
+        <span>
+          <b className="num">{rows.length.toLocaleString('en-US')}</b> repositories
+        </span>
       </p>
+      <h2 className="sr">Results</h2>
       {shown.length === 0 ? (
         <EmptyState>No repositories match this combination.</EmptyState>
       ) : (
         <div className="grid">
-          {shown.map((r) => (
-            <RepoCard key={r.id} repo={r} data={data} showAge={filter === 'new'} />
+          {shown.map((r, i) => (
+            <RepoCard key={r.id} repo={r} data={data} index={i} variant={filter === 'new' ? 'new' : filter === 'sustained' ? 'sustained' : 'default'} showAge={filter === 'new'} />
           ))}
         </div>
       )}
       {rows.length > shown.length ? (
-        <p>
-          <Link className="pill" href={href({ category, filter, sort, n: n + PAGE })}>
+        <p className="more">
+          <Link className="linkbtn" href={href({ category, filter, sort, n: n + PAGE })}>
             Show more ({rows.length - shown.length} left)
           </Link>
         </p>
