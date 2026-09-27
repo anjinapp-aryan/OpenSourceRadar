@@ -54,3 +54,17 @@ Home, Explore, Methodology and a repository page return 200. Canonical, robots a
 - Favicon `/favicon.ico` still 404 (icon served at `/icon.svg`); not addressed.
 - `bojieli/ai-infra-book` still Rising: known domain-policy consideration; momentum engine unchanged.
 - Cost estimate $0/month (public repository Actions, Releases, Vercel Hobby); not verified against billing.
+
+---
+
+## Addendum: first real run and scheduled-run check (2026-09-27)
+
+**First real run (`dry_run=false`, manual dispatch, run 36235471946, commit ec30445, 2026-09-26 10:20-10:36 UTC):** all 20 processing steps succeeded (discovery skipped as requested). Collection due 26, ~5 s; build 18 s; production smoke test 64 s. Quality gate OK. Committed `f98097b` ("data: refresh public radar dataset"), touching only `data/public/radar.json`. Saved the `data-state` release (one asset, `state.tar.gz`, 3.4 MB; no `state-prev` yet, first run). Vercel deployed `f98097b` (Ready, Production, 46 s build). Live site confirmed showing "Updated 2026-09-26 10:34 UTC"; `pipeline:verify` against the production URL passed with 0 problems.
+
+**Published dataset (MEASURED):** 3,546 repositories, 0 duplicate ids, tracked 3,413, measured 3,411, AI 1,685 across 14 AI categories, RISING 38 / COOLING 195 / STEADY 3,313, new entrants 293, sustained 164, movers 123, 3.64 MB compact. Rising's move from 35 to 38 is explained by the 7-day window advancing, not a data problem.
+
+**Preflight 503 (found in this first real run, fixed):** GitHub's `/rate_limit` endpoint returned 503 once; the preflight had no retry and failed the whole run. Fixed in `scripts/pipeline/index.ts` (commit de3e212): up to 5 attempts with backoff via the existing `withRetry` helper; a 401 still fails immediately. Verified against the real API and against two forced 503 responses; 387 tests still pass.
+
+**Node 20 deprecation warning (found, fixed):** the run log warned that `actions/checkout@v4`, `setup-node@v4` and `cache@v4` target Node 20 while runners now force Node 24. Bumped to `checkout@v5`, `setup-node@v6`, `cache@v5`, `upload-artifact@v7` (commit d89feb9). No step logic changed; not yet re-verified by an Actions run (pending the next dispatch).
+
+**Scheduled run (checked 2026-09-27T05:27Z):** the `04:17 UTC` daily cron had **not fired** over an hour after its target time; only the two manual runs from 2026-09-26 appear in the run history, and the workflow is listed `active`. GitHub documents that scheduled workflows can be delayed, particularly for lower-traffic repositories, but this is the first scheduled occurrence and was **not confirmed** in this session. **Action needed:** check the Actions tab after 2026-09-27 04:17 UTC has clearly passed (and again on 2026-09-28) to confirm the schedule is firing; if it never appears, the fallback is `workflow_dispatch`, which is proven to work.
