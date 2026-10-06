@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "patternVersion": "p1",
+  "newLaunch": {
+    "maxAgeDays": 30
+  },
+  "spike": {
+    "minShare30": 0.5,
+    "minGrowth7d": 100
+  },
+  "breakout": {
+    "minRatio": 3,
+    "minGrowth7d": 100
+  },
+  "accelerating": {
+    "minRatio": 1.2,
+    "minGrowth7d": 100
+  },
+  "slowing": {
+    "maxRatio": 0.8
+  },
+  "elevatedPrior": {
+    "minRatioToLongAverage": 2
+  }
+}

@@ -95,7 +95,8 @@ export default function Methodology() {
         <li>Stars can be inflated by promotion or non-organic activity; the score does not try to detect that.</li>
         <li>The score is a ranking aid, not a quality judgement. Lifetime stars are context only.</li>
         <li>Educational or list-style repositories can rank when they gain stars quickly.</li>
-        <li>The public data holds growth windows, not the daily series, so there are no history charts.</li>
+        <li>Daily history is published for AI repositories only, for the last 90 days. A repository younger than the window shows its whole life; where history is missing it says so instead of drawing zeros.</li>
+        <li>Patterns such as &quot;Concentrated spike&quot; or &quot;Breakout&quot; describe the shape of recent growth. They are neutral labels, not judgements about how the stars were earned.</li>
       </ul>
 
       <p className="more">

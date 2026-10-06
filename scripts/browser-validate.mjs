@@ -6,7 +6,8 @@ import { readFileSync, existsSync, statSync, writeFileSync, mkdirSync } from 'no
 import { join, extname } from 'node:path';
 
 const OUT = 'out';
-const SHOTS = 'results/phase5.5/shots';
+const OUTDIR = process.env.VALIDATE_OUT ?? 'results/phase5.5';
+const SHOTS = `${OUTDIR}/shots`;
 mkdirSync(SHOTS, { recursive: true });
 const types = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.txt': 'text/plain', '.xml': 'application/xml', '.svg': 'image/svg+xml', '.ico': 'image/x-icon' };
 const server = createServer((req, res) => {
@@ -72,10 +73,20 @@ const url2 = kp.url();
 await kp.reload({ waitUntil: 'networkidle' });
 const count2 = await kp.textContent('.resultbar');
 const cur = await kp.$$eval('[aria-current="true"]', (e) => e.map((x) => x.textContent));
+// Phase 6.1: trajectory chart buttons on a repository page
+const tp = await kctx.newPage();
+await tp.goto('http://localhost:4600/repo/vectorize-io/hindsight/', { waitUntil: 'networkidle' });
+const label90 = await tp.getAttribute('svg.traj-svg', 'aria-label');
+await tp.click('button:has-text("7 days")');
+const label7 = await tp.getAttribute('svg.traj-svg', 'aria-label');
+const pressed = await tp.$$eval('.traj button', (b) => b.map((x) => x.textContent + ':' + x.getAttribute('aria-pressed')));
+const whyLines = await tp.$$eval('.why-lines li', (l) => l.map((x) => x.textContent));
+const trajectory = { label90, label7, pressed, whyHead: await tp.textContent('#why'), whyLines: whyLines.length };
+if (mode === 'no-preference') await tp.screenshot({ path: `${SHOTS}/repo-trajectory-1280.png`, fullPage: true });
 await kctx.close();
 await browser.close();
 server.close();
-writeFileSync(`results/phase5.5/validation-${mode}.json`, JSON.stringify({ report, keyboard: seq, interaction: { count, url2, count2, cur } }, null, 1));
+writeFileSync(`${OUTDIR}/validation-${mode}.json`, JSON.stringify({ report, keyboard: seq, interaction: { count, url2, count2, cur }, trajectory }, null, 1));
 const bad = report.filter((r) => r.overflowX || r.clipped || r.errors.length || r.external.length || (r.axe && r.axe.length));
 console.log('runs', report.length, 'problems', bad.length);
 for (const b of bad) console.log(b.page, b.width, JSON.stringify({ ox: b.overflowX, clipped: b.clipped, err: b.errors, ext: b.external.length, axe: b.axe }));

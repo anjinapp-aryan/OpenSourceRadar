@@ -13,6 +13,7 @@ import {
   type CategorySummary,
   type MoverRow,
 } from '../lib/query';
+import { PATTERN_LABEL } from '../src/explain/render';
 import { Bar, Icon } from './ui';
 
 /** Trend is always an arrow plus a word, never colour alone. */
@@ -186,7 +187,11 @@ export function RepoCard({
       <CategoryChips repo={repo} data={data} />
 
       <p className="why">
-        {repo.accelerationRatio !== null && repo.trend === 'RISING' ? (
+        {repo.pattern ? (
+          <>
+            <b>{PATTERN_LABEL[repo.pattern]}.</b>{' '}
+          </>
+        ) : repo.accelerationRatio !== null && repo.trend === 'RISING' ? (
           <>
             <b>Accelerating {repo.accelerationRatio.toFixed(1)}×</b> vs previous weeks.{' '}
           </>

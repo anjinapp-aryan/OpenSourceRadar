@@ -1,6 +1,8 @@
 import type { ClassifiedDataset } from '../classification/datasets';
 import type { Dataset as RepositoryDataset, RepositoryRecord } from '../collect/dataset';
 import { evaluateRepository, growthAsOf, velocityOver } from './engine';
+import { classifyPattern, type Pattern, type PatternConfig } from '../explain/pattern';
+import { classifyLifecycle, LIFECYCLE_STATES, type LifecycleConfig, type LifecycleState } from '../lifecycle';
 import type { MomentumConfig, MomentumRecord, TrendLabel } from './types';
 
 export const MOMENTUM_SCHEMA_VERSION = 1 as const;
@@ -119,6 +121,10 @@ export interface PublicRepository {
   explanation: string[];
   /** Refresh tier from the tracked dataset (HOT | WARM | DORMANT | UNASSESSED); absent when tracking was not supplied. */
   tier?: string;
+  /** Phase 6.1: neutral growth-pattern label (see src/explain/pattern.ts). Recomputable from the fields above. */
+  pattern?: Pattern;
+  /** Phase 6.1: present only when the record is published with a warning (STALE). Absent means ACTIVE. */
+  lifecycle?: 'STALE';
 }
 
 export interface PublicCategory {
@@ -144,6 +150,17 @@ export interface PublicDataset {
   categories?: PublicCategory[];
   /** Additive (Phase 5). From the tracked dataset when supplied. */
   stats?: PublicStats;
+  /** Phase 6.1: pattern model version used for `pattern`. */
+  patternVersion?: string;
+  /** Phase 6.1: how many momentum-scored records fell into each lifecycle state, and how many were withheld from `repositories`. */
+  lifecycle?: { counts: Record<LifecycleState, number>; withheld: number };
+}
+
+export interface LifecycleExtras {
+  config: LifecycleConfig;
+  candidateIds: ReadonlySet<string>;
+  tracking: ReadonlyMap<string, { tier: string; lastCollectedAt: string | null; refreshIntervalHours: number }>;
+  now: Date;
 }
 
 export interface PublicExtras {
@@ -151,6 +168,10 @@ export interface PublicExtras {
   stats?: PublicStats;
   /** repository id -> tier. */
   tiers?: Record<string, string>;
+  /** Phase 6.1: when given, every record gets a lifecycle state and only the configured states are published. */
+  lifecycle?: LifecycleExtras;
+  /** Phase 6.1: when given, every published record gets a `pattern`. */
+  pattern?: PatternConfig;
 }
 
 /**
@@ -162,12 +183,24 @@ export function derivePublic(momentum: MomentumDataset, repos: RepositoryDataset
   const meta = new Map<string, RepositoryRecord>(repos.repositories.map((r) => [r.id, r]));
   const cls = new Map((classified?.repositories ?? []).map((c) => [c.id, c.result]));
   const out: PublicRepository[] = [];
+  const lifecycleCounts = Object.fromEntries(LIFECYCLE_STATES.map((st) => [st, 0])) as Record<LifecycleState, number>;
+  let withheld = 0;
   for (const m of momentum.repositories) {
     if (m.momentum.score === null) continue;
     const r = meta.get(m.id);
     if (!r) continue;
     const c = cls.get(m.id);
-    out.push({
+    let lifecycle: LifecycleState | null = null;
+    if (extras.lifecycle) {
+      const lc = extras.lifecycle;
+      lifecycle = classifyLifecycle({ archived: r.isArchived === true, inCandidates: lc.candidateIds.has(m.id), tracked: lc.tracking.get(m.id) ?? null, classificationTopLevel: c?.topLevelCategory ?? null, now: lc.now }, lc.config).state;
+      lifecycleCounts[lifecycle] += 1;
+      if (!lc.config.publish.includes(lifecycle)) {
+        withheld += 1;
+        continue;
+      }
+    }
+    const rec: PublicRepository = {
       id: m.id,
       fullName: m.fullName,
       url: r.url,
@@ -192,7 +225,10 @@ export function derivePublic(momentum: MomentumDataset, repos: RepositoryDataset
       ageDays: m.signals.ageDays,
       explanation: m.explanation,
       ...(extras.tiers?.[m.id] ? { tier: extras.tiers[m.id] } : {}),
-    });
+      ...(lifecycle === 'STALE' ? { lifecycle: 'STALE' as const } : {}),
+    };
+    if (extras.pattern) rec.pattern = classifyPattern(rec, extras.pattern);
+    out.push(rec);
   }
   const keep = new Set(out.map((o) => o.id));
   return {
@@ -210,6 +246,8 @@ export function derivePublic(momentum: MomentumDataset, repos: RepositoryDataset
     repositories: out,
     ...(extras.categories ? { categories: extras.categories } : {}),
     ...(extras.stats ? { stats: extras.stats } : {}),
+    ...(extras.pattern ? { patternVersion: extras.pattern.patternVersion } : {}),
+    ...(extras.lifecycle ? { lifecycle: { counts: lifecycleCounts, withheld } } : {}),
   };
 }
 

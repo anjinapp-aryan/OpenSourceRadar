@@ -36,3 +36,6 @@ Each run writes a step summary (run id, capacity, requests by type, cache hits/m
 - A scheduled workflow is disabled by GitHub after 60 days without repository activity; data commits count as activity when they happen, and an unchanged dataset produces no commit.
 - Weekly discovery rewrites the candidate list; a shrunken candidate set is caught downstream by the tracked/AI drop checks.
 - If a GitHub push by the workflow does not trigger a Vercel build, the smoke test fails on the stale timestamp and the run is marked failed; production is unchanged.
+
+---
+**Update (Phase 6.1):** the schedule section above was corrected in [PHASE-6.1-OPERATIONS.md](PHASE-6.1-OPERATIONS.md): there is now a single daily cron (Monday adds discovery in the same run), real start times are roughly 10:00 to 11:30 UTC, and state backups are 14 dated copies instead of one previous copy.

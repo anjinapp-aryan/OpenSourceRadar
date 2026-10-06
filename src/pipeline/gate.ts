@@ -4,6 +4,9 @@
  * regressions are FAIL (never published), moderate movement is WARNING, normal daily change is OK.
  * Thresholds live in config/pipeline.json; nothing here hard-codes a repository count.
  */
+import { classifyPattern, PATTERNS, type PatternConfig, type PatternInput } from '../explain/pattern';
+import { LIFECYCLE_STATES } from '../lifecycle';
+
 export interface GateConfig {
   minRepositories: number;
   minAiRepositories: number;
@@ -21,7 +24,11 @@ export interface GateConfig {
 export type Level = 'OK' | 'WARNING' | 'FAIL';
 
 export interface Metrics {
+  /** Published records. */
   repositories: number;
+  /** Published records plus records deliberately withheld by the lifecycle rules (so a cleanup is not mistaken for a collapse). */
+  accounted: number;
+  withheld: number;
   tracked: number | null;
   measured: number | null;
   ai: number;
@@ -63,8 +70,11 @@ export function metricsOf(ds: Rec): Metrics {
   const count = (f: (r: Rec) => boolean) => repos.filter(f).length;
   const top = (r: Rec) => (isObj(r.classification) ? (r.classification.topLevel as string) : null);
   const len = (k: string) => (Array.isArray(lists[k]) ? (lists[k] as unknown[]).length : 0);
+  const withheld = isObj(ds.lifecycle) && finite(ds.lifecycle.withheld) && ds.lifecycle.withheld >= 0 ? ds.lifecycle.withheld : 0;
   return {
     repositories: repos.length,
+    accounted: repos.length + withheld,
+    withheld,
     tracked: stats && finite(stats.tracked) ? stats.tracked : null,
     measured: stats && finite(stats.measured) ? stats.measured : null,
     ai: count((r) => top(r) === 'AI' || top(r) === 'BOTH'),
@@ -78,7 +88,12 @@ export function metricsOf(ds: Rec): Metrics {
 }
 
 /** Structural validation of one dataset. Returns human-readable problems (empty = valid). */
-export function structuralProblems(ds: unknown, cfg: GateConfig, now: Date): string[] {
+export interface GateContext {
+  /** When given, every record's `pattern` must equal the recomputation from its own public fields. */
+  pattern?: PatternConfig;
+}
+
+export function structuralProblems(ds: unknown, cfg: GateConfig, now: Date, ctx: GateContext = {}): string[] {
   const p: string[] = [];
   if (!isObj(ds)) return ['dataset is not an object'];
   if (ds.schemaVersion !== 1) p.push(`schemaVersion must be 1 (got ${String(ds.schemaVersion)})`);
@@ -123,6 +138,10 @@ export function structuralProblems(ds: unknown, cfg: GateConfig, now: Date): str
       if (!isObj(r.classification) || !cfg.allowedTopLevel.includes(r.classification.topLevel as string)) note(`${name}: invalid classification`);
       else if (!Array.isArray(r.classification.categories) || (r.classification.categories as unknown[]).some((c) => !slugs.has(c))) note(`${name}: unknown category slug`);
     }
+    if (r.pattern !== undefined && !(PATTERNS as readonly string[]).includes(r.pattern as string)) note(`${name}: invalid pattern ${String(r.pattern)}`);
+    if (r.lifecycle !== undefined && r.lifecycle !== 'STALE') note(`${name}: invalid lifecycle ${String(r.lifecycle)}`);
+    if (ds.patternVersion !== undefined && r.pattern === undefined) note(`${name}: pattern missing although patternVersion is set`);
+    if (ctx.pattern && typeof r.pattern === 'string' && (PATTERNS as readonly string[]).includes(r.pattern) && classifyPattern(r as unknown as PatternInput, ctx.pattern) !== r.pattern) note(`${name}: pattern ${r.pattern} does not match its own fields`);
     if (!Array.isArray(r.explanation)) note(`${name}: explanation missing`);
     if (typeof r.summary !== 'string') note(`${name}: summary missing`);
   }
@@ -134,6 +153,13 @@ export function structuralProblems(ds: unknown, cfg: GateConfig, now: Date): str
     }
     for (const k of ['movers', 'moversUp', 'moversDown']) {
       for (const m of (Array.isArray(l[k]) ? l[k] : []) as Rec[]) if (!ids.has(m.id as string) || !finite(m.velocityDelta)) p.push(`lists.${k} has an invalid entry`);
+    }
+  }
+  if (ds.lifecycle !== undefined) {
+    const lc = ds.lifecycle;
+    if (!isObj(lc) || !isObj(lc.counts) || !finite(lc.withheld) || lc.withheld < 0 || !Number.isInteger(lc.withheld)) p.push('lifecycle block is malformed');
+    else {
+      for (const [k, v] of Object.entries(lc.counts)) if (!(LIFECYCLE_STATES as readonly string[]).includes(k) || !finite(v) || v < 0) p.push(`lifecycle.counts has an invalid entry ${k}`);
     }
   }
   if (isObj(ds.stats)) {
@@ -154,10 +180,10 @@ function levelForDrop(pct: number | null, failAt: number, warnAt: number): Level
 }
 
 /** Full gate: candidate dataset vs previous good dataset (previous may be absent on the first run). */
-export function runGate(candidate: unknown, previous: unknown | null, cfg: GateConfig, opts: { now?: Date; bytes?: number } = {}): GateReport {
+export function runGate(candidate: unknown, previous: unknown | null, cfg: GateConfig, opts: { now?: Date; bytes?: number; pattern?: PatternConfig } = {}): GateReport {
   const now = opts.now ?? new Date();
   const bytes = opts.bytes ?? 0;
-  const problems = structuralProblems(candidate, cfg, now);
+  const problems = structuralProblems(candidate, cfg, now, opts.pattern ? { pattern: opts.pattern } : {});
   const warnings: string[] = [];
   const report: GateReport = { level: 'OK', structuralProblems: problems, warnings, metrics: { current: null, previous: null }, deltas: [], bytes };
   if (bytes > cfg.maxPublicBytes) problems.push(`public dataset is ${bytes} bytes (limit ${cfg.maxPublicBytes})`);
@@ -174,7 +200,7 @@ export function runGate(candidate: unknown, previous: unknown | null, cfg: GateC
   const prevOk = isObj(previous) && Array.isArray((previous as Rec).repositories);
   const prev = prevOk ? metricsOf(previous as Rec) : null;
   report.metrics.previous = prev;
-  const names: (keyof Metrics)[] = ['repositories', 'tracked', 'measured', 'ai', 'rising', 'cooling', 'steady', 'newEntrants', 'sustained', 'movers'];
+  const names: (keyof Metrics)[] = ['repositories', 'accounted', 'withheld', 'tracked', 'measured', 'ai', 'rising', 'cooling', 'steady', 'newEntrants', 'sustained', 'movers'];
   const failKeys = cfg.maxDropPercent as Record<string, number>;
   for (const name of names) {
     const c = cur[name];
@@ -182,10 +208,14 @@ export function runGate(candidate: unknown, previous: unknown | null, cfg: GateC
     let level: Level = 'OK';
     const delta = c !== null && pv !== null ? c - pv : null;
     const pct = c !== null && pv !== null ? percent(pv, c) : null;
-    if (c !== null && pv !== null && failKeys[name] !== undefined) {
-      level = levelForDrop(pct, failKeys[name] as number, (failKeys[name] as number) * cfg.warnAtFractionOfFail);
-      if (level === 'FAIL') problems.push(`${name} dropped ${(-(pct as number)).toFixed(1)}% (${pv} to ${c}); limit ${failKeys[name]}%`);
-      else if (level === 'WARNING') warnings.push(`${name} dropped ${(-(pct as number)).toFixed(1)}% (${pv} to ${c})`);
+    // Published `repositories` is judged through `accounted` (published + withheld by lifecycle rules) so that a deliberate
+    // withholding is not a collapse, while a real loss of records still is.
+    const dropKey = name === 'accounted' ? 'repositories' : name;
+    const label = name === 'accounted' ? 'repositories (published + withheld)' : name;
+    if (name !== 'repositories' && c !== null && pv !== null && failKeys[dropKey] !== undefined) {
+      level = levelForDrop(pct, failKeys[dropKey] as number, (failKeys[dropKey] as number) * cfg.warnAtFractionOfFail);
+      if (level === 'FAIL') problems.push(`${label} dropped ${(-(pct as number)).toFixed(1)}% (${pv} to ${c}); limit ${failKeys[dropKey]}%`);
+      else if (level === 'WARNING') warnings.push(`${label} dropped ${(-(pct as number)).toFixed(1)}% (${pv} to ${c})`);
     }
     if (name === 'rising' && prev) {
       if (cur.rising === 0 && prev.rising >= cfg.risingRequireIfPreviousAtLeast) {
@@ -233,5 +263,57 @@ export function checkProductionPage(kind: 'home' | 'explore' | 'methodology' | '
     if (!body.includes('<h1')) p.push(`${kind}: no h1 rendered`);
     if (kind === 'repo' && opts.repo && !body.includes(opts.repo)) p.push(`repo: page does not mention ${opts.repo}`);
   }
+  return p;
+}
+
+export interface HistoryGateConfig {
+  maxBytes: number;
+}
+
+/**
+ * Validation of the public history file against the public dataset. Every drawn number must be traceable: when a record
+ * has both a window growth figure and a history entry that covers the window, the sums must agree exactly.
+ */
+export function historyProblems(history: unknown, pub: unknown, cfg: HistoryGateConfig, bytes = 0): string[] {
+  const p: string[] = [];
+  if (!isObj(history)) return ['history is not an object'];
+  if (history.schemaVersion !== 1) p.push(`history schemaVersion must be 1 (got ${String(history.schemaVersion)})`);
+  if (typeof history.generatedAt !== 'string' || Number.isNaN(Date.parse(history.generatedAt))) p.push('history generatedAt missing or invalid');
+  if (!finite(history.days) || history.days < 7) p.push('history days invalid');
+  if (!isObj(history.repositories)) return [...p, 'history repositories must be an object'];
+  if (bytes > cfg.maxBytes) p.push(`history is ${bytes} bytes (limit ${cfg.maxBytes})`);
+  const days = finite(history.days) ? history.days : 90;
+  const byId = new Map<string, Rec>();
+  if (isObj(pub) && Array.isArray(pub.repositories)) for (const r of pub.repositories as Rec[]) if (isObj(r) && typeof r.id === 'string') byId.set(r.id, r);
+  let bad = 0;
+  const note = (m: string) => {
+    bad += 1;
+    if (bad <= 15) p.push(m);
+  };
+  for (const [id, raw] of Object.entries(history.repositories)) {
+    const rec = byId.get(id);
+    if (!rec) {
+      note(`history entry ${id} has no public record`);
+      continue;
+    }
+    const name = String(rec.fullName);
+    if (!isObj(raw) || typeof raw.e !== 'string' || Number.isNaN(Date.parse(`${raw.e}T00:00:00Z`)) || !Array.isArray(raw.g)) {
+      note(`${name}: malformed history entry`);
+      continue;
+    }
+    const g = raw.g as unknown[];
+    if (g.length === 0 || g.length > days) note(`${name}: history length ${g.length} outside 1..${days}`);
+    if (g.some((x) => !Number.isInteger(x) || (x as number) < 0)) {
+      note(`${name}: history contains a non-integer or negative day`);
+      continue;
+    }
+    const nums = g as number[];
+    const sum = (n: number) => nums.slice(-n).reduce((a, b) => a + b, 0);
+    for (const [key, n] of [['growth7d', 7], ['growth30d', 30], ['growth90d', 90]] as const) {
+      const v = rec[key];
+      if (finite(v) && nums.length >= n && sum(n) !== v) note(`${name}: ${key} ${v} does not equal the sum of the last ${n} history days (${sum(n)})`);
+    }
+  }
+  if (bad > 15) p.push(`... and ${bad - 15} more history problems`);
   return p;
 }

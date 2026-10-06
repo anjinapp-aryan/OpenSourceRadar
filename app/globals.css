@@ -1060,6 +1060,81 @@ dd {
   }
 }
 
+
+/* ---------- phase 6.1: why panel and trajectory ---------- */
+.why-head {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: var(--sp-md);
+}
+.why-lines {
+  padding-left: 1.2em;
+  display: grid;
+  gap: 8px;
+  color: var(--text-2);
+  margin-bottom: var(--sp-sm);
+}
+.badge[class*='pat-'] {
+  color: var(--text);
+  background: var(--surface-2);
+}
+.badge.pat-breakout,
+.badge.pat-accelerating {
+  color: var(--rising);
+  background: var(--rising-bg);
+}
+.badge.pat-sustained_growth {
+  color: var(--sustained);
+  background: var(--sustained-bg);
+}
+.badge.pat-spike {
+  color: var(--cooling);
+  background: var(--cooling-bg);
+}
+.badge.pat-new_launch {
+  color: var(--new);
+  background: var(--new-bg);
+}
+.badge.pat-cooling {
+  color: var(--cooling);
+  background: var(--cooling-bg);
+}
+.traj {
+  display: grid;
+  gap: var(--sp-md);
+}
+.traj .pill[aria-pressed='true'] {
+  color: #04120b;
+  background: var(--rising);
+  border-color: var(--rising);
+  font-weight: 700;
+}
+.traj-svg {
+  width: 100%;
+  height: 120px;
+  display: block;
+}
+.traj-base {
+  stroke: var(--border-strong);
+  stroke-width: 1;
+}
+.traj-bar {
+  fill: var(--rising);
+}
+.traj-today {
+  fill: var(--rising);
+  opacity: 0.45;
+}
+.traj-sum {
+  color: var(--text-2);
+}
+.traj-sum b {
+  color: var(--text);
+  font-size: 1.15rem;
+}
+
 /* ---------- responsive ---------- */
 @media (max-width: 1200px) {
   .metrics {

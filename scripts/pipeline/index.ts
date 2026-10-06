@@ -1,6 +1,8 @@
 import { appendFileSync, existsSync, readFileSync, renameSync, statSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname } from 'node:path';
-import { formatReportMarkdown, runGate, checkProductionPage, type GateConfig, type GateReport } from '../../src/pipeline/gate';
+import { formatReportMarkdown, historyProblems, runGate, checkProductionPage, type GateConfig, type GateReport, type HistoryGateConfig } from '../../src/pipeline/gate';
+import { parsePatternConfig } from '../../src/explain/pattern';
+import { assetsToDelete, datedStateName } from '../../src/pipeline/state';
 import { siteUrl } from '../../lib/site';
 import { GitHubApiError, NetworkError } from '../../src/github/errors';
 import { withRetry } from '../../src/util/retry';
@@ -10,7 +12,9 @@ const USAGE = `Usage: tsx scripts/pipeline/index.ts <command> [options]
   validate  [--next p] [--previous p] [--report p]
                                 run the data quality gate on the candidate public dataset (default data/public/radar.next.json
                                 vs data/public/radar.json); exit 0 OK/WARNING, 1 FAIL
-  publish   [--next p] [--out p] validate again, then atomically replace the public dataset with a compact copy
+  publish   [--next p] [--out p] validate again, then atomically replace the public dataset (and its history file) with compact copies
+  prune-state [--keep n]        read the JSON of gh release view data-state --json assets on stdin, print the backup assets to delete (one per line)
+  state-name                    print the dated backup asset name for today (UTC)
   summary   [--dir .pipeline]   write a Markdown run summary to $GITHUB_STEP_SUMMARY (or stdout)
   verify    [--url u] [--wait]  production smoke test; --wait polls until the new dataset is live (uses config verify.*)
 Local and deterministic except preflight and verify (network). Secrets are never printed.`;
@@ -19,6 +23,8 @@ const CONFIG = JSON.parse(readFileSync('config/pipeline.json', 'utf8')) as {
   preflight: { minCoreRemaining: number; minGraphqlRemaining: number };
   gate: GateConfig;
   verify: { pollIntervalSeconds: number; timeoutMinutes: number };
+  history: HistoryGateConfig & { days: number };
+  state: { keepDaily: number };
 };
 
 function args(argv: string[]): Record<string, string | true> {
@@ -109,7 +115,19 @@ function validate(a: Record<string, string | true>): number {
     console.error(rep.structuralProblems[0]);
     return 1;
   }
-  const report = runGate(candidate, readJsonSafe(prevPath), CONFIG.gate, { bytes });
+  const patternCfg = parsePatternConfig(readJson('config/pattern.json'));
+  const report = runGate(candidate, readJsonSafe(prevPath), CONFIG.gate, { bytes, pattern: patternCfg });
+  const historyPath = nextPath.replace(/radar(\.next)?\.json$/, 'history$1.json');
+  if (existsSync(historyPath)) {
+    const hp = historyProblems(readJsonSafe(historyPath), candidate, CONFIG.history, statSync(historyPath).size);
+    if (hp.length > 0) {
+      report.structuralProblems.push(...hp);
+      report.level = 'FAIL';
+    }
+  } else {
+    report.warnings.push(`history file ${historyPath} not found; trajectories will be unavailable`);
+    if (report.level === 'OK') report.level = 'WARNING';
+  }
   mkdirSync(dirname(reportPath), { recursive: true });
   writeFileSync(reportPath, JSON.stringify(report, null, 1));
   console.log(formatReportMarkdown(report));
@@ -131,6 +149,16 @@ function publish(a: Record<string, string | true>): number {
   JSON.parse(readFileSync(tmp, 'utf8')); // re-read before replacing
   renameSync(tmp, outPath); // atomic replace on the same volume
   console.log(`publish: wrote ${outPath} (${compact.length} bytes, compact)`);
+  const histNext = nextPath.replace(/radar(\.next)?\.json$/, 'history$1.json');
+  const histOut = outPath.replace(/radar(\.next)?\.json$/, 'history$1.json');
+  if (existsSync(histNext) && histNext !== nextPath) {
+    const hc = JSON.stringify(readJson(histNext));
+    const ht = `${histOut}.tmp`;
+    writeFileSync(ht, hc);
+    JSON.parse(readFileSync(ht, 'utf8'));
+    renameSync(ht, histOut);
+    console.log(`publish: wrote ${histOut} (${hc.length} bytes, compact)`);
+  }
   return 0;
 }
 
@@ -150,6 +178,8 @@ function summary(a: Record<string, string | true>): number {
     lines.push('### Collection', `- tracked ${r.tracked}, due ${r.due}, collected ${r.collected}, failures ${r.failures?.length ?? 0}${r.stoppedBy ? `, stopped by ${r.stoppedBy}` : ''}`, `- requests: REST ${u.restRequests ?? 'n/a'}, GraphQL ${u.graphqlRequests ?? 'n/a'}, star history pages ${u.starHistoryPageRequests ?? 'n/a'}, retries ${u.starHistoryRetries ?? 'n/a'}`, `- cache: hits ${u.cache?.hits ?? 'n/a'}, misses ${u.cache?.misses ?? 'n/a'}`, `- duration ${Math.round((r.durationMs ?? 0) / 1000)} s`, '');
   }
   if (track) lines.push('### Tracking', `- tracked ${track.tracked} · HOT ${track.byTier?.HOT} · WARM ${track.byTier?.WARM} · DORMANT ${track.byTier?.DORMANT} · UNASSESSED ${track.byTier?.UNASSESSED}`, '');
+  const lc = (momentum as Record<string, any> | null)?.lifecycle as { counts: Record<string, number>; withheld: number } | null | undefined;
+  if (lc) lines.push('### Lifecycle', `- ${Object.entries(lc.counts).map(([k, v]) => `${k} ${v}`).join(' · ')} · withheld from the public dataset: ${lc.withheld}`, '');
   if (momentum?.summary) {
     const s = momentum.summary;
     lines.push('### Momentum', `- Rising ${s.byTrend?.RISING} · Cooling ${s.byTrend?.COOLING} · Steady ${s.byTrend?.STEADY} · New entrants ${s.newEntrants} · Sustained ${s.sustained} · Movers ${s.movers}`, '');
@@ -221,6 +251,17 @@ async function main(): Promise<number> {
       return publish(a);
     case 'summary':
       return summary(a);
+    case 'prune-state': {
+      const raw = readFileSync(0, 'utf8');
+      const assets = (JSON.parse(raw) as { assets?: { name: string }[] }).assets ?? [];
+      const keep = typeof a.keep === 'string' ? Number(a.keep) : CONFIG.state.keepDaily;
+      if (!Number.isInteger(keep) || keep < 1) throw new Error('--keep needs an integer >= 1');
+      for (const name of assetsToDelete(assets, keep)) console.log(name);
+      return 0;
+    }
+    case 'state-name':
+      console.log(datedStateName(new Date()));
+      return 0;
     case 'verify':
       return verify(a);
     default:

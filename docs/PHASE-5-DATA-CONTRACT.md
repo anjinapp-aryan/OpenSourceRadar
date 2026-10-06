@@ -35,3 +35,18 @@ AI Radar shows repositories with `classification.topLevel` of `AI` or `BOTH` (1,
 
 ## Size
 File is 4.9 MB pretty-printed and is only read at build time; the browser never downloads it. Shipped payloads are in PHASE-5-VALIDATION.md.
+
+---
+
+## Phase 6.1 additions (additive; `schemaVersion` stays 1)
+
+**`radar.json`**
+| Field | Where | Meaning |
+|---|---|---|
+| `pattern` | each repository | One of `INSUFFICIENT_HISTORY, NEW_LAUNCH, FLAT, SPIKE, COOLING, BREAKOUT, ACCELERATING, SUSTAINED_GROWTH, NORMAL_GROWTH`. Recomputable from the record's own fields with `config/pattern.json` (the gate verifies it). See PHASE-6.1-ANOMALY-MODEL.md |
+| `lifecycle` | a repository, only when `"STALE"` | The record is published but overdue for refresh. Absent means ACTIVE |
+| `patternVersion` | top level | Version of the pattern model (`p1`) |
+| `lifecycle` | top level | `{ counts: {ACTIVE, STALE, UNASSESSED, ORPHAN, EXCLUDED, ARCHIVED}, withheld }`: records that were scored but deliberately not published (ORPHAN, EXCLUDED, ARCHIVED, UNASSESSED) are counted here, not lost |
+Consumers that ignore these fields keep working. **Migration note:** published `repositories` dropped from 3,957 to 3,471 on 2026-10-06 because 486 never-refreshed records are now withheld (351 orphans, 135 UNKNOWN-classified); none of them was in the AI scope. The quality gate judges `repositories` through `published + withheld`.
+
+**`history.json`** (new public file, optional for consumers): `{ schemaVersion: 1, generatedAt, days: 90, repositories: { "<id>": { e: "<UTC date of last value>", g: [daily star gains, oldest first, at most 90] } } }`. AI-scope published repositories only. See PHASE-6.1-HISTORY.md.

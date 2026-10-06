@@ -5,6 +5,9 @@ import { loadRadar } from '../../../../lib/radar';
 import { aiRepositories, fmtAge, fmtNum, fmtRate, fmtSigned } from '../../../../lib/query';
 import { CategoryChips, ErrorPanel, TrendBadge } from '../../../../components/parts';
 import { Bar, Icon } from '../../../../components/ui';
+import Trajectory from '../../../../components/Trajectory';
+import WhyPanel from '../../../../components/WhyPanel';
+import { loadHistory, loadPatternConfig } from '../../../../lib/history';
 
 export const dynamicParams = false;
 
@@ -101,17 +104,13 @@ export default async function RepoPage({ params }: { params: Promise<{ owner: st
         ))}
       </section>
 
+      <section className="section panel" aria-labelledby="traj">
+        <h2 id="traj">Daily stars: is growth speeding up?</h2>
+        <Trajectory entry={loadHistory()?.repositories[repo.id] ?? null} ageDays={repo.ageDays} name={repo.fullName} />
+      </section>
+
       <div className="section two-col">
-        <section className="panel" aria-labelledby="why">
-          <h2 id="why">Why it&apos;s here</h2>
-          <p className="bigwhy">{repo.summary}</p>
-          <ul>
-            {repo.explanation.map((e) => (
-              <li key={e}>{e}</li>
-            ))}
-          </ul>
-          <p className="note">These lines are produced by the deterministic momentum engine from measured star growth. No AI-written explanation is used.</p>
-        </section>
+        <WhyPanel repo={repo} cfg={loadPatternConfig()} />
 
         <section className="panel" aria-labelledby="sig">
           <h2 id="sig">Signals</h2>
@@ -161,7 +160,7 @@ export default async function RepoPage({ params }: { params: Promise<{ owner: st
 
       <p className="note">
         &quot;n/a&quot; means the window could not be measured (for example the repository is younger than the window), which is different from zero growth. The
-        public dataset carries growth windows, not the daily star series, so there is no history chart. <Link href="/methodology/">How momentum is computed</Link>.
+        daily bars come from the public 90-day history file; days that were not measured are never drawn as zero. <Link href="/methodology/">How momentum is computed</Link>.
       </p>
     </main>
   );

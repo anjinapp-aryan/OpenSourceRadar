@@ -10,3 +10,5 @@ next-env.d.ts
 .pipeline/
 data/public/radar.next.json
 data/public/*.tmp
+
+data/public/history.next.json

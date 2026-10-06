@@ -18,3 +18,6 @@ Principle: **production changes only by a Git commit of `data/public/radar.json`
 3. **Pipeline state:** download `state-prev.tar.gz` from the `data-state` release and upload it as `state.tar.gz` (or delete the release to re-bootstrap from the committed snapshot).
 
 Not verified in this session: the dashboard rollback itself (no Vercel dashboard access).
+
+---
+**Update (Phase 6.1):** pipeline-state rollback depth is now 14 dated recovery points (`state-YYYY-MM-DD.tar.gz` in the `data-state` release), not one. Restore procedure: [PHASE-6.1-OPERATIONS.md](PHASE-6.1-OPERATIONS.md) section 2.
