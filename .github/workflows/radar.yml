@@ -160,6 +160,7 @@ jobs:
           if grep -rEl 'ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|gho_[A-Za-z0-9]{20,}' out; then echo "::error::token pattern in build output"; exit 1; fi
           if grep -rEl 'candidates\.json|classified\.json|tracked\.json|momentum\.json|repositories\.json' out; then echo "::error::internal dataset reference in build output"; exit 1; fi
           if grep -rl 'localhost:3000' out; then echo "::error::localhost URL in build output"; exit 1; fi
+          if [ -e out/repo/_synthetic ] || [ -n "${RADAR_SYNTHETIC_PAGES:-}" ]; then echo "::error::synthetic scale-test pages in production build"; exit 1; fi
           echo "Build output audit passed"
 
       - name: Measure output size (monitoring only)

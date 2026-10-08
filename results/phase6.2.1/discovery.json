@@ -1,0 +1,97 @@
+{
+  "generatedAgainst": "pipeline state of 2026-10-07",
+  "topics": [
+    "llm",
+    "ai-agents",
+    "mcp",
+    "docker",
+    "kubernetes"
+  ],
+  "strategies": {
+    "A": {
+      "searchRequestsPerTopic": 1,
+      "estimatedWeeklyRequestsAt99Queries": 99,
+      "uniqueRepos": 395,
+      "gainOverA": 0,
+      "notInCurrentCandidateSet": 2,
+      "notInStateAtAll": 33,
+      "relevantShare": 0.79,
+      "novelRelevant": 1,
+      "medianStars": 27453,
+      "medianStarsNovel": 53621,
+      "shareUnder1000Stars": 0,
+      "shareNovelUnder1000Stars": 0,
+      "shareCreatedLast180d": 0.028,
+      "shareNovelCreatedLast180d": 0
+    },
+    "C": {
+      "searchRequestsPerTopic": 3,
+      "estimatedWeeklyRequestsAt99Queries": 297,
+      "uniqueRepos": 1211,
+      "gainOverA": 816,
+      "notInCurrentCandidateSet": 440,
+      "notInStateAtAll": 501,
+      "relevantShare": 0.781,
+      "novelRelevant": 293,
+      "medianStars": 7496,
+      "medianStarsNovel": 5020,
+      "shareUnder1000Stars": 0,
+      "shareNovelUnder1000Stars": 0,
+      "shareCreatedLast180d": 0.082,
+      "shareNovelCreatedLast180d": 0.109
+    },
+    "D": {
+      "searchRequestsPerTopic": 3,
+      "estimatedWeeklyRequestsAt99Queries": 297,
+      "uniqueRepos": 992,
+      "gainOverA": 597,
+      "notInCurrentCandidateSet": 406,
+      "notInStateAtAll": 450,
+      "relevantShare": 0.75,
+      "novelRelevant": 264,
+      "medianStars": 2371,
+      "medianStarsNovel": 889,
+      "shareUnder1000Stars": 0.398,
+      "shareNovelUnder1000Stars": 0.697,
+      "shareCreatedLast180d": 0.368,
+      "shareNovelCreatedLast180d": 0.554
+    }
+  },
+  "perTopic": [
+    {
+      "topic": "llm",
+      "aReturned": 100,
+      "aLastRankStars": 22915,
+      "cReturned": 300,
+      "cLastRankStars": 5457
+    },
+    {
+      "topic": "ai-agents",
+      "aReturned": 100,
+      "aLastRankStars": 13423,
+      "cReturned": 300,
+      "cLastRankStars": 2313
+    },
+    {
+      "topic": "mcp",
+      "aReturned": 100,
+      "aLastRankStars": 14904,
+      "cReturned": 300,
+      "cLastRankStars": 2805
+    },
+    {
+      "topic": "docker",
+      "aReturned": 100,
+      "aLastRankStars": 12129,
+      "cReturned": 300,
+      "cLastRankStars": 2973
+    },
+    {
+      "topic": "kubernetes",
+      "aReturned": 100,
+      "aLastRankStars": 8930,
+      "cReturned": 300,
+      "cLastRankStars": 2605
+    }
+  ]
+}

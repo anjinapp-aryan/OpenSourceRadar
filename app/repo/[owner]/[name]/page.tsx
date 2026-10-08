@@ -11,18 +11,32 @@ import { loadHistory, loadPatternConfig } from '../../../../lib/history';
 
 export const dynamicParams = false;
 
+/**
+ * Scale experiment only (docs/PHASE-6.2.1-SCALE-AUDIT.md): RADAR_SYNTHETIC_PAGES=N adds N extra pages under /repo/_synthetic/
+ * that render a copy of the first real repository. Never set in production; the build-output audit in radar.yml fails on any
+ * `_synthetic` path, so a leak cannot ship.
+ */
+const SYNTHETIC_OWNER = '_synthetic';
+function syntheticCount(): number {
+  const n = Number(process.env.RADAR_SYNTHETIC_PAGES ?? 0);
+  return Number.isInteger(n) && n > 0 && n <= 20_000 ? n : 0;
+}
+
 export function generateStaticParams(): { owner: string; name: string }[] {
   const res = loadRadar();
   if (!res.ok) return [{ owner: '_', name: '_' }];
-  return aiRepositories(res.data).map((r) => {
+  const real = aiRepositories(res.data).map((r) => {
     const [owner, name] = r.fullName.split('/');
     return { owner: owner as string, name: name as string };
   });
+  const extra = Array.from({ length: syntheticCount() }, (_, i) => ({ owner: SYNTHETIC_OWNER, name: `page-${i + 1}` }));
+  return [...real, ...extra];
 }
 
 function find(owner: string, name: string) {
   const res = loadRadar();
   if (!res.ok) return { res, repo: undefined };
+  if (owner === SYNTHETIC_OWNER && syntheticCount() > 0) return { res, repo: aiRepositories(res.data)[0] };
   const full = `${decodeURIComponent(owner)}/${decodeURIComponent(name)}`.toLowerCase();
   return { res, repo: aiRepositories(res.data).find((r) => r.fullName.toLowerCase() === full) };
 }
