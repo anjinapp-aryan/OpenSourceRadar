@@ -54,6 +54,15 @@ npm run pipeline:publish      # gate again, then atomic replace of radar.json an
 ```
 `node scripts/browser-validate.mjs` drives an installed Chrome against `out/` for overflow, console, accessibility (axe) and interaction checks.
 
+Offline analysis tools (read pipeline state, write nothing to the product; see the Phase 6.2 docs):
+```
+npx tsx scripts/backtest/run.ts <state data dir> data/public/radar.json   # point-in-time back-test of the production rules, future-leakage audit
+npx tsx scripts/coverage/orphans.ts <state data dir> [--live --sample 30]  # why repositories fell out of discovery
+npx tsx scripts/classify/experiment.ts evaluate <state data dir>           # experimental classification rule, never used in production
+npm run pipeline:size                                                      # public data and static export sizes
+```
+The pipeline state (`data-state` release asset, `state.tar.gz` or a dated `state-YYYY-MM-DD.tar.gz`) is public; extract it to get the `data/` directory the tools expect.
+
 ## Deployment
 Vercel's Git integration deploys every push to `main`. The scheduled workflow commits the refreshed public data, which triggers the deployment, then runs a production smoke test. Details and rollback: `docs/PHASE-6-OPERATIONS.md`, `docs/PHASE-6.1-OPERATIONS.md`, `docs/PHASE-6-ROLLBACK.md`. Set `NEXT_PUBLIC_SITE_URL` (public, not a secret) for a custom domain; otherwise Vercel's production domain is used.
 
@@ -62,10 +71,10 @@ Vercel's Git integration deploys every push to `main`. The scheduled workflow co
 - Stars can be inflated by promotion or bots; the pattern labels highlight unusual shapes but do not detect manipulation.
 - Educational and list-style repositories can rank when they gain stars quickly.
 - One data source (GitHub star history). History is capped at about 210 days per repository; the site shows 90.
-- Repositories that fall out of weekly discovery stop being refreshed and are withheld (about 350 today); see `docs/PHASE-6.1-VALIDATION.md`.
+- Repositories that fall out of weekly discovery stop being refreshed and are withheld (351 today). The cause is the discovery rules (a 30-day push window and a top-100-by-stars cut per topic), analysed in `docs/PHASE-6.2-COVERAGE-RECOVERY.md`; a bounded retention design exists but is not enabled.
 
 ## Roadmap
-Documented in `docs/ROADMAP-NEXT-PHASES.md`: historical "what changed" views, taxonomy v2 and per-domain momentum, then an Engineering Radar designed technology-first.
+Documented in `docs/ROADMAP-NEXT-PHASES.md`: historical "what changed" views, taxonomy v2 and per-domain momentum, then an Engineering Radar designed technology-first. Phase 6.2 added the back-testing and coverage analysis these decisions rest on (`docs/PHASE-6.2-VALIDATION.md`).
 
 ## Documentation
 `docs/` holds the audits, data contracts and validation reports for every phase (start with `docs/ARCHITECTURE.md`, `docs/MOMENTUM.md`, `docs/PHASE-5-DATA-CONTRACT.md`, `docs/STRATEGIC-AUDIT.md`).

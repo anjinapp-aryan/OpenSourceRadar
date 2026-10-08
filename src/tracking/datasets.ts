@@ -154,7 +154,7 @@ export function buildTrackedDataset(o: BuildTrackedOptions): TrackedDataset {
       byTier,
       unassessed: byTier.UNASSESSED,
       excluded,
-      dueNow: selectDue(records, o.now, o.policy.dueOrder).length,
+      dueNow: selectDue(records, o.now, o.policy.dueOrder, undefined, o.policy.dueGraceHours).length,
       // measured tiers only: UNASSESSED is a one-time first-assessment cost, reported as `unassessed`
       estimatedDailyRefreshes: Math.round(estimateDailyRefreshes({ HOT: byTier.HOT, WARM: byTier.WARM, DORMANT: byTier.DORMANT }, o.policy) * 10) / 10,
     },

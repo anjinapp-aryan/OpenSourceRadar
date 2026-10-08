@@ -1,6 +1,10 @@
 import { appendFileSync, existsSync, readFileSync, renameSync, statSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname } from 'node:path';
-import { formatReportMarkdown, historyProblems, runGate, checkProductionPage, type GateConfig, type GateReport, type HistoryGateConfig } from '../../src/pipeline/gate';
+import { formatReportMarkdown, historyProblems, publicSchemaProblems, runGate, checkProductionPage, secretShapeProblems, type GateConfig, type GateReport, type HistoryGateConfig } from '../../src/pipeline/gate';
+import { project, treeStats } from '../../src/pipeline/size';
+import { readdirSync } from 'node:fs';
+import { brotliCompressSync, gzipSync } from 'node:zlib';
+import { join } from 'node:path';
 import { parsePatternConfig } from '../../src/explain/pattern';
 import { assetsToDelete, datedStateName } from '../../src/pipeline/state';
 import { siteUrl } from '../../lib/site';
@@ -15,6 +19,8 @@ const USAGE = `Usage: tsx scripts/pipeline/index.ts <command> [options]
   publish   [--next p] [--out p] validate again, then atomically replace the public dataset (and its history file) with compact copies
   prune-state [--keep n]        read the JSON of gh release view data-state --json assets on stdin, print the backup assets to delete (one per line)
   state-name                    print the dated backup asset name for today (UTC)
+  size      [--out out] [--public data/public]
+                                measure the public data (raw, gzip, brotli) and the static export; print JSON (read-only)
   summary   [--dir .pipeline]   write a Markdown run summary to $GITHUB_STEP_SUMMARY (or stdout)
   verify    [--url u] [--wait]  production smoke test; --wait polls until the new dataset is live (uses config verify.*)
 Local and deterministic except preflight and verify (network). Secrets are never printed.`;
@@ -118,6 +124,16 @@ function validate(a: Record<string, string | true>): number {
   const patternCfg = parsePatternConfig(readJson('config/pattern.json'));
   const report = runGate(candidate, readJsonSafe(prevPath), CONFIG.gate, { bytes, pattern: patternCfg });
   const historyPath = nextPath.replace(/radar(\.next)?\.json$/, 'history$1.json');
+  // Public/private separation: only allow-listed fields, and no token-shaped string, may reach the public files.
+  const safety = [
+    ...publicSchemaProblems(candidate, existsSync(historyPath) ? readJsonSafe(historyPath) : null),
+    ...secretShapeProblems(readFileSync(nextPath, 'utf8'), 'radar dataset'),
+    ...(existsSync(historyPath) ? secretShapeProblems(readFileSync(historyPath, 'utf8'), 'history dataset') : []),
+  ];
+  if (safety.length > 0) {
+    report.structuralProblems.push(...safety);
+    report.level = 'FAIL';
+  }
   if (existsSync(historyPath)) {
     const hp = historyProblems(readJsonSafe(historyPath), candidate, CONFIG.history, statSync(historyPath).size);
     if (hp.length > 0) {
@@ -178,6 +194,12 @@ function summary(a: Record<string, string | true>): number {
     lines.push('### Collection', `- tracked ${r.tracked}, due ${r.due}, collected ${r.collected}, failures ${r.failures?.length ?? 0}${r.stoppedBy ? `, stopped by ${r.stoppedBy}` : ''}`, `- requests: REST ${u.restRequests ?? 'n/a'}, GraphQL ${u.graphqlRequests ?? 'n/a'}, star history pages ${u.starHistoryPageRequests ?? 'n/a'}, retries ${u.starHistoryRetries ?? 'n/a'}`, `- cache: hits ${u.cache?.hits ?? 'n/a'}, misses ${u.cache?.misses ?? 'n/a'}`, `- duration ${Math.round((r.durationMs ?? 0) / 1000)} s`, '');
   }
   if (track) lines.push('### Tracking', `- tracked ${track.tracked} · HOT ${track.byTier?.HOT} · WARM ${track.byTier?.WARM} · DORMANT ${track.byTier?.DORMANT} · UNASSESSED ${track.byTier?.UNASSESSED}`, '');
+  const sz = j('size');
+  if (sz) {
+    const f = (sz.files ?? {}) as Record<string, { bytes: number; brotli: number }>;
+    const mb = (n: number) => `${(n / 1e6).toFixed(2)} MB`;
+    lines.push('### Size', `- radar.json ${mb(f['radar.json']?.bytes ?? 0)} (brotli ${mb(f['radar.json']?.brotli ?? 0)}), history.json ${mb(f['history.json']?.bytes ?? 0)} (brotli ${mb(f['history.json']?.brotli ?? 0)})`, sz.staticExport ? `- static export: ${sz.staticExport.htmlPages} pages, ${sz.staticExport.files} files, ${mb(sz.staticExport.bytes)}` : '- static export: not measured', '');
+  }
   const lc = (momentum as Record<string, any> | null)?.lifecycle as { counts: Record<string, number>; withheld: number } | null | undefined;
   if (lc) lines.push('### Lifecycle', `- ${Object.entries(lc.counts).map(([k, v]) => `${k} ${v}`).join(' · ')} · withheld from the public dataset: ${lc.withheld}`, '');
   if (momentum?.summary) {
@@ -188,6 +210,39 @@ function summary(a: Record<string, string | true>): number {
   const text = lines.join('\n');
   if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, `${text}\n`);
   else console.log(text);
+  return 0;
+}
+
+function walk(dir: string): { path: string; size: number }[] {
+  const out: { path: string; size: number }[] = [];
+  for (const e of readdirSync(dir, { withFileTypes: true })) {
+    const p = join(dir, e.name);
+    if (e.isDirectory()) out.push(...walk(p));
+    else out.push({ path: p, size: statSync(p).size });
+  }
+  return out;
+}
+
+/** Read-only size report: public data (raw / gzip / brotli) and the static export (files, bytes, by extension). */
+function size(a: Record<string, string | true>): number {
+  const pubDir = (a.public as string) ?? 'data/public';
+  const outDir = (a.out as string) ?? 'out';
+  const files: Record<string, unknown> = {};
+  let records = 0;
+  for (const name of ['radar.json', 'history.json']) {
+    const path = join(pubDir, name);
+    if (!existsSync(path)) continue;
+    const buf = readFileSync(path);
+    files[name] = { bytes: buf.length, gzip: gzipSync(buf).length, brotli: brotliCompressSync(buf).length };
+    if (name === 'radar.json') records = (JSON.parse(buf.toString('utf8')) as { repositories: unknown[] }).repositories.length;
+  }
+  const norm = (p: string) => p.split(String.fromCharCode(92)).join('/');
+  const tree = existsSync(outDir) ? walk(outDir).map((f) => ({ path: norm(f.path), size: f.size })) : [];
+  const exp = tree.length > 0 ? treeStats(tree) : null;
+  const pages = tree.filter((f) => f.path.endsWith('/index.html')).length;
+  const radarBytes = (files['radar.json'] as { bytes: number } | undefined)?.bytes ?? 0;
+  const projections = records > 0 ? { radarJson: project({ records, bytes: radarBytes }, [5000, 10000, 20000]), staticExportByHtmlPage: exp ? project({ records: Math.max(1, pages), bytes: exp.bytes }, [5000, 10000, 20000]) : null } : null;
+  console.log(JSON.stringify({ publicRecords: records, files, staticExport: exp ? { ...exp, htmlPages: pages } : null, projections, note: 'projections are linear in records (estimate)' }, null, 1));
   return 0;
 }
 
@@ -259,6 +314,8 @@ async function main(): Promise<number> {
       for (const name of assetsToDelete(assets, keep)) console.log(name);
       return 0;
     }
+    case 'size':
+      return size(a);
     case 'state-name':
       console.log(datedStateName(new Date()));
       return 0;

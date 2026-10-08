@@ -122,7 +122,7 @@ export async function runDueCollection(deps: DueDeps, o: DueOptions): Promise<Du
   // Same tier and same due time (e.g. every UNASSESSED repository): younger repositories first, so a budget that
   // runs out early has measured the most time-sensitive ones. (Repository ids are creation-ordered, so id order
   // would do the opposite.)
-  const dueAll = selectDue(all, startTime, o.policy.dueOrder, (a, b) => a.signals.ageDays - b.signals.ageDays || (BigInt(a.id) < BigInt(b.id) ? -1 : 1));
+  const dueAll = selectDue(all, startTime, o.policy.dueOrder, (a, b) => a.signals.ageDays - b.signals.ageDays || (BigInt(a.id) < BigInt(b.id) ? -1 : 1), o.policy.dueGraceHours);
   const inScope = dueAll.filter((r) => inDomain(r.classification.topLevelCategory, domain));
   const selected: TrackedRecord[] = o.limit !== undefined ? inScope.slice(0, o.limit) : inScope;
   const report: DueReport = {

@@ -29,6 +29,8 @@ export interface TrackingPolicy {
   unassessed: { refreshHours: number };
   /** Order in which due repositories are collected when a budget cuts the run short. */
   dueOrder: TrackingStatus[];
+  /** A repository counts as due this many hours before its nextRefreshAt, so scheduling jitter does not skip a whole run. */
+  dueGraceHours: number;
   hysteresis: { demoteFactor: number; minDaysInTier: Record<'hot' | 'warm' | 'dormant', number> };
 }
 

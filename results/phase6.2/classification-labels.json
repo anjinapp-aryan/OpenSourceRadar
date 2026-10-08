@@ -1,0 +1,944 @@
+{
+ "simchowitzlabpublic/nano-world-model": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "nano-muse/nanoMuse": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "flatkey-ai/flatkey-cli": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "flippercloud/flipper": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "antflydb/antfly": {
+  "domain": "BOTH",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "rsyslog/rsyslog": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "kalavai-net/kalavai-client": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true,
+  "type": "ai",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "Vonng/ddia": {
+  "domain": "IRRELEVANT",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "Qiuner/birdview": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "ceph/ceph": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "pingcap/tiflow": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "BrighterCommand/Brighter": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "akka/akka-core": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "TsinghuaC3I/MedXpertQA": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "The-PR-Agent/pr-agent": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "Morrowmake/glm53-flash-cmp170hx-recipe": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "d2lang/d2": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "dalisoft/awesome-hosting": {
+  "domain": "IRRELEVANT",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "expressots/expressots": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "acepanel/panel": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "propavingk/SlotDrift": {
+  "domain": "IRRELEVANT",
+  "category": "ok",
+  "inHoldout": true,
+  "type": "irrelevant",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "OpenRLHF/OpenRLHF": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "ihub-pub/plugins": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "lavalink-devs/Lavalink": {
+  "domain": "IRRELEVANT",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "micro/go-micro": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "ZhengyiLuo/AgentsDock": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "Vrun-design/openflowkit": {
+  "domain": "BOTH",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "nextflow-io/nextflow": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "JoeanAmier/XHS-Downloader": {
+  "domain": "IRRELEVANT",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "OpenDCAI/GameFactory-3A": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "helloianneo/ian-xiaohei-illustrations": {
+  "domain": "AI",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "salesforce/policy_sentry": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "apache/openwhisk": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "flexprice/flexprice": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "theNetworkChuck/paperclip-guide": {
+  "domain": "AI",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "genkit-ai/genkit": {
+  "domain": "AI",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "Edwardxlai/easyread": {
+  "domain": "AI",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "tinyhumansai/openhuman": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "google-deepmind/physics-IQ-benchmark": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "mingxian233/ContractGuard": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inHoldout": true,
+  "type": "developer-tool",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "purpleidea/mgmt": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "huggingface/aisheets": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "Permify/permify": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "latent-spaces/brag": {
+  "domain": "AI",
+  "category": "wrong",
+  "inHoldout": true,
+  "type": "ai",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "mastra-ai/mastra": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "lucidrains/x-unet": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "imgproxy/imgproxy": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "KKKKhazix/AIHOT": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "Dolibarr/dolibarr": {
+  "domain": "IRRELEVANT",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "localstack-samples/localstack-pro-samples": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "vdaas/vald": {
+  "domain": "BOTH",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "snowlyg/iris-admin": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "jev-chat/jev-chat-jarvis": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true,
+  "type": "ai",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "chaosblade-io/chaosblade": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "usememos/memos": {
+  "domain": "IRRELEVANT",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "jeinlee1991/chinese-llm-benchmark": {
+  "domain": "AI",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "stoatchat/stoatchat": {
+  "domain": "IRRELEVANT",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "algorithmicsuperintelligence/openevolve": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "linkedin/venice": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "mswjs/msw": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "codelion/pts": {
+  "domain": "AI",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "nodetool-ai/nodetool": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "chatboxai/chatbox": {
+  "domain": "AI",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "tmchow/illo-skill": {
+  "domain": "AI",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "JustVugg/lumabri": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "maildev/maildev": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "img2threejs/img2threejs": {
+  "domain": "AI",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "Gsync/jobsync": {
+  "domain": "AI",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "authelia/authelia": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "Abolfazlshahi/claude-capability-bridge-skill": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "NodeBB/NodeBB": {
+  "domain": "IRRELEVANT",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "tingaicompass/AI-Compass": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "hairyhenderson/gomplate": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "kcl-lang/kcl": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "MemPalace/mempalace": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "NPC-Worldwide/incognide": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "yusing/godoxy": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "gravitational/teleport": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "tswawa/WechatVibe": {
+  "domain": "AI",
+  "category": "ok",
+  "inHoldout": true
+ },
+ "community-scripts/ProxmoxVE": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inHoldout": true
+ },
+ "puppeteer/puppeteer": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inTuning": true
+ },
+ "harry0703/MoneyPrinterTurbo": {
+  "domain": "AI",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "browser-use/browser-use": {
+  "domain": "AI",
+  "category": "ok",
+  "inTuning": true
+ },
+ "lidge-ai/ima2-gen": {
+  "domain": "AI",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "frappe/frappe": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "traefik/traefik": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inTuning": true
+ },
+ "Rongronggg9/RSS-to-Telegram-Bot": {
+  "domain": "IRRELEVANT",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "ToolJet/ToolJet": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "apache/streampark": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "cadence-workflow/cadence": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inTuning": true
+ },
+ "voyage-ai/voyageai-python": {
+  "domain": "AI",
+  "category": "ok",
+  "inTuning": true
+ },
+ "e2b-dev/runtime": {
+  "domain": "AI",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "aaddrick/building-with-typesafe-jev": {
+  "domain": "AI",
+  "category": "ok",
+  "inTuning": true
+ },
+ "mindsdb/anton": {
+  "domain": "AI",
+  "category": "ok",
+  "inTuning": true
+ },
+ "six-nut/PocketMen-with-you": {
+  "domain": "AI",
+  "category": "ok",
+  "inTuning": true
+ },
+ "bencherdev/bencher": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inTuning": true
+ },
+ "axoviq-ai/synthadoc": {
+  "domain": "AI",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "baomidou/mybatis-plus": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inTuning": true
+ },
+ "madmorett/bullpane": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "ctripcorp/x-pipe": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inTuning": true
+ },
+ "zilliztech/vts": {
+  "domain": "AI",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "FlareSolverr/FlareSolverr": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "Zaious/jev-capability-atlas": {
+  "domain": "AI",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "biocypher/biocypher": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "intelligencedev/manifold": {
+  "domain": "AI",
+  "category": "ok",
+  "inTuning": true
+ },
+ "restatedev/restate": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inTuning": true
+ },
+ "bablosoft/playwright-with-fingerprints": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inTuning": true
+ },
+ "StarlightSearch/EmbedAnything": {
+  "domain": "AI",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "opendataloader-project/opendataloader-pdf": {
+  "domain": "AI",
+  "category": "ok",
+  "inTuning": true,
+  "type": "ai",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "akmamun/gin-boilerplate": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inTuning": true
+ },
+ "tianshiyeben/wgcloud": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inTuning": true
+ },
+ "liftbridge-io/liftbridge": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "akvorado/akvorado": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "netbootxyz/netboot.xyz": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "faust-streaming/faust": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inTuning": true
+ },
+ "qpoint-io/qtap": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "virgiliojr94/book-to-skill": {
+  "domain": "AI",
+  "category": "ok",
+  "inTuning": true
+ },
+ "spatie/laravel-backup": {
+  "domain": "ENGINEERING",
+  "category": "ok",
+  "inTuning": true
+ },
+ "PrismML-Eng/Bonsai-Image-Demo": {
+  "domain": "AI",
+  "category": "ok",
+  "inTuning": true
+ },
+ "midoks/mdserver-web": {
+  "domain": "ENGINEERING",
+  "category": "wrong",
+  "inTuning": true
+ },
+ "modular/modular": {
+  "domain": "AI",
+  "type": "ai",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "SYuan03/benchboard": {
+  "domain": "AI",
+  "type": "ai",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "langchain-ai/langsmith-sdk": {
+  "domain": "AI",
+  "type": "ai",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "Arjun544/flutter_init": {
+  "domain": "ENGINEERING",
+  "type": "developer-tool",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "zhbi98/pcb-layout-design": {
+  "domain": "AI",
+  "type": "ai",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "qufei1993/Nodejs-Roadmap": {
+  "domain": "IRRELEVANT",
+  "type": "educational",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "electerm/electerm": {
+  "domain": "ENGINEERING",
+  "type": "developer-tool",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "Jian-Lang/awesome-modality-missing-learning": {
+  "domain": "AI",
+  "type": "educational",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "Swayingleaves/novanova-studio": {
+  "domain": "AI",
+  "type": "ai",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "aaron-for-value/VeriRun": {
+  "domain": "AI",
+  "type": "ai",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "hatchet-dev/hatchet": {
+  "domain": "ENGINEERING",
+  "type": "infrastructure",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "GoogleChrome/lighthouse": {
+  "domain": "ENGINEERING",
+  "type": "developer-tool",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "ekzhang/openjev-sglang": {
+  "domain": "AI",
+  "type": "ai",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "mfaisalkhatri/selenium4poc": {
+  "domain": "IRRELEVANT",
+  "type": "educational",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "whyour/qinglong": {
+  "domain": "ENGINEERING",
+  "type": "infrastructure",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "jujunchen/Java-interview-question": {
+  "domain": "IRRELEVANT",
+  "type": "educational",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "kofiadeyemiq/headerscrub": {
+  "domain": "ENGINEERING",
+  "type": "security",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "itamae-kitchen/mitamae": {
+  "domain": "ENGINEERING",
+  "type": "infrastructure",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "roboflow/notebooks": {
+  "domain": "AI",
+  "type": "educational",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "xskgx/Lingvo-Word-Forge": {
+  "domain": "IRRELEVANT",
+  "type": "irrelevant",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "lukevella/rallly": {
+  "domain": "IRRELEVANT",
+  "type": "irrelevant",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "qax-os/excelize": {
+  "domain": "ENGINEERING",
+  "type": "missing-taxonomy",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "rjaros/kvision": {
+  "domain": "ENGINEERING",
+  "type": "missing-taxonomy",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "CookSleep/gpt_image_playground": {
+  "domain": "AI",
+  "type": "ai",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "rclement/mailer": {
+  "domain": "ENGINEERING",
+  "type": "infrastructure",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "worldbench/awesome-3d-4d-world-models": {
+  "domain": "AI",
+  "type": "educational",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "componentpoemruffle/Ghostfolio-Desktop-Self-Hosted-Dashboard": {
+  "domain": "IRRELEVANT",
+  "type": "irrelevant",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "MartinDelophy/ai-video-editor": {
+  "domain": "AI",
+  "type": "ai",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "EasonTuT/Awesome-Interactive-World-Model": {
+  "domain": "AI",
+  "type": "educational",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "VectifyAI/jev-doc-search": {
+  "domain": "AI",
+  "type": "ai",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "javascript-obfuscator/javascript-obfuscator": {
+  "domain": "ENGINEERING",
+  "type": "security",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "WebBreacher/WhatsMyName": {
+  "domain": "ENGINEERING",
+  "type": "security",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "MarketSquare/awesome-robotframework": {
+  "domain": "IRRELEVANT",
+  "type": "educational",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "PhilJay/MPAndroidChart": {
+  "domain": "ENGINEERING",
+  "type": "missing-taxonomy",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "Yinsongxu/LLM2Jev": {
+  "domain": "AI",
+  "type": "ai",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "tendermint/tendermint": {
+  "domain": "ENGINEERING",
+  "type": "infrastructure",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "IgniteUI/igniteui-cli": {
+  "domain": "ENGINEERING",
+  "type": "developer-tool",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "PolinniZhong/dsh-knit": {
+  "domain": "AI",
+  "type": "ai",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "akka/akka-management": {
+  "domain": "ENGINEERING",
+  "type": "infrastructure",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "Amal-David/awesome-jev": {
+  "domain": "AI",
+  "type": "educational",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "winglang/wing": {
+  "domain": "ENGINEERING",
+  "type": "language-runtime",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "ZeroLu/awesome-gpt-image": {
+  "domain": "AI",
+  "type": "educational",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "r-lib/roxygen2": {
+  "domain": "ENGINEERING",
+  "type": "developer-tool",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "tx7do/go-wind-admin": {
+  "domain": "ENGINEERING",
+  "type": "missing-taxonomy",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "hey-api/hey-api": {
+  "domain": "ENGINEERING",
+  "type": "developer-tool",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "nikolaydubina/go-recipes": {
+  "domain": "ENGINEERING",
+  "type": "educational",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "microsoft/ts-gyb": {
+  "domain": "ENGINEERING",
+  "type": "developer-tool",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "nocodb/nocodb": {
+  "domain": "ENGINEERING",
+  "type": "database",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "nMaas8388/github-ranking-audit": {
+  "domain": "ENGINEERING",
+  "type": "developer-tool",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "Aleph-Alpha/ts-rs": {
+  "domain": "ENGINEERING",
+  "type": "developer-tool",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "yolinc02-star/learn-by-teaching-lab": {
+  "domain": "IRRELEVANT",
+  "type": "educational",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "miquido/draive": {
+  "domain": "AI",
+  "type": "ai",
+  "inTax": true,
+  "inUnknownSample": true
+ },
+ "lissy93/dashy": {
+  "domain": "IRRELEVANT",
+  "type": "missing-taxonomy",
+  "inTax": false,
+  "inUnknownSample": true
+ },
+ "frostyard/nsl": {
+  "domain": "ENGINEERING",
+  "type": "developer-tool",
+  "inTax": true,
+  "inUnknownSample": true
+ }
+}

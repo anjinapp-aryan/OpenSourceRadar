@@ -182,10 +182,15 @@ export function selectDue<T extends { tier: TrackingStatus; nextRefreshAt: strin
   now: Date,
   order: readonly TrackingStatus[] = ['HOT', 'UNASSESSED', 'WARM', 'DORMANT'],
   tiebreak: (a: T, b: T) => number = () => 0,
+  graceHours = 0,
 ): T[] {
   const pos = (t: TrackingStatus) => order.indexOf(t);
+  // A repository is due `graceHours` early. Without it, a scheduled run that starts even a few minutes earlier in the day than
+  // the previous run finished skips every repository whose interval is exactly one run apart (HOT: 24 h), which then waits a
+  // whole extra run. Measured 2026-10-07: 240 of 241 HOT repositories were skipped because the run started 13-19 minutes early.
+  const horizon = now.getTime() + graceHours * 3_600_000;
   return records
-    .filter((r) => Date.parse(r.nextRefreshAt) <= now.getTime())
+    .filter((r) => Date.parse(r.nextRefreshAt) <= horizon)
     .sort((a, b) => pos(a.tier) - pos(b.tier) || Date.parse(a.nextRefreshAt) - Date.parse(b.nextRefreshAt) || tiebreak(a, b));
 }
 

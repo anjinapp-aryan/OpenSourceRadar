@@ -1101,6 +1101,11 @@ dd {
   color: var(--cooling);
   background: var(--cooling-bg);
 }
+.why-sub {
+  font-size: 1rem;
+  color: var(--text-2);
+  margin: var(--sp-md) 0 var(--sp-sm);
+}
 .traj {
   display: grid;
   gap: var(--sp-md);

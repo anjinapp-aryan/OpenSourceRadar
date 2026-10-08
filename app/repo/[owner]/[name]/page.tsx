@@ -110,7 +110,7 @@ export default async function RepoPage({ params }: { params: Promise<{ owner: st
       </section>
 
       <div className="section two-col">
-        <WhyPanel repo={repo} cfg={loadPatternConfig()} />
+        <WhyPanel repo={repo} cfg={loadPatternConfig()} gains={loadHistory()?.repositories[repo.id]?.g ?? null} />
 
         <section className="panel" aria-labelledby="sig">
           <h2 id="sig">Signals</h2>

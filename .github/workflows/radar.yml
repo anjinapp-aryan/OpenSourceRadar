@@ -162,6 +162,10 @@ jobs:
           if grep -rl 'localhost:3000' out; then echo "::error::localhost URL in build output"; exit 1; fi
           echo "Build output audit passed"
 
+      - name: Measure output size (monitoring only)
+        if: steps.pre.outputs.skip != 'true'
+        run: npm run --silent pipeline:size > .pipeline/size.json || true
+
       - name: Commit public dataset (Vercel deploys from main)
         id: commit
         if: steps.pre.outputs.skip != 'true' && env.DRY_RUN != 'true'

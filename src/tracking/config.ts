@@ -71,6 +71,7 @@ export function parseTrackingPolicy(raw: unknown): TrackingPolicy {
     },
     unassessed: { refreshHours: num(un, 'refreshHours', 'unassessed', 1) },
     dueOrder: parseDueOrder(raw.dueOrder),
+    dueGraceHours: raw.dueGraceHours === undefined ? 0 : num(raw, 'dueGraceHours', 'tracking', 0),
     hysteresis: {
       demoteFactor: factor,
       minDaysInTier: { hot: num(minDays, 'hot', 'minDaysInTier'), warm: num(minDays, 'warm', 'minDaysInTier'), dormant: num(minDays, 'dormant', 'minDaysInTier') },

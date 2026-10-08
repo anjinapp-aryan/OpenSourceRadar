@@ -78,3 +78,8 @@ Not measured: authenticated GraphQL metadata cost in a due run (Phase 2: cost 1 
 - `--domain` filters by top-level classification (AI / ENGINEERING / BOTH), which is a collection scope, not a tier input.
 - Due selection uses tracking state written by `npm run track`; if the tracked file is stale, so is the schedule. Re-run tracking after each collection.
 - Candidate metadata is only refreshed with a token (GraphQL); anonymous runs keep the search-time metadata and only correct star counts from complete histories.
+
+---
+
+## Phase 6.2 addendum: due grace
+Due selection now includes repositories whose `nextRefreshAt` falls within `dueGraceHours` (3) of the run start, so scheduling jitter does not skip a whole run. Evidence, replay and tests: [TRACKING.md](TRACKING.md) section "Phase 6.2 correction".

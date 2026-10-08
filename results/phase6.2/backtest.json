@@ -1,0 +1,2320 @@
+{
+ "newestDayAgreement": {
+  "productionRising": 37,
+  "backtestRisingNewestDayAll": 47,
+  "backtestRisingNewestDayPublished": 37,
+  "inBoth": 37,
+  "onlyProduction": [],
+  "onlyBacktest": [],
+  "backtestRisingWithheld": [
+   "awesome-selfhosted/awesome-selfhosted",
+   "browser-use/browser-use",
+   "datawhalechina/hello-agents",
+   "alirezarezvani/claude-skills",
+   "heygen-com/hyperframes",
+   "rohitg00/ai-engineering-from-scratch",
+   "virgiliojr94/book-to-skill",
+   "Ryze-AI-Adgent/open-seo-mcp-skills",
+   "tigerless-labs/agent-memory",
+   "yukitorido/short-video-generator-AI"
+  ]
+ },
+ "generatedFrom": {
+  "stateDir": "C:/Users/ANJINA~1/AppData/Local/Temp/claude/d--WORK-SPACE-OpenSourceRadar/577d3500-bb83-4df9-bca3-6707cc4d6f23/scratchpad/state7/data",
+  "radar": "data/public/radar.json",
+  "stateGeneratedAt": "2026-10-07T11:06:16.816Z",
+  "radarGeneratedAt": "2026-10-07T11:06:23.110Z",
+  "asOfDate": "2026-10-07",
+  "daysBacktested": 91,
+  "firstDate": "2026-07-09",
+  "lastDate": "2026-10-07"
+ },
+ "validation": {
+  "comparedWithPublished": 3471,
+  "mismatches": 0,
+  "examples": []
+ },
+ "leakageAudit": {
+  "samples": 2939,
+  "mismatches": 0,
+  "examples": [],
+  "method": "everything after T replaced by random values, present-day stars kept consistent; snapshot at T must be identical"
+ },
+ "coverage": {
+  "gridDays": 91,
+  "publishedRecords": 3471,
+  "coveredByDate": [
+   {
+    "date": "2026-09-28",
+    "covered": 3702
+   },
+   {
+    "date": "2026-09-29",
+    "covered": 3701
+   },
+   {
+    "date": "2026-09-30",
+    "covered": 3666
+   },
+   {
+    "date": "2026-10-01",
+    "covered": 3671
+   },
+   {
+    "date": "2026-10-02",
+    "covered": 3655
+   },
+   {
+    "date": "2026-10-03",
+    "covered": 3655
+   },
+   {
+    "date": "2026-10-04",
+    "covered": 2656
+   },
+   {
+    "date": "2026-10-05",
+    "covered": 2647
+   },
+   {
+    "date": "2026-10-06",
+    "covered": 1953
+   },
+   {
+    "date": "2026-10-07",
+    "covered": 110
+   }
+  ]
+ },
+ "historyAudit": {
+  "asOfDate": "2026-10-07",
+  "all": {
+   "records": 3958,
+   "length": {
+    "p10": 31,
+    "p25": 205,
+    "p50": 206,
+    "p75": 207,
+    "p90": 210,
+    "max": 210,
+    "min": 3
+   },
+   "percentAtLeast": {
+    "d7": 99.9,
+    "d30": 92.6,
+    "d90": 83.7,
+    "d180": 78.3,
+    "d210": 20.8
+   },
+   "qualityStates": {
+    "FULL": 955,
+    "LONG": 3003,
+    "ADEQUATE": 0,
+    "LIMITED": 0,
+    "INSUFFICIENT": 0,
+    "GAPPED": 0,
+    "INVALID": 0
+   },
+   "zeroValueDayShare": 42.5,
+   "allZeroSeries": 10,
+   "recentOnlyHistory": 0,
+   "lastDates": [
+    [
+     "2026-09-25",
+     137
+    ],
+    [
+     "2026-09-26",
+     94
+    ],
+    [
+     "2026-09-27",
+     4
+    ],
+    [
+     "2026-09-28",
+     5
+    ],
+    [
+     "2026-09-29",
+     42
+    ],
+    [
+     "2026-10-01",
+     20
+    ],
+    [
+     "2026-10-03",
+     1000
+    ],
+    [
+     "2026-10-04",
+     9
+    ],
+    [
+     "2026-10-05",
+     694
+    ],
+    [
+     "2026-10-06",
+     1843
+    ],
+    [
+     "2026-10-07",
+     110
+    ]
+   ],
+   "firstDates": {
+    "earliest": "2026-03-01",
+    "latest": "2026-10-04"
+   }
+  },
+  "published": {
+   "records": 3471,
+   "length": {
+    "p10": 31,
+    "p25": 205,
+    "p50": 206,
+    "p75": 206,
+    "p90": 210,
+    "max": 210,
+    "min": 3
+   },
+   "percentAtLeast": {
+    "d7": 100,
+    "d30": 92.2,
+    "d90": 85.8,
+    "d180": 80.2,
+    "d210": 18.9
+   },
+   "qualityStates": {
+    "FULL": 776,
+    "LONG": 2695,
+    "ADEQUATE": 0,
+    "LIMITED": 0,
+    "INSUFFICIENT": 0,
+    "GAPPED": 0,
+    "INVALID": 0
+   },
+   "zeroValueDayShare": 43,
+   "allZeroSeries": 8,
+   "recentOnlyHistory": 0,
+   "lastDates": [
+    [
+     "2026-10-03",
+     825
+    ],
+    [
+     "2026-10-05",
+     694
+    ],
+    [
+     "2026-10-06",
+     1842
+    ],
+    [
+     "2026-10-07",
+     110
+    ]
+   ],
+   "firstDates": {
+    "earliest": "2026-03-08",
+    "latest": "2026-10-04"
+   }
+  },
+  "aiScope": {
+   "records": 1735,
+   "length": {
+    "p10": 23,
+    "p25": 105,
+    "p50": 206,
+    "p75": 206,
+    "p90": 210,
+    "max": 210,
+    "min": 3
+   },
+   "percentAtLeast": {
+    "d7": 99.9,
+    "d30": 86.5,
+    "d90": 76.4,
+    "d180": 66.6,
+    "d210": 15.8
+   },
+   "qualityStates": {
+    "FULL": 659,
+    "LONG": 1076,
+    "ADEQUATE": 0,
+    "LIMITED": 0,
+    "INSUFFICIENT": 0,
+    "GAPPED": 0,
+    "INVALID": 0
+   },
+   "zeroValueDayShare": 30.8,
+   "allZeroSeries": 0,
+   "recentOnlyHistory": 0,
+   "lastDates": [
+    [
+     "2026-10-03",
+     425
+    ],
+    [
+     "2026-10-05",
+     393
+    ],
+    [
+     "2026-10-06",
+     839
+    ],
+    [
+     "2026-10-07",
+     78
+    ]
+   ],
+   "firstDates": {
+    "earliest": "2026-03-08",
+    "latest": "2026-10-04"
+   }
+  }
+ },
+ "backtest": {
+  "risingSetSizeByDate": [
+   {
+    "date": "2026-07-10",
+    "covered": 3312,
+    "size": 64
+   },
+   {
+    "date": "2026-07-11",
+    "covered": 3314,
+    "size": 65
+   },
+   {
+    "date": "2026-07-12",
+    "covered": 3314,
+    "size": 65
+   },
+   {
+    "date": "2026-07-13",
+    "covered": 3317,
+    "size": 63
+   },
+   {
+    "date": "2026-07-14",
+    "covered": 3321,
+    "size": 62
+   },
+   {
+    "date": "2026-07-15",
+    "covered": 3324,
+    "size": 54
+   },
+   {
+    "date": "2026-07-16",
+    "covered": 3326,
+    "size": 51
+   },
+   {
+    "date": "2026-07-17",
+    "covered": 3328,
+    "size": 53
+   },
+   {
+    "date": "2026-07-18",
+    "covered": 3328,
+    "size": 52
+   },
+   {
+    "date": "2026-07-19",
+    "covered": 3329,
+    "size": 52
+   },
+   {
+    "date": "2026-07-20",
+    "covered": 3331,
+    "size": 51
+   },
+   {
+    "date": "2026-07-21",
+    "covered": 3332,
+    "size": 56
+   },
+   {
+    "date": "2026-07-22",
+    "covered": 3332,
+    "size": 56
+   },
+   {
+    "date": "2026-07-23",
+    "covered": 3334,
+    "size": 57
+   },
+   {
+    "date": "2026-07-24",
+    "covered": 3336,
+    "size": 59
+   },
+   {
+    "date": "2026-07-25",
+    "covered": 3337,
+    "size": 60
+   },
+   {
+    "date": "2026-07-26",
+    "covered": 3340,
+    "size": 60
+   },
+   {
+    "date": "2026-07-27",
+    "covered": 3342,
+    "size": 63
+   },
+   {
+    "date": "2026-07-28",
+    "covered": 3344,
+    "size": 64
+   },
+   {
+    "date": "2026-07-29",
+    "covered": 3347,
+    "size": 64
+   },
+   {
+    "date": "2026-07-30",
+    "covered": 3347,
+    "size": 59
+   },
+   {
+    "date": "2026-07-31",
+    "covered": 3350,
+    "size": 61
+   },
+   {
+    "date": "2026-08-01",
+    "covered": 3354,
+    "size": 67
+   },
+   {
+    "date": "2026-08-02",
+    "covered": 3354,
+    "size": 67
+   },
+   {
+    "date": "2026-08-03",
+    "covered": 3356,
+    "size": 67
+   },
+   {
+    "date": "2026-08-04",
+    "covered": 3358,
+    "size": 66
+   },
+   {
+    "date": "2026-08-05",
+    "covered": 3359,
+    "size": 65
+   },
+   {
+    "date": "2026-08-06",
+    "covered": 3362,
+    "size": 65
+   },
+   {
+    "date": "2026-08-07",
+    "covered": 3368,
+    "size": 65
+   },
+   {
+    "date": "2026-08-08",
+    "covered": 3369,
+    "size": 63
+   },
+   {
+    "date": "2026-08-09",
+    "covered": 3373,
+    "size": 62
+   },
+   {
+    "date": "2026-08-10",
+    "covered": 3375,
+    "size": 62
+   },
+   {
+    "date": "2026-08-11",
+    "covered": 3376,
+    "size": 62
+   },
+   {
+    "date": "2026-08-12",
+    "covered": 3380,
+    "size": 66
+   },
+   {
+    "date": "2026-08-13",
+    "covered": 3388,
+    "size": 62
+   },
+   {
+    "date": "2026-08-14",
+    "covered": 3389,
+    "size": 59
+   },
+   {
+    "date": "2026-08-15",
+    "covered": 3390,
+    "size": 59
+   },
+   {
+    "date": "2026-08-16",
+    "covered": 3391,
+    "size": 60
+   },
+   {
+    "date": "2026-08-17",
+    "covered": 3394,
+    "size": 62
+   },
+   {
+    "date": "2026-08-18",
+    "covered": 3397,
+    "size": 61
+   },
+   {
+    "date": "2026-08-19",
+    "covered": 3397,
+    "size": 62
+   },
+   {
+    "date": "2026-08-20",
+    "covered": 3399,
+    "size": 64
+   },
+   {
+    "date": "2026-08-21",
+    "covered": 3401,
+    "size": 65
+   },
+   {
+    "date": "2026-08-22",
+    "covered": 3404,
+    "size": 64
+   },
+   {
+    "date": "2026-08-23",
+    "covered": 3406,
+    "size": 63
+   },
+   {
+    "date": "2026-08-24",
+    "covered": 3413,
+    "size": 69
+   },
+   {
+    "date": "2026-08-25",
+    "covered": 3418,
+    "size": 70
+   },
+   {
+    "date": "2026-08-26",
+    "covered": 3422,
+    "size": 73
+   },
+   {
+    "date": "2026-08-27",
+    "covered": 3441,
+    "size": 73
+   },
+   {
+    "date": "2026-08-28",
+    "covered": 3451,
+    "size": 67
+   },
+   {
+    "date": "2026-08-29",
+    "covered": 3465,
+    "size": 68
+   },
+   {
+    "date": "2026-08-30",
+    "covered": 3478,
+    "size": 72
+   },
+   {
+    "date": "2026-08-31",
+    "covered": 3495,
+    "size": 73
+   },
+   {
+    "date": "2026-09-01",
+    "covered": 3509,
+    "size": 75
+   },
+   {
+    "date": "2026-09-02",
+    "covered": 3521,
+    "size": 74
+   },
+   {
+    "date": "2026-09-03",
+    "covered": 3529,
+    "size": 74
+   },
+   {
+    "date": "2026-09-04",
+    "covered": 3539,
+    "size": 70
+   },
+   {
+    "date": "2026-09-05",
+    "covered": 3552,
+    "size": 64
+   },
+   {
+    "date": "2026-09-06",
+    "covered": 3569,
+    "size": 61
+   },
+   {
+    "date": "2026-09-07",
+    "covered": 3584,
+    "size": 65
+   },
+   {
+    "date": "2026-09-08",
+    "covered": 3603,
+    "size": 66
+   },
+   {
+    "date": "2026-09-09",
+    "covered": 3611,
+    "size": 69
+   },
+   {
+    "date": "2026-09-10",
+    "covered": 3642,
+    "size": 71
+   },
+   {
+    "date": "2026-09-11",
+    "covered": 3665,
+    "size": 69
+   },
+   {
+    "date": "2026-09-12",
+    "covered": 3677,
+    "size": 71
+   },
+   {
+    "date": "2026-09-13",
+    "covered": 3688,
+    "size": 74
+   },
+   {
+    "date": "2026-09-14",
+    "covered": 3707,
+    "size": 74
+   },
+   {
+    "date": "2026-09-15",
+    "covered": 3718,
+    "size": 78
+   },
+   {
+    "date": "2026-09-16",
+    "covered": 3737,
+    "size": 81
+   },
+   {
+    "date": "2026-09-17",
+    "covered": 3759,
+    "size": 75
+   },
+   {
+    "date": "2026-09-18",
+    "covered": 3776,
+    "size": 74
+   },
+   {
+    "date": "2026-09-19",
+    "covered": 3789,
+    "size": 69
+   },
+   {
+    "date": "2026-09-20",
+    "covered": 3804,
+    "size": 66
+   },
+   {
+    "date": "2026-09-21",
+    "covered": 3846,
+    "size": 66
+   },
+   {
+    "date": "2026-09-22",
+    "covered": 3862,
+    "size": 66
+   },
+   {
+    "date": "2026-09-23",
+    "covered": 3877,
+    "size": 62
+   },
+   {
+    "date": "2026-09-24",
+    "covered": 3892,
+    "size": 57
+   },
+   {
+    "date": "2026-09-25",
+    "covered": 3910,
+    "size": 52
+   },
+   {
+    "date": "2026-09-26",
+    "covered": 3781,
+    "size": 45
+   },
+   {
+    "date": "2026-09-27",
+    "covered": 3698,
+    "size": 46
+   },
+   {
+    "date": "2026-09-28",
+    "covered": 3702,
+    "size": 47
+   },
+   {
+    "date": "2026-09-29",
+    "covered": 3701,
+    "size": 47
+   },
+   {
+    "date": "2026-09-30",
+    "covered": 3666,
+    "size": 43
+   },
+   {
+    "date": "2026-10-01",
+    "covered": 3671,
+    "size": 50
+   },
+   {
+    "date": "2026-10-02",
+    "covered": 3655,
+    "size": 49
+   },
+   {
+    "date": "2026-10-03",
+    "covered": 3655,
+    "size": 47
+   },
+   {
+    "date": "2026-10-04",
+    "covered": 2656,
+    "size": 46
+   },
+   {
+    "date": "2026-10-05",
+    "covered": 2647,
+    "size": 43
+   },
+   {
+    "date": "2026-10-06",
+    "covered": 1953,
+    "size": 37
+   }
+  ],
+  "churn": {
+   "days": 89,
+   "basis": "records covered on both days",
+   "meanEntered": 3.7,
+   "meanExited": 3.9,
+   "meanJaccard": 0.8829,
+   "minSize": 37,
+   "maxSize": 81
+  },
+  "repositoriesEverRising": 241,
+  "repositoriesEverRisingPublishedNow": 202,
+  "episodes": {
+   "total": 397,
+   "closed": 291,
+   "ongoing": 47,
+   "leftCensored": 64,
+   "closedDurationMean": 10.9,
+   "closedDurationMedian": 8,
+   "closedDurationP90": 23,
+   "longestStreak": 90
+  },
+  "shortClosedEpisodes": {
+   "atMost3Days": 55,
+   "atMost7Days": 135
+  },
+  "durationBuckets": {
+   "closedDays": {
+    "1-6": 104,
+    "7-14": 114,
+    "15-30": 57,
+    "31-60": 15,
+    "61+": 1
+   },
+   "ongoingDaysSoFar": {
+    "1-6": 20,
+    "7-14": 13,
+    "15-30": 3,
+    "31-60": 2,
+    "61+": 9
+   },
+   "leftCensoredDaysSoFar": {
+    "1-6": 21,
+    "7-14": 15,
+    "15-30": 9,
+    "31-60": 5,
+    "61+": 14
+   },
+   "note": "closed = started and ended inside the window; ongoing and left-censored episodes are lower bounds"
+  },
+  "risingExit": {
+   "within1Day": {
+    "exits": 229,
+    "cooling": 66,
+    "steady": 163,
+    "rising": 0,
+    "notCovered": 0
+   },
+   "anyCoolingWithin14Days": {
+    "exits": 229,
+    "coolingAtSomePoint": 153
+   }
+  },
+  "durationByEntryPattern": {
+   "SUSTAINED_GROWTH": {
+    "closed": 99,
+    "median": 8,
+    "mean": 12.7,
+    "shareAtMost7Days": 48.5
+   },
+   "ACCELERATING": {
+    "closed": 82,
+    "median": 8,
+    "mean": 9.8,
+    "shareAtMost7Days": 48.8
+   },
+   "SPIKE": {
+    "closed": 58,
+    "median": 9,
+    "mean": 10.4,
+    "shareAtMost7Days": 32.8
+   },
+   "NEW_LAUNCH": {
+    "closed": 46,
+    "median": 7,
+    "mean": 9.5,
+    "shareAtMost7Days": 58.7
+   },
+   "BREAKOUT": {
+    "closed": 6,
+    "median": 16,
+    "mean": 14.5,
+    "shareAtMost7Days": 16.7
+   }
+  },
+  "churnExcludedDates": [
+   "2026-10-07"
+  ],
+  "entryPatternOfEpisodes": {
+   "ACCELERATING": 103,
+   "BREAKOUT": 11,
+   "SPIKE": 73,
+   "SUSTAINED_GROWTH": 147,
+   "NEW_LAUNCH": 63
+  },
+  "repeatedEntries": {
+   "twoOrMoreEpisodes": 88,
+   "threeOrMore": 38
+  },
+  "risingDaysDistribution": {
+   "p25": 7,
+   "p50": 13,
+   "p75": 27,
+   "p90": 70,
+   "max": 90
+  },
+  "risingDaysByPattern": {
+   "ACCELERATING": 1405,
+   "BREAKOUT": 120,
+   "SUSTAINED_GROWTH": 2866,
+   "SPIKE": 761,
+   "NEW_LAUNCH": 451
+  },
+  "patternDays": {
+   "NORMAL_GROWTH": 218119,
+   "FLAT": 46280,
+   "ACCELERATING": 7145,
+   "SPIKE": 2924,
+   "BREAKOUT": 373,
+   "COOLING": 10270,
+   "SUSTAINED_GROWTH": 10177,
+   "NEW_LAUNCH": 15800,
+   "INSUFFICIENT_HISTORY": 1
+  },
+  "patternPersistence": {
+   "NORMAL_GROWTH": {
+    "runs": 8411,
+    "median": 11,
+    "p90": 89,
+    "mean": 25.1
+   },
+   "FLAT": {
+    "runs": 4602,
+    "median": 5,
+    "p90": 24,
+    "mean": 10.1
+   },
+   "ACCELERATING": {
+    "runs": 1541,
+    "median": 4,
+    "p90": 9,
+    "mean": 4.6
+   },
+   "SPIKE": {
+    "runs": 492,
+    "median": 6,
+    "p90": 9,
+    "mean": 5.9
+   },
+   "BREAKOUT": {
+    "runs": 258,
+    "median": 1,
+    "p90": 3,
+    "mean": 1.4
+   },
+   "COOLING": {
+    "runs": 1198,
+    "median": 5,
+    "p90": 22,
+    "mean": 8.5
+   },
+   "SUSTAINED_GROWTH": {
+    "runs": 858,
+    "median": 6,
+    "p90": 30,
+    "mean": 11.9
+   },
+   "NEW_LAUNCH": {
+    "runs": 703,
+    "median": 25,
+    "p90": 30,
+    "mean": 22.3
+   },
+   "INSUFFICIENT_HISTORY": {
+    "runs": 1,
+    "median": 1,
+    "p90": 1,
+    "mean": 1
+   }
+  },
+  "topTransitions": {
+   "NORMAL_GROWTH>FLAT": 4104,
+   "FLAT>NORMAL_GROWTH": 3967,
+   "ACCELERATING>NORMAL_GROWTH": 856,
+   "NORMAL_GROWTH>ACCELERATING": 795,
+   "NORMAL_GROWTH>COOLING": 764,
+   "COOLING>NORMAL_GROWTH": 730,
+   "ACCELERATING>SUSTAINED_GROWTH": 394,
+   "SUSTAINED_GROWTH>COOLING": 312,
+   "SUSTAINED_GROWTH>ACCELERATING": 292,
+   "NORMAL_GROWTH>SPIKE": 238,
+   "COOLING>SUSTAINED_GROWTH": 223,
+   "SPIKE>ACCELERATING": 211,
+   "SUSTAINED_GROWTH>NORMAL_GROWTH": 176,
+   "NEW_LAUNCH>NORMAL_GROWTH": 176,
+   "BREAKOUT>ACCELERATING": 149,
+   "SPIKE>BREAKOUT": 132,
+   "ACCELERATING>SPIKE": 126,
+   "SPIKE>NORMAL_GROWTH": 116,
+   "NORMAL_GROWTH>SUSTAINED_GROWTH": 100,
+   "ACCELERATING>BREAKOUT": 99,
+   "BREAKOUT>SPIKE": 75,
+   "BREAKOUT>NORMAL_GROWTH": 32,
+   "NEW_LAUNCH>FLAT": 29,
+   "NEW_LAUNCH>SUSTAINED_GROWTH": 20,
+   "NEW_LAUNCH>SPIKE": 20
+  },
+  "followUps": {
+   "BREAKOUT": {
+    "starts": 220,
+    "horizonDays": 14,
+    "outcomes": {
+     "COOLING/COOLING": 96,
+     "NORMAL_GROWTH/STEADY": 65,
+     "ACCELERATING/STEADY": 15,
+     "SUSTAINED_GROWTH/RISING": 15,
+     "SUSTAINED_GROWTH/STEADY": 11,
+     "ACCELERATING/RISING": 8,
+     "not covered": 6,
+     "BREAKOUT/STEADY": 2,
+     "SPIKE/RISING": 2
+    }
+   },
+   "SPIKE": {
+    "starts": 418,
+    "horizonDays": 14,
+    "outcomes": {
+     "NORMAL_GROWTH/STEADY": 161,
+     "COOLING/COOLING": 133,
+     "ACCELERATING/STEADY": 31,
+     "SUSTAINED_GROWTH/RISING": 24,
+     "ACCELERATING/RISING": 21,
+     "SUSTAINED_GROWTH/STEADY": 15,
+     "not covered": 12,
+     "SPIKE/RISING": 6,
+     "FLAT/STEADY": 4,
+     "BREAKOUT/STEADY": 4,
+     "BREAKOUT/RISING": 3,
+     "SPIKE/STEADY": 3,
+     "FLAT/COOLING": 1
+    }
+   },
+   "ACCELERATING": {
+    "starts": 1309,
+    "horizonDays": 14,
+    "outcomes": {
+     "NORMAL_GROWTH/STEADY": 516,
+     "COOLING/COOLING": 335,
+     "ACCELERATING/STEADY": 137,
+     "SUSTAINED_GROWTH/STEADY": 123,
+     "SUSTAINED_GROWTH/RISING": 76,
+     "not covered": 45,
+     "ACCELERATING/RISING": 41,
+     "SPIKE/RISING": 18,
+     "SPIKE/STEADY": 7,
+     "BREAKOUT/STEADY": 6,
+     "BREAKOUT/RISING": 5
+    }
+   },
+   "NEW_LAUNCH": {
+    "starts": 274,
+    "horizonDays": 30,
+    "outcomes": {
+     "NORMAL_GROWTH/STEADY": 133,
+     "not covered": 89,
+     "FLAT/STEADY": 22,
+     "SPIKE/STEADY": 9,
+     "SUSTAINED_GROWTH/RISING": 8,
+     "SUSTAINED_GROWTH/STEADY": 8,
+     "SPIKE/RISING": 5
+    }
+   },
+   "SPIKE30": {
+    "starts": 333,
+    "horizonDays": 30,
+    "outcomes": {
+     "COOLING/COOLING": 146,
+     "NORMAL_GROWTH/STEADY": 138,
+     "not covered": 13,
+     "ACCELERATING/STEADY": 9,
+     "SUSTAINED_GROWTH/RISING": 7,
+     "SPIKE/STEADY": 5,
+     "SUSTAINED_GROWTH/STEADY": 5,
+     "FLAT/STEADY": 4,
+     "ACCELERATING/RISING": 4,
+     "SPIKE/RISING": 2
+    }
+   },
+   "BREAKOUT30": {
+    "starts": 181,
+    "horizonDays": 30,
+    "outcomes": {
+     "COOLING/COOLING": 81,
+     "NORMAL_GROWTH/STEADY": 61,
+     "not covered": 10,
+     "SUSTAINED_GROWTH/STEADY": 7,
+     "ACCELERATING/STEADY": 6,
+     "ACCELERATING/RISING": 6,
+     "SUSTAINED_GROWTH/RISING": 5,
+     "SPIKE/STEADY": 3,
+     "SPIKE/RISING": 2
+    }
+   }
+  },
+  "longestEpisodes": [
+   {
+    "fullName": "firecrawl/firecrawl",
+    "days": 90,
+    "start": "2026-07-09",
+    "end": "2026-10-06",
+    "ongoing": true,
+    "leftCensored": true
+   },
+   {
+    "fullName": "D4Vinci/Scrapling",
+    "days": 90,
+    "start": "2026-07-09",
+    "end": "2026-10-06",
+    "ongoing": true,
+    "leftCensored": true
+   },
+   {
+    "fullName": "stablyai/orca",
+    "days": 90,
+    "start": "2026-07-09",
+    "end": "2026-10-06",
+    "ongoing": true,
+    "leftCensored": true
+   },
+   {
+    "fullName": "NousResearch/hermes-agent",
+    "days": 89,
+    "start": "2026-07-09",
+    "end": "2026-10-05",
+    "ongoing": false,
+    "leftCensored": true
+   },
+   {
+    "fullName": "can1357/oh-my-pi",
+    "days": 89,
+    "start": "2026-07-09",
+    "end": "2026-10-05",
+    "ongoing": false,
+    "leftCensored": true
+   },
+   {
+    "fullName": "affaan-m/ECC",
+    "days": 88,
+    "start": "2026-07-11",
+    "end": "2026-10-06",
+    "ongoing": true,
+    "leftCensored": false
+   },
+   {
+    "fullName": "farion1231/cc-switch",
+    "days": 87,
+    "start": "2026-07-12",
+    "end": "2026-10-06",
+    "ongoing": true,
+    "leftCensored": false
+   },
+   {
+    "fullName": "rtk-ai/rtk",
+    "days": 82,
+    "start": "2026-07-09",
+    "end": "2026-09-28",
+    "ongoing": false,
+    "leftCensored": true
+   },
+   {
+    "fullName": "diegosouzapw/OmniRoute",
+    "days": 81,
+    "start": "2026-07-09",
+    "end": "2026-09-27",
+    "ongoing": false,
+    "leftCensored": true
+   },
+   {
+    "fullName": "herdrdev/herdr",
+    "days": 80,
+    "start": "2026-07-09",
+    "end": "2026-09-26",
+    "ongoing": false,
+    "leftCensored": true
+   },
+   {
+    "fullName": "awesome-selfhosted/awesome-selfhosted",
+    "days": 79,
+    "start": "2026-07-09",
+    "end": "2026-09-25",
+    "ongoing": true,
+    "leftCensored": true
+   },
+   {
+    "fullName": "datawhalechina/hello-agents",
+    "days": 79,
+    "start": "2026-07-09",
+    "end": "2026-09-25",
+    "ongoing": true,
+    "leftCensored": true
+   },
+   {
+    "fullName": "blader/humanizer",
+    "days": 79,
+    "start": "2026-07-09",
+    "end": "2026-09-25",
+    "ongoing": false,
+    "leftCensored": true
+   },
+   {
+    "fullName": "heygen-com/hyperframes",
+    "days": 77,
+    "start": "2026-07-11",
+    "end": "2026-09-25",
+    "ongoing": true,
+    "leftCensored": false
+   },
+   {
+    "fullName": "tt-a1i/archify",
+    "days": 74,
+    "start": "2026-07-09",
+    "end": "2026-09-20",
+    "ongoing": false,
+    "leftCensored": true
+   }
+  ],
+  "mostRepeated": [
+   {
+    "fullName": "floci-io/floci",
+    "episodes": 6,
+    "risingDays": 57
+   },
+   {
+    "fullName": "calesthio/OpenMontage",
+    "episodes": 6,
+    "risingDays": 45
+   },
+   {
+    "fullName": "open-webui/open-webui",
+    "episodes": 5,
+    "risingDays": 65
+   },
+   {
+    "fullName": "headroomlabs-ai/headroom",
+    "episodes": 5,
+    "risingDays": 47
+   },
+   {
+    "fullName": "Panniantong/Agent-Reach",
+    "episodes": 5,
+    "risingDays": 59
+   },
+   {
+    "fullName": "JCodesMore/ai-website-cloner-template",
+    "episodes": 5,
+    "risingDays": 23
+   },
+   {
+    "fullName": "Vincentwei1021/video-shotcraft",
+    "episodes": 5,
+    "risingDays": 54
+   },
+   {
+    "fullName": "sherlock-project/sherlock",
+    "episodes": 4,
+    "risingDays": 24
+   },
+   {
+    "fullName": "Asabeneh/30-Days-Of-Python",
+    "episodes": 4,
+    "risingDays": 24
+   },
+   {
+    "fullName": "microsoft/ai-agents-for-beginners",
+    "episodes": 4,
+    "risingDays": 26
+   }
+  ],
+  "currentRising": [
+   {
+    "fullName": "morluto/rea",
+    "published": true,
+    "score": 78.4,
+    "pattern": "SPIKE",
+    "historyQuality": "FULL",
+    "historyDays": 178,
+    "risingDaysLast30": 3,
+    "risingDaysLastN": 3,
+    "currentStreak": 3,
+    "longestStreak": 3,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 12,
+     "capped": true
+    },
+    "accelerationDays": {
+     "days": 5,
+     "capped": false
+    },
+    "currentToMedianRatio": 664
+   },
+   {
+    "fullName": "mvschwarz/openrig",
+    "published": true,
+    "score": 76.8,
+    "pattern": "SPIKE",
+    "historyQuality": "FULL",
+    "historyDays": 192,
+    "risingDaysLast30": 9,
+    "risingDaysLastN": 9,
+    "currentStreak": 9,
+    "longestStreak": 9,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 5,
+     "capped": false
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": {
+     "days": 7,
+     "capped": false
+    },
+    "currentToMedianRatio": 1389
+   },
+   {
+    "fullName": "Panniantong/Agent-Reach",
+    "published": true,
+    "score": 74.5,
+    "pattern": "ACCELERATING",
+    "historyQuality": "LONG",
+    "historyDays": 206,
+    "risingDaysLast30": 26,
+    "risingDaysLastN": 59,
+    "currentStreak": 7,
+    "longestStreak": 19,
+    "episodes": 5,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 1,
+     "capped": false
+    },
+    "accelerationDays": {
+     "days": 5,
+     "capped": false
+    },
+    "currentToMedianRatio": 2.23
+   },
+   {
+    "fullName": "FalkorDB/FalkorDB",
+    "published": true,
+    "score": 73.2,
+    "pattern": "SPIKE",
+    "historyQuality": "LONG",
+    "historyDays": 206,
+    "risingDaysLast30": 2,
+    "risingDaysLastN": 2,
+    "currentStreak": 2,
+    "longestStreak": 2,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 8,
+     "capped": false
+    },
+    "accelerationDays": {
+     "days": 6,
+     "capped": false
+    },
+    "currentToMedianRatio": 11.24
+   },
+   {
+    "fullName": "tigerless-labs/agent-memory",
+    "published": false,
+    "score": 70,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "FULL",
+    "historyDays": 36,
+    "risingDaysLast30": 7,
+    "risingDaysLastN": 7,
+    "currentStreak": 7,
+    "longestStreak": 7,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 5,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": {
+     "days": 2,
+     "capped": true
+    },
+    "currentToMedianRatio": 2.92
+   },
+   {
+    "fullName": "thedotmack/claude-mem",
+    "published": true,
+    "score": 68.7,
+    "pattern": "SPIKE",
+    "historyQuality": "LONG",
+    "historyDays": 206,
+    "risingDaysLast30": 4,
+    "risingDaysLastN": 65,
+    "currentStreak": 4,
+    "longestStreak": 61,
+    "episodes": 2,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 3,
+     "capped": false
+    },
+    "accelerationDays": {
+     "days": 4,
+     "capped": false
+    },
+    "currentToMedianRatio": 2.52
+   },
+   {
+    "fullName": "t8y2/dbx",
+    "published": true,
+    "score": 68.5,
+    "pattern": "ACCELERATING",
+    "historyQuality": "FULL",
+    "historyDays": 164,
+    "risingDaysLast30": 26,
+    "risingDaysLastN": 80,
+    "currentStreak": 10,
+    "longestStreak": 47,
+    "episodes": 4,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": {
+     "days": 8,
+     "capped": false
+    },
+    "currentToMedianRatio": 2.43
+   },
+   {
+    "fullName": "earthtojake/text-to-cad",
+    "published": true,
+    "score": 65.9,
+    "pattern": "ACCELERATING",
+    "historyQuality": "FULL",
+    "historyDays": 171,
+    "risingDaysLast30": 12,
+    "risingDaysLastN": 30,
+    "currentStreak": 2,
+    "longestStreak": 18,
+    "episodes": 3,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 2,
+     "capped": false
+    },
+    "accelerationDays": {
+     "days": 2,
+     "capped": false
+    },
+    "currentToMedianRatio": 2.98
+   },
+   {
+    "fullName": "alirezarezvani/claude-skills",
+    "published": false,
+    "score": 64.9,
+    "pattern": "ACCELERATING",
+    "historyQuality": "LONG",
+    "historyDays": 204,
+    "risingDaysLast30": 5,
+    "risingDaysLastN": 13,
+    "currentStreak": 5,
+    "longestStreak": 8,
+    "episodes": 2,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": {
+     "days": 8,
+     "capped": false
+    },
+    "currentToMedianRatio": 2.12
+   },
+   {
+    "fullName": "irinabuht12-oss/google-ads-meta-ads-mcp",
+    "published": true,
+    "score": 64.6,
+    "pattern": "ACCELERATING",
+    "historyQuality": "FULL",
+    "historyDays": 185,
+    "risingDaysLast30": 11,
+    "risingDaysLastN": 11,
+    "currentStreak": 11,
+    "longestStreak": 11,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": {
+     "days": 14,
+     "capped": false
+    },
+    "currentToMedianRatio": 79.14
+   },
+   {
+    "fullName": "DietrichGebert/ponytail",
+    "published": true,
+    "score": 63.4,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "FULL",
+    "historyDays": 122,
+    "risingDaysLast30": 20,
+    "risingDaysLastN": 66,
+    "currentStreak": 6,
+    "longestStreak": 52,
+    "episodes": 3,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 1.62
+   },
+   {
+    "fullName": "calesthio/OpenMontage",
+    "published": true,
+    "score": 63.3,
+    "pattern": "ACCELERATING",
+    "historyQuality": "FULL",
+    "historyDays": 192,
+    "risingDaysLast30": 16,
+    "risingDaysLastN": 45,
+    "currentStreak": 5,
+    "longestStreak": 16,
+    "episodes": 6,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": {
+     "days": 2,
+     "capped": false
+    },
+    "currentToMedianRatio": 1.28
+   },
+   {
+    "fullName": "vectorize-io/hindsight",
+    "published": true,
+    "score": 63.1,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "LONG",
+    "historyDays": 206,
+    "risingDaysLast30": 21,
+    "risingDaysLastN": 42,
+    "currentStreak": 16,
+    "longestStreak": 24,
+    "episodes": 3,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 5.55
+   },
+   {
+    "fullName": "VectifyAI/PageIndex",
+    "published": true,
+    "score": 63,
+    "pattern": "ACCELERATING",
+    "historyQuality": "LONG",
+    "historyDays": 206,
+    "risingDaysLast30": 8,
+    "risingDaysLastN": 8,
+    "currentStreak": 8,
+    "longestStreak": 8,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": {
+     "days": 9,
+     "capped": false
+    },
+    "currentToMedianRatio": 7.49
+   },
+   {
+    "fullName": "stablyai/orca",
+    "published": true,
+    "score": 62.6,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "FULL",
+    "historyDays": 206,
+    "risingDaysLast30": 29,
+    "risingDaysLastN": 90,
+    "currentStreak": 90,
+    "longestStreak": 90,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 0.81
+   },
+   {
+    "fullName": "rehan-remade/universal-modder",
+    "published": true,
+    "score": 61.9,
+    "pattern": "NEW_LAUNCH",
+    "historyQuality": "FULL",
+    "historyDays": 10,
+    "risingDaysLast30": 7,
+    "risingDaysLastN": 7,
+    "currentStreak": 7,
+    "longestStreak": 7,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 1,
+     "capped": true
+    },
+    "quietWeeksBefore": null,
+    "accelerationDays": null,
+    "currentToMedianRatio": null
+   },
+   {
+    "fullName": "TencentCloud/Octop",
+    "published": true,
+    "score": 61.4,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "FULL",
+    "historyDays": 94,
+    "risingDaysLast30": 22,
+    "risingDaysLastN": 22,
+    "currentStreak": 22,
+    "longestStreak": 22,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 7.98
+   },
+   {
+    "fullName": "Louis-CFM/coucou",
+    "published": true,
+    "score": 61.4,
+    "pattern": "NEW_LAUNCH",
+    "historyQuality": "FULL",
+    "historyDays": 10,
+    "risingDaysLast30": 7,
+    "risingDaysLastN": 7,
+    "currentStreak": 7,
+    "longestStreak": 7,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 1,
+     "capped": true
+    },
+    "quietWeeksBefore": null,
+    "accelerationDays": null,
+    "currentToMedianRatio": null
+   },
+   {
+    "fullName": "mksglu/context-mode",
+    "published": true,
+    "score": 60.8,
+    "pattern": "ACCELERATING",
+    "historyQuality": "LONG",
+    "historyDays": 206,
+    "risingDaysLast30": 22,
+    "risingDaysLastN": 22,
+    "currentStreak": 6,
+    "longestStreak": 16,
+    "episodes": 2,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 1,
+     "capped": false
+    },
+    "accelerationDays": {
+     "days": 4,
+     "capped": false
+    },
+    "currentToMedianRatio": 5.27
+   },
+   {
+    "fullName": "diegosouzapw/OmniRoute",
+    "published": true,
+    "score": 59.9,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "LONG",
+    "historyDays": 206,
+    "risingDaysLast30": 28,
+    "risingDaysLastN": 89,
+    "currentStreak": 8,
+    "longestStreak": 81,
+    "episodes": 2,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 0.45
+   },
+   {
+    "fullName": "tigerless-labs/cost-xray",
+    "published": true,
+    "score": 59.9,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "FULL",
+    "historyDays": 129,
+    "risingDaysLast30": 10,
+    "risingDaysLastN": 10,
+    "currentStreak": 10,
+    "longestStreak": 10,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 11.66
+   },
+   {
+    "fullName": "heygen-com/hyperframes",
+    "published": false,
+    "score": 59.6,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "FULL",
+    "historyDays": 202,
+    "risingDaysLast30": 18,
+    "risingDaysLastN": 77,
+    "currentStreak": 77,
+    "longestStreak": 77,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 1.12
+   },
+   {
+    "fullName": "QingYunA/answer-me-with-html",
+    "published": true,
+    "score": 59.5,
+    "pattern": "NEW_LAUNCH",
+    "historyQuality": "FULL",
+    "historyDays": 10,
+    "risingDaysLast30": 3,
+    "risingDaysLastN": 3,
+    "currentStreak": 3,
+    "longestStreak": 3,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 1,
+     "capped": true
+    },
+    "quietWeeksBefore": null,
+    "accelerationDays": null,
+    "currentToMedianRatio": null
+   },
+   {
+    "fullName": "yetone/magpie",
+    "published": true,
+    "score": 59.3,
+    "pattern": "NEW_LAUNCH",
+    "historyQuality": "FULL",
+    "historyDays": 17,
+    "risingDaysLast30": 13,
+    "risingDaysLastN": 13,
+    "currentStreak": 13,
+    "longestStreak": 13,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 2,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": null
+   },
+   {
+    "fullName": "feder-cr/dots",
+    "published": true,
+    "score": 59.3,
+    "pattern": "NEW_LAUNCH",
+    "historyQuality": "FULL",
+    "historyDays": 10,
+    "risingDaysLast30": 7,
+    "risingDaysLastN": 7,
+    "currentStreak": 7,
+    "longestStreak": 7,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 1,
+     "capped": true
+    },
+    "quietWeeksBefore": null,
+    "accelerationDays": null,
+    "currentToMedianRatio": null
+   },
+   {
+    "fullName": "affaan-m/ECC",
+    "published": true,
+    "score": 59.1,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "LONG",
+    "historyDays": 206,
+    "risingDaysLast30": 29,
+    "risingDaysLastN": 89,
+    "currentStreak": 88,
+    "longestStreak": 88,
+    "episodes": 2,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 1.56
+   },
+   {
+    "fullName": "virgiliojr94/book-to-skill",
+    "published": false,
+    "score": 59,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "FULL",
+    "historyDays": 153,
+    "risingDaysLast30": 10,
+    "risingDaysLastN": 55,
+    "currentStreak": 4,
+    "longestStreak": 44,
+    "episodes": 4,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 0.68
+   },
+   {
+    "fullName": "herdrdev/herdr",
+    "published": true,
+    "score": 58.4,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "FULL",
+    "historyDays": 199,
+    "risingDaysLast30": 28,
+    "risingDaysLastN": 89,
+    "currentStreak": 9,
+    "longestStreak": 80,
+    "episodes": 2,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 0.46
+   },
+   {
+    "fullName": "rohitg00/ai-engineering-from-scratch",
+    "published": false,
+    "score": 58.1,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "FULL",
+    "historyDays": 195,
+    "risingDaysLast30": 10,
+    "risingDaysLastN": 44,
+    "currentStreak": 2,
+    "longestStreak": 23,
+    "episodes": 3,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 1.76
+   },
+   {
+    "fullName": "nanaism/yomiyasu",
+    "published": true,
+    "score": 57.9,
+    "pattern": "NEW_LAUNCH",
+    "historyQuality": "FULL",
+    "historyDays": 10,
+    "risingDaysLast30": 6,
+    "risingDaysLastN": 6,
+    "currentStreak": 6,
+    "longestStreak": 6,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 1,
+     "capped": true
+    },
+    "quietWeeksBefore": null,
+    "accelerationDays": null,
+    "currentToMedianRatio": null
+   },
+   {
+    "fullName": "Ebony-Vinyl/dsh-our-free-model",
+    "published": true,
+    "score": 57.7,
+    "pattern": "NEW_LAUNCH",
+    "historyQuality": "FULL",
+    "historyDays": 17,
+    "risingDaysLast30": 3,
+    "risingDaysLastN": 3,
+    "currentStreak": 3,
+    "longestStreak": 3,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 2,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 1,
+     "capped": true
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": null
+   },
+   {
+    "fullName": "NVIDIA/SkillSpector",
+    "published": true,
+    "score": 57.6,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "FULL",
+    "historyDays": 206,
+    "risingDaysLast30": 18,
+    "risingDaysLastN": 24,
+    "currentStreak": 6,
+    "longestStreak": 11,
+    "episodes": 3,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 1.78
+   },
+   {
+    "fullName": "edenfunf/reelmimic",
+    "published": true,
+    "score": 57.4,
+    "pattern": "NEW_LAUNCH",
+    "historyQuality": "FULL",
+    "historyDays": 10,
+    "risingDaysLast30": 6,
+    "risingDaysLastN": 6,
+    "currentStreak": 6,
+    "longestStreak": 6,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 1,
+     "capped": true
+    },
+    "quietWeeksBefore": null,
+    "accelerationDays": null,
+    "currentToMedianRatio": null
+   },
+   {
+    "fullName": "firecrawl/firecrawl",
+    "published": true,
+    "score": 56.9,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "LONG",
+    "historyDays": 206,
+    "risingDaysLast30": 29,
+    "risingDaysLastN": 90,
+    "currentStreak": 90,
+    "longestStreak": 90,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 0.73
+   },
+   {
+    "fullName": "Graphify-Labs/graphify",
+    "published": true,
+    "score": 56.8,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "FULL",
+    "historyDays": 192,
+    "risingDaysLast30": 29,
+    "risingDaysLastN": 81,
+    "currentStreak": 49,
+    "longestStreak": 49,
+    "episodes": 2,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 0.63
+   },
+   {
+    "fullName": "D4Vinci/Scrapling",
+    "published": true,
+    "score": 56.5,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "LONG",
+    "historyDays": 206,
+    "risingDaysLast30": 29,
+    "risingDaysLastN": 90,
+    "currentStreak": 90,
+    "longestStreak": 90,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 0.98
+   },
+   {
+    "fullName": "usestrix/strix",
+    "published": true,
+    "score": 56.5,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "LONG",
+    "historyDays": 206,
+    "risingDaysLast30": 21,
+    "risingDaysLastN": 58,
+    "currentStreak": 21,
+    "longestStreak": 28,
+    "episodes": 3,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 0.61
+   },
+   {
+    "fullName": "Ryze-AI-Adgent/open-seo-mcp-skills",
+    "published": false,
+    "score": 56.5,
+    "pattern": "NEW_LAUNCH",
+    "historyQuality": "FULL",
+    "historyDays": 36,
+    "risingDaysLast30": 3,
+    "risingDaysLastN": 3,
+    "currentStreak": 3,
+    "longestStreak": 3,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 5,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 2,
+     "capped": false
+    },
+    "accelerationDays": {
+     "days": 2,
+     "capped": true
+    },
+    "currentToMedianRatio": 4.14
+   },
+   {
+    "fullName": "JuliusBrussee/caveman",
+    "published": true,
+    "score": 56.3,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "FULL",
+    "historyDays": 192,
+    "risingDaysLast30": 29,
+    "risingDaysLastN": 79,
+    "currentStreak": 61,
+    "longestStreak": 61,
+    "episodes": 4,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 0.98
+   },
+   {
+    "fullName": "farion1231/cc-switch",
+    "published": true,
+    "score": 56.2,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "LONG",
+    "historyDays": 206,
+    "risingDaysLast30": 29,
+    "risingDaysLastN": 87,
+    "currentStreak": 87,
+    "longestStreak": 87,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 0.81
+   },
+   {
+    "fullName": "datawhalechina/hello-agents",
+    "published": false,
+    "score": 55.2,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "LONG",
+    "historyDays": 209,
+    "risingDaysLast30": 18,
+    "risingDaysLastN": 79,
+    "currentStreak": 79,
+    "longestStreak": 79,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 0.63
+   },
+   {
+    "fullName": "yukitorido/short-video-generator-AI",
+    "published": false,
+    "score": 55,
+    "pattern": "NEW_LAUNCH",
+    "historyQuality": "FULL",
+    "historyDays": 9,
+    "risingDaysLast30": 4,
+    "risingDaysLastN": 4,
+    "currentStreak": 4,
+    "longestStreak": 4,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 1,
+     "capped": true
+    },
+    "quietWeeksBefore": null,
+    "accelerationDays": null,
+    "currentToMedianRatio": null
+   },
+   {
+    "fullName": "Imbad0202/academic-research-skills",
+    "published": true,
+    "score": 54.8,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "LONG",
+    "historyDays": 206,
+    "risingDaysLast30": 20,
+    "risingDaysLastN": 75,
+    "currentStreak": 1,
+    "longestStreak": 72,
+    "episodes": 3,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 0.69
+   },
+   {
+    "fullName": "StayLameBro/backburner",
+    "published": true,
+    "score": 54.8,
+    "pattern": "NEW_LAUNCH",
+    "historyQuality": "FULL",
+    "historyDays": 10,
+    "risingDaysLast30": 1,
+    "risingDaysLastN": 1,
+    "currentStreak": 1,
+    "longestStreak": 1,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 1,
+     "capped": true
+    },
+    "quietWeeksBefore": null,
+    "accelerationDays": null,
+    "currentToMedianRatio": null
+   },
+   {
+    "fullName": "ComposioHQ/awesome-claude-skills",
+    "published": true,
+    "score": 54.4,
+    "pattern": "ACCELERATING",
+    "historyQuality": "LONG",
+    "historyDays": 206,
+    "risingDaysLast30": 6,
+    "risingDaysLastN": 28,
+    "currentStreak": 6,
+    "longestStreak": 12,
+    "episodes": 4,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": {
+     "days": 6,
+     "capped": false
+    },
+    "currentToMedianRatio": 1.33
+   },
+   {
+    "fullName": "browser-use/browser-use",
+    "published": false,
+    "score": 53.4,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "LONG",
+    "historyDays": 209,
+    "risingDaysLast30": 18,
+    "risingDaysLastN": 75,
+    "currentStreak": 53,
+    "longestStreak": 53,
+    "episodes": 2,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 0.93
+   },
+   {
+    "fullName": "awesome-selfhosted/awesome-selfhosted",
+    "published": false,
+    "score": 51.1,
+    "pattern": "SUSTAINED_GROWTH",
+    "historyQuality": "LONG",
+    "historyDays": 209,
+    "risingDaysLast30": 18,
+    "risingDaysLastN": 79,
+    "currentStreak": 79,
+    "longestStreak": 79,
+    "episodes": 1,
+    "positiveWeeks": {
+     "weeks": 13,
+     "capped": true
+    },
+    "quietWeeksBefore": {
+     "weeks": 0,
+     "capped": false
+    },
+    "accelerationDays": null,
+    "currentToMedianRatio": 0.86
+   }
+  ]
+ },
+ "runtimeSeconds": 168
+}

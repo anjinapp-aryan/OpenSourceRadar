@@ -26,7 +26,8 @@
     "pipeline:summary": "tsx scripts/pipeline/index.ts summary",
     "pipeline:verify": "tsx scripts/pipeline/index.ts verify",
     "dev": "next dev",
-    "build": "next build"
+    "build": "next build",
+    "pipeline:size": "tsx scripts/pipeline/index.ts size"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

@@ -1,0 +1,6407 @@
+{
+ "generatedAt": "2026-10-08T02:49:22.741Z",
+ "discoveryGeneratedAt": "2026-10-05T10:52:54.464Z",
+ "queries": {
+  "total": 99,
+  "pushed": 66,
+  "fresh": 33,
+  "limitPerQuery": 100
+ },
+ "orphans": 351,
+ "archivedOutsideCandidates": 0,
+ "churnBetweenSnapshots": {
+  "oldGeneratedAt": "2026-09-25T02:27:35.669Z",
+  "newGeneratedAt": "2026-10-05T10:52:54.464Z",
+  "old": 4397,
+  "new": 4490,
+  "kept": 3937,
+  "dropped": 460,
+  "added": 553,
+  "orphansInOldSnapshot": 336
+ },
+ "reasons": {
+  "ARCHIVED": 0,
+  "TOPIC_MISMATCH": 2,
+  "BELOW_STAR_FLOOR": 3,
+  "PUSH_WINDOW": 234,
+  "RANK_CUTOFF": 65,
+  "SEARCH_MISS": 47
+ },
+ "outcomes": {
+  "RECOVERABLE": 39,
+  "DISCOVERY_GAP": 300,
+  "RECLASSIFY": 4,
+  "ARCHIVED": 0,
+  "FORK": 0,
+  "NOT_FOUND": 8,
+  "UNKNOWN": 0
+ },
+ "classificationOfOrphans": {
+  "ENGINEERING": 126,
+  "AI": 193,
+  "UNKNOWN": 4,
+  "BOTH": 28
+ },
+ "live": {
+  "checked": 351,
+  "status": {
+   "200": 343,
+   "404": 8
+  },
+  "renamed": [
+   "0xSero/omarchy-local-ai -> sybil-solutions/omarchy-local-ai",
+   "zermello/turing-ai-agent -> slyyr/yappr"
+  ]
+ },
+ "sample": {
+  "requested": 30,
+  "completed": 15,
+  "archived": 0,
+  "forks": 0,
+  "notFound": 0,
+  "reasonChangedWithCurrentData": 0,
+  "reasonsNow": {
+   "PUSH_WINDOW": 10,
+   "SEARCH_MISS": 2,
+   "RANK_CUTOFF": 3
+  },
+  "starGrowthSinceLastCollection": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   1,
+   2,
+   2,
+   5,
+   7,
+   45,
+   338
+  ]
+ },
+ "topByStars": [
+  {
+   "fullName": "swisskyrepo/PayloadsAllTheThings",
+   "stars": 81179,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP"
+  },
+  {
+   "fullName": "glanceapp/glance",
+   "stars": 37197,
+   "reason": "SEARCH_MISS",
+   "bestRank": 30,
+   "classification": "UNKNOWN",
+   "outcome": "RECLASSIFY"
+  },
+  {
+   "fullName": "ItzCrazyKns/Vane",
+   "stars": 36907,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "classification": "UNKNOWN",
+   "outcome": "RECLASSIFY"
+  },
+  {
+   "fullName": "mukul975/Anthropic-Cybersecurity-Skills",
+   "stars": 33762,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP"
+  },
+  {
+   "fullName": "alirezarezvani/claude-skills",
+   "stars": 27544,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP"
+  },
+  {
+   "fullName": "air-verse/air",
+   "stars": 24016,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "classification": "UNKNOWN",
+   "outcome": "RECLASSIFY"
+  },
+  {
+   "fullName": "neondatabase/neon",
+   "stars": 23157,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP"
+  },
+  {
+   "fullName": "winfunc/opcode",
+   "stars": 22416,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP"
+  },
+  {
+   "fullName": "testing-library/react-testing-library",
+   "stars": 19657,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP"
+  },
+  {
+   "fullName": "arthurspk/guiadevbrasil",
+   "stars": 15795,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP"
+  },
+  {
+   "fullName": "tonhowtf/omniget",
+   "stars": 14348,
+   "reason": "SEARCH_MISS",
+   "bestRank": 3,
+   "classification": "AI",
+   "outcome": "NOT_FOUND"
+  },
+  {
+   "fullName": "datawhalechina/llm-universe",
+   "stars": 14042,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP"
+  },
+  {
+   "fullName": "simular-ai/Agent-S",
+   "stars": 12529,
+   "reason": "SEARCH_MISS",
+   "bestRank": 10,
+   "classification": "AI",
+   "outcome": "RECOVERABLE"
+  },
+  {
+   "fullName": "dhamaniasad/awesome-postgres",
+   "stars": 12104,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP"
+  },
+  {
+   "fullName": "speechbrain/speechbrain",
+   "stars": 11841,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP"
+  },
+  {
+   "fullName": "EmbraceAGI/awesome-chatgpt-zh",
+   "stars": 11727,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP"
+  },
+  {
+   "fullName": "apache/jmeter",
+   "stars": 9551,
+   "reason": "SEARCH_MISS",
+   "bestRank": 100,
+   "classification": "ENGINEERING",
+   "outcome": "RECOVERABLE"
+  },
+  {
+   "fullName": "modelscope/modelscope",
+   "stars": 9163,
+   "reason": "SEARCH_MISS",
+   "bestRank": 99,
+   "classification": "AI",
+   "outcome": "RECOVERABLE"
+  },
+  {
+   "fullName": "pyro-ppl/pyro",
+   "stars": 9062,
+   "reason": "SEARCH_MISS",
+   "bestRank": 99,
+   "classification": "AI",
+   "outcome": "RECOVERABLE"
+  },
+  {
+   "fullName": "lazyprogrammer/machine_learning_examples",
+   "stars": 8925,
+   "reason": "SEARCH_MISS",
+   "bestRank": 99,
+   "classification": "AI",
+   "outcome": "RECOVERABLE"
+  },
+  {
+   "fullName": "porsager/postgres",
+   "stars": 8731,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP"
+  },
+  {
+   "fullName": "Project-MONAI/MONAI",
+   "stars": 8709,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP"
+  },
+  {
+   "fullName": "netease-youdao/EmotiVoice",
+   "stars": 8531,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP"
+  },
+  {
+   "fullName": "smallnest/rpcx",
+   "stars": 8320,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP"
+  },
+  {
+   "fullName": "ducaale/xh",
+   "stars": 8113,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP"
+  }
+ ],
+ "rows": [
+  {
+   "id": "589349",
+   "fullName": "fluentmigrator/fluentmigrator",
+   "stars": 3515,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "688352",
+   "fullName": "apache/jmeter",
+   "stars": 9551,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 100,
+   "detail": "would rank 100 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1507818",
+   "fullName": "tapjs/tapjs",
+   "stars": 2426,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "9267870",
+   "fullName": "jaredwray/cacheable",
+   "stars": 2008,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "9396682",
+   "fullName": "spring-guides/gs-rest-service",
+   "stars": 1479,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "15988336",
+   "fullName": "stormzhang/ai-coding-guide",
+   "stars": 1900,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "18035587",
+   "fullName": "oldratlee/land",
+   "stars": 160,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 84,
+   "detail": "would rank 84 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "22489033",
+   "fullName": "lazyprogrammer/machine_learning_examples",
+   "stars": 8925,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": false,
+   "reason": "SEARCH_MISS",
+   "bestRank": 99,
+   "detail": "would rank 99 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "22660515",
+   "fullName": "doctest/doctest",
+   "stars": 6871,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "25857175",
+   "fullName": "ligurio/awesome-ci",
+   "stars": 4148,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "26747350",
+   "fullName": "looplab/eventhorizon",
+   "stars": 1679,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "30449699",
+   "fullName": "dwyl/learn-aws-lambda",
+   "stars": 1047,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 7,
+   "detail": "would rank 7 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "32944108",
+   "fullName": "alibaba/java-dns-cache-manipulator",
+   "stars": 968,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "40072159",
+   "fullName": "dhamaniasad/awesome-postgres",
+   "stars": 12104,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "44871793",
+   "fullName": "dariusz-wozniak/List-of-Testing-Tools-and-Frameworks-for-.NET",
+   "stars": 590,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "49878403",
+   "fullName": "zendesk/ruby-kafka",
+   "stars": 1281,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "50359688",
+   "fullName": "bakwc/PySyncObj",
+   "stars": 757,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "51149628",
+   "fullName": "pwicherski/TestowanieOprogramowania",
+   "stars": 199,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "52690290",
+   "fullName": "dmacvicar/terraform-provider-libvirt",
+   "stars": 1894,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "59101986",
+   "fullName": "smallnest/rpcx",
+   "stars": 8320,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "59224410",
+   "fullName": "zarusz/SlimMessageBus",
+   "stars": 656,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "60114041",
+   "fullName": "jeboehm/docker-mailserver",
+   "stars": 472,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 100,
+   "detail": "would rank 100 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "60978152",
+   "fullName": "terraform-docs/terraform-docs",
+   "stars": 4828,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "62952366",
+   "fullName": "monitoringartist/grafana-aws-cloudwatch-dashboards",
+   "stars": 2270,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "63519226",
+   "fullName": "mmhelloworld/idris-jvm",
+   "stars": 482,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "65566602",
+   "fullName": "goq/telegram-list",
+   "stars": 4980,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "66410587",
+   "fullName": "nytimes/drone-gke",
+   "stars": 165,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "71220757",
+   "fullName": "swisskyrepo/PayloadsAllTheThings",
+   "stars": 81179,
+   "lastCollected": "2026-09-25",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "77599673",
+   "fullName": "php-enqueue/enqueue-dev",
+   "stars": 2220,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "94506832",
+   "fullName": "pyro-ppl/pyro",
+   "stars": 9062,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 99,
+   "detail": "would rank 99 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "95368512",
+   "fullName": "hashicorp/terraform-provider-helm",
+   "stars": 1076,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "96329711",
+   "fullName": "weyoss/redis-smq",
+   "stars": 670,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "96905440",
+   "fullName": "opentracing-contrib/java-spring-cloud",
+   "stars": 399,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 73,
+   "detail": "would rank 73 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "97773427",
+   "fullName": "architect/architect",
+   "stars": 2625,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "98119127",
+   "fullName": "openfaas/faas-netes",
+   "stars": 2172,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "103748731",
+   "fullName": "Mongey/terraform-provider-kafka",
+   "stars": 617,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "106634419",
+   "fullName": "murraco/spring-boot-jwt",
+   "stars": 1690,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "106704041",
+   "fullName": "air-verse/air",
+   "stars": 24016,
+   "lastCollected": "2026-09-25",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "UNKNOWN",
+   "outcome": "RECLASSIFY",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "107796025",
+   "fullName": "TommyLemon/APIAuto",
+   "stars": 2225,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "112409981",
+   "fullName": "apache/caldera",
+   "stars": 7289,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "114097016",
+   "fullName": "codeforequity-at/botium-core",
+   "stars": 251,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 60,
+   "detail": "would rank 60 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "125863507",
+   "fullName": "testing-library/react-testing-library",
+   "stars": 19657,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "131296014",
+   "fullName": "spring-guides/tut-spring-boot-kotlin",
+   "stars": 977,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "136146618",
+   "fullName": "jongpie/NebulaLogger",
+   "stars": 969,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 1 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "158656889",
+   "fullName": "openmessaging/dledger",
+   "stars": 830,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "161202327",
+   "fullName": "flaviuse/mern-authentication",
+   "stars": 508,
+   "lastCollected": "2026-09-28",
+   "inOldSnapshot": false,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "165652505",
+   "fullName": "Kludex/mangum",
+   "stars": 2139,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "167336393",
+   "fullName": "dibo-software/diboot",
+   "stars": 1607,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null,
+    "isArchived": false,
+    "isFork": false
+   },
+   "sampled": {
+    "status": 200,
+    "archived": false,
+    "fork": false,
+    "starsNow": 1606,
+    "pushedNow": "2026-09-02T07:05:10Z",
+    "currentName": "dibo-software/diboot",
+    "reasonNow": "PUSH_WINDOW"
+   }
+  },
+  {
+   "id": "173437670",
+   "fullName": "go-jet/jet",
+   "stars": 3810,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "181142665",
+   "fullName": "Calabonga/Microservice-Template",
+   "stars": 287,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "188584527",
+   "fullName": "lonePatient/awesome-pretrained-chinese-nlp-models",
+   "stars": 5593,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "202523140",
+   "fullName": "alexellis/k3sup",
+   "stars": 7433,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "214485001",
+   "fullName": "Project-MONAI/MONAI",
+   "stars": 8709,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 1 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "223498871",
+   "fullName": "porsager/postgres",
+   "stars": 8731,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "230802881",
+   "fullName": "SpaiR/imgui-java",
+   "stars": 822,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "259710503",
+   "fullName": "speechbrain/speechbrain",
+   "stars": 11841,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "261871717",
+   "fullName": "ThreeDotsLabs/wild-workouts-go-ddd-example",
+   "stars": 6462,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "276572087",
+   "fullName": "wimdeblauwe/error-handling-spring-boot-starter",
+   "stars": 512,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "294521053",
+   "fullName": "ducaale/xh",
+   "stars": 8113,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "295875994",
+   "fullName": "aws-observability/aws-otel-collector",
+   "stars": 752,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "316752534",
+   "fullName": "jreleaser/jreleaser",
+   "stars": 1239,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "336983059",
+   "fullName": "turkraft/springfilter",
+   "stars": 289,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "340292699",
+   "fullName": "cosen1024/Java-Interview",
+   "stars": 2683,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "340965344",
+   "fullName": "kube-green/kube-green",
+   "stars": 1380,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "351806852",
+   "fullName": "neondatabase/neon",
+   "stars": 23157,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "355253165",
+   "fullName": "slok/sloth",
+   "stars": 2553,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "375935360",
+   "fullName": "ChristianLempa/boilerplates",
+   "stars": 7981,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "384944403",
+   "fullName": "exaco/laravel-docktane",
+   "stars": 942,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "396064459",
+   "fullName": "zeromicro/zero-contrib",
+   "stars": 216,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 79,
+   "detail": "would rank 79 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "417600655",
+   "fullName": "arthurspk/guiadevbrasil",
+   "stars": 15795,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "417930556",
+   "fullName": "mkuf/prind",
+   "stars": 513,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 100,
+   "detail": "would rank 100 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "419589898",
+   "fullName": "donbarbos/telegram-bot-template",
+   "stars": 476,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "422442997",
+   "fullName": "redis/redis-om-spring",
+   "stars": 655,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "458740474",
+   "fullName": "odigos-io/opentelemetry-go-instrumentation",
+   "stars": 298,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "481930455",
+   "fullName": "arextest/arex-agent-java",
+   "stars": 569,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "482225540",
+   "fullName": "busser/tfautomv",
+   "stars": 898,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "483840331",
+   "fullName": "stephenafamo/bob",
+   "stars": 1785,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "511133045",
+   "fullName": "itwanger/paicoding",
+   "stars": 3184,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "517552648",
+   "fullName": "modelscope/modelscope",
+   "stars": 9163,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 99,
+   "detail": "would rank 99 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "518169634",
+   "fullName": "indeedeng/iwf",
+   "stars": 662,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "528073285",
+   "fullName": "NVIDIA/nim-anywhere",
+   "stars": 280,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "532778554",
+   "fullName": "joel-jeremy/emissary",
+   "stars": 109,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null,
+    "isArchived": false,
+    "isFork": false
+   },
+   "sampled": {
+    "status": 200,
+    "archived": false,
+    "fork": false,
+    "starsNow": 109,
+    "pushedNow": "2026-09-02T16:55:26Z",
+    "currentName": "joel-jeremy/emissary",
+    "reasonNow": "PUSH_WINDOW"
+   }
+  },
+  {
+   "id": "533254904",
+   "fullName": "arthurspk/guiadecybersecurity",
+   "stars": 2460,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "534755927",
+   "fullName": "dotnet/dev-proxy",
+   "stars": 832,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 65,
+   "detail": "would rank 65 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "540357453",
+   "fullName": "candle-org/MindAct",
+   "stars": 920,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "576882508",
+   "fullName": "krud-dev/ostara",
+   "stars": 342,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 78,
+   "detail": "would rank 78 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "605938979",
+   "fullName": "JDRaftKeeper/RaftKeeper",
+   "stars": 154,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "609485484",
+   "fullName": "denyspoltorak/metapatterns",
+   "stars": 1054,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "616751895",
+   "fullName": "EmbraceAGI/awesome-chatgpt-zh",
+   "stars": 11727,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "626117554",
+   "fullName": "mrwadams/stride-gpt",
+   "stars": 1138,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": false,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 102,
+   "detail": "matches 4 query(ies) but ranks 102 by stars in the best one (only the top 100 are returned)",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "635810127",
+   "fullName": "nacos-group/r-nacos",
+   "stars": 1590,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "638610448",
+   "fullName": "PetroIvaniuk/llms-tools",
+   "stars": 328,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 40,
+   "detail": "would rank 40 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "646267873",
+   "fullName": "WisdomSky/Cloudflared-web",
+   "stars": 466,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 100,
+   "detail": "would rank 100 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "662717361",
+   "fullName": "aws-samples/amazon-bedrock-samples",
+   "stars": 1515,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "664145835",
+   "fullName": "Karine-Huang/T2I-CompBench",
+   "stars": 346,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "669704171",
+   "fullName": "GaryYufei/AlignLLMHumanSurvey",
+   "stars": 738,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 102,
+   "detail": "matches 1 query(ies) but ranks 102 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "673277480",
+   "fullName": "ChenHsing/Awesome-Video-Diffusion-Models",
+   "stars": 2320,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "676377723",
+   "fullName": "NotHarshhaa/DevOps-Projects",
+   "stars": 5309,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "676793232",
+   "fullName": "hitsz-ids/synthetic-data-generator",
+   "stars": 2439,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "679395781",
+   "fullName": "s0rg/decompose",
+   "stars": 142,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "685102574",
+   "fullName": "evolutionary-architecture/evolutionary-architecture-by-example",
+   "stars": 3532,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "686364338",
+   "fullName": "jofizcd/Soul-of-Waifu",
+   "stars": 1348,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "698622866",
+   "fullName": "kyegomez/swarms-pytorch",
+   "stars": 156,
+   "lastCollected": "2026-09-28",
+   "inOldSnapshot": false,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 2 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "711550638",
+   "fullName": "datawhalechina/llm-universe",
+   "stars": 14042,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "713507196",
+   "fullName": "mbzuai-oryx/groundingLMM",
+   "stars": 970,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 16,
+   "detail": "would rank 16 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "714008096",
+   "fullName": "Curated-Awesome-Lists/awesome-ai-music-generation",
+   "stars": 498,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "715417018",
+   "fullName": "Anil-matcha/vox-ai-motion-graphics-generator",
+   "stars": 232,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "716023793",
+   "fullName": "netease-youdao/EmotiVoice",
+   "stars": 8531,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "716445208",
+   "fullName": "opsre/WatchAlert",
+   "stars": 951,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 3 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "721250099",
+   "fullName": "DeepInsight-AI/DeepBI",
+   "stars": 2382,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null,
+    "isArchived": false,
+    "isFork": false
+   },
+   "sampled": {
+    "status": 200,
+    "archived": false,
+    "fork": false,
+    "starsNow": 2383,
+    "pushedNow": "2026-08-28T09:37:42Z",
+    "currentName": "DeepInsight-AI/DeepBI",
+    "reasonNow": "PUSH_WINDOW"
+   }
+  },
+  {
+   "id": "738067810",
+   "fullName": "mvrahden/go-test",
+   "stars": 128,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 2 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "742696594",
+   "fullName": "kyegomez/MambaTransformer",
+   "stars": 229,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 90,
+   "detail": "would rank 90 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "747333129",
+   "fullName": "ServerlessLLM/ServerlessLLM",
+   "stars": 715,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "750371625",
+   "fullName": "mongodb-developer/GenAI-Showcase",
+   "stars": 4264,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "755804236",
+   "fullName": "HanaokaYuzu/Gemini-API",
+   "stars": 3538,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "765001096",
+   "fullName": "Mobile-Artificial-Intelligence/llama_sdk",
+   "stars": 120,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 102,
+   "detail": "matches 2 query(ies) but ranks 102 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "768316677",
+   "fullName": "awslabs/genai-bedrock-agent-chatbot",
+   "stars": 131,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 95,
+   "detail": "would rank 95 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "BOTH",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "768746040",
+   "fullName": "sspsec/Scan-Spring-GO",
+   "stars": 307,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "773093836",
+   "fullName": "NovaSearch-Team/RAG-Retrieval",
+   "stars": 1131,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "784181462",
+   "fullName": "ItzCrazyKns/Vane",
+   "stars": 36907,
+   "lastCollected": "2026-09-25",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "UNKNOWN",
+   "outcome": "RECLASSIFY",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "792686444",
+   "fullName": "foss42/awesome-generative-ai-apis",
+   "stars": 225,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 85,
+   "detail": "would rank 85 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "792861139",
+   "fullName": "glanceapp/glance",
+   "stars": 37197,
+   "lastCollected": "2026-09-25",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 30,
+   "detail": "would rank 30 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "UNKNOWN",
+   "outcome": "RECLASSIFY",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "793416920",
+   "fullName": "autogluon/autogluon-assistant",
+   "stars": 308,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "801547807",
+   "fullName": "THU-BPM/MarkLLM",
+   "stars": 1079,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "803537741",
+   "fullName": "terrastruct/awesome-diagrams",
+   "stars": 117,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 25,
+   "detail": "would rank 25 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "831205985",
+   "fullName": "eduardolat/pgbackweb",
+   "stars": 2638,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "843754086",
+   "fullName": "tonywu71/colpali-cookbooks",
+   "stars": 357,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "850457823",
+   "fullName": "Vasallo94/ObsidianRAG",
+   "stars": 122,
+   "lastCollected": "2026-09-28",
+   "inOldSnapshot": false,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 102,
+   "detail": "matches 5 query(ies) but ranks 102 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "865473812",
+   "fullName": "kyegomez/LFM",
+   "stars": 230,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 85,
+   "detail": "would rank 85 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "870189331",
+   "fullName": "simular-ai/Agent-S",
+   "stars": 12529,
+   "lastCollected": "2026-10-04",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 10,
+   "detail": "would rank 10 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "879320294",
+   "fullName": "autoscrape-labs/pydoll",
+   "stars": 7106,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "TOPIC_MISMATCH",
+   "bestRank": null,
+   "detail": "none of its topics is a discovery topic",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "881351017",
+   "fullName": "mbzuai-oryx/VideoGLaMM",
+   "stars": 106,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 39,
+   "detail": "would rank 39 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "885877865",
+   "fullName": "Haervwe/open-webui-tools",
+   "stars": 814,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "894988451",
+   "fullName": "microsoft/mattergen",
+   "stars": 1835,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "902093146",
+   "fullName": "NVIDIA-AI-Blueprints/rag",
+   "stars": 780,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "902570217",
+   "fullName": "Bessouat40/RAGLight",
+   "stars": 672,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "918982829",
+   "fullName": "rryam/LumoKit",
+   "stars": 130,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "922709376",
+   "fullName": "rekog-labs/MCP-Nest",
+   "stars": 711,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 3 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "925508103",
+   "fullName": "weiwill88/Local_Pdf_Chat_RAG",
+   "stars": 957,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "932076703",
+   "fullName": "mbzuai-oryx/Awesome-LLM-Post-training",
+   "stars": 2565,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 50,
+   "detail": "would rank 50 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "942934124",
+   "fullName": "mll-lab-nu/VAGEN",
+   "stars": 508,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "948148972",
+   "fullName": "CoderGamester/mcp-unity",
+   "stars": 1917,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "951693330",
+   "fullName": "utensils/mcp-nixos",
+   "stars": 849,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "960285620",
+   "fullName": "jolibrain/colette",
+   "stars": 301,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 21,
+   "detail": "would rank 21 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null,
+    "isArchived": false,
+    "isFork": false
+   },
+   "sampled": {
+    "status": 200,
+    "archived": false,
+    "fork": false,
+    "starsNow": 301,
+    "pushedNow": "2026-10-01T11:53:28Z",
+    "currentName": "jolibrain/colette",
+    "reasonNow": "SEARCH_MISS"
+   }
+  },
+  {
+   "id": "966544022",
+   "fullName": "future-agi/traceAI",
+   "stars": 222,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 97,
+   "detail": "would rank 97 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "BOTH",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "980526715",
+   "fullName": "docker/compose-for-agents",
+   "stars": 1048,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null,
+    "isArchived": false,
+    "isFork": false
+   },
+   "sampled": {
+    "status": 200,
+    "archived": false,
+    "fork": false,
+    "starsNow": 1050,
+    "pushedNow": "2026-09-02T19:09:39Z",
+    "currentName": "docker/compose-for-agents",
+    "reasonNow": "PUSH_WINDOW"
+   }
+  },
+  {
+   "id": "996463743",
+   "fullName": "alibaba/ServeGen",
+   "stars": 176,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "999974788",
+   "fullName": "zjunlp/LightMem",
+   "stars": 1182,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1002834612",
+   "fullName": "fetchai/innovation-lab-examples",
+   "stars": 1146,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1004995740",
+   "fullName": "winfunc/opcode",
+   "stars": 22416,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 1 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null,
+    "isArchived": false,
+    "isFork": false
+   },
+   "sampled": {
+    "status": 200,
+    "archived": false,
+    "fork": false,
+    "starsNow": 22421,
+    "pushedNow": "2026-09-18T16:18:10Z",
+    "currentName": "winfunc/opcode",
+    "reasonNow": "RANK_CUTOFF"
+   }
+  },
+  {
+   "id": "1011716417",
+   "fullName": "agentscope-ai/agentscope-studio",
+   "stars": 654,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1038507702",
+   "fullName": "RayBytes/ChatMock",
+   "stars": 1553,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1046584285",
+   "fullName": "Michael-A-Kuykendall/shimmy",
+   "stars": 5913,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1050514293",
+   "fullName": "houtini-ai/houtini-lm",
+   "stars": 120,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 7 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1054677274",
+   "fullName": "jjyaoao/HelloAgents",
+   "stars": 3144,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1055613678",
+   "fullName": "kevinpbuckley/VibeUE",
+   "stars": 702,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 2 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1060036659",
+   "fullName": "agentic-box/memora",
+   "stars": 729,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 3 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1063632891",
+   "fullName": "NVlabs/OmniVinci",
+   "stars": 683,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1079084637",
+   "fullName": "alirezarezvani/claude-skills",
+   "stars": 27544,
+   "lastCollected": "2026-10-04",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1082583559",
+   "fullName": "lich0821/ccNexus",
+   "stars": 972,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1085175935",
+   "fullName": "mohammadtavakoli78/BEAM",
+   "stars": 150,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1086810013",
+   "fullName": "hcavarsan/pipedash",
+   "stars": 1085,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1092562478",
+   "fullName": "unhappychoice/gitlogue",
+   "stars": 5070,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 1 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1092687660",
+   "fullName": "marcusquinn/aidevops",
+   "stars": 400,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 100,
+   "detail": "would rank 100 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "BOTH",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1096779983",
+   "fullName": "logtide-dev/logtide",
+   "stars": 454,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 100,
+   "detail": "would rank 100 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1103758703",
+   "fullName": "itwanger/PaiAgent",
+   "stars": 693,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1114656121",
+   "fullName": "suhaibbinyounis/github-copilot-api-vscode",
+   "stars": 129,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 102,
+   "detail": "matches 1 query(ies) but ranks 102 by stars in the best one (only the top 100 are returned)",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1120133815",
+   "fullName": "SyntheticAutonomicMind/SAM",
+   "stars": 130,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 102,
+   "detail": "matches 2 query(ies) but ranks 102 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1122433720",
+   "fullName": "Scottcjn/llama-cpp-power8",
+   "stars": 131,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 102,
+   "detail": "matches 2 query(ies) but ranks 102 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1125225565",
+   "fullName": "100NikhilBro/backend-engineering-foundations",
+   "stars": 112,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null,
+    "isArchived": false,
+    "isFork": false
+   },
+   "sampled": {
+    "status": 200,
+    "archived": false,
+    "fork": false,
+    "starsNow": 112,
+    "pushedNow": "2026-09-03T18:58:35Z",
+    "currentName": "100NikhilBro/backend-engineering-foundations",
+    "reasonNow": "PUSH_WINDOW"
+   }
+  },
+  {
+   "id": "1145473185",
+   "fullName": "ai-dashboad/flutter-skill",
+   "stars": 382,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1149235764",
+   "fullName": "project-vera/vera",
+   "stars": 253,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1152467476",
+   "fullName": "uncSoft/anubis-oss",
+   "stars": 208,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1155787322",
+   "fullName": "tonhowtf/omniget",
+   "stars": 14348,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 3,
+   "detail": "would rank 3 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "NOT_FOUND",
+   "live": {
+    "status": 404,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1157203560",
+   "fullName": "nvawntien/go-judge-system",
+   "stars": 131,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1159381774",
+   "fullName": "antoinezambelli/forge",
+   "stars": 2250,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1161363612",
+   "fullName": "onyx-dot-app/EnterpriseRAG-Bench",
+   "stars": 577,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1163460571",
+   "fullName": "kunal12203/GrapeRoot",
+   "stars": 1038,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1164005541",
+   "fullName": "foryourhealth111-pixel/Vibe-Skills",
+   "stars": 3539,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1164540365",
+   "fullName": "sangrokjung/claude-forge",
+   "stars": 845,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1166506614",
+   "fullName": "mukul975/Anthropic-Cybersecurity-Skills",
+   "stars": 33762,
+   "lastCollected": "2026-10-04",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1168838598",
+   "fullName": "Scottcjn/legend-of-elya-n64",
+   "stars": 146,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1175316550",
+   "fullName": "Owl-Listener/designer-skills",
+   "stars": 2823,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 64,
+   "detail": "would rank 64 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1179009322",
+   "fullName": "qxoticai/qxotic",
+   "stars": 132,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 102,
+   "detail": "matches 3 query(ies) but ranks 102 by stars in the best one (only the top 100 are returned)",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1180642359",
+   "fullName": "xalgorix/xalgorix",
+   "stars": 1148,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": false,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 2 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1194556582",
+   "fullName": "vladikk/modularity",
+   "stars": 549,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1197002442",
+   "fullName": "FlowElement-xinliuyuansu/m_flow",
+   "stars": 4511,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1206815767",
+   "fullName": "zhinkgit/embeddedskills",
+   "stars": 730,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1208852221",
+   "fullName": "rawfilejson/awesome-osint-arsenal",
+   "stars": 3058,
+   "lastCollected": "2026-09-27",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1213328847",
+   "fullName": "Sandermage/sndr_core_engine",
+   "stars": 133,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 3 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null,
+    "isArchived": false,
+    "isFork": false
+   },
+   "sampled": {
+    "status": 200,
+    "archived": false,
+    "fork": false,
+    "starsNow": 133,
+    "pushedNow": "2026-09-30T21:34:14Z",
+    "currentName": "Sandermage/sndr_core_engine",
+    "reasonNow": "RANK_CUTOFF"
+   }
+  },
+  {
+   "id": "1221264555",
+   "fullName": "Shoshuo/Prismarr",
+   "stars": 447,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1221558912",
+   "fullName": "EddieTYP/image-prompt-library",
+   "stars": 142,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 35,
+   "detail": "would rank 35 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1229618308",
+   "fullName": "datawhalechina/deepagents-in-action",
+   "stars": 2520,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 2 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1235483809",
+   "fullName": "juanjuandog/FinSight-AI",
+   "stars": 1061,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null,
+    "isArchived": false,
+    "isFork": false
+   },
+   "sampled": {
+    "status": 200,
+    "archived": false,
+    "fork": false,
+    "starsNow": 1063,
+    "pushedNow": "2026-09-02T13:54:32Z",
+    "currentName": "juanjuandog/FinSight-AI",
+    "reasonNow": "PUSH_WINDOW"
+   }
+  },
+  {
+   "id": "1235951137",
+   "fullName": "PhiloLabs/agentic-vbench",
+   "stars": 101,
+   "lastCollected": "2026-09-28",
+   "inOldSnapshot": false,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1252665712",
+   "fullName": "AaravKashyap12/advise-project-approach",
+   "stars": 317,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1256432627",
+   "fullName": "Deuz-AI/Deuz-SDK",
+   "stars": 697,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 6 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1256738405",
+   "fullName": "Totoro-jam/battle-tested-patterns",
+   "stars": 343,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1259424581",
+   "fullName": "myccarl/ai-shortVideo-pipeline",
+   "stars": 700,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1263098427",
+   "fullName": "RightNow-AI/AutoMegaKernel",
+   "stars": 148,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 2 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1267314128",
+   "fullName": "tutti-os/tutti",
+   "stars": 3789,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1285857639",
+   "fullName": "xuzhougeng/wisp-science",
+   "stars": 1000,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "TOPIC_MISMATCH",
+   "bestRank": null,
+   "detail": "none of its topics is a discovery topic",
+   "classification": "UNKNOWN",
+   "outcome": "RECLASSIFY",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1298849251",
+   "fullName": "giannisanni/pulsar",
+   "stars": 224,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1300173275",
+   "fullName": "vshulcz/deja-vu",
+   "stars": 1058,
+   "lastCollected": "2026-09-27",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 49,
+   "detail": "would rank 49 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1312909869",
+   "fullName": "yalun753/moe-l2",
+   "stars": 146,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 1 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1313325215",
+   "fullName": "Blackwellboy/model-serving-minefield",
+   "stars": 134,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 1 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1316298951",
+   "fullName": "worldbench/DiffusionOPSD",
+   "stars": 530,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1325607299",
+   "fullName": "zylwithxy/HRDiT",
+   "stars": 234,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1326175015",
+   "fullName": "bamboostrip/Handwriting-simulator",
+   "stars": 172,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1327109697",
+   "fullName": "davidahmann/applied-ai-field-guide",
+   "stars": 112,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 25,
+   "detail": "would rank 25 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "NOT_FOUND",
+   "live": {
+    "status": 404,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1329272295",
+   "fullName": "Leonxlnx/unlazy",
+   "stars": 3819,
+   "lastCollected": "2026-10-04",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null,
+    "isArchived": false,
+    "isFork": false
+   },
+   "sampled": {
+    "status": 200,
+    "archived": false,
+    "fork": false,
+    "starsNow": 3864,
+    "pushedNow": "2026-09-03T09:31:17Z",
+    "currentName": "Leonxlnx/unlazy",
+    "reasonNow": "PUSH_WINDOW"
+   }
+  },
+  {
+   "id": "1333155576",
+   "fullName": "bybit-exchange/svg-diagram",
+   "stars": 600,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1334657231",
+   "fullName": "soumatheusgomes/vibe-coding-toolkit",
+   "stars": 753,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1338290116",
+   "fullName": "furkankly/zoetrope",
+   "stars": 947,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 1 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1344448157",
+   "fullName": "solis-team/XRepoTest",
+   "stars": 167,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1344620985",
+   "fullName": "HVision-NKU/OraRL",
+   "stars": 161,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1347113909",
+   "fullName": "GENEXIS-AI/gpt-image-skill",
+   "stars": 169,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1347934719",
+   "fullName": "grapefruit0205/click",
+   "stars": 41,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1347943201",
+   "fullName": "ConiferKit/use-conifer",
+   "stars": 46,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null,
+    "isArchived": false,
+    "isFork": false
+   },
+   "sampled": {
+    "status": 200,
+    "archived": false,
+    "fork": false,
+    "starsNow": 46,
+    "pushedNow": "2026-10-02T01:34:00Z",
+    "currentName": "ConiferKit/use-conifer",
+    "reasonNow": "PUSH_WINDOW"
+   }
+  },
+  {
+   "id": "1348000365",
+   "fullName": "herliansyah/9router-auto-free",
+   "stars": 40,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1348109196",
+   "fullName": "alphastorm/omp-ninfer",
+   "stars": 35,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1348178527",
+   "fullName": "JordyZomer/lemmalog",
+   "stars": 322,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 351,
+   "detail": "matches 2 query(ies) but ranks 351 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1348272501",
+   "fullName": "CSPF-Founder/red-clippy",
+   "stars": 28,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1348284661",
+   "fullName": "ewsun22/codex-manager",
+   "stars": 53,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1348326484",
+   "fullName": "yelog/lazydb",
+   "stars": 50,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1348391424",
+   "fullName": "Reederey87/glm53-flash-exl3-2x-dgx-spark",
+   "stars": 65,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1348419690",
+   "fullName": "lightsifter/sift-light",
+   "stars": 84,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1348460133",
+   "fullName": "rhevorn/confetti",
+   "stars": 169,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 246,
+   "detail": "matches 1 query(ies) but ranks 246 by stars in the best one (only the top 100 are returned)",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1348527401",
+   "fullName": "Emanuelel/dont-reinvent",
+   "stars": 36,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1348553719",
+   "fullName": "dopbase/dopbase",
+   "stars": 97,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1348669939",
+   "fullName": "pgrundev/pgterm",
+   "stars": 288,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 106,
+   "detail": "matches 2 query(ies) but ranks 106 by stars in the best one (only the top 100 are returned)",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1348686603",
+   "fullName": "znxzsy/VeriInk",
+   "stars": 226,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1348698819",
+   "fullName": "kadenball/qwen38-27b-rtx3060-dcfr",
+   "stars": 28,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1348778300",
+   "fullName": "MirroS-Lab/Code-as-World",
+   "stars": 472,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1348999683",
+   "fullName": "Giladx/tit",
+   "stars": 43,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1349505573",
+   "fullName": "YuriKovalov22/the-finn",
+   "stars": 27,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1349612500",
+   "fullName": "cyhdyx2024-sudo/xhs-private-domain-assistant",
+   "stars": 39,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1349665307",
+   "fullName": "usedotai/dot-reflex",
+   "stars": 74,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1349818659",
+   "fullName": "vicoa-ai/vicoa",
+   "stars": 363,
+   "lastCollected": "2026-09-27",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 215,
+   "detail": "matches 2 query(ies) but ranks 215 by stars in the best one (only the top 100 are returned)",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1349898907",
+   "fullName": "cbrock84/headcount",
+   "stars": 1669,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 235,
+   "detail": "matches 1 query(ies) but ranks 235 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null,
+    "isArchived": false,
+    "isFork": false
+   },
+   "sampled": {
+    "status": 200,
+    "archived": false,
+    "fork": false,
+    "starsNow": 2007,
+    "pushedNow": "2026-09-17T19:13:19Z",
+    "currentName": "cbrock84/headcount",
+    "reasonNow": "RANK_CUTOFF"
+   }
+  },
+  {
+   "id": "1350011645",
+   "fullName": "doggy8088/agentready",
+   "stars": 34,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1350143069",
+   "fullName": "fabricioctelles/jump-skills",
+   "stars": 30,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1350177196",
+   "fullName": "shali10/hermes-patches",
+   "stars": 43,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1350368388",
+   "fullName": "FishBottle7/opencode2dsh",
+   "stars": 87,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1350552112",
+   "fullName": "huihuijiangqiang/moshu",
+   "stars": 40,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1350694756",
+   "fullName": "hao1196561270/MiFitnessAdAway",
+   "stars": 32,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1350706479",
+   "fullName": "pegainfer-project/kern",
+   "stars": 47,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1350834856",
+   "fullName": "mailez-hq/mailez",
+   "stars": 230,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 3 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1350870971",
+   "fullName": "Taimoorkhan1122/prod-readiness",
+   "stars": 28,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1350899039",
+   "fullName": "ashutoshsinghpr7/wikiskill",
+   "stars": 249,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 360,
+   "detail": "matches 2 query(ies) but ranks 360 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1350914890",
+   "fullName": "useagenthq/useagent",
+   "stars": 358,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 106,
+   "detail": "matches 4 query(ies) but ranks 106 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1350949949",
+   "fullName": "gautamgpt1/agent-session-browser",
+   "stars": 31,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1350970233",
+   "fullName": "Vuk97/forward-implementation-first",
+   "stars": 172,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1350978527",
+   "fullName": "Ryze-AI-Adgent/open-seo-mcp-skills",
+   "stars": 2225,
+   "lastCollected": "2026-09-27",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 216,
+   "detail": "matches 1 query(ies) but ranks 216 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1351039091",
+   "fullName": "SkyChenSky/DBPilot",
+   "stars": 86,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1351167897",
+   "fullName": "AbuZar-Ansarii/Needle",
+   "stars": 124,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1351179451",
+   "fullName": "Yuchen-zh/Multimodal-Fake-News-Datasets",
+   "stars": 59,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1351254750",
+   "fullName": "alesha-pro/atlas",
+   "stars": 74,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1351325395",
+   "fullName": "suoten/dbbridge",
+   "stars": 32,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null,
+    "isArchived": false,
+    "isFork": false
+   },
+   "sampled": {
+    "status": 200,
+    "archived": false,
+    "fork": false,
+    "starsNow": 33,
+    "pushedNow": "2026-10-07T06:40:41Z",
+    "currentName": "suoten/dbbridge",
+    "reasonNow": "PUSH_WINDOW"
+   }
+  },
+  {
+   "id": "1351398683",
+   "fullName": "udaysharmadev/Not-Ai",
+   "stars": 104,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 182,
+   "detail": "matches 2 query(ies) but ranks 182 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1351469027",
+   "fullName": "0xethanq/astra-quant-agent",
+   "stars": 265,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": false,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 112,
+   "detail": "matches 3 query(ies) but ranks 112 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1351509581",
+   "fullName": "justadityaraj/shim-mcp",
+   "stars": 44,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1351536269",
+   "fullName": "Aidenable/Blueprint",
+   "stars": 27,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1351601873",
+   "fullName": "nickname21kmr/gameops-investigator",
+   "stars": 76,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1351647112",
+   "fullName": "masumedb/masume",
+   "stars": 100,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1351699882",
+   "fullName": "maxritter/open-claude-design",
+   "stars": 29,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1351757729",
+   "fullName": "DominikBucko/qwen38-flash-next-2x3090",
+   "stars": 91,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1351850254",
+   "fullName": "PanomaAI/panoma",
+   "stars": 27,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1351870087",
+   "fullName": "vfaner/jync",
+   "stars": 27,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1351888900",
+   "fullName": "1Panel-dev/1Panel-Gateway",
+   "stars": 72,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1351929360",
+   "fullName": "Prism-Shadow/travel-agent",
+   "stars": 67,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1352001946",
+   "fullName": "hyundaimotorgroup/hmg-ipmap",
+   "stars": 39,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1352102688",
+   "fullName": "synrise25/rss-pod",
+   "stars": 27,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1352203514",
+   "fullName": "lulu-loopp/folio-terminal",
+   "stars": 58,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1352218236",
+   "fullName": "stevibe/SparklingKit",
+   "stars": 61,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1352470849",
+   "fullName": "rollroyces/py-idp",
+   "stars": 112,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 103,
+   "detail": "matches 3 query(ies) but ranks 103 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1352472707",
+   "fullName": "neuronto/agentic-resource-discovery",
+   "stars": 60,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "NOT_FOUND",
+   "live": {
+    "status": 404,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1352477412",
+   "fullName": "tillmeier/claude-code-guardrails",
+   "stars": 45,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1352527683",
+   "fullName": "MangoGreenTeaz/FaultLens",
+   "stars": 79,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1352547997",
+   "fullName": "fitchmultz/pi-posthorse",
+   "stars": 255,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 596,
+   "detail": "matches 1 query(ies) but ranks 596 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1352857715",
+   "fullName": "jplenio/ComfyUI-MiniMax-Music-Production-Toolkit",
+   "stars": 69,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1352880998",
+   "fullName": "extropic-ai/sparse-transformers",
+   "stars": 29,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1353060457",
+   "fullName": "Gerato25/BarberShopSchedule",
+   "stars": 35,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1353215108",
+   "fullName": "delaprada/Mask-Forcing",
+   "stars": 79,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1353278725",
+   "fullName": "reality-opened/openreality",
+   "stars": 140,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1353332322",
+   "fullName": "0xSero/omarchy-local-ai",
+   "stars": 95,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": "sybil-solutions/omarchy-local-ai"
+   },
+   "sampled": null
+  },
+  {
+   "id": "1353338481",
+   "fullName": "himovo/movo",
+   "stars": 208,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 189,
+   "detail": "matches 3 query(ies) but ranks 189 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1353408336",
+   "fullName": "dragonked2/alphacode",
+   "stars": 111,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 117,
+   "detail": "matches 2 query(ies) but ranks 117 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1353431819",
+   "fullName": "bsab/italia-mcp-servers",
+   "stars": 91,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null,
+    "isArchived": false,
+    "isFork": false
+   },
+   "sampled": {
+    "status": 200,
+    "archived": false,
+    "fork": false,
+    "starsNow": 92,
+    "pushedNow": "2026-09-11T08:34:05Z",
+    "currentName": "bsab/italia-mcp-servers",
+    "reasonNow": "PUSH_WINDOW"
+   }
+  },
+  {
+   "id": "1353668086",
+   "fullName": "ProjectDXAI/continuous-record-llm-trading-agents",
+   "stars": 80,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1353687754",
+   "fullName": "crissyfield/super-trouper",
+   "stars": 32,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1353782683",
+   "fullName": "sangelege/forestfix",
+   "stars": 91,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1353960300",
+   "fullName": "hbofz/NeSLE",
+   "stars": 35,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1354059245",
+   "fullName": "tigerless-labs/agent-memory",
+   "stars": 2371,
+   "lastCollected": "2026-10-04",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 185,
+   "detail": "matches 3 query(ies) but ranks 185 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1354165808",
+   "fullName": "zeroa234/ryza-ai-revive",
+   "stars": 201,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 624,
+   "detail": "matches 1 query(ies) but ranks 624 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1354253328",
+   "fullName": "Taiquan-Zhou/RunTheRepo",
+   "stars": 247,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 101,
+   "detail": "matches 6 query(ies) but ranks 101 by stars in the best one (only the top 100 are returned)",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1354377874",
+   "fullName": "lotchuazzz-crypto/papergraph-mcp",
+   "stars": 282,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 111,
+   "detail": "matches 3 query(ies) but ranks 111 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1354518773",
+   "fullName": "gesta-run/subpool",
+   "stars": 83,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1354590736",
+   "fullName": "xiaojumaoaihuaban/grok-unleashed",
+   "stars": 97,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1354705170",
+   "fullName": "op7418/guizang-yingzao-skill",
+   "stars": 480,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1354970515",
+   "fullName": "kowalski76057/cf-turnstile-token",
+   "stars": 56,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1354991682",
+   "fullName": "Agenta-AI/awesome-ai-agent-platforms",
+   "stars": 258,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1355117708",
+   "fullName": "markfulton/ai-employees",
+   "stars": 480,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 319,
+   "detail": "matches 1 query(ies) but ranks 319 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1355157779",
+   "fullName": "nickelsec/bough",
+   "stars": 106,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 119,
+   "detail": "matches 2 query(ies) but ranks 119 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1355190514",
+   "fullName": "ByteV0rtex/CVE-2026-65343",
+   "stars": 86,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1355378705",
+   "fullName": "san3ncrypt3d/vulnometry",
+   "stars": 49,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1355703686",
+   "fullName": "auscahq/ausca",
+   "stars": 35,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1356015607",
+   "fullName": "mpaymenremora/CacheCraft",
+   "stars": 31,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1356021769",
+   "fullName": "Apertur3/headroom",
+   "stars": 30,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": false,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1356156490",
+   "fullName": "chigwell/Penelopa.ai",
+   "stars": 139,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 125,
+   "detail": "matches 2 query(ies) but ranks 125 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1356210956",
+   "fullName": "IvenKooLab/loci",
+   "stars": 100,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1356252600",
+   "fullName": "bnymnDev/shopware-mcp",
+   "stars": 43,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1356609269",
+   "fullName": "RayElg/kafgres",
+   "stars": 388,
+   "lastCollected": "2026-10-04",
+   "inOldSnapshot": false,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 103,
+   "detail": "matches 3 query(ies) but ranks 103 by stars in the best one (only the top 100 are returned)",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1356630179",
+   "fullName": "Netflix/ja",
+   "stars": 68,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1356630860",
+   "fullName": "Netflix/jfmt",
+   "stars": 73,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1356918624",
+   "fullName": "Apeireth/Apeireth",
+   "stars": 314,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 347,
+   "detail": "matches 1 query(ies) but ranks 347 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1356939006",
+   "fullName": "lcy362/flint",
+   "stars": 32,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": false,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1357036560",
+   "fullName": "aaravshah1311/Agent-2",
+   "stars": 133,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 114,
+   "detail": "matches 2 query(ies) but ranks 114 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1357257622",
+   "fullName": "dengyie/cnb2api",
+   "stars": 66,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1357390407",
+   "fullName": "tomiholtz/s3-files-ai-sdk",
+   "stars": 27,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1357432321",
+   "fullName": "canivel/dynolab",
+   "stars": 165,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 381,
+   "detail": "matches 2 query(ies) but ranks 381 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1357737026",
+   "fullName": "judegomila/OnCo",
+   "stars": 194,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 374,
+   "detail": "matches 1 query(ies) but ranks 374 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1357849254",
+   "fullName": "songs-aaa/shared-memory-vault",
+   "stars": 102,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1357987246",
+   "fullName": "Zvyan/PromptForge",
+   "stars": 27,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "PUSH_WINDOW",
+   "bestRank": null,
+   "detail": "no push within 30 days and too old for the new-repository queries",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1358200389",
+   "fullName": "FAIRY123456789/human-edge-agent-skills",
+   "stars": 98,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 50,
+   "detail": "would rank 50 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1358203612",
+   "fullName": "evangelosvlachos96-dotcom/microservices-tracing-kafka-opentelemetry",
+   "stars": 82,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 1,
+   "detail": "would rank 1 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1358291250",
+   "fullName": "yingfff123/AtlasX",
+   "stars": 44,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 19,
+   "detail": "would rank 19 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1358316829",
+   "fullName": "wanshuiyin/ALIGN-Agentic-Loop-Image-GeneratioN",
+   "stars": 40,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 85,
+   "detail": "would rank 85 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1358339276",
+   "fullName": "zermello/turing-ai-agent",
+   "stars": 29,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": false,
+   "reason": "SEARCH_MISS",
+   "bestRank": 23,
+   "detail": "would rank 23 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": "slyyr/yappr",
+    "isArchived": false,
+    "isFork": false
+   },
+   "sampled": {
+    "status": 200,
+    "archived": false,
+    "fork": false,
+    "starsNow": 36,
+    "pushedNow": "2026-10-07T17:02:55Z",
+    "currentName": "slyyr/yappr",
+    "reasonNow": "SEARCH_MISS"
+   }
+  },
+  {
+   "id": "1358388862",
+   "fullName": "banmu123/BrewPing",
+   "stars": 100,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 47,
+   "detail": "would rank 47 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1358465830",
+   "fullName": "amitshq/salesforce-lwc-production-toolkit",
+   "stars": 44,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 85,
+   "detail": "would rank 85 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1358632117",
+   "fullName": "XiantingWu/PQCensus",
+   "stars": 296,
+   "lastCollected": "2026-10-04",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 5,
+   "detail": "would rank 5 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "RECOVERABLE",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1361616838",
+   "fullName": "BeamManP/mmd-mcp",
+   "stars": 29,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 103,
+   "detail": "matches 1 query(ies) but ranks 103 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1363384180",
+   "fullName": "GoldenLoaf24h/browserpaw",
+   "stars": 30,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": false,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 103,
+   "detail": "matches 1 query(ies) but ranks 103 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1363844227",
+   "fullName": "ZeroDayEvil/ai-security-tool",
+   "stars": 412,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 102,
+   "detail": "matches 1 query(ies) but ranks 102 by stars in the best one (only the top 100 are returned)",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1365915697",
+   "fullName": "MingyiSecLab/Atlas",
+   "stars": 29,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": false,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 103,
+   "detail": "matches 2 query(ies) but ranks 103 by stars in the best one (only the top 100 are returned)",
+   "classification": "BOTH",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1365920372",
+   "fullName": "panda-sandeep/dearagent",
+   "stars": 30,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 103,
+   "detail": "matches 2 query(ies) but ranks 103 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1366154653",
+   "fullName": "daimou1028/hadome",
+   "stars": 27,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 104,
+   "detail": "matches 1 query(ies) but ranks 104 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1366501036",
+   "fullName": "wundercorp/loki",
+   "stars": 25,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "BELOW_STAR_FLOOR",
+   "bestRank": null,
+   "detail": "stars 25 at or below every matching query floor",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1366525958",
+   "fullName": "hi77x/appgraph",
+   "stars": 27,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 106,
+   "detail": "matches 1 query(ies) but ranks 106 by stars in the best one (only the top 100 are returned)",
+   "classification": "ENGINEERING",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1367954971",
+   "fullName": "ivyfan-toowell/IvyClaw",
+   "stars": 61,
+   "lastCollected": "2026-09-26",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 107,
+   "detail": "matches 2 query(ies) but ranks 107 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1368931750",
+   "fullName": "NirDiamant/Agentic_Engineering",
+   "stars": 31,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 103,
+   "detail": "matches 3 query(ies) but ranks 103 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1369759058",
+   "fullName": "Qiuner/QCode",
+   "stars": 347,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 2,
+   "detail": "would rank 2 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "NOT_FOUND",
+   "live": {
+    "status": 404,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1371542957",
+   "fullName": "mutonby/vibetube",
+   "stars": 83,
+   "lastCollected": "2026-10-03",
+   "inOldSnapshot": true,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 108,
+   "detail": "matches 1 query(ies) but ranks 108 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1375332698",
+   "fullName": "apimart-12223wc/midjourney-api-access",
+   "stars": 148,
+   "lastCollected": "2026-09-29",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 3,
+   "detail": "would rank 3 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "NOT_FOUND",
+   "live": {
+    "status": 404,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1379582941",
+   "fullName": "apimart-sc/kling-3-api-cn",
+   "stars": 23,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": true,
+   "reason": "BELOW_STAR_FLOOR",
+   "bestRank": null,
+   "detail": "stars 23 at or below every matching query floor",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1379754455",
+   "fullName": "APImart-23ww/kling-3-api-ko",
+   "stars": 24,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": true,
+   "reason": "BELOW_STAR_FLOOR",
+   "bestRank": null,
+   "detail": "stars 24 at or below every matching query floor",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1383293362",
+   "fullName": "CassowaryDevelop/HelixEdit",
+   "stars": 222,
+   "lastCollected": "2026-09-25",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 23,
+   "detail": "would rank 23 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "NOT_FOUND",
+   "live": {
+    "status": 404,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1383293427",
+   "fullName": "centralcashierboost/ZedLite",
+   "stars": 223,
+   "lastCollected": "2026-09-25",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 23,
+   "detail": "would rank 23 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "ENGINEERING",
+   "outcome": "NOT_FOUND",
+   "live": {
+    "status": 404,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1383988294",
+   "fullName": "yukitorido/short-video-generator-AI",
+   "stars": 729,
+   "lastCollected": "2026-09-28",
+   "inOldSnapshot": true,
+   "reason": "SEARCH_MISS",
+   "bestRank": 16,
+   "detail": "would rank 16 (inside the top 100); missing for a reason not visible in stored data (search index, metadata change after collection)",
+   "classification": "AI",
+   "outcome": "NOT_FOUND",
+   "live": {
+    "status": 404,
+    "renamedTo": null
+   },
+   "sampled": null
+  },
+  {
+   "id": "1388572357",
+   "fullName": "meskhetian/linkedin-applicants-mcp",
+   "stars": 28,
+   "lastCollected": "2026-10-01",
+   "inOldSnapshot": false,
+   "reason": "RANK_CUTOFF",
+   "bestRank": 104,
+   "detail": "matches 1 query(ies) but ranks 104 by stars in the best one (only the top 100 are returned)",
+   "classification": "AI",
+   "outcome": "DISCOVERY_GAP",
+   "live": {
+    "status": 200,
+    "renamedTo": null
+   },
+   "sampled": null
+  }
+ ]
+}

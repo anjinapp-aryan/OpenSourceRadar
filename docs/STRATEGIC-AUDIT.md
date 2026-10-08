@@ -216,3 +216,6 @@ See ROADMAP-NEXT-PHASES.md (phases 6.1 to 7).
 
 ## 16. Final recommendation
 Do not start Engineering Radar yet. First (about two to three weeks) close the trust and history gaps, rebuild the taxonomy, and prove per-domain momentum on reconstructed history. Then build Engineering Radar as a technology-first product. Keep the architecture; add only snapshots, tags and shards.
+
+---
+**Correction (2026-10-08, Phase 6.2):** section 4's Git-growth figures (about 0.83 MB per daily commit, about 300 MB a year, "move data out of Git at about 6,000 records") were derived from loose-object `.git` sizes and overstate real growth. Packed, the 14 bot commits added 2.4 MB in total (mean 171 KB per commit, about 60 MB a year at the current size). See [PHASE-6.2-SIZE-AUDIT.md](PHASE-6.2-SIZE-AUDIT.md) section 4. The static-export size quoted there (148 MB) was a block-rounded `du` figure; the logical size is 140 MB.

@@ -1,0 +1,191 @@
+{
+ "candidates": 4490,
+ "reproducedStoredTopLevel": 4490,
+ "unknownCurrent": 1018,
+ "unknownRateCurrent": 22.7,
+ "unknownSample": {
+  "n": 60,
+  "byType": {
+   "ai": 17,
+   "developer-tool": 11,
+   "educational": 12,
+   "infrastructure": 6,
+   "security": 3,
+   "irrelevant": 4,
+   "missing-taxonomy": 5,
+   "language-runtime": 1,
+   "database": 1
+  },
+  "byDomain": {
+   "AI": 23,
+   "ENGINEERING": 27,
+   "IRRELEVANT": 10
+  },
+  "coverableByExistingCategory": 39
+ },
+ "rules": [
+  {
+   "rule": "E1-same-domain-corroboration",
+   "firedOnUnknown": 260,
+   "tuning": {
+    "set": "tuning (optimistic: rule designed with these in view)",
+    "n": 40,
+    "fired": 40,
+    "correct": 21,
+    "domainRightCategoryWrong": 18,
+    "wrongDomain": 1,
+    "precision": 52.5,
+    "domainPrecision": 97.5,
+    "errors": [
+     "harry0703/MoneyPrinterTurbo: category llm wrong (label AI)",
+     "lidge-ai/ima2-gen: category ai-agents wrong (label AI)",
+     "frappe/frappe: category databases wrong (label ENGINEERING)",
+     "Rongronggg9/RSS-to-Telegram-Bot: proposed ENGINEERING/databases, label IRRELEVANT",
+     "ToolJet/ToolJet: category docker wrong (label ENGINEERING)",
+     "apache/streampark: category kubernetes wrong (label ENGINEERING)",
+     "e2b-dev/runtime: category llm wrong (label AI)",
+     "axoviq-ai/synthadoc: category ai-agents wrong (label AI)",
+     "madmorett/bullpane: category docker wrong (label ENGINEERING)",
+     "zilliztech/vts: category generative-ai wrong (label AI)",
+     "FlareSolverr/FlareSolverr: category cloud wrong (label ENGINEERING)",
+     "Zaious/jev-capability-atlas: category ai-agents wrong (label AI)",
+     "biocypher/biocypher: category postgresql wrong (label ENGINEERING)",
+     "StarlightSearch/EmbedAnything: category generative-ai wrong (label AI)",
+     "liftbridge-io/liftbridge: category cloud wrong (label ENGINEERING)",
+     "akvorado/akvorado: category databases wrong (label ENGINEERING)",
+     "netbootxyz/netboot.xyz: category infrastructure-as-code wrong (label ENGINEERING)",
+     "qpoint-io/qtap: category kubernetes wrong (label ENGINEERING)",
+     "midoks/mdserver-web: category redis wrong (label ENGINEERING)"
+    ]
+   },
+   "holdout": {
+    "set": "held-out",
+    "n": 80,
+    "fired": 80,
+    "correct": 43,
+    "domainRightCategoryWrong": 26,
+    "wrongDomain": 11,
+    "precision": 53.8,
+    "domainPrecision": 86.3,
+    "errors": [
+     "flippercloud/flipper: category redis wrong (label ENGINEERING)",
+     "rsyslog/rsyslog: category databases wrong (label ENGINEERING)",
+     "Vonng/ddia: proposed ENGINEERING/databases, label IRRELEVANT",
+     "Qiuner/birdview: proposed ENGINEERING/system-design, label AI",
+     "BrighterCommand/Brighter: category kafka wrong (label ENGINEERING)",
+     "akka/akka-core: category cloud wrong (label ENGINEERING)",
+     "dalisoft/awesome-hosting: proposed AI/ai-infrastructure, label IRRELEVANT",
+     "acepanel/panel: category databases wrong (label ENGINEERING)",
+     "propavingk/SlotDrift: proposed ENGINEERING/developer-tools, label IRRELEVANT",
+     "lavalink-devs/Lavalink: proposed ENGINEERING/spring-boot, label IRRELEVANT",
+     "micro/go-micro: proposed AI/ai-agents, label ENGINEERING",
+     "nextflow-io/nextflow: category aws wrong (label ENGINEERING)",
+     "JoeanAmier/XHS-Downloader: proposed ENGINEERING/databases, label IRRELEVANT",
+     "helloianneo/ian-xiaohei-illustrations: category ai-agents wrong (label AI)",
+     "apache/openwhisk: category docker wrong (label ENGINEERING)",
+     "flexprice/flexprice: category databases wrong (label ENGINEERING)",
+     "theNetworkChuck/paperclip-guide: category ai-coding wrong (label AI)",
+     "genkit-ai/genkit: category rag wrong (label AI)",
+     "Edwardxlai/easyread: category ai-coding wrong (label AI)",
+     "Permify/permify: category kubernetes wrong (label ENGINEERING)",
+     "latent-spaces/brag: category ai-coding wrong (label AI)",
+     "imgproxy/imgproxy: category docker wrong (label ENGINEERING)",
+     "Dolibarr/dolibarr: proposed ENGINEERING/databases, label IRRELEVANT",
+     "vdaas/vald: category cloud wrong (label BOTH)",
+     "snowlyg/iris-admin: category docker wrong (label ENGINEERING)",
+     "chaosblade-io/chaosblade: category kubernetes wrong (label ENGINEERING)",
+     "usememos/memos: proposed ENGINEERING/databases, label IRRELEVANT",
+     "jeinlee1991/chinese-llm-benchmark: category ai-agents wrong (label AI)",
+     "stoatchat/stoatchat: proposed ENGINEERING/databases, label IRRELEVANT",
+     "codelion/pts: category ai-infrastructure wrong (label AI)",
+     "chatboxai/chatbox: category ai-coding wrong (label AI)",
+     "tmchow/illo-skill: category ai-coding wrong (label AI)",
+     "img2threejs/img2threejs: category ai-agents wrong (label AI)",
+     "Gsync/jobsync: category local-ai wrong (label AI)",
+     "NodeBB/NodeBB: proposed ENGINEERING/databases, label IRRELEVANT",
+     "gravitational/teleport: category kubernetes wrong (label ENGINEERING)",
+     "community-scripts/ProxmoxVE: category docker wrong (label ENGINEERING)"
+    ]
+   },
+   "recallProxyOnUnknownSample": {
+    "sample": 60,
+    "shouldBeCoveredByExistingCategory": 39,
+    "recoveredDomainCorrect": 11,
+    "firedInSample": 13,
+    "firedWrongDomainInSample": [
+     "propavingk/SlotDrift",
+     "yolinc02-star/learn-by-teaching-lab"
+    ],
+    "recall": 28.2
+   },
+   "projection": {
+    "unknownAfterIfEnabled": 758,
+    "unknownRateAfter": 16.9,
+    "expectedCorrectFromHeldOutPrecision": 140,
+    "expectedIncorrect": 120
+   }
+  },
+  {
+   "rule": "E1-AI-same-domain-corroboration",
+   "firedOnUnknown": 127,
+   "tuning": {
+    "set": "tuning (optimistic: rule designed with these in view)",
+    "n": 40,
+    "fired": 16,
+    "correct": 9,
+    "domainRightCategoryWrong": 7,
+    "wrongDomain": 0,
+    "precision": 56.3,
+    "domainPrecision": 100,
+    "errors": [
+     "harry0703/MoneyPrinterTurbo: category llm wrong (label AI)",
+     "lidge-ai/ima2-gen: category ai-agents wrong (label AI)",
+     "e2b-dev/runtime: category llm wrong (label AI)",
+     "axoviq-ai/synthadoc: category ai-agents wrong (label AI)",
+     "zilliztech/vts: category generative-ai wrong (label AI)",
+     "Zaious/jev-capability-atlas: category ai-agents wrong (label AI)",
+     "StarlightSearch/EmbedAnything: category generative-ai wrong (label AI)"
+    ]
+   },
+   "holdout": {
+    "set": "held-out",
+    "n": 80,
+    "fired": 39,
+    "correct": 26,
+    "domainRightCategoryWrong": 11,
+    "wrongDomain": 2,
+    "precision": 66.7,
+    "domainPrecision": 94.9,
+    "errors": [
+     "dalisoft/awesome-hosting: proposed AI/ai-infrastructure, label IRRELEVANT",
+     "micro/go-micro: proposed AI/ai-agents, label ENGINEERING",
+     "helloianneo/ian-xiaohei-illustrations: category ai-agents wrong (label AI)",
+     "theNetworkChuck/paperclip-guide: category ai-coding wrong (label AI)",
+     "genkit-ai/genkit: category rag wrong (label AI)",
+     "Edwardxlai/easyread: category ai-coding wrong (label AI)",
+     "latent-spaces/brag: category ai-coding wrong (label AI)",
+     "jeinlee1991/chinese-llm-benchmark: category ai-agents wrong (label AI)",
+     "codelion/pts: category ai-infrastructure wrong (label AI)",
+     "chatboxai/chatbox: category ai-coding wrong (label AI)",
+     "tmchow/illo-skill: category ai-coding wrong (label AI)",
+     "img2threejs/img2threejs: category ai-agents wrong (label AI)",
+     "Gsync/jobsync: category local-ai wrong (label AI)"
+    ]
+   },
+   "recallProxyOnUnknownSample": {
+    "sample": 60,
+    "shouldBeCoveredByExistingCategory": 39,
+    "recoveredDomainCorrect": 6,
+    "firedInSample": 6,
+    "firedWrongDomainInSample": [],
+    "recall": 15.4
+   },
+   "projection": {
+    "unknownAfterIfEnabled": 891,
+    "unknownRateAfter": 19.8,
+    "expectedCorrectFromHeldOutPrecision": 85,
+    "expectedIncorrect": 42
+   }
+  }
+ ]
+}

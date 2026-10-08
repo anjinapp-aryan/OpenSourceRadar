@@ -1,0 +1,322 @@
+{
+ "simchowitzlabpublic/nano-world-model": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "nano-muse/nanoMuse": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "flatkey-ai/flatkey-cli": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "flippercloud/flipper": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "antflydb/antfly": {
+  "set": "holdout",
+  "domain": "BOTH"
+ },
+ "rsyslog/rsyslog": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "kalavai-net/kalavai-client": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "Vonng/ddia": {
+  "set": "holdout",
+  "domain": "IRRELEVANT"
+ },
+ "Qiuner/birdview": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "ceph/ceph": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "pingcap/tiflow": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "BrighterCommand/Brighter": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "akka/akka-core": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "TsinghuaC3I/MedXpertQA": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "The-PR-Agent/pr-agent": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "Morrowmake/glm53-flash-cmp170hx-recipe": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "d2lang/d2": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "dalisoft/awesome-hosting": {
+  "set": "holdout",
+  "domain": "IRRELEVANT"
+ },
+ "expressots/expressots": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "acepanel/panel": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "propavingk/SlotDrift": {
+  "set": "holdout",
+  "domain": "IRRELEVANT"
+ },
+ "OpenRLHF/OpenRLHF": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "ihub-pub/plugins": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "lavalink-devs/Lavalink": {
+  "set": "holdout",
+  "domain": "IRRELEVANT"
+ },
+ "micro/go-micro": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "ZhengyiLuo/AgentsDock": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "Vrun-design/openflowkit": {
+  "set": "holdout",
+  "domain": "BOTH"
+ },
+ "nextflow-io/nextflow": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "JoeanAmier/XHS-Downloader": {
+  "set": "holdout",
+  "domain": "IRRELEVANT"
+ },
+ "OpenDCAI/GameFactory-3A": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "helloianneo/ian-xiaohei-illustrations": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "salesforce/policy_sentry": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "apache/openwhisk": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "flexprice/flexprice": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "theNetworkChuck/paperclip-guide": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "genkit-ai/genkit": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "Edwardxlai/easyread": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "tinyhumansai/openhuman": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "google-deepmind/physics-IQ-benchmark": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "mingxian233/ContractGuard": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "purpleidea/mgmt": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "huggingface/aisheets": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "Permify/permify": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "latent-spaces/brag": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "mastra-ai/mastra": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "lucidrains/x-unet": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "imgproxy/imgproxy": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "KKKKhazix/AIHOT": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "Dolibarr/dolibarr": {
+  "set": "holdout",
+  "domain": "IRRELEVANT"
+ },
+ "localstack-samples/localstack-pro-samples": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "vdaas/vald": {
+  "set": "holdout",
+  "domain": "BOTH"
+ },
+ "snowlyg/iris-admin": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "jev-chat/jev-chat-jarvis": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "chaosblade-io/chaosblade": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "usememos/memos": {
+  "set": "holdout",
+  "domain": "IRRELEVANT"
+ },
+ "jeinlee1991/chinese-llm-benchmark": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "stoatchat/stoatchat": {
+  "set": "holdout",
+  "domain": "IRRELEVANT"
+ },
+ "algorithmicsuperintelligence/openevolve": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "linkedin/venice": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "mswjs/msw": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "codelion/pts": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "nodetool-ai/nodetool": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "chatboxai/chatbox": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "tmchow/illo-skill": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "JustVugg/lumabri": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "maildev/maildev": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "img2threejs/img2threejs": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "Gsync/jobsync": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "authelia/authelia": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "Abolfazlshahi/claude-capability-bridge-skill": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "NodeBB/NodeBB": {
+  "set": "holdout",
+  "domain": "IRRELEVANT"
+ },
+ "tingaicompass/AI-Compass": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "hairyhenderson/gomplate": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "kcl-lang/kcl": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "MemPalace/mempalace": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "NPC-Worldwide/incognide": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "yusing/godoxy": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "gravitational/teleport": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ },
+ "tswawa/WechatVibe": {
+  "set": "holdout",
+  "domain": "AI"
+ },
+ "community-scripts/ProxmoxVE": {
+  "set": "holdout",
+  "domain": "ENGINEERING"
+ }
+}

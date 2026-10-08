@@ -317,3 +317,58 @@ export function historyProblems(history: unknown, pub: unknown, cfg: HistoryGate
   if (bad > 15) p.push(`... and ${bad - 15} more history problems`);
   return p;
 }
+
+// ------------------------------------------------------------------ public/private separation (Phase 6.2)
+
+/**
+ * The public contract, as an allow-list. A field that is not listed here cannot reach the browser by accident (for example
+ * an internal tier detail, a star history, a path or a diagnostic). Adding a public field is a deliberate change to this list
+ * and to docs/PHASE-5-DATA-CONTRACT.md.
+ */
+export const PUBLIC_RADAR_KEYS = ['schemaVersion', 'momentumVersion', 'generatedAt', 'lists', 'repositories', 'categories', 'stats', 'patternVersion', 'lifecycle'] as const;
+export const PUBLIC_REPOSITORY_KEYS = [
+  'id', 'fullName', 'url', 'description', 'language', 'stars', 'classification', 'growth7d', 'growth30d', 'velocity7d', 'velocity30d', 'score', 'trend', 'flags', 'summary',
+  'growth90d', 'velocity90d', 'growthPercent7d', 'priorVelocity', 'accelerationRatio', 'velocityDelta', 'ageDays', 'explanation', 'tier', 'pattern', 'lifecycle',
+] as const;
+export const PUBLIC_HISTORY_KEYS = ['schemaVersion', 'generatedAt', 'days', 'repositories'] as const;
+
+/** Unknown top-level or per-record keys in the public datasets. */
+export function publicSchemaProblems(radar: unknown, history: unknown | null): string[] {
+  const p: string[] = [];
+  const extra = (o: Rec, allowed: readonly string[]) => Object.keys(o).filter((k) => !allowed.includes(k));
+  if (isObj(radar)) {
+    const top = extra(radar, PUBLIC_RADAR_KEYS);
+    if (top.length > 0) p.push(`radar.json has unexpected top-level key(s): ${top.join(', ')}`);
+    if (Array.isArray(radar.repositories)) {
+      const seen = new Set<string>();
+      for (const r of radar.repositories as unknown[]) if (isObj(r)) for (const k of extra(r, PUBLIC_REPOSITORY_KEYS)) seen.add(k);
+      if (seen.size > 0) p.push(`radar.json records have unexpected key(s): ${[...seen].join(', ')}`);
+    }
+  }
+  if (history !== null && isObj(history)) {
+    const top = extra(history, PUBLIC_HISTORY_KEYS);
+    if (top.length > 0) p.push(`history.json has unexpected top-level key(s): ${top.join(', ')}`);
+    if (isObj(history.repositories)) {
+      const seen = new Set<string>();
+      for (const e of Object.values(history.repositories)) if (isObj(e)) for (const k of extra(e, ['e', 'g'])) seen.add(k);
+      if (seen.size > 0) p.push(`history.json entries have unexpected key(s): ${[...seen].join(', ')}`);
+    }
+  }
+  return p;
+}
+
+/**
+ * Token-SHAPED strings only (a repository description may legitimately mention "GITHUB_TOKEN" or "Authorization"; a token
+ * value never legitimately appears). Returns the kinds found, never the values.
+ */
+export function secretShapeProblems(text: string, label: string): string[] {
+  const kinds: [string, RegExp][] = [
+    ['GitHub personal access token', /\bghp_[A-Za-z0-9]{30,}\b/],
+    ['GitHub fine-grained token', /\bgithub_pat_[A-Za-z0-9_]{40,}\b/],
+    ['GitHub OAuth/app token', /\bgh[osur]_[A-Za-z0-9]{30,}\b/],
+    ['AWS access key id', /\bAKIA[0-9A-Z]{16}\b/],
+    ['private key block', /-----BEGIN [A-Z ]*PRIVATE KEY-----/],
+    ['bearer credential', /\bBearer\s+[A-Za-z0-9._~+/=-]{30,}/],
+  ];
+  return kinds.filter(([, re]) => re.test(text)).map(([k]) => `${label} contains a ${k} shape`);
+}

@@ -54,5 +54,6 @@
     "UNASSESSED",
     "WARM",
     "DORMANT"
-  ]
+  ],
+  "dueGraceHours": 3
 }
