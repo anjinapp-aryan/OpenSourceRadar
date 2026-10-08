@@ -1,0 +1,786 @@
+{
+ "meta": {
+  "searchedAt": "2026-10-08T15:17:23.000Z",
+  "authenticated": false,
+  "topics": [
+   "llm",
+   "ai-agents",
+   "mcp",
+   "docker",
+   "kubernetes",
+   "java",
+   "developer-tools",
+   "machine-learning",
+   "rag",
+   "security",
+   "devops",
+   "postgresql",
+   "database",
+   "generative-ai"
+  ],
+  "thresholds": {
+   "grower": {
+    "minVelocity7d": 8,
+    "minGrowth7d": 56
+   },
+   "nearFraction": 0.5,
+   "rising": {
+    "minVelocity7d": 100,
+    "minGrowth7d": 700
+   }
+  },
+  "thresholdBasis": "grower = production tracking WARM floor (7-day velocity >= 8 stars/day and >= 56 stars in 7 days); near-Rising = both numeric Rising gates at 50% (velocity7d >= 50 and growth7d >= 350) without the Rising label; Rising = the production trend label, evaluated by the production momentum code",
+  "hybridComponents": [
+   "C:young-500-5000",
+   "D:updated",
+   "C:mid-1000-5000",
+   "C:mid-5000-15000"
+  ],
+  "hybridBudgetExperimentRequests": 63.63636363636363,
+  "normalizeRejected": {
+   "malformed": 0,
+   "fork": 0,
+   "archived": 19,
+   "duplicate": 0
+  },
+  "novelTotal": 2751,
+  "measuredSample": 100,
+  "historyFetchErrors": 0,
+  "historyCompleteShare": 0.33
+ },
+ "current": {
+  "strategy": "A current",
+  "candidates": 4490,
+  "searchRequestsPerWeek": 99,
+  "controlRealGrowthClasses": {
+   "RISING": 37,
+   "NEAR_RISING": 80,
+   "GROWER": 471,
+   "QUIET": 3019,
+   "UNMEASURED": 0
+  },
+  "controlRates": {
+   "RISING": 0.008,
+   "NEAR_RISING": 0.018,
+   "GROWER": 0.105,
+   "QUIET": 0.672,
+   "UNMEASURED": 0
+  }
+ },
+ "strategies": [
+  {
+   "strategy": "B top-300",
+   "searchRequestsExperiment": 42,
+   "newRepos": 1518,
+   "sampled": 63,
+   "estimatedActualGrowers": 168,
+   "growerRate": {
+    "rate": 0.11,
+    "low": 0.054,
+    "high": 0.211
+   },
+   "estimatedNearRisingOrRising": 0,
+   "estimatedRising": 0,
+   "classRates": {
+    "RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.057,
+     "est": 0
+    },
+    "NEAR_RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.057,
+     "est": 0
+    },
+    "GROWER": {
+     "rate": 0.11,
+     "low": 0.054,
+     "high": 0.211,
+     "est": 168
+    },
+    "QUIET": {
+     "rate": 0.89,
+     "low": 0.789,
+     "high": 0.946,
+     "est": 1350
+    }
+   },
+   "under1k": 274,
+   "under5k": 1135,
+   "under10k": 1473,
+   "growersUnder1k": 24,
+   "growersUnder5k": 120,
+   "classifiedShare": 0.697,
+   "unknown": 460,
+   "usefulRate": {
+    "rate": 0.078,
+    "low": 0.034,
+    "high": 0.171,
+    "est": 119
+   },
+   "usefulPerSearchRequest": 2.832,
+   "risingPerSearchRequest": 0,
+   "additionalSearchRequestsPerWeek": 132,
+   "domains": {
+    "AI": 435,
+    "ENGINEERING": 557,
+    "BOTH": 66,
+    "UNKNOWN": 460
+   }
+  },
+  {
+   "strategy": "C recent + star bands",
+   "searchRequestsExperiment": 56,
+   "newRepos": 1803,
+   "sampled": 63,
+   "estimatedActualGrowers": 320,
+   "growerRate": {
+    "rate": 0.177,
+    "low": 0.102,
+    "high": 0.289
+   },
+   "estimatedNearRisingOrRising": 38,
+   "estimatedRising": 0,
+   "classRates": {
+    "RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.057,
+     "est": 0
+    },
+    "NEAR_RISING": {
+     "rate": 0.021,
+     "low": 0.005,
+     "high": 0.093,
+     "est": 38
+    },
+    "GROWER": {
+     "rate": 0.156,
+     "low": 0.087,
+     "high": 0.265,
+     "est": 282
+    },
+    "QUIET": {
+     "rate": 0.823,
+     "low": 0.711,
+     "high": 0.898,
+     "est": 1483
+    }
+   },
+   "under1k": 757,
+   "under5k": 1510,
+   "under10k": 1767,
+   "growersUnder1k": 138,
+   "growersUnder5k": 272,
+   "classifiedShare": 0.699,
+   "unknown": 543,
+   "usefulRate": {
+    "rate": 0.15,
+    "low": 0.082,
+    "high": 0.258,
+    "est": 271
+   },
+   "usefulPerSearchRequest": 4.842,
+   "risingPerSearchRequest": 0,
+   "additionalSearchRequestsPerWeek": 264,
+   "domains": {
+    "AI": 629,
+    "ENGINEERING": 506,
+    "BOTH": 125,
+    "UNKNOWN": 543
+   }
+  },
+  {
+   "strategy": "D multi-sort",
+   "searchRequestsExperiment": 28,
+   "newRepos": 764,
+   "sampled": 30,
+   "estimatedActualGrowers": 123,
+   "growerRate": {
+    "rate": 0.161,
+    "low": 0.07,
+    "high": 0.329
+   },
+   "estimatedNearRisingOrRising": 0,
+   "estimatedRising": 0,
+   "classRates": {
+    "RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.114,
+     "est": 0
+    },
+    "NEAR_RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.114,
+     "est": 0
+    },
+    "GROWER": {
+     "rate": 0.161,
+     "low": 0.07,
+     "high": 0.329,
+     "est": 123
+    },
+    "QUIET": {
+     "rate": 0.839,
+     "low": 0.671,
+     "high": 0.93,
+     "est": 641
+    }
+   },
+   "under1k": 457,
+   "under5k": 664,
+   "under10k": 755,
+   "growersUnder1k": 28,
+   "growersUnder5k": 75,
+   "classifiedShare": 0.723,
+   "unknown": 212,
+   "usefulRate": {
+    "rate": 0.161,
+    "low": 0.07,
+    "high": 0.329,
+    "est": 123
+   },
+   "usefulPerSearchRequest": 4.381,
+   "risingPerSearchRequest": 0,
+   "additionalSearchRequestsPerWeek": 132,
+   "domains": {
+    "AI": 210,
+    "ENGINEERING": 295,
+    "BOTH": 47,
+    "UNKNOWN": 212
+   }
+  },
+  {
+   "strategy": "E hybrid",
+   "searchRequestsExperiment": 56,
+   "newRepos": 1661,
+   "sampled": 65,
+   "estimatedActualGrowers": 285,
+   "growerRate": {
+    "rate": 0.168,
+    "low": 0.096,
+    "high": 0.277
+   },
+   "estimatedNearRisingOrRising": 38,
+   "estimatedRising": 0,
+   "classRates": {
+    "RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.056,
+     "est": 0
+    },
+    "NEAR_RISING": {
+     "rate": 0.022,
+     "low": 0.005,
+     "high": 0.093,
+     "est": 38
+    },
+    "GROWER": {
+     "rate": 0.146,
+     "low": 0.08,
+     "high": 0.251,
+     "est": 247
+    },
+    "QUIET": {
+     "rate": 0.832,
+     "low": 0.723,
+     "high": 0.904,
+     "est": 1412
+    }
+   },
+   "under1k": 519,
+   "under5k": 1359,
+   "under10k": 1624,
+   "growersUnder1k": 104,
+   "growersUnder5k": 238,
+   "classifiedShare": 0.694,
+   "unknown": 508,
+   "usefulRate": {
+    "rate": 0.154,
+    "low": 0.086,
+    "high": 0.261,
+    "est": 261
+   },
+   "usefulPerSearchRequest": 4.662,
+   "risingPerSearchRequest": 0,
+   "additionalSearchRequestsPerWeek": 264,
+   "domains": {
+    "AI": 517,
+    "ENGINEERING": 556,
+    "BOTH": 80,
+    "UNKNOWN": 508
+   }
+  }
+ ],
+ "components": [
+  {
+   "strategy": "B:top300",
+   "searchRequestsExperiment": 42,
+   "newRepos": 1518,
+   "sampled": 63,
+   "estimatedActualGrowers": 168,
+   "growerRate": {
+    "rate": 0.11,
+    "low": 0.054,
+    "high": 0.211
+   },
+   "estimatedNearRisingOrRising": 0,
+   "estimatedRising": 0,
+   "classRates": {
+    "RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.057,
+     "est": 0
+    },
+    "NEAR_RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.057,
+     "est": 0
+    },
+    "GROWER": {
+     "rate": 0.11,
+     "low": 0.054,
+     "high": 0.211,
+     "est": 168
+    },
+    "QUIET": {
+     "rate": 0.89,
+     "low": 0.789,
+     "high": 0.946,
+     "est": 1350
+    }
+   },
+   "under1k": 274,
+   "under5k": 1135,
+   "under10k": 1473,
+   "growersUnder1k": 24,
+   "growersUnder5k": 120,
+   "classifiedShare": 0.697,
+   "unknown": 460,
+   "usefulRate": {
+    "rate": 0.078,
+    "low": 0.034,
+    "high": 0.171,
+    "est": 119
+   },
+   "usefulPerSearchRequest": 2.832,
+   "risingPerSearchRequest": 0,
+   "additionalSearchRequestsPerWeek": 132,
+   "domains": {
+    "AI": 435,
+    "ENGINEERING": 557,
+    "BOTH": 66,
+    "UNKNOWN": 460
+   }
+  },
+  {
+   "strategy": "C:mid-1000-5000",
+   "searchRequestsExperiment": 14,
+   "newRepos": 665,
+   "sampled": 31,
+   "estimatedActualGrowers": 96,
+   "growerRate": {
+    "rate": 0.128,
+    "low": 0.051,
+    "high": 0.287
+   },
+   "estimatedNearRisingOrRising": 0,
+   "estimatedRising": 0,
+   "classRates": {
+    "RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.11,
+     "est": 0
+    },
+    "NEAR_RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.11,
+     "est": 0
+    },
+    "GROWER": {
+     "rate": 0.128,
+     "low": 0.051,
+     "high": 0.287,
+     "est": 96
+    },
+    "QUIET": {
+     "rate": 0.872,
+     "low": 0.713,
+     "high": 0.949,
+     "est": 654
+    }
+   },
+   "under1k": 0,
+   "under5k": 665,
+   "under10k": 665,
+   "growersUnder1k": null,
+   "growersUnder5k": 96,
+   "classifiedShare": 0.692,
+   "unknown": 205,
+   "usefulRate": {
+    "rate": 0.096,
+    "low": 0.033,
+    "high": 0.247,
+    "est": 72
+   },
+   "usefulPerSearchRequest": 5.115,
+   "risingPerSearchRequest": 0,
+   "additionalSearchRequestsPerWeek": 66,
+   "domains": {
+    "AI": 188,
+    "ENGINEERING": 250,
+    "BOTH": 22,
+    "UNKNOWN": 205
+   }
+  },
+  {
+   "strategy": "C:mid-5000-15000",
+   "searchRequestsExperiment": 14,
+   "newRepos": 293,
+   "sampled": 7,
+   "estimatedActualGrowers": 47,
+   "growerRate": {
+    "rate": 0.282,
+    "low": 0.08,
+    "high": 0.638
+   },
+   "estimatedNearRisingOrRising": 0,
+   "estimatedRising": 0,
+   "classRates": {
+    "RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.354,
+     "est": 0
+    },
+    "NEAR_RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.354,
+     "est": 0
+    },
+    "GROWER": {
+     "rate": 0.282,
+     "low": 0.08,
+     "high": 0.638,
+     "est": 47
+    },
+    "QUIET": {
+     "rate": 0.718,
+     "low": 0.362,
+     "high": 0.92,
+     "est": 121
+    }
+   },
+   "under1k": 0,
+   "under5k": 0,
+   "under10k": 257,
+   "growersUnder1k": null,
+   "growersUnder5k": null,
+   "classifiedShare": 0.652,
+   "unknown": 102,
+   "usefulRate": {
+    "rate": 0.282,
+    "low": 0.08,
+    "high": 0.638,
+    "est": 47
+   },
+   "usefulPerSearchRequest": 3.381,
+   "risingPerSearchRequest": 0,
+   "additionalSearchRequestsPerWeek": 66,
+   "domains": {
+    "AI": 90,
+    "ENGINEERING": 93,
+    "BOTH": 8,
+    "UNKNOWN": 102
+   }
+  },
+  {
+   "strategy": "C:young-50-500",
+   "searchRequestsExperiment": 14,
+   "newRepos": 668,
+   "sampled": 18,
+   "estimatedActualGrowers": 62,
+   "growerRate": {
+    "rate": 0.099,
+    "low": 0.026,
+    "high": 0.313
+   },
+   "estimatedNearRisingOrRising": 0,
+   "estimatedRising": 0,
+   "classRates": {
+    "RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.176,
+     "est": 0
+    },
+    "NEAR_RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.176,
+     "est": 0
+    },
+    "GROWER": {
+     "rate": 0.099,
+     "low": 0.026,
+     "high": 0.313,
+     "est": 62
+    },
+    "QUIET": {
+     "rate": 0.901,
+     "low": 0.687,
+     "high": 0.974,
+     "est": 570
+    }
+   },
+   "under1k": 668,
+   "under5k": 668,
+   "under10k": 668,
+   "growersUnder1k": 62,
+   "growersUnder5k": 62,
+   "classifiedShare": 0.725,
+   "unknown": 184,
+   "usefulRate": {
+    "rate": 0.06,
+    "low": 0.011,
+    "high": 0.264,
+    "est": 38
+   },
+   "usefulPerSearchRequest": 2.718,
+   "risingPerSearchRequest": 0,
+   "additionalSearchRequestsPerWeek": 66,
+   "domains": {
+    "AI": 259,
+    "ENGINEERING": 145,
+    "BOTH": 80,
+    "UNKNOWN": 184
+   }
+  },
+  {
+   "strategy": "C:young-500-5000",
+   "searchRequestsExperiment": 14,
+   "newRepos": 226,
+   "sampled": 10,
+   "estimatedActualGrowers": 161,
+   "growerRate": {
+    "rate": 0.498,
+    "low": 0.235,
+    "high": 0.762
+   },
+   "estimatedNearRisingOrRising": 38,
+   "estimatedRising": 0,
+   "classRates": {
+    "RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.278,
+     "est": 0
+    },
+    "NEAR_RISING": {
+     "rate": 0.117,
+     "low": 0.023,
+     "high": 0.424,
+     "est": 38
+    },
+    "GROWER": {
+     "rate": 0.381,
+     "low": 0.156,
+     "high": 0.672,
+     "est": 123
+    },
+    "QUIET": {
+     "rate": 0.502,
+     "low": 0.238,
+     "high": 0.765,
+     "est": 163
+    }
+   },
+   "under1k": 89,
+   "under5k": 226,
+   "under10k": 226,
+   "growersUnder1k": 76,
+   "growersUnder5k": 161,
+   "classifiedShare": 0.681,
+   "unknown": 72,
+   "usefulRate": {
+    "rate": 0.498,
+    "low": 0.235,
+    "high": 0.762,
+    "est": 161
+   },
+   "usefulPerSearchRequest": 11.535,
+   "risingPerSearchRequest": 0,
+   "additionalSearchRequestsPerWeek": 66,
+   "domains": {
+    "AI": 117,
+    "ENGINEERING": 20,
+    "BOTH": 17,
+    "UNKNOWN": 72
+   }
+  },
+  {
+   "strategy": "D:forks",
+   "searchRequestsExperiment": 14,
+   "newRepos": 144,
+   "sampled": 6,
+   "estimatedActualGrowers": 24,
+   "growerRate": {
+    "rate": 0.166,
+    "low": 0.03,
+    "high": 0.563
+   },
+   "estimatedNearRisingOrRising": 0,
+   "estimatedRising": 0,
+   "classRates": {
+    "RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.39,
+     "est": 0
+    },
+    "NEAR_RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.39,
+     "est": 0
+    },
+    "GROWER": {
+     "rate": 0.166,
+     "low": 0.03,
+     "high": 0.563,
+     "est": 24
+    },
+    "QUIET": {
+     "rate": 0.834,
+     "low": 0.437,
+     "high": 0.97,
+     "est": 119
+    }
+   },
+   "under1k": 18,
+   "under5k": 76,
+   "under10k": 137,
+   "growersUnder1k": null,
+   "growersUnder5k": 24,
+   "classifiedShare": 0.757,
+   "unknown": 35,
+   "usefulRate": {
+    "rate": 0.166,
+    "low": 0.03,
+    "high": 0.563,
+    "est": 24
+   },
+   "usefulPerSearchRequest": 1.69,
+   "risingPerSearchRequest": 0,
+   "additionalSearchRequestsPerWeek": 66,
+   "domains": {
+    "AI": 29,
+    "ENGINEERING": 73,
+    "BOTH": 7,
+    "UNKNOWN": 35
+   }
+  },
+  {
+   "strategy": "D:updated",
+   "searchRequestsExperiment": 14,
+   "newRepos": 643,
+   "sampled": 25,
+   "estimatedActualGrowers": 99,
+   "growerRate": {
+    "rate": 0.153,
+    "low": 0.06,
+    "high": 0.339
+   },
+   "estimatedNearRisingOrRising": 0,
+   "estimatedRising": 0,
+   "classRates": {
+    "RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.133,
+     "est": 0
+    },
+    "NEAR_RISING": {
+     "rate": 0,
+     "low": 0,
+     "high": 0.133,
+     "est": 0
+    },
+    "GROWER": {
+     "rate": 0.153,
+     "low": 0.06,
+     "high": 0.339,
+     "est": 99
+    },
+    "QUIET": {
+     "rate": 0.847,
+     "low": 0.661,
+     "high": 0.94,
+     "est": 546
+    }
+   },
+   "under1k": 442,
+   "under5k": 603,
+   "under10k": 640,
+   "growersUnder1k": 28,
+   "growersUnder5k": 52,
+   "classifiedShare": 0.72,
+   "unknown": 180,
+   "usefulRate": {
+    "rate": 0.153,
+    "low": 0.06,
+    "high": 0.339,
+    "est": 99
+   },
+   "usefulPerSearchRequest": 7.071,
+   "risingPerSearchRequest": 0,
+   "additionalSearchRequestsPerWeek": 66,
+   "domains": {
+    "AI": 185,
+    "ENGINEERING": 234,
+    "BOTH": 44,
+    "UNKNOWN": 180
+   }
+  }
+ ],
+ "dailyCost": [
+  {
+   "strategy": "B top-300",
+   "searchPerDay": 18.857142857142858,
+   "historyPerDay": 2319.360414866033,
+   "totalPerDay": 2338.2175577231756,
+   "weeklySearchMinutes": 13.2
+  },
+  {
+   "strategy": "C recent + star bands",
+   "searchPerDay": 37.714285714285715,
+   "historyPerDay": 2754.969749351772,
+   "totalPerDay": 2792.6840350660577,
+   "weeklySearchMinutes": 26.4
+  },
+  {
+   "strategy": "D multi-sort",
+   "searchPerDay": 18.857142857142858,
+   "historyPerDay": 1167.458945548833,
+   "totalPerDay": 1186.316088405976,
+   "weeklySearchMinutes": 13.2
+  },
+  {
+   "strategy": "E hybrid",
+   "searchPerDay": 37.714285714285715,
+   "historyPerDay": 2537.8133102852203,
+   "totalPerDay": 2575.527595999506,
+   "weeklySearchMinutes": 26.4
+  }
+ ]
+}

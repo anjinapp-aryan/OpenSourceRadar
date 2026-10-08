@@ -1,0 +1,657 @@
+{
+ "candidateSetGeneratedAt": "2026-10-05T10:52:54.464Z",
+ "settings": {
+  "ai": {
+   "minStars": 100,
+   "freshMinStars": 25,
+   "pushedWithinDays": 30,
+   "createdWithinDays": 30,
+   "perPage": 100,
+   "maxPagesPerQuery": 1,
+   "excludeForks": true,
+   "excludeArchived": true
+  },
+  "engineering": {
+   "minStars": 100,
+   "freshMinStars": 25,
+   "pushedWithinDays": 30,
+   "createdWithinDays": 30,
+   "perPage": 100,
+   "maxPagesPerQuery": 1,
+   "excludeForks": true,
+   "excludeArchived": true
+  }
+ },
+ "sort": "stars desc",
+ "queryCount": 99,
+ "queries": [
+  {
+   "domain": "ai",
+   "category": "ai-agents",
+   "template": "topic:ai-agents stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:ai-agents stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-agents",
+   "template": "topic:agentic-ai stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:agentic-ai stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-agents",
+   "template": "topic:ai-agents created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:ai-agents created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "ai",
+   "category": "llm",
+   "template": "topic:llm stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:llm stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "llm",
+   "template": "topic:large-language-models stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:large-language-models stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "llm",
+   "template": "topic:llm created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:llm created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "ai",
+   "category": "rag",
+   "template": "topic:rag stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:rag stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "rag",
+   "template": "topic:retrieval-augmented-generation stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:retrieval-augmented-generation stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "rag",
+   "template": "topic:rag created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:rag created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "ai",
+   "category": "mcp",
+   "template": "topic:mcp stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:mcp stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "mcp",
+   "template": "topic:model-context-protocol stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:model-context-protocol stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "mcp",
+   "template": "topic:mcp created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:mcp created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-coding",
+   "template": "topic:ai-coding stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:ai-coding stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-coding",
+   "template": "topic:code-generation stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:code-generation stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-coding",
+   "template": "topic:ai-coding created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:ai-coding created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "ai",
+   "category": "local-ai",
+   "template": "topic:local-llm stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:local-llm stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "local-ai",
+   "template": "topic:ollama stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:ollama stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "local-ai",
+   "template": "topic:local-llm created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:local-llm created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "ai",
+   "category": "multimodal",
+   "template": "topic:multimodal stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:multimodal stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "multimodal",
+   "template": "topic:vision-language-model stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:vision-language-model stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "multimodal",
+   "template": "topic:multimodal created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:multimodal created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-infrastructure",
+   "template": "topic:llm-inference stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:llm-inference stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-infrastructure",
+   "template": "topic:model-serving stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:model-serving stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-infrastructure",
+   "template": "topic:llm-inference created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:llm-inference created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-developer-tools",
+   "template": "topic:llm-evaluation stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:llm-evaluation stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-developer-tools",
+   "template": "topic:prompt-engineering stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:prompt-engineering stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-developer-tools",
+   "template": "topic:llm-evaluation created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:llm-evaluation created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "ai",
+   "category": "machine-learning",
+   "template": "topic:machine-learning stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:machine-learning stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "machine-learning",
+   "template": "topic:deep-learning stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:deep-learning stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "machine-learning",
+   "template": "topic:machine-learning created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:machine-learning created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "ai",
+   "category": "generative-ai",
+   "template": "topic:generative-ai stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:generative-ai stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "generative-ai",
+   "template": "topic:genai stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:genai stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "generative-ai",
+   "template": "topic:generative-ai created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:generative-ai created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-music",
+   "template": "topic:ai-music stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:ai-music stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-music",
+   "template": "topic:music-generation stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:music-generation stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-music",
+   "template": "topic:ai-music created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:ai-music created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-image",
+   "template": "topic:text-to-image stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:text-to-image stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-image",
+   "template": "topic:image-generation stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:image-generation stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-image",
+   "template": "topic:text-to-image created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:text-to-image created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-video",
+   "template": "topic:text-to-video stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:text-to-video stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-video",
+   "template": "topic:video-generation stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:video-generation stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "ai",
+   "category": "ai-video",
+   "template": "topic:text-to-video created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:text-to-video created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "java",
+   "template": "topic:java stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:java stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "java",
+   "template": "topic:jvm stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:jvm stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "java",
+   "template": "topic:java created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:java created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "spring-boot",
+   "template": "topic:spring-boot stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:spring-boot stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "spring-boot",
+   "template": "topic:spring stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:spring stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "spring-boot",
+   "template": "topic:spring-boot created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:spring-boot created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "microservices",
+   "template": "topic:microservices stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:microservices stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "microservices",
+   "template": "topic:microservice stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:microservice stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "microservices",
+   "template": "topic:microservices created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:microservices created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "kafka",
+   "template": "topic:kafka stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:kafka stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "kafka",
+   "template": "topic:apache-kafka stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:apache-kafka stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "kafka",
+   "template": "topic:kafka created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:kafka created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "kubernetes",
+   "template": "topic:kubernetes stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:kubernetes stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "kubernetes",
+   "template": "topic:k8s stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:k8s stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "kubernetes",
+   "template": "topic:kubernetes created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:kubernetes created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "docker",
+   "template": "topic:docker stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:docker stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "docker",
+   "template": "topic:docker-compose stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:docker-compose stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "docker",
+   "template": "topic:docker created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:docker created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "aws",
+   "template": "topic:aws stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:aws stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "aws",
+   "template": "topic:amazon-web-services stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:amazon-web-services stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "aws",
+   "template": "topic:aws created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:aws created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "cloud",
+   "template": "topic:cloud-native stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:cloud-native stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "cloud",
+   "template": "topic:cloud stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:cloud stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "cloud",
+   "template": "topic:cloud-native created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:cloud-native created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "postgresql",
+   "template": "topic:postgresql stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:postgresql stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "postgresql",
+   "template": "topic:postgres stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:postgres stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "postgresql",
+   "template": "topic:postgresql created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:postgresql created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "redis",
+   "template": "topic:redis stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:redis stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "redis",
+   "template": "topic:valkey stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:valkey stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "redis",
+   "template": "topic:redis created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:redis created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "databases",
+   "template": "topic:database stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:database stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "databases",
+   "template": "topic:sql stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:sql stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "databases",
+   "template": "topic:database created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:database created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "devops",
+   "template": "topic:devops stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:devops stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "devops",
+   "template": "topic:ci-cd stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:ci-cd stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "devops",
+   "template": "topic:devops created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:devops created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "observability",
+   "template": "topic:observability stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:observability stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "observability",
+   "template": "topic:opentelemetry stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:opentelemetry stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "observability",
+   "template": "topic:observability created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:observability created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "security",
+   "template": "topic:security stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:security stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "security",
+   "template": "topic:cybersecurity stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:cybersecurity stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "security",
+   "template": "topic:security created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:security created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "distributed-systems",
+   "template": "topic:distributed-systems stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:distributed-systems stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "distributed-systems",
+   "template": "topic:raft stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:raft stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "distributed-systems",
+   "template": "topic:distributed-systems created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:distributed-systems created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "system-design",
+   "template": "topic:system-design stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:system-design stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "system-design",
+   "template": "topic:software-architecture stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:software-architecture stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "system-design",
+   "template": "topic:system-design created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:system-design created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "developer-tools",
+   "template": "topic:developer-tools stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:developer-tools stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "developer-tools",
+   "template": "topic:devtools stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:devtools stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "developer-tools",
+   "template": "topic:developer-tools created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:developer-tools created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "infrastructure-as-code",
+   "template": "topic:infrastructure-as-code stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:infrastructure-as-code stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "infrastructure-as-code",
+   "template": "topic:terraform stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:terraform stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "infrastructure-as-code",
+   "template": "topic:infrastructure-as-code created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:infrastructure-as-code created:>2026-09-08 stars:>25"
+  },
+  {
+   "domain": "engineering",
+   "category": "testing",
+   "template": "topic:testing stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:testing stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "testing",
+   "template": "topic:test-automation stars:>{minStars} pushed:>{pushedSince}",
+   "expanded": "topic:test-automation stars:>100 pushed:>2026-09-08"
+  },
+  {
+   "domain": "engineering",
+   "category": "testing",
+   "template": "topic:testing created:>{createdSince} stars:>{freshMinStars}",
+   "expanded": "topic:testing created:>2026-09-08 stars:>25"
+  }
+ ],
+ "candidates": 4490,
+ "candidatesByDomain": {
+  "engineering": 2435,
+  "ai": 1842,
+  "ai+engineering": 213
+ },
+ "candidatesUnder": {
+  "<1000": 1753,
+  "<5000": 2992,
+  "<10000": 3485
+ },
+ "tracked": 3471,
+ "trackedByTier": {
+  "WARM": 2280,
+  "DORMANT": 950,
+  "HOT": 241
+ },
+ "experimentTopics": [
+  "llm",
+  "ai-agents",
+  "mcp",
+  "docker",
+  "kubernetes",
+  "java",
+  "developer-tools",
+  "machine-learning",
+  "rag",
+  "security",
+  "devops",
+  "postgresql",
+  "database",
+  "generative-ai"
+ ],
+ "filtering": "forks and archived dropped; stars below min(minStars, freshMinStars) dropped; results matching no category topic or keyword dropped (irrelevant); dedup by repository id; classification and tracking run afterwards on the candidate set"
+}

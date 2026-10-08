@@ -1,0 +1,68 @@
+{
+ "meta": {
+  "searchedAt": "2026-10-08T15:17:23.000Z",
+  "authenticated": false,
+  "topics": [
+   "llm",
+   "ai-agents",
+   "mcp",
+   "docker",
+   "kubernetes",
+   "java",
+   "developer-tools",
+   "machine-learning",
+   "rag",
+   "security",
+   "devops",
+   "postgresql",
+   "database",
+   "generative-ai"
+  ],
+  "thresholds": {
+   "grower": {
+    "minVelocity7d": 8,
+    "minGrowth7d": 56
+   },
+   "nearFraction": 0.5,
+   "rising": {
+    "minVelocity7d": 100,
+    "minGrowth7d": 700
+   }
+  },
+  "thresholdBasis": "grower = production tracking WARM floor (7-day velocity >= 8 stars/day and >= 56 stars in 7 days); near-Rising = both numeric Rising gates at 50% (velocity7d >= 50 and growth7d >= 350) without the Rising label; Rising = the production trend label, evaluated by the production momentum code",
+  "hybridComponents": [
+   "C:young-500-5000",
+   "D:updated",
+   "C:mid-1000-5000",
+   "C:mid-5000-15000"
+  ],
+  "hybridBudgetExperimentRequests": 63.63636363636363,
+  "normalizeRejected": {
+   "malformed": 0,
+   "fork": 0,
+   "archived": 19,
+   "duplicate": 0
+  },
+  "novelTotal": 2751,
+  "measuredSample": 100,
+  "historyFetchErrors": 0,
+  "historyCompleteShare": 0.33
+ },
+ "strategy": "A current",
+ "candidates": 4490,
+ "searchRequestsPerWeek": 99,
+ "controlRealGrowthClasses": {
+  "RISING": 37,
+  "NEAR_RISING": 80,
+  "GROWER": 471,
+  "QUIET": 3019,
+  "UNMEASURED": 0
+ },
+ "controlRates": {
+  "RISING": 0.008,
+  "NEAR_RISING": 0.018,
+  "GROWER": 0.105,
+  "QUIET": 0.672,
+  "UNMEASURED": 0
+ }
+}
