@@ -34,7 +34,7 @@
    "C:young-500-5000",
    "D:updated",
    "C:mid-1000-5000",
-   "C:mid-5000-15000"
+   "C:young-50-500"
   ],
   "hybridBudgetExperimentRequests": 63.63636363636363,
   "normalizeRejected": {
@@ -44,13 +44,33 @@
    "duplicate": 0
   },
   "novelTotal": 2751,
-  "measuredSample": 100,
+  "measuredSample": 200,
+  "probeSelected": 40,
+  "probeMeasured": 40,
+  "sampleRun": {
+   "selectedAndCached": 200,
+   "measured": 200,
+   "failed": 0,
+   "failureReasons": {},
+   "historyRequests": 242,
+   "probeMeasured": 39,
+   "firstFetchedAt": "2026-10-08T15:33:14.454Z",
+   "lastFetchedAt": "2026-10-09T10:35:47.082Z",
+   "note": "wall time includes waiting for the anonymous core quota (60 requests per hour)"
+  },
   "historyFetchErrors": 0,
-  "historyCompleteShare": 0.33
+  "historyCompleteShare": 0.485
  },
  "strategy": "A current",
  "candidates": 4490,
  "searchRequestsPerWeek": 99,
+ "historyRequestsPerDay": 1125,
+ "candidatesUnder": {
+  "<1k": 1753,
+  "<5k": 2992,
+  "<10k": 3485
+ },
+ "noiseUnknownClassification": 1018,
  "controlRealGrowthClasses": {
   "RISING": 37,
   "NEAR_RISING": 80,

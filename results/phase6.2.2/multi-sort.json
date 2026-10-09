@@ -34,7 +34,7 @@
    "C:young-500-5000",
    "D:updated",
    "C:mid-1000-5000",
-   "C:mid-5000-15000"
+   "C:young-50-500"
   ],
   "hybridBudgetExperimentRequests": 63.63636363636363,
   "normalizeRejected": {
@@ -44,62 +44,97 @@
    "duplicate": 0
   },
   "novelTotal": 2751,
-  "measuredSample": 100,
+  "measuredSample": 200,
+  "probeSelected": 40,
+  "probeMeasured": 40,
+  "sampleRun": {
+   "selectedAndCached": 200,
+   "measured": 200,
+   "failed": 0,
+   "failureReasons": {},
+   "historyRequests": 242,
+   "probeMeasured": 39,
+   "firstFetchedAt": "2026-10-08T15:33:14.454Z",
+   "lastFetchedAt": "2026-10-09T10:35:47.082Z",
+   "note": "wall time includes waiting for the anonymous core quota (60 requests per hour)"
+  },
   "historyFetchErrors": 0,
-  "historyCompleteShare": 0.33
+  "historyCompleteShare": 0.485
  },
  "strategy": "D multi-sort",
  "searchRequestsExperiment": 28,
+ "newOnCurrentQueryPage1": 5,
+ "newDeeperThanPage1": 759,
+ "sampledClassCountsDepthGap": {
+  "RISING": 0,
+  "NEAR_RISING": 0,
+  "GROWER": 5,
+  "QUIET": 50
+ },
+ "sampledClassCountsFilterGap": {
+  "RISING": 0,
+  "NEAR_RISING": 0,
+  "GROWER": 1,
+  "QUIET": 0
+ },
+ "uniqueFound": 1878,
  "newRepos": 764,
- "sampled": 30,
- "estimatedActualGrowers": 123,
+ "sampled": 56,
+ "estimatedActualGrowers": 85,
  "growerRate": {
-  "rate": 0.161,
-  "low": 0.07,
-  "high": 0.329
+  "rate": 0.111,
+  "low": 0.052,
+  "high": 0.219
  },
  "estimatedNearRisingOrRising": 0,
  "estimatedRising": 0,
+ "sampledClassCounts": {
+  "RISING": 0,
+  "NEAR_RISING": 0,
+  "GROWER": 6,
+  "QUIET": 50
+ },
+ "requestsPerUsefulCandidate": 44.16,
  "classRates": {
   "RISING": {
    "rate": 0,
    "low": 0,
-   "high": 0.114,
+   "high": 0.064,
    "est": 0
   },
   "NEAR_RISING": {
    "rate": 0,
    "low": 0,
-   "high": 0.114,
+   "high": 0.064,
    "est": 0
   },
   "GROWER": {
-   "rate": 0.161,
-   "low": 0.07,
-   "high": 0.329,
-   "est": 123
+   "rate": 0.111,
+   "low": 0.052,
+   "high": 0.219,
+   "est": 85
   },
   "QUIET": {
-   "rate": 0.839,
-   "low": 0.671,
-   "high": 0.93,
-   "est": 641
+   "rate": 0.889,
+   "low": 0.781,
+   "high": 0.948,
+   "est": 679
   }
  },
  "under1k": 457,
  "under5k": 664,
  "under10k": 755,
  "growersUnder1k": 28,
- "growersUnder5k": 75,
+ "growersUnder5k": 56,
  "classifiedShare": 0.723,
  "unknown": 212,
  "usefulRate": {
-  "rate": 0.161,
-  "low": 0.07,
-  "high": 0.329,
-  "est": 123
+  "rate": 0.111,
+  "low": 0.052,
+  "high": 0.219,
+  "est": 85
  },
- "usefulPerSearchRequest": 4.381,
+ "usefulPerSearchRequest": 3.02,
  "risingPerSearchRequest": 0,
  "additionalSearchRequestsPerWeek": 132,
  "domains": {

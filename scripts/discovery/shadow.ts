@@ -144,18 +144,22 @@ function loadSearch() {
   for (const t of cache.meta.topics) for (const q of shadowQueries(t, now)) queries.set(q.key, q);
   // novel repositories by id with the set of components that found them
   const found = new Map<string, { snapshot: RepositorySnapshot; components: Set<string> }>();
+  // Page 1 of the B top-300 query is exactly the production established-query shape (stars desc, first 100). A repository on it that is
+  // still not a candidate was found by today's discovery and then dropped by the relevance filter: a taxonomy gap, not a depth gap.
+  const onPage1 = new Set<string>();
   const rejected = { malformed: 0, fork: 0, archived: 0, duplicate: 0 };
   for (const [key, entry] of Object.entries(cache.entries)) {
     const n = normalizeHits(entry.repositories);
     for (const k of Object.keys(rejected) as (keyof typeof rejected)[]) rejected[k] += n.rejected[k];
     const comp = key.split('|')[1] as string; // "B:top300"
+    if (comp === 'B:top300') for (const r of entry.repositories.slice(0, 100)) onPage1.add(r.repositoryId);
     for (const s of n.repositories) {
       const e = found.get(s.repositoryId) ?? { snapshot: s, components: new Set<string>() };
       e.components.add(comp);
       found.set(s.repositoryId, e);
     }
   }
-  return { cache, now, queries, found, rejected };
+  return { cache, now, queries, found, rejected, onPage1 };
 }
 const strategyOf = (component: string) => component.split(':')[0] as string;
 const signature = (components: Set<string>) => [...new Set([...components].map(strategyOf))].sort().join('+');
@@ -199,7 +203,7 @@ async function sample() {
 
 // ---------------------------------------------------------------- analyse
 function analyse() {
-  const { cache, now, found, rejected } = loadSearch();
+  const { cache, now, found, rejected, onPage1 } = loadSearch();
   const hist = readJson<Record<string, HistoryEntry>>(HISTORY_CACHE) ?? {};
   const cfg = loadMomentumConfig();
   const pcfg = parsePatternConfig(JSON.parse(readFileSync('config/pattern.json', 'utf8')));
@@ -220,16 +224,44 @@ function analyse() {
   // measured novel repositories
   const measured = new Map<string, { cls: ValueClass; growth7d: number | null; growth30d: number | null; growth90d: number | null; velocity7d: number | null; score: number | null; historyWeeks: number; complete: boolean }>();
   const asOf = new Date(Math.max(...Object.values(hist).filter((h) => h.series).map((h) => Date.parse(h.fetchedAt)), now.getTime()));
-  const probe: { fullName: string; stars: number; lifetimePerDay: number; cls: ValueClass; growth7d: number | null; growth30d: number | null; velocity7d: number | null }[] = [];
+  const lifetimeRateOf = (x: RepositorySnapshot) => x.stars / Math.max(1, (now.getTime() - Date.parse(x.createdAt)) / 86_400_000);
+  const stateIds = new Set(repos.repositories.map((r: any) => r.id as string));
+  const probeIds = new Set(
+    [...found.values()]
+      .filter((f) => !inCandidates.has(f.snapshot.repositoryId))
+      .sort((a, b) => lifetimeRateOf(b.snapshot) - lifetimeRateOf(a.snapshot) || (a.snapshot.repositoryId < b.snapshot.repositoryId ? -1 : 1))
+      .slice(0, 40)
+      .map((f) => f.snapshot.repositoryId),
+  );
+  const probe: Record<string, unknown>[] & { cls?: never } = [] as never;
   for (const h of Object.values(hist)) {
     const f = found.get(h.id);
     if (!f || !h.series) continue;
-    if (h.stratum === 'PROBE') {
+    if (probeIds.has(h.id)) {
       const rec = buildRecord(f.snapshot, { domains: ['ai'], categories: [] }, h.series, [], new Date(h.series.fetchedAt));
       const e = evaluateCurrent(rec, rec.growthAsOf ?? h.series.fetchedAt, new Date(h.series.fetchedAt), cfg, pcfg);
-      probe.push({ fullName: f.snapshot.fullName, stars: f.snapshot.stars, lifetimePerDay: +(f.snapshot.stars / Math.max(1, (now.getTime() - Date.parse(f.snapshot.createdAt)) / 86_400_000)).toFixed(1), cls: valueClass({ growth7d: e.growth7d, growth30d: e.growth30d, growth90d: e.growth90d, velocity7d: e.velocity7d, velocity30d: e.velocity30d, trend: e.trend, score: e.score }, thresholds), growth7d: e.growth7d, growth30d: e.growth30d, velocity7d: e.velocity7d });
-      continue;
+      probe.push({
+        fullName: f.snapshot.fullName,
+        classification: classify(f.snapshot),
+        stars: f.snapshot.stars,
+        ageDays: Math.round((now.getTime() - Date.parse(f.snapshot.createdAt)) / 86_400_000),
+        lifetimeStarsPerDayDiscoveryProxy: +(f.snapshot.stars / Math.max(1, (now.getTime() - Date.parse(f.snapshot.createdAt)) / 86_400_000)).toFixed(1),
+        cls: valueClass({ growth7d: e.growth7d, growth30d: e.growth30d, growth90d: e.growth90d, velocity7d: e.velocity7d, velocity30d: e.velocity30d, trend: e.trend, score: e.score }, thresholds),
+        qualifiesRising: e.trend === 'RISING',
+        foundBy: [...f.components].sort(),
+        inRandomSample: h.stratum !== 'PROBE',
+        knownToPipelineState: stateIds.has(f.snapshot.repositoryId),
+        onCurrentQueryPage1: onPage1.has(f.snapshot.repositoryId),
+        trend: e.trend,
+        pattern: e.pattern,
+        momentumScore: e.score,
+        growth7d: e.growth7d,
+        growth30d: e.growth30d,
+        growth90d: e.growth90d,
+        velocity7d: e.velocity7d,
+      });
     }
+    if (h.stratum === 'PROBE') continue;
     const rec = buildRecord(f.snapshot, { domains: ['ai'], categories: [] }, h.series, [], new Date(h.series.fetchedAt));
     const e = evaluateCurrent(rec, rec.growthAsOf ?? h.series.fetchedAt, new Date(h.series.fetchedAt), cfg, pcfg);
     measured.set(h.id, {
@@ -274,12 +306,19 @@ function analyse() {
     return {
       strategy: name,
       searchRequestsExperiment: requests,
+      newOnCurrentQueryPage1: ids.filter((f) => onPage1.has(f.snapshot.repositoryId)).length,
+      newDeeperThanPage1: ids.filter((f) => !onPage1.has(f.snapshot.repositoryId)).length,
+      sampledClassCountsDepthGap: Object.fromEntries((['RISING', 'NEAR_RISING', 'GROWER', 'QUIET'] as ValueClass[]).map((c) => [c, sampled.filter((f) => !onPage1.has(f.snapshot.repositoryId) && measured.get(f.snapshot.repositoryId)!.cls === c).length])),
+      sampledClassCountsFilterGap: Object.fromEntries((['RISING', 'NEAR_RISING', 'GROWER', 'QUIET'] as ValueClass[]).map((c) => [c, sampled.filter((f) => onPage1.has(f.snapshot.repositoryId) && measured.get(f.snapshot.repositoryId)!.cls === c).length])),
+      uniqueFound: [...found.values()].filter((f) => [...f.components].some(match)).length,
       newRepos: ids.length,
       sampled: sampled.length,
       estimatedActualGrowers: growers ? Math.round(growers.estimatedHits) : null,
       growerRate: growers && { rate: +growers.rate.toFixed(3), low: +growers.low.toFixed(3), high: +growers.high.toFixed(3) },
       estimatedNearRisingOrRising: nearUp ? Math.round(nearUp.estimatedHits) : null,
       estimatedRising: rate((c) => c === 'RISING') ? Math.round(rate((c) => c === 'RISING')!.estimatedHits) : null,
+      sampledClassCounts: Object.fromEntries((['RISING', 'NEAR_RISING', 'GROWER', 'QUIET'] as ValueClass[]).map((c) => [c, sampled.filter((f) => measured.get(f.snapshot.repositoryId)!.cls === c).length])),
+      requestsPerUsefulCandidate: useful && useful.estimatedHits > 0 ? +((requests * scaleToProduction + ids.length * scaleToProduction) / useful.estimatedHits).toFixed(2) : null,
       classRates: Object.fromEntries(classes.map(([c, r]) => [c, r && { rate: +r.rate.toFixed(3), low: +r.low.toFixed(3), high: +r.high.toFixed(3), est: Math.round(r.estimatedHits) }])),
       under1k: under(1000),
       under5k: under(5000),
@@ -297,6 +336,18 @@ function analyse() {
     };
   }
 
+  // LIFETIME STAR/DAY DISCOVERY PROXY bands: how the (random) measured sample and the probe distribute over the proxy. Selection aid only.
+  const bandOf = (x: RepositorySnapshot) => {
+    const v = lifetimeRateOf(x);
+    return v < 10 ? '<10' : v < 25 ? '10-25' : v < 50 ? '25-50' : '>=50';
+  };
+  const proxyBands = ['<10', '10-25', '25-50', '>=50'].map((b) => {
+    const pool = novel.filter((f) => bandOf(f.snapshot) === b);
+    const smp = pool.filter((f) => measured.has(f.snapshot.repositoryId));
+    const cnt = (c: ValueClass) => smp.filter((f) => measured.get(f.snapshot.repositoryId)!.cls === c).length;
+    const prb = (probe as any[]).filter((p) => bandOf({ stars: p.stars, createdAt: new Date(now.getTime() - p.ageDays * 86_400_000).toISOString() } as RepositorySnapshot) === b);
+    return { band: b, novelPool: pool.length, randomSampled: smp.length, randomSampleClasses: { RISING: cnt('RISING'), NEAR_RISING: cnt('NEAR_RISING'), GROWER: cnt('GROWER'), QUIET: cnt('QUIET') }, probeRepos: prb.length, probeRising: prb.filter((p) => p.qualifiesRising).length };
+  });
   const components = [...new Set(Object.keys(cache.entries).map((k) => k.split('|')[1] as string))].sort();
   const byComponent = components.map((c) => summarise(c, (x) => x === c));
   const B = summarise('B top-300', (c) => strategyOf(c) === 'B');
@@ -314,6 +365,9 @@ function analyse() {
     strategy: 'A current',
     candidates: cand.candidates.length,
     searchRequestsPerWeek: 99,
+    historyRequestsPerDay: 1125,
+    candidatesUnder: { '<1k': cand.candidates.filter((c) => c.stars < 1000).length, '<5k': cand.candidates.filter((c) => c.stars < 5000).length, '<10k': cand.candidates.filter((c) => c.stars < 10000).length },
+    noiseUnknownClassification: cand.candidates.filter((c) => classify({ repositoryId: c.id, name: c.fullName.split('/')[1], description: (c as any).description ?? null, topics: c.topics, language: (c as any).language ?? null } as RepositorySnapshot) === 'UNKNOWN').length,
     controlRealGrowthClasses: control,
     controlRates: Object.fromEntries(Object.entries(control).map(([k, v]) => [k, +(v / Math.max(1, cand.candidates.length)).toFixed(3)])),
   };
@@ -329,7 +383,19 @@ function analyse() {
     normalizeRejected: rejected,
     novelTotal: novel.length,
     measuredSample: measured.size,
+    probeSelected: probeIds.size,
     probeMeasured: probe.length,
+    sampleRun: {
+      selectedAndCached: history.filter((h) => h.stratum !== 'PROBE').length,
+      measured: history.filter((h) => h.stratum !== 'PROBE' && h.series).length,
+      failed: history.filter((h) => h.stratum !== 'PROBE' && !h.series).length,
+      failureReasons: Object.fromEntries([...new Set(history.filter((h) => !h.series).map((h) => h.error ?? 'unknown'))].map((e) => [e, history.filter((h) => !h.series && (h.error ?? 'unknown') === e).length])),
+      historyRequests: history.reduce((a, h) => a + (h.series?.requests ?? 0), 0),
+      probeMeasured: history.filter((h) => h.stratum === 'PROBE' && h.series).length,
+      firstFetchedAt: history.map((h) => h.fetchedAt).sort()[0] ?? null,
+      lastFetchedAt: history.map((h) => h.fetchedAt).sort().at(-1) ?? null,
+      note: 'wall time includes waiting for the anonymous core quota (60 requests per hour)',
+    },
     historyFetchErrors: history.filter((h) => !h.series).length,
     historyCompleteShare: +(history.filter((h) => h.series?.complete).length / Math.max(1, history.filter((h) => h.series).length)).toFixed(3),
   };
@@ -339,11 +405,50 @@ function analyse() {
   write('recent-star-bands.json', { meta, ...C });
   write('multi-sort.json', { meta, ...D });
   write('hybrid.json', { meta, ...E });
-  probe.sort((a, b) => (a.fullName < b.fullName ? -1 : 1));
-  write('probe.json', { note: 'NOT a random sample: top novel repositories by lifetime stars/day (discovery proxy only), measured with real history', n: probe.length, byClass: Object.fromEntries((['RISING', 'NEAR_RISING', 'GROWER', 'QUIET', 'UNMEASURED'] as ValueClass[]).map((c) => [c, probe.filter((p) => p.cls === c).length])), repositories: probe });
+  (probe as any[]).sort((a, b) => (a.fullName < b.fullName ? -1 : 1));
+  write('probe.json', { note: 'NOT a random sample: the novel repositories with the highest lifetime stars/day (a discovery-ranking proxy), measured with real star history', selected: probeIds.size, n: probe.length, byClass: Object.fromEntries((['RISING', 'NEAR_RISING', 'GROWER', 'QUIET', 'UNMEASURED'] as ValueClass[]).map((c) => [c, (probe as any[]).filter((p) => p.cls === c).length])), qualifyingRising: (probe as any[]).filter((p) => p.qualifiesRising).length, risingOnCurrentQueryPage1: (probe as any[]).filter((p) => p.qualifiesRising && p.onCurrentQueryPage1).length, risingDeeperThanPage1: (probe as any[]).filter((p) => p.qualifiesRising && !p.onCurrentQueryPage1).length, risingKnownToPipelineState: (probe as any[]).filter((p) => p.qualifiesRising && p.knownToPipelineState).length, risingClassifiedUnknown: (probe as any[]).filter((p) => p.qualifiesRising && p.classification === 'UNKNOWN').length, risingFoundByStrategy: Object.fromEntries(['B', 'C', 'D'].map((x) => [x, (probe as any[]).filter((p) => p.qualifiesRising && (p.foundBy as string[]).some((c) => c.startsWith(x + ':'))).length])), nearRisingFoundByStrategy: Object.fromEntries(['B', 'C', 'D'].map((x) => [x, (probe as any[]).filter((p) => p.cls === 'NEAR_RISING' && (p.foundBy as string[]).some((c) => c.startsWith(x + ':'))).length])), selection: 'LIFETIME STAR/DAY DISCOVERY PROXY (selection only; not current momentum)', repositories: probe });
   const strip = ({ novelIds: _n, ...rest }: any) => rest;
   const costs = [B, C, D, E].map((s) => ({ strategy: s.strategy, ...dailyCost({ searchRequestsPerWeek: s.additionalSearchRequestsPerWeek, addedTracked: Math.round(s.newRepos * scaleToProduction), historyRequestsPerRepoPerDay: 1125 / 3471, searchPerMinute: cache.meta.authenticated ? 30 : 10 }) }));
-  write('comparison.json', { meta, current, strategies: [B, C, D, E].map(strip), components: byComponent.map(strip), dailyCost: costs });
+  const cr = current.controlRealGrowthClasses as Record<ValueClass, number>;
+  const rowsFor = (s: any, cost: any) => ({
+    candidates: s.uniqueFound,
+    newCandidates: s.newRepos,
+    actualGrowersEstimated: s.estimatedActualGrowers,
+    nearRisingEstimated: s.classRates.NEAR_RISING?.est ?? null,
+    risingEstimated: s.classRates.RISING?.est ?? null,
+    sampledHits: s.sampledClassCounts,
+    under1k: s.under1k,
+    under5k: s.under5k,
+    under10k: s.under10k,
+    noiseUnknownClassification: s.unknown,
+    additionalSearchRequestsPerWeek: s.additionalSearchRequestsPerWeek,
+    additionalHistoryRequestsPerDay: Math.round(cost.historyPerDay),
+    usefulEstimated: s.usefulRate?.est ?? null,
+    usefulPerSearchRequest: s.usefulPerSearchRequest,
+    requestsPerUsefulCandidateOneTime: s.requestsPerUsefulCandidate,
+  });
+  const table = {
+    note: 'strategy columns cover the 14 experiment topics (candidates, new, under-N, noise are counts there; growers/near/rising/useful are stratified-sample estimates with the sampled hits shown); the Current column is the whole production candidate pool measured with stored history; N/A = not applicable',
+    current: {
+      candidates: cand.candidates.length,
+      newCandidates: 'N/A',
+      actualGrowers: cr.GROWER + cr.NEAR_RISING + cr.RISING,
+      nearRising: cr.NEAR_RISING,
+      rising: cr.RISING,
+      under1k: current.candidatesUnder['<1k'],
+      under5k: current.candidatesUnder['<5k'],
+      under10k: current.candidatesUnder['<10k'],
+      noiseUnknownClassification: current.noiseUnknownClassification,
+      searchRequestsPerWeek: 99,
+      historyRequestsPerDay: 1125,
+    },
+    B: rowsFor(B, costs[0]),
+    C: rowsFor(C, costs[1]),
+    D: rowsFor(D, costs[2]),
+    E: rowsFor(E, costs[3]),
+  };
+  write('table.json', table);
+  write('comparison.json', { meta, proxyBands, current, strategies: [B, C, D, E].map(strip), components: byComponent.map(strip), dailyCost: costs });
   console.log(JSON.stringify({ meta: { ...meta, thresholds: undefined }, current: current.controlRates, strategies: [B, C, D, E].map(strip), costs }, null, 1));
 }
 

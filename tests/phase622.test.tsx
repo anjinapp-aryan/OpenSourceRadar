@@ -169,3 +169,37 @@ describe('Phase 6.2.2 is isolated from production', () => {
     expect(s).not.toMatch(/writeFileSync\([^)]*(data\/|config\/)/);
   });
 });
+
+describe('Phase 6.2.2 result artefacts are internally consistent', () => {
+  const read = (f: string) => JSON.parse(readFileSync(`results/phase6.2.2/${f}`, 'utf8'));
+  it('final sample is complete and the probe is fully accounted for', () => {
+    const c = read('comparison.json');
+    expect(c.meta.sampleRun.measured).toBe(200);
+    expect(c.meta.sampleRun.failed).toBe(0);
+    const p = read('probe.json');
+    expect(p.selected).toBe(40);
+    expect(p.n).toBe(40);
+    expect(Object.values(p.byClass as Record<string, number>).reduce((a, b) => a + b, 0)).toBe(40);
+    expect(p.qualifyingRising).toBe(p.byClass.RISING);
+    expect(p.selection).toContain('LIFETIME STAR/DAY DISCOVERY PROXY');
+  });
+  it('probe Rising by strategy never exceeds the probe Rising total, and every repository carries its evidence', () => {
+    const p = read('probe.json');
+    for (const v of Object.values(p.risingFoundByStrategy as Record<string, number>)) expect(v).toBeLessThanOrEqual(p.qualifyingRising);
+    for (const r of p.repositories as Record<string, unknown>[]) {
+      for (const k of ['fullName', 'classification', 'stars', 'ageDays', 'trend', 'foundBy', 'knownToPipelineState', 'onCurrentQueryPage1']) expect(r).toHaveProperty(k);
+    }
+  });
+  it('the comparison table covers current, B, C, D and E with the same measured values as the strategy files', () => {
+    const t = read('table.json');
+    expect(Object.keys(t).sort()).toEqual(['B', 'C', 'D', 'E', 'current', 'note']);
+    expect(t.B.newCandidates).toBe(read('top300.json').newRepos);
+    expect(t.C.newCandidates).toBe(read('recent-star-bands.json').newRepos);
+    expect(t.D.newCandidates).toBe(read('multi-sort.json').newRepos);
+    expect(t.E.newCandidates).toBe(read('hybrid.json').newRepos);
+  });
+  it('production public data is untouched by the experiment', () => {
+    const status = execSync('git status --porcelain -- data config src/momentum src/tracking src/classification app lib components', { encoding: 'utf8' });
+    expect(status.trim()).toBe('');
+  });
+});

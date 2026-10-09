@@ -1,0 +1,104 @@
+{
+ "note": "strategy columns cover the 14 experiment topics (candidates, new, under-N, noise are counts there; growers/near/rising/useful are stratified-sample estimates with the sampled hits shown); the Current column is the whole production candidate pool measured with stored history; N/A = not applicable",
+ "current": {
+  "candidates": 4490,
+  "newCandidates": "N/A",
+  "actualGrowers": 588,
+  "nearRising": 80,
+  "rising": 37,
+  "under1k": 1753,
+  "under5k": 2992,
+  "under10k": 3485,
+  "noiseUnknownClassification": 1018,
+  "searchRequestsPerWeek": 99,
+  "historyRequestsPerDay": 1125
+ },
+ "B": {
+  "candidates": 3238,
+  "newCandidates": 1518,
+  "actualGrowersEstimated": 126,
+  "nearRisingEstimated": 0,
+  "risingEstimated": 0,
+  "sampledHits": {
+   "RISING": 0,
+   "NEAR_RISING": 0,
+   "GROWER": 9,
+   "QUIET": 101
+  },
+  "under1k": 274,
+  "under5k": 1135,
+  "under10k": 1473,
+  "noiseUnknownClassification": 460,
+  "additionalSearchRequestsPerWeek": 132,
+  "additionalHistoryRequestsPerDay": 2319,
+  "usefulEstimated": 98,
+  "usefulPerSearchRequest": 2.345,
+  "requestsPerUsefulCandidateOneTime": 74.68
+ },
+ "C": {
+  "candidates": 2988,
+  "newCandidates": 1803,
+  "actualGrowersEstimated": 196,
+  "nearRisingEstimated": 14,
+  "risingEstimated": 0,
+  "sampledHits": {
+   "RISING": 0,
+   "NEAR_RISING": 1,
+   "GROWER": 13,
+   "QUIET": 116
+  },
+  "under1k": 757,
+  "under5k": 1510,
+  "under10k": 1767,
+  "noiseUnknownClassification": 543,
+  "additionalSearchRequestsPerWeek": 264,
+  "additionalHistoryRequestsPerDay": 2755,
+  "usefulEstimated": 168,
+  "usefulPerSearchRequest": 2.998,
+  "requestsPerUsefulCandidateOneTime": 52.2
+ },
+ "D": {
+  "candidates": 1878,
+  "newCandidates": 764,
+  "actualGrowersEstimated": 85,
+  "nearRisingEstimated": 0,
+  "risingEstimated": 0,
+  "sampledHits": {
+   "RISING": 0,
+   "NEAR_RISING": 0,
+   "GROWER": 6,
+   "QUIET": 50
+  },
+  "under1k": 457,
+  "under5k": 664,
+  "under10k": 755,
+  "noiseUnknownClassification": 212,
+  "additionalSearchRequestsPerWeek": 132,
+  "additionalHistoryRequestsPerDay": 1167,
+  "usefulEstimated": 85,
+  "usefulPerSearchRequest": 3.02,
+  "requestsPerUsefulCandidateOneTime": 44.16
+ },
+ "E": {
+  "candidates": 3001,
+  "newCandidates": 2008,
+  "actualGrowersEstimated": 209,
+  "nearRisingEstimated": 14,
+  "risingEstimated": 0,
+  "sampledHits": {
+   "RISING": 0,
+   "NEAR_RISING": 1,
+   "GROWER": 14,
+   "QUIET": 135
+  },
+  "under1k": 1128,
+  "under5k": 1968,
+  "under10k": 2005,
+  "noiseUnknownClassification": 577,
+  "additionalSearchRequestsPerWeek": 264,
+  "additionalHistoryRequestsPerDay": 3068,
+  "usefulEstimated": 181,
+  "usefulPerSearchRequest": 3.24,
+  "requestsPerUsefulCandidateOneTime": 53.63
+ }
+}
