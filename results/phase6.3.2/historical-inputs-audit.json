@@ -1,0 +1,342 @@
+{
+ "snapshots": 14,
+ "snapshotDates": [
+  "2026-09-26",
+  "2026-10-09"
+ ],
+ "newToRadar": {
+  "cuts": [
+   {
+    "cut": "2026-09-29",
+    "datesComparedUpToCut": 4,
+    "newToRadarMembershipsUpToCut": 278,
+    "differencesUpToCut": 0,
+    "positiveControl": {
+     "datesAfterCut": 10,
+     "differingAfterCut": 10
+    }
+   },
+   {
+    "cut": "2026-10-02",
+    "datesComparedUpToCut": 7,
+    "newToRadarMembershipsUpToCut": 695,
+    "differencesUpToCut": 0,
+    "positiveControl": {
+     "datesAfterCut": 7,
+     "differingAfterCut": 7
+    }
+   },
+   {
+    "cut": "2026-10-05",
+    "datesComparedUpToCut": 10,
+    "newToRadarMembershipsUpToCut": 1385,
+    "differencesUpToCut": 0,
+    "positiveControl": {
+     "datesAfterCut": 4,
+     "differingAfterCut": 4
+    }
+   }
+  ],
+  "datesComparedUpToCut": 21,
+  "differencesUpToCut": 0,
+  "positiveControl": {
+   "datesAfterCut": 21,
+   "differingAfterCut": 21
+  },
+  "futureFirstPublicationsChecked": 2735,
+  "futureFirstPublicationsReported": 0,
+  "verdict": "NO LEAKAGE"
+ },
+ "pointInTimePopulation": {
+  "datesTested": [
+   "2026-09-26",
+   "2026-09-27",
+   "2026-09-28",
+   "2026-09-29",
+   "2026-09-30",
+   "2026-10-01",
+   "2026-10-02",
+   "2026-10-03"
+  ],
+  "datesNotTestable": [
+   "2026-09-05",
+   "2026-09-06",
+   "2026-09-07",
+   "2026-09-08",
+   "2026-09-09",
+   "2026-09-10",
+   "2026-09-11",
+   "2026-09-12",
+   "2026-09-13",
+   "2026-09-14",
+   "2026-09-15",
+   "2026-09-16",
+   "2026-09-17",
+   "2026-09-18",
+   "2026-09-19",
+   "2026-09-20",
+   "2026-09-21",
+   "2026-09-22",
+   "2026-09-23",
+   "2026-09-24",
+   "2026-09-25"
+  ],
+  "reason": "no published snapshot exists before the first date in git history; classification and publication at those dates are unavailable and are NOT reconstructed",
+  "populationSizeFixed": "see replay.engineeringRepositories in the replay output",
+  "comparableFlagMembershipsFixed": 2183,
+  "comparableFlagMembershipsSymmetricDifference": 104,
+  "populationSizesPointInTime": {
+   "2026-09-26": 1726,
+   "2026-09-27": 1726,
+   "2026-09-28": 1721,
+   "2026-09-29": 1721,
+   "2026-09-30": 1721,
+   "2026-10-01": 1721,
+   "2026-10-02": 1721,
+   "2026-10-03": 1721
+  },
+  "perFlag": {
+   "trending": {
+    "comparable": true,
+    "fixedMemberships": 259,
+    "pointInTimeMemberships": 247,
+    "symmetricDifference": 12
+   },
+   "sustained:engineering": {
+    "comparable": true,
+    "fixedMemberships": 651,
+    "pointInTimeMemberships": 617,
+    "symmetricDifference": 34
+   },
+   "cooling:production": {
+    "comparable": true,
+    "fixedMemberships": 182,
+    "pointInTimeMemberships": 166,
+    "symmetricDifference": 16
+   },
+   "cooling:fromHigh": {
+    "comparable": true,
+    "fixedMemberships": 204,
+    "pointInTimeMemberships": 192,
+    "symmetricDifference": 12
+   },
+   "accelerating:F50": {
+    "comparable": true,
+    "fixedMemberships": 232,
+    "pointInTimeMemberships": 224,
+    "symmetricDifference": 8
+   },
+   "accelerating:F30": {
+    "comparable": true,
+    "fixedMemberships": 347,
+    "pointInTimeMemberships": 339,
+    "symmetricDifference": 8
+   },
+   "rising:none": {
+    "comparable": false,
+    "fixedMemberships": 259,
+    "pointInTimeMemberships": 247,
+    "symmetricDifference": 12
+   },
+   "sustained:production": {
+    "comparable": true,
+    "fixedMemberships": 138,
+    "pointInTimeMemberships": 138,
+    "symmetricDifference": 0
+   },
+   "accelerating:F100": {
+    "comparable": true,
+    "fixedMemberships": 104,
+    "pointInTimeMemberships": 96,
+    "symmetricDifference": 8
+   },
+   "cooling:twoDeclines": {
+    "comparable": true,
+    "fixedMemberships": 51,
+    "pointInTimeMemberships": 45,
+    "symmetricDifference": 6
+   },
+   "rising:twoDays": {
+    "comparable": false,
+    "fixedMemberships": 240,
+    "pointInTimeMemberships": 200,
+    "symmetricDifference": 40
+   },
+   "breakout:F100": {
+    "comparable": true,
+    "fixedMemberships": 3,
+    "pointInTimeMemberships": 3,
+    "symmetricDifference": 0
+   },
+   "breakout:F50": {
+    "comparable": true,
+    "fixedMemberships": 6,
+    "pointInTimeMemberships": 6,
+    "symmetricDifference": 0
+   },
+   "breakout:F30": {
+    "comparable": true,
+    "fixedMemberships": 6,
+    "pointInTimeMemberships": 6,
+    "symmetricDifference": 0
+   },
+   "cooling:lostTrending": {
+    "comparable": false,
+    "fixedMemberships": 54,
+    "pointInTimeMemberships": 27,
+    "symmetricDifference": 27
+   },
+   "rising:threeOfFive": {
+    "comparable": false,
+    "fixedMemberships": 229,
+    "pointInTimeMemberships": 162,
+    "symmetricDifference": 67
+   }
+  }
+ },
+ "classificationDrift": [
+  {
+   "from": "2026-09-26",
+   "to": "2026-09-27",
+   "common": 3546,
+   "changed": 0,
+   "toEngineering": 0,
+   "fromEngineering": 0,
+   "published": 3546,
+   "entered": 0,
+   "left": 0
+  },
+  {
+   "from": "2026-09-27",
+   "to": "2026-09-28",
+   "common": 3546,
+   "changed": 115,
+   "toEngineering": 0,
+   "fromEngineering": 47,
+   "published": 3685,
+   "entered": 139,
+   "left": 0
+  },
+  {
+   "from": "2026-09-28",
+   "to": "2026-09-29",
+   "common": 3685,
+   "changed": 0,
+   "toEngineering": 0,
+   "fromEngineering": 0,
+   "published": 3685,
+   "entered": 0,
+   "left": 0
+  },
+  {
+   "from": "2026-09-29",
+   "to": "2026-09-30",
+   "common": 3685,
+   "changed": 0,
+   "toEngineering": 0,
+   "fromEngineering": 0,
+   "published": 3685,
+   "entered": 0,
+   "left": 0
+  },
+  {
+   "from": "2026-09-30",
+   "to": "2026-10-01",
+   "common": 3685,
+   "changed": 0,
+   "toEngineering": 0,
+   "fromEngineering": 0,
+   "published": 3685,
+   "entered": 0,
+   "left": 0
+  },
+  {
+   "from": "2026-10-01",
+   "to": "2026-10-02",
+   "common": 3685,
+   "changed": 0,
+   "toEngineering": 0,
+   "fromEngineering": 0,
+   "published": 3685,
+   "entered": 0,
+   "left": 0
+  },
+  {
+   "from": "2026-10-02",
+   "to": "2026-10-03",
+   "common": 3685,
+   "changed": 0,
+   "toEngineering": 0,
+   "fromEngineering": 0,
+   "published": 3685,
+   "entered": 0,
+   "left": 0
+  },
+  {
+   "from": "2026-10-03",
+   "to": "2026-10-04",
+   "common": 3685,
+   "changed": 0,
+   "toEngineering": 0,
+   "fromEngineering": 0,
+   "published": 3685,
+   "entered": 0,
+   "left": 0
+  },
+  {
+   "from": "2026-10-04",
+   "to": "2026-10-05",
+   "common": 3685,
+   "changed": 272,
+   "toEngineering": 10,
+   "fromEngineering": 93,
+   "published": 3958,
+   "entered": 273,
+   "left": 0
+  },
+  {
+   "from": "2026-10-05",
+   "to": "2026-10-06",
+   "common": 3471,
+   "changed": 0,
+   "toEngineering": 0,
+   "fromEngineering": 0,
+   "published": 3471,
+   "entered": 0,
+   "left": 487
+  },
+  {
+   "from": "2026-10-06",
+   "to": "2026-10-07",
+   "common": 3471,
+   "changed": 0,
+   "toEngineering": 0,
+   "fromEngineering": 0,
+   "published": 3471,
+   "entered": 0,
+   "left": 0
+  },
+  {
+   "from": "2026-10-07",
+   "to": "2026-10-08",
+   "common": 3471,
+   "changed": 0,
+   "toEngineering": 0,
+   "fromEngineering": 0,
+   "published": 3471,
+   "entered": 0,
+   "left": 0
+  },
+  {
+   "from": "2026-10-08",
+   "to": "2026-10-09",
+   "common": 3470,
+   "changed": 0,
+   "toEngineering": 0,
+   "fromEngineering": 0,
+   "published": 3470,
+   "entered": 0,
+   "left": 1
+  }
+ ]
+}

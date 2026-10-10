@@ -1,0 +1,132 @@
+{
+ "snapshots": 14,
+ "dates": [
+  "2026-09-26",
+  "2026-10-09"
+ ],
+ "note": "the first snapshot is a baseline and is excluded from the counts below",
+ "perDay": [
+  {
+   "date": "2026-09-26",
+   "published": 3546,
+   "newlyPublished": 0,
+   "newlyPublishedGenuinelyNew": 0,
+   "newlyPublishedShare90d": null
+  },
+  {
+   "date": "2026-09-27",
+   "published": 3546,
+   "newlyPublished": 0,
+   "newlyPublishedGenuinelyNew": 0,
+   "newlyPublishedShare90d": null
+  },
+  {
+   "date": "2026-09-28",
+   "published": 3685,
+   "newlyPublished": 139,
+   "newlyPublishedGenuinelyNew": 68,
+   "newlyPublishedShare90d": 0.489
+  },
+  {
+   "date": "2026-09-29",
+   "published": 3685,
+   "newlyPublished": 0,
+   "newlyPublishedGenuinelyNew": 0,
+   "newlyPublishedShare90d": null
+  },
+  {
+   "date": "2026-09-30",
+   "published": 3685,
+   "newlyPublished": 0,
+   "newlyPublishedGenuinelyNew": 0,
+   "newlyPublishedShare90d": null
+  },
+  {
+   "date": "2026-10-01",
+   "published": 3685,
+   "newlyPublished": 0,
+   "newlyPublishedGenuinelyNew": 0,
+   "newlyPublishedShare90d": null
+  },
+  {
+   "date": "2026-10-02",
+   "published": 3685,
+   "newlyPublished": 0,
+   "newlyPublishedGenuinelyNew": 0,
+   "newlyPublishedShare90d": null
+  },
+  {
+   "date": "2026-10-03",
+   "published": 3685,
+   "newlyPublished": 0,
+   "newlyPublishedGenuinelyNew": 0,
+   "newlyPublishedShare90d": null
+  },
+  {
+   "date": "2026-10-04",
+   "published": 3685,
+   "newlyPublished": 0,
+   "newlyPublishedGenuinelyNew": 0,
+   "newlyPublishedShare90d": null
+  },
+  {
+   "date": "2026-10-05",
+   "published": 3958,
+   "newlyPublished": 273,
+   "newlyPublishedGenuinelyNew": 139,
+   "newlyPublishedShare90d": 0.509
+  },
+  {
+   "date": "2026-10-06",
+   "published": 3471,
+   "newlyPublished": 0,
+   "newlyPublishedGenuinelyNew": 0,
+   "newlyPublishedShare90d": null
+  },
+  {
+   "date": "2026-10-07",
+   "published": 3471,
+   "newlyPublished": 0,
+   "newlyPublishedGenuinelyNew": 0,
+   "newlyPublishedShare90d": null
+  },
+  {
+   "date": "2026-10-08",
+   "published": 3471,
+   "newlyPublished": 0,
+   "newlyPublishedGenuinelyNew": 0,
+   "newlyPublishedShare90d": null
+  },
+  {
+   "date": "2026-10-09",
+   "published": 3470,
+   "newlyPublished": 0,
+   "newlyPublishedGenuinelyNew": 0,
+   "newlyPublishedShare90d": null
+  }
+ ],
+ "firstPublished": {
+  "daysCompared": 13,
+  "newlyPublishedTotal": 412,
+  "meanPerDay": 31.7,
+  "genuinelyNewShare": 0.502
+ },
+ "engineeringOnly": {
+  "newlyPublished": 140,
+  "genuinelyNew": 37,
+  "genuinelyNewShare": 0.264,
+  "medianAgeDays": 1914.95
+ },
+ "batchDays": [
+  "2026-09-28",
+  "2026-10-05"
+ ],
+ "ifDefinedByAdmission": {
+  "admittedInOneWeeklyRun": 150,
+  "createdWithin90Days": 42,
+  "createdWithin365Days": 119,
+  "olderThan365Days": 31,
+  "olderShare": 0.207
+ },
+ "reading": "a definition tied to discovery or admission would label the whole weekly batch new, including repositories created years ago; first publication follows the repository actually appearing for readers"
+}

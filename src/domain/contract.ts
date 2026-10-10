@@ -14,7 +14,7 @@ import type { RecordTaxonomy } from '../taxonomy';
 import type { RadarDomain } from './index';
 
 /** Keys a record MAY add. Order is the serialisation order. */
-export const DOMAIN_RECORD_KEYS = ['domain', 'areas', 'technologies', 'facets', 'domainMomentum'] as const;
+export const DOMAIN_RECORD_KEYS = ['domain', 'areas', 'technologies', 'facets', 'domainMomentum', 'engineeringLifecycle'] as const;
 export type DomainRecordKey = (typeof DOMAIN_RECORD_KEYS)[number];
 
 export interface DomainMomentumFields {
@@ -30,12 +30,29 @@ export interface DomainMomentumFields {
   explanation: string[];
 }
 
+/** Engineering lifecycle flags (Phase 6.3.1, docs/PHASE-6.3.1-LIFECYCLE-SEMANTICS.md). Booleans plus two dates; every value is derivable from stored numbers. */
+export interface EngineeringLifecycleFields {
+  trending: boolean;
+  rising: boolean;
+  accelerating: boolean;
+  breakout: boolean;
+  cooling: boolean;
+  sustained: boolean;
+  newToRadar: boolean;
+  genuinelyNew: boolean;
+  /** UTC date the repository first appeared in the published Radar. */
+  firstPublishedAt: string | null;
+}
+
+export const LIFECYCLE_KEYS = ['trending', 'rising', 'accelerating', 'breakout', 'cooling', 'sustained', 'newToRadar', 'genuinelyNew', 'firstPublishedAt'] as const;
+
 export interface DomainRecordFields {
   domain: RadarDomain | null;
   areas: string[];
   technologies: string[];
   facets: RecordTaxonomy['facets'];
   domainMomentum: DomainMomentumFields;
+  engineeringLifecycle?: EngineeringLifecycleFields;
 }
 
 export function bandLabel(bounds: readonly number[], index: number): string {

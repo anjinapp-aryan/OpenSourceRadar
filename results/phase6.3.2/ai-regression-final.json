@@ -1,0 +1,32 @@
+{
+ "evaluatedAt": "2026-10-09T11:26:57.884Z",
+ "aiAndBothRecords": 1735,
+ "added": 0,
+ "removed": 0,
+ "reordered": 0,
+ "scoreChanges": 0,
+ "trendChanges": 0,
+ "patternChanges": 0,
+ "recordsWithAnyFieldChange": 0,
+ "listsIdentical": {
+  "rising": true,
+  "movers": true,
+  "moversUp": true,
+  "moversDown": true,
+  "sustained": true,
+  "newEntrants": true
+ },
+ "wholeRepositoriesArrayIdentical": true,
+ "historyIdentical": true,
+ "protectedSourceSha256": {
+  "src/momentum/engine.ts": "322b0e58ec66928bdb0dabf528cc6a71f61def1ed3f8a71c72214fcf0587ff2a",
+  "src/momentum/config.ts": "ac96c0fdf1c82e319e6bfee0a8c115383cb28ee3cd2f94bc125a2c7dbc627a51",
+  "src/momentum/dataset.ts": "f9ce8afc4101423435f7f3ec799ea6649ed19297ff90a11203b6b851d0f80af1",
+  "config/momentum.json": "b720917ca1448b9134650b8a49f28debbbd949a2fb013221fc7a819be224b0ef",
+  "config/pattern.json": "183bf76bfe0b31013fb86a91b308cf1cba10e22b328b0816f3d2bf4fef5ca315",
+  "config/tracking.json": "ddfc4e3f50b128b4dea37322c054a7612ac787ad7dd81cc837e54b4aa1410306",
+  "config/classification.json": "7afe73ce8bda27838b4f1d4f79785051583ff4a9c08732fa5ebb8d79451e2a34",
+  "src/classification/classifier.ts": "4c7e96ed5a026a99fcb4dbb9638dc9a8e5e6d1e7b165f636b3ff5625770cb5cf"
+ },
+ "verdict": "AI UNCHANGED"
+}

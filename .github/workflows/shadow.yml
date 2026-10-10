@@ -1,0 +1,126 @@
+name: shadow
+
+# Phase 6.3.1 production SHADOW of the Top-300 discovery and bounded admission (docs/PHASE-6.3.1-SHADOW-VALIDATION.md).
+#
+# INERT BY DEFAULT: the job only runs when the repository variable SHADOW_ENABLED is "true". Merging this file starts nothing.
+# ISOLATED: it never commits, never pushes, never touches data/, radar.json or the site, and fails if the checkout changes.
+# Its only persistent state is its own release "shadow-state"; the daily evidence is also kept as a workflow artifact.
+# One complete weekly cycle = seven consecutive daily runs including one Monday discovery (scripts/shadow/cycle.ts judges it).
+
+on:
+  schedule:
+    # After the production run, which starts between about 10:00 and 11:30 UTC.
+    - cron: '47 13 * * *'
+  workflow_dispatch:
+    inputs:
+      discover:
+        description: 'Also run the Top-300 discovery now (Search API, about 200 requests)'
+        type: boolean
+        default: false
+
+concurrency:
+  group: radar-shadow
+  cancel-in-progress: false
+
+# contents: write only to manage the single "shadow-state" release asset (the same pattern as data-state in radar.yml).
+permissions:
+  contents: write
+
+# No workflow-level environment: a token is given only to the steps that call GitHub (never to npm ci or the isolation checks).
+
+jobs:
+  shadow:
+    if: ${{ vars.SHADOW_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Prepare
+        id: prep
+        run: |
+          mkdir -p .shadow .shadow-prod
+          echo "date=$(date -u +%F)" >> "$GITHUB_OUTPUT"
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(date -u +%u)" = "1" ]; then echo "discover=true" >> "$GITHUB_OUTPUT"
+          elif [ "${{ inputs.discover }}" = "true" ]; then echo "discover=true" >> "$GITHUB_OUTPUT"
+          else echo "discover=false" >> "$GITHUB_OUTPUT"; fi
+
+      # Production state, read only, into its own directory (never over the checkout).
+      - name: Restore production state (read only)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download data-state --pattern state.tar.gz --dir .shadow-prod
+          tar -xzf .shadow-prod/state.tar.gz -C .shadow-prod
+          test -f .shadow-prod/data/candidates/candidates.json
+
+      - name: Restore shadow state
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release download shadow-state --pattern shadow.tar.gz --dir .shadow-prod 2>/dev/null; then
+            tar -xzf .shadow-prod/shadow.tar.gz
+            echo "Shadow state restored" | tee -a "$GITHUB_STEP_SUMMARY"
+          else
+            echo "No shadow-state release yet: starting an empty shadow pool" | tee -a "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Top-300 discovery and admission (Monday or on request)
+        if: steps.prep.outputs.discover == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.RADAR_GITHUB_TOKEN || github.token }}
+        run: >
+          npx tsx scripts/shadow/discover.ts .shadow-prod/data
+          --out-dir .shadow/discovery
+          --cache .shadow/cache/shadow-search.json
+          --date ${{ steps.prep.outputs.date }}
+
+      - name: Shadow tracking (daily)
+        env:
+          GITHUB_TOKEN: ${{ secrets.RADAR_GITHUB_TOKEN || github.token }}
+        run: |
+          set -e
+          DATE="${{ steps.prep.outputs.date }}"
+          ARGS="--shadow-dir .shadow --date $DATE"
+          if [ -f ".shadow/discovery/admitted-$DATE.json" ]; then ARGS="$ARGS --admitted .shadow/discovery/admitted-$DATE.json --discovery .shadow/discovery/discovery-$DATE.json"; fi
+          npx tsx scripts/shadow/track.ts .shadow-prod/data $ARGS
+
+      - name: Cycle summary
+        run: npx tsx scripts/shadow/cycle.ts .shadow | tee -a "$GITHUB_STEP_SUMMARY"
+
+      # The shadow must not have changed anything that production reads or publishes.
+      - name: Verify isolation (the checkout must be unchanged)
+        run: |
+          if [ -n "$(git status --porcelain --untracked-files=no)" ]; then echo "::error::the shadow modified tracked files"; git status --short; exit 1; fi
+          if git status --porcelain | grep -E '^\?\? (data|public)/' ; then echo "::error::the shadow created files under data/ or public/"; exit 1; fi
+          echo "Isolation verified: no tracked file changed, nothing created under data/ or public/" | tee -a "$GITHUB_STEP_SUMMARY"
+
+      # No credential may appear in anything that is saved or uploaded.
+      - name: Secret scan of the evidence
+        run: |
+          if grep -rEI --exclude-dir=cache 'gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|[Aa]uthorization|Bearer [A-Za-z0-9._-]{16,}' .shadow; then echo "::error::credential-shaped text in the shadow evidence"; exit 1; fi
+          echo "Evidence scan: no credential-shaped text" | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Save shadow state
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tar -czf shadow.tar.gz --exclude=.shadow/cache .shadow
+          gh release view shadow-state >/dev/null 2>&1 || gh release create shadow-state --title "shadow-state" --notes "Phase 6.3.1 shadow pool and daily evidence (not production data)" --prerelease
+          gh release upload shadow-state shadow.tar.gz --clobber
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: shadow-evidence-${{ steps.prep.outputs.date }}
+          path: |
+            .shadow/daily
+            .shadow/discovery/discovery-*.json
+            .shadow/cycle-summary.json
+          retention-days: 60

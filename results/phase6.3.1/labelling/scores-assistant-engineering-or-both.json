@@ -1,0 +1,3278 @@
+{
+ "kind": "assistant",
+ "scope": "engineering-or-both",
+ "independence": "ASSISTANT-LABELLED: written by the same tooling that produced the predictions; NOT independent, NOT human. Use for tooling checks and problem-case discovery only.",
+ "rater": "assistant (blind)",
+ "labelsPath": "results/phase6.3.1/labelling/labels.assistant-preliminary.json",
+ "sampleSize": 237,
+ "blankRows": 0,
+ "invalid": [],
+ "requiredValidLabels": 200,
+ "meetsMinimum": true,
+ "evaluation": {
+  "labelled": 237,
+  "validLabels": 237,
+  "invalidLabels": 0,
+  "domain": {
+   "counts": {
+    "tp": 122,
+    "fp": 39,
+    "fn": 13,
+    "tn": 40,
+    "ambiguous": 23
+   },
+   "weighted": {
+    "tp": 3201.37,
+    "fp": 662.04,
+    "fn": 811.21
+   },
+   "precision": {
+    "rate": 0.8286,
+    "low": 0.6861,
+    "high": 0.8174,
+    "n": 161,
+    "rawRate": 0.7578
+   },
+   "recall": {
+    "rate": 0.7978,
+    "low": 0.8422,
+    "high": 0.9429,
+    "n": 135,
+    "rawRate": 0.9037
+   }
+  },
+  "area": {
+   "counts": {
+    "tp": 126,
+    "fp": 139,
+    "fn": 28,
+    "tn": 0,
+    "ambiguous": 23
+   },
+   "weighted": {
+    "tp": 3258.93,
+    "fp": 2436.21,
+    "fn": 1143.49
+   },
+   "precision": {
+    "rate": 0.5722,
+    "low": 0.4161,
+    "high": 0.5355,
+    "n": 265,
+    "rawRate": 0.4755
+   },
+   "recall": {
+    "rate": 0.7403,
+    "low": 0.7498,
+    "high": 0.8711,
+    "n": 154,
+    "rawRate": 0.8182
+   }
+  },
+  "technology": {
+   "counts": {
+    "tp": 128,
+    "fp": 177,
+    "fn": 13,
+    "tn": 0,
+    "ambiguous": 23
+   },
+   "weighted": {
+    "tp": 3287.11,
+    "fp": 2716.18,
+    "fn": 673.6
+   },
+   "precision": {
+    "rate": 0.5476,
+    "low": 0.3656,
+    "high": 0.4757,
+    "n": 305,
+    "rawRate": 0.4197
+   },
+   "recall": {
+    "rate": 0.8299,
+    "low": 0.8486,
+    "high": 0.9453,
+    "n": 141,
+    "rawRate": 0.9078
+   }
+  },
+  "learning": {
+   "counts": {
+    "tp": 25,
+    "fp": 3,
+    "fn": 14,
+    "tn": 192,
+    "ambiguous": 3
+   },
+   "weighted": {
+    "tp": 768.63,
+    "fp": 40.79,
+    "fn": 142.31
+   },
+   "precision": {
+    "rate": 0.9496,
+    "low": 0.728,
+    "high": 0.9629,
+    "n": 28,
+    "rawRate": 0.8929
+   },
+   "recall": {
+    "rate": 0.8438,
+    "low": 0.4842,
+    "high": 0.7726,
+    "n": 39,
+    "rawRate": 0.641
+   }
+  },
+  "unknownRate": 0.2403,
+  "unknownAmongEngineering": {
+   "rate": 0.0963,
+   "low": 0.0571,
+   "high": 0.1578,
+   "n": 135
+  },
+  "typeCounts": {
+   "tool": 96,
+   "library": 20,
+   "application": 33,
+   "infrastructure": 23,
+   "framework": 18,
+   "educational": 38,
+   "other": 9
+  },
+  "problemCases": [
+   {
+    "id": "594087",
+    "kind": "tech-fp",
+    "detail": "predicted mysql; labelled [postgresql]"
+   },
+   {
+    "id": "594087",
+    "kind": "tech-fp",
+    "detail": "predicted sqlite; labelled [postgresql]"
+   },
+   {
+    "id": "2019791",
+    "kind": "tech-fp",
+    "detail": "predicted ci-cd; labelled [none]"
+   },
+   {
+    "id": "2019791",
+    "kind": "tech-fp",
+    "detail": "predicted mysql; labelled [none]"
+   },
+   {
+    "id": "2019791",
+    "kind": "area-fp",
+    "detail": "predicted infrastructure; labelled [data]"
+   },
+   {
+    "id": "2019791",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [data]"
+   },
+   {
+    "id": "3543548",
+    "kind": "area-fn",
+    "detail": "labelled infrastructure; predicted [none]"
+   },
+   {
+    "id": "3543548",
+    "kind": "domain-fn",
+    "detail": "labelled Engineering, predicted UNKNOWN"
+   },
+   {
+    "id": "5425992",
+    "kind": "tech-fp",
+    "detail": "predicted microservices; labelled [nats]"
+   },
+   {
+    "id": "5425992",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [messaging]"
+   },
+   {
+    "id": "5425992",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [messaging]"
+   },
+   {
+    "id": "10744183",
+    "kind": "tech-fp",
+    "detail": "predicted docker; labelled [observability-general]"
+   },
+   {
+    "id": "10744183",
+    "kind": "tech-fp",
+    "detail": "predicted grafana; labelled [observability-general]"
+   },
+   {
+    "id": "10744183",
+    "kind": "tech-fp",
+    "detail": "predicted kubernetes; labelled [observability-general]"
+   },
+   {
+    "id": "10744183",
+    "kind": "tech-fp",
+    "detail": "predicted mongodb; labelled [observability-general]"
+   },
+   {
+    "id": "10744183",
+    "kind": "tech-fp",
+    "detail": "predicted mysql; labelled [observability-general]"
+   },
+   {
+    "id": "10744183",
+    "kind": "tech-fp",
+    "detail": "predicted postgresql; labelled [observability-general]"
+   },
+   {
+    "id": "10744183",
+    "kind": "tech-fp",
+    "detail": "predicted prometheus; labelled [observability-general]"
+   },
+   {
+    "id": "10744183",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [observability]"
+   },
+   {
+    "id": "10744183",
+    "kind": "area-fp",
+    "detail": "predicted data; labelled [observability]"
+   },
+   {
+    "id": "17517521",
+    "kind": "tech-fn",
+    "detail": "labelled secrets-identity; predicted [none]"
+   },
+   {
+    "id": "17517521",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [security]"
+   },
+   {
+    "id": "17517521",
+    "kind": "area-fn",
+    "detail": "labelled security; predicted [backend]"
+   },
+   {
+    "id": "19051806",
+    "kind": "tech-fp",
+    "detail": "predicted ci-cd; labelled [none]"
+   },
+   {
+    "id": "19051806",
+    "kind": "tech-fp",
+    "detail": "predicted observability-general; labelled [none]"
+   },
+   {
+    "id": "19051806",
+    "kind": "area-fp",
+    "detail": "predicted observability; labelled [infrastructure]"
+   },
+   {
+    "id": "23267883",
+    "kind": "tech-fp",
+    "detail": "predicted ci-cd; labelled [terraform, iac-other]"
+   },
+   {
+    "id": "23267883",
+    "kind": "tech-fp",
+    "detail": "predicted docker; labelled [terraform, iac-other]"
+   },
+   {
+    "id": "23267883",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [infrastructure]"
+   },
+   {
+    "id": "23625881",
+    "kind": "tech-fn",
+    "detail": "labelled testing; predicted [redis]"
+   },
+   {
+    "id": "23625881",
+    "kind": "area-fn",
+    "detail": "labelled devtools; predicted [data]"
+   },
+   {
+    "id": "35494746",
+    "kind": "area-fn",
+    "detail": "labelled security; predicted [none]"
+   },
+   {
+    "id": "35494746",
+    "kind": "domain-fn",
+    "detail": "labelled Engineering, predicted UNKNOWN"
+   },
+   {
+    "id": "39985381",
+    "kind": "area-fn",
+    "detail": "labelled data; predicted [none]"
+   },
+   {
+    "id": "39985381",
+    "kind": "domain-fn",
+    "detail": "labelled Engineering, predicted UNKNOWN"
+   },
+   {
+    "id": "49014795",
+    "kind": "tech-fp",
+    "detail": "predicted testing; labelled [code-quality]"
+   },
+   {
+    "id": "50205233",
+    "kind": "area-fn",
+    "detail": "labelled data; predicted [messaging]"
+   },
+   {
+    "id": "51040886",
+    "kind": "tech-fn",
+    "detail": "labelled cli-terminal; predicted [azure-gcp]"
+   },
+   {
+    "id": "51040886",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [infrastructure]"
+   },
+   {
+    "id": "53890427",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [observability, devtools]"
+   },
+   {
+    "id": "53890427",
+    "kind": "area-fn",
+    "detail": "labelled observability; predicted [backend]"
+   },
+   {
+    "id": "53890427",
+    "kind": "area-fn",
+    "detail": "labelled devtools; predicted [backend]"
+   },
+   {
+    "id": "55276445",
+    "kind": "tech-fn",
+    "detail": "labelled rabbitmq; predicted [spring, mongodb, redis, mysql]"
+   },
+   {
+    "id": "55276445",
+    "kind": "area-fp",
+    "detail": "predicted data; labelled [backend]"
+   },
+   {
+    "id": "55276445",
+    "kind": "learning-fn",
+    "detail": "labelled learning content, not flagged"
+   },
+   {
+    "id": "56342508",
+    "kind": "tech-fp",
+    "detail": "predicted observability-general; labelled [tracing-logging]"
+   },
+   {
+    "id": "56342508",
+    "kind": "tech-fp",
+    "detail": "predicted opentelemetry; labelled [tracing-logging]"
+   },
+   {
+    "id": "72477752",
+    "kind": "tech-fp",
+    "detail": "predicted aws; labelled [iac-other]"
+   },
+   {
+    "id": "72477752",
+    "kind": "tech-fp",
+    "detail": "predicted azure-gcp; labelled [iac-other]"
+   },
+   {
+    "id": "72477752",
+    "kind": "tech-fp",
+    "detail": "predicted docker; labelled [iac-other]"
+   },
+   {
+    "id": "72477752",
+    "kind": "tech-fp",
+    "detail": "predicted dotnet; labelled [iac-other]"
+   },
+   {
+    "id": "72477752",
+    "kind": "tech-fp",
+    "detail": "predicted kubernetes; labelled [iac-other]"
+   },
+   {
+    "id": "72477752",
+    "kind": "tech-fp",
+    "detail": "predicted serverless; labelled [iac-other]"
+   },
+   {
+    "id": "72477752",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [infrastructure]"
+   },
+   {
+    "id": "72477752",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [infrastructure]"
+   },
+   {
+    "id": "77145066",
+    "kind": "tech-fp",
+    "detail": "predicted aws; labelled [docker]"
+   },
+   {
+    "id": "77145066",
+    "kind": "tech-fp",
+    "detail": "predicted azure-gcp; labelled [docker]"
+   },
+   {
+    "id": "77145066",
+    "kind": "tech-fp",
+    "detail": "predicted ci-cd; labelled [docker]"
+   },
+   {
+    "id": "77145066",
+    "kind": "tech-fp",
+    "detail": "predicted kubernetes; labelled [docker]"
+   },
+   {
+    "id": "77145066",
+    "kind": "tech-fp",
+    "detail": "predicted testing; labelled [docker]"
+   },
+   {
+    "id": "77145066",
+    "kind": "area-fp",
+    "detail": "predicted infrastructure; labelled [cloud-native]"
+   },
+   {
+    "id": "77145066",
+    "kind": "area-fp",
+    "detail": "predicted devtools; labelled [cloud-native]"
+   },
+   {
+    "id": "80358070",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "84977146",
+    "kind": "area-fn",
+    "detail": "labelled infrastructure; predicted [none]"
+   },
+   {
+    "id": "84977146",
+    "kind": "domain-fn",
+    "detail": "labelled Engineering, predicted UNKNOWN"
+   },
+   {
+    "id": "86981606",
+    "kind": "tech-fp",
+    "detail": "predicted api; labelled [none]"
+   },
+   {
+    "id": "86981606",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [none]"
+   },
+   {
+    "id": "86981606",
+    "kind": "learning-fn",
+    "detail": "labelled learning content, not flagged"
+   },
+   {
+    "id": "87012358",
+    "kind": "tech-fp",
+    "detail": "predicted microservices; labelled [none]"
+   },
+   {
+    "id": "94801380",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "103684801",
+    "kind": "learning-fn",
+    "detail": "labelled learning content, not flagged"
+   },
+   {
+    "id": "107914493",
+    "kind": "tech-fp",
+    "detail": "predicted docker; labelled [sqlite]"
+   },
+   {
+    "id": "107914493",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [data]"
+   },
+   {
+    "id": "108221729",
+    "kind": "tech-fp",
+    "detail": "predicted aws; labelled [docker]"
+   },
+   {
+    "id": "108221729",
+    "kind": "tech-fp",
+    "detail": "predicted azure-gcp; labelled [docker]"
+   },
+   {
+    "id": "108221729",
+    "kind": "tech-fp",
+    "detail": "predicted nodejs; labelled [docker]"
+   },
+   {
+    "id": "108221729",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [cloud-native, infrastructure]"
+   },
+   {
+    "id": "119190187",
+    "kind": "tech-fp",
+    "detail": "predicted ci-cd; labelled [security-scanning]"
+   },
+   {
+    "id": "119190187",
+    "kind": "tech-fp",
+    "detail": "predicted cli-terminal; labelled [security-scanning]"
+   },
+   {
+    "id": "119190187",
+    "kind": "area-fp",
+    "detail": "predicted infrastructure; labelled [security]"
+   },
+   {
+    "id": "119190187",
+    "kind": "area-fp",
+    "detail": "predicted devtools; labelled [security]"
+   },
+   {
+    "id": "123631418",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "123631418",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "123631418",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "124230204",
+    "kind": "tech-fp",
+    "detail": "predicted serverless; labelled [micronaut, microservices]"
+   },
+   {
+    "id": "124230204",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [backend]"
+   },
+   {
+    "id": "130879558",
+    "kind": "tech-fp",
+    "detail": "predicted code-quality; labelled [none]"
+   },
+   {
+    "id": "130879558",
+    "kind": "area-fn",
+    "detail": "labelled infrastructure; predicted [devtools]"
+   },
+   {
+    "id": "139914932",
+    "kind": "tech-fp",
+    "detail": "predicted kubernetes; labelled [quarkus]"
+   },
+   {
+    "id": "139914932",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [backend]"
+   },
+   {
+    "id": "141482866",
+    "kind": "tech-fp",
+    "detail": "predicted secrets-identity; labelled [aws]"
+   },
+   {
+    "id": "141482866",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [aws]"
+   },
+   {
+    "id": "141482866",
+    "kind": "tech-fp",
+    "detail": "predicted serverless; labelled [aws]"
+   },
+   {
+    "id": "141482866",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [security, infrastructure]"
+   },
+   {
+    "id": "141482866",
+    "kind": "learning-fn",
+    "detail": "labelled learning content, not flagged"
+   },
+   {
+    "id": "145880460",
+    "kind": "tech-fp",
+    "detail": "predicted api; labelled [aws, serverless]"
+   },
+   {
+    "id": "145880460",
+    "kind": "tech-fp",
+    "detail": "predicted cli-terminal; labelled [aws, serverless]"
+   },
+   {
+    "id": "145880460",
+    "kind": "tech-fp",
+    "detail": "predicted secrets-identity; labelled [aws, serverless]"
+   },
+   {
+    "id": "145880460",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [infrastructure]"
+   },
+   {
+    "id": "145880460",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [infrastructure]"
+   },
+   {
+    "id": "145880460",
+    "kind": "area-fp",
+    "detail": "predicted devtools; labelled [infrastructure]"
+   },
+   {
+    "id": "145880460",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [infrastructure]"
+   },
+   {
+    "id": "146285827",
+    "kind": "tech-fn",
+    "detail": "labelled microservices; predicted [none]"
+   },
+   {
+    "id": "148059143",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [messaging]"
+   },
+   {
+    "id": "159152904",
+    "kind": "tech-fp",
+    "detail": "predicted cli-terminal; labelled [spring]"
+   },
+   {
+    "id": "159152904",
+    "kind": "area-fp",
+    "detail": "predicted devtools; labelled [backend]"
+   },
+   {
+    "id": "162346001",
+    "kind": "tech-fp",
+    "detail": "predicted ci-cd; labelled [none]"
+   },
+   {
+    "id": "162346001",
+    "kind": "area-fp",
+    "detail": "predicted infrastructure; labelled [security]"
+   },
+   {
+    "id": "164335954",
+    "kind": "area-fn",
+    "detail": "labelled devtools; predicted [none]"
+   },
+   {
+    "id": "164335954",
+    "kind": "area-fn",
+    "detail": "labelled backend; predicted [none]"
+   },
+   {
+    "id": "164335954",
+    "kind": "domain-fn",
+    "detail": "labelled Engineering, predicted UNKNOWN"
+   },
+   {
+    "id": "184064793",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "186754830",
+    "kind": "domain-fn",
+    "detail": "labelled Engineering, predicted UNKNOWN"
+   },
+   {
+    "id": "201455508",
+    "kind": "tech-fn",
+    "detail": "labelled mysql; predicted [none]"
+   },
+   {
+    "id": "201455508",
+    "kind": "tech-fn",
+    "detail": "labelled kafka; predicted [none]"
+   },
+   {
+    "id": "201455508",
+    "kind": "area-fn",
+    "detail": "labelled data; predicted [none]"
+   },
+   {
+    "id": "201455508",
+    "kind": "area-fn",
+    "detail": "labelled messaging; predicted [none]"
+   },
+   {
+    "id": "201455508",
+    "kind": "domain-fn",
+    "detail": "labelled Engineering, predicted UNKNOWN"
+   },
+   {
+    "id": "205679232",
+    "kind": "area-fn",
+    "detail": "labelled backend; predicted [none]"
+   },
+   {
+    "id": "205679232",
+    "kind": "domain-fn",
+    "detail": "labelled Engineering, predicted UNKNOWN"
+   },
+   {
+    "id": "209652627",
+    "kind": "tech-fn",
+    "detail": "labelled aws; predicted [none]"
+   },
+   {
+    "id": "209652627",
+    "kind": "tech-fn",
+    "detail": "labelled secrets-identity; predicted [none]"
+   },
+   {
+    "id": "209652627",
+    "kind": "area-fn",
+    "detail": "labelled security; predicted [none]"
+   },
+   {
+    "id": "209652627",
+    "kind": "domain-fn",
+    "detail": "labelled Engineering, predicted UNKNOWN"
+   },
+   {
+    "id": "210374451",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [messaging]"
+   },
+   {
+    "id": "210374451",
+    "kind": "learning-fn",
+    "detail": "labelled learning content, not flagged"
+   },
+   {
+    "id": "214418572",
+    "kind": "tech-fp",
+    "detail": "predicted spring; labelled [none]"
+   },
+   {
+    "id": "217943361",
+    "kind": "learning-fn",
+    "detail": "labelled learning content, not flagged"
+   },
+   {
+    "id": "221606944",
+    "kind": "area-fp",
+    "detail": "predicted observability; labelled [cloud-native, infrastructure]"
+   },
+   {
+    "id": "229407566",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "229407566",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "230784338",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [none]"
+   },
+   {
+    "id": "230784338",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "326168355",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [observability, devtools]"
+   },
+   {
+    "id": "326168355",
+    "kind": "area-fn",
+    "detail": "labelled observability; predicted [backend]"
+   },
+   {
+    "id": "326168355",
+    "kind": "area-fn",
+    "detail": "labelled devtools; predicted [backend]"
+   },
+   {
+    "id": "327859577",
+    "kind": "tech-fp",
+    "detail": "predicted redis; labelled [none]"
+   },
+   {
+    "id": "332880689",
+    "kind": "tech-fp",
+    "detail": "predicted mysql; labelled [docker]"
+   },
+   {
+    "id": "332880689",
+    "kind": "tech-fp",
+    "detail": "predicted nodejs; labelled [docker]"
+   },
+   {
+    "id": "332880689",
+    "kind": "tech-fp",
+    "detail": "predicted postgresql; labelled [docker]"
+   },
+   {
+    "id": "332880689",
+    "kind": "tech-fp",
+    "detail": "predicted redis; labelled [docker]"
+   },
+   {
+    "id": "332880689",
+    "kind": "area-fp",
+    "detail": "predicted data; labelled [infrastructure, cloud-native]"
+   },
+   {
+    "id": "332880689",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [infrastructure, cloud-native]"
+   },
+   {
+    "id": "332880689",
+    "kind": "area-fn",
+    "detail": "labelled infrastructure; predicted [cloud-native, data, backend]"
+   },
+   {
+    "id": "359216482",
+    "kind": "learning-fn",
+    "detail": "labelled learning content, not flagged"
+   },
+   {
+    "id": "367331849",
+    "kind": "learning-fn",
+    "detail": "labelled learning content, not flagged"
+   },
+   {
+    "id": "390858281",
+    "kind": "area-fn",
+    "detail": "labelled security; predicted [none]"
+   },
+   {
+    "id": "390858281",
+    "kind": "domain-fn",
+    "detail": "labelled Engineering, predicted UNKNOWN"
+   },
+   {
+    "id": "414591409",
+    "kind": "tech-fp",
+    "detail": "predicted api; labelled [dotnet]"
+   },
+   {
+    "id": "414591409",
+    "kind": "tech-fp",
+    "detail": "predicted docker; labelled [dotnet]"
+   },
+   {
+    "id": "414591409",
+    "kind": "tech-fp",
+    "detail": "predicted kubernetes; labelled [dotnet]"
+   },
+   {
+    "id": "414591409",
+    "kind": "tech-fp",
+    "detail": "predicted microservices; labelled [dotnet]"
+   },
+   {
+    "id": "414591409",
+    "kind": "tech-fp",
+    "detail": "predicted testing; labelled [dotnet]"
+   },
+   {
+    "id": "414591409",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [backend]"
+   },
+   {
+    "id": "414591409",
+    "kind": "area-fp",
+    "detail": "predicted devtools; labelled [backend]"
+   },
+   {
+    "id": "432001054",
+    "kind": "tech-fp",
+    "detail": "predicted opentelemetry; labelled [tracing-logging]"
+   },
+   {
+    "id": "432001054",
+    "kind": "tech-fp",
+    "detail": "predicted nodejs; labelled [tracing-logging]"
+   },
+   {
+    "id": "432001054",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [observability]"
+   },
+   {
+    "id": "436932767",
+    "kind": "tech-fn",
+    "detail": "labelled testing; predicted [none]"
+   },
+   {
+    "id": "436932767",
+    "kind": "area-fn",
+    "detail": "labelled devtools; predicted [none]"
+   },
+   {
+    "id": "436932767",
+    "kind": "domain-fn",
+    "detail": "labelled Engineering, predicted UNKNOWN"
+   },
+   {
+    "id": "447450585",
+    "kind": "tech-fp",
+    "detail": "predicted cli-terminal; labelled [azure-gcp]"
+   },
+   {
+    "id": "447450585",
+    "kind": "area-fp",
+    "detail": "predicted devtools; labelled [infrastructure]"
+   },
+   {
+    "id": "447450585",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [infrastructure]"
+   },
+   {
+    "id": "498037475",
+    "kind": "tech-fp",
+    "detail": "predicted azure-gcp; labelled [none]"
+   },
+   {
+    "id": "498037475",
+    "kind": "area-fp",
+    "detail": "predicted infrastructure; labelled [security]"
+   },
+   {
+    "id": "498037475",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [security]"
+   },
+   {
+    "id": "503528235",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "503528235",
+    "kind": "learning-fp",
+    "detail": "flagged learning content, labelled not"
+   },
+   {
+    "id": "505385703",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "520252357",
+    "kind": "tech-fp",
+    "detail": "predicted observability-general; labelled [opentelemetry, ebpf]"
+   },
+   {
+    "id": "520252357",
+    "kind": "tech-fp",
+    "detail": "predicted tracing-logging; labelled [opentelemetry, ebpf]"
+   },
+   {
+    "id": "520784735",
+    "kind": "tech-fp",
+    "detail": "predicted observability-general; labelled [tracing-logging]"
+   },
+   {
+    "id": "520784735",
+    "kind": "tech-fp",
+    "detail": "predicted opentelemetry; labelled [tracing-logging]"
+   },
+   {
+    "id": "520784735",
+    "kind": "tech-fp",
+    "detail": "predicted prometheus; labelled [tracing-logging]"
+   },
+   {
+    "id": "520784735",
+    "kind": "tech-fn",
+    "detail": "labelled tracing-logging; predicted [observability-general, opentelemetry, prometheus]"
+   },
+   {
+    "id": "549456931",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "577610356",
+    "kind": "tech-fp",
+    "detail": "predicted prometheus; labelled [kubernetes]"
+   },
+   {
+    "id": "577610356",
+    "kind": "area-fp",
+    "detail": "predicted observability; labelled [cloud-native]"
+   },
+   {
+    "id": "621026799",
+    "kind": "tech-fn",
+    "detail": "labelled secrets-identity; predicted [none]"
+   },
+   {
+    "id": "621026799",
+    "kind": "area-fn",
+    "detail": "labelled security; predicted [none]"
+   },
+   {
+    "id": "621026799",
+    "kind": "domain-fn",
+    "detail": "labelled Engineering, predicted UNKNOWN"
+   },
+   {
+    "id": "628390075",
+    "kind": "tech-fp",
+    "detail": "predicted kafka; labelled [postgresql, clickhouse]"
+   },
+   {
+    "id": "628390075",
+    "kind": "area-fp",
+    "detail": "predicted messaging; labelled [data]"
+   },
+   {
+    "id": "655181249",
+    "kind": "tech-fp",
+    "detail": "predicted azure-gcp; labelled [docker, aws]"
+   },
+   {
+    "id": "655181249",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [infrastructure]"
+   },
+   {
+    "id": "673704029",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "673704029",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "673704029",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "679601811",
+    "kind": "tech-fp",
+    "detail": "predicted serverless; labelled [kafka]"
+   },
+   {
+    "id": "679601811",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [messaging]"
+   },
+   {
+    "id": "350382700",
+    "kind": "area-fp",
+    "detail": "predicted data; labelled [observability]"
+   },
+   {
+    "id": "696777593",
+    "kind": "tech-fn",
+    "detail": "labelled tracing-logging; predicted [opentelemetry, docker, grafana, prometheus]"
+   },
+   {
+    "id": "696777593",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [observability]"
+   },
+   {
+    "id": "697526683",
+    "kind": "tech-fp",
+    "detail": "predicted aws; labelled [none]"
+   },
+   {
+    "id": "697526683",
+    "kind": "area-fp",
+    "detail": "predicted infrastructure; labelled [none]"
+   },
+   {
+    "id": "697526683",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "777597786",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "777597786",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "777597786",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "785334631",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "785334631",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "806015479",
+    "kind": "tech-fp",
+    "detail": "predicted spring; labelled [none]"
+   },
+   {
+    "id": "806015479",
+    "kind": "tech-fp",
+    "detail": "predicted kafka; labelled [none]"
+   },
+   {
+    "id": "806015479",
+    "kind": "tech-fp",
+    "detail": "predicted microservices; labelled [none]"
+   },
+   {
+    "id": "806015479",
+    "kind": "tech-fp",
+    "detail": "predicted opentelemetry; labelled [none]"
+   },
+   {
+    "id": "806015479",
+    "kind": "tech-fp",
+    "detail": "predicted redis; labelled [none]"
+   },
+   {
+    "id": "806015479",
+    "kind": "area-fp",
+    "detail": "predicted messaging; labelled [backend]"
+   },
+   {
+    "id": "806015479",
+    "kind": "area-fp",
+    "detail": "predicted observability; labelled [backend]"
+   },
+   {
+    "id": "806015479",
+    "kind": "area-fp",
+    "detail": "predicted data; labelled [backend]"
+   },
+   {
+    "id": "812793594",
+    "kind": "tech-fp",
+    "detail": "predicted api; labelled [nodejs]"
+   },
+   {
+    "id": "812793594",
+    "kind": "tech-fp",
+    "detail": "predicted docker; labelled [nodejs]"
+   },
+   {
+    "id": "812793594",
+    "kind": "tech-fp",
+    "detail": "predicted opentelemetry; labelled [nodejs]"
+   },
+   {
+    "id": "812793594",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [backend]"
+   },
+   {
+    "id": "812793594",
+    "kind": "area-fp",
+    "detail": "predicted observability; labelled [backend]"
+   },
+   {
+    "id": "826164486",
+    "kind": "tech-fp",
+    "detail": "predicted docker; labelled [spring, kafka, redis, elasticsearch]"
+   },
+   {
+    "id": "826164486",
+    "kind": "tech-fp",
+    "detail": "predicted tracing-logging; labelled [spring, kafka, redis, elasticsearch]"
+   },
+   {
+    "id": "826164486",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [backend, messaging, data]"
+   },
+   {
+    "id": "826164486",
+    "kind": "area-fp",
+    "detail": "predicted observability; labelled [backend, messaging, data]"
+   },
+   {
+    "id": "908108028",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "908108028",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "908108028",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "910960179",
+    "kind": "tech-fp",
+    "detail": "predicted postgresql; labelled [none]"
+   },
+   {
+    "id": "910960179",
+    "kind": "tech-fp",
+    "detail": "predicted docker; labelled [none]"
+   },
+   {
+    "id": "910960179",
+    "kind": "area-fp",
+    "detail": "predicted data; labelled [none]"
+   },
+   {
+    "id": "910960179",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [none]"
+   },
+   {
+    "id": "910960179",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "913030762",
+    "kind": "tech-fp",
+    "detail": "predicted api; labelled [none]"
+   },
+   {
+    "id": "913030762",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "913030762",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [none]"
+   },
+   {
+    "id": "913030762",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "913030762",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "978236265",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [none]"
+   },
+   {
+    "id": "978236265",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "998434422",
+    "kind": "tech-fp",
+    "detail": "predicted terraform; labelled [postgresql]"
+   },
+   {
+    "id": "998434422",
+    "kind": "tech-fp",
+    "detail": "predicted ci-cd; labelled [postgresql]"
+   },
+   {
+    "id": "998434422",
+    "kind": "tech-fp",
+    "detail": "predicted cli-terminal; labelled [postgresql]"
+   },
+   {
+    "id": "998434422",
+    "kind": "tech-fp",
+    "detail": "predicted gitops; labelled [postgresql]"
+   },
+   {
+    "id": "998434422",
+    "kind": "area-fp",
+    "detail": "predicted infrastructure; labelled [data]"
+   },
+   {
+    "id": "998434422",
+    "kind": "area-fp",
+    "detail": "predicted devtools; labelled [data]"
+   },
+   {
+    "id": "1034142340",
+    "kind": "tech-fp",
+    "detail": "predicted ci-cd; labelled [gitops, cli-terminal]"
+   },
+   {
+    "id": "1034142340",
+    "kind": "tech-fp",
+    "detail": "predicted kubernetes; labelled [gitops, cli-terminal]"
+   },
+   {
+    "id": "1034142340",
+    "kind": "area-fp",
+    "detail": "predicted devtools; labelled [infrastructure]"
+   },
+   {
+    "id": "1034142340",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [infrastructure]"
+   },
+   {
+    "id": "1062297179",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [none]"
+   },
+   {
+    "id": "1062297179",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1065059442",
+    "kind": "tech-fp",
+    "detail": "predicted ci-cd; labelled [none]"
+   },
+   {
+    "id": "1065059442",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "1065059442",
+    "kind": "area-fp",
+    "detail": "predicted infrastructure; labelled [none]"
+   },
+   {
+    "id": "1065059442",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "1065059442",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1075623312",
+    "kind": "domain-fn",
+    "detail": "labelled Engineering, predicted UNKNOWN"
+   },
+   {
+    "id": "1080370450",
+    "kind": "tech-fp",
+    "detail": "predicted cli-terminal; labelled [none]"
+   },
+   {
+    "id": "1080370450",
+    "kind": "area-fp",
+    "detail": "predicted devtools; labelled [none]"
+   },
+   {
+    "id": "1080370450",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1083689394",
+    "kind": "tech-fp",
+    "detail": "predicted ci-cd; labelled [cli-terminal]"
+   },
+   {
+    "id": "1083689394",
+    "kind": "area-fp",
+    "detail": "predicted infrastructure; labelled [devtools]"
+   },
+   {
+    "id": "1104388418",
+    "kind": "tech-fp",
+    "detail": "predicted kafka; labelled [none]"
+   },
+   {
+    "id": "1104388418",
+    "kind": "tech-fp",
+    "detail": "predicted mysql; labelled [none]"
+   },
+   {
+    "id": "1104388418",
+    "kind": "tech-fp",
+    "detail": "predicted redis; labelled [none]"
+   },
+   {
+    "id": "1104388418",
+    "kind": "tech-fp",
+    "detail": "predicted spring; labelled [none]"
+   },
+   {
+    "id": "1104388418",
+    "kind": "area-fp",
+    "detail": "predicted messaging; labelled [backend]"
+   },
+   {
+    "id": "1104388418",
+    "kind": "area-fp",
+    "detail": "predicted data; labelled [backend]"
+   },
+   {
+    "id": "1110046254",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "1110046254",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "1110046254",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1115482628",
+    "kind": "tech-fp",
+    "detail": "predicted cli-terminal; labelled [postgresql, mysql, sqlite, duckdb]"
+   },
+   {
+    "id": "1116843764",
+    "kind": "tech-fp",
+    "detail": "predicted observability-general; labelled [kafka, testing]"
+   },
+   {
+    "id": "1116843764",
+    "kind": "tech-fp",
+    "detail": "predicted data-processing; labelled [kafka, testing]"
+   },
+   {
+    "id": "1116843764",
+    "kind": "area-fp",
+    "detail": "predicted observability; labelled [messaging, devtools]"
+   },
+   {
+    "id": "1116843764",
+    "kind": "area-fp",
+    "detail": "predicted data; labelled [messaging, devtools]"
+   },
+   {
+    "id": "1117891044",
+    "kind": "tech-fp",
+    "detail": "predicted mongodb; labelled [none]"
+   },
+   {
+    "id": "1117891044",
+    "kind": "tech-fp",
+    "detail": "predicted mysql; labelled [none]"
+   },
+   {
+    "id": "1117891044",
+    "kind": "tech-fp",
+    "detail": "predicted postgresql; labelled [none]"
+   },
+   {
+    "id": "1117891044",
+    "kind": "tech-fp",
+    "detail": "predicted redis; labelled [none]"
+   },
+   {
+    "id": "1117891044",
+    "kind": "tech-fp",
+    "detail": "predicted sqlite; labelled [none]"
+   },
+   {
+    "id": "1117891044",
+    "kind": "area-fn",
+    "detail": "labelled devtools; predicted [data]"
+   },
+   {
+    "id": "1120195677",
+    "kind": "tech-fp",
+    "detail": "predicted docker; labelled [cli-terminal]"
+   },
+   {
+    "id": "1120195677",
+    "kind": "tech-fp",
+    "detail": "predicted kubernetes; labelled [cli-terminal]"
+   },
+   {
+    "id": "1120195677",
+    "kind": "tech-fp",
+    "detail": "predicted observability-general; labelled [cli-terminal]"
+   },
+   {
+    "id": "1120195677",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [devtools]"
+   },
+   {
+    "id": "1120195677",
+    "kind": "area-fp",
+    "detail": "predicted observability; labelled [devtools]"
+   },
+   {
+    "id": "1133141258",
+    "kind": "tech-fp",
+    "detail": "predicted grafana; labelled [none]"
+   },
+   {
+    "id": "1133141258",
+    "kind": "tech-fp",
+    "detail": "predicted observability-general; labelled [none]"
+   },
+   {
+    "id": "1133141258",
+    "kind": "area-fp",
+    "detail": "predicted observability; labelled [none]"
+   },
+   {
+    "id": "1133141258",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1138269866",
+    "kind": "tech-fp",
+    "detail": "predicted api; labelled [testing, ci-cd]"
+   },
+   {
+    "id": "1138269866",
+    "kind": "tech-fp",
+    "detail": "predicted kubernetes; labelled [testing, ci-cd]"
+   },
+   {
+    "id": "1138269866",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [devtools]"
+   },
+   {
+    "id": "1138269866",
+    "kind": "area-fp",
+    "detail": "predicted infrastructure; labelled [devtools]"
+   },
+   {
+    "id": "1138269866",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [devtools]"
+   },
+   {
+    "id": "1141697583",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "1146552776",
+    "kind": "tech-fp",
+    "detail": "predicted kafka; labelled [none]"
+   },
+   {
+    "id": "1146552776",
+    "kind": "tech-fp",
+    "detail": "predicted mongodb; labelled [none]"
+   },
+   {
+    "id": "1146552776",
+    "kind": "tech-fp",
+    "detail": "predicted mysql; labelled [none]"
+   },
+   {
+    "id": "1146552776",
+    "kind": "tech-fp",
+    "detail": "predicted postgresql; labelled [none]"
+   },
+   {
+    "id": "1146552776",
+    "kind": "tech-fp",
+    "detail": "predicted redis; labelled [none]"
+   },
+   {
+    "id": "1146552776",
+    "kind": "area-fp",
+    "detail": "predicted messaging; labelled [data, devtools]"
+   },
+   {
+    "id": "1146552776",
+    "kind": "area-fn",
+    "detail": "labelled devtools; predicted [messaging, data]"
+   },
+   {
+    "id": "1147679251",
+    "kind": "area-fp",
+    "detail": "predicted devtools; labelled [security]"
+   },
+   {
+    "id": "1158449837",
+    "kind": "area-fp",
+    "detail": "predicted devtools; labelled [none]"
+   },
+   {
+    "id": "1158449837",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1160497244",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [infrastructure, devtools]"
+   },
+   {
+    "id": "1160497244",
+    "kind": "area-fn",
+    "detail": "labelled devtools; predicted [infrastructure, cloud-native]"
+   },
+   {
+    "id": "1171111467",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "1171111467",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1171302121",
+    "kind": "tech-fp",
+    "detail": "predicted elasticsearch; labelled [none]"
+   },
+   {
+    "id": "1171302121",
+    "kind": "area-fp",
+    "detail": "predicted data; labelled [none]"
+   },
+   {
+    "id": "1171302121",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "1171302121",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1171833693",
+    "kind": "tech-fp",
+    "detail": "predicted api; labelled [none]"
+   },
+   {
+    "id": "1171833693",
+    "kind": "tech-fp",
+    "detail": "predicted kubernetes; labelled [none]"
+   },
+   {
+    "id": "1171833693",
+    "kind": "tech-fp",
+    "detail": "predicted terraform; labelled [none]"
+   },
+   {
+    "id": "1171833693",
+    "kind": "tech-fp",
+    "detail": "predicted ci-cd; labelled [none]"
+   },
+   {
+    "id": "1171833693",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [none]"
+   },
+   {
+    "id": "1171833693",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [none]"
+   },
+   {
+    "id": "1171833693",
+    "kind": "area-fp",
+    "detail": "predicted infrastructure; labelled [none]"
+   },
+   {
+    "id": "1171833693",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1172461735",
+    "kind": "tech-fp",
+    "detail": "predicted docker; labelled [cli-terminal]"
+   },
+   {
+    "id": "1172461735",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [devtools]"
+   },
+   {
+    "id": "1180257966",
+    "kind": "tech-fp",
+    "detail": "predicted secrets-identity; labelled [none]"
+   },
+   {
+    "id": "1180257966",
+    "kind": "tech-fp",
+    "detail": "predicted spring; labelled [none]"
+   },
+   {
+    "id": "1180257966",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "1180257966",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [none]"
+   },
+   {
+    "id": "1180257966",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1183396155",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [none]"
+   },
+   {
+    "id": "1183396155",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1185389803",
+    "kind": "learning-fp",
+    "detail": "flagged learning content, labelled not"
+   },
+   {
+    "id": "1187630119",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "1187630119",
+    "kind": "tech-fp",
+    "detail": "predicted supply-chain; labelled [none]"
+   },
+   {
+    "id": "1187630119",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "1187630119",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1191073059",
+    "kind": "tech-fp",
+    "detail": "predicted terraform; labelled [aws, docker]"
+   },
+   {
+    "id": "1191073059",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [infrastructure, devtools]"
+   },
+   {
+    "id": "1191073059",
+    "kind": "area-fn",
+    "detail": "labelled devtools; predicted [infrastructure, cloud-native]"
+   },
+   {
+    "id": "1199090310",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [none]"
+   },
+   {
+    "id": "1199090310",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1200863578",
+    "kind": "tech-fp",
+    "detail": "predicted ci-cd; labelled [azure-gcp]"
+   },
+   {
+    "id": "1200863578",
+    "kind": "tech-fp",
+    "detail": "predicted terraform; labelled [azure-gcp]"
+   },
+   {
+    "id": "1200863578",
+    "kind": "tech-fp",
+    "detail": "predicted testing; labelled [azure-gcp]"
+   },
+   {
+    "id": "1200863578",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [infrastructure, devtools]"
+   },
+   {
+    "id": "1205137520",
+    "kind": "tech-fp",
+    "detail": "predicted azure-gcp; labelled [none]"
+   },
+   {
+    "id": "1205137520",
+    "kind": "area-fp",
+    "detail": "predicted infrastructure; labelled [none]"
+   },
+   {
+    "id": "1205137520",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [none]"
+   },
+   {
+    "id": "1205137520",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1211139949",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1214349536",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "1214349536",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "1214349536",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1226971975",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "1226971975",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1236183038",
+    "kind": "tech-fp",
+    "detail": "predicted observability-general; labelled [none]"
+   },
+   {
+    "id": "1236183038",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "1236183038",
+    "kind": "area-fp",
+    "detail": "predicted observability; labelled [none]"
+   },
+   {
+    "id": "1236183038",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "1236183038",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1243090608",
+    "kind": "area-fp",
+    "detail": "predicted data; labelled [messaging]"
+   },
+   {
+    "id": "1243090608",
+    "kind": "area-fn",
+    "detail": "labelled messaging; predicted [data]"
+   },
+   {
+    "id": "1247201816",
+    "kind": "tech-fp",
+    "detail": "predicted microservices; labelled [none]"
+   },
+   {
+    "id": "1247201816",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [none]"
+   },
+   {
+    "id": "1247201816",
+    "kind": "area-fp",
+    "detail": "predicted data; labelled [none]"
+   },
+   {
+    "id": "1251711133",
+    "kind": "tech-fp",
+    "detail": "predicted docker; labelled [none]"
+   },
+   {
+    "id": "1251711133",
+    "kind": "tech-fp",
+    "detail": "predicted python-web; labelled [none]"
+   },
+   {
+    "id": "1251711133",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [none]"
+   },
+   {
+    "id": "1251711133",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [none]"
+   },
+   {
+    "id": "1251711133",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1281033762",
+    "kind": "tech-fp",
+    "detail": "predicted docker; labelled [none]"
+   },
+   {
+    "id": "1281033762",
+    "kind": "tech-fp",
+    "detail": "predicted sqlite; labelled [none]"
+   },
+   {
+    "id": "1281033762",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [none]"
+   },
+   {
+    "id": "1281033762",
+    "kind": "area-fp",
+    "detail": "predicted data; labelled [none]"
+   },
+   {
+    "id": "1281033762",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1286083218",
+    "kind": "tech-fp",
+    "detail": "predicted gitops; labelled [kubernetes, cli-terminal]"
+   },
+   {
+    "id": "1286083218",
+    "kind": "tech-fp",
+    "detail": "predicted observability-general; labelled [kubernetes, cli-terminal]"
+   },
+   {
+    "id": "1286083218",
+    "kind": "area-fp",
+    "detail": "predicted devtools; labelled [cloud-native]"
+   },
+   {
+    "id": "1286083218",
+    "kind": "area-fp",
+    "detail": "predicted infrastructure; labelled [cloud-native]"
+   },
+   {
+    "id": "1286083218",
+    "kind": "area-fp",
+    "detail": "predicted observability; labelled [cloud-native]"
+   },
+   {
+    "id": "1315337298",
+    "kind": "area-fp",
+    "detail": "predicted data; labelled [none]"
+   },
+   {
+    "id": "1315337298",
+    "kind": "learning-fn",
+    "detail": "labelled learning content, not flagged"
+   },
+   {
+    "id": "1327088798",
+    "kind": "tech-fp",
+    "detail": "predicted postgresql; labelled [none]"
+   },
+   {
+    "id": "1327088798",
+    "kind": "area-fp",
+    "detail": "predicted data; labelled [none]"
+   },
+   {
+    "id": "1327088798",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1343441436",
+    "kind": "area-fp",
+    "detail": "predicted data; labelled [none]"
+   },
+   {
+    "id": "1358168557",
+    "kind": "tech-fp",
+    "detail": "predicted api; labelled [dotnet, microservices]"
+   },
+   {
+    "id": "1358168557",
+    "kind": "tech-fp",
+    "detail": "predicted mongodb; labelled [dotnet, microservices]"
+   },
+   {
+    "id": "1358168557",
+    "kind": "tech-fp",
+    "detail": "predicted postgresql; labelled [dotnet, microservices]"
+   },
+   {
+    "id": "1358168557",
+    "kind": "tech-fp",
+    "detail": "predicted rabbitmq; labelled [dotnet, microservices]"
+   },
+   {
+    "id": "1358168557",
+    "kind": "tech-fp",
+    "detail": "predicted docker; labelled [dotnet, microservices]"
+   },
+   {
+    "id": "1358168557",
+    "kind": "tech-fp",
+    "detail": "predicted kubernetes; labelled [dotnet, microservices]"
+   },
+   {
+    "id": "1358168557",
+    "kind": "tech-fp",
+    "detail": "predicted opentelemetry; labelled [dotnet, microservices]"
+   },
+   {
+    "id": "1358168557",
+    "kind": "area-fp",
+    "detail": "predicted data; labelled [backend]"
+   },
+   {
+    "id": "1358168557",
+    "kind": "area-fp",
+    "detail": "predicted messaging; labelled [backend]"
+   },
+   {
+    "id": "1358168557",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [backend]"
+   },
+   {
+    "id": "1358168557",
+    "kind": "area-fp",
+    "detail": "predicted observability; labelled [backend]"
+   },
+   {
+    "id": "1359559501",
+    "kind": "tech-fp",
+    "detail": "predicted observability-general; labelled [spring]"
+   },
+   {
+    "id": "1359559501",
+    "kind": "area-fp",
+    "detail": "predicted observability; labelled [backend]"
+   },
+   {
+    "id": "1362655697",
+    "kind": "area-fp",
+    "detail": "predicted cloud-native; labelled [none]"
+   },
+   {
+    "id": "1362655697",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1362655697",
+    "kind": "learning-fp",
+    "detail": "flagged learning content, labelled not"
+   },
+   {
+    "id": "1363904366",
+    "kind": "tech-fp",
+    "detail": "predicted postgresql; labelled [clickhouse, duckdb, mongodb, mysql]"
+   },
+   {
+    "id": "1363904366",
+    "kind": "tech-fp",
+    "detail": "predicted redis; labelled [clickhouse, duckdb, mongodb, mysql]"
+   },
+   {
+    "id": "1363904366",
+    "kind": "tech-fp",
+    "detail": "predicted sqlite; labelled [clickhouse, duckdb, mongodb, mysql]"
+   },
+   {
+    "id": "1363904366",
+    "kind": "area-fn",
+    "detail": "labelled devtools; predicted [data]"
+   },
+   {
+    "id": "1364445580",
+    "kind": "tech-fp",
+    "detail": "predicted nodejs; labelled [none]"
+   },
+   {
+    "id": "1364445580",
+    "kind": "tech-fp",
+    "detail": "predicted postgresql; labelled [none]"
+   },
+   {
+    "id": "1364445580",
+    "kind": "area-fp",
+    "detail": "predicted backend; labelled [none]"
+   },
+   {
+    "id": "1364445580",
+    "kind": "area-fp",
+    "detail": "predicted data; labelled [none]"
+   },
+   {
+    "id": "1364445580",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1367266329",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "1367266329",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "1367266329",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1380590876",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "1380590876",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1380590876",
+    "kind": "learning-fn",
+    "detail": "labelled learning content, not flagged"
+   },
+   {
+    "id": "1383518430",
+    "kind": "area-fp",
+    "detail": "predicted infrastructure; labelled [none]"
+   },
+   {
+    "id": "1383518430",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1385750356",
+    "kind": "learning-fn",
+    "detail": "labelled learning content, not flagged"
+   },
+   {
+    "id": "1387234427",
+    "kind": "tech-fp",
+    "detail": "predicted aws; labelled [none]"
+   },
+   {
+    "id": "1387234427",
+    "kind": "area-fp",
+    "detail": "predicted infrastructure; labelled [none]"
+   },
+   {
+    "id": "1387234427",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   },
+   {
+    "id": "1388409097",
+    "kind": "tech-fp",
+    "detail": "predicted security-scanning; labelled [none]"
+   },
+   {
+    "id": "1388409097",
+    "kind": "tech-fp",
+    "detail": "predicted supply-chain; labelled [none]"
+   },
+   {
+    "id": "1388409097",
+    "kind": "area-fp",
+    "detail": "predicted security; labelled [none]"
+   },
+   {
+    "id": "1388409097",
+    "kind": "domain-fp",
+    "detail": "predicted Engineering, labelled not Engineering"
+   }
+  ]
+ },
+ "perArea": {
+  "data": {
+   "predicted": 37,
+   "tp": 20,
+   "fp": 17,
+   "labelled": 23,
+   "fn": 3,
+   "precision": {
+    "rate": 0.5405,
+    "low": 0.3838,
+    "high": 0.6896,
+    "n": 37
+   },
+   "recall": {
+    "rate": 0.8696,
+    "low": 0.6787,
+    "high": 0.9546,
+    "n": 23
+   }
+  },
+  "devtools": {
+   "predicted": 29,
+   "tp": 17,
+   "fp": 12,
+   "labelled": 27,
+   "fn": 10,
+   "precision": {
+    "rate": 0.5862,
+    "low": 0.4074,
+    "high": 0.7449,
+    "n": 29
+   },
+   "recall": {
+    "rate": 0.6296,
+    "low": 0.4423,
+    "high": 0.7847,
+    "n": 27
+   }
+  },
+  "infrastructure": {
+   "predicted": 33,
+   "tp": 18,
+   "fp": 15,
+   "labelled": 22,
+   "fn": 4,
+   "precision": {
+    "rate": 0.5455,
+    "low": 0.3799,
+    "high": 0.7016,
+    "n": 33
+   },
+   "recall": {
+    "rate": 0.8182,
+    "low": 0.6148,
+    "high": 0.9269,
+    "n": 22
+   }
+  },
+  "backend": {
+   "predicted": 45,
+   "tp": 21,
+   "fp": 24,
+   "labelled": 23,
+   "fn": 2,
+   "precision": {
+    "rate": 0.4667,
+    "low": 0.3293,
+    "high": 0.6092,
+    "n": 45
+   },
+   "recall": {
+    "rate": 0.913,
+    "low": 0.732,
+    "high": 0.9758,
+    "n": 23
+   }
+  },
+  "security": {
+   "predicted": 40,
+   "tp": 20,
+   "fp": 20,
+   "labelled": 25,
+   "fn": 5,
+   "precision": {
+    "rate": 0.5,
+    "low": 0.352,
+    "high": 0.648,
+    "n": 40
+   },
+   "recall": {
+    "rate": 0.8,
+    "low": 0.6087,
+    "high": 0.9114,
+    "n": 25
+   }
+  },
+  "messaging": {
+   "predicted": 14,
+   "tp": 9,
+   "fp": 5,
+   "labelled": 11,
+   "fn": 2,
+   "precision": {
+    "rate": 0.6429,
+    "low": 0.3876,
+    "high": 0.8366,
+    "n": 14
+   },
+   "recall": {
+    "rate": 0.8182,
+    "low": 0.523,
+    "high": 0.9486,
+    "n": 11
+   }
+  },
+  "cloud-native": {
+   "predicted": 47,
+   "tp": 14,
+   "fp": 33,
+   "labelled": 14,
+   "fn": 0,
+   "precision": {
+    "rate": 0.2979,
+    "low": 0.1865,
+    "high": 0.4398,
+    "n": 47
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.7847,
+    "high": 1,
+    "n": 14
+   }
+  },
+  "observability": {
+   "predicted": 20,
+   "tp": 7,
+   "fp": 13,
+   "labelled": 9,
+   "fn": 2,
+   "precision": {
+    "rate": 0.35,
+    "low": 0.1812,
+    "high": 0.5671,
+    "n": 20
+   },
+   "recall": {
+    "rate": 0.7778,
+    "low": 0.4526,
+    "high": 0.9368,
+    "n": 9
+   }
+  }
+ },
+ "perTechnology": {
+  "spring": {
+   "predicted": 10,
+   "tp": 6,
+   "fp": 4,
+   "labelled": 6,
+   "fn": 0,
+   "precision": {
+    "rate": 0.6,
+    "low": 0.3127,
+    "high": 0.8318,
+    "n": 10
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.6097,
+    "high": 1,
+    "n": 6
+   },
+   "verdict": "ambiguous"
+  },
+  "quarkus": {
+   "predicted": 1,
+   "tp": 1,
+   "fp": 0,
+   "labelled": 1,
+   "fn": 0,
+   "precision": {
+    "rate": 1,
+    "low": 0.2065,
+    "high": 1,
+    "n": 1
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.2065,
+    "high": 1,
+    "n": 1
+   },
+   "verdict": "insufficient-evidence"
+  },
+  "micronaut": {
+   "predicted": 1,
+   "tp": 1,
+   "fp": 0,
+   "labelled": 1,
+   "fn": 0,
+   "precision": {
+    "rate": 1,
+    "low": 0.2065,
+    "high": 1,
+    "n": 1
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.2065,
+    "high": 1,
+    "n": 1
+   },
+   "verdict": "insufficient-evidence"
+  },
+  "nodejs": {
+   "predicted": 5,
+   "tp": 1,
+   "fp": 4,
+   "labelled": 1,
+   "fn": 0,
+   "precision": {
+    "rate": 0.2,
+    "low": 0.0362,
+    "high": 0.6245,
+    "n": 5
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.2065,
+    "high": 1,
+    "n": 1
+   },
+   "verdict": "too-broad"
+  },
+  "python-web": {
+   "predicted": 1,
+   "tp": 0,
+   "fp": 1,
+   "labelled": 0,
+   "fn": 0,
+   "precision": {
+    "rate": 0,
+    "low": 0,
+    "high": 0.7935,
+    "n": 1
+   },
+   "recall": null,
+   "verdict": "insufficient-evidence"
+  },
+  "dotnet": {
+   "predicted": 4,
+   "tp": 3,
+   "fp": 1,
+   "labelled": 3,
+   "fn": 0,
+   "precision": {
+    "rate": 0.75,
+    "low": 0.3006,
+    "high": 0.9544,
+    "n": 4
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.4385,
+    "high": 1,
+    "n": 3
+   },
+   "verdict": "ambiguous"
+  },
+  "api": {
+   "predicted": 11,
+   "tp": 3,
+   "fp": 8,
+   "labelled": 3,
+   "fn": 0,
+   "precision": {
+    "rate": 0.2727,
+    "low": 0.0975,
+    "high": 0.5657,
+    "n": 11
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.4385,
+    "high": 1,
+    "n": 3
+   },
+   "verdict": "too-broad"
+  },
+  "microservices": {
+   "predicted": 10,
+   "tp": 5,
+   "fp": 5,
+   "labelled": 6,
+   "fn": 1,
+   "precision": {
+    "rate": 0.5,
+    "low": 0.2366,
+    "high": 0.7634,
+    "n": 10
+   },
+   "recall": {
+    "rate": 0.8333,
+    "low": 0.4365,
+    "high": 0.9699,
+    "n": 6
+   },
+   "verdict": "too-broad"
+  },
+  "postgresql": {
+   "predicted": 14,
+   "tp": 5,
+   "fp": 9,
+   "labelled": 5,
+   "fn": 0,
+   "precision": {
+    "rate": 0.3571,
+    "low": 0.1634,
+    "high": 0.6124,
+    "n": 14
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.5655,
+    "high": 1,
+    "n": 5
+   },
+   "verdict": "too-broad"
+  },
+  "mysql": {
+   "predicted": 10,
+   "tp": 3,
+   "fp": 7,
+   "labelled": 4,
+   "fn": 1,
+   "precision": {
+    "rate": 0.3,
+    "low": 0.1078,
+    "high": 0.6032,
+    "n": 10
+   },
+   "recall": {
+    "rate": 0.75,
+    "low": 0.3006,
+    "high": 0.9544,
+    "n": 4
+   },
+   "verdict": "too-broad"
+  },
+  "sqlite": {
+   "predicted": 8,
+   "tp": 4,
+   "fp": 4,
+   "labelled": 4,
+   "fn": 0,
+   "precision": {
+    "rate": 0.5,
+    "low": 0.2152,
+    "high": 0.7848,
+    "n": 8
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.5101,
+    "high": 1,
+    "n": 4
+   },
+   "verdict": "too-broad"
+  },
+  "redis": {
+   "predicted": 13,
+   "tp": 6,
+   "fp": 7,
+   "labelled": 6,
+   "fn": 0,
+   "precision": {
+    "rate": 0.4615,
+    "low": 0.2321,
+    "high": 0.7086,
+    "n": 13
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.6097,
+    "high": 1,
+    "n": 6
+   },
+   "verdict": "too-broad"
+  },
+  "mongodb": {
+   "predicted": 6,
+   "tp": 2,
+   "fp": 4,
+   "labelled": 2,
+   "fn": 0,
+   "precision": {
+    "rate": 0.3333,
+    "low": 0.0968,
+    "high": 0.7,
+    "n": 6
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.3424,
+    "high": 1,
+    "n": 2
+   },
+   "verdict": "too-broad"
+  },
+  "clickhouse": {
+   "predicted": 2,
+   "tp": 2,
+   "fp": 0,
+   "labelled": 2,
+   "fn": 0,
+   "precision": {
+    "rate": 1,
+    "low": 0.3424,
+    "high": 1,
+    "n": 2
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.3424,
+    "high": 1,
+    "n": 2
+   },
+   "verdict": "insufficient-evidence"
+  },
+  "duckdb": {
+   "predicted": 3,
+   "tp": 3,
+   "fp": 0,
+   "labelled": 3,
+   "fn": 0,
+   "precision": {
+    "rate": 1,
+    "low": 0.4385,
+    "high": 1,
+    "n": 3
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.4385,
+    "high": 1,
+    "n": 3
+   },
+   "verdict": "useful"
+  },
+  "elasticsearch": {
+   "predicted": 3,
+   "tp": 2,
+   "fp": 1,
+   "labelled": 2,
+   "fn": 0,
+   "precision": {
+    "rate": 0.6667,
+    "low": 0.2077,
+    "high": 0.9385,
+    "n": 3
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.3424,
+    "high": 1,
+    "n": 2
+   },
+   "verdict": "ambiguous"
+  },
+  "data-processing": {
+   "predicted": 1,
+   "tp": 0,
+   "fp": 1,
+   "labelled": 0,
+   "fn": 0,
+   "precision": {
+    "rate": 0,
+    "low": 0,
+    "high": 0.7935,
+    "n": 1
+   },
+   "recall": null,
+   "verdict": "insufficient-evidence"
+  },
+  "kafka": {
+   "predicted": 12,
+   "tp": 8,
+   "fp": 4,
+   "labelled": 9,
+   "fn": 1,
+   "precision": {
+    "rate": 0.6667,
+    "low": 0.3906,
+    "high": 0.8619,
+    "n": 12
+   },
+   "recall": {
+    "rate": 0.8889,
+    "low": 0.565,
+    "high": 0.9801,
+    "n": 9
+   },
+   "verdict": "ambiguous"
+  },
+  "rabbitmq": {
+   "predicted": 1,
+   "tp": 0,
+   "fp": 1,
+   "labelled": 1,
+   "fn": 1,
+   "precision": {
+    "rate": 0,
+    "low": 0,
+    "high": 0.7935,
+    "n": 1
+   },
+   "recall": {
+    "rate": 0,
+    "low": 0,
+    "high": 0.7935,
+    "n": 1
+   },
+   "verdict": "insufficient-evidence"
+  },
+  "nats": {
+   "predicted": 1,
+   "tp": 1,
+   "fp": 0,
+   "labelled": 1,
+   "fn": 0,
+   "precision": {
+    "rate": 1,
+    "low": 0.2065,
+    "high": 1,
+    "n": 1
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.2065,
+    "high": 1,
+    "n": 1
+   },
+   "verdict": "insufficient-evidence"
+  },
+  "pulsar": {
+   "predicted": 0,
+   "tp": 0,
+   "fp": 0,
+   "labelled": 0,
+   "fn": 0,
+   "precision": null,
+   "recall": null,
+   "verdict": "insufficient-evidence"
+  },
+  "kubernetes": {
+   "predicted": 18,
+   "tp": 8,
+   "fp": 10,
+   "labelled": 8,
+   "fn": 0,
+   "precision": {
+    "rate": 0.4444,
+    "low": 0.2456,
+    "high": 0.6628,
+    "n": 18
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.6756,
+    "high": 1,
+    "n": 8
+   },
+   "verdict": "too-broad"
+  },
+  "docker": {
+   "predicted": 24,
+   "tp": 11,
+   "fp": 13,
+   "labelled": 11,
+   "fn": 0,
+   "precision": {
+    "rate": 0.4583,
+    "low": 0.2789,
+    "high": 0.6493,
+    "n": 24
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.7412,
+    "high": 1,
+    "n": 11
+   },
+   "verdict": "too-broad"
+  },
+  "service-mesh": {
+   "predicted": 0,
+   "tp": 0,
+   "fp": 0,
+   "labelled": 0,
+   "fn": 0,
+   "precision": null,
+   "recall": null,
+   "verdict": "insufficient-evidence"
+  },
+  "serverless": {
+   "predicted": 5,
+   "tp": 1,
+   "fp": 4,
+   "labelled": 1,
+   "fn": 0,
+   "precision": {
+    "rate": 0.2,
+    "low": 0.0362,
+    "high": 0.6245,
+    "n": 5
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.2065,
+    "high": 1,
+    "n": 1
+   },
+   "verdict": "too-broad"
+  },
+  "webassembly": {
+   "predicted": 0,
+   "tp": 0,
+   "fp": 0,
+   "labelled": 0,
+   "fn": 0,
+   "precision": null,
+   "recall": null,
+   "verdict": "insufficient-evidence"
+  },
+  "ebpf": {
+   "predicted": 1,
+   "tp": 1,
+   "fp": 0,
+   "labelled": 1,
+   "fn": 0,
+   "precision": {
+    "rate": 1,
+    "low": 0.2065,
+    "high": 1,
+    "n": 1
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.2065,
+    "high": 1,
+    "n": 1
+   },
+   "verdict": "insufficient-evidence"
+  },
+  "terraform": {
+   "predicted": 8,
+   "tp": 4,
+   "fp": 4,
+   "labelled": 4,
+   "fn": 0,
+   "precision": {
+    "rate": 0.5,
+    "low": 0.2152,
+    "high": 0.7848,
+    "n": 8
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.5101,
+    "high": 1,
+    "n": 4
+   },
+   "verdict": "too-broad"
+  },
+  "iac-other": {
+   "predicted": 3,
+   "tp": 3,
+   "fp": 0,
+   "labelled": 3,
+   "fn": 0,
+   "precision": {
+    "rate": 1,
+    "low": 0.4385,
+    "high": 1,
+    "n": 3
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.4385,
+    "high": 1,
+    "n": 3
+   },
+   "verdict": "useful"
+  },
+  "gitops": {
+   "predicted": 4,
+   "tp": 2,
+   "fp": 2,
+   "labelled": 2,
+   "fn": 0,
+   "precision": {
+    "rate": 0.5,
+    "low": 0.15,
+    "high": 0.85,
+    "n": 4
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.3424,
+    "high": 1,
+    "n": 2
+   },
+   "verdict": "too-broad"
+  },
+  "ci-cd": {
+   "predicted": 14,
+   "tp": 2,
+   "fp": 12,
+   "labelled": 2,
+   "fn": 0,
+   "precision": {
+    "rate": 0.1429,
+    "low": 0.0401,
+    "high": 0.3994,
+    "n": 14
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.3424,
+    "high": 1,
+    "n": 2
+   },
+   "verdict": "too-broad"
+  },
+  "aws": {
+   "predicted": 11,
+   "tp": 6,
+   "fp": 5,
+   "labelled": 7,
+   "fn": 1,
+   "precision": {
+    "rate": 0.5455,
+    "low": 0.2801,
+    "high": 0.7873,
+    "n": 11
+   },
+   "recall": {
+    "rate": 0.8571,
+    "low": 0.4869,
+    "high": 0.9743,
+    "n": 7
+   },
+   "verdict": "too-broad"
+  },
+  "azure-gcp": {
+   "predicted": 9,
+   "tp": 3,
+   "fp": 6,
+   "labelled": 3,
+   "fn": 0,
+   "precision": {
+    "rate": 0.3333,
+    "low": 0.1206,
+    "high": 0.6458,
+    "n": 9
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.4385,
+    "high": 1,
+    "n": 3
+   },
+   "verdict": "too-broad"
+  },
+  "opentelemetry": {
+   "predicted": 9,
+   "tp": 3,
+   "fp": 6,
+   "labelled": 3,
+   "fn": 0,
+   "precision": {
+    "rate": 0.3333,
+    "low": 0.1206,
+    "high": 0.6458,
+    "n": 9
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.4385,
+    "high": 1,
+    "n": 3
+   },
+   "verdict": "too-broad"
+  },
+  "prometheus": {
+   "predicted": 5,
+   "tp": 2,
+   "fp": 3,
+   "labelled": 2,
+   "fn": 0,
+   "precision": {
+    "rate": 0.4,
+    "low": 0.1176,
+    "high": 0.7693,
+    "n": 5
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.3424,
+    "high": 1,
+    "n": 2
+   },
+   "verdict": "too-broad"
+  },
+  "grafana": {
+   "predicted": 4,
+   "tp": 2,
+   "fp": 2,
+   "labelled": 2,
+   "fn": 0,
+   "precision": {
+    "rate": 0.5,
+    "low": 0.15,
+    "high": 0.85,
+    "n": 4
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.3424,
+    "high": 1,
+    "n": 2
+   },
+   "verdict": "too-broad"
+  },
+  "tracing-logging": {
+   "predicted": 4,
+   "tp": 2,
+   "fp": 2,
+   "labelled": 4,
+   "fn": 2,
+   "precision": {
+    "rate": 0.5,
+    "low": 0.15,
+    "high": 0.85,
+    "n": 4
+   },
+   "recall": {
+    "rate": 0.5,
+    "low": 0.15,
+    "high": 0.85,
+    "n": 4
+   },
+   "verdict": "too-broad"
+  },
+  "observability-general": {
+   "predicted": 11,
+   "tp": 1,
+   "fp": 10,
+   "labelled": 1,
+   "fn": 0,
+   "precision": {
+    "rate": 0.0909,
+    "low": 0.0162,
+    "high": 0.3774,
+    "n": 11
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.2065,
+    "high": 1,
+    "n": 1
+   },
+   "verdict": "too-broad"
+  },
+  "security-scanning": {
+   "predicted": 23,
+   "tp": 3,
+   "fp": 20,
+   "labelled": 3,
+   "fn": 0,
+   "precision": {
+    "rate": 0.1304,
+    "low": 0.0454,
+    "high": 0.3213,
+    "n": 23
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.4385,
+    "high": 1,
+    "n": 3
+   },
+   "verdict": "too-broad"
+  },
+  "secrets-identity": {
+   "predicted": 3,
+   "tp": 0,
+   "fp": 3,
+   "labelled": 3,
+   "fn": 3,
+   "precision": {
+    "rate": 0,
+    "low": 0,
+    "high": 0.5615,
+    "n": 3
+   },
+   "recall": {
+    "rate": 0,
+    "low": 0,
+    "high": 0.5615,
+    "n": 3
+   },
+   "verdict": "too-broad"
+  },
+  "supply-chain": {
+   "predicted": 3,
+   "tp": 1,
+   "fp": 2,
+   "labelled": 1,
+   "fn": 0,
+   "precision": {
+    "rate": 0.3333,
+    "low": 0.0615,
+    "high": 0.7923,
+    "n": 3
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.2065,
+    "high": 1,
+    "n": 1
+   },
+   "verdict": "insufficient-evidence"
+  },
+  "testing": {
+   "predicted": 9,
+   "tp": 5,
+   "fp": 4,
+   "labelled": 7,
+   "fn": 2,
+   "precision": {
+    "rate": 0.5556,
+    "low": 0.2666,
+    "high": 0.8112,
+    "n": 9
+   },
+   "recall": {
+    "rate": 0.7143,
+    "low": 0.3589,
+    "high": 0.9178,
+    "n": 7
+   },
+   "verdict": "too-broad"
+  },
+  "build-tools": {
+   "predicted": 0,
+   "tp": 0,
+   "fp": 0,
+   "labelled": 0,
+   "fn": 0,
+   "precision": null,
+   "recall": null,
+   "verdict": "insufficient-evidence"
+  },
+  "cli-terminal": {
+   "predicted": 14,
+   "tp": 7,
+   "fp": 7,
+   "labelled": 8,
+   "fn": 1,
+   "precision": {
+    "rate": 0.5,
+    "low": 0.268,
+    "high": 0.732,
+    "n": 14
+   },
+   "recall": {
+    "rate": 0.875,
+    "low": 0.5291,
+    "high": 0.9776,
+    "n": 8
+   },
+   "verdict": "too-broad"
+  },
+  "code-quality": {
+   "predicted": 6,
+   "tp": 5,
+   "fp": 1,
+   "labelled": 5,
+   "fn": 0,
+   "precision": {
+    "rate": 0.8333,
+    "low": 0.4365,
+    "high": 0.9699,
+    "n": 6
+   },
+   "recall": {
+    "rate": 1,
+    "low": 0.5655,
+    "high": 1,
+    "n": 5
+   },
+   "verdict": "useful"
+  },
+  "docs-tooling": {
+   "predicted": 0,
+   "tp": 0,
+   "fp": 0,
+   "labelled": 0,
+   "fn": 0,
+   "precision": null,
+   "recall": null,
+   "verdict": "insufficient-evidence"
+  }
+ }
+}

@@ -1,0 +1,4381 @@
+{
+ "built": "2026-10-10",
+ "frame": {
+  "total": 8817,
+  "production": 4490,
+  "novelTop300": 4327
+ },
+ "strata": [
+  {
+   "name": "area:messaging (Kafka, RabbitMQ, NATS, Pulsar)",
+   "frame": 111,
+   "sampled": 13
+  },
+  {
+   "name": "tech:terraform",
+   "frame": 113,
+   "sampled": 7
+  },
+  {
+   "name": "tech:microservices",
+   "frame": 141,
+   "sampled": 7
+  },
+  {
+   "name": "tech:spring",
+   "frame": 128,
+   "sampled": 7
+  },
+  {
+   "name": "tech:aws",
+   "frame": 102,
+   "sampled": 7
+  },
+  {
+   "name": "tech:redis",
+   "frame": 81,
+   "sampled": 7
+  },
+  {
+   "name": "tech:postgresql",
+   "frame": 151,
+   "sampled": 7
+  },
+  {
+   "name": "tech:kubernetes",
+   "frame": 218,
+   "sampled": 7
+  },
+  {
+   "name": "tech:docker",
+   "frame": 111,
+   "sampled": 7
+  },
+  {
+   "name": "category:databases",
+   "frame": 70,
+   "sampled": 7
+  },
+  {
+   "name": "category:cloud",
+   "frame": 24,
+   "sampled": 7
+  },
+  {
+   "name": "area:observability",
+   "frame": 120,
+   "sampled": 7
+  },
+  {
+   "name": "area:infrastructure",
+   "frame": 75,
+   "sampled": 7
+  },
+  {
+   "name": "area:devtools",
+   "frame": 262,
+   "sampled": 7
+  },
+  {
+   "name": "language:java",
+   "frame": 78,
+   "sampled": 7
+  },
+  {
+   "name": "borderline:weak-technology-evidence",
+   "frame": 13,
+   "sampled": 13
+  },
+  {
+   "name": "predicted-engineering:no-technology",
+   "frame": 119,
+   "sampled": 19
+  },
+  {
+   "name": "predicted-both",
+   "frame": 17,
+   "sampled": 13
+  },
+  {
+   "name": "predicted-unknown",
+   "frame": 1018,
+   "sampled": 28
+  },
+  {
+   "name": "predicted-ai",
+   "frame": 1483,
+   "sampled": 17
+  },
+  {
+   "name": "learning-flagged",
+   "frame": 8,
+   "sampled": 8
+  },
+  {
+   "name": "novel-top300:engineering",
+   "frame": 2076,
+   "sampled": 13
+  },
+  {
+   "name": "novel-top300:unknown",
+   "frame": 1089,
+   "sampled": 9
+  },
+  {
+   "name": "novel-top300:ai",
+   "frame": 1162,
+   "sampled": 6
+  }
+ ],
+ "items": [
+  {
+   "id": "594087",
+   "fullName": "dimitri/pgloader",
+   "stratum": "tech:postgresql",
+   "weight": 21.5714,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data"
+    ],
+    "technologies": [
+     "postgresql",
+     "mysql",
+     "sqlite"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1133930",
+   "fullName": "validator/validator",
+   "stratum": "area:devtools",
+   "weight": 37.4286,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "devtools"
+    ],
+    "technologies": [
+     "code-quality"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "2019791",
+   "fullName": "liquibase/liquibase",
+   "stratum": "category:databases",
+   "weight": 10,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure",
+     "data",
+     "backend"
+    ],
+    "technologies": [
+     "ci-cd",
+     "mysql"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "3543548",
+   "fullName": "cfengine/core",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "5152285",
+   "fullName": "lysine-dev/okhttp",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "5410234",
+   "fullName": "OISF/suricata",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "5425992",
+   "fullName": "nats-io/nats.go",
+   "stratum": "area:messaging (Kafka, RabbitMQ, NATS, Pulsar)",
+   "weight": 8.5385,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "messaging",
+     "backend",
+     "cloud-native"
+    ],
+    "technologies": [
+     "nats",
+     "microservices"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "10744183",
+   "fullName": "netdata/netdata",
+   "stratum": "tech:postgresql",
+   "weight": 21.5714,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "observability",
+     "cloud-native",
+     "data"
+    ],
+    "technologies": [
+     "observability-general",
+     "docker",
+     "grafana",
+     "kubernetes",
+     "mongodb",
+     "mysql",
+     "postgresql",
+     "prometheus"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "17517521",
+   "fullName": "auth0/java-jwt",
+   "stratum": "novel-top300:engineering",
+   "weight": 159.6923,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "17728164",
+   "fullName": "hashicorp/terraform",
+   "stratum": "tech:terraform",
+   "weight": 16.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure"
+    ],
+    "technologies": [
+     "terraform"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "19051806",
+   "fullName": "StackStorm/st2",
+   "stratum": "area:observability",
+   "weight": 17.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure",
+     "observability"
+    ],
+    "technologies": [
+     "ci-cd",
+     "observability-general"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "20300177",
+   "fullName": "google/guava",
+   "stratum": "language:java",
+   "weight": 11.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "23267883",
+   "fullName": "semaphoreui/semaphore",
+   "stratum": "tech:terraform",
+   "weight": 16.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure",
+     "cloud-native"
+    ],
+    "technologies": [
+     "iac-other",
+     "terraform",
+     "ci-cd",
+     "docker"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "23282991",
+   "fullName": "NLPchina/elasticsearch-sql",
+   "stratum": "category:databases",
+   "weight": 10,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data"
+    ],
+    "technologies": [
+     "elasticsearch"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "23625881",
+   "fullName": "alicebob/miniredis",
+   "stratum": "tech:redis",
+   "weight": 11.5714,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data"
+    ],
+    "technologies": [
+     "redis"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "26337322",
+   "fullName": "rancher/rancher",
+   "stratum": "tech:kubernetes",
+   "weight": 31.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native"
+    ],
+    "technologies": [
+     "docker",
+     "kubernetes"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "35494746",
+   "fullName": "cowrie/cowrie",
+   "stratum": "novel-top300:unknown",
+   "weight": 121,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "36817565",
+   "fullName": "zaproxy/zaproxy",
+   "stratum": "language:java",
+   "weight": 11.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "38304949",
+   "fullName": "groue/GRDB.swift",
+   "stratum": "category:databases",
+   "weight": 10,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data"
+    ],
+    "technologies": [
+     "sqlite"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "39947871",
+   "fullName": "karafka/karafka",
+   "stratum": "area:messaging (Kafka, RabbitMQ, NATS, Pulsar)",
+   "weight": 8.5385,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "messaging"
+    ],
+    "technologies": [
+     "kafka"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "39985381",
+   "fullName": "dotnet/ef6",
+   "stratum": "novel-top300:unknown",
+   "weight": 121,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "43430090",
+   "fullName": "context-and-oss/XrmDefinitelyTyped",
+   "stratum": "area:devtools",
+   "weight": 37.4286,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "devtools"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "48384473",
+   "fullName": "ParabolInc/parabol",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "49014795",
+   "fullName": "phpstan/phpstan",
+   "stratum": "area:devtools",
+   "weight": 37.4286,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "devtools"
+    ],
+    "technologies": [
+     "code-quality",
+     "testing"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "50205233",
+   "fullName": "debezium/debezium",
+   "stratum": "area:messaging (Kafka, RabbitMQ, NATS, Pulsar)",
+   "weight": 8.5385,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "messaging"
+    ],
+    "technologies": [
+     "kafka"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "51040886",
+   "fullName": "Azure/azure-cli",
+   "stratum": "category:cloud",
+   "weight": 3.4286,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure",
+     "cloud-native"
+    ],
+    "technologies": [
+     "azure-gcp"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "53890427",
+   "fullName": "irockel/tda",
+   "stratum": "language:java",
+   "weight": 11.1429,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "55276445",
+   "fullName": "houko/SpringBootUnity",
+   "stratum": "tech:spring",
+   "weight": 18.2857,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend",
+     "data"
+    ],
+    "technologies": [
+     "spring",
+     "mongodb",
+     "redis",
+     "mysql"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "56342508",
+   "fullName": "jaegertracing/jaeger",
+   "stratum": "area:observability",
+   "weight": 17.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "observability"
+    ],
+    "technologies": [
+     "tracing-logging",
+     "observability-general",
+     "opentelemetry"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "62256097",
+   "fullName": "ThreeMammals/Ocelot",
+   "stratum": "tech:microservices",
+   "weight": 20.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [
+     "api",
+     "dotnet",
+     "microservices"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "72477752",
+   "fullName": "pulumi/pulumi",
+   "stratum": "borderline:weak-technology-evidence",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure",
+     "cloud-native",
+     "backend"
+    ],
+    "technologies": [
+     "aws",
+     "azure-gcp",
+     "docker",
+     "dotnet",
+     "iac-other",
+     "kubernetes",
+     "serverless"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "72878982",
+   "fullName": "cncf/landscape",
+   "stratum": "category:cloud",
+   "weight": 3.4286,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native"
+    ],
+    "technologies": [
+     "serverless",
+     "webassembly"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "77145066",
+   "fullName": "budtmo/docker-android",
+   "stratum": "tech:aws",
+   "weight": 14.5714,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native",
+     "infrastructure",
+     "devtools"
+    ],
+    "technologies": [
+     "docker",
+     "aws",
+     "azure-gcp",
+     "ci-cd",
+     "kubernetes",
+     "testing"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "80358070",
+   "fullName": "qazbnm456/awesome-web-security",
+   "stratum": "learning-flagged",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning"
+    ],
+    "learning": true
+   }
+  },
+  {
+   "id": "84977146",
+   "fullName": "octodns/octodns",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "86981606",
+   "fullName": "halfrost/Halfrost-Field",
+   "stratum": "predicted-both",
+   "weight": 1.3077,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [
+     "api"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "87012358",
+   "fullName": "javalin/javalin",
+   "stratum": "tech:microservices",
+   "weight": 20.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [
+     "microservices"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "89150912",
+   "fullName": "vaporz/turbo",
+   "stratum": "tech:microservices",
+   "weight": 20.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [
+     "api",
+     "microservices"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "90979676",
+   "fullName": "zendesk/racecar",
+   "stratum": "area:messaging (Kafka, RabbitMQ, NATS, Pulsar)",
+   "weight": 8.5385,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "messaging"
+    ],
+    "technologies": [
+     "kafka"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "92329433",
+   "fullName": "canonical/dqlite",
+   "stratum": "category:databases",
+   "weight": 10,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data"
+    ],
+    "technologies": [
+     "sqlite"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "93381875",
+   "fullName": "microsoft/SynapseML",
+   "stratum": "novel-top300:ai",
+   "weight": 193.6667,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "94801380",
+   "fullName": "The-Art-of-Hacking/h4cker",
+   "stratum": "learning-flagged",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning"
+    ],
+    "learning": true
+   }
+  },
+  {
+   "id": "103684801",
+   "fullName": "walidshaari/Kubernetes-Certified-Administrator",
+   "stratum": "tech:kubernetes",
+   "weight": 31.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native"
+    ],
+    "technologies": [
+     "kubernetes"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "107914493",
+   "fullName": "simonw/datasette",
+   "stratum": "tech:docker",
+   "weight": 15.8571,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native",
+     "data"
+    ],
+    "technologies": [
+     "docker",
+     "sqlite"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "108221729",
+   "fullName": "caprover/caprover",
+   "stratum": "tech:aws",
+   "weight": 14.5714,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native",
+     "infrastructure",
+     "backend"
+    ],
+    "technologies": [
+     "docker",
+     "aws",
+     "azure-gcp",
+     "nodejs"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "109566657",
+   "fullName": "goodrain/rainbond",
+   "stratum": "tech:kubernetes",
+   "weight": 31.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native"
+    ],
+    "technologies": [
+     "kubernetes"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "119190187",
+   "fullName": "gitleaks/gitleaks",
+   "stratum": "area:infrastructure",
+   "weight": 10.7143,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure",
+     "devtools",
+     "security"
+    ],
+    "technologies": [
+     "ci-cd",
+     "cli-terminal",
+     "security-scanning"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "120650407",
+   "fullName": "operator-framework/operator-sdk",
+   "stratum": "novel-top300:engineering",
+   "weight": 159.6923,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native"
+    ],
+    "technologies": [
+     "kubernetes"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "123631418",
+   "fullName": "lissy93/personal-security-checklist",
+   "stratum": "learning-flagged",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning"
+    ],
+    "learning": true
+   }
+  },
+  {
+   "id": "124230204",
+   "fullName": "micronaut-projects/micronaut-core",
+   "stratum": "borderline:weak-technology-evidence",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend",
+     "cloud-native"
+    ],
+    "technologies": [
+     "micronaut",
+     "microservices",
+     "serverless"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "130879558",
+   "fullName": "gitpod-io/gitpod",
+   "stratum": "area:devtools",
+   "weight": 37.4286,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "devtools"
+    ],
+    "technologies": [
+     "code-quality"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "131129792",
+   "fullName": "PyCQA/bandit",
+   "stratum": "novel-top300:engineering",
+   "weight": 159.6923,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "devtools",
+     "security"
+    ],
+    "technologies": [
+     "code-quality",
+     "security-scanning"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "138754790",
+   "fullName": "duckdb/duckdb",
+   "stratum": "borderline:weak-technology-evidence",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data"
+    ],
+    "technologies": [
+     "duckdb"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "139380324",
+   "fullName": "YeautyYE/netty-websocket-spring-boot-starter",
+   "stratum": "tech:spring",
+   "weight": 18.2857,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [
+     "spring"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "139914932",
+   "fullName": "quarkusio/quarkus",
+   "stratum": "borderline:weak-technology-evidence",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native",
+     "backend"
+    ],
+    "technologies": [
+     "kubernetes",
+     "quarkus"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "141482866",
+   "fullName": "toniblyx/my-arsenal-of-aws-security-tools",
+   "stratum": "borderline:weak-technology-evidence",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure",
+     "security",
+     "cloud-native"
+    ],
+    "technologies": [
+     "aws",
+     "secrets-identity",
+     "security-scanning",
+     "serverless"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "144005357",
+   "fullName": "ory/k8s",
+   "stratum": "novel-top300:engineering",
+   "weight": 159.6923,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native"
+    ],
+    "technologies": [
+     "kubernetes"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "145880460",
+   "fullName": "aws-amplify/amplify-cli",
+   "stratum": "tech:aws",
+   "weight": 14.5714,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure",
+     "cloud-native",
+     "backend",
+     "devtools",
+     "security"
+    ],
+    "technologies": [
+     "aws",
+     "serverless",
+     "api",
+     "cli-terminal",
+     "secrets-identity"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "146285827",
+   "fullName": "helidon-io/helidon",
+   "stratum": "novel-top300:engineering",
+   "weight": 159.6923,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "148059143",
+   "fullName": "tchiotludo/akhq",
+   "stratum": "area:messaging (Kafka, RabbitMQ, NATS, Pulsar)",
+   "weight": 8.5385,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "messaging",
+     "backend"
+    ],
+    "technologies": [
+     "kafka"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "159152904",
+   "fullName": "jeecgboot/JeecgBoot",
+   "stratum": "tech:spring",
+   "weight": 18.2857,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "devtools",
+     "backend"
+    ],
+    "technologies": [
+     "cli-terminal",
+     "spring"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "162028712",
+   "fullName": "leerob/next-mdx-blog",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "162346001",
+   "fullName": "splunk/security_content",
+   "stratum": "area:infrastructure",
+   "weight": 10.7143,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure",
+     "security"
+    ],
+    "technologies": [
+     "ci-cd"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "164335954",
+   "fullName": "apioo/typeschema",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "184064793",
+   "fullName": "decalage2/awesome-security-hardening",
+   "stratum": "learning-flagged",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning"
+    ],
+    "learning": true
+   }
+  },
+  {
+   "id": "186754830",
+   "fullName": "umijs/qiankun",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "201455508",
+   "fullName": "pingcap/tiflow",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "205679232",
+   "fullName": "flipped-aurora/gin-vue-admin",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "207374215",
+   "fullName": "carlosas/phpat",
+   "stratum": "novel-top300:engineering",
+   "weight": 159.6923,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "devtools"
+    ],
+    "technologies": [
+     "code-quality",
+     "testing"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "208728772",
+   "fullName": "milvus-io/milvus",
+   "stratum": "category:cloud",
+   "weight": 3.4286,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "209652627",
+   "fullName": "salesforce/policy_sentry",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "210374451",
+   "fullName": "vdesabou/kafka-docker-playground",
+   "stratum": "borderline:weak-technology-evidence",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "messaging",
+     "cloud-native"
+    ],
+    "technologies": [
+     "kafka",
+     "docker"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "214418572",
+   "fullName": "go-spring/go-spring",
+   "stratum": "tech:spring",
+   "weight": 18.2857,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [
+     "spring"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "217943361",
+   "fullName": "doocs/source-code-hunter",
+   "stratum": "tech:spring",
+   "weight": 18.2857,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data",
+     "backend"
+    ],
+    "technologies": [
+     "redis",
+     "spring"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "221606944",
+   "fullName": "pixiu-io/kubez-ansible",
+   "stratum": "borderline:weak-technology-evidence",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native",
+     "observability",
+     "infrastructure"
+    ],
+    "technologies": [
+     "kubernetes",
+     "grafana",
+     "iac-other",
+     "prometheus"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "229407566",
+   "fullName": "simplex-chat/simplex-chat",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "230784338",
+   "fullName": "tuProlog/2p-kt",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "243518322",
+   "fullName": "douyu/jupiter",
+   "stratum": "tech:microservices",
+   "weight": 20.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [
+     "api",
+     "microservices"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "252140224",
+   "fullName": "hydro-dev/Hydro",
+   "stratum": "novel-top300:unknown",
+   "weight": 121,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "259767909",
+   "fullName": "AliAkhtari78/SpotifyScraper",
+   "stratum": "novel-top300:ai",
+   "weight": 193.6667,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "275169025",
+   "fullName": "minamijoyo/tfmigrate",
+   "stratum": "tech:terraform",
+   "weight": 16.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure"
+    ],
+    "technologies": [
+     "gitops",
+     "terraform"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "288411806",
+   "fullName": "jolibrain/joliGEN",
+   "stratum": "predicted-ai",
+   "weight": 87.2353,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "309874357",
+   "fullName": "dragonflyoss/dragonfly",
+   "stratum": "tech:docker",
+   "weight": 15.8571,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native"
+    ],
+    "technologies": [
+     "docker"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "326168355",
+   "fullName": "agourlay/hprof-slurp",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "327859577",
+   "fullName": "juicedata/juicefs",
+   "stratum": "tech:redis",
+   "weight": 11.5714,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data"
+    ],
+    "technologies": [
+     "redis"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "332880689",
+   "fullName": "coollabsio/coolify",
+   "stratum": "tech:redis",
+   "weight": 11.5714,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native",
+     "data",
+     "backend"
+    ],
+    "technologies": [
+     "docker",
+     "mysql",
+     "nodejs",
+     "postgresql",
+     "redis"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "343965132",
+   "fullName": "microsoft/ML-For-Beginners",
+   "stratum": "predicted-ai",
+   "weight": 87.2353,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": true
+   }
+  },
+  {
+   "id": "350382700",
+   "fullName": "XSAM/otelsql",
+   "stratum": "category:databases",
+   "weight": 10,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "observability",
+     "data"
+    ],
+    "technologies": [
+     "opentelemetry"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "359216482",
+   "fullName": "Purp1eW0lf/Blue-Team-Notes",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "367331849",
+   "fullName": "stacksimplify/terraform-on-aws-ec2",
+   "stratum": "borderline:weak-technology-evidence",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure"
+    ],
+    "technologies": [
+     "terraform",
+     "aws"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "390858281",
+   "fullName": "wotschofsky/domain-digger",
+   "stratum": "novel-top300:unknown",
+   "weight": 121,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "410749029",
+   "fullName": "spacedriveapp/spacedrive",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "414591409",
+   "fullName": "meysamhadeli/awesome-dotnet-tips",
+   "stratum": "tech:microservices",
+   "weight": 20.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend",
+     "cloud-native",
+     "devtools"
+    ],
+    "technologies": [
+     "dotnet",
+     "api",
+     "docker",
+     "kubernetes",
+     "microservices",
+     "testing"
+    ],
+    "learning": true
+   }
+  },
+  {
+   "id": "432001054",
+   "fullName": "loglayer/loglayer",
+   "stratum": "area:observability",
+   "weight": 17.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "observability",
+     "backend"
+    ],
+    "technologies": [
+     "opentelemetry",
+     "nodejs",
+     "tracing-logging"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "432844875",
+   "fullName": "orioledb/orioledb",
+   "stratum": "tech:postgresql",
+   "weight": 21.5714,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data"
+    ],
+    "technologies": [
+     "postgresql"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "436932767",
+   "fullName": "mfaisalkhatri/selenium4poc",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": true
+   }
+  },
+  {
+   "id": "447450585",
+   "fullName": "ElYusubov/AWESOME-Azure-Bicep",
+   "stratum": "category:cloud",
+   "weight": 3.4286,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure",
+     "devtools",
+     "cloud-native"
+    ],
+    "technologies": [
+     "azure-gcp",
+     "cli-terminal"
+    ],
+    "learning": true
+   }
+  },
+  {
+   "id": "467856408",
+   "fullName": "seerr-team/seerr",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "471249443",
+   "fullName": "haydenbleasel/ultracite",
+   "stratum": "novel-top300:engineering",
+   "weight": 159.6923,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "devtools"
+    ],
+    "technologies": [
+     "code-quality"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "482005314",
+   "fullName": "cunla/fakeredis-py",
+   "stratum": "tech:redis",
+   "weight": 11.5714,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data",
+     "devtools"
+    ],
+    "technologies": [
+     "redis",
+     "testing"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "497617084",
+   "fullName": "Idov31/Nidhogg",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "498037475",
+   "fullName": "Bert-JanP/Hunting-Queries-Detection-Rules",
+   "stratum": "category:cloud",
+   "weight": 3.4286,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure",
+     "cloud-native",
+     "security"
+    ],
+    "technologies": [
+     "azure-gcp"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "502927347",
+   "fullName": "madhank93/learn-system-design",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": true
+   }
+  },
+  {
+   "id": "503528235",
+   "fullName": "Athena-OS/athena",
+   "stratum": "learning-flagged",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning"
+    ],
+    "learning": true
+   }
+  },
+  {
+   "id": "505385703",
+   "fullName": "edoardottt/awesome-hacker-search-engines",
+   "stratum": "learning-flagged",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning"
+    ],
+    "learning": true
+   }
+  },
+  {
+   "id": "520252357",
+   "fullName": "open-telemetry/opentelemetry-go-instrumentation",
+   "stratum": "borderline:weak-technology-evidence",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native",
+     "observability"
+    ],
+    "technologies": [
+     "ebpf",
+     "observability-general",
+     "opentelemetry",
+     "tracing-logging"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "520784735",
+   "fullName": "parseablehq/parseable",
+   "stratum": "area:observability",
+   "weight": 17.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "observability"
+    ],
+    "technologies": [
+     "observability-general",
+     "opentelemetry",
+     "prometheus"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "528313152",
+   "fullName": "gethomepage/homepage",
+   "stratum": "tech:docker",
+   "weight": 15.8571,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native"
+    ],
+    "technologies": [
+     "docker"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "537300699",
+   "fullName": "Astrosp/Awesome-OSINT-List",
+   "stratum": "learning-flagged",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning"
+    ],
+    "learning": true
+   }
+  },
+  {
+   "id": "549456931",
+   "fullName": "0xsyr0/Awesome-Cybersecurity-Handbooks",
+   "stratum": "learning-flagged",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning"
+    ],
+    "learning": true
+   }
+  },
+  {
+   "id": "577610356",
+   "fullName": "opencost/opencost-helm-chart",
+   "stratum": "novel-top300:engineering",
+   "weight": 159.6923,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native",
+     "observability"
+    ],
+    "technologies": [
+     "kubernetes",
+     "prometheus"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "591975136",
+   "fullName": "farhanashrafdev/90DaysOfCyberSecurity",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [],
+    "learning": true
+   }
+  },
+  {
+   "id": "621026799",
+   "fullName": "cerberauth/awesome-openid-connect",
+   "stratum": "novel-top300:unknown",
+   "weight": 121,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": true
+   }
+  },
+  {
+   "id": "627920448",
+   "fullName": "phodal/auto-dev",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "628390075",
+   "fullName": "PeerDB-io/peerdb",
+   "stratum": "area:messaging (Kafka, RabbitMQ, NATS, Pulsar)",
+   "weight": 8.5385,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data",
+     "messaging"
+    ],
+    "technologies": [
+     "postgresql",
+     "clickhouse",
+     "kafka"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "650344440",
+   "fullName": "openmeterio/openmeter",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "655181249",
+   "fullName": "DefangLabs/defang",
+   "stratum": "tech:aws",
+   "weight": 14.5714,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native",
+     "infrastructure"
+    ],
+    "technologies": [
+     "docker",
+     "aws",
+     "azure-gcp"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "673704029",
+   "fullName": "ipa-lab/hackingBuddyGPT",
+   "stratum": "predicted-both",
+   "weight": 1.3077,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "679601811",
+   "fullName": "AutoMQ/automq",
+   "stratum": "area:messaging (Kafka, RabbitMQ, NATS, Pulsar)",
+   "weight": 8.5385,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "messaging",
+     "cloud-native"
+    ],
+    "technologies": [
+     "kafka",
+     "serverless"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "685897222",
+   "fullName": "Shannon-Data/ShannonBase",
+   "stratum": "category:databases",
+   "weight": 10,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data"
+    ],
+    "technologies": [
+     "mysql"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "694266896",
+   "fullName": "intuitem/ciso-assistant-community",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "696777593",
+   "fullName": "grafana/docker-otel-lgtm",
+   "stratum": "borderline:weak-technology-evidence",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "observability",
+     "cloud-native"
+    ],
+    "technologies": [
+     "opentelemetry",
+     "docker",
+     "grafana",
+     "prometheus"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "697526683",
+   "fullName": "aws-solutions/generative-ai-application-builder-on-aws",
+   "stratum": "borderline:weak-technology-evidence",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure"
+    ],
+    "technologies": [
+     "aws"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "722915479",
+   "fullName": "golemcloud/golem",
+   "stratum": "predicted-both",
+   "weight": 1.3077,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native",
+     "data"
+    ],
+    "technologies": [
+     "serverless",
+     "webassembly"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "741100585",
+   "fullName": "langchain-ai/langgraphjs",
+   "stratum": "predicted-ai",
+   "weight": 87.2353,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "743107776",
+   "fullName": "ThomasVitale/llm-apps-java-spring-ai",
+   "stratum": "borderline:weak-technology-evidence",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [
+     "spring"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "765037941",
+   "fullName": "BodhiSearch/BodhiApp",
+   "stratum": "predicted-ai",
+   "weight": 87.2353,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "777597786",
+   "fullName": "Armur-Ai/Pentest-Swarm-AI",
+   "stratum": "predicted-both",
+   "weight": 1.3077,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "785334631",
+   "fullName": "msoedov/agentic_security",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "806015479",
+   "fullName": "summer-rs/summer-rs",
+   "stratum": "area:messaging (Kafka, RabbitMQ, NATS, Pulsar)",
+   "weight": 8.5385,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend",
+     "messaging",
+     "observability",
+     "data"
+    ],
+    "technologies": [
+     "spring",
+     "kafka",
+     "microservices",
+     "opentelemetry",
+     "redis"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "812793594",
+   "fullName": "marcoturi/fastify-boilerplate",
+   "stratum": "tech:docker",
+   "weight": 15.8571,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend",
+     "cloud-native",
+     "observability"
+    ],
+    "technologies": [
+     "nodejs",
+     "api",
+     "docker",
+     "opentelemetry"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "817326197",
+   "fullName": "screenpipe/screenpipe",
+   "stratum": "predicted-ai",
+   "weight": 87.2353,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "826164486",
+   "fullName": "java-up-up/damai",
+   "stratum": "area:messaging (Kafka, RabbitMQ, NATS, Pulsar)",
+   "weight": 8.5385,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data",
+     "messaging",
+     "cloud-native",
+     "backend",
+     "observability"
+    ],
+    "technologies": [
+     "elasticsearch",
+     "kafka",
+     "redis",
+     "docker",
+     "spring",
+     "tracing-logging"
+    ],
+    "learning": true
+   }
+  },
+  {
+   "id": "898345892",
+   "fullName": "wonderwhy-er/DesktopCommanderMCP",
+   "stratum": "predicted-ai",
+   "weight": 87.2353,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "908108028",
+   "fullName": "Tencent/AI-Infra-Guard",
+   "stratum": "predicted-both",
+   "weight": 1.3077,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "910960179",
+   "fullName": "Deodat-Lawson/LaunchStack",
+   "stratum": "tech:postgresql",
+   "weight": 21.5714,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data",
+     "cloud-native"
+    ],
+    "technologies": [
+     "postgresql",
+     "docker"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "913030762",
+   "fullName": "vxcontrol/pentagi",
+   "stratum": "predicted-both",
+   "weight": 1.3077,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend",
+     "security"
+    ],
+    "technologies": [
+     "api",
+     "security-scanning"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "958382457",
+   "fullName": "aws-samples/remote-swe-agents",
+   "stratum": "predicted-ai",
+   "weight": 87.2353,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "978236265",
+   "fullName": "google/adk-java",
+   "stratum": "language:java",
+   "weight": 11.1429,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "998434422",
+   "fullName": "pgplex/pgschema",
+   "stratum": "tech:terraform",
+   "weight": 16.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data",
+     "infrastructure",
+     "devtools"
+    ],
+    "technologies": [
+     "postgresql",
+     "terraform",
+     "ci-cd",
+     "cli-terminal",
+     "gitops"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1002593055",
+   "fullName": "PaulDuvall/ai-development-patterns",
+   "stratum": "area:infrastructure",
+   "weight": 10.7143,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure"
+    ],
+    "technologies": [
+     "ci-cd"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1009637873",
+   "fullName": "ai-for-developers/awesome-ai-coding-tools",
+   "stratum": "predicted-ai",
+   "weight": 87.2353,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": true
+   }
+  },
+  {
+   "id": "1034142340",
+   "fullName": "darksworm/argonaut",
+   "stratum": "tech:kubernetes",
+   "weight": 31.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "devtools",
+     "infrastructure",
+     "cloud-native"
+    ],
+    "technologies": [
+     "cli-terminal",
+     "gitops",
+     "ci-cd",
+     "kubernetes"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1044010907",
+   "fullName": "Devin-AXIS/iPolloWork",
+   "stratum": "novel-top300:ai",
+   "weight": 193.6667,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1062297179",
+   "fullName": "agentscope-ai/agentscope-java",
+   "stratum": "language:java",
+   "weight": 11.1429,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1065059442",
+   "fullName": "KeygraphHQ/shannon",
+   "stratum": "area:infrastructure",
+   "weight": 10.7143,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure",
+     "security"
+    ],
+    "technologies": [
+     "ci-cd",
+     "security-scanning"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1071272475",
+   "fullName": "alpic-ai/skybridge",
+   "stratum": "predicted-ai",
+   "weight": 87.2353,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1075623312",
+   "fullName": "InterceptSuite/ProxyBridge",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1076362809",
+   "fullName": "corsairdev/corsair",
+   "stratum": "predicted-ai",
+   "weight": 87.2353,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1079089186",
+   "fullName": "kaifcodec/user-scanner",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1080370450",
+   "fullName": "superset-sh/superset",
+   "stratum": "area:devtools",
+   "weight": 37.4286,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "devtools"
+    ],
+    "technologies": [
+     "cli-terminal"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1083689394",
+   "fullName": "avivsinai/bitbucket-cli",
+   "stratum": "area:infrastructure",
+   "weight": 10.7143,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure",
+     "devtools"
+    ],
+    "technologies": [
+     "ci-cd",
+     "cli-terminal"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1092104931",
+   "fullName": "CarterPerez-dev/Cybersecurity-Projects",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [],
+    "learning": true
+   }
+  },
+  {
+   "id": "1092839234",
+   "fullName": "vicanso/zedis",
+   "stratum": "tech:redis",
+   "weight": 11.5714,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data"
+    ],
+    "technologies": [
+     "redis"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1099547803",
+   "fullName": "ruvnet/RuVector",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1104388418",
+   "fullName": "shining-stars-l/javaup",
+   "stratum": "area:messaging (Kafka, RabbitMQ, NATS, Pulsar)",
+   "weight": 8.5385,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "messaging",
+     "data",
+     "backend"
+    ],
+    "technologies": [
+     "kafka",
+     "mysql",
+     "redis",
+     "spring"
+    ],
+    "learning": true
+   }
+  },
+  {
+   "id": "1110046254",
+   "fullName": "SanMuzZzZz/LuaN1aoAgent",
+   "stratum": "predicted-both",
+   "weight": 1.3077,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1110443421",
+   "fullName": "alibaba/zvec",
+   "stratum": "predicted-ai",
+   "weight": 87.2353,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1115482628",
+   "fullName": "Maxteabag/sqlit",
+   "stratum": "tech:postgresql",
+   "weight": 21.5714,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data",
+     "devtools"
+    ],
+    "technologies": [
+     "mysql",
+     "sqlite",
+     "cli-terminal",
+     "duckdb",
+     "postgresql"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1116843764",
+   "fullName": "aleksandarskrbic/khaos",
+   "stratum": "area:messaging (Kafka, RabbitMQ, NATS, Pulsar)",
+   "weight": 8.5385,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "messaging",
+     "observability",
+     "devtools",
+     "data"
+    ],
+    "technologies": [
+     "kafka",
+     "observability-general",
+     "testing",
+     "data-processing"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1117470788",
+   "fullName": "ombharatiya/ai-system-design-guide",
+   "stratum": "tech:aws",
+   "weight": 14.5714,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure"
+    ],
+    "technologies": [
+     "aws",
+     "azure-gcp"
+    ],
+    "learning": true
+   }
+  },
+  {
+   "id": "1117828152",
+   "fullName": "stackryze/FreeDomains",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1117891044",
+   "fullName": "TableProApp/TablePro",
+   "stratum": "tech:redis",
+   "weight": 11.5714,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data"
+    ],
+    "technologies": [
+     "mongodb",
+     "mysql",
+     "postgresql",
+     "redis",
+     "sqlite"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1118297842",
+   "fullName": "antithesishq/bombadil",
+   "stratum": "novel-top300:engineering",
+   "weight": 159.6923,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "devtools"
+    ],
+    "technologies": [
+     "testing"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1120195677",
+   "fullName": "pranshuparmar/witr",
+   "stratum": "tech:kubernetes",
+   "weight": 31.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "devtools",
+     "cloud-native",
+     "observability"
+    ],
+    "technologies": [
+     "cli-terminal",
+     "docker",
+     "kubernetes",
+     "observability-general"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1122873619",
+   "fullName": "kenryu42/cc-safety-net",
+   "stratum": "novel-top300:ai",
+   "weight": 193.6667,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1124326845",
+   "fullName": "Finsys/dockhand",
+   "stratum": "tech:docker",
+   "weight": 15.8571,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native"
+    ],
+    "technologies": [
+     "docker"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1127011907",
+   "fullName": "tetherto/qvac",
+   "stratum": "predicted-ai",
+   "weight": 87.2353,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1133141258",
+   "fullName": "Tracer-Cloud/opensre",
+   "stratum": "area:observability",
+   "weight": 17.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "observability"
+    ],
+    "technologies": [
+     "grafana",
+     "observability-general"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1138200460",
+   "fullName": "rorkai/App-Store-Connect-CLI",
+   "stratum": "area:infrastructure",
+   "weight": 10.7143,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure",
+     "devtools"
+    ],
+    "technologies": [
+     "ci-cd",
+     "cli-terminal"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1138269866",
+   "fullName": "jumpstarter-dev/jumpstarter",
+   "stratum": "tech:kubernetes",
+   "weight": 31.1429,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend",
+     "infrastructure",
+     "cloud-native",
+     "devtools"
+    ],
+    "technologies": [
+     "api",
+     "ci-cd",
+     "kubernetes",
+     "testing"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1138989235",
+   "fullName": "zeweihan/aiworkdeck",
+   "stratum": "novel-top300:unknown",
+   "weight": 121,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1141697583",
+   "fullName": "Ilias1988/Hacking-Cheatsheets",
+   "stratum": "novel-top300:engineering",
+   "weight": 159.6923,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning"
+    ],
+    "learning": true
+   }
+  },
+  {
+   "id": "1146552776",
+   "fullName": "Syngnat/GoNavi",
+   "stratum": "area:messaging (Kafka, RabbitMQ, NATS, Pulsar)",
+   "weight": 8.5385,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "messaging",
+     "data"
+    ],
+    "technologies": [
+     "kafka",
+     "mongodb",
+     "mysql",
+     "postgresql",
+     "redis"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1147679251",
+   "fullName": "sheeki03/tirith",
+   "stratum": "area:devtools",
+   "weight": 37.4286,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "devtools",
+     "security"
+    ],
+    "technologies": [
+     "cli-terminal",
+     "supply-chain"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1152014383",
+   "fullName": "ArcReel/ArcReel",
+   "stratum": "predicted-ai",
+   "weight": 87.2353,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1153451691",
+   "fullName": "Cranot/roam-code",
+   "stratum": "category:databases",
+   "weight": 10,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data",
+     "devtools"
+    ],
+    "technologies": [
+     "sqlite",
+     "cli-terminal",
+     "code-quality"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1158449837",
+   "fullName": "golutra/golutra",
+   "stratum": "novel-top300:engineering",
+   "weight": 159.6923,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "devtools"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1158799392",
+   "fullName": "astrid-runtime/astrid",
+   "stratum": "novel-top300:unknown",
+   "weight": 121,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1160497244",
+   "fullName": "floci-io/floci",
+   "stratum": "tech:aws",
+   "weight": 14.5714,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure",
+     "cloud-native"
+    ],
+    "technologies": [
+     "aws",
+     "docker"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1163808211",
+   "fullName": "liustack/modlens",
+   "stratum": "predicted-ai",
+   "weight": 87.2353,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1165277268",
+   "fullName": "Panniantong/Agent-Reach",
+   "stratum": "predicted-ai",
+   "weight": 87.2353,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1168753718",
+   "fullName": "every-app/open-seo",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1171111467",
+   "fullName": "microsoft/agent-governance-toolkit",
+   "stratum": "novel-top300:engineering",
+   "weight": 159.6923,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1171302121",
+   "fullName": "SecurityClaw/SecurityClaw",
+   "stratum": "predicted-both",
+   "weight": 1.3077,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data",
+     "security"
+    ],
+    "technologies": [
+     "elasticsearch"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1171833693",
+   "fullName": "Agents365-ai/drawio-skill",
+   "stratum": "tech:terraform",
+   "weight": 16.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend",
+     "cloud-native",
+     "infrastructure"
+    ],
+    "technologies": [
+     "api",
+     "kubernetes",
+     "terraform",
+     "ci-cd"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1172461735",
+   "fullName": "raskrebs/sonar",
+   "stratum": "novel-top300:engineering",
+   "weight": 159.6923,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "devtools",
+     "cloud-native"
+    ],
+    "technologies": [
+     "cli-terminal",
+     "docker"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1180257966",
+   "fullName": "grimmory-tools/grimmory",
+   "stratum": "tech:spring",
+   "weight": 18.2857,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security",
+     "backend"
+    ],
+    "technologies": [
+     "secrets-identity",
+     "spring"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1180588986",
+   "fullName": "tma1-ai/tma1",
+   "stratum": "area:observability",
+   "weight": 17.1429,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "observability"
+    ],
+    "technologies": [
+     "observability-general",
+     "opentelemetry",
+     "tracing-logging"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1183396155",
+   "fullName": "Stonewuu/ai-fusion-video",
+   "stratum": "language:java",
+   "weight": 11.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1185389803",
+   "fullName": "MadsLorentzen/ai-job-search",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": true
+   }
+  },
+  {
+   "id": "1187630119",
+   "fullName": "NVIDIA/SkillSpector",
+   "stratum": "predicted-both",
+   "weight": 1.3077,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning",
+     "supply-chain"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1190938188",
+   "fullName": "Arthur-Ficial/apfel",
+   "stratum": "novel-top300:unknown",
+   "weight": 121,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1191073059",
+   "fullName": "ministackorg/ministack",
+   "stratum": "tech:terraform",
+   "weight": 16.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure",
+     "cloud-native"
+    ],
+    "technologies": [
+     "aws",
+     "terraform",
+     "docker"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1194181229",
+   "fullName": "hashgraph-online/awesome-codex-plugins",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": true
+   }
+  },
+  {
+   "id": "1197496497",
+   "fullName": "filiksyos/gitreverse",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1199090310",
+   "fullName": "w8123/EnterpriseAgentFramework",
+   "stratum": "language:java",
+   "weight": 11.1429,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1199668171",
+   "fullName": "fathah/hermes-desktop",
+   "stratum": "novel-top300:ai",
+   "weight": 193.6667,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1200863578",
+   "fullName": "moabukar/miniblue",
+   "stratum": "tech:terraform",
+   "weight": 16.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure",
+     "devtools",
+     "cloud-native"
+    ],
+    "technologies": [
+     "azure-gcp",
+     "ci-cd",
+     "terraform",
+     "testing"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1205137520",
+   "fullName": "google/agents-cli",
+   "stratum": "category:cloud",
+   "weight": 3.4286,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure",
+     "cloud-native"
+    ],
+    "technologies": [
+     "azure-gcp"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1206501749",
+   "fullName": "walkinglabs/hands-on-modern-rl",
+   "stratum": "predicted-ai",
+   "weight": 87.2353,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": true
+   }
+  },
+  {
+   "id": "1209020591",
+   "fullName": "redai-studio/Relax",
+   "stratum": "predicted-ai",
+   "weight": 87.2353,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1210390572",
+   "fullName": "mukul975/cve-mcp-server",
+   "stratum": "predicted-both",
+   "weight": 1.3077,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1211139949",
+   "fullName": "tt-a1i/archify",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1214349536",
+   "fullName": "Netw0rkNoob/VulnClaw",
+   "stratum": "predicted-both",
+   "weight": 1.3077,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1226971975",
+   "fullName": "beenuar/AiSOC",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1233418417",
+   "fullName": "bookorbit/bookorbit",
+   "stratum": "novel-top300:unknown",
+   "weight": 121,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1236183038",
+   "fullName": "Asymptote-Labs/agent-beacon",
+   "stratum": "area:observability",
+   "weight": 17.1429,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "observability",
+     "security"
+    ],
+    "technologies": [
+     "observability-general",
+     "security-scanning"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1243090608",
+   "fullName": "tonbo-io/ursula",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1247201816",
+   "fullName": "study8677/awesome-architecture",
+   "stratum": "tech:microservices",
+   "weight": 20.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend",
+     "data"
+    ],
+    "technologies": [
+     "microservices"
+    ],
+    "learning": true
+   }
+  },
+  {
+   "id": "1251711133",
+   "fullName": "gammahazard/locate-anything",
+   "stratum": "tech:docker",
+   "weight": 15.8571,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native",
+     "backend"
+    ],
+    "technologies": [
+     "docker",
+     "python-web"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1265025028",
+   "fullName": "XiaomiMiMo/MiMo-Code",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1281033762",
+   "fullName": "tianma-if/edgeever",
+   "stratum": "tech:docker",
+   "weight": 15.8571,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native",
+     "data"
+    ],
+    "technologies": [
+     "docker",
+     "sqlite"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1286083218",
+   "fullName": "nklmilojevic/sofka",
+   "stratum": "tech:kubernetes",
+   "weight": 31.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native",
+     "devtools",
+     "infrastructure",
+     "observability"
+    ],
+    "technologies": [
+     "kubernetes",
+     "cli-terminal",
+     "gitops",
+     "observability-general"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1287568859",
+   "fullName": "grft-dev/graftcode",
+   "stratum": "tech:microservices",
+   "weight": 20.1429,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend",
+     "devtools"
+    ],
+    "technologies": [
+     "microservices"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1315337298",
+   "fullName": "Raminshiraz/raft-visualizer",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1327088798",
+   "fullName": "deeplethe/utopia",
+   "stratum": "tech:postgresql",
+   "weight": 21.5714,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data"
+    ],
+    "technologies": [
+     "postgresql"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1343441436",
+   "fullName": "xevrion/breakscale",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data"
+    ],
+    "technologies": [],
+    "learning": true
+   }
+  },
+  {
+   "id": "1355157779",
+   "fullName": "nickelsec/bough",
+   "stratum": "novel-top300:ai",
+   "weight": 193.6667,
+   "prediction": {
+    "topLevel": "AI",
+    "domainEngineering": false,
+    "predictedUnknown": false,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1358168557",
+   "fullName": "evangelosvlachos96-dotcom/booking-microservices",
+   "stratum": "area:messaging (Kafka, RabbitMQ, NATS, Pulsar)",
+   "weight": 8.5385,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend",
+     "data",
+     "messaging",
+     "cloud-native",
+     "observability"
+    ],
+    "technologies": [
+     "api",
+     "microservices",
+     "mongodb",
+     "postgresql",
+     "rabbitmq",
+     "docker",
+     "dotnet",
+     "kubernetes",
+     "opentelemetry"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1359559501",
+   "fullName": "ejboy/awesome-modern-spring-boot",
+   "stratum": "tech:spring",
+   "weight": 18.2857,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend",
+     "observability"
+    ],
+    "technologies": [
+     "spring",
+     "observability-general"
+    ],
+    "learning": true
+   }
+  },
+  {
+   "id": "1362655697",
+   "fullName": "michaelxu688/Cloud-native-photoshop-alternative",
+   "stratum": "category:cloud",
+   "weight": 3.4286,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native"
+    ],
+    "technologies": [],
+    "learning": true
+   }
+  },
+  {
+   "id": "1363904366",
+   "fullName": "2giosangmitom/sqmeow.nvim",
+   "stratum": "tech:redis",
+   "weight": 11.5714,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "data"
+    ],
+    "technologies": [
+     "clickhouse",
+     "duckdb",
+     "mongodb",
+     "mysql",
+     "postgresql",
+     "redis",
+     "sqlite"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1364445580",
+   "fullName": "GuideDesignate/Ghostfolio-Open-Source-Wealth-Management-Software",
+   "stratum": "tech:postgresql",
+   "weight": 21.5714,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "backend",
+     "data"
+    ],
+    "technologies": [
+     "nodejs",
+     "postgresql"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1367266329",
+   "fullName": "shinthink/blitzstrike",
+   "stratum": "predicted-both",
+   "weight": 1.3077,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1367299537",
+   "fullName": "Clearailhc/clearai-dsh",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1373639422",
+   "fullName": "ctxrs/graf",
+   "stratum": "area:devtools",
+   "weight": 37.4286,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "devtools",
+     "data"
+    ],
+    "technologies": [
+     "code-quality",
+     "sqlite"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1374027945",
+   "fullName": "nMaas8388/github-ranking-audit",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1376713674",
+   "fullName": "pallavi-shekhar/ai-engineering-interview-questions-company-wise",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": true
+   }
+  },
+  {
+   "id": "1380590876",
+   "fullName": "Janithpriyadarshana/port-drill",
+   "stratum": "predicted-engineering:no-technology",
+   "weight": 6.2632,
+   "prediction": {
+    "topLevel": "ENGINEERING",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1380600012",
+   "fullName": "Himanshu-giri-01/k8s-ai-runtime",
+   "stratum": "borderline:weak-technology-evidence",
+   "weight": 1,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "cloud-native"
+    ],
+    "technologies": [
+     "kubernetes"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1380609428",
+   "fullName": "Noah4758/Python-Rapid-Deploy-Kit",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1383518430",
+   "fullName": "mikehasa/golive-skill",
+   "stratum": "area:infrastructure",
+   "weight": 10.7143,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure"
+    ],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1385750356",
+   "fullName": "theNetworkChuck/paperclip-guide",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1386102205",
+   "fullName": "qh7wn6hrf9tx/qwenimage3.0-qwen-image-3.0-prompts",
+   "stratum": "predicted-unknown",
+   "weight": 36.3571,
+   "prediction": {
+    "topLevel": "UNKNOWN",
+    "domainEngineering": false,
+    "predictedUnknown": true,
+    "areas": [],
+    "technologies": [],
+    "learning": false
+   }
+  },
+  {
+   "id": "1387234427",
+   "fullName": "sagochiko/aws-drawio-diagram-skill",
+   "stratum": "tech:aws",
+   "weight": 14.5714,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "infrastructure"
+    ],
+    "technologies": [
+     "aws"
+    ],
+    "learning": false
+   }
+  },
+  {
+   "id": "1388409097",
+   "fullName": "graygnatconsole/mcp-audit-tool",
+   "stratum": "predicted-both",
+   "weight": 1.3077,
+   "prediction": {
+    "topLevel": "BOTH",
+    "domainEngineering": true,
+    "predictedUnknown": false,
+    "areas": [
+     "security"
+    ],
+    "technologies": [
+     "security-scanning",
+     "supply-chain"
+    ],
+    "learning": false
+   }
+  }
+ ]
+}

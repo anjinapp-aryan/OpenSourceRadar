@@ -417,7 +417,7 @@ describe('Phase 6.3 historical replay and AI regression', () => {
   it('no production module imports the Phase 6.3 layers (they are shadow/experiment code until wired deliberately)', () => {
     let out = '';
     try {
-      out = execSync(`git grep --untracked -l -E "momentum/normalize|/taxonomy'|discovery/admission|domain/contract|/domain'" -- app lib components .github scripts/collect scripts/track scripts/pipeline scripts/momentum/index.ts src/momentum/engine.ts src/momentum/dataset.ts src/pipeline src/collect src/tracking`, { encoding: 'utf8' }).trim();
+      out = execSync(`git grep --untracked -l -E "momentum/normalize|/taxonomy'|discovery/admission|domain/contract|/domain'" -- app lib components .github scripts/collect scripts/track scripts/pipeline scripts/momentum/index.ts src/momentum/engine.ts src/momentum/dataset.ts src/pipeline/gate.ts src/pipeline/state.ts src/pipeline/size.ts src/collect src/tracking`, { encoding: 'utf8' }).trim();
     } catch {
       out = ''; // git grep exits 1 when nothing matches
     }

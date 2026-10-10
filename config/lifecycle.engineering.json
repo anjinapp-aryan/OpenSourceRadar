@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "lifecycleVersion": "phase6.3.1-v1",
+  "description": "Engineering lifecycle semantics (docs/PHASE-6.3.1-LIFECYCLE-SEMANTICS.md). Shadow only; AI keeps the production definitions. Selected values come from results/phase6.3.1/lifecycle-replay.json by the rules declared in scripts/lifecycle/replay.ts.",
+  "rising": { "persistence": "threeOfFive" },
+  "accelerating": { "minRatio": 1.2, "minGrowth7d": 30 },
+  "breakout": { "minRatio": 3, "minGrowth7d": 100 },
+  "cooling": { "kind": "fromHigh", "minBaselineWeekly": 50, "dropRatio": 0.5, "baselinePercentile": 0.9, "declineRatio": 0.7, "minPeakWeekly": 50, "lostTrendingLookbackDays": 5 },
+  "sustained": { "minDomainPercentile": 0.95, "minWeeksAbove": 3, "windowWeeks": 4, "minWeeklyGrowth": 30 },
+  "newToRadar": { "primary": "firstPublished", "maxDaysSinceFirstPublished": 14, "genuinelyNewMaxAgeDays": 90 }
+}

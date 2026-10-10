@@ -1,0 +1,352 @@
+{
+ "reviewer": "ASSISTANT (manual reading by the model that built the tooling; NOT independent and NOT human)",
+ "date": "2026-10-10",
+ "policyVersion": "phase6.3-v1",
+ "admittedPopulation": 150,
+ "admittedSample": {
+  "n": 60,
+  "clearlyRelevant": 39,
+  "probablyRelevant": 15,
+  "questionable": 6,
+  "irrelevant": 0,
+  "precisionProxyClearlyOrProbably": 0.9,
+  "precisionProxyClearlyOnly": 0.65,
+  "interval95ClearlyOrProbably": [
+   0.799,
+   0.953
+  ],
+  "obviousFalsePositives": [
+   "mdpsec/bug-bounty-hunting-prompts",
+   "asciimoo/hister",
+   "HughYau/qiushi-skill",
+   "mengxi-ream/read-frog",
+   "MaxMiksa/Auto-Company",
+   "romgX/openrelay"
+  ]
+ },
+ "rejectedReview": {
+  "not-classified": {
+   "sampled": 25,
+   "relevantToRadarScope": 16,
+   "note": "UNKNOWN repositories that are in scope but unclassified (git client, GitHub bot, SSL scanner, secret management, AI chat workspace, SGLang runtime, Motus robotics model, AI coding platform and others); the rest are off-domain apps, lists or blockchain"
+  },
+  "below-priority": {
+   "sampled": 25,
+   "relevantToRadarScope": 24,
+   "note": "relevant AI/Engineering repositories whose lifetime stars per day is under 10: rejected by design (the policy looks for repositories that may be rising, not for relevance); Phase 6.2.2 found 0 Rising in 175 randomly sampled repositories below 10"
+  },
+  "learning-content": {
+   "sampled": 10,
+   "correctlyExcluded": 9,
+   "wronglyExcluded": 1,
+   "note": "athena-nix (an OS distribution configuration) was excluded as learning content: one false exclusion"
+  },
+  "weekly-cap": {
+   "sampled": 14,
+   "relevantToRadarScope": 14,
+   "note": "all relevant, all at priority 10.0-10.5: held only by the weekly cap"
+  }
+ },
+ "items": [
+  {
+   "id": "1213049020",
+   "fullName": "browser-use/browser-harness",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1326531152",
+   "fullName": "miqdadbadjuber/anti-slop",
+   "label": "probably relevant"
+  },
+  {
+   "id": "1199668171",
+   "fullName": "fathah/hermes-desktop",
+   "label": "probably relevant"
+  },
+  {
+   "id": "1287804060",
+   "fullName": "aipoch/open-science",
+   "label": "probably relevant"
+  },
+  {
+   "id": "1397088773",
+   "fullName": "mdpsec/bug-bounty-hunting-prompts",
+   "label": "questionable"
+  },
+  {
+   "id": "1342886503",
+   "fullName": "duty1g/x64dbg-mcp-server",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1329163060",
+   "fullName": "HarnessRouter/harnessrouter",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1231170332",
+   "fullName": "TokenRhythm/opensquilla",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1295987763",
+   "fullName": "zvec-ai/zvec-grep",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1382460607",
+   "fullName": "nealbridges/VulnHunter",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1306727670",
+   "fullName": "zeronsh/zeron",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1316317581",
+   "fullName": "redhat-et/ripwire",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1333884889",
+   "fullName": "ZSvirt/zsvirt",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1289958986",
+   "fullName": "Kuddev/pebrel",
+   "label": "probably relevant"
+  },
+  {
+   "id": "1267314128",
+   "fullName": "tutti-os/tutti",
+   "label": "probably relevant"
+  },
+  {
+   "id": "1318893208",
+   "fullName": "memorax-ai/memorax-code",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1338987521",
+   "fullName": "Tencent-Hunyuan/AuK",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1248955957",
+   "fullName": "code-yeongyu/lazycodex",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1149071982",
+   "fullName": "BlockRunAI/ClawRouter",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1301135370",
+   "fullName": "0xsline/OpenChatCut",
+   "label": "probably relevant"
+  },
+  {
+   "id": "1184090452",
+   "fullName": "fallow-rs/fallow",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1296647613",
+   "fullName": "Alisa0808/vox-director",
+   "label": "probably relevant"
+  },
+  {
+   "id": "1189732822",
+   "fullName": "mvanhorn/cli-printing-press",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1190557545",
+   "fullName": "eugeniughelbur/obsidian-second-brain",
+   "label": "probably relevant"
+  },
+  {
+   "id": "954963562",
+   "fullName": "mrexodia/ida-pro-mcp",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "987975584",
+   "fullName": "langchain-ai/open-swe",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1127650407",
+   "fullName": "asciimoo/hister",
+   "label": "questionable"
+  },
+  {
+   "id": "1127793756",
+   "fullName": "fengshao1227/ccg-workflow",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1039587768",
+   "fullName": "osaurus-ai/osaurus",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1191520000",
+   "fullName": "HughYau/qiushi-skill",
+   "label": "questionable"
+  },
+  {
+   "id": "1195165448",
+   "fullName": "graykode/abtop",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1310543401",
+   "fullName": "agentconnect-md/agentconnect",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "750678695",
+   "fullName": "xming521/WeClone",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "967738751",
+   "fullName": "mengxi-ream/read-frog",
+   "label": "questionable"
+  },
+  {
+   "id": "895453957",
+   "fullName": "Tencent-Hunyuan/HunyuanVideo",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1107676388",
+   "fullName": "junhoyeo/tokscale",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1264222628",
+   "fullName": "MG1937/ASC",
+   "label": "probably relevant"
+  },
+  {
+   "id": "1146550474",
+   "fullName": "nolabs-ai/nono",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1279187498",
+   "fullName": "px0-ai/px0",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "759893102",
+   "fullName": "electric-sql/pglite",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1044010907",
+   "fullName": "Devin-AXIS/iPolloWork",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1158449837",
+   "fullName": "golutra/golutra",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1305498575",
+   "fullName": "yuezhiai/jonex",
+   "label": "probably relevant"
+  },
+  {
+   "id": "1208239711",
+   "fullName": "hi-godot/godot-ai",
+   "label": "probably relevant"
+  },
+  {
+   "id": "956657893",
+   "fullName": "mobile-next/mobile-mcp",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "897268988",
+   "fullName": "thesysdev/openui",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1291988340",
+   "fullName": "RLinf/RPent",
+   "label": "probably relevant"
+  },
+  {
+   "id": "997490512",
+   "fullName": "tbphp/gpt-load",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1033268244",
+   "fullName": "agent-infra/sandbox",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1147566999",
+   "fullName": "ljagiello/ctf-skills",
+   "label": "probably relevant"
+  },
+  {
+   "id": "1202555904",
+   "fullName": "wxtsky/CodeIsland",
+   "label": "probably relevant"
+  },
+  {
+   "id": "1156645601",
+   "fullName": "MaxMiksa/Auto-Company",
+   "label": "questionable"
+  },
+  {
+   "id": "862570523",
+   "fullName": "modelcontextprotocol/modelcontextprotocol",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1250276806",
+   "fullName": "michael-denyer/pstack-claude",
+   "label": "probably relevant"
+  },
+  {
+   "id": "1157361127",
+   "fullName": "microsoft/pg_durable",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1194056092",
+   "fullName": "Infisical/agent-vault",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "900461318",
+   "fullName": "tailcallhq/forgecode",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1145420469",
+   "fullName": "moltis-org/moltis",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "882026761",
+   "fullName": "steel-dev/steel-browser",
+   "label": "clearly relevant"
+  },
+  {
+   "id": "1175264331",
+   "fullName": "romgX/openrelay",
+   "label": "questionable"
+  }
+ ]
+}

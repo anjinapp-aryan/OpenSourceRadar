@@ -1,0 +1,2694 @@
+{
+ "kind": "assistant",
+ "rater": "assistant (Claude), blind to predictions",
+ "labels": [
+  {
+   "id": "594087",
+   "domainEngineering": "YES",
+   "areas": [
+    "data"
+   ],
+   "technologies": [
+    "postgresql"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1133930",
+   "domainEngineering": "YES",
+   "areas": [
+    "devtools"
+   ],
+   "technologies": [
+    "code-quality"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "2019791",
+   "domainEngineering": "YES",
+   "areas": [
+    "data"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "3543548",
+   "domainEngineering": "YES",
+   "areas": [
+    "infrastructure"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "5152285",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "5410234",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "5425992",
+   "domainEngineering": "YES",
+   "areas": [
+    "messaging"
+   ],
+   "technologies": [
+    "nats"
+   ],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "10744183",
+   "domainEngineering": "YES",
+   "areas": [
+    "observability"
+   ],
+   "technologies": [
+    "observability-general"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "17517521",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [
+    "secrets-identity"
+   ],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "17728164",
+   "domainEngineering": "YES",
+   "areas": [
+    "infrastructure"
+   ],
+   "technologies": [
+    "terraform"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "19051806",
+   "domainEngineering": "YES",
+   "areas": [
+    "infrastructure"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "20300177",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "23267883",
+   "domainEngineering": "YES",
+   "areas": [
+    "infrastructure"
+   ],
+   "technologies": [
+    "terraform",
+    "iac-other"
+   ],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "23282991",
+   "domainEngineering": "YES",
+   "areas": [
+    "data"
+   ],
+   "technologies": [
+    "elasticsearch"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "23625881",
+   "domainEngineering": "YES",
+   "areas": [
+    "data",
+    "devtools"
+   ],
+   "technologies": [
+    "redis",
+    "testing"
+   ],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "26337322",
+   "domainEngineering": "YES",
+   "areas": [
+    "cloud-native"
+   ],
+   "technologies": [
+    "kubernetes",
+    "docker"
+   ],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "35494746",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "36817565",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [
+    "security-scanning"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "38304949",
+   "domainEngineering": "YES",
+   "areas": [
+    "data"
+   ],
+   "technologies": [
+    "sqlite"
+   ],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "39947871",
+   "domainEngineering": "YES",
+   "areas": [
+    "messaging"
+   ],
+   "technologies": [
+    "kafka"
+   ],
+   "learning": "NO",
+   "type": "framework",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "39985381",
+   "domainEngineering": "YES",
+   "areas": [
+    "data"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "framework",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "43430090",
+   "domainEngineering": "YES",
+   "areas": [
+    "devtools"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "48384473",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "49014795",
+   "domainEngineering": "YES",
+   "areas": [
+    "devtools"
+   ],
+   "technologies": [
+    "code-quality"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "50205233",
+   "domainEngineering": "YES",
+   "areas": [
+    "data",
+    "messaging"
+   ],
+   "technologies": [
+    "kafka"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "51040886",
+   "domainEngineering": "YES",
+   "areas": [
+    "infrastructure"
+   ],
+   "technologies": [
+    "azure-gcp",
+    "cli-terminal"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "53890427",
+   "domainEngineering": "YES",
+   "areas": [
+    "observability",
+    "devtools"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "55276445",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [
+    "spring",
+    "mongodb",
+    "mysql",
+    "redis",
+    "rabbitmq"
+   ],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "56342508",
+   "domainEngineering": "YES",
+   "areas": [
+    "observability"
+   ],
+   "technologies": [
+    "tracing-logging"
+   ],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "62256097",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [
+    "api",
+    "dotnet",
+    "microservices"
+   ],
+   "learning": "NO",
+   "type": "framework",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "72477752",
+   "domainEngineering": "YES",
+   "areas": [
+    "infrastructure"
+   ],
+   "technologies": [
+    "iac-other"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "72878982",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [
+    "cloud-native"
+   ],
+   "technologies": [],
+   "learning": "YES",
+   "type": "other",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "77145066",
+   "domainEngineering": "YES",
+   "areas": [
+    "cloud-native"
+   ],
+   "technologies": [
+    "docker"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "80358070",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "84977146",
+   "domainEngineering": "YES",
+   "areas": [
+    "infrastructure"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "86981606",
+   "domainEngineering": "YES",
+   "areas": [],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "87012358",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "framework",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "89150912",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [
+    "api",
+    "microservices"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "90979676",
+   "domainEngineering": "YES",
+   "areas": [
+    "messaging"
+   ],
+   "technologies": [
+    "kafka"
+   ],
+   "learning": "NO",
+   "type": "framework",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "92329433",
+   "domainEngineering": "YES",
+   "areas": [
+    "data"
+   ],
+   "technologies": [
+    "sqlite"
+   ],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "93381875",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [
+    "data"
+   ],
+   "technologies": [
+    "data-processing"
+   ],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "94801380",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "103684801",
+   "domainEngineering": "YES",
+   "areas": [
+    "cloud-native"
+   ],
+   "technologies": [
+    "kubernetes"
+   ],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "107914493",
+   "domainEngineering": "YES",
+   "areas": [
+    "data"
+   ],
+   "technologies": [
+    "sqlite"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "108221729",
+   "domainEngineering": "YES",
+   "areas": [
+    "cloud-native",
+    "infrastructure"
+   ],
+   "technologies": [
+    "docker"
+   ],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "109566657",
+   "domainEngineering": "YES",
+   "areas": [
+    "cloud-native"
+   ],
+   "technologies": [
+    "kubernetes"
+   ],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "119190187",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [
+    "security-scanning"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "120650407",
+   "domainEngineering": "YES",
+   "areas": [
+    "cloud-native"
+   ],
+   "technologies": [
+    "kubernetes"
+   ],
+   "learning": "NO",
+   "type": "framework",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "123631418",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "124230204",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [
+    "micronaut",
+    "microservices"
+   ],
+   "learning": "NO",
+   "type": "framework",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "130879558",
+   "domainEngineering": "YES",
+   "areas": [
+    "devtools",
+    "infrastructure"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "131129792",
+   "domainEngineering": "YES",
+   "areas": [
+    "security",
+    "devtools"
+   ],
+   "technologies": [
+    "security-scanning",
+    "code-quality"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "138754790",
+   "domainEngineering": "YES",
+   "areas": [
+    "data"
+   ],
+   "technologies": [
+    "duckdb"
+   ],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "139380324",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [
+    "spring"
+   ],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "139914932",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [
+    "quarkus"
+   ],
+   "learning": "NO",
+   "type": "framework",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "141482866",
+   "domainEngineering": "YES",
+   "areas": [
+    "security",
+    "infrastructure"
+   ],
+   "technologies": [
+    "aws"
+   ],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "144005357",
+   "domainEngineering": "YES",
+   "areas": [
+    "cloud-native"
+   ],
+   "technologies": [
+    "kubernetes"
+   ],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "145880460",
+   "domainEngineering": "YES",
+   "areas": [
+    "infrastructure"
+   ],
+   "technologies": [
+    "aws",
+    "serverless"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "146285827",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [
+    "microservices"
+   ],
+   "learning": "NO",
+   "type": "framework",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "148059143",
+   "domainEngineering": "YES",
+   "areas": [
+    "messaging"
+   ],
+   "technologies": [
+    "kafka"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "159152904",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [
+    "spring"
+   ],
+   "learning": "NO",
+   "type": "framework",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "162028712",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "other",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "162346001",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "other",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "164335954",
+   "domainEngineering": "YES",
+   "areas": [
+    "devtools",
+    "backend"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "184064793",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "186754830",
+   "domainEngineering": "YES",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "framework",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "201455508",
+   "domainEngineering": "YES",
+   "areas": [
+    "data",
+    "messaging"
+   ],
+   "technologies": [
+    "mysql",
+    "kafka"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "205679232",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "207374215",
+   "domainEngineering": "YES",
+   "areas": [
+    "devtools"
+   ],
+   "technologies": [
+    "code-quality",
+    "testing"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "208728772",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [
+    "data"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "209652627",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [
+    "aws",
+    "secrets-identity"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "210374451",
+   "domainEngineering": "YES",
+   "areas": [
+    "messaging"
+   ],
+   "technologies": [
+    "kafka",
+    "docker"
+   ],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "214418572",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "framework",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "217943361",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend",
+    "data"
+   ],
+   "technologies": [
+    "spring",
+    "redis"
+   ],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "221606944",
+   "domainEngineering": "YES",
+   "areas": [
+    "cloud-native",
+    "infrastructure"
+   ],
+   "technologies": [
+    "kubernetes",
+    "iac-other",
+    "prometheus",
+    "grafana"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "229407566",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "230784338",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "243518322",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [
+    "microservices",
+    "api"
+   ],
+   "learning": "NO",
+   "type": "framework",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "252140224",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "259767909",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "275169025",
+   "domainEngineering": "YES",
+   "areas": [
+    "infrastructure"
+   ],
+   "technologies": [
+    "terraform",
+    "gitops"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "288411806",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "309874357",
+   "domainEngineering": "YES",
+   "areas": [
+    "cloud-native"
+   ],
+   "technologies": [
+    "docker"
+   ],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "326168355",
+   "domainEngineering": "YES",
+   "areas": [
+    "observability",
+    "devtools"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "327859577",
+   "domainEngineering": "YES",
+   "areas": [
+    "data"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "332880689",
+   "domainEngineering": "YES",
+   "areas": [
+    "infrastructure",
+    "cloud-native"
+   ],
+   "technologies": [
+    "docker"
+   ],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "343965132",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "359216482",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "367331849",
+   "domainEngineering": "YES",
+   "areas": [
+    "infrastructure"
+   ],
+   "technologies": [
+    "terraform",
+    "aws"
+   ],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "390858281",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "410749029",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "414591409",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [
+    "dotnet"
+   ],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "432001054",
+   "domainEngineering": "YES",
+   "areas": [
+    "observability"
+   ],
+   "technologies": [
+    "tracing-logging"
+   ],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "432844875",
+   "domainEngineering": "YES",
+   "areas": [
+    "data"
+   ],
+   "technologies": [
+    "postgresql"
+   ],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "436932767",
+   "domainEngineering": "YES",
+   "areas": [
+    "devtools"
+   ],
+   "technologies": [
+    "testing"
+   ],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "447450585",
+   "domainEngineering": "YES",
+   "areas": [
+    "infrastructure"
+   ],
+   "technologies": [
+    "azure-gcp"
+   ],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "467856408",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "471249443",
+   "domainEngineering": "YES",
+   "areas": [
+    "devtools"
+   ],
+   "technologies": [
+    "code-quality"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "482005314",
+   "domainEngineering": "YES",
+   "areas": [
+    "data",
+    "devtools"
+   ],
+   "technologies": [
+    "redis",
+    "testing"
+   ],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "497617084",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "498037475",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "other",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "502927347",
+   "domainEngineering": "YES",
+   "areas": [],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "503528235",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "other",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "505385703",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "520252357",
+   "domainEngineering": "YES",
+   "areas": [
+    "observability",
+    "cloud-native"
+   ],
+   "technologies": [
+    "opentelemetry",
+    "ebpf"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "520784735",
+   "domainEngineering": "YES",
+   "areas": [
+    "observability"
+   ],
+   "technologies": [
+    "tracing-logging"
+   ],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "528313152",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "537300699",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "549456931",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "577610356",
+   "domainEngineering": "YES",
+   "areas": [
+    "cloud-native"
+   ],
+   "technologies": [
+    "kubernetes"
+   ],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "591975136",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "621026799",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [
+    "secrets-identity"
+   ],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "627920448",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "628390075",
+   "domainEngineering": "YES",
+   "areas": [
+    "data"
+   ],
+   "technologies": [
+    "postgresql",
+    "clickhouse"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "650344440",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [],
+   "technologies": [
+    "clickhouse"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "655181249",
+   "domainEngineering": "YES",
+   "areas": [
+    "infrastructure"
+   ],
+   "technologies": [
+    "docker",
+    "aws"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "673704029",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "679601811",
+   "domainEngineering": "YES",
+   "areas": [
+    "messaging"
+   ],
+   "technologies": [
+    "kafka"
+   ],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "685897222",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [
+    "data"
+   ],
+   "technologies": [
+    "mysql"
+   ],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "350382700",
+   "domainEngineering": "YES",
+   "areas": [
+    "observability"
+   ],
+   "technologies": [
+    "opentelemetry"
+   ],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "694266896",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "696777593",
+   "domainEngineering": "YES",
+   "areas": [
+    "observability"
+   ],
+   "technologies": [
+    "opentelemetry",
+    "grafana",
+    "prometheus",
+    "docker",
+    "tracing-logging"
+   ],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "697526683",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "722915479",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [
+    "cloud-native"
+   ],
+   "technologies": [
+    "webassembly"
+   ],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "741100585",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "framework",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "743107776",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [
+    "spring"
+   ],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "765037941",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "777597786",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "785334631",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "806015479",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "framework",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "812793594",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [
+    "nodejs"
+   ],
+   "learning": "NO",
+   "type": "other",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "817326197",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "826164486",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend",
+    "messaging",
+    "data"
+   ],
+   "technologies": [
+    "spring",
+    "kafka",
+    "redis",
+    "elasticsearch"
+   ],
+   "learning": "UNCERTAIN",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "898345892",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "908108028",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "910960179",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "913030762",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "958382457",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "978236265",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "998434422",
+   "domainEngineering": "YES",
+   "areas": [
+    "data"
+   ],
+   "technologies": [
+    "postgresql"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1002593055",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1009637873",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1034142340",
+   "domainEngineering": "YES",
+   "areas": [
+    "infrastructure"
+   ],
+   "technologies": [
+    "gitops",
+    "cli-terminal"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1044010907",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1062297179",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "framework",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1065059442",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1071272475",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "framework",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1075623312",
+   "domainEngineering": "YES",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1076362809",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1079089186",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1080370450",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1083689394",
+   "domainEngineering": "YES",
+   "areas": [
+    "devtools"
+   ],
+   "technologies": [
+    "cli-terminal"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1092104931",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1092839234",
+   "domainEngineering": "YES",
+   "areas": [
+    "data"
+   ],
+   "technologies": [
+    "redis"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1099547803",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1104388418",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1110046254",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1110443421",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [
+    "data"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1115482628",
+   "domainEngineering": "YES",
+   "areas": [
+    "data",
+    "devtools"
+   ],
+   "technologies": [
+    "postgresql",
+    "mysql",
+    "sqlite",
+    "duckdb"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1116843764",
+   "domainEngineering": "YES",
+   "areas": [
+    "messaging",
+    "devtools"
+   ],
+   "technologies": [
+    "kafka",
+    "testing"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1117470788",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1117828152",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1117891044",
+   "domainEngineering": "YES",
+   "areas": [
+    "data",
+    "devtools"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1118297842",
+   "domainEngineering": "YES",
+   "areas": [
+    "devtools"
+   ],
+   "technologies": [
+    "testing"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1120195677",
+   "domainEngineering": "YES",
+   "areas": [
+    "devtools"
+   ],
+   "technologies": [
+    "cli-terminal"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1122873619",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1124326845",
+   "domainEngineering": "YES",
+   "areas": [
+    "cloud-native"
+   ],
+   "technologies": [
+    "docker"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1127011907",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1133141258",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1138200460",
+   "domainEngineering": "YES",
+   "areas": [
+    "devtools",
+    "infrastructure"
+   ],
+   "technologies": [
+    "ci-cd",
+    "cli-terminal"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1138269866",
+   "domainEngineering": "YES",
+   "areas": [
+    "devtools"
+   ],
+   "technologies": [
+    "testing",
+    "ci-cd"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1138989235",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1141697583",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1146552776",
+   "domainEngineering": "YES",
+   "areas": [
+    "data",
+    "devtools"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1147679251",
+   "domainEngineering": "YES",
+   "areas": [
+    "security"
+   ],
+   "technologies": [
+    "supply-chain",
+    "cli-terminal"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1152014383",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1153451691",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [
+    "devtools"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1158449837",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1158799392",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1160497244",
+   "domainEngineering": "YES",
+   "areas": [
+    "infrastructure",
+    "devtools"
+   ],
+   "technologies": [
+    "aws",
+    "docker"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1163808211",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1165277268",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1168753718",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1171111467",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "library",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1171302121",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1171833693",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1172461735",
+   "domainEngineering": "YES",
+   "areas": [
+    "devtools"
+   ],
+   "technologies": [
+    "cli-terminal"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1180257966",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1180588986",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [
+    "observability"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1183396155",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1185389803",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1187630119",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1190938188",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1191073059",
+   "domainEngineering": "YES",
+   "areas": [
+    "infrastructure",
+    "devtools"
+   ],
+   "technologies": [
+    "aws",
+    "docker"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1194181229",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1197496497",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1199090310",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "framework",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1199668171",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1200863578",
+   "domainEngineering": "YES",
+   "areas": [
+    "infrastructure",
+    "devtools"
+   ],
+   "technologies": [
+    "azure-gcp"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1205137520",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1206501749",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1209020591",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1210390572",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [
+    "security"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1211139949",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1214349536",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1226971975",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1233418417",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1236183038",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1243090608",
+   "domainEngineering": "YES",
+   "areas": [
+    "messaging"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1247201816",
+   "domainEngineering": "YES",
+   "areas": [],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1251711133",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1265025028",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1281033762",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1286083218",
+   "domainEngineering": "YES",
+   "areas": [
+    "cloud-native"
+   ],
+   "technologies": [
+    "kubernetes",
+    "cli-terminal"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1287568859",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1315337298",
+   "domainEngineering": "YES",
+   "areas": [],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1327088798",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "infrastructure",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1343441436",
+   "domainEngineering": "YES",
+   "areas": [],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1355157779",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1358168557",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [
+    "dotnet",
+    "microservices"
+   ],
+   "learning": "UNCERTAIN",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1359559501",
+   "domainEngineering": "YES",
+   "areas": [
+    "backend"
+   ],
+   "technologies": [
+    "spring"
+   ],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1362655697",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1363904366",
+   "domainEngineering": "YES",
+   "areas": [
+    "data",
+    "devtools"
+   ],
+   "technologies": [
+    "clickhouse",
+    "duckdb",
+    "mongodb",
+    "mysql"
+   ],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1364445580",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "application",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1367266329",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1367299537",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1373639422",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [
+    "devtools"
+   ],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1374027945",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1376713674",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1380590876",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1380600012",
+   "domainEngineering": "UNCERTAIN",
+   "areas": [
+    "cloud-native"
+   ],
+   "technologies": [
+    "kubernetes"
+   ],
+   "learning": "UNCERTAIN",
+   "type": "other",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1380609428",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "other",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1383518430",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1385750356",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "YES",
+   "type": "educational",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1386102205",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "other",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1387234427",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  },
+  {
+   "id": "1388409097",
+   "domainEngineering": "NO",
+   "areas": [],
+   "technologies": [],
+   "learning": "NO",
+   "type": "tool",
+   "notes": "assistant label (blind sheet)"
+  }
+ ]
+}

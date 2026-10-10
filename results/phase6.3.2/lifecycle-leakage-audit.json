@@ -1,0 +1,116 @@
+{
+ "summary": {
+  "states": 3,
+  "flagSetsComparedUpToCut": 640,
+  "explanations": {
+   "comparedUpToCut": 1633,
+   "differencesUpToCut": 0,
+   "positiveControl": {
+    "afterCut": 2045,
+    "differingAfterCut": 2037
+   }
+  },
+  "differencesUpToCut": 0,
+  "positiveControl": {
+   "flagSetsAfterCut": 608,
+   "differingAfterCut": 605,
+   "note": "after the cut the rewritten future must change the flags, proving the rewrite is visible to the replay"
+  },
+  "verdict": "NO LEAKAGE: zero differences on or before the cut, and the rewrite is visible after it",
+  "flagNames": [
+   "trending",
+   "sustained:engineering",
+   "cooling:production",
+   "cooling:fromHigh",
+   "accelerating:F50",
+   "accelerating:F30",
+   "rising:none",
+   "sustained:production",
+   "accelerating:F100",
+   "cooling:twoDeclines",
+   "rising:twoDays",
+   "breakout:F100",
+   "breakout:F50",
+   "breakout:F30",
+   "cooling:lostTrending",
+   "rising:threeOfFive"
+  ]
+ },
+ "results": [
+  {
+   "cut": "2026-09-12",
+   "variant": "zeros",
+   "memberDaysUpToCut": 2983,
+   "memberDaysDifferingUpToCut": 0,
+   "positiveControlMemberDays": {
+    "total": 11686,
+    "differing": 9599
+   },
+   "explanations": {
+    "comparedUpToCut": 290,
+    "differencesUpToCut": 0,
+    "positiveControl": {
+     "afterCut": 738,
+     "differingAfterCut": 730
+    }
+   },
+   "flagSetsComparedUpToCut": 112,
+   "differencesUpToCut": 0,
+   "differing": [],
+   "positiveControl": {
+    "flagSetsAfterCut": 304,
+    "differingAfterCut": 301
+   }
+  },
+  {
+   "cut": "2026-09-19",
+   "variant": "bursts",
+   "memberDaysUpToCut": 5633,
+   "memberDaysDifferingUpToCut": 0,
+   "positiveControlMemberDays": {
+    "total": 32718,
+    "differing": 32229
+   },
+   "explanations": {
+    "comparedUpToCut": 544,
+    "differencesUpToCut": 0,
+    "positiveControl": {
+     "afterCut": 933,
+     "differingAfterCut": 933
+    }
+   },
+   "flagSetsComparedUpToCut": 214,
+   "differencesUpToCut": 0,
+   "differing": [],
+   "positiveControl": {
+    "flagSetsAfterCut": 202,
+    "differingAfterCut": 202
+   }
+  },
+  {
+   "cut": "2026-09-26",
+   "variant": "scale50",
+   "memberDaysUpToCut": 8282,
+   "memberDaysDifferingUpToCut": 0,
+   "positiveControlMemberDays": {
+    "total": 3950,
+    "differing": 2743
+   },
+   "explanations": {
+    "comparedUpToCut": 799,
+    "differencesUpToCut": 0,
+    "positiveControl": {
+     "afterCut": 374,
+     "differingAfterCut": 374
+    }
+   },
+   "flagSetsComparedUpToCut": 314,
+   "differencesUpToCut": 0,
+   "differing": [],
+   "positiveControl": {
+    "flagSetsAfterCut": 102,
+    "differingAfterCut": 102
+   }
+  }
+ ]
+}

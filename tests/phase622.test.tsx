@@ -160,8 +160,8 @@ describe('Phase 6.2.2 star-history measurement reuses the production pipeline', 
 describe('Phase 6.2.2 is isolated from production', () => {
   it('no production module imports the shadow experiment', () => {
     const hits = execSync('git grep --untracked -l "discovery/shadow" -- src scripts app lib components .github', { encoding: 'utf8' }).split('\n').filter(Boolean);
-    // Phase 6.3 added scripts/discovery/admission-sim.ts, which reuses the shadow helpers: experiment code importing experiment code
-    expect(hits.sort()).toEqual(['scripts/discovery/admission-sim.ts', 'scripts/discovery/shadow.ts']);
+    // Phase 6.3 added scripts/discovery/admission-sim.ts and Phase 6.3.1 src/shadow/report.ts and scripts/taxonomy/build-sample.ts, which reuse the shadow helpers: experiment code importing experiment code
+    expect(hits.sort()).toEqual(['scripts/discovery/admission-sim.ts', 'scripts/discovery/shadow.ts', 'scripts/taxonomy/build-sample.ts', 'src/shadow/report.ts']);
   });
   it('the shadow script writes only through the cache and results/phase6.2.2 paths', () => {
     const s = readFileSync('scripts/discovery/shadow.ts', 'utf8');

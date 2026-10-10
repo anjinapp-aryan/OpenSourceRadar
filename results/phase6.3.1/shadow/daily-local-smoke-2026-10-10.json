@@ -1,0 +1,17 @@
+{
+ "date": "2026-10-10",
+ "historyRequests": 55,
+ "historyFailures": 1,
+ "productionHistoryRequests": 0,
+ "searchRequests": 148,
+ "poolSize": 150,
+ "newAdmissions": 150,
+ "runtimeSeconds": 18,
+ "rateLimit": {
+  "remainingAtEnd": null,
+  "hitLimit": true
+ },
+ "budgetStopped": false,
+ "dueToday": 150,
+ "authenticated": false
+}

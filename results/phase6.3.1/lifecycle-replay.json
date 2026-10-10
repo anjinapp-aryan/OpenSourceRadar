@@ -1,0 +1,293 @@
+{
+ "window": [
+  "2026-09-05",
+  "2026-10-03"
+ ],
+ "engineeringRepositories": 1736,
+ "config": {
+  "lifecycleVersion": "phase6.3.1-v1",
+  "rising": {
+   "persistence": "threeOfFive"
+  },
+  "accelerating": {
+   "minRatio": 1.2,
+   "minGrowth7d": 30
+  },
+  "breakout": {
+   "minRatio": 3,
+   "minGrowth7d": 100
+  },
+  "cooling": {
+   "kind": "fromHigh",
+   "minBaselineWeekly": 50,
+   "dropRatio": 0.5,
+   "baselinePercentile": 0.9,
+   "declineRatio": 0.7,
+   "minPeakWeekly": 50,
+   "lostTrendingLookbackDays": 5
+  },
+  "sustained": {
+   "minDomainPercentile": 0.95,
+   "minWeeksAbove": 3,
+   "windowWeeks": 4,
+   "minWeeklyGrowth": 30
+  },
+  "newToRadar": {
+   "primary": "firstPublished",
+   "maxDaysSinceFirstPublished": 14,
+   "genuinelyNewMaxAgeDays": 90
+  }
+ },
+ "patternFloors": {
+  "F100": "production (100 stars/week)",
+  "F50": 50,
+  "F30": 30
+ },
+ "trending": {
+  "name": "trending",
+  "meanSetSize": 35.414,
+  "shareOfDomainPct": 2.135,
+  "dayToDayJaccard": 0.873,
+  "distinctRepos": 72,
+  "episodes": 103,
+  "medianEpisodeDays": 6,
+  "shortLivedEpisodeShare": 0.32,
+  "outcomeMemberDays": 876,
+  "persistenceNext7AtLeastHalfOfWeek": 0.78,
+  "collapseNext7UnderQuarterOfWeek": 0.068
+ },
+ "rising": [
+  {
+   "name": "rising:none",
+   "meanSetSize": 35.414,
+   "shareOfDomainPct": 2.135,
+   "dayToDayJaccard": 0.873,
+   "distinctRepos": 72,
+   "episodes": 103,
+   "medianEpisodeDays": 6,
+   "shortLivedEpisodeShare": 0.32,
+   "outcomeMemberDays": 876,
+   "persistenceNext7AtLeastHalfOfWeek": 0.78,
+   "collapseNext7UnderQuarterOfWeek": 0.068
+  },
+  {
+   "name": "rising:twoDays",
+   "meanSetSize": 31.862,
+   "shareOfDomainPct": 1.92,
+   "dayToDayJaccard": 0.85,
+   "distinctRepos": 66,
+   "episodes": 89,
+   "medianEpisodeDays": 6,
+   "shortLivedEpisodeShare": 0.281,
+   "outcomeMemberDays": 784,
+   "persistenceNext7AtLeastHalfOfWeek": 0.784,
+   "collapseNext7UnderQuarterOfWeek": 0.064
+  },
+  {
+   "name": "rising:threeOfFive",
+   "meanSetSize": 29.448,
+   "shareOfDomainPct": 1.775,
+   "dayToDayJaccard": 0.849,
+   "distinctRepos": 63,
+   "episodes": 83,
+   "medianEpisodeDays": 6,
+   "shortLivedEpisodeShare": 0.265,
+   "outcomeMemberDays": 719,
+   "persistenceNext7AtLeastHalfOfWeek": 0.796,
+   "collapseNext7UnderQuarterOfWeek": 0.057
+  }
+ ],
+ "accelerating": [
+  {
+   "name": "accelerating:F100",
+   "meanSetSize": 13.828,
+   "shareOfDomainPct": 0.833,
+   "dayToDayJaccard": 0.614,
+   "distinctRepos": 78,
+   "episodes": 109,
+   "medianEpisodeDays": 3,
+   "shortLivedEpisodeShare": 0.56,
+   "outcomeMemberDays": 338,
+   "persistenceNext7AtLeastHalfOfWeek": 0.743,
+   "collapseNext7UnderQuarterOfWeek": 0.044
+  },
+  {
+   "name": "accelerating:F50",
+   "meanSetSize": 29.138,
+   "shareOfDomainPct": 1.756,
+   "dayToDayJaccard": 0.592,
+   "distinctRepos": 165,
+   "episodes": 239,
+   "medianEpisodeDays": 2,
+   "shortLivedEpisodeShare": 0.619,
+   "outcomeMemberDays": 693,
+   "persistenceNext7AtLeastHalfOfWeek": 0.801,
+   "collapseNext7UnderQuarterOfWeek": 0.035
+  },
+  {
+   "name": "accelerating:F30",
+   "meanSetSize": 45.552,
+   "shareOfDomainPct": 2.746,
+   "dayToDayJaccard": 0.592,
+   "distinctRepos": 245,
+   "episodes": 375,
+   "medianEpisodeDays": 2,
+   "shortLivedEpisodeShare": 0.608,
+   "outcomeMemberDays": 1112,
+   "persistenceNext7AtLeastHalfOfWeek": 0.814,
+   "collapseNext7UnderQuarterOfWeek": 0.029
+  }
+ ],
+ "breakout": [
+  {
+   "name": "breakout:F100",
+   "meanSetSize": 0.517,
+   "shareOfDomainPct": 0.031,
+   "dayToDayJaccard": 0.059,
+   "distinctRepos": 12,
+   "episodes": 13,
+   "medianEpisodeDays": 1,
+   "shortLivedEpisodeShare": 1,
+   "outcomeMemberDays": 13,
+   "persistenceNext7AtLeastHalfOfWeek": 0.462,
+   "collapseNext7UnderQuarterOfWeek": 0.231
+  },
+  {
+   "name": "breakout:F50",
+   "meanSetSize": 0.793,
+   "shareOfDomainPct": 0.048,
+   "dayToDayJaccard": 0.053,
+   "distinctRepos": 18,
+   "episodes": 20,
+   "medianEpisodeDays": 1,
+   "shortLivedEpisodeShare": 1,
+   "outcomeMemberDays": 19,
+   "persistenceNext7AtLeastHalfOfWeek": 0.368,
+   "collapseNext7UnderQuarterOfWeek": 0.211
+  },
+  {
+   "name": "breakout:F30",
+   "meanSetSize": 1.034,
+   "shareOfDomainPct": 0.062,
+   "dayToDayJaccard": 0.063,
+   "distinctRepos": 22,
+   "episodes": 26,
+   "medianEpisodeDays": 1,
+   "shortLivedEpisodeShare": 1,
+   "outcomeMemberDays": 26,
+   "persistenceNext7AtLeastHalfOfWeek": 0.346,
+   "collapseNext7UnderQuarterOfWeek": 0.269
+  }
+ ],
+ "cooling": [
+  {
+   "name": "cooling:production",
+   "meanSetSize": 21.069,
+   "shareOfDomainPct": 1.27,
+   "dayToDayJaccard": 0.809,
+   "distinctRepos": 60,
+   "episodes": 86,
+   "medianEpisodeDays": 5,
+   "shortLivedEpisodeShare": 0.384,
+   "outcomeMemberDays": 517,
+   "persistenceNext7AtLeastHalfOfWeek": 0.925,
+   "collapseNext7UnderQuarterOfWeek": 0.017,
+   "confirmedNext7Under60PctOfBaseline": 0.776,
+   "recoveredNext7AtLeast80PctOfBaseline": 0.101
+  },
+  {
+   "name": "cooling:fromHigh",
+   "meanSetSize": 20.276,
+   "shareOfDomainPct": 1.222,
+   "dayToDayJaccard": 0.785,
+   "distinctRepos": 72,
+   "episodes": 92,
+   "medianEpisodeDays": 4,
+   "shortLivedEpisodeShare": 0.489,
+   "outcomeMemberDays": 478,
+   "persistenceNext7AtLeastHalfOfWeek": 0.91,
+   "collapseNext7UnderQuarterOfWeek": 0.031,
+   "confirmedNext7Under60PctOfBaseline": 0.835,
+   "recoveredNext7AtLeast80PctOfBaseline": 0.082
+  },
+  {
+   "name": "cooling:twoDeclines",
+   "meanSetSize": 7.241,
+   "shareOfDomainPct": 0.436,
+   "dayToDayJaccard": 0.453,
+   "distinctRepos": 75,
+   "episodes": 85,
+   "medianEpisodeDays": 2,
+   "shortLivedEpisodeShare": 0.765,
+   "outcomeMemberDays": 178,
+   "persistenceNext7AtLeastHalfOfWeek": 0.91,
+   "collapseNext7UnderQuarterOfWeek": 0.017,
+   "confirmedNext7Under60PctOfBaseline": 0.747,
+   "recoveredNext7AtLeast80PctOfBaseline": 0.09
+  },
+  {
+   "name": "cooling:lostTrending",
+   "meanSetSize": 5.414,
+   "shareOfDomainPct": 0.326,
+   "dayToDayJaccard": 0.613,
+   "distinctRepos": 35,
+   "episodes": 40,
+   "medianEpisodeDays": 5,
+   "shortLivedEpisodeShare": 0.325,
+   "outcomeMemberDays": 133,
+   "persistenceNext7AtLeastHalfOfWeek": 0.857,
+   "collapseNext7UnderQuarterOfWeek": 0.045,
+   "confirmedNext7Under60PctOfBaseline": 0.767,
+   "recoveredNext7AtLeast80PctOfBaseline": 0.173
+  }
+ ],
+ "sustained": [
+  {
+   "name": "sustained:production",
+   "meanSetSize": 18.966,
+   "shareOfDomainPct": 1.143,
+   "dayToDayJaccard": 0.928,
+   "distinctRepos": 27,
+   "episodes": 37,
+   "medianEpisodeDays": 10,
+   "shortLivedEpisodeShare": 0.135,
+   "outcomeMemberDays": 475,
+   "persistenceNext7AtLeastHalfOfWeek": 0.857,
+   "collapseNext7UnderQuarterOfWeek": 0.032,
+   "stillSustainedSevenDaysLater": 0.814,
+   "sustainedOutcomeDays": 431
+  },
+  {
+   "name": "sustained:engineering",
+   "meanSetSize": 80.069,
+   "shareOfDomainPct": 4.826,
+   "dayToDayJaccard": 0.973,
+   "distinctRepos": 98,
+   "episodes": 111,
+   "medianEpisodeDays": 29,
+   "shortLivedEpisodeShare": 0.135,
+   "outcomeMemberDays": 1945,
+   "persistenceNext7AtLeastHalfOfWeek": 0.915,
+   "collapseNext7UnderQuarterOfWeek": 0.017,
+   "stillSustainedSevenDaysLater": 0.95,
+   "sustainedOutcomeDays": 1752
+  }
+ ],
+ "overlaps": {
+  "coolingFromHighMemberDays": 588,
+  "coolingFromHighAlsoTrending": 0
+ },
+ "selection": {
+  "rule": {
+   "rising": "among the persistence filters keep those whose mean set size is at least 60% of the unfiltered Trending set; choose the highest next-week persistence, then the lower short-lived episode share",
+   "cooling": "eligible: at least 0.2% of the domain per day; choose the highest confirmed rate (next week under 60% of the 28-day baseline), then the lowest recovery rate",
+   "patterns": "choose the lowest growth floor whose next-week persistence is within 0.05 of the production floor (a lower floor widens coverage without lowering quality)",
+   "sustained": "report only: choose the Engineering definition if it is still sustained seven days later more often than the production flag and its set is not smaller"
+  },
+  "rising": "rising:threeOfFive",
+  "cooling": "cooling:fromHigh",
+  "accelerating": "accelerating:F30",
+  "breakout": "breakout:F100",
+  "sustained": "sustained:engineering"
+ }
+}
