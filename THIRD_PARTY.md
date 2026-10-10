@@ -36,3 +36,11 @@ Runtime dependencies: none. Development: TypeScript, tsx, vitest, @vitest/covera
 | FayezBast/repometeor | Apache-2.0 | Velocity-dominant weighting, relative growth with a minimum-base floor, acceleration between recent and preceding period, separate New Entrants collection. Changed: absolute log scaling instead of cohort percentile ranks, no fork/snapshot-density terms |
 | HalcyonVector/GitHub-Trending-Intelligence- | MIT | Log-scaled velocity as the main signal. Rejected: fixed p95 constants, clipping at 100, recency multiplier |
 | ErcinDedeoglu/oss-pulse | no LICENSE file in the repository root | Referenced only for a negative lesson (a clipped 0-100 score ties at the ceiling). Nothing taken |
+
+## Phase 6.3 additions
+
+| Project | License | What it is used for (no code copied) |
+|---|---|---|
+| pingcap/ossinsight `configs/collections/*.yml` (https://github.com/pingcap/ossinsight) | Apache-2.0 | **Validation labels only.** Membership of 54 curated collections (30 engineering-family, 24 AI-family) is read at validation time to measure taxonomy recall and the UNKNOWN classifier experiment (`scripts/taxonomy/validate.ts`, `scripts/classify/unknown-experiment.ts`). The collection files are not stored in this repository, are not production rules, and are not a runtime dependency. Attribution: "Collection membership from OSS Insight, Apache-2.0." |
+| github/explore | CC-BY-4.0 | Topic aliases for the technology rules in `config/taxonomy.v2.json` (selected and regrouped; same attribution as the Phase 3 entry above) |
+| ecosyste-ms/oss-taxonomy | CC0-1.0 | Education vocabulary informed `facets.learning` in `config/taxonomy.v2.json` |

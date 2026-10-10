@@ -1,0 +1,463 @@
+{
+ "params": {
+  "algorithm": "hybrid",
+  "metric": "g30",
+  "domainPercentile": 0.98,
+  "bandPercentile": 0.97,
+  "minGrowth7d": 50,
+  "minBandGrowth7d": 30,
+  "minAcceleration": 0.6,
+  "maxSpikeShare": 0.6,
+  "minHistoryDays": 14,
+  "bandBounds": [
+   1200,
+   6000
+  ],
+  "minPeers": 30
+ },
+ "overall": {
+  "date": "2026-10-03",
+  "engineeringRepositories": 1736,
+  "measured": 1736,
+  "productionRising": 3,
+  "productionRisingPct": 0.17,
+  "normalizedFlagged": 31,
+  "normalizedFlaggedPct": 1.79,
+  "overlapBoth": 2,
+  "patterns": {
+   "ACCELERATING": {
+    "n": 11,
+    "pct": 0.63
+   },
+   "BREAKOUT": {
+    "n": 1,
+    "pct": 0.06
+   },
+   "COOLING": {
+    "n": 22,
+    "pct": 1.27
+   },
+   "SUSTAINED_GROWTH": {
+    "n": 11,
+    "pct": 0.63
+   },
+   "NEW_LAUNCH": {
+    "n": 75,
+    "pct": 4.32
+   },
+   "SPIKE": {
+    "n": 8,
+    "pct": 0.46
+   }
+  },
+  "note": "pattern labels are the production Phase 6.1 labels and are unchanged; only the Rising/Trending decision differs"
+ },
+ "viaGate": {
+  "domain": 10,
+  "band": 8,
+  "both": 13
+ },
+ "learningContentExcludedFlagDays": 182,
+ "technology": [
+  {
+   "technology": "Java (language facet)",
+   "repositories": 325,
+   "productionRisingNow": 0,
+   "normalizedFlaggedNow": 3,
+   "productionRisingDistinct29d": 3,
+   "normalizedFlaggedDistinct29d": 6,
+   "examplesFlaggedNow": [
+    "floci-io/floci (26313 stars, +3264 in 30d)",
+    "Stirling-Tools/Stirling-PDF (93529 stars, +2513 in 30d)",
+    "yuliskov/SmartTube (34507 stars, +1995 in 30d)"
+   ]
+  },
+  {
+   "technology": "Spring",
+   "repositories": 165,
+   "productionRisingNow": 0,
+   "normalizedFlaggedNow": 0,
+   "productionRisingDistinct29d": 0,
+   "normalizedFlaggedDistinct29d": 2,
+   "examplesFlaggedNow": []
+  },
+  {
+   "technology": "Kafka",
+   "repositories": 94,
+   "productionRisingNow": 0,
+   "normalizedFlaggedNow": 0,
+   "productionRisingDistinct29d": 0,
+   "normalizedFlaggedDistinct29d": 0,
+   "examplesFlaggedNow": []
+  },
+  {
+   "technology": "Kubernetes",
+   "repositories": 310,
+   "productionRisingNow": 0,
+   "normalizedFlaggedNow": 1,
+   "productionRisingDistinct29d": 1,
+   "normalizedFlaggedDistinct29d": 7,
+   "examplesFlaggedNow": [
+    "seaweedfs/seaweedfs (35225 stars, +832 in 30d)"
+   ]
+  },
+  {
+   "technology": "Docker",
+   "repositories": 275,
+   "productionRisingNow": 1,
+   "normalizedFlaggedNow": 8,
+   "productionRisingDistinct29d": 4,
+   "normalizedFlaggedDistinct29d": 12,
+   "examplesFlaggedNow": [
+    "t8y2/dbx (24422 stars, +6536 in 30d)",
+    "floci-io/floci (26313 stars, +3264 in 30d)",
+    "Stirling-Tools/Stirling-PDF (93529 stars, +2513 in 30d)",
+    "coollabsio/coolify (62556 stars, +1333 in 30d)"
+   ]
+  },
+  {
+   "technology": "AWS",
+   "repositories": 143,
+   "productionRisingNow": 0,
+   "normalizedFlaggedNow": 3,
+   "productionRisingDistinct29d": 1,
+   "normalizedFlaggedDistinct29d": 3,
+   "examplesFlaggedNow": [
+    "floci-io/floci (26313 stars, +3264 in 30d)",
+    "ministackorg/ministack (4821 stars, +353 in 30d)",
+    "faiscadev/fakecloud (740 stars, +202 in 30d)"
+   ]
+  },
+  {
+   "technology": "PostgreSQL",
+   "repositories": 175,
+   "productionRisingNow": 1,
+   "normalizedFlaggedNow": 4,
+   "productionRisingDistinct29d": 2,
+   "normalizedFlaggedDistinct29d": 11,
+   "examplesFlaggedNow": [
+    "t8y2/dbx (24422 stars, +6536 in 30d)",
+    "coollabsio/coolify (62556 stars, +1333 in 30d)",
+    "malisper/pgrust (5224 stars, +385 in 30d)",
+    "pgsty/pigsty (5760 stars, +170 in 30d)"
+   ]
+  },
+  {
+   "technology": "Redis",
+   "repositories": 109,
+   "productionRisingNow": 1,
+   "normalizedFlaggedNow": 2,
+   "productionRisingDistinct29d": 1,
+   "normalizedFlaggedDistinct29d": 3,
+   "examplesFlaggedNow": [
+    "t8y2/dbx (24422 stars, +6536 in 30d)",
+    "coollabsio/coolify (62556 stars, +1333 in 30d)"
+   ]
+  },
+  {
+   "technology": "Terraform",
+   "repositories": 109,
+   "productionRisingNow": 0,
+   "normalizedFlaggedNow": 2,
+   "productionRisingDistinct29d": 0,
+   "normalizedFlaggedDistinct29d": 3,
+   "examplesFlaggedNow": [
+    "ministackorg/ministack (4821 stars, +353 in 30d)",
+    "faiscadev/fakecloud (740 stars, +202 in 30d)"
+   ]
+  },
+  {
+   "technology": "Observability (area)",
+   "repositories": 196,
+   "productionRisingNow": 0,
+   "normalizedFlaggedNow": 3,
+   "productionRisingDistinct29d": 0,
+   "normalizedFlaggedDistinct29d": 9,
+   "examplesFlaggedNow": [
+    "Effect-TS/effect (16875 stars, +1080 in 30d)",
+    "keelab/keelith (204 stars, +189 in 30d)",
+    "monoscope-tech/monoscope (1874 stars, +170 in 30d)"
+   ]
+  },
+  {
+   "technology": "Developer tools (area)",
+   "repositories": 335,
+   "productionRisingNow": 3,
+   "normalizedFlaggedNow": 11,
+   "productionRisingDistinct29d": 6,
+   "normalizedFlaggedDistinct29d": 24,
+   "examplesFlaggedNow": [
+    "t8y2/dbx (24422 stars, +6536 in 30d)",
+    "usestrix/strix (66357 stars, +6173 in 30d)",
+    "sherlock-project/sherlock (93189 stars, +2479 in 30d)",
+    "microsoft/playwright (97054 stars, +1587 in 30d)"
+   ]
+  },
+  {
+   "technology": "Microservices",
+   "repositories": 162,
+   "productionRisingNow": 0,
+   "normalizedFlaggedNow": 1,
+   "productionRisingDistinct29d": 0,
+   "normalizedFlaggedDistinct29d": 2,
+   "examplesFlaggedNow": [
+    "keelab/keelith (204 stars, +189 in 30d)"
+   ]
+  },
+  {
+   "technology": "Security (area)",
+   "repositories": 206,
+   "productionRisingNow": 1,
+   "normalizedFlaggedNow": 6,
+   "productionRisingDistinct29d": 4,
+   "normalizedFlaggedDistinct29d": 15,
+   "examplesFlaggedNow": [
+    "usestrix/strix (66357 stars, +6173 in 30d)",
+    "sherlock-project/sherlock (93189 stars, +2479 in 30d)",
+    "soxoj/maigret (38226 stars, +1069 in 30d)",
+    "KeygraphHQ/shannon (48549 stars, +981 in 30d)"
+   ]
+  },
+  {
+   "technology": "Data and storage (area)",
+   "repositories": 408,
+   "productionRisingNow": 1,
+   "normalizedFlaggedNow": 7,
+   "productionRisingDistinct29d": 3,
+   "normalizedFlaggedDistinct29d": 15,
+   "examplesFlaggedNow": [
+    "t8y2/dbx (24422 stars, +6536 in 30d)",
+    "coollabsio/coolify (62556 stars, +1333 in 30d)",
+    "duckdb/duckdb (41889 stars, +977 in 30d)",
+    "seaweedfs/seaweedfs (35225 stars, +832 in 30d)"
+   ]
+  }
+ ],
+ "addedOverProductionExamples": [
+  {
+   "repo": "floci-io/floci",
+   "stars": 26313,
+   "growth7d": 537,
+   "growth30d": 3264,
+   "productionTrend": "STEADY",
+   "via": "both",
+   "areas": [
+    "infrastructure",
+    "cloud-native"
+   ],
+   "technologies": [
+    "aws",
+    "docker"
+   ]
+  },
+  {
+   "repo": "rustfs/rustfs",
+   "stars": 34357,
+   "growth7d": 436,
+   "growth30d": 2718,
+   "productionTrend": "STEADY",
+   "via": "both",
+   "areas": [
+    "cloud-native"
+   ],
+   "technologies": []
+  },
+  {
+   "repo": "Stirling-Tools/Stirling-PDF",
+   "stars": 93529,
+   "growth7d": 543,
+   "growth30d": 2513,
+   "productionTrend": "STEADY",
+   "via": "both",
+   "areas": [
+    "cloud-native",
+    "backend"
+   ],
+   "technologies": [
+    "docker"
+   ]
+  },
+  {
+   "repo": "sherlock-project/sherlock",
+   "stars": 93189,
+   "growth7d": 396,
+   "growth30d": 2479,
+   "productionTrend": "STEADY",
+   "via": "both",
+   "areas": [
+    "devtools",
+    "security"
+   ],
+   "technologies": [
+    "cli-terminal"
+   ]
+  },
+  {
+   "repo": "yuliskov/SmartTube",
+   "stars": 34507,
+   "growth7d": 340,
+   "growth30d": 1995,
+   "productionTrend": "STEADY",
+   "via": "both",
+   "areas": [
+    "backend"
+   ],
+   "technologies": []
+  },
+  {
+   "repo": "ahmedkhaleel2004/gitdiagram",
+   "stars": 17795,
+   "growth7d": 611,
+   "growth30d": 1879,
+   "productionTrend": "STEADY",
+   "via": "both",
+   "areas": [],
+   "technologies": []
+  },
+  {
+   "repo": "microsoft/playwright",
+   "stars": 97054,
+   "growth7d": 376,
+   "growth30d": 1587,
+   "productionTrend": "STEADY",
+   "via": "both",
+   "areas": [
+    "devtools"
+   ],
+   "technologies": [
+    "testing"
+   ]
+  },
+  {
+   "repo": "coollabsio/coolify",
+   "stars": 62556,
+   "growth7d": 303,
+   "growth30d": 1333,
+   "productionTrend": "STEADY",
+   "via": "both",
+   "areas": [
+    "cloud-native",
+    "data",
+    "backend"
+   ],
+   "technologies": [
+    "docker",
+    "mysql",
+    "nodejs",
+    "postgresql",
+    "redis"
+   ]
+  },
+  {
+   "repo": "rorkai/App-Store-Connect-CLI",
+   "stars": 7640,
+   "growth7d": 278,
+   "growth30d": 1276,
+   "productionTrend": "STEADY",
+   "via": "both",
+   "areas": [
+    "infrastructure",
+    "devtools"
+   ],
+   "technologies": [
+    "ci-cd",
+    "cli-terminal"
+   ]
+  },
+  {
+   "repo": "chatwoot/chatwoot",
+   "stars": 37500,
+   "growth7d": 303,
+   "growth30d": 1089,
+   "productionTrend": "STEADY",
+   "via": "both",
+   "areas": [
+    "cloud-native"
+   ],
+   "technologies": [
+    "docker"
+   ]
+  },
+  {
+   "repo": "Effect-TS/effect",
+   "stars": 16875,
+   "growth7d": 664,
+   "growth30d": 1080,
+   "productionTrend": "STEADY",
+   "via": "domain",
+   "areas": [
+    "devtools",
+    "observability"
+   ],
+   "technologies": [
+    "cli-terminal",
+    "observability-general",
+    "opentelemetry"
+   ]
+  },
+  {
+   "repo": "soxoj/maigret",
+   "stars": 38226,
+   "growth7d": 268,
+   "growth30d": 1069,
+   "productionTrend": "STEADY",
+   "via": "domain",
+   "areas": [
+    "devtools",
+    "security"
+   ],
+   "technologies": [
+    "cli-terminal"
+   ]
+  },
+  {
+   "repo": "KeygraphHQ/shannon",
+   "stars": 48549,
+   "growth7d": 191,
+   "growth30d": 981,
+   "productionTrend": "STEADY",
+   "via": "domain",
+   "areas": [
+    "infrastructure",
+    "security"
+   ],
+   "technologies": [
+    "ci-cd",
+    "security-scanning"
+   ]
+  },
+  {
+   "repo": "duckdb/duckdb",
+   "stars": 41889,
+   "growth7d": 183,
+   "growth30d": 977,
+   "productionTrend": "STEADY",
+   "via": "domain",
+   "areas": [
+    "data"
+   ],
+   "technologies": [
+    "duckdb"
+   ]
+  },
+  {
+   "repo": "TestSprite/testsprite-cli",
+   "stars": 3944,
+   "growth7d": 422,
+   "growth30d": 849,
+   "productionTrend": "STEADY",
+   "via": "both",
+   "areas": [
+    "devtools"
+   ],
+   "technologies": [
+    "cli-terminal",
+    "testing"
+   ]
+  }
+ ],
+ "window": {
+  "from": "2026-09-05",
+  "to": "2026-10-03"
+ }
+}

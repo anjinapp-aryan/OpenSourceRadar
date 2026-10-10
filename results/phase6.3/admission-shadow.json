@@ -1,0 +1,1395 @@
+{
+ "config": {
+  "policyVersion": "phase6.3-v1",
+  "mode": "shadow",
+  "relevance": {
+   "allowedTopLevel": [
+    "AI",
+    "ENGINEERING",
+    "BOTH"
+   ],
+   "excludeLearningContent": true
+  },
+  "lifecycle": {
+   "excludeArchived": true,
+   "excludeForks": true,
+   "minStars": 100
+  },
+  "minPriority": 10,
+  "budget": {
+   "maxNewPerWeek": 150,
+   "maxAdmittedPool": 600,
+   "hotRefreshHours": 24,
+   "maxHistoryRequestsPerDay": 2000,
+   "currentHistoryRequestsPerDay": 1125
+  }
+ },
+ "worstCaseHistoryRequestsPerDay": 1725,
+ "currentHistoryRequestsPerDay": 1125,
+ "stats": {
+  "considered": 2751,
+  "admitted": 150,
+  "byReason": {
+   "below-priority": 1559,
+   "not-classified": 808,
+   "learning-content": 59,
+   "below-min-stars": 130,
+   "weekly-cap": 45
+  }
+ },
+ "admittedCount": 150,
+ "probeRisingAdmitted": 5,
+ "note": "experiment topics only (14 of 66); the weekly cap and the pool cap apply to the whole 66-topic result",
+ "admitted": [
+  {
+   "id": "1329849289",
+   "fullName": "lexmount/moli",
+   "stars": 13611,
+   "priority": 230.4,
+   "topLevel": "AI",
+   "probeRising": true,
+   "measuredClass": "RISING"
+  },
+  {
+   "id": "1135212071",
+   "fullName": "coreyhaines31/marketingskills",
+   "stars": 53699,
+   "priority": 202,
+   "topLevel": "AI",
+   "probeRising": true,
+   "measuredClass": "RISING"
+  },
+  {
+   "id": "1405965779",
+   "fullName": "GTKottman/mortiflix-oss",
+   "stars": 430,
+   "priority": 143.3,
+   "topLevel": "AI",
+   "probeRising": false,
+   "measuredClass": "UNMEASURED"
+  },
+  {
+   "id": "1403307052",
+   "fullName": "jiwoochris/artex-ko",
+   "stars": 596,
+   "priority": 118.7,
+   "topLevel": "BOTH",
+   "probeRising": false,
+   "measuredClass": "UNMEASURED"
+  },
+  {
+   "id": "1350978527",
+   "fullName": "Ryze-AI-Adgent/open-seo-mcp-skills",
+   "stars": 4565,
+   "priority": 115.1,
+   "topLevel": "AI",
+   "probeRising": true,
+   "measuredClass": "RISING"
+  },
+  {
+   "id": "1213049020",
+   "fullName": "browser-use/browser-harness",
+   "stars": 18354,
+   "priority": 105.1,
+   "topLevel": "AI",
+   "probeRising": false,
+   "measuredClass": "GROWER"
+  },
+  {
+   "id": "1274498048",
+   "fullName": "spinabot/brigade",
+   "stars": 11293,
+   "priority": 101.7,
+   "topLevel": "AI",
+   "probeRising": false,
+   "measuredClass": "GROWER"
+  },
+  {
+   "id": "1157171418",
+   "fullName": "jundot/omlx",
+   "stars": 22633,
+   "priority": 95.5,
+   "topLevel": "AI",
+   "probeRising": false,
+   "measuredClass": "GROWER"
+  },
+  {
+   "id": "1342876750",
+   "fullName": "totec448-spec/chat-on-steroids",
+   "stars": 4250,
+   "priority": 90.3,
+   "topLevel": "AI",
+   "probeRising": false,
+   "measuredClass": "QUIET"
+  },
+  {
+   "id": "1326531152",
+   "fullName": "miqdadbadjuber/anti-slop",
+   "stars": 4957,
+   "priority": 79.7,
+   "topLevel": "AI",
+   "probeRising": true,
+   "measuredClass": "RISING"
+  },
+  {
+   "id": "1199668171",
+   "fullName": "fathah/hermes-desktop",
+   "stars": 14382,
+   "priority": 76.1,
+   "topLevel": "AI",
+   "probeRising": false,
+   "measuredClass": "QUIET"
+  },
+  {
+   "id": "1354059245",
+   "fullName": "tigerless-labs/agent-memory",
+   "stars": 2646,
+   "priority": 72,
+   "topLevel": "AI",
+   "probeRising": false,
+   "measuredClass": "NEAR_RISING"
+  },
+  {
+   "id": "1238992253",
+   "fullName": "pacifio/atlas",
+   "stars": 9409,
+   "priority": 64,
+   "topLevel": "AI",
+   "probeRising": true,
+   "measuredClass": "RISING"
+  },
+  {
+   "id": "1207639951",
+   "fullName": "EKKOLearnAI/ekko-studio",
+   "stars": 11332,
+   "priority": 62.8,
+   "topLevel": "AI",
+   "probeRising": false,
+   "measuredClass": "GROWER"
+  },
+  {
+   "id": "1401219750",
+   "fullName": "openqodex/openqodex",
+   "stars": 381,
+   "priority": 59.8,
+   "topLevel": "BOTH",
+   "probeRising": false,
+   "measuredClass": "UNMEASURED"
+  },
+  {
+   "id": "1287804060",
+   "fullName": "aipoch/open-science",
+   "stars": 5495,
+   "priority": 56.3,
+   "topLevel": "AI",
+   "probeRising": false,
+   "measuredClass": "GROWER"
+  },
+  {
+   "id": "1342886503",
+   "fullName": "duty1g/x64dbg-mcp-server",
+   "stars": 2401,
+   "priority": 51,
+   "topLevel": "AI",
+   "probeRising": false,
+   "measuredClass": "GROWER"
+  },
+  {
+   "id": "1349898907",
+   "fullName": "cbrock84/headcount",
+   "stars": 2009,
+   "priority": 49.1,
+   "topLevel": "AI",
+   "probeRising": false,
+   "measuredClass": "GROWER"
+  },
+  {
+   "id": "1329163060",
+   "fullName": "HarnessRouter/harnessrouter",
+   "stars": 2929,
+   "priority": 49,
+   "topLevel": "AI",
+   "probeRising": false,
+   "measuredClass": "GROWER"
+  },
+  {
+   "id": "1255217938",
+   "fullName": "loopx-project/loopx",
+   "stars": 6205,
+   "priority": 47.7,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": "GROWER"
+  },
+  {
+   "id": "1004995740",
+   "fullName": "winfunc/opcode",
+   "stars": 22422,
+   "priority": 47.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1231170332",
+   "fullName": "TokenRhythm/opensquilla",
+   "stars": 7090,
+   "priority": 45.8,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1245699721",
+   "fullName": "KunAgent/Kun",
+   "stars": 6319,
+   "priority": 45.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1295987763",
+   "fullName": "zvec-ai/zvec-grep",
+   "stars": 3993,
+   "priority": 44.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1382460607",
+   "fullName": "nealbridges/VulnHunter",
+   "stars": 660,
+   "priority": 42.1,
+   "topLevel": "BOTH",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1156170875",
+   "fullName": "Nasiko-Labs/nasiko",
+   "stars": 9515,
+   "priority": 39.9,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1306727670",
+   "fullName": "zeronsh/zeron",
+   "stars": 3125,
+   "priority": 39.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1308234922",
+   "fullName": "Tiger3807861189/J-Space-Cognition-Suite",
+   "stars": 2999,
+   "priority": 38.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1309102418",
+   "fullName": "makecindy/cindy",
+   "stars": 2953,
+   "priority": 37.9,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1245465729",
+   "fullName": "EverMind-AI/Raven",
+   "stars": 5301,
+   "priority": 37.8,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1220000506",
+   "fullName": "epoko77-ai/im-not-ai",
+   "stars": 5901,
+   "priority": 35.3,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1258203278",
+   "fullName": "inkeep/open-knowledge",
+   "stars": 4428,
+   "priority": 34.8,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1316317581",
+   "fullName": "redhat-et/ripwire",
+   "stars": 2423,
+   "priority": 34.1,
+   "topLevel": "BOTH",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1402328864",
+   "fullName": "strands-agents/box",
+   "stars": 190,
+   "priority": 32.9,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1289958986",
+   "fullName": "Kuddev/pebrel",
+   "stars": 3068,
+   "priority": 32.3,
+   "topLevel": "ENGINEERING",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1267314128",
+   "fullName": "tutti-os/tutti",
+   "stars": 3804,
+   "priority": 32.2,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": "QUIET"
+  },
+  {
+   "id": "1310758816",
+   "fullName": "Pinvou/pinvou-agent",
+   "stars": 2385,
+   "priority": 31.2,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1318893208",
+   "fullName": "memorax-ai/memorax-code",
+   "stars": 2083,
+   "priority": 30.4,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1237164513",
+   "fullName": "microsoft/flint-chart",
+   "stars": 4350,
+   "priority": 29.3,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1171111467",
+   "fullName": "microsoft/agent-governance-toolkit",
+   "stars": 6409,
+   "priority": 29.2,
+   "topLevel": "BOTH",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1338299113",
+   "fullName": "archestra-ai/OpenAPPA",
+   "stars": 1488,
+   "priority": 29.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1381412852",
+   "fullName": "qybaihe/mu",
+   "stars": 454,
+   "priority": 28.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1306989887",
+   "fullName": "Kritt-ai/open-kritt",
+   "stars": 2238,
+   "priority": 28.1,
+   "topLevel": "ENGINEERING",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1346230651",
+   "fullName": "kharmanskyi/open-steps",
+   "stars": 1233,
+   "priority": 28,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1330144990",
+   "fullName": "OpenSparX/MasterAgent",
+   "stars": 1646,
+   "priority": 28,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1248955957",
+   "fullName": "code-yeongyu/lazycodex",
+   "stars": 3747,
+   "priority": 27.5,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1149071982",
+   "fullName": "BlockRunAI/ClawRouter",
+   "stars": 6617,
+   "priority": 26.8,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1228558220",
+   "fullName": "muxuuu/serenity-skill",
+   "stars": 4057,
+   "priority": 25.8,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1301135370",
+   "fullName": "0xsline/OpenChatCut",
+   "stars": 2193,
+   "priority": 25.6,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1156137396",
+   "fullName": "netease-youdao/LobsterAI",
+   "stars": 6089,
+   "priority": 25.6,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1302496224",
+   "fullName": "MemTensor/memmy-agent",
+   "stars": 2078,
+   "priority": 24.6,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1237174940",
+   "fullName": "simonlin1212/TradingAgents-astock",
+   "stars": 3645,
+   "priority": 24.5,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1291544092",
+   "fullName": "Sahir619/fable-method",
+   "stars": 2297,
+   "priority": 24.5,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1184090452",
+   "fullName": "fallow-rs/fallow",
+   "stars": 5021,
+   "priority": 24.5,
+   "topLevel": "BOTH",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1296647613",
+   "fullName": "Alisa0808/vox-director",
+   "stars": 2171,
+   "priority": 24.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": "GROWER"
+  },
+  {
+   "id": "1189732822",
+   "fullName": "mvanhorn/cli-printing-press",
+   "stars": 4794,
+   "priority": 24.1,
+   "topLevel": "BOTH",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1331441014",
+   "fullName": "pgrundev/pgbot",
+   "stars": 1381,
+   "priority": 24,
+   "topLevel": "ENGINEERING",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1231135337",
+   "fullName": "strukto-ai/mirage",
+   "stars": 3681,
+   "priority": 23.8,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": "QUIET"
+  },
+  {
+   "id": "1045721921",
+   "fullName": "frankbria/ralph-claude-code",
+   "stars": 9669,
+   "priority": 23.8,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1190557545",
+   "fullName": "eugeniughelbur/obsidian-second-brain",
+   "stars": 4697,
+   "priority": 23.7,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1225188401",
+   "fullName": "Ontos-AI/knowhere",
+   "stars": 3681,
+   "priority": 22.8,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1225005463",
+   "fullName": "google-antigravity/antigravity-sdk-python",
+   "stars": 3664,
+   "priority": 22.7,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1197598190",
+   "fullName": "lintsinghua/claude-code-book",
+   "stars": 4292,
+   "priority": 22.5,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1169560166",
+   "fullName": "breferrari/obsidian-mind",
+   "stars": 4950,
+   "priority": 22.3,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "954963562",
+   "fullName": "mrexodia/ida-pro-mcp",
+   "stars": 12538,
+   "priority": 22.3,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1092116209",
+   "fullName": "steipete/agent-scripts",
+   "stars": 7290,
+   "priority": 21.8,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1296471449",
+   "fullName": "ShenSeanChen/waku-agent",
+   "stars": 1964,
+   "priority": 21.8,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": "GROWER"
+  },
+  {
+   "id": "987975584",
+   "fullName": "langchain-ai/open-swe",
+   "stars": 10821,
+   "priority": 21.4,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1127650407",
+   "fullName": "asciimoo/hister",
+   "stars": 5942,
+   "priority": 21.4,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1127793756",
+   "fullName": "fengshao1227/ccg-workflow",
+   "stars": 5930,
+   "priority": 21.4,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": "QUIET"
+  },
+  {
+   "id": "1143295695",
+   "fullName": "unicity-sphere/sphere-sdk",
+   "stars": 5384,
+   "priority": 21.2,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1296111192",
+   "fullName": "feigeCode/navop",
+   "stars": 1813,
+   "priority": 20.1,
+   "topLevel": "ENGINEERING",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1235832354",
+   "fullName": "deeplethe/forkd",
+   "stars": 2922,
+   "priority": 19.5,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1282650900",
+   "fullName": "deer-flow/llm-space",
+   "stars": 1992,
+   "priority": 19.4,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1191520000",
+   "fullName": "HughYau/qiushi-skill",
+   "stars": 3809,
+   "priority": 19.3,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1039587768",
+   "fullName": "osaurus-ai/osaurus",
+   "stars": 8028,
+   "priority": 19.3,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1195165448",
+   "fullName": "graykode/abtop",
+   "stars": 3708,
+   "priority": 19.2,
+   "topLevel": "BOTH",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1202549948",
+   "fullName": "Ar9av/obsidian-wiki",
+   "stars": 3536,
+   "priority": 19.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1310543401",
+   "fullName": "agentconnect-md/agentconnect",
+   "stars": 1454,
+   "priority": 19,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1243377527",
+   "fullName": "Javis603/token-monitor",
+   "stars": 2675,
+   "priority": 18.8,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1313966068",
+   "fullName": "petergyang/human-review",
+   "stars": 1373,
+   "priority": 18.8,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1221340426",
+   "fullName": "allenpeng0705/EnvoyMesh",
+   "stars": 3104,
+   "priority": 18.8,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "750678695",
+   "fullName": "xming521/WeClone",
+   "stars": 18287,
+   "priority": 18.6,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1215974868",
+   "fullName": "cosmicstack-labs/mercury-agent",
+   "stars": 3173,
+   "priority": 18.5,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "967738751",
+   "fullName": "mengxi-ream/read-frog",
+   "stars": 10003,
+   "priority": 18.5,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1271627791",
+   "fullName": "rebel0789/codexpro",
+   "stars": 2083,
+   "priority": 18.3,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "862578138",
+   "fullName": "modelcontextprotocol/typescript-sdk",
+   "stars": 13533,
+   "priority": 18.2,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1288102626",
+   "fullName": "ai4s-research/open-science",
+   "stars": 1767,
+   "priority": 18.2,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1107676388",
+   "fullName": "junhoyeo/tokscale",
+   "stars": 5643,
+   "priority": 18.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1322671404",
+   "fullName": "autonomous-ai/openharness",
+   "stars": 1173,
+   "priority": 18,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1146550474",
+   "fullName": "nolabs-ai/nono",
+   "stars": 4394,
+   "priority": 17.6,
+   "topLevel": "ENGINEERING",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1342943152",
+   "fullName": "kgoedecke/doop",
+   "stars": 822,
+   "priority": 17.5,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1334392318",
+   "fullName": "DSH-APP/DSHA",
+   "stars": 957,
+   "priority": 17.4,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1270584305",
+   "fullName": "eneskirca/nodeterm",
+   "stars": 1995,
+   "priority": 17.4,
+   "topLevel": "BOTH",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1279187498",
+   "fullName": "px0-ai/px0",
+   "stars": 1841,
+   "priority": 17.4,
+   "topLevel": "ENGINEERING",
+   "probeRising": null,
+   "measuredClass": "GROWER"
+  },
+  {
+   "id": "951534260",
+   "fullName": "roboflow/rf-detr",
+   "stars": 9735,
+   "priority": 17.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "759893102",
+   "fullName": "electric-sql/pglite",
+   "stars": 16134,
+   "priority": 16.8,
+   "topLevel": "ENGINEERING",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1191984666",
+   "fullName": "PrismML-Eng/Bonsai-demo",
+   "stars": 3299,
+   "priority": 16.8,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1044010907",
+   "fullName": "Devin-AXIS/iPolloWork",
+   "stars": 6769,
+   "priority": 16.5,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1158449837",
+   "fullName": "golutra/golutra",
+   "stars": 3851,
+   "priority": 16.4,
+   "topLevel": "BOTH",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1305498575",
+   "fullName": "yuezhiai/jonex",
+   "stars": 1318,
+   "priority": 16.2,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1248011103",
+   "fullName": "Stack-Cairn/LiveAgent",
+   "stars": 2219,
+   "priority": 16.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "982517950",
+   "fullName": "CursorTouch/Windows-MCP",
+   "stars": 8280,
+   "priority": 16.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1163814566",
+   "fullName": "nextlevelbuilder/goclaw",
+   "stars": 3643,
+   "priority": 16,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1208239711",
+   "fullName": "hi-godot/godot-ai",
+   "stars": 2862,
+   "priority": 15.9,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1293608593",
+   "fullName": "BitMiracle-AI/Dormice",
+   "stars": 1452,
+   "priority": 15.8,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "911256711",
+   "fullName": "apify/apify-mcp-server",
+   "stars": 10134,
+   "priority": 15.7,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1343438200",
+   "fullName": "rome-os/rome",
+   "stars": 729,
+   "priority": 15.7,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "956657893",
+   "fullName": "mobile-next/mobile-mcp",
+   "stars": 8772,
+   "priority": 15.7,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1127761357",
+   "fullName": "arcboxlabs/arcbox",
+   "stars": 4225,
+   "priority": 15.3,
+   "topLevel": "BOTH",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1092562478",
+   "fullName": "unhappychoice/gitlogue",
+   "stars": 5090,
+   "priority": 15.3,
+   "topLevel": "ENGINEERING",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1335556488",
+   "fullName": "20000419/fauxnix",
+   "stars": 811,
+   "priority": 15.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "897268988",
+   "fullName": "thesysdev/openui",
+   "stars": 10221,
+   "priority": 15.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1138946494",
+   "fullName": "irinabuht12-oss/marketing-skills",
+   "stars": 3938,
+   "priority": 15.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1129583447",
+   "fullName": "yifanfeng97/Hyper-Extract",
+   "stars": 4125,
+   "priority": 15,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": "GROWER"
+  },
+  {
+   "id": "867337374",
+   "fullName": "modelcontextprotocol/inspector",
+   "stars": 11040,
+   "priority": 15,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": "QUIET"
+  },
+  {
+   "id": "1342227253",
+   "fullName": "sodiumsun/agenttrail",
+   "stars": 717,
+   "priority": 15,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1167732163",
+   "fullName": "giancarloerra/SocratiCode",
+   "stars": 3336,
+   "priority": 14.9,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1317515426",
+   "fullName": "Pan-Chera/Multi-Agent-CAD",
+   "stars": 1025,
+   "priority": 14.7,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1155025406",
+   "fullName": "Mesh-LLM/mesh-llm",
+   "stars": 3486,
+   "priority": 14.6,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1310691580",
+   "fullName": "perplexityai/numbat",
+   "stars": 1103,
+   "priority": 14.4,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "997490512",
+   "fullName": "tbphp/gpt-load",
+   "stars": 7054,
+   "priority": 14.4,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1338600136",
+   "fullName": "keli-wen/agy-staff",
+   "stars": 733,
+   "priority": 14.4,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1273878424",
+   "fullName": "Augani/dory",
+   "stars": 1601,
+   "priority": 14.3,
+   "topLevel": "ENGINEERING",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1033268244",
+   "fullName": "agent-infra/sandbox",
+   "stars": 6081,
+   "priority": 14.2,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": "QUIET"
+  },
+  {
+   "id": "1230933500",
+   "fullName": "lightseekorg/tokenspeed",
+   "stars": 2201,
+   "priority": 14.2,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1158479469",
+   "fullName": "liaohch3/claude-tap",
+   "stars": 3271,
+   "priority": 13.9,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": "QUIET"
+  },
+  {
+   "id": "807305060",
+   "fullName": "LMCache/LMCache",
+   "stars": 11978,
+   "priority": 13.9,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1355117708",
+   "fullName": "markfulton/ai-employees",
+   "stars": 497,
+   "priority": 13.9,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1092407718",
+   "fullName": "macro-inc/macro",
+   "stars": 4593,
+   "priority": 13.8,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1147566999",
+   "fullName": "ljagiello/ctf-skills",
+   "stars": 3406,
+   "priority": 13.7,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1202555904",
+   "fullName": "wxtsky/CodeIsland",
+   "stars": 2481,
+   "priority": 13.4,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1280990105",
+   "fullName": "lycorp-jp/sim-use",
+   "stars": 1396,
+   "priority": 13.4,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1151205052",
+   "fullName": "bradygaster/squad",
+   "stars": 3258,
+   "priority": 13.3,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1300173275",
+   "fullName": "vshulcz/deja-vu",
+   "stars": 1150,
+   "priority": 13.3,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1336543323",
+   "fullName": "antibrow/dsh-antibrow",
+   "stars": 700,
+   "priority": 13.3,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1348053574",
+   "fullName": "jzjzzzzzzz/agent-me",
+   "stars": 559,
+   "priority": 13.2,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1156645601",
+   "fullName": "MaxMiksa/Auto-Company",
+   "stars": 3120,
+   "priority": 13.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1291034571",
+   "fullName": "l0ng-ai/tty7",
+   "stars": 1232,
+   "priority": 13.1,
+   "topLevel": "BOTH",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1319927892",
+   "fullName": "alikon-art/DeterminFlow",
+   "stars": 876,
+   "priority": 13,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1278926400",
+   "fullName": "amplifthq/opentag",
+   "stars": 1363,
+   "priority": 12.8,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": "QUIET"
+  },
+  {
+   "id": "1326515774",
+   "fullName": "dondai44423/donsetch",
+   "stars": 790,
+   "priority": 12.7,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1051789550",
+   "fullName": "Gaurav-Gosain/tuios",
+   "stars": 5032,
+   "priority": 12.7,
+   "topLevel": "BOTH",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "862570523",
+   "fullName": "modelcontextprotocol/modelcontextprotocol",
+   "stars": 9406,
+   "priority": 12.6,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1258962324",
+   "fullName": "agentlas-ai/Agentlas-OS",
+   "stars": 1579,
+   "priority": 12.5,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": "QUIET"
+  },
+  {
+   "id": "1333556422",
+   "fullName": "decionis/agent-safe-pipeline",
+   "stars": 687,
+   "priority": 12.3,
+   "topLevel": "BOTH",
+   "probeRising": null,
+   "measuredClass": "GROWER"
+  },
+  {
+   "id": "1349818659",
+   "fullName": "vicoa-ai/vicoa",
+   "stars": 497,
+   "priority": 12.1,
+   "topLevel": "BOTH",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1095948794",
+   "fullName": "remorses/playwriter",
+   "stars": 3974,
+   "priority": 12.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1250276806",
+   "fullName": "michael-denyer/pstack-claude",
+   "stars": 1629,
+   "priority": 12.1,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  },
+  {
+   "id": "1275972890",
+   "fullName": "Mahanaicoach/google-maps-scraper-kit",
+   "stars": 1313,
+   "priority": 12,
+   "topLevel": "AI",
+   "probeRising": null,
+   "measuredClass": null
+  }
+ ]
+}

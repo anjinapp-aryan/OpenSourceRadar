@@ -1,0 +1,31 @@
+{
+ "records": 3470,
+ "current": {
+  "bytes": 3698337,
+  "gzip": 583381,
+  "brotli": 368921
+ },
+ "extended": {
+  "bytes": 4533377,
+  "gzip": 644937,
+  "brotli": 396484
+ },
+ "addedBytes": 835040,
+ "addedBytesPerRecord": 241,
+ "addedGzipBytes": 61556,
+ "addedBrotliBytes": 27563,
+ "warnLevelBytes": 8000000,
+ "extendedUnderWarnLevel": true,
+ "newKeys": [
+  "domain",
+  "areas",
+  "technologies",
+  "facets",
+  "domainMomentum"
+ ],
+ "keyClashesWithCurrentAllowList": [],
+ "currentGateRejectsExtendedRecords": true,
+ "currentGateMessage": "radar.json records have unexpected key(s): domain, areas, technologies, facets, domainMomentum",
+ "engineeringNormalizedFlaggedInPublicSnapshot": 37,
+ "note": "the in-memory snapshot has no per-day spike share (set to 0) and uses the public record fields; the replay results in normalization-replay.json are the validated numbers"
+}

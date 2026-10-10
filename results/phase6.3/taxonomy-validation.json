@@ -1,0 +1,581 @@
+{
+ "taxonomyVersion": 2,
+ "coverage": {
+  "engineeringOrBoth": 1989,
+  "withAtLeastOneTechnology": 1721,
+  "withAtLeastOneTechnologyShare": 0.865,
+  "withAtLeastOneArea": 1978,
+  "withAtLeastOneAreaShare": 0.994,
+  "threeOrMoreTechnologies": 498,
+  "technologyCounts": {
+   "kubernetes": 337,
+   "docker": 294,
+   "postgresql": 196,
+   "spring": 174,
+   "testing": 174,
+   "microservices": 168,
+   "observability-general": 165,
+   "aws": 158,
+   "cli-terminal": 143,
+   "ci-cd": 136,
+   "redis": 116,
+   "terraform": 115,
+   "mysql": 114,
+   "api": 101,
+   "opentelemetry": 101,
+   "kafka": 97,
+   "security-scanning": 92,
+   "azure-gcp": 80,
+   "nodejs": 78,
+   "tracing-logging": 72,
+   "sqlite": 71,
+   "code-quality": 66,
+   "serverless": 55,
+   "prometheus": 50,
+   "gitops": 47,
+   "secrets-identity": 46,
+   "mongodb": 44,
+   "iac-other": 44,
+   "dotnet": 35,
+   "elasticsearch": 32,
+   "service-mesh": 32,
+   "build-tools": 31,
+   "grafana": 29,
+   "python-web": 22,
+   "clickhouse": 21,
+   "ebpf": 20,
+   "webassembly": 18,
+   "rabbitmq": 16,
+   "data-processing": 13,
+   "duckdb": 13,
+   "quarkus": 9,
+   "nats": 9,
+   "supply-chain": 9,
+   "docs-tooling": 4,
+   "micronaut": 2,
+   "pulsar": 1
+  },
+  "techsWithAtLeast25": 33,
+  "techsTotal": 46,
+  "techsNeverMatched": [],
+  "broadest": [
+   {
+    "slug": "kubernetes",
+    "n": 337,
+    "share": 0.169
+   },
+   {
+    "slug": "docker",
+    "n": 294,
+    "share": 0.148
+   },
+   {
+    "slug": "postgresql",
+    "n": 196,
+    "share": 0.099
+   },
+   {
+    "slug": "spring",
+    "n": 174,
+    "share": 0.087
+   },
+   {
+    "slug": "testing",
+    "n": 174,
+    "share": 0.087
+   }
+  ],
+  "areaCounts": {
+   "data": 446,
+   "backend": 665,
+   "infrastructure": 424,
+   "messaging": 112,
+   "cloud-native": 636,
+   "devtools": 428,
+   "observability": 238,
+   "security": 239
+  },
+  "learningContent": 82,
+  "ageBands": {
+   "emerging": 299,
+   "growing": 200,
+   "established": 699,
+   "mature": 791
+  }
+ },
+ "heldOutSummary": {
+  "source": "pingcap/ossinsight configs/collections (Apache-2.0); mapping collection -> area is ours and is recorded in scripts/taxonomy/validate.ts",
+  "collections": 30,
+  "members": 654,
+  "inPool": 282,
+  "unknown": 33,
+  "classifiedEng": 243,
+  "rightArea": 207,
+  "anyArea": 243,
+  "techExpected": 46,
+  "techRight": 44,
+  "poolShareOfMembers": 0.431,
+  "unknownShareOfPoolMembers": 0.117,
+  "areaRecallAmongClassifiedEngineering": 0.852,
+  "areaRecallAmongPoolMembers": 0.734,
+  "technologyRecallWhereTechnologyExpected": 0.957
+ },
+ "heldOut": [
+  {
+   "collection": "api-tool-for-developer",
+   "expectedArea": "backend",
+   "members": 17,
+   "inCandidatePool": 6,
+   "classifiedUnknown": 1,
+   "classifiedEngineering": 5,
+   "areaCorrect": 3,
+   "areaAny": 5,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": [
+    "Orange-OpenSource/hurl -> [devtools]",
+    "keploy/keploy -> [devtools]"
+   ]
+  },
+  {
+   "collection": "apm-tool",
+   "expectedArea": "observability",
+   "members": 13,
+   "inCandidatePool": 6,
+   "classifiedUnknown": 0,
+   "classifiedEngineering": 6,
+   "areaCorrect": 6,
+   "areaAny": 6,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": []
+  },
+  {
+   "collection": "chaos-engineering",
+   "expectedArea": "observability",
+   "members": 9,
+   "inCandidatePool": 5,
+   "classifiedUnknown": 2,
+   "classifiedEngineering": 3,
+   "areaCorrect": 3,
+   "areaAny": 3,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": []
+  },
+  {
+   "collection": "cicd",
+   "expectedArea": "infrastructure",
+   "members": 23,
+   "inCandidatePool": 11,
+   "classifiedUnknown": 0,
+   "classifiedEngineering": 11,
+   "areaCorrect": 10,
+   "areaAny": 11,
+   "technologyExpected": 11,
+   "technologyCorrect": 10,
+   "missedExamples": [
+    "gradle/gradle -> [devtools,backend]"
+   ]
+  },
+  {
+   "collection": "configuration-management-tools",
+   "expectedArea": "infrastructure",
+   "members": 15,
+   "inCandidatePool": 9,
+   "classifiedUnknown": 1,
+   "classifiedEngineering": 8,
+   "areaCorrect": 7,
+   "areaAny": 8,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": [
+    "goss-org/goss -> [cloud-native,devtools]"
+   ]
+  },
+  {
+   "collection": "data-integration",
+   "expectedArea": "data",
+   "members": 11,
+   "inCandidatePool": 5,
+   "classifiedUnknown": 1,
+   "classifiedEngineering": 3,
+   "areaCorrect": 2,
+   "areaAny": 3,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": [
+    "apache/logging-flume -> [backend]"
+   ]
+  },
+  {
+   "collection": "distributed-file-storage",
+   "expectedArea": "data",
+   "members": 16,
+   "inCandidatePool": 5,
+   "classifiedUnknown": 2,
+   "classifiedEngineering": 3,
+   "areaCorrect": 3,
+   "areaAny": 3,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": []
+  },
+  {
+   "collection": "documentation-generator",
+   "expectedArea": "devtools",
+   "members": 22,
+   "inCandidatePool": 0,
+   "classifiedUnknown": 0,
+   "classifiedEngineering": 0,
+   "areaCorrect": 0,
+   "areaAny": 0,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": []
+  },
+  {
+   "collection": "finops",
+   "expectedArea": "infrastructure",
+   "members": 0,
+   "inCandidatePool": 0,
+   "classifiedUnknown": 0,
+   "classifiedEngineering": 0,
+   "areaCorrect": 0,
+   "areaAny": 0,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": []
+  },
+  {
+   "collection": "go-database",
+   "expectedArea": "data",
+   "members": 30,
+   "inCandidatePool": 9,
+   "classifiedUnknown": 1,
+   "classifiedEngineering": 8,
+   "areaCorrect": 5,
+   "areaAny": 8,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": [
+    "hashicorp/consul -> [backend,cloud-native,security]",
+    "authzed/spicedb -> [cloud-native,security]",
+    "milvus-io/milvus -> [cloud-native]"
+   ]
+  },
+  {
+   "collection": "go-web-frameworks",
+   "expectedArea": "backend",
+   "members": 30,
+   "inCandidatePool": 7,
+   "classifiedUnknown": 2,
+   "classifiedEngineering": 5,
+   "areaCorrect": 5,
+   "areaAny": 5,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": []
+  },
+  {
+   "collection": "graph-database",
+   "expectedArea": "data",
+   "members": 17,
+   "inCandidatePool": 7,
+   "classifiedUnknown": 0,
+   "classifiedEngineering": 7,
+   "areaCorrect": 6,
+   "areaAny": 7,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": [
+    "FalkorDB/FalkorDB -> [devtools]"
+   ]
+  },
+  {
+   "collection": "identity-server",
+   "expectedArea": "security",
+   "members": 12,
+   "inCandidatePool": 4,
+   "classifiedUnknown": 1,
+   "classifiedEngineering": 2,
+   "areaCorrect": 2,
+   "areaAny": 2,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": []
+  },
+  {
+   "collection": "key-value-database",
+   "expectedArea": "data",
+   "members": 23,
+   "inCandidatePool": 9,
+   "classifiedUnknown": 0,
+   "classifiedEngineering": 9,
+   "areaCorrect": 9,
+   "areaAny": 9,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": []
+  },
+  {
+   "collection": "kubernetes-tooling",
+   "expectedArea": "cloud-native",
+   "members": 33,
+   "inCandidatePool": 18,
+   "classifiedUnknown": 0,
+   "classifiedEngineering": 18,
+   "areaCorrect": 18,
+   "areaAny": 18,
+   "technologyExpected": 18,
+   "technologyCorrect": 18,
+   "missedExamples": []
+  },
+  {
+   "collection": "message-and-streaming",
+   "expectedArea": "messaging",
+   "members": 16,
+   "inCandidatePool": 7,
+   "classifiedUnknown": 2,
+   "classifiedEngineering": 5,
+   "areaCorrect": 3,
+   "areaAny": 5,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": [
+    "apache/rocketmq -> [cloud-native,backend]",
+    "apache/flink -> [data,backend]"
+   ]
+  },
+  {
+   "collection": "mocking-stubbing-tools",
+   "expectedArea": "devtools",
+   "members": 9,
+   "inCandidatePool": 4,
+   "classifiedUnknown": 1,
+   "classifiedEngineering": 3,
+   "areaCorrect": 3,
+   "areaAny": 3,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": []
+  },
+  {
+   "collection": "modern-data-stack",
+   "expectedArea": "data",
+   "members": 50,
+   "inCandidatePool": 29,
+   "classifiedUnknown": 4,
+   "classifiedEngineering": 24,
+   "areaCorrect": 18,
+   "areaAny": 24,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": [
+    "prestodb/presto -> [backend]",
+    "apache/kafka -> [messaging,backend]",
+    "apache/beam -> [backend]",
+    "AutoMQ/automq -> [messaging,cloud-native]",
+    "redpanda-data/connect -> [messaging]",
+    "kestra-io/kestra -> [infrastructure,backend]"
+   ]
+  },
+  {
+   "collection": "monitoring-tool",
+   "expectedArea": "observability",
+   "members": 17,
+   "inCandidatePool": 6,
+   "classifiedUnknown": 0,
+   "classifiedEngineering": 6,
+   "areaCorrect": 6,
+   "areaAny": 6,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": []
+  },
+  {
+   "collection": "open-source-database",
+   "expectedArea": "data",
+   "members": 40,
+   "inCandidatePool": 25,
+   "classifiedUnknown": 0,
+   "classifiedEngineering": 24,
+   "areaCorrect": 21,
+   "areaAny": 24,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": [
+    "prestodb/presto -> [backend]",
+    "milvus-io/milvus -> [cloud-native]",
+    "GreptimeTeam/greptimedb -> [observability]"
+   ]
+  },
+  {
+   "collection": "paas",
+   "expectedArea": "infrastructure",
+   "members": 18,
+   "inCandidatePool": 9,
+   "classifiedUnknown": 1,
+   "classifiedEngineering": 8,
+   "areaCorrect": 4,
+   "areaAny": 8,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": [
+    "dokku/dokku -> [cloud-native]",
+    "coollabsio/coolify -> [cloud-native,data,backend]",
+    "rancher/rancher -> [cloud-native]",
+    "Yelp/paasta -> [cloud-native]"
+   ]
+  },
+  {
+   "collection": "relational-database",
+   "expectedArea": "data",
+   "members": 23,
+   "inCandidatePool": 14,
+   "classifiedUnknown": 0,
+   "classifiedEngineering": 14,
+   "areaCorrect": 13,
+   "areaAny": 14,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": [
+    "prestodb/presto -> [backend]"
+   ]
+  },
+  {
+   "collection": "rust-database",
+   "expectedArea": "data",
+   "members": 20,
+   "inCandidatePool": 10,
+   "classifiedUnknown": 2,
+   "classifiedEngineering": 7,
+   "areaCorrect": 6,
+   "areaAny": 7,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": [
+    "GreptimeTeam/greptimedb -> [observability]"
+   ]
+  },
+  {
+   "collection": "search-engine",
+   "expectedArea": "data",
+   "members": 18,
+   "inCandidatePool": 8,
+   "classifiedUnknown": 2,
+   "classifiedEngineering": 5,
+   "areaCorrect": 4,
+   "areaAny": 5,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": [
+    "quickwit-oss/quickwit -> [observability,cloud-native]"
+   ]
+  },
+  {
+   "collection": "security-tool",
+   "expectedArea": "security",
+   "members": 57,
+   "inCandidatePool": 22,
+   "classifiedUnknown": 1,
+   "classifiedEngineering": 21,
+   "areaCorrect": 17,
+   "areaAny": 21,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": [
+    "quay/clair -> [devtools,cloud-native]",
+    "bridgecrewio/checkov -> [infrastructure,devtools,cloud-native]",
+    "cloudquery/cloudquery -> [infrastructure,cloud-native,data]",
+    "slimtoolkit/slim -> [cloud-native]"
+   ]
+  },
+  {
+   "collection": "serverless-framework",
+   "expectedArea": "cloud-native",
+   "members": 17,
+   "inCandidatePool": 5,
+   "classifiedUnknown": 1,
+   "classifiedEngineering": 4,
+   "areaCorrect": 4,
+   "areaAny": 4,
+   "technologyExpected": 4,
+   "technologyCorrect": 4,
+   "missedExamples": []
+  },
+  {
+   "collection": "testing-tool",
+   "expectedArea": "devtools",
+   "members": 24,
+   "inCandidatePool": 14,
+   "classifiedUnknown": 3,
+   "classifiedEngineering": 11,
+   "areaCorrect": 11,
+   "areaAny": 11,
+   "technologyExpected": 11,
+   "technologyCorrect": 11,
+   "missedExamples": []
+  },
+  {
+   "collection": "time-series-database",
+   "expectedArea": "data",
+   "members": 48,
+   "inCandidatePool": 15,
+   "classifiedUnknown": 2,
+   "classifiedEngineering": 13,
+   "areaCorrect": 9,
+   "areaAny": 13,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": [
+    "GreptimeTeam/greptimedb -> [observability]",
+    "VictoriaMetrics/VictoriaMetrics -> [observability,cloud-native]",
+    "filodb/FiloDB -> [observability,messaging]",
+    "thanos-io/thanos -> [observability]"
+   ]
+  },
+  {
+   "collection": "webassembly-runtime",
+   "expectedArea": "cloud-native",
+   "members": 12,
+   "inCandidatePool": 3,
+   "classifiedUnknown": 1,
+   "classifiedEngineering": 2,
+   "areaCorrect": 1,
+   "areaAny": 2,
+   "technologyExpected": 2,
+   "technologyCorrect": 1,
+   "missedExamples": [
+    "oracle/graal -> [backend]"
+   ]
+  },
+  {
+   "collection": "x-as-code",
+   "expectedArea": "infrastructure",
+   "members": 14,
+   "inCandidatePool": 10,
+   "classifiedUnknown": 2,
+   "classifiedEngineering": 8,
+   "areaCorrect": 8,
+   "areaAny": 8,
+   "technologyExpected": 0,
+   "technologyCorrect": 0,
+   "missedExamples": []
+  }
+ ],
+ "learningFacet": {
+  "positivesInPool": 1,
+  "positivesFlagged": 1,
+  "recall": 1,
+  "softwareMembersInPool": 217,
+  "softwareMembersFlagged": 2,
+  "falsePositiveRate": 0.009,
+  "falsePositiveExamples": [
+   "requestly/requestly",
+   "lissy93/personal-security-checklist"
+  ],
+  "engineeringLearningFlagged": 82,
+  "engineeringLearningShare": 0.041
+ }
+}

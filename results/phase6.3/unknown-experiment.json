@@ -1,0 +1,65 @@
+{
+ "labelSource": "pingcap/ossinsight configs/collections (Apache-2.0): 30 engineering-family collections and 24 AI-family collections; a repository labelled by exactly one family",
+ "labelledRepositoriesInPool": 354,
+ "productionClassified": 307,
+ "productionUnknown": 47,
+ "unknownShareOfLabelled": 0.133,
+ "productionDomainAgreement": {
+  "agree": 279,
+  "disagree": 10,
+  "both": 18,
+  "agreementAmongSingleDomain": {
+   "rate": 0.965,
+   "low": 0.937,
+   "high": 0.981,
+   "k": 279,
+   "n": 289
+  }
+ },
+ "experiment": {
+  "E1 (both domains)": {
+   "fired": 21,
+   "right": 21,
+   "wrong": 0,
+   "recallOfLabelledUnknown": 0.447,
+   "domainPrecision": {
+    "rate": 1,
+    "low": 0.845,
+    "high": 1,
+    "k": 21,
+    "n": 21
+   }
+  },
+  "E1-AI": {
+   "fired": 8,
+   "right": 8,
+   "wrong": 0,
+   "recallOfLabelledUnknown": 0.17,
+   "domainPrecision": {
+    "rate": 1,
+    "low": 0.676,
+    "high": 1,
+    "k": 8,
+    "n": 8
+   }
+  }
+ },
+ "decisionRule": "adopt a rule only if its held-out domain precision lower bound (95% Wilson) is at least 0.80 AND it fires on at least 30 labelled UNKNOWN repositories; otherwise KEEP UNKNOWN",
+ "unknownLabelledExamples": [
+  "requestly/requestly",
+  "chaosblade-io/chaosblade",
+  "Shopify/toxiproxy",
+  "winglang/wing",
+  "apache/flink-cdc",
+  "ceph/ceph",
+  "storj/storj",
+  "influxdata/influxdb",
+  "polarsignals/frostdb",
+  "labstack/echo",
+  "cloudwego/kitex",
+  "Permify/permify",
+  "refinedev/refine",
+  "kyverno/kyverno",
+  "celery/celery"
+ ]
+}

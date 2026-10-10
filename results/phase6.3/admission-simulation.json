@@ -1,0 +1,153 @@
+{
+ "note": "ADMISSION PRIORITY PROXY = lifetime stars per day (stars / age). Metadata-only ordering, not momentum. The random sample is stratum-weighted; the probe is selection-biased and reported only as existence.",
+ "novelPool14Topics": 2751,
+ "classifiedAllowed": 1943,
+ "classifiedUnknown": 808,
+ "learningContent": 140,
+ "scaleTo66TopicsUpperBound": 4.71,
+ "randomSampleTrackingTierMix": {
+  "WARM": 104,
+  "DORMANT": 92,
+  "HOT": 4
+ },
+ "probe": {
+  "measured": 39,
+  "rising": 8,
+  "nearRising": 8,
+  "unknownClassified": 20,
+  "risingUnknownClassified": 3
+ },
+ "policies": [
+  {
+   "minPriority": 0,
+   "admittedIn14Topics": 1754,
+   "admittedShareOfNovel": 0.638,
+   "admittedAtProductionScaleUpperBound": 8269,
+   "randomSampleAdmitted": 128,
+   "estimatedGrowersAdmitted": 195,
+   "growerRateAmongAdmitted": 0.111,
+   "randomSampleRising": 0,
+   "randomSampleNearRising": 1,
+   "probeRisingCaptured": 5,
+   "probeNearRisingCaptured": 1,
+   "meanHistoryRequestsPerDayPerAdmittedRepo": 0.274,
+   "expectedAddedHistoryRequestsPerDay14Topics": 481,
+   "expectedAddedHistoryRequestsPerDayProductionUpperBound": 2269,
+   "worstCaseAddedPerDayProductionUpperBound": 8269,
+   "rejectedBy": {
+    "not-classified": 808,
+    "learning-content": 59,
+    "below-min-stars": 130
+   }
+  },
+  {
+   "minPriority": 5,
+   "admittedIn14Topics": 373,
+   "admittedShareOfNovel": 0.136,
+   "admittedAtProductionScaleUpperBound": 1758,
+   "randomSampleAdmitted": 28,
+   "estimatedGrowersAdmitted": 140,
+   "growerRateAmongAdmitted": 0.362,
+   "randomSampleRising": 0,
+   "randomSampleNearRising": 1,
+   "probeRisingCaptured": 5,
+   "probeNearRisingCaptured": 1,
+   "meanHistoryRequestsPerDayPerAdmittedRepo": 0.368,
+   "expectedAddedHistoryRequestsPerDay14Topics": 137,
+   "expectedAddedHistoryRequestsPerDayProductionUpperBound": 648,
+   "worstCaseAddedPerDayProductionUpperBound": 1758,
+   "rejectedBy": {
+    "below-priority": 1381,
+    "not-classified": 808,
+    "learning-content": 59,
+    "below-min-stars": 130
+   }
+  },
+  {
+   "minPriority": 10,
+   "admittedIn14Topics": 195,
+   "admittedShareOfNovel": 0.071,
+   "admittedAtProductionScaleUpperBound": 919,
+   "randomSampleAdmitted": 17,
+   "estimatedGrowersAdmitted": 84,
+   "growerRateAmongAdmitted": 0.356,
+   "randomSampleRising": 0,
+   "randomSampleNearRising": 0,
+   "probeRisingCaptured": 5,
+   "probeNearRisingCaptured": 1,
+   "meanHistoryRequestsPerDayPerAdmittedRepo": 0.362,
+   "expectedAddedHistoryRequestsPerDay14Topics": 71,
+   "expectedAddedHistoryRequestsPerDayProductionUpperBound": 333,
+   "worstCaseAddedPerDayProductionUpperBound": 919,
+   "rejectedBy": {
+    "below-priority": 1559,
+    "not-classified": 808,
+    "learning-content": 59,
+    "below-min-stars": 130
+   }
+  },
+  {
+   "minPriority": 20,
+   "admittedIn14Topics": 72,
+   "admittedShareOfNovel": 0.026,
+   "admittedAtProductionScaleUpperBound": 339,
+   "randomSampleAdmitted": 6,
+   "estimatedGrowersAdmitted": 42,
+   "growerRateAmongAdmitted": 0.505,
+   "randomSampleRising": 0,
+   "randomSampleNearRising": 0,
+   "probeRisingCaptured": 5,
+   "probeNearRisingCaptured": 1,
+   "meanHistoryRequestsPerDayPerAdmittedRepo": 0.333,
+   "expectedAddedHistoryRequestsPerDay14Topics": 24,
+   "expectedAddedHistoryRequestsPerDayProductionUpperBound": 113,
+   "worstCaseAddedPerDayProductionUpperBound": 339,
+   "rejectedBy": {
+    "below-priority": 1682,
+    "not-classified": 808,
+    "learning-content": 59,
+    "below-min-stars": 130
+   }
+  },
+  {
+   "minPriority": 50,
+   "admittedIn14Topics": 17,
+   "admittedShareOfNovel": 0.006,
+   "admittedAtProductionScaleUpperBound": 80,
+   "randomSampleAdmitted": 0,
+   "estimatedGrowersAdmitted": null,
+   "growerRateAmongAdmitted": null,
+   "randomSampleRising": 0,
+   "randomSampleNearRising": 0,
+   "probeRisingCaptured": 5,
+   "probeNearRisingCaptured": 1,
+   "meanHistoryRequestsPerDayPerAdmittedRepo": null,
+   "expectedAddedHistoryRequestsPerDay14Topics": null,
+   "expectedAddedHistoryRequestsPerDayProductionUpperBound": null,
+   "worstCaseAddedPerDayProductionUpperBound": 80,
+   "rejectedBy": {
+    "below-priority": 1737,
+    "not-classified": 808,
+    "learning-content": 59,
+    "below-min-stars": 130
+   }
+  }
+ ],
+ "priorityBands": [
+  {
+   "band": "<10",
+   "pool": 2438,
+   "classifiedAllowed": 1740
+  },
+  {
+   "band": "10-50",
+   "pool": 275,
+   "classifiedAllowed": 186
+  },
+  {
+   "band": ">=50",
+   "pool": 38,
+   "classifiedAllowed": 17
+  }
+ ]
+}

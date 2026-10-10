@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "phase6.3-v1",
+  "description": "Bounded admission of Top-300 discovery candidates (docs/PHASE-6.3-DISCOVERY-ROLLOUT.md). mode=shadow: the list is computed and reported only, nothing is fed to tracking. minPriority is a lifetime-stars-per-day ADMISSION PRIORITY PROXY (metadata only, not momentum); the caps come from the history-request budget.",
+  "mode": "shadow",
+  "relevance": { "allowedTopLevel": ["AI", "ENGINEERING", "BOTH"], "excludeLearningContent": true },
+  "lifecycle": { "excludeArchived": true, "excludeForks": true, "minStars": 100 },
+  "minPriority": 10,
+  "budget": {
+    "maxNewPerWeek": 150,
+    "maxAdmittedPool": 600,
+    "hotRefreshHours": 24,
+    "maxHistoryRequestsPerDay": 2000,
+    "currentHistoryRequestsPerDay": 1125
+  }
+}

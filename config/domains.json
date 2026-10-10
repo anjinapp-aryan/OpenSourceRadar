@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "description": "Radar domains and their momentum normalisation. AI keeps the production absolute rules (output unchanged by construction). ENGINEERING uses the hybrid chosen in docs/PHASE-6.3-MOMENTUM-VALIDATION.md: a repository is flagged when its 30-day growth is in the top 2% of the Engineering population or in the top 3% of its size band, with absolute floors, the production acceleration test and a single-day-spike guard. Size-band bounds are the rounded empirical terciles of the Engineering star distribution (1,133-1,275 and 5,713-6,007 over the replay window).",
+  "domains": {
+    "AI": { "mode": "absolute" },
+    "ENGINEERING": {
+      "mode": "normalized",
+      "params": {
+        "algorithm": "hybrid",
+        "metric": "g30",
+        "domainPercentile": 0.98,
+        "bandPercentile": 0.97,
+        "minGrowth7d": 50,
+        "minBandGrowth7d": 30,
+        "minAcceleration": 0.6,
+        "maxSpikeShare": 0.6,
+        "minHistoryDays": 14,
+        "bandBounds": [1200, 6000],
+        "minPeers": 30
+      }
+    }
+  }
+}

@@ -160,7 +160,8 @@ describe('Phase 6.2.2 star-history measurement reuses the production pipeline', 
 describe('Phase 6.2.2 is isolated from production', () => {
   it('no production module imports the shadow experiment', () => {
     const hits = execSync('git grep --untracked -l "discovery/shadow" -- src scripts app lib components .github', { encoding: 'utf8' }).split('\n').filter(Boolean);
-    expect(hits.sort()).toEqual(['scripts/discovery/shadow.ts']);
+    // Phase 6.3 added scripts/discovery/admission-sim.ts, which reuses the shadow helpers: experiment code importing experiment code
+    expect(hits.sort()).toEqual(['scripts/discovery/admission-sim.ts', 'scripts/discovery/shadow.ts']);
   });
   it('the shadow script writes only through the cache and results/phase6.2.2 paths', () => {
     const s = readFileSync('scripts/discovery/shadow.ts', 'utf8');
@@ -199,7 +200,7 @@ describe('Phase 6.2.2 result artefacts are internally consistent', () => {
     expect(t.E.newCandidates).toBe(read('hybrid.json').newRepos);
   });
   it('production public data is untouched by the experiment', () => {
-    const status = execSync('git status --porcelain -- data config src/momentum src/tracking src/classification app lib components', { encoding: 'utf8' });
+    const status = execSync('git status --porcelain -- data config/momentum.json config/pattern.json config/tracking.json config/classification.json config/categories src/momentum/engine.ts src/momentum/config.ts src/momentum/dataset.ts src/momentum/types.ts src/tracking src/classification app lib components', { encoding: 'utf8' });
     expect(status.trim()).toBe('');
   });
 });

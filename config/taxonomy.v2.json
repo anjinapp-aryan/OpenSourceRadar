@@ -1,0 +1,1085 @@
+{
+  "schemaVersion": 1,
+  "taxonomyVersion": 2,
+  "description": "Domain -> Area -> Technology. Deterministic: a technology is detected from GitHub topics, repository name tokens and description phrases only. Topic aliases adapted from github/explore (CC BY 4.0, see THIRD_PARTY.md). The v1 category classifier is unchanged; this layer sits on top of it.",
+  "acceptance": {
+    "weights": {
+      "topic": 3,
+      "name": 2,
+      "description": 1
+    },
+    "minScore": 3,
+    "note": "topic alone is accepted; name alone (2) is not; name + description (3) is; description alone (1) never is"
+  },
+  "facets": {
+    "ageBands": [
+      {
+        "slug": "emerging",
+        "maxAgeDays": 365
+      },
+      {
+        "slug": "growing",
+        "maxAgeDays": 1095
+      },
+      {
+        "slug": "established",
+        "maxAgeDays": 2920
+      },
+      {
+        "slug": "mature",
+        "maxAgeDays": null
+      }
+    ],
+    "learningContextId": "educational-content",
+    "learning": {
+      "note": "A repository is learning/list content (not software to evaluate) when its evidence reaches minScore. The v1 educational-content context also counts. Adapted vocabulary: the v1 context signal, github/explore topic aliases (CC BY 4.0) and ecosyste-ms/oss-taxonomy (CC0) education terms.",
+      "weights": {
+        "topic": 2,
+        "name": 2,
+        "description": 1,
+        "descriptionMax": 2
+      },
+      "minScore": 2,
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "awesome-lists",
+        "tutorial",
+        "tutorials",
+        "course",
+        "courses",
+        "roadmap",
+        "interview",
+        "interview-questions",
+        "interview-preparation",
+        "coding-interview",
+        "cheatsheet",
+        "cheat-sheet",
+        "learning-resources",
+        "study-notes",
+        "handbook",
+        "books",
+        "free-books",
+        "learn",
+        "learning",
+        "exercises",
+        "challenges",
+        "30-days-of-code",
+        "100-days-of-code",
+        "education",
+        "teaching",
+        "curriculum",
+        "lessons",
+        "leetcode"
+      ],
+      "names": [
+        "awesome",
+        "tutorial",
+        "tutorials",
+        "course",
+        "roadmap",
+        "interview",
+        "handbook",
+        "cheatsheet",
+        "learn",
+        "lessons",
+        "exercises",
+        "playbook"
+      ],
+      "keywords": [
+        "step-by-step guide",
+        "guide to learn",
+        "learn how to",
+        "curated list",
+        "a list of",
+        "interview questions",
+        "tutorial",
+        "cheat sheet",
+        "free book",
+        "study notes",
+        "learning path",
+        "from scratch",
+        "roadmap",
+        "a collection of resources"
+      ]
+    }
+  },
+  "aiAreas": "AI keeps its v1 categories unchanged: for AI repositories the area is the v1 category slug (taxonomy v2 adds no AI technologies in Phase 6.3).",
+  "areas": {
+    "engineering": [
+      {
+        "slug": "backend",
+        "name": "Backend and frameworks"
+      },
+      {
+        "slug": "data",
+        "name": "Data and storage"
+      },
+      {
+        "slug": "messaging",
+        "name": "Messaging and streaming"
+      },
+      {
+        "slug": "cloud-native",
+        "name": "Cloud native and containers"
+      },
+      {
+        "slug": "infrastructure",
+        "name": "Infrastructure and platform"
+      },
+      {
+        "slug": "observability",
+        "name": "Observability and reliability"
+      },
+      {
+        "slug": "security",
+        "name": "Security and identity"
+      },
+      {
+        "slug": "devtools",
+        "name": "Developer tools and quality"
+      }
+    ]
+  },
+  "categoryToArea": {
+    "java": "backend",
+    "spring-boot": "backend",
+    "microservices": "backend",
+    "kafka": "messaging",
+    "kubernetes": "cloud-native",
+    "docker": "cloud-native",
+    "cloud": "cloud-native",
+    "aws": "infrastructure",
+    "devops": "infrastructure",
+    "infrastructure-as-code": "infrastructure",
+    "postgresql": "data",
+    "redis": "data",
+    "databases": "data",
+    "distributed-systems": "data",
+    "observability": "observability",
+    "security": "security",
+    "developer-tools": "devtools",
+    "testing": "devtools",
+    "system-design": null
+  },
+  "technologies": [
+    {
+      "slug": "spring",
+      "name": "Spring",
+      "area": "backend",
+      "topics": [
+        "spring",
+        "spring-boot",
+        "springboot",
+        "spring-cloud",
+        "spring-framework",
+        "spring-security",
+        "spring-data"
+      ],
+      "names": [
+        "spring",
+        "springboot"
+      ],
+      "keywords": [
+        "spring boot",
+        "spring framework",
+        "spring cloud"
+      ]
+    },
+    {
+      "slug": "quarkus",
+      "name": "Quarkus",
+      "area": "backend",
+      "topics": [
+        "quarkus"
+      ],
+      "names": [
+        "quarkus"
+      ],
+      "keywords": [
+        "quarkus"
+      ]
+    },
+    {
+      "slug": "micronaut",
+      "name": "Micronaut",
+      "area": "backend",
+      "topics": [
+        "micronaut"
+      ],
+      "names": [
+        "micronaut"
+      ],
+      "keywords": [
+        "micronaut"
+      ]
+    },
+    {
+      "slug": "nodejs",
+      "name": "Node.js",
+      "area": "backend",
+      "topics": [
+        "nodejs",
+        "node-js",
+        "expressjs",
+        "nestjs",
+        "fastify"
+      ],
+      "names": [
+        "nestjs",
+        "fastify"
+      ],
+      "keywords": [
+        "node.js",
+        "nestjs"
+      ]
+    },
+    {
+      "slug": "python-web",
+      "name": "Python web frameworks",
+      "area": "backend",
+      "topics": [
+        "django",
+        "fastapi",
+        "flask"
+      ],
+      "names": [
+        "django",
+        "fastapi",
+        "flask"
+      ],
+      "keywords": [
+        "django",
+        "fastapi"
+      ]
+    },
+    {
+      "slug": "dotnet",
+      "name": ".NET",
+      "area": "backend",
+      "topics": [
+        "dotnet",
+        "dotnet-core",
+        "aspnet-core",
+        "asp-net-core"
+      ],
+      "names": [
+        "dotnet",
+        "aspnetcore"
+      ],
+      "keywords": [
+        "asp.net core",
+        ".net core"
+      ]
+    },
+    {
+      "slug": "api",
+      "name": "APIs (gRPC, GraphQL, gateways)",
+      "area": "backend",
+      "topics": [
+        "grpc",
+        "graphql",
+        "api-gateway",
+        "openapi",
+        "protobuf"
+      ],
+      "names": [
+        "grpc",
+        "graphql"
+      ],
+      "keywords": [
+        "grpc",
+        "graphql",
+        "api gateway"
+      ]
+    },
+    {
+      "slug": "microservices",
+      "name": "Microservices",
+      "area": "backend",
+      "topics": [
+        "microservices",
+        "microservice",
+        "microservices-architecture"
+      ],
+      "names": [],
+      "keywords": [
+        "microservices"
+      ]
+    },
+    {
+      "slug": "postgresql",
+      "name": "PostgreSQL",
+      "area": "data",
+      "topics": [
+        "postgresql",
+        "postgres",
+        "psql",
+        "pgsql"
+      ],
+      "names": [
+        "postgres",
+        "postgresql",
+        "pg"
+      ],
+      "keywords": [
+        "postgresql",
+        "postgres"
+      ]
+    },
+    {
+      "slug": "mysql",
+      "name": "MySQL and MariaDB",
+      "area": "data",
+      "topics": [
+        "mysql",
+        "mariadb"
+      ],
+      "names": [
+        "mysql",
+        "mariadb"
+      ],
+      "keywords": [
+        "mysql",
+        "mariadb"
+      ]
+    },
+    {
+      "slug": "sqlite",
+      "name": "SQLite",
+      "area": "data",
+      "topics": [
+        "sqlite",
+        "sqlite3"
+      ],
+      "names": [
+        "sqlite"
+      ],
+      "keywords": [
+        "sqlite"
+      ]
+    },
+    {
+      "slug": "redis",
+      "name": "Redis and Valkey",
+      "area": "data",
+      "topics": [
+        "redis",
+        "valkey",
+        "redis-cluster"
+      ],
+      "names": [
+        "redis",
+        "valkey"
+      ],
+      "keywords": [
+        "redis",
+        "valkey"
+      ]
+    },
+    {
+      "slug": "mongodb",
+      "name": "MongoDB",
+      "area": "data",
+      "topics": [
+        "mongodb",
+        "mongo"
+      ],
+      "names": [
+        "mongo",
+        "mongodb"
+      ],
+      "keywords": [
+        "mongodb"
+      ]
+    },
+    {
+      "slug": "clickhouse",
+      "name": "ClickHouse",
+      "area": "data",
+      "topics": [
+        "clickhouse"
+      ],
+      "names": [
+        "clickhouse"
+      ],
+      "keywords": [
+        "clickhouse"
+      ]
+    },
+    {
+      "slug": "duckdb",
+      "name": "DuckDB",
+      "area": "data",
+      "topics": [
+        "duckdb"
+      ],
+      "names": [
+        "duckdb"
+      ],
+      "keywords": [
+        "duckdb"
+      ]
+    },
+    {
+      "slug": "elasticsearch",
+      "name": "Elasticsearch and OpenSearch",
+      "area": "data",
+      "topics": [
+        "elasticsearch",
+        "opensearch",
+        "lucene"
+      ],
+      "names": [
+        "elasticsearch",
+        "opensearch"
+      ],
+      "keywords": [
+        "elasticsearch",
+        "opensearch"
+      ]
+    },
+    {
+      "slug": "data-processing",
+      "name": "Data processing (Spark, Flink, Airflow, dbt)",
+      "area": "data",
+      "topics": [
+        "apache-spark",
+        "spark",
+        "apache-flink",
+        "flink",
+        "airflow",
+        "apache-airflow",
+        "dbt"
+      ],
+      "names": [
+        "spark",
+        "flink",
+        "airflow"
+      ],
+      "keywords": [
+        "apache spark",
+        "apache flink",
+        "apache airflow"
+      ]
+    },
+    {
+      "slug": "kafka",
+      "name": "Kafka",
+      "area": "messaging",
+      "topics": [
+        "kafka",
+        "apache-kafka",
+        "kafka-streams",
+        "kafka-connect",
+        "kafka-consumer",
+        "kafka-producer"
+      ],
+      "names": [
+        "kafka"
+      ],
+      "keywords": [
+        "kafka"
+      ]
+    },
+    {
+      "slug": "rabbitmq",
+      "name": "RabbitMQ",
+      "area": "messaging",
+      "topics": [
+        "rabbitmq",
+        "amqp"
+      ],
+      "names": [
+        "rabbitmq"
+      ],
+      "keywords": [
+        "rabbitmq"
+      ]
+    },
+    {
+      "slug": "nats",
+      "name": "NATS",
+      "area": "messaging",
+      "topics": [
+        "nats",
+        "nats-io",
+        "nats-server"
+      ],
+      "names": [
+        "nats"
+      ],
+      "keywords": [
+        "nats server",
+        "nats.io"
+      ]
+    },
+    {
+      "slug": "pulsar",
+      "name": "Pulsar",
+      "area": "messaging",
+      "topics": [
+        "pulsar",
+        "apache-pulsar"
+      ],
+      "names": [
+        "pulsar"
+      ],
+      "keywords": [
+        "apache pulsar"
+      ]
+    },
+    {
+      "slug": "kubernetes",
+      "name": "Kubernetes",
+      "area": "cloud-native",
+      "topics": [
+        "kubernetes",
+        "k8s",
+        "kubectl",
+        "helm",
+        "helm-chart",
+        "kubernetes-operator",
+        "kubernetes-cluster"
+      ],
+      "names": [
+        "kube",
+        "k8s",
+        "kubernetes",
+        "helm"
+      ],
+      "keywords": [
+        "kubernetes",
+        "k8s",
+        "helm chart"
+      ]
+    },
+    {
+      "slug": "docker",
+      "name": "Docker and containers",
+      "area": "cloud-native",
+      "topics": [
+        "docker",
+        "dockerfile",
+        "docker-image",
+        "containers",
+        "container",
+        "podman",
+        "containerd",
+        "oci"
+      ],
+      "names": [
+        "docker",
+        "podman"
+      ],
+      "keywords": [
+        "docker",
+        "container runtime"
+      ]
+    },
+    {
+      "slug": "service-mesh",
+      "name": "Service mesh and proxies",
+      "area": "cloud-native",
+      "topics": [
+        "service-mesh",
+        "istio",
+        "linkerd",
+        "envoy",
+        "envoyproxy"
+      ],
+      "names": [
+        "istio",
+        "linkerd",
+        "envoy"
+      ],
+      "keywords": [
+        "service mesh"
+      ]
+    },
+    {
+      "slug": "serverless",
+      "name": "Serverless",
+      "area": "cloud-native",
+      "topics": [
+        "serverless",
+        "aws-lambda",
+        "faas"
+      ],
+      "names": [
+        "serverless"
+      ],
+      "keywords": [
+        "serverless",
+        "faas"
+      ]
+    },
+    {
+      "slug": "webassembly",
+      "name": "WebAssembly",
+      "area": "cloud-native",
+      "topics": [
+        "webassembly",
+        "wasm",
+        "wasi",
+        "wasmtime"
+      ],
+      "names": [
+        "wasm",
+        "wasmtime",
+        "webassembly"
+      ],
+      "keywords": [
+        "webassembly"
+      ]
+    },
+    {
+      "slug": "ebpf",
+      "name": "eBPF",
+      "area": "cloud-native",
+      "topics": [
+        "ebpf",
+        "bpf",
+        "xdp"
+      ],
+      "names": [
+        "ebpf",
+        "bpf"
+      ],
+      "keywords": [
+        "ebpf"
+      ]
+    },
+    {
+      "slug": "terraform",
+      "name": "Terraform and OpenTofu",
+      "area": "infrastructure",
+      "topics": [
+        "terraform",
+        "opentofu",
+        "terraform-module",
+        "terraform-provider",
+        "tofu"
+      ],
+      "names": [
+        "terraform",
+        "opentofu",
+        "tofu"
+      ],
+      "keywords": [
+        "terraform",
+        "opentofu"
+      ]
+    },
+    {
+      "slug": "iac-other",
+      "name": "Ansible, Pulumi, CDK",
+      "area": "infrastructure",
+      "topics": [
+        "ansible",
+        "ansible-role",
+        "pulumi",
+        "aws-cdk",
+        "cdk",
+        "cloudformation",
+        "crossplane"
+      ],
+      "names": [
+        "ansible",
+        "pulumi",
+        "crossplane"
+      ],
+      "keywords": [
+        "ansible",
+        "pulumi",
+        "cloudformation"
+      ]
+    },
+    {
+      "slug": "gitops",
+      "name": "GitOps",
+      "area": "infrastructure",
+      "topics": [
+        "gitops",
+        "argocd",
+        "argo-cd",
+        "argo",
+        "fluxcd",
+        "flux"
+      ],
+      "names": [
+        "argocd",
+        "argo",
+        "fluxcd"
+      ],
+      "keywords": [
+        "gitops",
+        "argo cd"
+      ]
+    },
+    {
+      "slug": "ci-cd",
+      "name": "CI/CD",
+      "area": "infrastructure",
+      "topics": [
+        "ci-cd",
+        "cicd",
+        "continuous-integration",
+        "continuous-delivery",
+        "github-actions",
+        "jenkins",
+        "gitlab-ci",
+        "tekton",
+        "continuous-deployment"
+      ],
+      "names": [
+        "jenkins",
+        "tekton"
+      ],
+      "keywords": [
+        "ci/cd",
+        "continuous integration",
+        "github actions"
+      ]
+    },
+    {
+      "slug": "aws",
+      "name": "AWS",
+      "area": "infrastructure",
+      "topics": [
+        "aws",
+        "amazon-web-services",
+        "aws-ec2",
+        "aws-s3",
+        "aws-eks",
+        "aws-ecs",
+        "aws-iam"
+      ],
+      "names": [
+        "aws"
+      ],
+      "keywords": [
+        "aws",
+        "amazon web services"
+      ]
+    },
+    {
+      "slug": "azure-gcp",
+      "name": "Azure and Google Cloud",
+      "area": "infrastructure",
+      "topics": [
+        "azure",
+        "microsoft-azure",
+        "gcp",
+        "google-cloud",
+        "google-cloud-platform"
+      ],
+      "names": [
+        "azure",
+        "gcp"
+      ],
+      "keywords": [
+        "microsoft azure",
+        "google cloud"
+      ]
+    },
+    {
+      "slug": "opentelemetry",
+      "name": "OpenTelemetry",
+      "area": "observability",
+      "topics": [
+        "opentelemetry",
+        "otel",
+        "otlp",
+        "opentelemetry-collector"
+      ],
+      "names": [
+        "opentelemetry",
+        "otel"
+      ],
+      "keywords": [
+        "opentelemetry"
+      ]
+    },
+    {
+      "slug": "prometheus",
+      "name": "Prometheus",
+      "area": "observability",
+      "topics": [
+        "prometheus",
+        "promql",
+        "alertmanager",
+        "prometheus-exporter"
+      ],
+      "names": [
+        "prometheus",
+        "promql"
+      ],
+      "keywords": [
+        "prometheus"
+      ]
+    },
+    {
+      "slug": "grafana",
+      "name": "Grafana",
+      "area": "observability",
+      "topics": [
+        "grafana",
+        "grafana-dashboard",
+        "loki",
+        "grafana-loki",
+        "tempo"
+      ],
+      "names": [
+        "grafana",
+        "loki"
+      ],
+      "keywords": [
+        "grafana"
+      ]
+    },
+    {
+      "slug": "tracing-logging",
+      "name": "Tracing and logging",
+      "area": "observability",
+      "topics": [
+        "jaeger",
+        "zipkin",
+        "distributed-tracing",
+        "tracing",
+        "logging",
+        "log-management",
+        "fluentd",
+        "fluent-bit",
+        "elk",
+        "elk-stack"
+      ],
+      "names": [
+        "jaeger",
+        "zipkin",
+        "fluentd"
+      ],
+      "keywords": [
+        "distributed tracing",
+        "log management"
+      ]
+    },
+    {
+      "slug": "observability-general",
+      "name": "Observability and monitoring",
+      "area": "observability",
+      "topics": [
+        "observability",
+        "monitoring",
+        "apm",
+        "sre",
+        "chaos-engineering",
+        "incident-management",
+        "uptime-monitoring",
+        "alerting"
+      ],
+      "names": [],
+      "keywords": [
+        "observability",
+        "application performance monitoring",
+        "chaos engineering"
+      ]
+    },
+    {
+      "slug": "security-scanning",
+      "name": "Security scanning",
+      "area": "security",
+      "topics": [
+        "security-scanner",
+        "vulnerability-scanner",
+        "vulnerability",
+        "sast",
+        "dast",
+        "trivy",
+        "pentest",
+        "penetration-testing",
+        "security-tools",
+        "cve"
+      ],
+      "names": [
+        "trivy",
+        "scanner"
+      ],
+      "keywords": [
+        "vulnerability scanner",
+        "security scanner",
+        "sast"
+      ]
+    },
+    {
+      "slug": "secrets-identity",
+      "name": "Secrets and identity",
+      "area": "security",
+      "topics": [
+        "secrets-management",
+        "vault",
+        "oauth2",
+        "oauth",
+        "oidc",
+        "openid-connect",
+        "sso",
+        "keycloak",
+        "authentication",
+        "authorization",
+        "iam",
+        "identity"
+      ],
+      "names": [
+        "keycloak",
+        "vault"
+      ],
+      "keywords": [
+        "secrets management",
+        "single sign-on",
+        "openid connect"
+      ]
+    },
+    {
+      "slug": "supply-chain",
+      "name": "Supply-chain security",
+      "area": "security",
+      "topics": [
+        "sbom",
+        "supply-chain-security",
+        "sigstore",
+        "slsa",
+        "cosign"
+      ],
+      "names": [
+        "sigstore",
+        "cosign"
+      ],
+      "keywords": [
+        "software supply chain",
+        "sbom"
+      ]
+    },
+    {
+      "slug": "testing",
+      "name": "Testing",
+      "area": "devtools",
+      "topics": [
+        "testing",
+        "test-automation",
+        "unit-testing",
+        "e2e-testing",
+        "end-to-end-testing",
+        "integration-testing",
+        "selenium",
+        "playwright",
+        "cypress",
+        "jest",
+        "pytest",
+        "mocking",
+        "load-testing"
+      ],
+      "names": [
+        "playwright",
+        "selenium",
+        "cypress",
+        "pytest"
+      ],
+      "keywords": [
+        "test automation",
+        "end-to-end testing",
+        "load testing"
+      ]
+    },
+    {
+      "slug": "build-tools",
+      "name": "Build tools",
+      "area": "devtools",
+      "topics": [
+        "build-tool",
+        "build-system",
+        "bazel",
+        "gradle",
+        "maven",
+        "webpack",
+        "vite",
+        "bundler",
+        "monorepo",
+        "turborepo",
+        "nx"
+      ],
+      "names": [
+        "bazel",
+        "gradle",
+        "maven",
+        "webpack",
+        "vite"
+      ],
+      "keywords": [
+        "build tool",
+        "build system"
+      ]
+    },
+    {
+      "slug": "cli-terminal",
+      "name": "CLI and terminal",
+      "area": "devtools",
+      "topics": [
+        "cli",
+        "command-line",
+        "command-line-tool",
+        "terminal",
+        "tui",
+        "shell",
+        "zsh",
+        "bash"
+      ],
+      "names": [],
+      "keywords": [
+        "command-line tool",
+        "terminal"
+      ]
+    },
+    {
+      "slug": "code-quality",
+      "name": "Code quality",
+      "area": "devtools",
+      "topics": [
+        "linter",
+        "linters",
+        "static-analysis",
+        "code-quality",
+        "formatter",
+        "code-review",
+        "lint"
+      ],
+      "names": [
+        "eslint",
+        "linter"
+      ],
+      "keywords": [
+        "static analysis",
+        "linter"
+      ]
+    },
+    {
+      "slug": "docs-tooling",
+      "name": "Documentation tooling",
+      "area": "devtools",
+      "topics": [
+        "documentation-generator",
+        "static-site-generator",
+        "documentation-tool",
+        "docsify",
+        "mkdocs"
+      ],
+      "names": [
+        "mkdocs",
+        "docsify"
+      ],
+      "keywords": [
+        "documentation generator",
+        "static site generator"
+      ]
+    }
+  ]
+}
