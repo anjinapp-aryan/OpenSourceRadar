@@ -2,6 +2,9 @@ import { execSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 
+// The production workflow rewrites data/ BEFORE its unit-test step, so under GitHub Actions the data/ working tree is legitimately modified; locally it must be clean.
+const pipelineOutputs = process.env.GITHUB_ACTIONS === 'true' ? '' : 'data';
+
 const read = (p: string) => JSON.parse(readFileSync(p, 'utf8'));
 
 describe('Phase 6.3.1 AI safety regression (hard gate)', () => {
@@ -26,7 +29,7 @@ describe('Phase 6.3.1 AI safety regression (hard gate)', () => {
 
 describe('Phase 6.3.1 changes nothing that production reads or publishes', () => {
   it('no tracked or untracked file under the production data, ranking, classification, tracking, UI or production workflow changed', () => {
-    const status = execSync('git status --porcelain -- data config/momentum.json config/pattern.json config/tracking.json config/classification.json config/categories config/pipeline.json src/momentum/engine.ts src/momentum/config.ts src/momentum/dataset.ts src/momentum/types.ts src/classification src/tracking src/lifecycle/index.ts src/pipeline/gate.ts src/pipeline/state.ts src/pipeline/size.ts src/collect app lib components .github/workflows/radar.yml package.json package-lock.json', { encoding: 'utf8' });
+    const status = execSync(`git status --porcelain -- ${pipelineOutputs} config/momentum.json config/pattern.json config/tracking.json config/classification.json config/categories config/pipeline.json src/momentum/engine.ts src/momentum/config.ts src/momentum/dataset.ts src/momentum/types.ts src/classification src/tracking src/lifecycle/index.ts src/pipeline/gate.ts src/pipeline/state.ts src/pipeline/size.ts src/collect app lib components .github/workflows/radar.yml package.json package-lock.json`, { encoding: 'utf8' });
     expect(status.trim()).toBe('');
   });
   it('the committed public data still passes the unchanged production gate', async () => {

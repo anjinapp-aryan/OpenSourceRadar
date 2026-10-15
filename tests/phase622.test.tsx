@@ -9,6 +9,9 @@ import { loadMomentumConfig } from '../src/momentum/config';
 import type { RepositorySnapshot } from '../src/model/repositorySnapshot';
 import type { StarHistorySeries } from '../src/model/starHistory';
 
+// The production workflow rewrites data/ BEFORE its unit-test step, so under GitHub Actions the data/ working tree is legitimately modified; locally it must be clean.
+const pipelineOutputs = process.env.GITHUB_ACTIONS === 'true' ? '' : 'data';
+
 const NOW = new Date('2026-10-08T00:00:00Z');
 const snap = (id: string, o: Partial<RepositorySnapshot> = {}): RepositorySnapshot => ({
   repositoryId: id,
@@ -200,7 +203,7 @@ describe('Phase 6.2.2 result artefacts are internally consistent', () => {
     expect(t.E.newCandidates).toBe(read('hybrid.json').newRepos);
   });
   it('production public data is untouched by the experiment', () => {
-    const status = execSync('git status --porcelain -- data config/momentum.json config/pattern.json config/tracking.json config/classification.json config/categories src/momentum/engine.ts src/momentum/config.ts src/momentum/dataset.ts src/momentum/types.ts src/tracking src/classification app lib components', { encoding: 'utf8' });
+    const status = execSync(`git status --porcelain -- ${pipelineOutputs} config/momentum.json config/pattern.json config/tracking.json config/classification.json config/categories src/momentum/engine.ts src/momentum/config.ts src/momentum/dataset.ts src/momentum/types.ts src/tracking src/classification app lib components`, { encoding: 'utf8' });
     expect(status.trim()).toBe('');
   });
 });

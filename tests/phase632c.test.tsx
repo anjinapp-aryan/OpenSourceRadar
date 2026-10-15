@@ -4,8 +4,9 @@ import { describe, expect, it } from 'vitest';
 import { OBSERVED_PRODUCTION_PEAK, shadowHistoryBudget } from '../src/shadow/budget';
 import { dailyEvidenceRow, type DailyRecord } from '../src/shadow/report';
 
-const wf = readFileSync('.github/workflows/shadow.yml', 'utf8');
-const prod = readFileSync('.github/workflows/radar.yml', 'utf8');
+const lf = (p: string) => readFileSync(p, 'utf8').split('\r\n').join('\n'); // Windows checkouts with autocrlf
+const wf = lf('.github/workflows/shadow.yml');
+const prod = lf('.github/workflows/radar.yml');
 const body = wf.split('\n').filter((l) => !l.trim().startsWith('#')).join('\n');
 
 describe('Phase 6.3.2 shadow workflow safety (static; the workflow has not run on GitHub)', () => {
