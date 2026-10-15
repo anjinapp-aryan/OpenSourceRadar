@@ -47,3 +47,17 @@ Per day, in `.shadow/daily/<date>.json` and `perDay` of `cycle-summary.json`: da
 
 ## 5. What is not known
 Whether the workflow runs cleanly on GitHub (never executed there), actual API use over seven days, rate-limit behaviour with a real token, production-concurrent behaviour, history failures over time, admissions after the first week.
+
+## 6. Observed days (REAL, from GitHub Actions; each row is evidence, nothing is simulated)
+Evidence files: `results/phase6.3.2/shadow-days/<date>/` (daily record, cycle summary, discovery report), downloaded from the workflow artifact and credential-scanned. Status ladder now: LOCAL VALIDATED yes · MERGED yes (`ba513c2`) · ENABLED yes (`SHADOW_ENABLED=true`, 2026-10-15 05:57Z) · EXECUTED yes · OBSERVED 1 day · 7-DAYS COMPLETE no (1 of 7).
+
+### Day 1: 2026-10-15 (manual dispatch with `discover=true`; counts as the first observed day, not a scheduled day)
+| Item | Value | Label |
+|---|---|---|
+| Started | 06:04:01Z, after the production run (finished 05:55Z; last production collection 05:39Z) | OBSERVED |
+| Discovery | Top-300 topic discovery, 66 topics, pages 1-3; 148 search requests; 8,308 unique candidates; UNKNOWN rate 24.98%; 184 proposed, 150 accepted (weekly cap), admission rate 1.81% | OBSERVED |
+| Shadow requests | history 0, REST 149 (148 search + 1 rate-limit check), GraphQL 0, retries 0, failures 0, authenticated, rate limit remaining 4,994 | OBSERVED |
+| Production requests that day | **3,379** (the catch-up run after six stale days, 2026-10-09 to 2026-10-15) | OBSERVED |
+| Budget | basis `recorded`, shadow allowance **0**, so 150 pool members stayed UNASSESSED (HOT 0, WARM 0, DORMANT 0) and tracking was not exercised | OBSERVED |
+| Cycle verdict | `INCOMPLETE: 1 of 7`; **STOP condition raised**: observed maximum 3,379 requests in a day exceeds the 2,000 ceiling | OBSERVED |
+**Reading (INFERENCE).** The budget guard worked as designed: production had already spent more than the ceiling, so the shadow made no history request. The 3,379 is production's own one-off catch-up after the outage (all overdue repositories collected at once), not the shadow's load and not a normal day. It also means the observed production peak is no longer 1,795: **3,379**, a LIMITATION for the earlier budget reasoning; the shadow's reserve rule uses the constant `OBSERVED_PRODUCTION_PEAK`, which is not changed here. **Day 1 does not test shadow tracking or tier mix.** The ceiling is not raised. Whether to treat the STOP as halting the experiment or as a known outage artefact is a decision for the owner; the schedule continues meanwhile and the shadow keeps yielding.

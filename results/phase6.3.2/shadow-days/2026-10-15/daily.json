@@ -1,0 +1,1129 @@
+{
+ "date": "2026-10-15",
+ "historyRequests": 0,
+ "historyFailures": 0,
+ "productionHistoryRequests": 3379,
+ "searchRequests": 148,
+ "poolSize": 150,
+ "newAdmissions": 150,
+ "runtimeSeconds": 0,
+ "rateLimit": {
+  "remainingAtEnd": 4994,
+  "hitLimit": false
+ },
+ "startedAt": "2026-10-15T06:04:01.389Z",
+ "tierCounts": {
+  "HOT": 0,
+  "WARM": 0,
+  "DORMANT": 0,
+  "UNASSESSED": 150
+ },
+ "retries": 0,
+ "restRequests": 149,
+ "graphqlRequests": 0,
+ "totalApiRequests": 149,
+ "budgetForShadow": 0,
+ "budgetBasis": "recorded",
+ "productionLastCollectedAt": "2026-10-15T05:39:39.696Z",
+ "startedAfterProduction": true,
+ "discoveryStrategy": "Top-300 topic discovery (66 topics, pages 1-3)",
+ "discovery": {
+  "stats": {
+   "queries": 66,
+   "searchRequests": 148,
+   "rawResults": 12413,
+   "uniqueRepositories": 8308,
+   "duplicateResults": 4105,
+   "archived": 23,
+   "forks": 0,
+   "malformed": 0,
+   "usable": 8285,
+   "alreadyCandidate": 3801,
+   "classified": {
+    "AI": 1226,
+    "ENGINEERING": 1914,
+    "BOTH": 224,
+    "UNKNOWN": 1120
+   },
+   "unknownRate": 0.2498,
+   "belowStarFloor": 0,
+   "learningContent": 125,
+   "belowPriority": 3055,
+   "proposedAdmissions": 184,
+   "capHits": {
+    "weekly": 34,
+    "pool": 0
+   },
+   "newAdmissions": 150,
+   "rejectedTotal": 8135,
+   "rejectedByReason": {
+    "already-candidate": 3801,
+    "not-classified": 1120,
+    "below-priority": 3055,
+    "learning-content": 125,
+    "weekly-cap": 34
+   }
+  },
+  "admitted": [
+   {
+    "id": "1416386910",
+    "fullName": "Arekejoker/qwen21-nsfw-pose-skill",
+    "stars": 1439,
+    "priority": 770.2,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1410929004",
+    "fullName": "ARahim3/DigUp",
+    "stars": 3777,
+    "priority": 615.1,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1170821064",
+    "fullName": "paperclipai/paperclip",
+    "stars": 102276,
+    "priority": 451.8,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1162099055",
+    "fullName": "Leonxlnx/taste-skill",
+    "stars": 96658,
+    "priority": 407.7,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1329849289",
+    "fullName": "lexmount/moli",
+    "stars": 18497,
+    "priority": 282.6,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1135212071",
+    "fullName": "coreyhaines31/marketingskills",
+    "stars": 54789,
+    "priority": 201.3,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1418643214",
+    "fullName": "Entelligence-AI/agentplay",
+    "stars": 142,
+    "priority": 142,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1403307052",
+    "fullName": "jiwoochris/artex-global",
+    "stars": 1506,
+    "priority": 132.3,
+    "topLevel": "BOTH"
+   },
+   {
+    "id": "1350978527",
+    "fullName": "Ryze-AI-Adgent/open-seo-mcp-skills",
+    "stars": 5548,
+    "priority": 120.6,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1407997858",
+    "fullName": "mw00/project-maya",
+    "stars": 861,
+    "priority": 107,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1213049020",
+    "fullName": "browser-use/browser-harness",
+    "stars": 18436,
+    "priority": 101.9,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1274498048",
+    "fullName": "spinabot/brigade",
+    "stars": 11330,
+    "priority": 96.5,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1157171418",
+    "fullName": "jundot/omlx",
+    "stars": 22816,
+    "priority": 93.7,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1342876750",
+    "fullName": "totec448-spec/chat-on-steroids",
+    "stars": 4766,
+    "priority": 89.2,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1326531152",
+    "fullName": "miqdadbadjuber/anti-slop",
+    "stars": 6092,
+    "priority": 88.9,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1354059245",
+    "fullName": "tigerless-labs/agent-memory",
+    "stars": 3663,
+    "priority": 85,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1199668171",
+    "fullName": "fathah/hermes-desktop",
+    "stars": 14414,
+    "priority": 73.8,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1179046874",
+    "fullName": "nidhinjs/prompt-master",
+    "stars": 14470,
+    "priority": 66.6,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1238992253",
+    "fullName": "pacifio/atlas",
+    "stars": 9601,
+    "priority": 62.6,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1207639951",
+    "fullName": "EKKOLearnAI/ekko-studio",
+    "stars": 11418,
+    "priority": 61.2,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1021895365",
+    "fullName": "slopus/happy",
+    "stars": 24150,
+    "priority": 53.2,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1414354754",
+    "fullName": "SouravBeraAkaSpeed/xiryn",
+    "stars": 178,
+    "priority": 51.6,
+    "topLevel": "BOTH"
+   },
+   {
+    "id": "1371687666",
+    "fullName": "leemysw/yovoice",
+    "stars": 1484,
+    "priority": 50.5,
+    "topLevel": "AI"
+   },
+   {
+    "id": "668195240",
+    "fullName": "pathwaycom/serviette",
+    "stars": 58789,
+    "priority": 49.7,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1411545320",
+    "fullName": "liyupi/ai-promo-video-maker",
+    "stars": 274,
+    "priority": 48.6,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1342886503",
+    "fullName": "duty1g/x64dbg-mcp-server",
+    "stars": 2506,
+    "priority": 46.9,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1287804060",
+    "fullName": "aipoch/open-science",
+    "stars": 4873,
+    "priority": 46.9,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1004995740",
+    "fullName": "winfunc/opcode",
+    "stars": 22417,
+    "priority": 46.5,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1255217938",
+    "fullName": "loopx-project/loopx",
+    "stars": 6304,
+    "priority": 46.2,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1414966646",
+    "fullName": "ziplab/ATAS",
+    "stars": 133,
+    "priority": 46,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1329163060",
+    "fullName": "HarnessRouter/harnessrouter",
+    "stars": 2999,
+    "priority": 45.3,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1231170332",
+    "fullName": "TokenRhythm/opensquilla",
+    "stars": 7097,
+    "priority": 44,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1245699721",
+    "fullName": "KunAgent/Kun",
+    "stars": 6315,
+    "priority": 43.1,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1295987763",
+    "fullName": "zvec-ai/zvec-grep",
+    "stars": 4093,
+    "priority": 42.2,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1397088773",
+    "fullName": "mdpsec/bug-bounty-hunting-prompts",
+    "stars": 604,
+    "priority": 40.9,
+    "topLevel": "ENGINEERING"
+   },
+   {
+    "id": "1402218524",
+    "fullName": "Aryanutkarsh/SeeCode",
+    "stars": 476,
+    "priority": 38.9,
+    "topLevel": "BOTH"
+   },
+   {
+    "id": "1156170875",
+    "fullName": "Nasiko-Labs/nasiko",
+    "stars": 9487,
+    "priority": 38.8,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1411530691",
+    "fullName": "BlenderGPT3D/blender-ai-addon",
+    "stars": 213,
+    "priority": 37.7,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1245465729",
+    "fullName": "EverMind-AI/Raven",
+    "stars": 5449,
+    "priority": 37.2,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1306727670",
+    "fullName": "zeronsh/zeron",
+    "stars": 3197,
+    "priority": 37,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1220000506",
+    "fullName": "epoko77-ai/im-not-ai",
+    "stars": 5993,
+    "priority": 34.5,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1411744700",
+    "fullName": "bdg9412/artex-ko-plus",
+    "stars": 185,
+    "priority": 33.5,
+    "topLevel": "BOTH"
+   },
+   {
+    "id": "1289958986",
+    "fullName": "Kuddev/pebrel",
+    "stars": 3382,
+    "priority": 33.3,
+    "topLevel": "ENGINEERING"
+   },
+   {
+    "id": "1402328864",
+    "fullName": "strands-agents/box",
+    "stars": 404,
+    "priority": 33.3,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1382460607",
+    "fullName": "nealbridges/VulnHunter",
+    "stars": 727,
+    "priority": 33,
+    "topLevel": "BOTH"
+   },
+   {
+    "id": "1316317581",
+    "fullName": "redhat-et/ripwire",
+    "stars": 2447,
+    "priority": 31.6,
+    "topLevel": "BOTH"
+   },
+   {
+    "id": "1333884889",
+    "fullName": "ZSvirt/zsvirt",
+    "stars": 1934,
+    "priority": 31.3,
+    "topLevel": "ENGINEERING"
+   },
+   {
+    "id": "1267314128",
+    "fullName": "tutti-os/tutti",
+    "stars": 3824,
+    "priority": 30.7,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1343371173",
+    "fullName": "elliothux/open-compute",
+    "stars": 1613,
+    "priority": 30.5,
+    "topLevel": "ENGINEERING"
+   },
+   {
+    "id": "1171111467",
+    "fullName": "microsoft/agent-governance-toolkit",
+    "stars": 6427,
+    "priority": 28.4,
+    "topLevel": "BOTH"
+   },
+   {
+    "id": "1237164513",
+    "fullName": "microsoft/flint-chart",
+    "stars": 4370,
+    "priority": 28.2,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1318893208",
+    "fullName": "memorax-ai/memorax-code",
+    "stars": 2024,
+    "priority": 27,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1400284027",
+    "fullName": "aixisstudio/Snitch",
+    "stars": 356,
+    "priority": 26.7,
+    "topLevel": "ENGINEERING"
+   },
+   {
+    "id": "1338987521",
+    "fullName": "Tencent-Hunyuan/AuK",
+    "stars": 1515,
+    "priority": 26.6,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1248955957",
+    "fullName": "code-yeongyu/lazycodex",
+    "stars": 3777,
+    "priority": 26.5,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1149071982",
+    "fullName": "BlockRunAI/ClawRouter",
+    "stars": 6628,
+    "priority": 26.2,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1301135370",
+    "fullName": "0xsline/OpenChatCut",
+    "stars": 2374,
+    "priority": 25.8,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1156137396",
+    "fullName": "netease-youdao/LobsterAI",
+    "stars": 6113,
+    "priority": 25,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1228558220",
+    "fullName": "muxuuu/serenity-skill",
+    "stars": 4090,
+    "priority": 25,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1184090452",
+    "fullName": "fallow-rs/fallow",
+    "stars": 5063,
+    "priority": 23.9,
+    "topLevel": "BOTH"
+   },
+   {
+    "id": "1296647613",
+    "fullName": "Alisa0808/vox-director",
+    "stars": 2276,
+    "priority": 23.6,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1189732822",
+    "fullName": "mvanhorn/cli-printing-press",
+    "stars": 4817,
+    "priority": 23.5,
+    "topLevel": "BOTH"
+   },
+   {
+    "id": "1045721921",
+    "fullName": "frankbria/ralph-claude-code",
+    "stars": 9689,
+    "priority": 23.4,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1169560166",
+    "fullName": "breferrari/obsidian-mind",
+    "stars": 5325,
+    "priority": 23.3,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1190557545",
+    "fullName": "eugeniughelbur/obsidian-second-brain",
+    "stars": 4768,
+    "priority": 23.3,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1302496224",
+    "fullName": "MemTensor/memmy-agent",
+    "stars": 2100,
+    "priority": 23.2,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1231135337",
+    "fullName": "strukto-ai/mirage",
+    "stars": 3689,
+    "priority": 22.9,
+    "topLevel": "AI"
+   },
+   {
+    "id": "954963562",
+    "fullName": "mrexodia/ida-pro-mcp",
+    "stars": 12875,
+    "priority": 22.7,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1381412852",
+    "fullName": "qybaihe/mu",
+    "stars": 509,
+    "priority": 22.6,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1225005463",
+    "fullName": "google-antigravity/antigravity-sdk-python",
+    "stars": 3744,
+    "priority": 22.3,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1225188401",
+    "fullName": "Ontos-AI/knowhere",
+    "stars": 3738,
+    "priority": 22.3,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1331441014",
+    "fullName": "pgrundev/pgbot",
+    "stars": 1402,
+    "priority": 21.9,
+    "topLevel": "ENGINEERING"
+   },
+   {
+    "id": "1197598190",
+    "fullName": "lintsinghua/claude-code-book",
+    "stars": 4301,
+    "priority": 21.8,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1092116209",
+    "fullName": "steipete/agent-scripts",
+    "stars": 7367,
+    "priority": 21.6,
+    "topLevel": "AI"
+   },
+   {
+    "id": "987975584",
+    "fullName": "langchain-ai/open-swe",
+    "stars": 11023,
+    "priority": 21.6,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1127793756",
+    "fullName": "fengshao1227/ccg-workflow",
+    "stars": 5942,
+    "priority": 21,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1143295695",
+    "fullName": "unicity-sphere/sphere-sdk",
+    "stars": 5385,
+    "priority": 20.7,
+    "topLevel": "AI"
+   },
+   {
+    "id": "644235905",
+    "fullName": "liguodongiot/llm-action",
+    "stars": 25167,
+    "priority": 20.3,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1039587768",
+    "fullName": "osaurus-ai/osaurus",
+    "stars": 8048,
+    "priority": 19,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1375445850",
+    "fullName": "AlibabaResearch/SparkDiffusion",
+    "stars": 503,
+    "priority": 18.8,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1336053850",
+    "fullName": "Dpro-at/Tel-Agent",
+    "stars": 1116,
+    "priority": 18.8,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1264222628",
+    "fullName": "MG1937/ASC",
+    "stars": 2392,
+    "priority": 18.8,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1191520000",
+    "fullName": "HughYau/qiushi-skill",
+    "stars": 3817,
+    "priority": 18.8,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1363844227",
+    "fullName": "ZeroDayEvil/ai-security-tool",
+    "stars": 646,
+    "priority": 18.7,
+    "topLevel": "ENGINEERING"
+   },
+   {
+    "id": "1405931849",
+    "fullName": "speridlabs/iris-3b",
+    "stars": 175,
+    "priority": 18.7,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1202549948",
+    "fullName": "Ar9av/obsidian-wiki",
+    "stars": 3572,
+    "priority": 18.6,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1411704825",
+    "fullName": "ntailio/ntk",
+    "stars": 103,
+    "priority": 18.6,
+    "topLevel": "ENGINEERING"
+   },
+   {
+    "id": "750678695",
+    "fullName": "xming521/WeClone",
+    "stars": 18297,
+    "priority": 18.5,
+    "topLevel": "AI"
+   },
+   {
+    "id": "967738751",
+    "fullName": "mengxi-ream/read-frog",
+    "stars": 10077,
+    "priority": 18.5,
+    "topLevel": "AI"
+   },
+   {
+    "id": "895453957",
+    "fullName": "Tencent-Hunyuan/HunyuanVideo",
+    "stars": 12622,
+    "priority": 18.4,
+    "topLevel": "AI"
+   },
+   {
+    "id": "862578138",
+    "fullName": "modelcontextprotocol/typescript-sdk",
+    "stars": 13584,
+    "priority": 18.1,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1338290116",
+    "fullName": "furkankly/zoetrope",
+    "stars": 1041,
+    "priority": 18.1,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1221340426",
+    "fullName": "allenpeng0705/EnvoyMesh",
+    "stars": 3103,
+    "priority": 18.1,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1107676388",
+    "fullName": "junhoyeo/tokscale",
+    "stars": 5678,
+    "priority": 17.9,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1310543401",
+    "fullName": "agentconnect-md/agentconnect",
+    "stars": 1465,
+    "priority": 17.7,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1322671404",
+    "fullName": "autonomous-ai/openharness",
+    "stars": 1258,
+    "priority": 17.6,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1146550474",
+    "fullName": "nolabs-ai/nono",
+    "stars": 4504,
+    "priority": 17.6,
+    "topLevel": "ENGINEERING"
+   },
+   {
+    "id": "911256711",
+    "fullName": "apify/apify-mcp-server",
+    "stars": 11279,
+    "priority": 17.3,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1138946494",
+    "fullName": "irinabuht12-oss/marketing-skills",
+    "stars": 4617,
+    "priority": 17.3,
+    "topLevel": "AI"
+   },
+   {
+    "id": "982517950",
+    "fullName": "CursorTouch/Windows-MCP",
+    "stars": 8996,
+    "priority": 17.3,
+    "topLevel": "AI"
+   },
+   {
+    "id": "870189331",
+    "fullName": "simular-ai/Agent-S",
+    "stars": 12617,
+    "priority": 17.2,
+    "topLevel": "AI"
+   },
+   {
+    "id": "951534260",
+    "fullName": "roboflow/rf-detr",
+    "stars": 9804,
+    "priority": 17.1,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1270584305",
+    "fullName": "eneskirca/nodeterm",
+    "stars": 2032,
+    "priority": 16.8,
+    "topLevel": "BOTH"
+   },
+   {
+    "id": "1044010907",
+    "fullName": "Devin-AXIS/iPolloWork",
+    "stars": 6968,
+    "priority": 16.8,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1339614046",
+    "fullName": "Zyrexnn/Cybermes",
+    "stars": 942,
+    "priority": 16.7,
+    "topLevel": "BOTH"
+   },
+   {
+    "id": "1377960577",
+    "fullName": "trustfuture/simon-skills",
+    "stars": 413,
+    "priority": 16.7,
+    "topLevel": "AI"
+   },
+   {
+    "id": "759893102",
+    "fullName": "electric-sql/pglite",
+    "stars": 16146,
+    "priority": 16.7,
+    "topLevel": "ENGINEERING"
+   },
+   {
+    "id": "956657893",
+    "fullName": "mobile-next/mobile-mcp",
+    "stars": 9417,
+    "priority": 16.7,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1279187498",
+    "fullName": "px0-ai/px0",
+    "stars": 1864,
+    "priority": 16.6,
+    "topLevel": "ENGINEERING"
+   },
+   {
+    "id": "1208239711",
+    "fullName": "hi-godot/godot-ai",
+    "stars": 2989,
+    "priority": 16.1,
+    "topLevel": "AI"
+   },
+   {
+    "id": "897268988",
+    "fullName": "thesysdev/openui",
+    "stars": 10925,
+    "priority": 16,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1158449837",
+    "fullName": "golutra/golutra",
+    "stars": 3853,
+    "priority": 16,
+    "topLevel": "BOTH"
+   },
+   {
+    "id": "1164005541",
+    "fullName": "foryourhealth111-pixel/Vibe-Skills",
+    "stars": 3695,
+    "priority": 15.8,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1305498575",
+    "fullName": "yuezhiai/jonex",
+    "stars": 1370,
+    "priority": 15.6,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1163814566",
+    "fullName": "nextlevelbuilder/goclaw",
+    "stars": 3654,
+    "priority": 15.6,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1386191888",
+    "fullName": "scaleapi/agentenv-framework",
+    "stars": 308,
+    "priority": 15.2,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1334657231",
+    "fullName": "soumatheusgomes/vibe-coding-toolkit",
+    "stars": 929,
+    "priority": 15.2,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1291988340",
+    "fullName": "RLinf/RPent",
+    "stars": 1512,
+    "priority": 15.2,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1092562478",
+    "fullName": "unhappychoice/gitlogue",
+    "stars": 5109,
+    "priority": 15,
+    "topLevel": "ENGINEERING"
+   },
+   {
+    "id": "1127761357",
+    "fullName": "arcboxlabs/arcbox",
+    "stars": 4239,
+    "priority": 15,
+    "topLevel": "BOTH"
+   },
+   {
+    "id": "867337374",
+    "fullName": "modelcontextprotocol/inspector",
+    "stars": 11081,
+    "priority": 15,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1129583447",
+    "fullName": "yifanfeng97/Hyper-Extract",
+    "stars": 4164,
+    "priority": 14.8,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1180226026",
+    "fullName": "CopilotKit/OpenIntelligentUI",
+    "stars": 3178,
+    "priority": 14.7,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1403809641",
+    "fullName": "VinkyDev/vibestart",
+    "stars": 159,
+    "priority": 14.6,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1354117265",
+    "fullName": "BoardUI/boardui",
+    "stars": 626,
+    "priority": 14.6,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1407921380",
+    "fullName": "VecSzn/PolyStrata",
+    "stars": 118,
+    "priority": 14.5,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1167732163",
+    "fullName": "giancarloerra/SocratiCode",
+    "stars": 3336,
+    "priority": 14.5,
+    "topLevel": "AI"
+   },
+   {
+    "id": "997490512",
+    "fullName": "tbphp/gpt-load",
+    "stars": 7097,
+    "priority": 14.3,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1250276806",
+    "fullName": "michael-denyer/pstack-claude",
+    "stars": 2021,
+    "priority": 14.3,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1355994488",
+    "fullName": "oriveo/oriveo",
+    "stars": 583,
+    "priority": 14.1,
+    "topLevel": "AI"
+   },
+   {
+    "id": "807305060",
+    "fullName": "LMCache/LMCache",
+    "stars": 12073,
+    "priority": 13.9,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1274547830",
+    "fullName": "ray-r-ren/agent-apprenticeship",
+    "stars": 1616,
+    "priority": 13.8,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1092407718",
+    "fullName": "macro-inc/macro",
+    "stars": 4679,
+    "priority": 13.7,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1242354790",
+    "fullName": "microsoft/intelligent-terminal",
+    "stars": 2054,
+    "priority": 13.7,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1387462962",
+    "fullName": "ANDRETRIPOL/OpenGhost",
+    "stars": 267,
+    "priority": 13.7,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1158479469",
+    "fullName": "liaohch3/claude-tap",
+    "stars": 3283,
+    "priority": 13.6,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1051789550",
+    "fullName": "Gaurav-Gosain/tuios",
+    "stars": 5362,
+    "priority": 13.3,
+    "topLevel": "BOTH"
+   },
+   {
+    "id": "1151205052",
+    "fullName": "bradygaster/squad",
+    "stars": 3281,
+    "priority": 13.1,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1202555904",
+    "fullName": "wxtsky/CodeIsland",
+    "stars": 2499,
+    "priority": 13,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1348053574",
+    "fullName": "jzjzzzzzzz/agent-me",
+    "stars": 634,
+    "priority": 13,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1338600136",
+    "fullName": "keli-wen/agy-staff",
+    "stars": 742,
+    "priority": 12.9,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1156645601",
+    "fullName": "MaxMiksa/Autonomous-Company",
+    "stars": 3130,
+    "priority": 12.8,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1287043670",
+    "fullName": "dzhng/skills",
+    "stars": 1336,
+    "priority": 12.8,
+    "topLevel": "AI"
+   },
+   {
+    "id": "862570523",
+    "fullName": "modelcontextprotocol/modelcontextprotocol",
+    "stars": 9456,
+    "priority": 12.6,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1291034571",
+    "fullName": "l0ng-ai/tty7",
+    "stars": 1258,
+    "priority": 12.5,
+    "topLevel": "BOTH"
+   },
+   {
+    "id": "1194353632",
+    "fullName": "chrisryugj/kordoc",
+    "stars": 2455,
+    "priority": 12.2,
+    "topLevel": "AI"
+   },
+   {
+    "id": "927890076",
+    "fullName": "modelcontextprotocol/registry",
+    "stars": 7360,
+    "priority": 11.9,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1095948794",
+    "fullName": "remorses/playwriter",
+    "stars": 3996,
+    "priority": 11.9,
+    "topLevel": "AI"
+   },
+   {
+    "id": "1258962324",
+    "fullName": "agentlas-ai/Agentlas-OS",
+    "stars": 1582,
+    "priority": 11.9,
+    "topLevel": "AI"
+   },
+   {
+    "id": "971243074",
+    "fullName": "Sylinko/Everywhere",
+    "stars": 6316,
+    "priority": 11.7,
+    "topLevel": "AI"
+   }
+  ],
+  "budget": {
+   "currentHistoryRequestsPerDay": 1125,
+   "worstCaseHistoryRequestsPerDay": 1725,
+   "ceiling": 2000,
+   "headroomAtWorstCase": 275
+  }
+ },
+ "budgetStopped": true,
+ "dueToday": 150,
+ "authenticated": true
+}

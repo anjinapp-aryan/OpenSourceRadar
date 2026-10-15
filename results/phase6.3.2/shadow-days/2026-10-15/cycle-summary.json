@@ -1,0 +1,32 @@
+{
+ "verdict": "INCOMPLETE: 1 of 7 days observed",
+ "summary": {
+  "days": 1,
+  "daysObserved": [
+   "2026-10-15"
+  ],
+  "complete": false,
+  "discoveryRuns": 1,
+  "totalCandidates": 8308,
+  "totalProposedAdmissions": 184,
+  "totalAcceptedAdmissions": 150,
+  "admissionRate": 0.0181,
+  "rejectionRate": 0.9819,
+  "unknownRate": 0.2498,
+  "historyRequestsPerDay": {
+   "mean": 0,
+   "max": 0
+  },
+  "totalRequestsPerDay": {
+   "mean": 3379,
+   "max": 3379
+  },
+  "searchRequestsPerWeek": 148,
+  "failures": 0,
+  "rateLimitHits": 0,
+  "ceiling": 2000,
+  "headroomAtMax": -1379,
+  "withinCeiling": false,
+  "stopCondition": "observed maximum 3379 requests per day is within 10% of the 2000 ceiling: stop and review (the ceiling is never raised automatically)"
+ }
+}
