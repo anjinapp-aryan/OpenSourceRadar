@@ -31,7 +31,8 @@ Example (real metadata, JavaGuide):
 
 ## 3. Taxonomy: 35 categories (33 from the product definition, plus AI Skills and AI Plugins added 2026-11-05)
 
-16 AI, in developer-first display order: AI Coding, MCP, AI Agents, **AI Skills**, **AI Plugins**, AI Developer Tools, LLM, RAG, Local AI, AI Infrastructure, Multimodal, Machine Learning, Generative AI, AI Image, AI Video, AI Music. The order of the array in config/categories/ai.json is the display order (home page, Explore filter); classification ties are broken by slug, never by that order.
+16 AI, in developer-first display order: AI Coding, MCP, **Agentic AI**, **AI Skills**, **AI Plugins**, AI Developer Tools, LLM, RAG, Local AI, AI Infrastructure, Multimodal, Machine Learning, Generative AI, AI Image, AI Video, AI Music. The order of the array in config/categories/ai.json is the display order (home page, Explore filter); classification ties are broken by slug, never by that order.
+**Agentic AI** (slug `ai-agents`, renamed from "AI Agents" 2026-11-05) is the single category for agents and everything agentic: agent frameworks, agentic workflows, multi-agent orchestration, agent harnesses and agentic software factories. The word "agentic" alone is not enough (it is a marketing tag on many unrelated repositories such as databases and streaming engines); the strong signals are the specific topics and phrases (agentic-workflow, agent-orchestration, software-factory, agentic-framework, ...), and `harness-engineering`, `spec-driven-development` are weak evidence only. Generic software-engineering uses of "factory" (abstract factory, factory pattern, factory-bot) are excluded.
 **AI Skills** = reusable agent skills (SKILL.md) for Claude, Codex, Copilot and similar agents (strong topics such as agent-skills, claude-skills). **AI Plugins** = plugins and extensions that add AI to developer tools (Claude Code and ChatGPT plugins, Copilot, Cursor, Codex and Gemini CLI extensions). Generic words (skills, plugin) are weak evidence only, and WordPress, Minecraft, Jenkins, Gradle, webpack and similar plugins are excluded.
 19 Engineering: Java, Spring (slug `spring-boot`; display name changed from "Spring Boot" to match the product list), Microservices, Kafka, Kubernetes, Docker, AWS, Cloud, PostgreSQL, Redis, Databases, DevOps, Observability, Security, Distributed Systems, System Design, Developer Tools, Infrastructure as Code, Testing.
 
@@ -90,7 +91,7 @@ In Phase 2, discovery tagged `Snailclimb/JavaGuide` as AI **and** engineering be
 
 | Repository (real metadata) | Result | Why |
 |---|---|---|
-| google/adk-python | AI: AI Agents | strong topics `ai-agents`, `agentic-ai`, description "building ... AI agents" |
+| google/adk-python | AI: Agentic AI (slug ai-agents) | strong topics `ai-agents`, `agentic-ai`, description "building ... AI agents" |
 | microsoft/playwright-mcp | AI: MCP (not Testing) | topic `mcp`, name `mcp`; `playwright` is only a weak Testing topic |
 | vllm-project/vllm | AI: AI Infrastructure | topics `model-serving`, `llm-serving`; description "inference and serving engine for LLMs" |
 | Snailclimb/JavaGuide | ENGINEERING: Java | see §5 |

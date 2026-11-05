@@ -314,9 +314,9 @@ describe('discovery coverage: why a repository is missing, and what should happe
   const facts = (o: Partial<RepoFacts> & { topics: string[] }): RepoFacts => ({ id: '10', stars: 5000, createdAt: '2020-01-01T00:00:00Z', pushedAt: '2026-10-01T00:00:00Z', isArchived: false, ...o });
   const topic = queries.find((q) => q.kind === 'pushed')!.topic;
 
-  it('parses the configured queries into structured rules (105 queries: 70 established, 35 fresh)', () => {
-    expect(queries).toHaveLength(105);
-    expect(queries.filter((q) => q.kind === 'pushed')).toHaveLength(70);
+  it('parses the configured queries into structured rules (106 queries: 71 established, 35 fresh)', () => {
+    expect(queries).toHaveLength(106);
+    expect(queries.filter((q) => q.kind === 'pushed')).toHaveLength(71);
     expect(queries.filter((q) => q.kind === 'fresh')).toHaveLength(35);
     expect(new Set(queries.map((q) => q.limit))).toEqual(new Set([100]));
   });

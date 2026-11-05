@@ -151,19 +151,22 @@
     },
     {
       "slug": "ai-agents",
-      "name": "AI Agents",
-      "description": "Autonomous and multi-agent frameworks and agent applications",
+      "name": "Agentic AI",
+      "description": "Agents and agentic systems: agent frameworks, agentic workflows, multi-agent orchestration, agent harnesses and agentic software factories",
       "searchQueries": [
         "topic:ai-agents stars:>{minStars} pushed:>{pushedSince}",
         "topic:agentic-ai stars:>{minStars} pushed:>{pushedSince}",
-        "topic:ai-agents created:>{createdSince} stars:>{freshMinStars}"
+        "topic:ai-agents created:>{createdSince} stars:>{freshMinStars}",
+        "topic:agentic-workflow stars:>{minStars} pushed:>{pushedSince}"
       ],
       "keywords": [
         "ai agent",
         "agentic",
         "autonomous agent",
         "multi-agent",
-        "tool use"
+        "tool use",
+        "agentic workflow",
+        "software factory"
       ],
       "topics": [
         "ai-agents",
@@ -171,7 +174,9 @@
         "agents",
         "autonomous-agents",
         "multi-agent",
-        "ai-agent"
+        "ai-agent",
+        "agentic-workflow",
+        "software-factory"
       ],
       "classification": {
         "strongTopics": [
@@ -187,14 +192,34 @@
           "multi-agent-systems",
           "agents-sdk",
           "aiagentframework",
-          "agent-framework"
+          "agent-framework",
+          "agentic-workflow",
+          "agentic-workflows",
+          "agentic-orchestration",
+          "agent-orchestration",
+          "agentic-framework",
+          "agentic-engineering",
+          "agentic-runtime",
+          "agentic-os",
+          "agentic-coding",
+          "agent-harness",
+          "agent-harnesses",
+          "software-factory",
+          "agentic-software-factory",
+          "dark-factory",
+          "agentic-sdlc"
         ],
         "weakTopics": [
           "agent",
           "agents",
-          "agentic-workflow",
           "orchestration",
-          "workflow"
+          "workflow",
+          "spec-driven-development",
+          "agent-workflow",
+          "ai-workflows",
+          "llm-orchestration",
+          "agentic-search",
+          "harness-engineering"
         ],
         "strongKeywords": [
           "ai agent",
@@ -206,13 +231,27 @@
           "multi agent",
           "agent framework",
           "llm agent",
-          "coding agent"
+          "coding agent",
+          "agentic workflow",
+          "agentic workflows",
+          "agentic software factory",
+          "software factory",
+          "dark factory",
+          "agent orchestration",
+          "agentic orchestration",
+          "agentic engineering",
+          "agentic framework",
+          "agentic system",
+          "agentic systems",
+          "agent harness"
         ],
         "weakKeywords": [
           "agent",
           "agents",
           "orchestration",
-          "tool use"
+          "tool use",
+          "spec-driven",
+          "spec driven development"
         ],
         "exclusionTopics": [
           "build-agent",
@@ -222,7 +261,13 @@
           "jenkins-agent",
           "monitoring-agent",
           "zabbix-agent",
-          "http-agent"
+          "http-agent",
+          "factory-bot",
+          "factory-girl",
+          "factory-boy",
+          "factory-pattern",
+          "abstract-factory",
+          "design-patterns"
         ],
         "exclusionKeywords": [
           "build agent",
@@ -236,7 +281,13 @@
           "travel agent",
           "insurance agent",
           "agent based modeling",
-          "agent-based modeling"
+          "agent-based modeling",
+          "abstract factory",
+          "factory pattern",
+          "factory method",
+          "factory bot",
+          "test factory",
+          "model factory"
         ],
         "languages": {}
       }

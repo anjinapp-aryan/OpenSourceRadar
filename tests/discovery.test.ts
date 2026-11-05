@@ -69,7 +69,7 @@ describe('category configuration', () => {
   it('shipped ai.json has the 16 required categories, developer-first order', () => {
     const c = loadCategoryConfig(defaultConfigPath('ai'));
     expect(c.categories.map((x) => x.name)).toEqual([
-      'AI Coding', 'MCP', 'AI Agents', 'AI Skills', 'AI Plugins', 'AI Developer Tools', 'LLM', 'RAG', 'Local AI',
+      'AI Coding', 'MCP', 'Agentic AI', 'AI Skills', 'AI Plugins', 'AI Developer Tools', 'LLM', 'RAG', 'Local AI',
       'AI Infrastructure', 'Multimodal', 'Machine Learning', 'Generative AI', 'AI Image', 'AI Video', 'AI Music',
     ]);
     for (const cat of c.categories) {

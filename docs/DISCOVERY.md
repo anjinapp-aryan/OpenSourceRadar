@@ -23,7 +23,7 @@ No query text lives in code. Each domain file has:
     "excludeForks": true, "excludeArchived": true
   },
   "categories": [{
-    "slug": "ai-agents", "name": "AI Agents", "description": "…",
+    "slug": "ai-agents", "name": "Agentic AI", "description": "…",
     "searchQueries": ["topic:ai-agents stars:>{minStars} pushed:>{pushedSince}", "…"],
     "keywords": ["ai agent", "agentic", "…"],   // matched against name + description
     "topics":   ["ai-agents", "agentic-ai", …]  // matched exactly against repository topics
@@ -35,7 +35,7 @@ Placeholders `{minStars} {freshMinStars} {pushedSince} {createdSince}` are expan
 
 **Categories** (16 AI, 19 engineering; a test pins them; AI Skills and AI Plugins were added 2026-11-05 and the AI list is in developer-first display order):
 
-- AI: AI Coding, MCP, AI Agents, AI Skills, AI Plugins, AI Developer Tools, LLM, RAG, Local AI, AI Infrastructure, Multimodal, Machine Learning, Generative AI, AI Image, AI Video, AI Music.
+- AI: AI Coding, MCP, Agentic AI, AI Skills, AI Plugins, AI Developer Tools, LLM, RAG, Local AI, AI Infrastructure, Multimodal, Machine Learning, Generative AI, AI Image, AI Video, AI Music.
 - Engineering: Java, Spring Boot, Microservices, Kafka, Kubernetes, Docker, AWS, Cloud, PostgreSQL, Redis, Databases, DevOps, Observability, Security, Distributed Systems, System Design, Developer Tools, Infrastructure as Code, Testing.
 
 **Queries per category** (3 each, 99 total: 42 AI + 57 engineering): the first two GitHub topics as *established* queries (`stars:>100 pushed within 30 days`) and one *fresh* query (`created within 30 days, stars:>25`) so new repositories are not crowded out by old giants.
