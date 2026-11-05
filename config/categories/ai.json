@@ -13,6 +13,143 @@
   },
   "categories": [
     {
+      "slug": "ai-coding",
+      "name": "AI Coding",
+      "description": "AI coding assistants, code generation and code agents",
+      "searchQueries": [
+        "topic:ai-coding stars:>{minStars} pushed:>{pushedSince}",
+        "topic:code-generation stars:>{minStars} pushed:>{pushedSince}",
+        "topic:ai-coding created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "coding assistant",
+        "code generation",
+        "copilot",
+        "ai pair programming",
+        "claude code"
+      ],
+      "topics": [
+        "ai-coding",
+        "code-generation",
+        "coding-assistant",
+        "copilot",
+        "claude-code",
+        "vibe-coding",
+        "code-completion"
+      ],
+      "classification": {
+        "strongTopics": [
+          "ai-coding",
+          "ai-coding-assistant",
+          "coding-assistant",
+          "coding-agent",
+          "code-generation",
+          "claude-code",
+          "github-copilot",
+          "vibe-coding",
+          "code-completion",
+          "ai-code-review",
+          "ai-pair-programming",
+          "aider",
+          "cline"
+        ],
+        "weakTopics": [
+          "codex",
+          "cursor",
+          "copilot",
+          "agent-skills",
+          "skills",
+          "code-review",
+          "ai-tools"
+        ],
+        "strongKeywords": [
+          "ai coding",
+          "coding assistant",
+          "coding agent",
+          "code generation",
+          "claude code",
+          "github copilot",
+          "vibe coding",
+          "ai pair programming",
+          "code completion",
+          "ai code review"
+        ],
+        "weakKeywords": [
+          "copilot",
+          "cursor",
+          "codex",
+          "code review"
+        ],
+        "exclusionTopics": [
+          "mouse-cursor",
+          "cursors",
+          "cursor-theme",
+          "xcursor",
+          "cursor-icons"
+        ],
+        "exclusionKeywords": [
+          "mouse cursor",
+          "database cursor",
+          "cursor position",
+          "cursor theme"
+        ],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "mcp",
+      "name": "MCP",
+      "description": "Model Context Protocol servers, clients and tooling",
+      "searchQueries": [
+        "topic:mcp stars:>{minStars} pushed:>{pushedSince}",
+        "topic:model-context-protocol stars:>{minStars} pushed:>{pushedSince}",
+        "topic:mcp created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "mcp",
+        "model context protocol"
+      ],
+      "topics": [
+        "mcp",
+        "model-context-protocol",
+        "mcp-server",
+        "mcp-client"
+      ],
+      "classification": {
+        "strongTopics": [
+          "mcp",
+          "model-context-protocol",
+          "mcp-server",
+          "mcp-servers",
+          "mcp-client",
+          "mcp-tools"
+        ],
+        "weakTopics": [
+          "mcp-host"
+        ],
+        "strongKeywords": [
+          "mcp",
+          "model context protocol",
+          "mcp server",
+          "mcp servers",
+          "mcp client"
+        ],
+        "weakKeywords": [],
+        "exclusionTopics": [
+          "minecraft",
+          "minecraft-mod",
+          "forge",
+          "modding"
+        ],
+        "exclusionKeywords": [
+          "minecraft",
+          "coder pack",
+          "certified professional"
+        ],
+        "languages": {}
+      }
+    },
+    {
       "slug": "ai-agents",
       "name": "AI Agents",
       "description": "Autonomous and multi-agent frameworks and agent applications",
@@ -101,6 +238,256 @@
           "agent based modeling",
           "agent-based modeling"
         ],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "ai-skills",
+      "name": "AI Skills",
+      "description": "Reusable agent skills (SKILL.md) that teach Claude, Codex, Copilot and other coding agents a task",
+      "searchQueries": [
+        "topic:agent-skills stars:>{minStars} pushed:>{pushedSince}",
+        "topic:claude-skills stars:>{minStars} pushed:>{pushedSince}",
+        "topic:agent-skills created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "agent skills",
+        "claude skills",
+        "skill.md",
+        "codex skills"
+      ],
+      "topics": [
+        "agent-skills",
+        "claude-skills",
+        "claude-code-skills",
+        "skill-md"
+      ],
+      "classification": {
+        "strongTopics": [
+          "agent-skills",
+          "agent-skill",
+          "claude-skills",
+          "claude-skill",
+          "claude-code-skills",
+          "ai-skills",
+          "codex-skills",
+          "openclaw-skills",
+          "cursor-skills",
+          "copilot-skills",
+          "skill-md"
+        ],
+        "weakTopics": [
+          "skills",
+          "skill",
+          "subagents",
+          "claude-code-subagents",
+          "slash-commands",
+          "openclaw"
+        ],
+        "strongKeywords": [
+          "agent skill",
+          "agent skills",
+          "claude skill",
+          "claude skills",
+          "claude code skills",
+          "skill.md",
+          "codex skills",
+          "ai skills"
+        ],
+        "weakKeywords": [
+          "subagent",
+          "subagents",
+          "slash command",
+          "slash commands"
+        ],
+        "exclusionTopics": [
+          "soft-skills",
+          "skills-assessment",
+          "skill-tree",
+          "interview",
+          "career",
+          "roadmap",
+          "game-development",
+          "gamedev"
+        ],
+        "exclusionKeywords": [
+          "soft skills",
+          "hard skills",
+          "skill tree",
+          "skill rating",
+          "skill based matchmaking",
+          "skills assessment",
+          "job skills"
+        ],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "ai-plugins",
+      "name": "AI Plugins",
+      "description": "Plugins and extensions that add AI to developer tools: Claude Code and ChatGPT plugins, Copilot, Cursor, Codex and Gemini CLI extensions",
+      "searchQueries": [
+        "topic:claude-code-plugin stars:>{minStars} pushed:>{pushedSince}",
+        "topic:ai-plugin stars:>{minStars} pushed:>{pushedSince}",
+        "topic:claude-code-plugin created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "claude code plugin",
+        "chatgpt plugin",
+        "ai plugin",
+        "gemini cli extension"
+      ],
+      "topics": [
+        "claude-code-plugin",
+        "claude-plugin",
+        "chatgpt-plugin",
+        "ai-plugin"
+      ],
+      "classification": {
+        "strongTopics": [
+          "claude-code-plugin",
+          "claude-code-plugins",
+          "claude-plugin",
+          "claude-plugins",
+          "claude-code-marketplace",
+          "chatgpt-plugin",
+          "chatgpt-plugins",
+          "ai-plugin",
+          "ai-plugins",
+          "copilot-plugin",
+          "cursor-plugin",
+          "codex-plugin",
+          "gemini-cli-extension",
+          "gemini-extension",
+          "agent-plugin",
+          "ai-extension"
+        ],
+        "weakTopics": [
+          "plugin-marketplace",
+          "plugin",
+          "plugins",
+          "vscode-extension",
+          "jetbrains-plugin",
+          "obsidian-plugin"
+        ],
+        "strongKeywords": [
+          "claude code plugin",
+          "claude code plugins",
+          "claude plugin",
+          "chatgpt plugin",
+          "ai plugin",
+          "copilot plugin",
+          "cursor plugin",
+          "codex plugin",
+          "gemini cli extension"
+        ],
+        "weakKeywords": [
+          "plugin",
+          "plugins",
+          "extension"
+        ],
+        "exclusionTopics": [
+          "wordpress-plugin",
+          "wordpress",
+          "minecraft-plugin",
+          "bukkit",
+          "spigot",
+          "paper-plugin",
+          "jenkins-plugin",
+          "gradle-plugin",
+          "maven-plugin",
+          "webpack-plugin",
+          "babel-plugin",
+          "eslint-plugin",
+          "vite-plugin",
+          "rollup-plugin"
+        ],
+        "exclusionKeywords": [
+          "wordpress plugin",
+          "minecraft plugin",
+          "bukkit",
+          "spigot",
+          "jenkins plugin",
+          "gradle plugin",
+          "maven plugin",
+          "webpack plugin",
+          "babel plugin",
+          "eslint plugin",
+          "vite plugin",
+          "rollup plugin"
+        ],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "ai-developer-tools",
+      "name": "AI Developer Tools",
+      "description": "SDKs, evaluation, prompt tooling and gateways for building with AI",
+      "searchQueries": [
+        "topic:llm-evaluation stars:>{minStars} pushed:>{pushedSince}",
+        "topic:prompt-engineering stars:>{minStars} pushed:>{pushedSince}",
+        "topic:llm-evaluation created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "llm sdk",
+        "prompt management",
+        "llm evaluation",
+        "llm gateway",
+        "ai sdk"
+      ],
+      "topics": [
+        "llm-evaluation",
+        "prompt-engineering",
+        "llm-observability",
+        "llm-gateway",
+        "ai-sdk"
+      ],
+      "classification": {
+        "strongTopics": [
+          "llm-evaluation",
+          "llm-observability",
+          "llm-gateway",
+          "llm-proxy",
+          "llm-router",
+          "llm-testing",
+          "prompt-management",
+          "ai-sdk",
+          "agent-observability",
+          "guardrails",
+          "evals"
+        ],
+        "weakTopics": [
+          "prompt-engineering",
+          "prompts",
+          "sdk",
+          "evaluation",
+          "observability",
+          "tracing",
+          "gateway",
+          "playground"
+        ],
+        "strongKeywords": [
+          "llm evaluation",
+          "llm observability",
+          "llm gateway",
+          "llm proxy",
+          "prompt management",
+          "ai sdk",
+          "llm sdk",
+          "agent observability",
+          "evals",
+          "guardrails"
+        ],
+        "weakKeywords": [
+          "prompt",
+          "prompts",
+          "sdk",
+          "evaluation",
+          "tracing",
+          "gateway"
+        ],
+        "exclusionTopics": [],
+        "exclusionKeywords": [],
         "languages": {}
       }
     },
@@ -244,143 +631,6 @@
       }
     },
     {
-      "slug": "mcp",
-      "name": "MCP",
-      "description": "Model Context Protocol servers, clients and tooling",
-      "searchQueries": [
-        "topic:mcp stars:>{minStars} pushed:>{pushedSince}",
-        "topic:model-context-protocol stars:>{minStars} pushed:>{pushedSince}",
-        "topic:mcp created:>{createdSince} stars:>{freshMinStars}"
-      ],
-      "keywords": [
-        "mcp",
-        "model context protocol"
-      ],
-      "topics": [
-        "mcp",
-        "model-context-protocol",
-        "mcp-server",
-        "mcp-client"
-      ],
-      "classification": {
-        "strongTopics": [
-          "mcp",
-          "model-context-protocol",
-          "mcp-server",
-          "mcp-servers",
-          "mcp-client",
-          "mcp-tools"
-        ],
-        "weakTopics": [
-          "mcp-host"
-        ],
-        "strongKeywords": [
-          "mcp",
-          "model context protocol",
-          "mcp server",
-          "mcp servers",
-          "mcp client"
-        ],
-        "weakKeywords": [],
-        "exclusionTopics": [
-          "minecraft",
-          "minecraft-mod",
-          "forge",
-          "modding"
-        ],
-        "exclusionKeywords": [
-          "minecraft",
-          "coder pack",
-          "certified professional"
-        ],
-        "languages": {}
-      }
-    },
-    {
-      "slug": "ai-coding",
-      "name": "AI Coding",
-      "description": "AI coding assistants, code generation and code agents",
-      "searchQueries": [
-        "topic:ai-coding stars:>{minStars} pushed:>{pushedSince}",
-        "topic:code-generation stars:>{minStars} pushed:>{pushedSince}",
-        "topic:ai-coding created:>{createdSince} stars:>{freshMinStars}"
-      ],
-      "keywords": [
-        "coding assistant",
-        "code generation",
-        "copilot",
-        "ai pair programming",
-        "claude code"
-      ],
-      "topics": [
-        "ai-coding",
-        "code-generation",
-        "coding-assistant",
-        "copilot",
-        "claude-code",
-        "vibe-coding",
-        "code-completion"
-      ],
-      "classification": {
-        "strongTopics": [
-          "ai-coding",
-          "ai-coding-assistant",
-          "coding-assistant",
-          "coding-agent",
-          "code-generation",
-          "claude-code",
-          "github-copilot",
-          "vibe-coding",
-          "code-completion",
-          "ai-code-review",
-          "ai-pair-programming",
-          "aider",
-          "cline"
-        ],
-        "weakTopics": [
-          "codex",
-          "cursor",
-          "copilot",
-          "agent-skills",
-          "skills",
-          "code-review",
-          "ai-tools"
-        ],
-        "strongKeywords": [
-          "ai coding",
-          "coding assistant",
-          "coding agent",
-          "code generation",
-          "claude code",
-          "github copilot",
-          "vibe coding",
-          "ai pair programming",
-          "code completion",
-          "ai code review"
-        ],
-        "weakKeywords": [
-          "copilot",
-          "cursor",
-          "codex",
-          "code review"
-        ],
-        "exclusionTopics": [
-          "mouse-cursor",
-          "cursors",
-          "cursor-theme",
-          "xcursor",
-          "cursor-icons"
-        ],
-        "exclusionKeywords": [
-          "mouse cursor",
-          "database cursor",
-          "cursor position",
-          "cursor theme"
-        ],
-        "languages": {}
-      }
-    },
-    {
       "slug": "local-ai",
       "name": "Local AI",
       "description": "Running models locally and on-device",
@@ -439,73 +689,6 @@
           "privacy",
           "offline",
           "locally"
-        ],
-        "exclusionTopics": [],
-        "exclusionKeywords": [],
-        "languages": {}
-      }
-    },
-    {
-      "slug": "multimodal",
-      "name": "Multimodal",
-      "description": "Vision-language, speech and other multimodal models",
-      "searchQueries": [
-        "topic:multimodal stars:>{minStars} pushed:>{pushedSince}",
-        "topic:vision-language-model stars:>{minStars} pushed:>{pushedSince}",
-        "topic:multimodal created:>{createdSince} stars:>{freshMinStars}"
-      ],
-      "keywords": [
-        "multimodal",
-        "vision language",
-        "vlm",
-        "speech recognition",
-        "text to speech"
-      ],
-      "topics": [
-        "multimodal",
-        "vision-language-model",
-        "vlm",
-        "speech-recognition",
-        "text-to-speech",
-        "ocr"
-      ],
-      "classification": {
-        "strongTopics": [
-          "multimodal",
-          "multimodal-ai",
-          "multimodal-llm",
-          "vision-language-model",
-          "vlm",
-          "speech-to-text",
-          "text-to-speech",
-          "tts",
-          "asr",
-          "speech-recognition",
-          "whisper",
-          "ocr"
-        ],
-        "weakTopics": [
-          "computer-vision",
-          "audio",
-          "image-recognition",
-          "speech",
-          "voice"
-        ],
-        "strongKeywords": [
-          "multimodal",
-          "vision language",
-          "vision-language",
-          "speech recognition",
-          "text to speech",
-          "speech to text",
-          "ocr",
-          "voice cloning"
-        ],
-        "weakKeywords": [
-          "vision",
-          "audio",
-          "speech",
-          "voice"
         ],
         "exclusionTopics": [],
         "exclusionKeywords": [],
@@ -589,71 +772,66 @@
       }
     },
     {
-      "slug": "ai-developer-tools",
-      "name": "AI Developer Tools",
-      "description": "SDKs, evaluation, prompt tooling and gateways for building with AI",
+      "slug": "multimodal",
+      "name": "Multimodal",
+      "description": "Vision-language, speech and other multimodal models",
       "searchQueries": [
-        "topic:llm-evaluation stars:>{minStars} pushed:>{pushedSince}",
-        "topic:prompt-engineering stars:>{minStars} pushed:>{pushedSince}",
-        "topic:llm-evaluation created:>{createdSince} stars:>{freshMinStars}"
+        "topic:multimodal stars:>{minStars} pushed:>{pushedSince}",
+        "topic:vision-language-model stars:>{minStars} pushed:>{pushedSince}",
+        "topic:multimodal created:>{createdSince} stars:>{freshMinStars}"
       ],
       "keywords": [
-        "llm sdk",
-        "prompt management",
-        "llm evaluation",
-        "llm gateway",
-        "ai sdk"
+        "multimodal",
+        "vision language",
+        "vlm",
+        "speech recognition",
+        "text to speech"
       ],
       "topics": [
-        "llm-evaluation",
-        "prompt-engineering",
-        "llm-observability",
-        "llm-gateway",
-        "ai-sdk"
+        "multimodal",
+        "vision-language-model",
+        "vlm",
+        "speech-recognition",
+        "text-to-speech",
+        "ocr"
       ],
       "classification": {
         "strongTopics": [
-          "llm-evaluation",
-          "llm-observability",
-          "llm-gateway",
-          "llm-proxy",
-          "llm-router",
-          "llm-testing",
-          "prompt-management",
-          "ai-sdk",
-          "agent-observability",
-          "guardrails",
-          "evals"
+          "multimodal",
+          "multimodal-ai",
+          "multimodal-llm",
+          "vision-language-model",
+          "vlm",
+          "speech-to-text",
+          "text-to-speech",
+          "tts",
+          "asr",
+          "speech-recognition",
+          "whisper",
+          "ocr"
         ],
         "weakTopics": [
-          "prompt-engineering",
-          "prompts",
-          "sdk",
-          "evaluation",
-          "observability",
-          "tracing",
-          "gateway",
-          "playground"
+          "computer-vision",
+          "audio",
+          "image-recognition",
+          "speech",
+          "voice"
         ],
         "strongKeywords": [
-          "llm evaluation",
-          "llm observability",
-          "llm gateway",
-          "llm proxy",
-          "prompt management",
-          "ai sdk",
-          "llm sdk",
-          "agent observability",
-          "evals",
-          "guardrails"
+          "multimodal",
+          "vision language",
+          "vision-language",
+          "speech recognition",
+          "text to speech",
+          "speech to text",
+          "ocr",
+          "voice cloning"
         ],
         "weakKeywords": [
-          "prompt",
-          "prompts",
-          "sdk",
-          "evaluation",
-          "tracing",
-          "gateway"
+          "vision",
+          "audio",
+          "speech",
+          "voice"
         ],
         "exclusionTopics": [],
         "exclusionKeywords": [],
@@ -786,75 +964,6 @@
       }
     },
     {
-      "slug": "ai-music",
-      "name": "AI Music",
-      "description": "Music and audio generation",
-      "searchQueries": [
-        "topic:ai-music stars:>{minStars} pushed:>{pushedSince}",
-        "topic:music-generation stars:>{minStars} pushed:>{pushedSince}",
-        "topic:ai-music created:>{createdSince} stars:>{freshMinStars}"
-      ],
-      "keywords": [
-        "music generation",
-        "text-to-music",
-        "ai music",
-        "audio generation"
-      ],
-      "topics": [
-        "ai-music",
-        "music-generation",
-        "text-to-music",
-        "audio-generation",
-        "singing-voice-synthesis"
-      ],
-      "classification": {
-        "strongTopics": [
-          "ai-music",
-          "music-generation",
-          "text-to-music",
-          "audio-generation",
-          "singing-voice-synthesis",
-          "music-ai",
-          "ai-audio"
-        ],
-        "weakTopics": [
-          "music",
-          "audio",
-          "midi",
-          "sound"
-        ],
-        "strongKeywords": [
-          "music generation",
-          "text-to-music",
-          "text to music",
-          "ai music",
-          "audio generation",
-          "singing voice",
-          "song generation"
-        ],
-        "weakKeywords": [
-          "music",
-          "audio",
-          "midi"
-        ],
-        "exclusionTopics": [
-          "music-player",
-          "spotify",
-          "music-streaming"
-        ],
-        "exclusionKeywords": [
-          "music player",
-          "music streaming",
-          "spotify",
-          "music library",
-          "music bot",
-          "discord music",
-          "music downloader"
-        ],
-        "languages": {}
-      }
-    },
-    {
       "slug": "ai-image",
       "name": "AI Image",
       "description": "Image generation and editing models and tools",
@@ -983,6 +1092,75 @@
           "video conferencing",
           "video streaming",
           "video game"
+        ],
+        "languages": {}
+      }
+    },
+    {
+      "slug": "ai-music",
+      "name": "AI Music",
+      "description": "Music and audio generation",
+      "searchQueries": [
+        "topic:ai-music stars:>{minStars} pushed:>{pushedSince}",
+        "topic:music-generation stars:>{minStars} pushed:>{pushedSince}",
+        "topic:ai-music created:>{createdSince} stars:>{freshMinStars}"
+      ],
+      "keywords": [
+        "music generation",
+        "text-to-music",
+        "ai music",
+        "audio generation"
+      ],
+      "topics": [
+        "ai-music",
+        "music-generation",
+        "text-to-music",
+        "audio-generation",
+        "singing-voice-synthesis"
+      ],
+      "classification": {
+        "strongTopics": [
+          "ai-music",
+          "music-generation",
+          "text-to-music",
+          "audio-generation",
+          "singing-voice-synthesis",
+          "music-ai",
+          "ai-audio"
+        ],
+        "weakTopics": [
+          "music",
+          "audio",
+          "midi",
+          "sound"
+        ],
+        "strongKeywords": [
+          "music generation",
+          "text-to-music",
+          "text to music",
+          "ai music",
+          "audio generation",
+          "singing voice",
+          "song generation"
+        ],
+        "weakKeywords": [
+          "music",
+          "audio",
+          "midi"
+        ],
+        "exclusionTopics": [
+          "music-player",
+          "spotify",
+          "music-streaming"
+        ],
+        "exclusionKeywords": [
+          "music player",
+          "music streaming",
+          "spotify",
+          "music library",
+          "music bot",
+          "discord music",
+          "music downloader"
         ],
         "languages": {}
       }

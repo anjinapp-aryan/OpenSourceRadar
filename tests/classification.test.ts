@@ -21,7 +21,7 @@ const slugs = (r: ClassificationResult) => r.categories.map((c) => c.slug);
 
 describe('taxonomy configuration', () => {
   it('has the 33 product categories: 14 AI + 19 engineering', () => {
-    expect(taxonomy.categories.filter((c) => c.domain === 'ai')).toHaveLength(14);
+    expect(taxonomy.categories.filter((c) => c.domain === 'ai')).toHaveLength(16);
     expect(taxonomy.categories.filter((c) => c.domain === 'engineering')).toHaveLength(19);
     expect(taxonomy.classifierVersion).toBe('phase3-v1');
   });

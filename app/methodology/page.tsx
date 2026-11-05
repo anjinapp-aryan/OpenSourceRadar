@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const PIPELINE = [
   ['Discovery', 'GitHub Search finds candidate repositories from configured queries. Discovery only proposes candidates; it never decides what a repository is.'],
-  ['Classification', 'Deterministic rules over GitHub topics, name and description assign categories (14 AI, 19 engineering). Categories can be wrong, and never influence the momentum score.'],
+  ['Classification', 'Deterministic rules over GitHub topics, name and description assign categories (16 AI, 19 engineering). Categories can be wrong, and never influence the momentum score.'],
   ['Tracking', 'Each repository is assigned a refresh tier (HOT, WARM, DORMANT) from its measured growth, which decides how often it is re-collected. Tracking never depends on category.'],
   ['Star history', 'Weekly star buckets from GitHub are converted to daily gains and validated. Growth over 7, 30 and 90 days is computed. A window that cannot be measured is shown as n/a, never as zero.'],
   ['Momentum', 'Velocity, relative growth, acceleration and persistence are combined with fixed weights into a score. All inputs and thresholds are visible in the project configuration.'],

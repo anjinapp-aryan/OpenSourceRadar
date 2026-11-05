@@ -66,11 +66,11 @@ function fakeSearch(byQuery: Record<string, RepositorySnapshot[] | Error>): GitH
 const noRetry = { retry: { attempts: 1, baseDelayMs: 0, sleep: async () => undefined } };
 
 describe('category configuration', () => {
-  it('shipped ai.json has the 14 required categories', () => {
+  it('shipped ai.json has the 16 required categories, developer-first order', () => {
     const c = loadCategoryConfig(defaultConfigPath('ai'));
     expect(c.categories.map((x) => x.name)).toEqual([
-      'AI Agents', 'LLM', 'RAG', 'MCP', 'AI Coding', 'Local AI', 'Multimodal', 'AI Infrastructure',
-      'AI Developer Tools', 'Machine Learning', 'Generative AI', 'AI Music', 'AI Image', 'AI Video',
+      'AI Coding', 'MCP', 'AI Agents', 'AI Skills', 'AI Plugins', 'AI Developer Tools', 'LLM', 'RAG', 'Local AI',
+      'AI Infrastructure', 'Multimodal', 'Machine Learning', 'Generative AI', 'AI Image', 'AI Video', 'AI Music',
     ]);
     for (const cat of c.categories) {
       expect(cat.searchQueries.length).toBeGreaterThan(0);

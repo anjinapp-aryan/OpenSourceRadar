@@ -29,12 +29,13 @@ Example (real metadata, JavaGuide):
 }
 ```
 
-## 3. Taxonomy: 33 categories (unchanged from the product definition)
+## 3. Taxonomy: 35 categories (33 from the product definition, plus AI Skills and AI Plugins added 2026-11-05)
 
-14 AI: AI Agents, LLM, RAG, MCP, AI Coding, Local AI, Multimodal, AI Infrastructure, AI Developer Tools, Machine Learning, Generative AI, AI Music, AI Image, AI Video.
+16 AI, in developer-first display order: AI Coding, MCP, AI Agents, **AI Skills**, **AI Plugins**, AI Developer Tools, LLM, RAG, Local AI, AI Infrastructure, Multimodal, Machine Learning, Generative AI, AI Image, AI Video, AI Music. The order of the array in config/categories/ai.json is the display order (home page, Explore filter); classification ties are broken by slug, never by that order.
+**AI Skills** = reusable agent skills (SKILL.md) for Claude, Codex, Copilot and similar agents (strong topics such as agent-skills, claude-skills). **AI Plugins** = plugins and extensions that add AI to developer tools (Claude Code and ChatGPT plugins, Copilot, Cursor, Codex and Gemini CLI extensions). Generic words (skills, plugin) are weak evidence only, and WordPress, Minecraft, Jenkins, Gradle, webpack and similar plugins are excluded.
 19 Engineering: Java, Spring (slug `spring-boot`; display name changed from "Spring Boot" to match the product list), Microservices, Kafka, Kubernetes, Docker, AWS, Cloud, PostgreSQL, Redis, Databases, DevOps, Observability, Security, Distributed Systems, System Design, Developer Tools, Infrastructure as Code, Testing.
 
-No category was added. Categories the data suggests might be missing (e.g. data engineering / workflow orchestration such as Airflow, web frameworks, blockchain) were **not** added; they simply classify as UNKNOWN or as their nearest category.
+Two AI categories were added on 2026-11-05 (AI Skills, AI Plugins); no other category was added. Categories the data suggests might be missing (e.g. data engineering / workflow orchestration such as Airflow, web frameworks, blockchain) were **not** added; they simply classify as UNKNOWN or as their nearest category.
 
 Every category has, in its `classification` block: `strongTopics`, `weakTopics`, `strongKeywords`, `weakKeywords`, `exclusionTopics`, `exclusionKeywords` (+ optional `languages` weights). The rules are ~1,000 terms total; the file `scripts/gen-classification-config.mjs` keeps them reviewable in one place, the JSON is the source of truth. Topic aliases were adapted from GitHub's github/explore topic pages (CC BY 4.0; see THIRD_PARTY.md). Terms were kept high-signal: specific tags (`llm-serving`, `apache-kafka`) are strong, generic ones (`ai`, `cloud`, `automation`, `docker-compose`) are weak or absent.
 
