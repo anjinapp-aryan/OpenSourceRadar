@@ -314,10 +314,10 @@ describe('discovery coverage: why a repository is missing, and what should happe
   const facts = (o: Partial<RepoFacts> & { topics: string[] }): RepoFacts => ({ id: '10', stars: 5000, createdAt: '2020-01-01T00:00:00Z', pushedAt: '2026-10-01T00:00:00Z', isArchived: false, ...o });
   const topic = queries.find((q) => q.kind === 'pushed')!.topic;
 
-  it('parses the configured queries into structured rules (106 queries: 71 established, 35 fresh)', () => {
-    expect(queries).toHaveLength(106);
-    expect(queries.filter((q) => q.kind === 'pushed')).toHaveLength(71);
-    expect(queries.filter((q) => q.kind === 'fresh')).toHaveLength(35);
+  it('parses the configured queries into structured rules (109 queries: 73 established, 36 fresh)', () => {
+    expect(queries).toHaveLength(109);
+    expect(queries.filter((q) => q.kind === 'pushed')).toHaveLength(73);
+    expect(queries.filter((q) => q.kind === 'fresh')).toHaveLength(36);
     expect(new Set(queries.map((q) => q.limit))).toEqual(new Set([100]));
   });
   it('rejects a query template it does not understand instead of guessing', () => {

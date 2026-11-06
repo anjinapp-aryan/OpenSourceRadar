@@ -9,7 +9,7 @@ Total star counts say what is popular, not what is moving. A repository with 100
 GitHub Trending lists stars gained today, this week or this month. OpenSource Radar looks at the **shape** of growth over 7, 30 and 90 days: how fast, whether it is accelerating or fading against the previous four weeks, whether it is sustained across windows, and whether it is a new repository. Every ranking comes with its numbers, so you can see why a repository is listed. It is a smaller product (AI repositories only so far), not a replacement for Trending.
 
 ## Current scope
-- **AI Radar** (live): about 1,700 AI-related repositories in 16 categories (coding, MCP, agents, skills, plugins, LLM, RAG, local AI, and others). Rising, biggest movers, sustained momentum, new entrants, category pages, an explorable list and a page per repository with a 90-day daily trajectory.
+- **AI Radar** (live): about 1,700 AI-related repositories in 17 categories (coding, MCP, agents, skills, plugins, LLM, RAG, local AI, social, and others). Rising, biggest movers, sustained momentum, new entrants, category pages, an explorable list and a page per repository with a 90-day daily trajectory.
 - **Engineering Radar**: **not built yet** (marked "coming soon"). A strategic audit (see `docs/STRATEGIC-AUDIT.md`) found that the AI scoring thresholds do not transfer to engineering repositories, so it needs its own design first.
 
 ## Principles

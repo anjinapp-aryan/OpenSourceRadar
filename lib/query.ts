@@ -174,7 +174,7 @@ export function categoryName(d: Pick<PublicDataset, 'categories'>, slug: string)
   return d.categories?.find((c) => c.slug === slug)?.name ?? slug;
 }
 
-const CATEGORY_ORDER = ['ai-coding', 'mcp', 'ai-agents', 'ai-skills', 'ai-plugins', 'ai-developer-tools', 'llm', 'rag', 'local-ai', 'ai-infrastructure', 'multimodal', 'machine-learning', 'generative-ai', 'ai-image', 'ai-video', 'ai-music'];
+const CATEGORY_ORDER = ['ai-coding', 'mcp', 'ai-agents', 'ai-skills', 'ai-plugins', 'ai-developer-tools', 'llm', 'rag', 'local-ai', 'ai-infrastructure', 'multimodal', 'machine-learning', 'generative-ai', 'ai-image', 'ai-video', 'ai-music', 'ai-social'];
 
 /** Deterministic hue (0-360) per category, spread evenly so neighbours differ. */
 export function categoryHue(slug: string): number {

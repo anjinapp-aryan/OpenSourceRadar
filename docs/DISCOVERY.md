@@ -33,9 +33,9 @@ No query text lives in code. Each domain file has:
 
 Placeholders `{minStars} {freshMinStars} {pushedSince} {createdSince}` are expanded from `discovery` and a supplied clock (`expandQuery`); an unknown placeholder is a `ConfigError`. `parseCategoryConfig` validates everything (schema version, kebab-case unique slugs, non-empty queries, `perPage <= 100`, known placeholders) and reports the offending path. The shipped files are generated once by `npm run gen:categories` and are meant to be edited directly afterwards.
 
-**Categories** (16 AI, 19 engineering; a test pins them; AI Skills and AI Plugins were added 2026-11-05 and the AI list is in developer-first display order):
+**Categories** (17 AI, 19 engineering; a test pins them; AI Skills and AI Plugins were added 2026-11-05, AI Social 2026-11-06, and the AI list is in developer-first display order):
 
-- AI: AI Coding, MCP, Agentic AI, AI Skills, AI Plugins, AI Developer Tools, LLM, RAG, Local AI, AI Infrastructure, Multimodal, Machine Learning, Generative AI, AI Image, AI Video, AI Music.
+- AI: AI Coding, MCP, Agentic AI, AI Skills, AI Plugins, AI Developer Tools, LLM, RAG, Local AI, AI Infrastructure, Multimodal, Machine Learning, Generative AI, AI Image, AI Video, AI Music, AI Social.
 - Engineering: Java, Spring Boot, Microservices, Kafka, Kubernetes, Docker, AWS, Cloud, PostgreSQL, Redis, Databases, DevOps, Observability, Security, Distributed Systems, System Design, Developer Tools, Infrastructure as Code, Testing.
 
 **Queries per category** (3 each, 99 total: 42 AI + 57 engineering): the first two GitHub topics as *established* queries (`stars:>100 pushed within 30 days`) and one *fresh* query (`created within 30 days, stars:>25`) so new repositories are not crowded out by old giants.
